@@ -1,6 +1,10 @@
 # CHANGELOG
 > Entries newest on top. Only implemented changes.
 
+## 2026-11-13 01:50 +02:00
+- **Whole-Card Jump Alignment:** Aligned structure so that 1 Card holds 5 Infos. The `Jump to Card` dropdown lists whole cards (`Card #1 (Infos #1–#5)` ... `Card #5 (Infos #21–#25)`). Selecting a card immediately loads and navigates to the whole card with its 5 infos. Individual items inside are labeled `Info #N`.
+- **API Test Generation (Card #5):** Executed `scripts/generate_daily.py --batches 1` with user's Gemini key. Automatically handled 503 backoff on `gemini-3.8-flash` and generated Card #5 (`2026-11-12_auto_01.json`, Infos #21–#25) via `gemini-3.5-flash` with authentic Egyptian Arabic and scenario MCQs. Updated `data/index.json` to 25 total infos.
+
 ## 2026-11-13 01:25 +02:00
 - **Compact Jump-to-Card Selector:** Updated `DailyFeed.populateCardSelector` in `js/cards.js` to show cards only (`Card #1`, `Card #2`... / `كارت #1`, `كارت #2`...) rather than full headlines/infos, preventing overflow and keeping the dropdown sleek and fast to navigate.
 

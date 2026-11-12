@@ -1,5 +1,125 @@
 [
   {
+    "id": "2026-11-12_leadership_bring-solutions-first",
+    "number": 25,
+    "patch_number": 5,
+    "topic": "leadership",
+    "level": "intermediate",
+    "tags": [
+      "delegation",
+      "coaching",
+      "management"
+    ],
+    "created_at": "2026-11-12T23:41:50.770453+00:00",
+    "file": "cards/2026/2026-11-12_auto_01.json",
+    "en": {
+      "title": "Ask 'What Do You Suggest?' to Stop Being the Team Bottleneck",
+      "hook": "Your team drops every minor issue on your desk, leaving you zero time to focus on strategic work.",
+      "key_phrase": "Before I share my thoughts, what do you recommend we do here?"
+    },
+    "ar": {
+      "title": "اسأل إيه اقتراحك؟ عشان تبطل تكون عائق في شغلك",
+      "hook": "فريقك بيجيب لك كل مشكلة صغيرة لحد عندك، وما عندكش وقت خالص تركز في الأهداف الكبيرة.",
+      "key_phrase": "قبل ما أقول رأيي، إيه الاقتراح اللي شايفه صح للموقف ده؟"
+    }
+  },
+  {
+    "id": "2026-11-12_decision_making_ten-ten-ten-rule",
+    "number": 24,
+    "patch_number": 5,
+    "topic": "decision_making",
+    "level": "beginner",
+    "tags": [
+      "overthinking",
+      "stress-management",
+      "perspective"
+    ],
+    "created_at": "2026-11-12T23:41:50.770453+00:00",
+    "file": "cards/2026/2026-11-12_auto_01.json",
+    "en": {
+      "title": "Use the 10/10/10 Rule to Defuse High-Stress Decisions",
+      "hook": "You are agonising over sending a difficult feedback message and paralyzed by anxiety.",
+      "key_phrase": "Will this decision matter in 10 months or 10 years?"
+    },
+    "ar": {
+      "title": "طبق قاعدة 10/10/10 عشان تخلص من التفكير الزائد في القرارات الصعبة",
+      "hook": "خايف تبعت إيميل شديد شويه أو تاخد قرار، ومحتار ومش عارف تنام من القلق.",
+      "key_phrase": "هل القرار ده هيفرق معايا بعد 10 شهور أو 10 سنين؟"
+    }
+  },
+  {
+    "id": "2026-11-12_communication_bottom-line-up-front",
+    "number": 23,
+    "patch_number": 5,
+    "topic": "communication",
+    "level": "beginner",
+    "tags": [
+      "email",
+      "clear-writing",
+      "productivity"
+    ],
+    "created_at": "2026-11-12T23:41:50.770453+00:00",
+    "file": "cards/2026/2026-11-12_auto_01.json",
+    "en": {
+      "title": "Write Emails Using the BLUF Technique to Get Instant Answers",
+      "hook": "You wrote a detailed 4-paragraph email, only to get back a response that ignored your main question.",
+      "key_phrase": "BLUF: I need your approval on the $2k budget by 3 PM today. Context below."
+    },
+    "ar": {
+      "title": "اكتب إيميلاتك بأسلوب الخلاصة الأول عشان يترد عليك فوراً",
+      "hook": "كتبت إيميل طويل فيه 4 فقرات ومترتب صح، وفي الآخر ردوا عليك برسالك نسيت السؤال الأساسي أصلاً.",
+      "key_phrase": "الخلاصة: محتاج موافقتك على ميزانية الـ 2000 جنيه قبل الساعة 3 النهاردة. التفاصيل تحت."
+    }
+  },
+  {
+    "id": "2026-11-12_career_weekly-impact-log",
+    "number": 22,
+    "patch_number": 5,
+    "topic": "career",
+    "level": "beginner",
+    "tags": [
+      "promotion",
+      "career-growth",
+      "self-advocacy"
+    ],
+    "created_at": "2026-11-12T23:41:50.770453+00:00",
+    "file": "cards/2026/2026-11-12_auto_01.json",
+    "en": {
+      "title": "Keep a 5-Minute Weekly Impact Log for Easy Promotions",
+      "hook": "You worked hard all year, but during your annual review, you completely forgot half of your accomplishments.",
+      "key_phrase": ""
+    },
+    "ar": {
+      "title": "اعمل سجل إنجازات أسبوعي في 5 دقائق عشان الترقيات",
+      "hook": "اشتغلت طول السنة بضمير، بس لما جه ميعاد التقييم السنوي نسيت نص الإنجازات اللي عملتها.",
+      "key_phrase": ""
+    }
+  },
+  {
+    "id": "2026-11-12_business_phase-2-bucket",
+    "number": 21,
+    "patch_number": 5,
+    "topic": "business",
+    "level": "intermediate",
+    "tags": [
+      "client-management",
+      "scope-creep",
+      "freelance"
+    ],
+    "created_at": "2026-11-12T23:41:50.770453+00:00",
+    "file": "cards/2026/2026-11-12_auto_01.json",
+    "en": {
+      "title": "Use the Phase 2 Bucket to Stop Unpaid Scope Creep",
+      "hook": "A client asks for 'just one small addition' mid-project, and suddenly you are working 10 extra hours for free.",
+      "key_phrase": "That's a great idea! Let's put it in the Phase 2 bucket so we don't delay our current launch target."
+    },
+    "ar": {
+      "title": "استخدم حيلة فازة المرحلة الثانية عشان تمنع الشغل المجاني",
+      "hook": "العميل يطلب منك تعديل بسيط في وسط الشغل، وتلاقي نفسك فجأة بتعمل 10 ساعات زيادة بلاش.",
+      "key_phrase": "فكرة ممتازة! تعال نحطها في صندوق المرحلة الثانية عشان متأخرش ميعاد التسليم الجاي."
+    }
+  },
+  {
     "id": "2026-11-12_money_sunk-cost-exit-test",
     "number": 20,
     "patch_number": 4,

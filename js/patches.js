@@ -144,10 +144,10 @@
       const latestDate = latestPatch ? latestPatch.date : 'None';
       if (todayPatchesCount > 0) {
         dotEl.className = 'status-dot';
-        txtEl.innerHTML = `<strong>Today (${today}):</strong> ${todayPatchesCount} Patch${todayPatchesCount > 1 ? 'es' : ''} Added (+${todayCardsCount} cards) · Total: ${state.patchesList.length} Patches`;
+        txtEl.innerHTML = `<strong>Today (${today}):</strong> ${todayPatchesCount} Card${todayPatchesCount > 1 ? 's' : ''} Added (+${todayCardsCount} infos) · Total: ${state.patchesList.length} Cards`;
       } else {
         dotEl.className = 'status-dot pending';
-        txtEl.innerHTML = `<strong>Today (${today}):</strong> 0/${targetPatches} Patches Added yet · Last added: ${latestDate} (${state.patchesList.length} Patches total)`;
+        txtEl.innerHTML = `<strong>Today (${today}):</strong> 0/${targetPatches} Cards Added yet · Last added: ${latestDate} (${state.patchesList.length} Cards total)`;
       }
     }
   };
@@ -285,6 +285,7 @@
     const nums = visibleCards.map(c => state.numbersMap[c.id] || 0).filter(Boolean);
     const minNum = nums.length ? Math.min(...nums) : '?';
     const maxNum = nums.length ? Math.max(...nums) : '?';
+    const isAr = state.currentLang === 'ar';
 
     const doneInfo = state.userProgress.finished_patches[patch.batch_id];
     const isDone = !!doneInfo;
@@ -295,23 +296,23 @@
     wrap.id = `patch-${patch.batch_id}`;
 
     const scoreBadge = (doneInfo && typeof doneInfo.score === 'number')
-      ? ` · Quiz: ${doneInfo.score}/${doneInfo.total}`
+      ? (isAr ? ` · نتيجة الاختبار: ${doneInfo.score}/${doneInfo.total}` : ` · Quiz: ${doneInfo.score}/${doneInfo.total}`)
       : '';
 
     const header = document.createElement('div');
     header.className = 'patch-header';
     header.innerHTML = `
       <div class="patch-header-left">
-        <span class="patch-title-badge">📦 Patch #${patch.patch_number}</span>
-        <span class="patch-range-text">Cards #${minNum}–#${maxNum}</span>
-        <span class="patch-meta-sub">(${visibleCards.length} cards · ${patch.date || ''}${scoreBadge})</span>
+        <span class="patch-title-badge">${isAr ? `🗂️ كارت #${patch.patch_number}` : `🗂️ Card #${patch.patch_number}`}</span>
+        <span class="patch-range-text">${isAr ? `معلومات #${minNum}–#${maxNum}` : `Infos #${minNum}–#${maxNum}`}</span>
+        <span class="patch-meta-sub">(${visibleCards.length} ${isAr ? 'معلومة' : 'infos'} · ${patch.date || ''}${scoreBadge})</span>
       </div>
       <div class="patch-header-right">
         <span class="patch-status-pill ${isDone ? 'done' : ''}">
-          ${isDone ? '✅ Finished' : '🆕 Unread'}
+          ${isDone ? (isAr ? '✅ تمت القراءة' : '✅ Finished') : (isAr ? '🆕 كارت جديد' : '🆕 Unread')}
         </span>
         <button type="button" class="patch-collapse-btn">
-          ${isCollapsed ? '▾ Expand' : '▴ Collapse'}
+          ${isCollapsed ? (isAr ? '▾ عرض' : '▾ Expand') : (isAr ? '▴ طي' : '▴ Collapse')}
         </button>
       </div>
     `;
@@ -324,7 +325,7 @@
         state.expandedPatches.add(patch.batch_id);
       }
       const btn = header.querySelector('.patch-collapse-btn');
-      if (btn) btn.textContent = nowCollapsed ? '▾ Expand' : '▴ Collapse';
+      if (btn) btn.textContent = nowCollapsed ? (isAr ? '▾ عرض' : '▾ Expand') : (isAr ? '▴ طي' : '▴ Collapse');
     });
 
     wrap.appendChild(header);
@@ -337,8 +338,8 @@
         ${previewTitles}...
       </span>
       <div style="display: flex; gap: 6px;">
-        <button type="button" class="secondary-btn small btn-requiz-collapsed">🧠 Quiz (${visibleCards.length})</button>
-        <button type="button" class="secondary-btn small btn-unfinish-collapsed">↩️ Mark Unread</button>
+        <button type="button" class="secondary-btn small btn-requiz-collapsed">🧠 ${isAr ? `اختبار (${visibleCards.length})` : `Quiz (${visibleCards.length})`}</button>
+        <button type="button" class="secondary-btn small btn-unfinish-collapsed">↩️ ${isAr ? 'غير مقروء' : 'Mark Unread'}</button>
       </div>
     `;
     collapsedBar.querySelector('.btn-requiz-collapsed').addEventListener('click', (e) => {
@@ -362,14 +363,16 @@
     footer.className = 'patch-footer';
     footer.innerHTML = `
       <div class="patch-footer-info">
-        Finished reading <strong>Patch #${patch.patch_number}</strong> (Cards #${minNum}–#${maxNum})? Test yourself or mark it done:
+        ${isAr
+          ? `خلصت قراءة <strong>كارت #${patch.patch_number}</strong> (معلومات #${minNum}–#${maxNum})؟ اختبر نفسك أو حدده كمقروء:`
+          : `Finished reading <strong>Card #${patch.patch_number}</strong> (Infos #${minNum}–#${maxNum})? Test yourself or mark it done:`}
       </div>
       <div class="patch-footer-actions">
         <button type="button" class="patch-action-btn quiz-btn">
-          🧠 Quiz This Patch (${visibleCards.length} Questions)
+          🧠 ${isAr ? `اختبار هذا الكارت (${visibleCards.length} أسئلة)` : `Quiz This Card (${visibleCards.length} Questions)`}
         </button>
         <button type="button" class="patch-action-btn finish-btn ${isDone ? 'is-finished' : ''}">
-          ${isDone ? '✅ Patch Finished (Tap to Unmark)' : '✅ Mark Patch as Finished'}
+          ${isDone ? (isAr ? '✅ الكارت مقروء (اضغط للإلغاء)' : '✅ Card Finished (Tap to Unmark)') : (isAr ? '✅ تحديد الكارت كمقروء' : '✅ Mark Card as Finished')}
         </button>
       </div>
     `;
@@ -394,13 +397,13 @@
 
       navBar.innerHTML = `
         <button type="button" class="patch-nav-btn prev-btn" ${!hasPrev ? 'disabled' : ''}>
-          ${hasPrev ? `◀ Older (Patch #${prevPatch.patch_number})` : '◀ Older Patch'}
+          ${hasPrev ? (isAr ? `◀ أقدم (كارت #${prevPatch.patch_number})` : `◀ Older (Card #${prevPatch.patch_number})`) : (isAr ? '◀ أقدم' : '◀ Older Card')}
         </button>
         <span class="patch-nav-indicator">
-          Patch ${allPatches.length - patchIdx} of ${allPatches.length}
+          ${isAr ? `كارت ${allPatches.length - patchIdx} من ${allPatches.length}` : `Card ${allPatches.length - patchIdx} of ${allPatches.length}`}
         </span>
         <button type="button" class="patch-nav-btn next-btn" ${!hasNext ? 'disabled' : ''}>
-          ${hasNext ? `Newer (Patch #${nextPatch.patch_number}) ▶` : 'Newer Patch ▶'}
+          ${hasNext ? (isAr ? `أحدث (كارت #${nextPatch.patch_number}) ▶` : `Newer (Card #${nextPatch.patch_number}) ▶`) : (isAr ? 'أحدث ▶' : 'Newer Card ▶')}
         </button>
       `;
 

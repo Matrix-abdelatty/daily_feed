@@ -1,6 +1,19 @@
 # CURRENT TASK
 > Entries newest on top.
 
+## 2026-11-13 01:50 +02:00 — Whole-Card Navigation Alignment & Gemini API Test Generation Complete
+- **Status:** Complete, tested, verified live in Chrome (port 9222), and deployed!
+- **Whole-Card Jump Alignment:**
+  * Aligned terminology to user specification: A **Card** is the whole container holding 5 **Infos**.
+  * The `Jump to Card` dropdown now lists the whole Cards (`Card #1 (Infos #1–#5)` ... `Card #5 (Infos #21–#25)` / `كارت #1 (معلومات #1–#5)`).
+  * Selecting any Card immediately navigates to and displays that whole Card (all 5 infos), scrolling to it and pulsing with a golden highlight.
+  * Individual lessons inside the card are labeled `Info #1`, `Info #2`, etc. (`معلومة #1`).
+  * End-of-card action buttons updated: `🧠 Quiz This Card (5 Questions)` and `✅ Mark Card as Finished`.
+- **API Generation Test (Gemini 3.5 Flash Fallback):**
+  * Successfully triggered API generation via `scripts/generate_daily.py --batches 1` with user's Gemini API key.
+  * Autonomously handled 503 demand spike on 3.8-flash, backed off, and generated new 5-info Card #5 (`cards/2026/2026-11-12_auto_01.json`) via `gemini-3.5-flash`.
+  * Built index: 5 whole Cards (25 total infos), 0 skipped, verified high-quality English + Egyptian Arabic content.
+
 ## 2026-11-13 01:25 +02:00 — Compact Jump-to-Card Selector (Cards Only, No Info Text)
 - **Status:** Complete, verified in live Chrome, and deployed!
 - **Refinement:** Updated `DailyFeed.populateCardSelector` in `js/cards.js` so the dropdown options show clean, compact card identifiers (`Card #1`, `Card #2`, ... `Card #20` / `كارت #1`, `كارت #2`...) instead of dumping the full headline and info titles (`#N · [TOPIC] Title...`).

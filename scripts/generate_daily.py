@@ -226,7 +226,7 @@ def is_card_unique_and_deep(
     return True, None
 
 
-def generate_daily_cards() -> int:
+def generate_daily_cards(max_batches: Optional[int] = None) -> int:
     gemini_key, groq_key = get_api_keys()
     if not gemini_key and not groq_key:
         print("[ERROR] Neither GEMINI_API_KEY nor GROQ_API_KEY found. Exiting.")
@@ -247,7 +247,7 @@ def generate_daily_cards() -> int:
     # Check how many auto batches already exist today
     existing_today_files = sorted(output_dir.glob(f"{today_str}_auto_*.json"))
     start_batch_idx = len(existing_today_files) + 1
-    if start_batch_idx > batches_per_day:
+    if max_batches is None and start_batch_idx > batches_per_day:
         print(f"[INFO] Today ({today_str}) already has {len(existing_today_files)} auto patches. Nothing to generate.")
         run_build_index()
         return 0
@@ -270,8 +270,8 @@ def generate_daily_cards() -> int:
         for item in search_data[: int(gen_config.get("recent_titles_limit", 150))]
     ]
 
-    remaining_batches = batches_per_day - len(existing_today_files)
-    topic_batches = pick_topics_for_batches(remaining_batches, batch_size)
+    batches_to_generate = max_batches if max_batches is not None else max(1, batches_per_day - len(existing_today_files))
+    topic_batches = pick_topics_for_batches(batches_to_generate, batch_size)
 
     patches_created = 0
 
@@ -388,4 +388,8 @@ def generate_daily_cards() -> int:
 
 
 if __name__ == "__main__":
-    sys.exit(generate_daily_cards())
+    import argparse
+    parser = argparse.ArgumentParser(description="Generate daily cards")
+    parser.add_argument("--batches", "-b", type=int, default=None, help="Number of batches (cards) to generate")
+    args = parser.parse_args()
+    sys.exit(generate_daily_cards(max_batches=args.batches))

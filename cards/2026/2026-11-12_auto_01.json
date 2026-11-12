@@ -1,0 +1,288 @@
+{
+  "schema_version": 1,
+  "batch_id": "2026-11-12_auto_01",
+  "created_at": "2026-11-12T23:41:50.770453+00:00",
+  "source": "gemini-3.5-flash",
+  "cards": [
+    {
+      "id": "2026-11-12_business_phase-2-bucket",
+      "created_at": "2026-11-12T23:41:50.770453+00:00",
+      "topic": "business",
+      "tags": [
+        "client-management",
+        "scope-creep",
+        "freelance"
+      ],
+      "level": "intermediate",
+      "needs_completion": false,
+      "en": {
+        "title": "Use the Phase 2 Bucket to Stop Unpaid Scope Creep",
+        "hook": "A client asks for 'just one small addition' mid-project, and suddenly you are working 10 extra hours for free.",
+        "action": "Validate their idea immediately, but frame it as a future add-on. Tell them you will add it to the 'Phase 2 wishlist' so you don't delay the current launch.",
+        "key_phrase": "That's a great idea! Let's put it in the Phase 2 bucket so we don't delay our current launch target.",
+        "when": "When a client requests new features or changes that were not in the original project agreement.",
+        "why": "It avoids saying a flat 'no' while protecting your boundary. It places the burden of project delays onto their request.",
+        "example": "Client: 'Can we also add a blog section to the site before launch?' You: 'Love that idea! Let's park it in Phase 2 so we stay on track for next Friday's launch, and I'll send a quote for it right after.'",
+        "mistake": "Saying yes immediately without adjusting the timeline or budget, or arguing bluntly that it wasn't in the contract."
+      },
+      "ar": {
+        "title": "استخدم حيلة فازة المرحلة الثانية عشان تمنع الشغل المجاني",
+        "hook": "العميل يطلب منك تعديل بسيط في وسط الشغل، وتلاقي نفسك فجأة بتعمل 10 ساعات زيادة بلاش.",
+        "action": "رحّب بالفكرة جداً، بس اربطها بالخطوات اللي جاية. قول له هنحط الفكرة دي في قائمة المرحلة الثانية عشان متأخرش ميعاد التسليم الحالي.",
+        "key_phrase": "فكرة ممتازة! تعال نحطها في صندوق المرحلة الثانية عشان متأخرش ميعاد التسليم الجاي.",
+        "when": "لما العميل يطلب إضافات أو ميزات جديدة مش موجودة في الاتفاق الأصلي.",
+        "why": "الطريقة دي بتخليك متقولش لا بشكل مباشر، وفي نفس الوقت بتحمي وقتك وبتعرفه إن كل حاجة إضافية ليها ميعاد وتكلفة.",
+        "example": "العميل: ممكن نضيف مدونة للموقع قبل ما ننزل؟ أنت: فكرة روعة! يلا نحطها في فازة المرحلة الثانية عشان نلحق ميعاد الجمعة الجاية، وأول ما نخلص هبعتلك ميزانيتها.",
+        "mistake": "إنك تقول حاضر وخلاص وتضغط نفسك، أو تدخل في خناقة وتذكره بالعقد بأسلوب ناشف."
+      },
+      "quiz": {
+        "type": "mcq",
+        "correct_index": 1,
+        "en": {
+          "question": "A client asks to add a custom feature 3 days before product delivery. What is the best response?",
+          "options": [
+            "Refuse outright: 'Read the contract, we don't do extra work.'",
+            "Say: 'Great idea! I'll add it to Phase 2 after launch so we don't miss our target.'",
+            "Do it for free quickly so the client stays happy.",
+            "Ignore the message until the project is delivered."
+          ],
+          "explanation": "Option 1 protects your project schedule and budget without damaging client relationship by framing extra ideas into a second phase."
+        },
+        "ar": {
+          "question": "العميل طلب ميزة جديدة قبل ميعاد تسليم المشرووع بـ 3 أيام. إيه أفضل رد؟",
+          "options": [
+            "ترفض بشراسة: اقرأ العقد كويس إحنا مبنعملش شغل زيادة.",
+            "تقول له: فكرة ممتازة! هنحطها في المرحلة الثانية بعد التسليم عشان متأخرش الميعاد.",
+            "تعملها بلاش بسرعة عشان العميل ميزعلش.",
+            "تطنش الرسالة وما تردش غير بعد التسليم."
+          ],
+          "explanation": "الإجابة الثانية بتحمي جدولك وميزانيتك ومن غير ما تخسر العميل، لأنك بتأجل الفكرة لمرحلة جاية."
+        }
+      }
+    },
+    {
+      "id": "2026-11-12_career_weekly-impact-log",
+      "created_at": "2026-11-12T23:41:50.770453+00:00",
+      "topic": "career",
+      "tags": [
+        "promotion",
+        "career-growth",
+        "self-advocacy"
+      ],
+      "level": "beginner",
+      "needs_completion": false,
+      "en": {
+        "title": "Keep a 5-Minute Weekly Impact Log for Easy Promotions",
+        "hook": "You worked hard all year, but during your annual review, you completely forgot half of your accomplishments.",
+        "action": "Every Friday at 4 PM, spend 5 minutes writing down 2 concrete results you achieved that week. Focus on facts, numbers, and problems solved.",
+        "key_phrase": "",
+        "when": "At the end of every work week, before closing your computer.",
+        "why": "Human memory suffers from recency bias. Having a documented log gives you leverage and objective proof during performance reviews.",
+        "example": "Log entry: 'Fixed checkout bug, reducing drop-off by 4%. Onboarded 2 new junior designers.' In 6 months, you have 52 solid metrics ready for your raise negotiation.",
+        "mistake": "Relying on your manager to notice and remember all your daily contributions."
+      },
+      "ar": {
+        "title": "اعمل سجل إنجازات أسبوعي في 5 دقائق عشان الترقيات",
+        "hook": "اشتغلت طول السنة بضمير، بس لما جه ميعاد التقييم السنوي نسيت نص الإنجازات اللي عملتها.",
+        "action": "كل يوم جمعة قبل ما تقفل شغلك، خد 5 دقائق واكتب نقطتين محددتين حققتهم الأسبوع ده. اركز على الأرقام والمشاكل اللي حليتها.",
+        "key_phrase": "",
+        "when": "في نهاية كل أسبوع عمل وقبل ما تقفل اللاب توب.",
+        "why": "الذاكرة بتنسى بسرعة وبتفتكر بس آخر كام أسبوع. لما يكون عندك ورقة بالإنجازات بالأرقام، موقفك بيبقى قوي جداً في وقت التقييم.",
+        "example": "في السجل: حليت مشكلة في الدفع فقللت إغلاق الصفقات الفاشلة 4%. في خلال 6 شهور هيكون عندك أكتر من 50 دليل جاهز للزيادة.",
+        "mistake": "إنك تعتمد على إن مديرك واخد باله من كل حاجة بتعملها أول بأول."
+      },
+      "quiz": {
+        "type": "mcq",
+        "correct_index": 0,
+        "en": {
+          "question": "Why is keeping a weekly written record of achievements effective for performance reviews?",
+          "options": [
+            "It counters recency bias with hard, objective evidence of your impact.",
+            "It gives you an excuse to work fewer hours during the week.",
+            "It shows your manager that you don't trust their memory.",
+            "It allows you to exaggerate small tasks into big achievements."
+          ],
+          "explanation": "Documenting metrics continuously ensures your annual review reflects an entire year of work, not just the last month."
+        },
+        "ar": {
+          "question": "ليه توثيق الإنجازات أسبوعياً بيساعدك جداً في تقييم الأداء السنوي؟",
+          "options": [
+            "عشان بيواجه نسيان المدير بالأدلة والأرقام الفعلية لشغلك طول السنة.",
+            "عشان بيدي لك حجة إنك تشتغل ساعات أقل.",
+            "عشان بيثبت للمدير إنك مش واثق فيه.",
+            "عشان تبالغ في المهام الصغيرة وتكبرها."
+          ],
+          "explanation": "كتابة الأرقام والإنجازات بانتظام بتخلي تقييمك السنوي مبني على واقع السنة كلها مش آخر كم أسبوع بس."
+        }
+      }
+    },
+    {
+      "id": "2026-11-12_communication_bottom-line-up-front",
+      "created_at": "2026-11-12T23:41:50.770453+00:00",
+      "topic": "communication",
+      "tags": [
+        "email",
+        "clear-writing",
+        "productivity"
+      ],
+      "level": "beginner",
+      "needs_completion": false,
+      "en": {
+        "title": "Write Emails Using the BLUF Technique to Get Instant Answers",
+        "hook": "You wrote a detailed 4-paragraph email, only to get back a response that ignored your main question.",
+        "action": "Place your request or final recommendation in the very first sentence. Put context and background details below a clear line break.",
+        "key_phrase": "BLUF: I need your approval on the $2k budget by 3 PM today. Context below.",
+        "when": "When writing emails to busy stakeholders, executives, or clients.",
+        "why": "People skim. Giving the main point upfront lets the reader make quick decisions without hunting for the point.",
+        "example": "Hi Sarah, BLUF: Need approval to order 5 units by 2 PM. Detail: Supplier rates go up tomorrow by 15%, so ordering now saves us $400.",
+        "mistake": "Burying your call-to-action or request at the bottom of a long essay."
+      },
+      "ar": {
+        "title": "اكتب إيميلاتك بأسلوب الخلاصة الأول عشان يترد عليك فوراً",
+        "hook": "كتبت إيميل طويل فيه 4 فقرات ومترتب صح، وفي الآخر ردوا عليك برسالك نسيت السؤال الأساسي أصلاً.",
+        "action": "حط طلبك الأساسي أو القرار اللي محتاجه في أول سطر في الإيميل. وسيب التفاصيل والسياق تحت خط واضح.",
+        "key_phrase": "الخلاصة: محتاج موافقتك على ميزانية الـ 2000 جنيه قبل الساعة 3 النهاردة. التفاصيل تحت.",
+        "when": "لما تبعت إيميل لمديرين مشغولين أو عملاء معندهمش وقت يقروا كلام كتير.",
+        "why": "الناس بتقرأ سريعي في الإيميلات. لما تدي المطلوب في الأول، بتسهل عليهم ياخدوا قرار فوراً من غير تدوير.",
+        "example": "أهلاً سارة، الخلاصة: محتاج موافقتك نطلب 5 أجهزة قبل الساعة 2. التفاصيل: المورد هيزود الأسعار بكرة 15% فالطلب دلوقتي هيوفر 400 دولار.",
+        "mistake": "إنك تدفن الطلب أو السؤال المهم في آخر فقرة بعد ما ترغي كتير."
+      },
+      "quiz": {
+        "type": "mcq",
+        "correct_index": 2,
+        "en": {
+          "question": "Where should the key request be placed when using the BLUF communication structure?",
+          "options": [
+            "In the email attachment only.",
+            "At the end as a summary wrap-up.",
+            "In the very first sentence of the body.",
+            "Spread across bullet points in the middle."
+          ],
+          "explanation": "BLUF stands for Bottom Line Up Front, meaning your request or takeaway must be the first thing the reader sees."
+        },
+        "ar": {
+          "question": "مكان الطلب الرئيسي بيكون فين لما تتبع أسلوب الخلاصة الأول في الإيميل؟",
+          "options": [
+            "في الملف المرفق بس.",
+            "في نهاية الإيميل كملخص.",
+            "في أول جملة خالص في الرسالة.",
+            "متوزع بين النقاط في النص."
+          ],
+          "explanation": "الأسلوب ده بيفترض إنك تحط الخلاصة والطلب في أول سطر على طول عشان اللي بيقرأ يفهم على طول."
+        }
+      }
+    },
+    {
+      "id": "2026-11-12_decision_making_ten-ten-ten-rule",
+      "created_at": "2026-11-12T23:41:50.770453+00:00",
+      "topic": "decision_making",
+      "tags": [
+        "overthinking",
+        "stress-management",
+        "perspective"
+      ],
+      "level": "beginner",
+      "needs_completion": false,
+      "en": {
+        "title": "Use the 10/10/10 Rule to Defuse High-Stress Decisions",
+        "hook": "You are agonising over sending a difficult feedback message and paralyzed by anxiety.",
+        "action": "Ask yourself: How will I feel about this choice in 10 minutes? In 10 months? In 10 years?",
+        "key_phrase": "Will this decision matter in 10 months or 10 years?",
+        "when": "Whenever short-term emotional fear is preventing you from taking a necessary action.",
+        "why": "Short-term brain signals amplify immediate discomfort. Expanding the time frame activates rational evaluation.",
+        "example": "Scared to decline a meeting? In 10 mins: nervous. In 10 months: completely forgotten. In 10 years: zero impact. Decision: decline it now.",
+        "mistake": "Treating temporary embarrassment as if it will permanently ruin your career."
+      },
+      "ar": {
+        "title": "طبق قاعدة 10/10/10 عشان تخلص من التفكير الزائد في القرارات الصعبة",
+        "hook": "خايف تبعت إيميل شديد شويه أو تاخد قرار، ومحتار ومش عارف تنام من القلق.",
+        "action": "اسأل نفسك: إيه شعوري ناحية القرار ده بعد 10 دقائق؟ وبعد 10 شهور؟ وبعد 10 سنين؟",
+        "key_phrase": "هل القرار ده هيفرق معايا بعد 10 شهور أو 10 سنين؟",
+        "when": "لما يكون الخوف أو الكسوف لحظي ومشخليك عاجز تاخد قرار صح ومهم.",
+        "why": "المخ بيضخم التوتر اللحظي. لما تبص على القرار بفترات زمنية بعيدة، التوتر بيقل والعقلانية بتشتغل.",
+        "example": "خايف ترفض اجتماع مش مهم؟ بعد 10 دقائق: متوتر. بعد 10 شهور: محدش فاكر. بعد 10 سنين: ولا الهوا. القرار: اعتذر دلوقتي.",
+        "mistake": "إنك تتعامل مع الكسوف أو التوتر المؤقت كأنه حادثة هتدمر مستقبلك."
+      },
+      "quiz": {
+        "type": "mcq",
+        "correct_index": 3,
+        "en": {
+          "question": "How does the 10/10/10 framework help break decision-making paralysis?",
+          "options": [
+            "It forces you to wait 10 days before taking any major action.",
+            "It asks 10 colleagues for their opinions.",
+            "It calculates the exact financial risk in 10 currency units.",
+            "It contextualizes short-term panic across longer time horizons."
+          ],
+          "explanation": "Looking at consequences in 10 minutes, 10 months, and 10 years shrinks immediate anxiety down to its true size."
+        },
+        "ar": {
+          "question": "إزاي قاعدة 10/10/10 بتساعدك تتغلب على التردد والخوف من القرارات؟",
+          "options": [
+            "بتجبرك تستنى 10 أيام قبل ما تاخد أي قرار.",
+            "بتخليك تسأل 10 من زمايلك عن رأيهم.",
+            "بتحسب الخسارة المالية بالضبط.",
+            "بتخليك تشوف التوتر اللحظي مقارنة بمستقبلك على المدى الطويل."
+          ],
+          "explanation": "تقييم القرار بعد 10 دقائق و10 شهور و10 سنين بيخلي الخوف اللحظي يصغر ويرجع لحجمه الطبيعي."
+        }
+      }
+    },
+    {
+      "id": "2026-11-12_leadership_bring-solutions-first",
+      "created_at": "2026-11-12T23:41:50.770453+00:00",
+      "topic": "leadership",
+      "tags": [
+        "delegation",
+        "coaching",
+        "management"
+      ],
+      "level": "intermediate",
+      "needs_completion": false,
+      "en": {
+        "title": "Ask 'What Do You Suggest?' to Stop Being the Team Bottleneck",
+        "hook": "Your team drops every minor issue on your desk, leaving you zero time to focus on strategic work.",
+        "action": "When someone brings a problem, pause and ask what options they have already considered before giving any advice.",
+        "key_phrase": "Before I share my thoughts, what do you recommend we do here?",
+        "when": "When direct reports come to you asking 'What should I do?' for operational issues.",
+        "why": "It shifts responsibility from problem-reporting to problem-solving, building critical thinking and independence.",
+        "example": "Employee: 'The vendor missed the deadline!' You: 'That's tricky. What are 2 ways you think we can handle this?' Employee: 'We could call their backup or extend by 1 day.' You: 'Option 1 sounds best, run with it.'",
+        "mistake": "Immediately providing the answer, turning yourself into a perpetual micro-manager."
+      },
+      "ar": {
+        "title": "اسأل إيه اقتراحك؟ عشان تبطل تكون عائق في شغلك",
+        "hook": "فريقك بيجيب لك كل مشكلة صغيرة لحد عندك، وما عندكش وقت خالص تركز في الأهداف الكبيرة.",
+        "action": "لما حد يجيب لك مشكلة، اسأله الأول إيه الحلول اللي فكر فيها قبل ما تدي أي رأي أو توجيه.",
+        "key_phrase": "قبل ما أقول رأيي، إيه الاقتراح اللي شايفه صح للموقف ده؟",
+        "when": "لما الموظفين يجوا يسألوك نعمل إيه في المشاكل اليومية العادية.",
+        "why": "السؤال ده بينقل التفكير من مجرد إخبار بالمشكلة للبحث عن حل، وبيخلي الفريق يعتمد على نفسه.",
+        "example": "الموظف: المورد تأخر في التسليم! أنت: تمام، إيه الحلين اللي فكرت فيهم؟ الموظف: نكلم المورد البديل أو نأجل يوم. أنت: الخيار الأول ممتاز، نفذه فوراً.",
+        "mistake": "إنك تدي الحل فوراً وتخلي كل حاجة تتردد عليك أنت بس."
+      },
+      "quiz": {
+        "type": "mcq",
+        "correct_index": 1,
+        "en": {
+          "question": "A team member asks how to resolve a routine client conflict. What should a coaching leader ask first?",
+          "options": [
+            "'Why didn't you prevent this from happening earlier?'",
+            "'What options have you considered so far?'",
+            "'Let me call the client right now and handle it for you.'",
+            "'Send me an email about it and I'll think about it tomorrow.'"
+          ],
+          "explanation": "Asking for their proposed solutions trains ownership and prevents team dependency on you."
+        },
+        "ar": {
+          "question": "حد من فريقك جه يسألك يحل مشكلة روتينية مع عميل إزاي. إيه أول حاجة القائد الشاطر بيسألها؟",
+          "options": [
+            "ليه ما منعتش المشكلة دي من الأول؟",
+            "إيه الحلول اللي فكرت فيها لحد دلوقتي؟",
+            "سيبلي العميل وأنا هكلمه أحلها بنفسي.",
+            "ابعتلي إيميل بالقصة وأنا هفكر فيها بكرة."
+          ],
+          "explanation": "لما تسأله عن اقتراحه، أنت بتبني عنده حس المسئولية والتفكير النقدي بدل ما يعتمد عليك في كل صغيرة وكبيرة."
+        }
+      }
+    }
+  ]
+}

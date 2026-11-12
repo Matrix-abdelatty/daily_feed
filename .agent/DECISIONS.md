@@ -1,6 +1,9 @@
 # DECISIONS
 > Entries newest on top. All decided by owner on 2026-11-12 and 2026-11-13.
 
+## 2026-11-13 01:50 +02:00 — Card vs Info Structural Hierarchy
+- D38. **Card vs Info Terminology:** A **Card** is the whole container unit holding 5 **Infos**. The "Jump to Card" dropdown navigates to a whole Card (`Card #1 (Infos #1–#5)` ... `Card #5`), displaying all 5 infos inside it. Individual items within a card are designated as `Info #N`.
+
 ## 2026-11-13 01:25 +02:00 — Compact Jump-to-Card Selector
 - D37. **Cards-Only Jump Selector:** The "Jump to Card" dropdown displays clean, compact card numbers only (`Card #1`, `Card #2`... / `كارت #1`, `كارت #2`...) rather than full card info headlines, keeping the control clean and mobile-friendly without information leaks.
 

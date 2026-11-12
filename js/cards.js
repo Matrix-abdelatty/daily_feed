@@ -21,35 +21,38 @@
       ? '<option value="">🎯 انتقال إلى كارت...</option>'
       : '<option value="">🎯 Jump to Card...</option>';
 
-    const allCards = Array.from(state.loadedCardsMap.values()).filter(c => !DailyFeed.isCardHidden(c.id));
-    allCards.sort((a, b) => (state.numbersMap[a.id] || 0) - (state.numbersMap[b.id] || 0));
+    // Sort cards ascending by patch_number: Card #1, Card #2, Card #3, ...
+    const sortedPatches = [...state.patchesList].sort((a, b) => (a.patch_number || 0) - (b.patch_number || 0));
 
-    allCards.forEach(c => {
-      const num = state.numbersMap[c.id] || '?';
+    sortedPatches.forEach(p => {
+      const visibleCards = p.cards.filter(c => !DailyFeed.isCardHidden(c.id));
+      if (visibleCards.length === 0) return;
+
+      const nums = visibleCards.map(c => state.numbersMap[c.id] || 0).filter(Boolean);
+      const minNum = nums.length ? Math.min(...nums) : '?';
+      const maxNum = nums.length ? Math.max(...nums) : '?';
+
       const opt = document.createElement('option');
-      opt.value = c.id;
-      opt.textContent = isAr ? `كارت #${num}` : `Card #${num}`;
+      opt.value = p.batch_id;
+      opt.textContent = isAr
+        ? `كارت #${p.patch_number} (معلومات #${minNum}–#${maxNum})`
+        : `Card #${p.patch_number} (Infos #${minNum}–#${maxNum})`;
       picker.appendChild(opt);
     });
   };
 
-  DailyFeed.jumpToCard = function (cardId) {
-    if (!cardId) return;
-    const card = state.loadedCardsMap.get(cardId);
-    if (!card) return;
+  DailyFeed.jumpToCard = function (batchId) {
+    if (!batchId) return;
+    const patch = state.patchesList.find(p => p.batch_id === batchId);
+    if (!patch) return;
 
-    if (state.activeTopic && card.topic !== state.activeTopic) {
+    if (state.activeTopic) {
       state.activeTopic = null;
     }
 
-    const batchId = card._patch_id;
     const patchIsDone = DailyFeed.isPatchFinished(batchId);
 
-    if (state.activeTab === 'saved' && !state.userProgress.saves[cardId]) {
-      DailyFeed.switchTab(patchIsDone ? 'seen' : 'new');
-    }
-
-    if (state.activeTab === 'seen' || patchIsDone) {
+    if (patchIsDone) {
       if (state.activeTab !== 'seen') {
         DailyFeed.switchTab('seen');
       }
@@ -71,14 +74,14 @@
     }
 
     setTimeout(() => {
-      const cardEl = document.getElementById(`card-${cardId}`);
-      if (cardEl) {
-        cardEl.scrollIntoView({ behavior: 'smooth', block: 'center' });
-        cardEl.classList.remove('highlight-pulse');
-        void cardEl.offsetWidth;
-        cardEl.classList.add('highlight-pulse');
+      const patchEl = document.getElementById(`patch-${batchId}`);
+      if (patchEl) {
+        patchEl.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        patchEl.classList.remove('highlight-pulse');
+        void patchEl.offsetWidth;
+        patchEl.classList.add('highlight-pulse');
         setTimeout(() => {
-          cardEl.classList.remove('highlight-pulse');
+          patchEl.classList.remove('highlight-pulse');
         }, 2200);
       }
     }, 150);
@@ -93,21 +96,20 @@
     const num = state.numbersMap[card.id] || '?';
     const isSaved = !!state.userProgress.saves[card.id];
     const topicPillText = (card.topic || 'General').toUpperCase();
+    const isAr = (state.currentLang === 'ar' && card.ar) || (!card.en && card.ar);
 
-    // 1. Top Meta Row: Card #N + Patch Tag (Left) & Sage Topic Pill (Right) - No Avatar / Series Title
+    // 1. Top Meta Row: Info #N (Left) & Sage Topic Pill (Right)
     const topRow = document.createElement('div');
     topRow.className = 'card-top-row';
     topRow.innerHTML = `
       <div class="card-meta-left">
-        <span class="card-number-badge">#${num}</span>
-        ${card._patch_number ? `<span class="card-patch-tag">Patch #${card._patch_number}</span>` : ''}
+        <span class="card-number-badge">${isAr ? `معلومة #${num}` : `Info #${num}`}</span>
       </div>
       <div class="card-topic-pill">${topicPillText}</div>
     `;
     el.appendChild(topRow);
 
     // 2. Single Language Content (Never translated or stacked dual-language!)
-    const isAr = (state.currentLang === 'ar' && card.ar) || (!card.en && card.ar);
     const content = isAr ? (card.ar || {}) : (card.en || card.ar || {});
 
     const contentSection = document.createElement('div');
