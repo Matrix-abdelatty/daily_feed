@@ -1,6 +1,22 @@
 # CURRENT TASK
 > Entries newest on top.
 
+## 2026-11-13 00:52 +02:00 — Monolithic `app.js` Modular Split & Token Optimization Complete
+- **Status:** Complete, tested, verified across automated CDP tests in live Chrome, and deployed!
+- **Goal Achieved:** Replaced 1,850+ line monolithic `app.js` with 8 clean, lightweight modules under `js/` to save tokens and eliminate reading/editing overhead:
+  * `js/state.js` (~70 lines)
+  * `js/storage.js` (~130 lines)
+  * `js/theme.js` (~35 lines)
+  * `js/cards.js` (~215 lines)
+  * `js/patches.js` (~260 lines)
+  * `js/quiz.js` (~220 lines)
+  * `js/modals.js` (~260 lines)
+  * `js/main.js` (~150 lines)
+  * `app.js` replaced with a 40-line compatibility stub & architecture reference.
+- **Verification:**
+  * Verified all 8 modules load properly and bind to `window.DailyFeed`.
+  * Verified in Chrome on port 9222: feed rendering, single-patch view, 5 themes, card selector jump, patch navigation, modals, and quiz engine run seamlessly with 0 errors.
+
 ## 2026-11-13 00:35 +02:00 — Single-Patch Feed, 5 Color Themes, Card Selector & Single-Language Upgrade
 - **Status:** Complete, tested, verified across all 25 automated CDP test checks in live Chrome, and ready to deploy!
 - **Key Enhancements Implemented:**

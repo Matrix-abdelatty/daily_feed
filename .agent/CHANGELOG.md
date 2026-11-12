@@ -1,6 +1,20 @@
 # CHANGELOG
 > Entries newest on top. Only implemented changes.
 
+## 2026-11-13 00:52 +02:00
+- **Modular Codebase Split & Token Optimization:** Split the 1,850+ line monolithic `app.js` into 8 cleanly decoupled modules under `js/` sharing `window.DailyFeed`:
+  * `js/state.js` (~70 lines): Reactive state, topics, numbers map, date & JSON fetch helpers.
+  * `js/storage.js` (~130 lines): Progress loading, saving, backup JSON export and import merge.
+  * `js/theme.js` (~35 lines): 5 reading color themes with instant CSS property application.
+  * `js/cards.js` (~215 lines): Single-language card renderer, save bookmarking, password-guarded delete, card selector jump.
+  * `js/patches.js` (~260 lines): 5-card patch loader, single-patch home feed, older/newer navigation, patch finish toggle.
+  * `js/quiz.js` (~220 lines): Patch quiz session, Combined Review Quiz hub, spaced repetition progression.
+  * `js/modals.js` (~260 lines): Topic picker modal, history log modal, JSON patch validator, GitHub direct sync.
+  * `js/main.js` (~150 lines): Application bootstrapping and event wiring.
+  * `app.js`: Replaced with a 40-line lightweight backward-compatibility fallback loader.
+- Updated `index.html` to load modular scripts in sequence.
+- Updated `.github/workflows/build.yml` paths to watch `js/**`.
+
 ## 2026-11-13 00:35 +02:00
 - **Removed "DL" Avatar & Title:** Completely undid the dark navy `#233746` circle with "DL" and "The Daily Lesson" title, replacing it with clean card metadata (`#N`, `Patch #X`, uppercase topic pill).
 - **Added 5 Reading Color Themes:** Integrated 5 theme modes in Settings (⚙️) with CSS custom properties: `Ivory Cream` (default warm editorial), `Midnight Dark` (true night mode), `Minimal Paper` (clean white), `Warm Sepia` (vintage book), and `Sage Forest` (calm green).

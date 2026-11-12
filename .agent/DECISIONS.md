@@ -1,6 +1,9 @@
 # DECISIONS
 > Entries newest on top. All decided by owner on 2026-11-12 and 2026-11-13.
 
+## 2026-11-13 00:52 +02:00 — Modular Script Decomposition & Token Optimization
+- D36. **Modular Script Split (`js/*.js`):** Monolithic `app.js` split into 8 focused single-responsibility scripts under `js/` sharing `window.DailyFeed`. This drastically reduces LLM token consumption by avoiding large file rereads, isolates concerns, and eliminates regression risks during future modifications.
+
 ## 2026-11-13 00:35 +02:00 — Single-Patch Feed, 5 Color Themes, Card Selector & Pure Single Language
 - D29. **Remove "DL" Avatar & Series Title:** Undid the dark navy `#233746` avatar circle and "The Daily Lesson" title to give the card header a cleaner, content-first metadata layout (`#N`, `Patch #X`, topic pill).
 - D30. **5 Reading Color Themes:** Settings modal features 5 theme choices (`ivory`, `midnight`, `paper`, `sepia`, `forest`) for personalized contrast and color preference.
