@@ -1,6 +1,15 @@
 # CHANGELOG
 > Entries newest on top. Only implemented changes.
 
+## 2026-11-13 00:35 +02:00
+- **Removed "DL" Avatar & Title:** Completely undid the dark navy `#233746` circle with "DL" and "The Daily Lesson" title, replacing it with clean card metadata (`#N`, `Patch #X`, uppercase topic pill).
+- **Added 5 Reading Color Themes:** Integrated 5 theme modes in Settings (⚙️) with CSS custom properties: `Ivory Cream` (default warm editorial), `Midnight Dark` (true night mode), `Minimal Paper` (clean white), `Warm Sepia` (vintage book), and `Sage Forest` (calm green).
+- **Single-Patch Home Feed:** Configured `🆕 New Feed` to show only the latest 5-card patch (with `Older / Newer Patch` navigation, 5-question patch quiz, and finish toggle) for bite-sized daily focus.
+- **Removed Like & Per-Card Quiz:** Removed `Like` button completely (using `🔖 Save` bookmarks only). Removed individual `Quiz` buttons from card footers; card footer contains only `🔖 Save` and `🗑️ Delete`.
+- **Card Selector Dropdown:** Replaced the search input with a card jump dropdown (`<select id="cardSelectPicker">`). Selecting a card navigates to the patch, smoothly scrolls to the card, and pulses a golden highlight.
+- **Moved History inside Settings:** Replaced top header `📜 History` button with a dedicated section inside Settings (⚙️).
+- **Single Language per Card:** Removed dual-language stacked translation and dividers; cards render strictly in either English or Egyptian Arabic based on user selection. Quizzes also render strictly in the chosen language.
+
 ## 2026-11-12 23:55 +02:00
 - Transformed card design into the warm editorial style from the reference image:
   * Dark navy slate avatar circle with "DL" and "The Daily Lesson" title + card number.

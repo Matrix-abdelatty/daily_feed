@@ -1,5 +1,14 @@
 # DECISIONS
-> Entries newest on top. All decided by owner on 2026-11-12.
+> Entries newest on top. All decided by owner on 2026-11-12 and 2026-11-13.
+
+## 2026-11-13 00:35 +02:00 — Single-Patch Feed, 5 Color Themes, Card Selector & Pure Single Language
+- D29. **Remove "DL" Avatar & Series Title:** Undid the dark navy `#233746` avatar circle and "The Daily Lesson" title to give the card header a cleaner, content-first metadata layout (`#N`, `Patch #X`, topic pill).
+- D30. **5 Reading Color Themes:** Settings modal features 5 theme choices (`ivory`, `midnight`, `paper`, `sepia`, `forest`) for personalized contrast and color preference.
+- D31. **Home Feed Displays Latest Patch Only:** The `🆕 New Feed` tab displays exactly ONE 5-card patch at a time (the latest or user-selected patch), preventing scrolling overload and providing a focused 5-card micro-learning session with patch navigation (`Older / Newer`).
+- D32. **Remove Like & Per-Card Quiz:** Removed `Like` button entirely (relying on `🔖 Save` bookmarks). Removed the individual `Quiz` button from each card footer; quizzing is conducted at the patch level (5 questions) or in the Combined Quiz Hub. Card actions are strictly `Save` and `Delete`.
+- D33. **Card Selector Dropdown:** Replaced the free-text search bar with a quick-jump card picker (`<select id="cardSelectPicker">`) that automatically locates, scrolls to, and pulse-highlights any card.
+- D34. **History Inside Settings:** Moved the `📜 History` button out of the main header into Section 3 inside Settings (⚙️).
+- D35. **Single Language Only (No Dual Translation):** A card is rendered purely in ONE language (English or Egyptian Arabic), not translated or stacked. Quizzes are also presented in that single selected language.
 
 ## 2026-11-12 23:55 +02:00 — Editorial Card Styling & Navigation Reorganization
 - D25. **Warm Editorial Card Aesthetic:** Adopted the reference publication card styling featuring warm paper background, dark navy slate "DL" avatar, sage green topic pills, bold Merriweather serif titles, warm terracotta "SAY THIS" callouts, and pine teal "The move" takeaways.

@@ -27,17 +27,18 @@
   let isLoading = false;
 
   // UI View State
-  let currentLang = 'both';
+  let currentLang = 'en'; // 'en' | 'ar' (Single language only, never dual translated!)
   let activeTab = 'new'; // 'new' | 'seen' | 'saved'
   let activeTopic = null;
   let currentSearch = '';
+  let activePatchIdx = 0; // Current displayed patch in 'new' tab (0 is latest)
   let expandedPatches = new Set(); // Patch batch_ids explicitly expanded in 'seen' tab
 
   // Local User Progress Storage
   const STORAGE_KEY = 'daily_feed_progress_v2';
   const LEGACY_KEY = 'daily_feed_progress_v1';
   let userProgress = {
-    likes: {},            // cardId -> timestamp (Like ♡ / ❤️)
+    theme: 'ivory',       // 'ivory' | 'midnight' | 'paper' | 'sepia' | 'forest'
     saves: {},            // cardId -> timestamp (Bookmark / Save 🔖)
     finished_patches: {}, // batchId -> { finished_at, score, total }
     srs: {},              // cardId -> { stage: 0..6, due: 'YYYY-MM-DD', updated_at: '...' }
@@ -46,7 +47,7 @@
     local_patches: [],    // Array of user-uploaded JSON patch objects
     owner_token: '',
     delete_password: '123',
-    lang_display: 'both'
+    lang_display: 'en'
   };
 
   // Date Helpers
@@ -68,8 +69,9 @@
       if (rawV2) {
         const parsed = JSON.parse(rawV2);
         userProgress = Object.assign(userProgress, parsed);
-        userProgress.likes = userProgress.likes || {};
         userProgress.saves = userProgress.saves || {};
+        userProgress.theme = userProgress.theme || 'ivory';
+        if (userProgress.lang_display === 'both') userProgress.lang_display = 'en';
       } else {
         // Migrate from v1 if present
         const rawV1 = localStorage.getItem(LEGACY_KEY);
@@ -116,9 +118,104 @@
     return await resp.json();
   }
 
+  function applyTheme(themeName) {
+    const validThemes = ['ivory', 'midnight', 'paper', 'sepia', 'forest'];
+    const theme = validThemes.includes(themeName) ? themeName : 'ivory';
+    document.documentElement.setAttribute('data-theme', theme);
+    userProgress.theme = theme;
+    document.querySelectorAll('.theme-picker-btn').forEach(btn => {
+      const btnTheme = btn.dataset.themeName || btn.dataset.theme;
+      btn.classList.toggle('active', btnTheme === theme);
+    });
+  }
+
+  function initThemeSelector() {
+    document.querySelectorAll('.theme-picker-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const selectedTheme = btn.dataset.themeName || btn.dataset.theme;
+        applyTheme(selectedTheme);
+        saveUserProgress();
+      });
+    });
+    applyTheme(userProgress.theme || 'ivory');
+  }
+
+  function populateCardSelector() {
+    const picker = document.getElementById('cardSelectPicker');
+    if (!picker) return;
+
+    picker.innerHTML = '<option value="">🎯 Jump to Card...</option>';
+
+    const allCards = Array.from(loadedCardsMap.values()).filter(c => !isCardHidden(c.id));
+    allCards.sort((a, b) => (numbersMap[a.id] || 0) - (numbersMap[b.id] || 0));
+
+    allCards.forEach(c => {
+      const num = numbersMap[c.id] || '?';
+      const isAr = currentLang === 'ar';
+      const title = (isAr && c.ar?.title) ? c.ar.title : (c.en?.title || c.ar?.title || 'Untitled');
+      const topic = (c.topic || 'General').toUpperCase();
+      const opt = document.createElement('option');
+      opt.value = c.id;
+      opt.textContent = `#${num} · [${topic}] ${title}`;
+      picker.appendChild(opt);
+    });
+  }
+
+  function jumpToCard(cardId) {
+    if (!cardId) return;
+    const card = loadedCardsMap.get(cardId);
+    if (!card) return;
+
+    if (activeTopic && card.topic !== activeTopic) {
+      activeTopic = null;
+    }
+
+    const batchId = card._patch_id;
+    const patchIsDone = isPatchFinished(batchId);
+
+    if (activeTab === 'saved' && !userProgress.saves[cardId]) {
+      switchTab(patchIsDone ? 'seen' : 'new');
+    }
+
+    if (activeTab === 'seen' || patchIsDone) {
+      if (activeTab !== 'seen') {
+        switchTab('seen');
+      }
+      expandedPatches.add(batchId);
+      renderFeed();
+    } else {
+      if (activeTab !== 'new') {
+        switchTab('new');
+      }
+      const targetPatches = patchesList.filter(p => {
+        const visible = p.cards.filter(c => !isCardHidden(c.id));
+        return visible.length > 0 && !isPatchFinished(p.batch_id);
+      });
+      const foundIdx = targetPatches.findIndex(p => p.batch_id === batchId);
+      if (foundIdx !== -1) {
+        activePatchIdx = foundIdx;
+      }
+      renderFeed();
+    }
+
+    setTimeout(() => {
+      const cardEl = document.getElementById(`card-${cardId}`);
+      if (cardEl) {
+        cardEl.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        cardEl.classList.remove('highlight-pulse');
+        void cardEl.offsetWidth;
+        cardEl.classList.add('highlight-pulse');
+        setTimeout(() => {
+          cardEl.classList.remove('highlight-pulse');
+        }, 2200);
+      }
+    }, 150);
+  }
+
   // Initialization
   async function init() {
     loadUserProgress();
+    initThemeSelector();
 
     // Language toggle buttons
     document.querySelectorAll('.lang-btn').forEach(btn => {
@@ -128,6 +225,7 @@
         btn.classList.add('active');
         currentLang = btn.dataset.lang;
         saveUserProgress();
+        populateCardSelector();
         renderFeed();
       });
     });
@@ -155,6 +253,7 @@
     populateComposerTopics();
     setupEventListeners();
     await loadAllPatches();
+    populateCardSelector();
     updateCountsAndStatusBar();
     renderFeed();
   }
@@ -351,19 +450,16 @@
     const banner = document.getElementById('filterBanner');
     const bannerText = document.getElementById('filterBannerText');
     if (banner && bannerText) {
-      if (activeTopic || currentSearch.trim()) {
+      if (activeTopic) {
         banner.classList.remove('hidden');
-        let parts = [];
-        if (activeTopic) parts.push(`Topic: ${activeTopic}`);
-        if (currentSearch.trim()) parts.push(`Search: "${currentSearch.trim()}"`);
-        bannerText.textContent = parts.join(' · ');
+        bannerText.textContent = `Filtered by Topic: ${activeTopic}`;
       } else {
         banner.classList.add('hidden');
       }
     }
 
-    // If user is on "Saved ⭐" tab OR searching/filtering by topic -> render matching cards
-    if (activeTab === 'saved' || activeTopic || currentSearch.trim()) {
+    // If user is on "Saved ⭐" tab OR filtering by topic -> render matching cards
+    if (activeTab === 'saved' || activeTopic) {
       renderFilteredCardsView(container);
       return;
     }
@@ -409,9 +505,18 @@
       return;
     }
 
-    targetPatches.forEach(patch => {
-      container.appendChild(createPatchGroupElement(patch));
-    });
+    if (activeTab === 'new') {
+      // Home page displays the latest / current patch ONLY (5 cards)
+      if (activePatchIdx >= targetPatches.length) activePatchIdx = 0;
+      if (activePatchIdx < 0) activePatchIdx = 0;
+      const currentPatch = targetPatches[activePatchIdx];
+      container.appendChild(createPatchGroupElement(currentPatch, activePatchIdx, targetPatches));
+    } else {
+      // 'seen' tab displays all finished patches (collapsed)
+      targetPatches.forEach(patch => {
+        container.appendChild(createPatchGroupElement(patch));
+      });
+    }
   }
 
   // Render Filtered / Saved Individual Cards
@@ -426,25 +531,15 @@
       cards = cards.filter(c => c.topic === activeTopic);
     }
 
-    if (currentSearch.trim()) {
-      const q = currentSearch.toLowerCase().trim();
-      cards = cards.filter(c => {
-        const en = c.en || {};
-        const ar = c.ar || {};
-        const blob = `${en.title || ''} ${en.hook || ''} ${en.action || ''} ${en.key_phrase || ''} ${ar.title || ''} ${ar.hook || ''} ${ar.action || ''} ${ar.key_phrase || ''} ${(c.tags || []).join(' ')}`.toLowerCase();
-        return blob.includes(q);
-      });
-    }
-
     cards.sort((a, b) => (numbersMap[b.id] || 0) - (numbersMap[a.id] || 0));
 
     if (cards.length === 0) {
       container.innerHTML = `
         <div class="card-item" style="text-align: center; padding: 36px 18px;">
-          <p style="font-size: 24px; margin-bottom: 8px;">🔍</p>
+          <p style="font-size: 24px; margin-bottom: 8px;">🏷️</p>
           <h3 style="font-size: 16px; margin-bottom: 6px;">No matching cards</h3>
           <p style="color: var(--text-secondary); font-size: 13px;">
-            ${activeTab === 'saved' ? 'Tap ⭐ Save on any card to bookmark it here.' : 'Try resetting your topic or search filter.'}
+            ${activeTab === 'saved' ? 'Tap 🔖 Save on any card to bookmark it here.' : 'Try resetting your topic filter.'}
           </p>
         </div>
       `;
@@ -457,7 +552,7 @@
   }
 
   // Create a 5-Card Patch Container Element
-  function createPatchGroupElement(patch) {
+  function createPatchGroupElement(patch, patchIdx, allPatches) {
     const visibleCards = patch.cards
       .filter(c => !isCardHidden(c.id))
       .sort((a, b) => (numbersMap[a.id] || 0) - (numbersMap[b.id] || 0));
@@ -515,7 +610,7 @@
     // Collapsed summary bar (shown when collapsed)
     const collapsedBar = document.createElement('div');
     collapsedBar.className = 'patch-collapsed-bar';
-    const previewTitles = visibleCards.slice(0, 2).map(c => c.en?.title || '').join(' · ');
+    const previewTitles = visibleCards.slice(0, 2).map(c => c.en?.title || c.ar?.title || '').join(' · ');
     collapsedBar.innerHTML = `
       <span style="overflow: hidden; text-overflow: ellipsis; white-space: nowrap; max-width: 65%;">
         ${previewTitles}...
@@ -568,11 +663,53 @@
       toggleFinishPatch(patch, visibleCards);
     });
 
+    // If on 'new' tab and multiple patches exist, add Patch Navigation Bar!
+    if (activeTab === 'new' && allPatches && allPatches.length > 1 && typeof patchIdx === 'number') {
+      const navBar = document.createElement('div');
+      navBar.className = 'patch-nav-bar';
+
+      const hasPrev = patchIdx < allPatches.length - 1; // older patch
+      const hasNext = patchIdx > 0;                     // newer patch
+
+      const prevPatch = hasPrev ? allPatches[patchIdx + 1] : null;
+      const nextPatch = hasNext ? allPatches[patchIdx - 1] : null;
+
+      navBar.innerHTML = `
+        <button type="button" class="patch-nav-btn prev-btn" ${!hasPrev ? 'disabled' : ''}>
+          ${hasPrev ? `◀ Older (Patch #${prevPatch.patch_number})` : '◀ Older Patch'}
+        </button>
+        <span class="patch-nav-indicator">
+          Patch ${allPatches.length - patchIdx} of ${allPatches.length}
+        </span>
+        <button type="button" class="patch-nav-btn next-btn" ${!hasNext ? 'disabled' : ''}>
+          ${hasNext ? `Newer (Patch #${nextPatch.patch_number}) ▶` : 'Newer Patch ▶'}
+        </button>
+      `;
+
+      navBar.querySelector('.prev-btn')?.addEventListener('click', () => {
+        if (hasPrev) {
+          activePatchIdx = patchIdx + 1;
+          renderFeed();
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+      });
+
+      navBar.querySelector('.next-btn')?.addEventListener('click', () => {
+        if (hasNext) {
+          activePatchIdx = patchIdx - 1;
+          renderFeed();
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+      });
+
+      footer.appendChild(navBar);
+    }
+
     wrap.appendChild(footer);
     return wrap;
   }
 
-  // Create Single Card Element (Matching Editorial Reference Image)
+  // Create Single Card Element (Clean, Authentic Single-Language, Save & Delete Only)
   function createCardElement(card) {
     const el = document.createElement('article');
     el.className = 'card-item';
@@ -580,203 +717,101 @@
 
     const num = numbersMap[card.id] || '?';
     const isSaved = !!userProgress.saves[card.id];
-    const isLiked = !!(userProgress.likes && userProgress.likes[card.id]);
     const topicObj = topics.find(t => t.id === card.topic) || { label: card.topic || 'General', icon: '📌' };
     const topicPillText = (card.topic || 'General').toUpperCase();
 
-    // 1. Top Meta Row: Avatar (DL) + Series Name / Number + Sage Topic Pill
+    // 1. Top Meta Row: Card #N + Patch Tag (Left) & Sage Topic Pill (Right) - No Avatar / Series Title
     const topRow = document.createElement('div');
     topRow.className = 'card-top-row';
     topRow.innerHTML = `
-      <div class="card-author-info">
-        <div class="card-avatar" title="The Daily Lesson">DL</div>
-        <div class="card-author-meta">
-          <span class="card-series-name">The Daily Lesson</span>
-          <span class="card-timestamp">#${num}${card._patch_number ? ` · Patch #${card._patch_number}` : ''}</span>
-        </div>
+      <div class="card-meta-left">
+        <span class="card-number-badge">#${num}</span>
+        ${card._patch_number ? `<span class="card-patch-tag">Patch #${card._patch_number}</span>` : ''}
       </div>
       <div class="card-topic-pill">${topicPillText}</div>
     `;
     el.appendChild(topRow);
 
-    // 2. English Section
-    const showEn = (currentLang === 'both' || currentLang === 'en') && card.en;
-    if (showEn) {
-      const en = card.en;
-      const enSection = document.createElement('div');
-      enSection.className = 'card-editorial-content';
+    // 2. Single Language Content (Never translated or stacked dual-language!)
+    const isAr = (currentLang === 'ar' && card.ar) || (!card.en && card.ar);
+    const content = isAr ? (card.ar || {}) : (card.en || card.ar || {});
 
-      const hasDetails = !!(en.why || en.when || en.example || en.mistake);
+    const contentSection = document.createElement('div');
+    contentSection.className = 'card-editorial-content' + (isAr ? ' rtl' : '');
+    if (isAr) contentSection.dir = 'rtl';
 
-      enSection.innerHTML = `
-        <h2 class="card-editorial-headline">${en.title || ''}</h2>
-        ${en.hook ? `<div class="card-hook-text">${en.hook}</div>` : ''}
+    const hasDetails = !!(content.why || content.when || content.example || content.mistake);
 
-        ${hasDetails ? `
-          <button type="button" class="card-see-more-btn">See more</button>
-          <div class="card-expanded-details">
-            ${en.why ? `<div class="detail-row"><strong>💡 Why it works:</strong> ${en.why}</div>` : ''}
-            ${en.when ? `<div class="detail-row"><strong>⏱ When to use:</strong> ${en.when}</div>` : ''}
-            ${en.example ? `<div class="detail-row"><strong>📖 Real Example:</strong> ${en.example}</div>` : ''}
-            ${en.mistake ? `<div class="detail-row"><strong>⚠️ Mistake to avoid:</strong> ${en.mistake}</div>` : ''}
+    contentSection.innerHTML = `
+      <h2 class="card-editorial-headline ${isAr ? 'ar' : ''}">${content.title || ''}</h2>
+      ${content.hook ? `<div class="card-hook-text ${isAr ? 'ar' : ''}">${content.hook}</div>` : ''}
+
+      ${hasDetails ? `
+        <button type="button" class="card-see-more-btn ${isAr ? 'ar' : ''}">
+          ${isAr ? 'اقرأ المزيد' : 'See more'}
+        </button>
+        <div class="card-expanded-details ${isAr ? 'ar' : ''}">
+          ${content.why ? `<div class="detail-row"><strong>${isAr ? '💡 ليه بتشتغل:' : '💡 Why it works:'}</strong> ${content.why}</div>` : ''}
+          ${content.when ? `<div class="detail-row"><strong>${isAr ? '⏱ التوقيت:' : '⏱ When to use:'}</strong> ${content.when}</div>` : ''}
+          ${content.example ? `<div class="detail-row"><strong>${isAr ? '📖 مثال واقعي:' : '📖 Real Example:'}</strong> ${content.example}</div>` : ''}
+          ${content.mistake ? `<div class="detail-row"><strong>⚠️ الغلطة الشائعة:' : '⚠️ Mistake to avoid:'}</strong> ${content.mistake}</div>` : ''}
+        </div>
+      ` : ''}
+
+      ${content.key_phrase ? `
+        <div class="card-callout-box ${isAr ? 'rtl' : ''}">
+          <div class="callout-header">
+            <span class="callout-label">${isAr ? 'قول كدة بالمصري' : 'SAY THIS'}</span>
+            <button type="button" class="copy-phrase-btn" title="${isAr ? 'نسخ الجملة' : 'Copy phrase'}">
+              ${isAr ? '📋 نسخ' : '📋 Copy'}
+            </button>
           </div>
-        ` : ''}
-
-        ${en.key_phrase ? `
-          <div class="card-callout-box">
-            <div class="callout-header">
-              <span class="callout-label">SAY THIS</span>
-              <button type="button" class="copy-phrase-btn" title="Copy phrase">📋 Copy</button>
-            </div>
-            <div class="callout-quote">"${en.key_phrase}"</div>
+          <div class="callout-quote ${isAr ? 'ar' : ''}">
+            ${isAr ? `«${content.key_phrase}»` : `"${content.key_phrase}"`}
           </div>
-        ` : ''}
+        </div>
+      ` : ''}
 
-        ${en.action ? `
-          <div class="card-move-row">
-            <strong class="move-label">The move:</strong>
-            <span class="move-text">${en.action}</span>
-          </div>
-        ` : ''}
-      `;
+      ${content.action ? `
+        <div class="card-move-row ${isAr ? 'ar' : ''}">
+          <strong class="move-label ${isAr ? 'ar' : ''}">${isAr ? 'الخلاصة:' : 'The move:'}</strong>
+          <span class="move-text">${content.action}</span>
+        </div>
+      ` : ''}
+    `;
 
-      // Copy phrase action
-      const cpBtn = enSection.querySelector('.copy-phrase-btn');
-      if (cpBtn) {
-        cpBtn.addEventListener('click', (e) => {
-          e.stopPropagation();
-          navigator.clipboard.writeText(en.key_phrase);
-          cpBtn.textContent = '✓ Copied';
-          setTimeout(() => { cpBtn.textContent = '📋 Copy'; }, 1800);
-        });
-      }
-
-      // See more toggle
-      const seeMoreBtn = enSection.querySelector('.card-see-more-btn');
-      const detailsBody = enSection.querySelector('.card-expanded-details');
-      if (seeMoreBtn && detailsBody) {
-        seeMoreBtn.addEventListener('click', (e) => {
-          e.stopPropagation();
-          const isOpen = detailsBody.classList.toggle('open');
-          seeMoreBtn.textContent = isOpen ? 'See less' : 'See more';
-        });
-      }
-
-      el.appendChild(enSection);
+    // Copy phrase handler
+    const cpBtn = contentSection.querySelector('.copy-phrase-btn');
+    if (cpBtn) {
+      cpBtn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        navigator.clipboard.writeText(content.key_phrase);
+        cpBtn.textContent = isAr ? '✓ تم النسخ' : '✓ Copied';
+        setTimeout(() => { cpBtn.textContent = isAr ? '📋 نسخ' : '📋 Copy'; }, 1800);
+      });
     }
 
-    // Bilingual Divider if both languages are shown
-    if (currentLang === 'both' && card.en && card.ar) {
-      const bdiv = document.createElement('div');
-      bdiv.className = 'card-bilingual-divider';
-      bdiv.innerHTML = `<span>المحتوى بالمصري · Egyptian Arabic</span>`;
-      el.appendChild(bdiv);
+    // See more toggle
+    const seeMoreBtn = contentSection.querySelector('.card-see-more-btn');
+    const detailsBody = contentSection.querySelector('.card-expanded-details');
+    if (seeMoreBtn && detailsBody) {
+      seeMoreBtn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        const isOpen = detailsBody.classList.toggle('open');
+        seeMoreBtn.textContent = isOpen ? (isAr ? 'اقرأ أقل' : 'See less') : (isAr ? 'اقرأ المزيد' : 'See more');
+      });
     }
 
-    // 3. Arabic Section
-    const showAr = (currentLang === 'both' || currentLang === 'ar') && card.ar;
-    if (showAr) {
-      const ar = card.ar;
-      const arSection = document.createElement('div');
-      arSection.className = 'card-editorial-content rtl';
-      arSection.dir = 'rtl';
+    el.appendChild(contentSection);
 
-      const hasArDetails = !!(ar.why || ar.when || ar.example || ar.mistake);
-
-      arSection.innerHTML = `
-        <h2 class="card-editorial-headline ar">${ar.title || ''}</h2>
-        ${ar.hook ? `<div class="card-hook-text ar">${ar.hook}</div>` : ''}
-
-        ${hasArDetails ? `
-          <button type="button" class="card-see-more-btn ar">اقرأ المزيد</button>
-          <div class="card-expanded-details ar">
-            ${ar.why ? `<div class="detail-row"><strong>💡 ليه بتشتغل:</strong> ${ar.why}</div>` : ''}
-            ${ar.when ? `<div class="detail-row"><strong>⏱ إمتى تستخدمها:</strong> ${ar.when}</div>` : ''}
-            ${ar.example ? `<div class="detail-row"><strong>📖 مثال واقعي:</strong> ${ar.example}</div>` : ''}
-            ${ar.mistake ? `<div class="detail-row"><strong>⚠️ الغلطة الشائعة:</strong> ${ar.mistake}</div>` : ''}
-          </div>
-        ` : ''}
-
-        ${ar.key_phrase ? `
-          <div class="card-callout-box rtl">
-            <div class="callout-header">
-              <span class="callout-label">قول كدة بالمصري</span>
-              <button type="button" class="copy-phrase-btn" title="نسخ الجملة">📋 نسخ</button>
-            </div>
-            <div class="callout-quote ar">«${ar.key_phrase}»</div>
-          </div>
-        ` : ''}
-
-        ${ar.action ? `
-          <div class="card-move-row ar">
-            <strong class="move-label ar">الخلاصة:</strong>
-            <span class="move-text">${ar.action}</span>
-          </div>
-        ` : ''}
-      `;
-
-      const cpBtnAr = arSection.querySelector('.copy-phrase-btn');
-      if (cpBtnAr) {
-        cpBtnAr.addEventListener('click', (e) => {
-          e.stopPropagation();
-          navigator.clipboard.writeText(ar.key_phrase);
-          cpBtnAr.textContent = '✓ تم النسخ';
-          setTimeout(() => { cpBtnAr.textContent = '📋 نسخ'; }, 1800);
-        });
-      }
-
-      const seeMoreBtnAr = arSection.querySelector('.card-see-more-btn');
-      const detailsBodyAr = arSection.querySelector('.card-expanded-details');
-      if (seeMoreBtnAr && detailsBodyAr) {
-        seeMoreBtnAr.addEventListener('click', (e) => {
-          e.stopPropagation();
-          const isOpen = detailsBodyAr.classList.toggle('open');
-          seeMoreBtnAr.textContent = isOpen ? 'اقرأ أقل' : 'اقرأ المزيد';
-        });
-      }
-
-      el.appendChild(arSection);
-    }
-
-    // 4. Divider Line
+    // 3. Card Footer Divider & Actions (Only Save & Delete — No Like, No Quiz under individual card!)
     const hr = document.createElement('hr');
     hr.className = 'card-footer-divider';
     el.appendChild(hr);
 
-    // 5. Footer Actions (Like on left, Save on right, Quiz & Delete)
     const footer = document.createElement('div');
     footer.className = 'card-editorial-footer';
 
-    // Left actions: Like + Quiz
-    const leftActions = document.createElement('div');
-    leftActions.className = 'card-footer-left';
-
-    const likeBtn = document.createElement('button');
-    likeBtn.type = 'button';
-    likeBtn.className = 'card-footer-btn like-btn' + (isLiked ? ' liked' : '');
-    likeBtn.innerHTML = `
-      <svg class="footer-icon heart-icon" viewBox="0 0 24 24" fill="${isLiked ? 'currentColor' : 'none'}" stroke="currentColor" stroke-width="2">
-        <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
-      </svg>
-      <span class="btn-text">${isLiked ? 'Liked' : 'Like'}</span>
-    `;
-    likeBtn.addEventListener('click', () => toggleLike(card.id, likeBtn));
-    leftActions.appendChild(likeBtn);
-
-    const quizBtn = document.createElement('button');
-    quizBtn.type = 'button';
-    quizBtn.className = 'card-footer-btn quiz-btn';
-    quizBtn.title = 'Test yourself with this card\'s quiz question';
-    quizBtn.innerHTML = `
-      <span class="icon">🧠</span>
-      <span class="btn-text">Quiz</span>
-    `;
-    quizBtn.addEventListener('click', () => {
-      runInteractiveQuizSession(`🧠 Quiz: Card #${num}`, [card], null);
-    });
-    leftActions.appendChild(quizBtn);
-
-    // Right actions: Save + Delete
     const rightActions = document.createElement('div');
     rightActions.className = 'card-footer-right';
 
@@ -788,7 +823,7 @@
       <svg class="footer-icon bookmark-icon" viewBox="0 0 24 24" fill="${isSaved ? 'currentColor' : 'none'}" stroke="currentColor" stroke-width="2">
         <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path>
       </svg>
-      <span class="btn-text">${isSaved ? 'Saved' : 'Save'}</span>
+      <span class="btn-text">${isSaved ? (isAr ? 'تم الحفظ' : 'Saved') : (isAr ? 'حفظ' : 'Save')}</span>
     `;
     saveBtn.addEventListener('click', () => toggleSave(card.id, saveBtn));
     rightActions.appendChild(saveBtn);
@@ -797,35 +832,14 @@
     deleteBtn.type = 'button';
     deleteBtn.className = 'card-footer-btn delete-btn';
     deleteBtn.title = 'Delete card (Password protected)';
-    deleteBtn.innerHTML = `
-      <span class="icon">🗑️</span>
-    `;
+    deleteBtn.innerHTML = `<span class="icon">🗑️</span>`;
     deleteBtn.addEventListener('click', () => confirmDeleteCard(card.id));
     rightActions.appendChild(deleteBtn);
 
-    footer.appendChild(leftActions);
     footer.appendChild(rightActions);
     el.appendChild(footer);
 
     return el;
-  }
-
-  // Toggle Like Card
-  function toggleLike(cardId, btnEl) {
-    userProgress.likes = userProgress.likes || {};
-    const isNowLiked = !userProgress.likes[cardId];
-    if (isNowLiked) {
-      userProgress.likes[cardId] = Date.now();
-      btnEl.classList.add('liked');
-      btnEl.querySelector('.heart-icon')?.setAttribute('fill', 'currentColor');
-      btnEl.querySelector('.btn-text').textContent = 'Liked';
-    } else {
-      delete userProgress.likes[cardId];
-      btnEl.classList.remove('liked');
-      btnEl.querySelector('.heart-icon')?.setAttribute('fill', 'none');
-      btnEl.querySelector('.btn-text').textContent = 'Like';
-    }
-    saveUserProgress();
   }
 
   // Toggle Save Card (Bookmark Action)
@@ -1055,40 +1069,36 @@
 
       const card = validCards[currentIdx];
       const num = numbersMap[card.id] || '?';
-      const qEn = card.quiz.en || {};
-      const qAr = card.quiz.ar || {};
-      const showEn = currentLang !== 'ar';
-      const showAr = currentLang !== 'en';
-      const optionsCount = (qEn.options || qAr.options || []).length;
+      const isQuizAr = (currentLang === 'ar' && card.quiz.ar) || (!card.quiz.en && card.quiz.ar);
+      const q = isQuizAr ? (card.quiz.ar || {}) : (card.quiz.en || card.quiz.ar || {});
+      const options = q.options || [];
 
       bodyEl.innerHTML = `
         <div class="quiz-runner-card">
           <div class="quiz-progress-top">
-            <span>Question <strong>${currentIdx + 1} of ${validCards.length}</strong> · Card #${num}</span>
-            <span>Score: ${correctCount}/${currentIdx}</span>
+            <span>${isQuizAr ? `السؤال <strong>${currentIdx + 1} من ${validCards.length}</strong> · كارت #${num}` : `Question <strong>${currentIdx + 1} of ${validCards.length}</strong> · Card #${num}`}</span>
+            <span>${isQuizAr ? `الدرجة: ${correctCount}/${currentIdx}` : `Score: ${correctCount}/${currentIdx}`}</span>
           </div>
 
-          ${showEn && qEn.question ? `<div class="quiz-q-title">${qEn.question}</div>` : ''}
-          ${showAr && qAr.question ? `<div class="quiz-q-ar">${qAr.question}</div>` : ''}
+          <div class="quiz-q-title ${isQuizAr ? 'quiz-q-ar' : ''}" ${isQuizAr ? 'dir="rtl" style="font-family: var(--font-ar);"' : ''}>
+            ${q.question || ''}
+          </div>
 
           <div class="quiz-options">
-            ${Array.from({ length: optionsCount }).map((_, idx) => {
-              const optEn = qEn.options ? qEn.options[idx] : '';
-              const optAr = qAr.options ? qAr.options[idx] : '';
-              return `
-                <button type="button" class="quiz-opt-btn" data-idx="${idx}">
-                  ${showEn && optEn ? `<div><strong>${String.fromCharCode(65 + idx)}.</strong> ${optEn}</div>` : ''}
-                  ${showAr && optAr ? `<div dir="rtl" style="font-family: var(--font-ar); color: #cbd5e1; margin-top: 2px;">${optAr}</div>` : ''}
-                </button>
-              `;
-            }).join('')}
+            ${options.map((opt, idx) => `
+              <button type="button" class="quiz-opt-btn" data-idx="${idx}">
+                <div ${isQuizAr ? 'dir="rtl" style="font-family: var(--font-ar);"' : ''}>
+                  <strong>${String.fromCharCode(65 + idx)}.</strong> ${opt}
+                </div>
+              </button>
+            `).join('')}
           </div>
 
           <div class="quiz-feedback" id="runnerFeedback"></div>
 
           <div class="modal-footer" style="display: none;" id="runnerNextFooter">
             <button type="button" class="primary-btn" id="btnNextQuestion">
-              ${currentIdx + 1 < validCards.length ? 'Next Question ▸' : 'See Results 🏆'}
+              ${currentIdx + 1 < validCards.length ? (isQuizAr ? 'السؤال التالي ▸' : 'Next Question ▸') : (isQuizAr ? 'النتيجة 🏆' : 'See Results 🏆')}
             </button>
           </div>
         </div>
@@ -1117,9 +1127,8 @@
 
           fbEl.className = 'quiz-feedback show ' + (isRight ? 'success' : 'fail');
           fbEl.innerHTML = `
-            <div><strong>${isRight ? '✓ Correct!' : '✕ Not quite.'}</strong></div>
-            ${showEn && qEn.explanation ? `<div style="margin-top:4px;">${qEn.explanation}</div>` : ''}
-            ${showAr && qAr.explanation ? `<div dir="rtl" style="font-family: var(--font-ar); margin-top:4px;">${qAr.explanation}</div>` : ''}
+            <div><strong>${isRight ? (isQuizAr ? '✓ إجابة صحيحة!' : '✓ Correct!') : (isQuizAr ? '✕ مش الإجابة دي' : '✕ Not quite.')}</strong></div>
+            ${q.explanation ? `<div style="margin-top:4px;" ${isQuizAr ? 'dir="rtl" style="font-family: var(--font-ar);"' : ''}>${q.explanation}</div>` : ''}
           `;
 
           nextFooter.style.display = 'flex';
@@ -1410,6 +1419,7 @@
     userProgress.local_patches.unshift(newPatchObj);
     patchesList.unshift(newPatchObj);
     saveUserProgress();
+    populateCardSelector();
 
     // If Owner GitHub token is set, also push the JSON file straight to GitHub repo!
     let githubMsg = 'Saved immediately to your feed!';
@@ -1487,6 +1497,7 @@
 
     userProgress.hidden[cardId] = Date.now();
     saveUserProgress();
+    populateCardSelector();
     renderFeed();
   }
 
@@ -1517,31 +1528,21 @@
       tab.addEventListener('click', () => switchTab(tab.dataset.tab));
     });
 
-    // Search Input
-    const searchInput = document.getElementById('searchInput');
-    const clearSearch = document.getElementById('clearSearch');
-    if (searchInput) {
-      searchInput.addEventListener('input', (e) => {
-        currentSearch = e.target.value;
-        if (clearSearch) clearSearch.style.display = currentSearch ? 'block' : 'none';
-        renderFeed();
-      });
-    }
-    if (clearSearch) {
-      clearSearch.addEventListener('click', () => {
-        if (searchInput) searchInput.value = '';
-        currentSearch = '';
-        clearSearch.style.display = 'none';
-        renderFeed();
+    // Card Selector Dropdown (Replaces search text input)
+    const cardPicker = document.getElementById('cardSelectPicker');
+    if (cardPicker) {
+      cardPicker.addEventListener('change', (e) => {
+        const selectedId = e.target.value;
+        if (selectedId) {
+          jumpToCard(selectedId);
+          e.target.value = '';
+        }
       });
     }
 
     // Reset Filter Banner
     document.getElementById('resetFilterBtn')?.addEventListener('click', () => {
       activeTopic = null;
-      currentSearch = '';
-      if (searchInput) searchInput.value = '';
-      if (clearSearch) clearSearch.style.display = 'none';
       renderFeed();
     });
 
@@ -1551,12 +1552,26 @@
     // Header Buttons
     setupModal('btnSettings', 'settingsModal');
     document.getElementById('btnCombinedQuiz')?.addEventListener('click', openQuizHubModal);
-    document.getElementById('btnHistory')?.addEventListener('click', openHistoryModal);
+
+    // Open History modal from inside Settings
+    document.getElementById('btnOpenHistoryFromSettings')?.addEventListener('click', () => {
+      closeModal('settingsModal');
+      openHistoryModal();
+    });
 
     // Open Add Patch modal from inside Settings
     document.getElementById('btnOpenAddPatchFromSettings')?.addEventListener('click', () => {
       closeModal('settingsModal');
       openModal('addPatchModal');
+    });
+
+    // Prepopulate settings fields when opening Settings
+    document.getElementById('btnSettings')?.addEventListener('click', () => {
+      const passInput = document.getElementById('settingDeletePassword');
+      const tokenInput = document.getElementById('settingOwnerToken');
+      if (passInput) passInput.value = userProgress.delete_password || '';
+      if (tokenInput) tokenInput.value = userProgress.owner_token || '';
+      applyTheme(userProgress.theme || 'ivory');
     });
 
     // Close modal buttons
@@ -1807,6 +1822,7 @@
         }
         saveUserProgress();
         await loadAllPatches();
+        populateCardSelector();
         renderFeed();
         alert('Progress imported and merged!');
         closeModal('settingsModal');

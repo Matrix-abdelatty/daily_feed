@@ -1,15 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
-  <title>Daily Feed — Practical 5-Card Patches</title>
-  <meta name="description" content="Short, practical 5-card patches in English and Egyptian Arabic to replace mindless scrolling. Combined quizzes, spaced repetition, 100% free forever.">
+  <title>Daily Feed</title>
+  <meta name="description"
+    content="Short, practical 5-card patches in English and Egyptian Arabic to replace mindless scrolling. Combined quizzes, spaced repetition, 100% free forever.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&family=Inter:wght@400;500;600;700;800&family=Merriweather:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&family=Inter:wght@400;500;600;700;800&family=Merriweather:ital,wght@0,400;0,700;1,400&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
   <!-- Sticky Top App Header -->
   <header class="app-header">
@@ -24,15 +29,12 @@
         </div>
       </div>
 
-      <!-- Quick Action Bar: Quiz, History, Settings -->
+      <!-- Quick Action Bar: Quiz & Settings -->
       <div class="header-actions">
         <button class="action-pill quiz-pill" id="btnCombinedQuiz" title="Combined Quiz &amp; Spaced Repetition Review">
           <span>🧠 Quiz (<span id="srsDueCount">0</span>)</span>
         </button>
-        <button class="action-pill" id="btnHistory" title="Patch Status &amp; Upload History">
-          <span>📜 History</span>
-        </button>
-        <button class="action-pill icon-only" id="btnSettings" title="Settings, Content &amp; Backup">
+        <button class="action-pill icon-only" id="btnSettings" title="Settings, Appearance &amp; History">
           ⚙️
         </button>
       </div>
@@ -65,12 +67,13 @@
         </button>
       </div>
 
-      <!-- Search + Single Grouped Topics Button Row -->
+      <!-- Card Selector Dropdown + Single Grouped Topics Button Row -->
       <div class="search-topic-row">
-        <div class="search-wrapper">
-          <span class="search-icon">🔍</span>
-          <input type="text" id="searchInput" placeholder="Search cards (EN or عربي)..." autocomplete="off">
-          <button class="clear-search-btn" id="clearSearch" title="Clear search">✕</button>
+        <div class="card-select-wrapper">
+          <span class="select-icon">🎯</span>
+          <select id="cardSelectPicker" class="card-select-dropdown" aria-label="Select card to jump to">
+            <option value="">Jump to Card...</option>
+          </select>
         </div>
 
         <!-- Single Grouped Topics Button -->
@@ -118,10 +121,9 @@
         <!-- Language Display Toggle placed at the START of Topics -->
         <div class="topics-section-block">
           <div class="topics-section-title">🌐 Card Language / لغة الكروت</div>
-          <div class="lang-toggle-group" id="langToggle" role="group" aria-label="Card language">
-            <button class="lang-btn active" data-lang="both">Both (EN &amp; عربي)</button>
-            <button class="lang-btn" data-lang="en">EN Only</button>
-            <button class="lang-btn" data-lang="ar">عربي فقط</button>
+          <div class="lang-toggle-group two-options" id="langToggle" role="group" aria-label="Card language">
+            <button class="lang-btn active" data-lang="en">English (EN)</button>
+            <button class="lang-btn" data-lang="ar">عربي (مصري)</button>
           </div>
         </div>
 
@@ -172,7 +174,8 @@
           <!-- Way 2: Paste JSON text -->
           <div class="form-group">
             <label for="jsonPatchTextarea">📋 <strong>Option 2: Paste JSON Text Directly</strong></label>
-            <textarea id="jsonPatchTextarea" rows="7" placeholder='Paste your JSON batch object {"cards": [...]} or array of cards [...] here...'></textarea>
+            <textarea id="jsonPatchTextarea" rows="7"
+              placeholder='Paste your JSON batch object {"cards": [...]} or array of cards [...] here...'></textarea>
           </div>
 
           <!-- Instant Validation Preview -->
@@ -318,12 +321,70 @@
         <button class="modal-close-btn" data-close="settingsModal">✕</button>
       </div>
       <div class="modal-body settings-body">
-        <!-- Section 1: Add Content (JSON Patch / Single Card) -->
+        <!-- Section 1: UI Color & Text Color Themes (5 Options) -->
+        <section class="settings-section">
+          <h3>🎨 Appearance &amp; Color Theme</h3>
+          <p>Choose your reading color theme and text contrast:</p>
+          <div class="theme-options-grid" id="themeOptionsGrid">
+            <button type="button" class="theme-picker-btn active" data-theme-name="ivory" title="Ivory Cream (Warm Editorial)">
+              <span class="theme-color-dots">
+                <span style="background: #f6f4ee;"></span>
+                <span style="background: #ffffff;"></span>
+                <span style="background: #166b5c;"></span>
+              </span>
+              <span class="theme-label">Ivory Cream</span>
+            </button>
+            <button type="button" class="theme-picker-btn" data-theme-name="midnight" title="Midnight Dark (Night Mode)">
+              <span class="theme-color-dots">
+                <span style="background: #0b1017;"></span>
+                <span style="background: #151e2b;"></span>
+                <span style="background: #38bdf8;"></span>
+              </span>
+              <span class="theme-label">Midnight Dark</span>
+            </button>
+            <button type="button" class="theme-picker-btn" data-theme-name="paper" title="Minimal Paper (Clean White)">
+              <span class="theme-color-dots">
+                <span style="background: #f8fafc;"></span>
+                <span style="background: #ffffff;"></span>
+                <span style="background: #2563eb;"></span>
+              </span>
+              <span class="theme-label">Minimal Paper</span>
+            </button>
+            <button type="button" class="theme-picker-btn" data-theme-name="sepia" title="Warm Sepia (Vintage Book)">
+              <span class="theme-color-dots">
+                <span style="background: #f4ede4;"></span>
+                <span style="background: #fbf7f0;"></span>
+                <span style="background: #9a3412;"></span>
+              </span>
+              <span class="theme-label">Warm Sepia</span>
+            </button>
+            <button type="button" class="theme-picker-btn" data-theme-name="forest" title="Sage Forest (Calm Green)">
+              <span class="theme-color-dots">
+                <span style="background: #eef3ef;"></span>
+                <span style="background: #f7faf7;"></span>
+                <span style="background: #2d6a4f;"></span>
+              </span>
+              <span class="theme-label">Sage Forest</span>
+            </button>
+          </div>
+        </section>
+
+        <!-- Section 2: Add Content (JSON Patch / Single Card) -->
         <section class="settings-section highlight-section">
           <h3>📥 Add Content</h3>
           <p>Add a 5-card JSON patch generated by any AI tool, or write a custom card.</p>
-          <button type="button" class="primary-btn" id="btnOpenAddPatchFromSettings" style="width: 100%; justify-content: center; margin-top: 8px;">
+          <button type="button" class="primary-btn" id="btnOpenAddPatchFromSettings"
+            style="width: 100%; justify-content: center; margin-top: 8px;">
             📥 + Add JSON Patch or Card
+          </button>
+        </section>
+
+        <!-- Section 3: History Log (Moved inside Settings) -->
+        <section class="settings-section">
+          <h3>📜 Patch &amp; Upload History</h3>
+          <p>View the full status log, card ranges, and history of all 5-card patches.</p>
+          <button type="button" class="secondary-btn" id="btnOpenHistoryFromSettings">
+            📜 View Patch History Log
           </button>
         </section>
 
@@ -352,7 +413,8 @@
           <div class="form-group">
             <label for="settingOwnerToken">Owner GitHub Token (Optional)</label>
             <input type="password" id="settingOwnerToken" placeholder="GitHub Personal Access Token (PAT)">
-            <small>When set on your device, uploading a JSON patch or deleting a card syncs directly to the public GitHub repository.</small>
+            <small>When set on your device, uploading a JSON patch or deleting a card syncs directly to the public
+              GitHub repository.</small>
           </div>
           <button class="primary-btn" id="btnSaveSettings">Save Preferences</button>
         </section>
@@ -372,4 +434,5 @@
 
   <script src="app.js"></script>
 </body>
+
 </html>

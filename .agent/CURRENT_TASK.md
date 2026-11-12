@@ -1,7 +1,33 @@
 # CURRENT TASK
 > Entries newest on top.
 
-## 2026-11-12 23:55 +02:00 — Editorial Card Redesign & UI Enhancement Complete
+## 2026-11-13 00:35 +02:00 — Single-Patch Feed, 5 Color Themes, Card Selector & Single-Language Upgrade
+- **Status:** Complete, tested, verified across all 25 automated CDP test checks in live Chrome, and ready to deploy!
+- **Key Enhancements Implemented:**
+  1. **Undid DL Avatar & Title:** Completely removed the dark navy `#233746` circle with "DL" and "The Daily Lesson" series title from all cards. Replaced with clean metadata (`#N`, `Patch #X`, topic pill).
+  2. **5 Reading Color Themes in Settings (⚙️):**
+     - `Ivory Cream` (Warm Editorial - default)
+     - `Midnight Dark` (True Dark Mode)
+     - `Minimal Paper` (Clean High-Contrast White)
+     - `Warm Sepia` (Vintage Book)
+     - `Sage Forest` (Calm Green)
+     - Persists in `localStorage` and switches dynamically without reload.
+  3. **Single Patch on Home Feed (`🆕 New Feed`):**
+     - Displays ONLY the latest 5-card patch on the home feed (or selected patch).
+     - At the bottom of the patch: `🧠 Quiz This Patch (5 Questions)`, `✅ Mark Patch as Finished`, and `◀ Older Patch` / `Newer Patch ▶` navigation bar.
+  4. **Clean Action Buttons (No Like, No Per-Card Quiz):**
+     - Deleted `Like` button completely (using `🔖 Save` bookmarks only).
+     - Deleted per-card `Quiz` button under individual cards (quizzing is done per 5-card patch or via Combined Quiz Hub).
+     - Individual cards keep only `🔖 Save` and `🗑️ Delete` (password protected).
+  5. **Card Selector Dropdown:**
+     - Replaced search input with a card selector dropdown (`<select id="cardSelectPicker">`).
+     - Options dynamically list `#N · [TOPIC] Title` in chosen language.
+     - Selecting any card instantly navigates to its patch/tab, scrolls to the card, and highlights it with a golden glow pulse (`.highlight-pulse`).
+  6. **Organized Settings & History:**
+     - Moved the `📜 History` button out of the header into Section 3 inside Settings (⚙️), keeping the main header minimal (`🧠 Quiz` + `⚙️ Settings`).
+  7. **Single Language per Card (No Translation Pairing):**
+     - Eliminated dual-language translation stacking and bilingual dividers. Cards render strictly in ONE chosen language (English or Egyptian Arabic).
+     - Quizzes also render strictly in the chosen language.
 - **Status:** Implemented, verified in live Chrome, and deployed!
 - **Card Design Upgrade (matching user reference image):**
   * Avatar circle with dark navy slate background (`#233746`) displaying "DL" (The Daily Lesson).
