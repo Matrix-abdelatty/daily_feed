@@ -1,6 +1,23 @@
 # CURRENT TASK
 > Entries newest on top.
 
+## 2026-11-12 23:55 +02:00 — Editorial Card Redesign & UI Enhancement Complete
+- **Status:** Implemented, verified in live Chrome, and deployed!
+- **Card Design Upgrade (matching user reference image):**
+  * Avatar circle with dark navy slate background (`#233746`) displaying "DL" (The Daily Lesson).
+  * Series title "The Daily Lesson" with card number `#N` and patch info.
+  * Sage green uppercase topic badge pill (`#e2ede7` / `#235347`) on top right (e.g. `MEETINGS`, `PERSUASION`).
+  * High-contrast bold serif headline (`Merriweather`, 22px bold) for strong editorial readability.
+  * Clean body paragraph hook in Inter with expandable "See more" link revealing why, example, and mistake to avoid.
+  * Distinctive "SAY THIS" callout box with warm peach/sand background (`#fbf3ea`), rust left border (`#b85414`), uppercase rust label, and italic serif quote with 1-click copy button.
+  * "The move:" takeaway row with deep pine teal accent (`#166b5c`).
+  * Editorial card footer with interactive `♡ Like` / `❤️ Liked`, `🧠 Quiz` (single card test), `🔖 Save` / `🔖 Saved` (bookmarks), and subtle `🗑️` delete action.
+  * Full Egyptian Arabic support with Cairo font, RTL callout border, "قول كدة بالمصري", and "الخلاصة:".
+- **Navigation & Modals Organization:**
+  * **Settings (⚙️):** Moved "+ Add JSON Patch or Card" into a dedicated top highlighted section inside Settings, cleaning up the top header.
+  * **Status Bar:** Removed redundant "View Log ▸" button; log is cleanly accessible via "📜 History".
+  * **Topics Modal:** Added the "en-ar" Card Language switcher (`Both (EN & عربي) | EN Only | عربي فقط`) directly at the start inside the Topics popup before the categories.
+
 ## 2026-11-12 23:10 +02:00 — Patch-Based v2 Upgrade Implemented & Deployed
 - Reorganized library into **4 complete Patches of 5 cards each** (`Patch #1: #1–#5`, `Patch #2: #6–#10`, `Patch #3: #11–#15`, `Patch #4: #16–#20`), adding 4 new high-quality cards (`#17–#20`) without touching API quota.
 - Upgraded `scripts/generate_daily.py` and `config/generator.config.json` to `gemini-3.8-flash` → `gemini-3.5-flash` → Groq (`openai/gpt-oss-120b`), generating `3 × 5 = 15` cards/day in 5-card patch files.

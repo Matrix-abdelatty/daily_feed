@@ -37,7 +37,8 @@
   const STORAGE_KEY = 'daily_feed_progress_v2';
   const LEGACY_KEY = 'daily_feed_progress_v1';
   let userProgress = {
-    saves: {},            // cardId -> timestamp (Single bookmark action: Save ⭐)
+    likes: {},            // cardId -> timestamp (Like ♡ / ❤️)
+    saves: {},            // cardId -> timestamp (Bookmark / Save 🔖)
     finished_patches: {}, // batchId -> { finished_at, score, total }
     srs: {},              // cardId -> { stage: 0..6, due: 'YYYY-MM-DD', updated_at: '...' }
     mistakes: {},         // cardId -> timestamp
@@ -67,6 +68,8 @@
       if (rawV2) {
         const parsed = JSON.parse(rawV2);
         userProgress = Object.assign(userProgress, parsed);
+        userProgress.likes = userProgress.likes || {};
+        userProgress.saves = userProgress.saves || {};
       } else {
         // Migrate from v1 if present
         const rawV1 = localStorage.getItem(LEGACY_KEY);
@@ -569,7 +572,7 @@
     return wrap;
   }
 
-  // Create Single Card Element (Clean Reading View — Only ⭐ Save and 🗑️ Delete)
+  // Create Single Card Element (Matching Editorial Reference Image)
   function createCardElement(card) {
     const el = document.createElement('article');
     el.className = 'card-item';
@@ -577,154 +580,262 @@
 
     const num = numbersMap[card.id] || '?';
     const isSaved = !!userProgress.saves[card.id];
-    const topicObj = topics.find(t => t.id === card.topic) || { label: card.topic, icon: '📌' };
+    const isLiked = !!(userProgress.likes && userProgress.likes[card.id]);
+    const topicObj = topics.find(t => t.id === card.topic) || { label: card.topic || 'General', icon: '📌' };
+    const topicPillText = (card.topic || 'General').toUpperCase();
 
-    const headerRow = document.createElement('div');
-    headerRow.className = 'card-header-row';
-
-    const metaLeft = document.createElement('div');
-    metaLeft.className = 'card-meta-left';
-    metaLeft.innerHTML = `
-      <span class="card-number-badge">#${num}</span>
-      <span class="card-topic-badge">${topicObj.icon} ${topicObj.label}</span>
-      <span class="card-level-badge ${card.level || 'beginner'}">${card.level || 'beginner'}</span>
-      ${card._patch_number ? `<span class="card-topic-badge">Patch #${card._patch_number}</span>` : ''}
+    // 1. Top Meta Row: Avatar (DL) + Series Name / Number + Sage Topic Pill
+    const topRow = document.createElement('div');
+    topRow.className = 'card-top-row';
+    topRow.innerHTML = `
+      <div class="card-author-info">
+        <div class="card-avatar" title="The Daily Lesson">DL</div>
+        <div class="card-author-meta">
+          <span class="card-series-name">The Daily Lesson</span>
+          <span class="card-timestamp">#${num}${card._patch_number ? ` · Patch #${card._patch_number}` : ''}</span>
+        </div>
+      </div>
+      <div class="card-topic-pill">${topicPillText}</div>
     `;
+    el.appendChild(topRow);
 
-    const actionsRight = document.createElement('div');
-    actionsRight.className = 'card-actions-right';
-
-    // Single Bookmark Action: ⭐ Save
-    const saveBtn = document.createElement('button');
-    saveBtn.type = 'button';
-    saveBtn.className = 'card-action-btn' + (isSaved ? ' saved' : '');
-    saveBtn.title = isSaved ? 'Saved in your Saved tab' : 'Save card to your Saved tab';
-    saveBtn.innerHTML = isSaved ? '⭐ Saved' : '☆ Save';
-    saveBtn.addEventListener('click', () => toggleSave(card.id, saveBtn));
-
-    // Delete Button (password guard)
-    const deleteBtn = document.createElement('button');
-    deleteBtn.type = 'button';
-    deleteBtn.className = 'card-action-btn delete-btn';
-    deleteBtn.title = 'Delete this card';
-    deleteBtn.innerHTML = '🗑️';
-    deleteBtn.addEventListener('click', () => confirmDeleteCard(card.id));
-
-    actionsRight.appendChild(saveBtn);
-    actionsRight.appendChild(deleteBtn);
-
-    headerRow.appendChild(metaLeft);
-    headerRow.appendChild(actionsRight);
-    el.appendChild(headerRow);
-
-    // English Content Block
+    // 2. English Section
     const showEn = (currentLang === 'both' || currentLang === 'en') && card.en;
     if (showEn) {
-      const enBlock = document.createElement('div');
-      enBlock.className = 'content-block';
-      enBlock.innerHTML = `
-        <h2 class="card-title">${card.en.title || ''}</h2>
-        ${card.en.hook ? `<div class="card-hook">💡 ${card.en.hook}</div>` : ''}
-        ${card.en.key_phrase ? `
-          <div class="card-key-phrase">
-            <span>💬 "${card.en.key_phrase}"</span>
-            <button type="button" class="copy-phrase-btn">📋 Copy</button>
-          </div>` : ''}
-        <button type="button" class="card-details-toggle">
-          <span>Read Details &amp; Examples ▾</span>
-        </button>
-        <div class="card-details-body">
-          <div class="detail-row"><strong>🎯 Do / Say:</strong> ${card.en.action || ''}</div>
-          ${card.en.when ? `<div class="detail-row"><strong>⏱ When:</strong> ${card.en.when}</div>` : ''}
-          ${card.en.why ? `<div class="detail-row"><strong>💡 Why:</strong> ${card.en.why}</div>` : ''}
-          ${card.en.example ? `<div class="detail-row"><strong>📖 Example:</strong> ${card.en.example}</div>` : ''}
-          ${card.en.mistake ? `<div class="detail-row"><strong>⚠️ Avoid:</strong> ${card.en.mistake}</div>` : ''}
-        </div>
+      const en = card.en;
+      const enSection = document.createElement('div');
+      enSection.className = 'card-editorial-content';
+
+      const hasDetails = !!(en.why || en.when || en.example || en.mistake);
+
+      enSection.innerHTML = `
+        <h2 class="card-editorial-headline">${en.title || ''}</h2>
+        ${en.hook ? `<div class="card-hook-text">${en.hook}</div>` : ''}
+
+        ${hasDetails ? `
+          <button type="button" class="card-see-more-btn">See more</button>
+          <div class="card-expanded-details">
+            ${en.why ? `<div class="detail-row"><strong>💡 Why it works:</strong> ${en.why}</div>` : ''}
+            ${en.when ? `<div class="detail-row"><strong>⏱ When to use:</strong> ${en.when}</div>` : ''}
+            ${en.example ? `<div class="detail-row"><strong>📖 Real Example:</strong> ${en.example}</div>` : ''}
+            ${en.mistake ? `<div class="detail-row"><strong>⚠️ Mistake to avoid:</strong> ${en.mistake}</div>` : ''}
+          </div>
+        ` : ''}
+
+        ${en.key_phrase ? `
+          <div class="card-callout-box">
+            <div class="callout-header">
+              <span class="callout-label">SAY THIS</span>
+              <button type="button" class="copy-phrase-btn" title="Copy phrase">📋 Copy</button>
+            </div>
+            <div class="callout-quote">"${en.key_phrase}"</div>
+          </div>
+        ` : ''}
+
+        ${en.action ? `
+          <div class="card-move-row">
+            <strong class="move-label">The move:</strong>
+            <span class="move-text">${en.action}</span>
+          </div>
+        ` : ''}
       `;
 
-      const cpBtn = enBlock.querySelector('.copy-phrase-btn');
+      // Copy phrase action
+      const cpBtn = enSection.querySelector('.copy-phrase-btn');
       if (cpBtn) {
-        cpBtn.addEventListener('click', () => {
-          navigator.clipboard.writeText(card.en.key_phrase);
+        cpBtn.addEventListener('click', (e) => {
+          e.stopPropagation();
+          navigator.clipboard.writeText(en.key_phrase);
           cpBtn.textContent = '✓ Copied';
           setTimeout(() => { cpBtn.textContent = '📋 Copy'; }, 1800);
         });
       }
 
-      const dtToggle = enBlock.querySelector('.card-details-toggle');
-      const dtBody = enBlock.querySelector('.card-details-body');
-      dtToggle.addEventListener('click', () => {
-        const open = dtBody.classList.toggle('open');
-        dtToggle.querySelector('span').textContent = open ? 'Hide Details ▴' : 'Read Details & Examples ▾';
-      });
-
-      el.appendChild(enBlock);
-    }
-
-    if (currentLang === 'both' && card.en && card.ar) {
-      const div = document.createElement('div');
-      div.className = 'bilingual-divider';
-      el.appendChild(div);
-    }
-
-    // Arabic Content Block
-    const showAr = (currentLang === 'both' || currentLang === 'ar') && card.ar;
-    if (showAr) {
-      const arBlock = document.createElement('div');
-      arBlock.className = 'content-block rtl';
-      arBlock.dir = 'rtl';
-      arBlock.innerHTML = `
-        <h2 class="card-title">${card.ar.title || ''}</h2>
-        ${card.ar.hook ? `<div class="card-hook">💡 ${card.ar.hook}</div>` : ''}
-        ${card.ar.key_phrase ? `
-          <div class="card-key-phrase">
-            <span>💬 «${card.ar.key_phrase}»</span>
-            <button type="button" class="copy-phrase-btn">📋 نسخ</button>
-          </div>` : ''}
-        <button type="button" class="card-details-toggle">
-          <span>التفاصيل والأمثلة ▾</span>
-        </button>
-        <div class="card-details-body">
-          <div class="detail-row"><strong>🎯 الخطوة:</strong> ${card.ar.action || ''}</div>
-          ${card.ar.when ? `<div class="detail-row"><strong>⏱ التوقيت:</strong> ${card.ar.when}</div>` : ''}
-          ${card.ar.why ? `<div class="detail-row"><strong>💡 ليه بتشتغل:</strong> ${card.ar.why}</div>` : ''}
-          ${card.ar.example ? `<div class="detail-row"><strong>📖 مثال عملي:</strong> ${card.ar.example}</div>` : ''}
-          ${card.ar.mistake ? `<div class="detail-row"><strong>⚠️ الغلطة:</strong> ${card.ar.mistake}</div>` : ''}
-        </div>
-      `;
-
-      const cpBtn = arBlock.querySelector('.copy-phrase-btn');
-      if (cpBtn) {
-        cpBtn.addEventListener('click', () => {
-          navigator.clipboard.writeText(card.ar.key_phrase);
-          cpBtn.textContent = '✓ تم النسخ';
-          setTimeout(() => { cpBtn.textContent = '📋 نسخ'; }, 1800);
+      // See more toggle
+      const seeMoreBtn = enSection.querySelector('.card-see-more-btn');
+      const detailsBody = enSection.querySelector('.card-expanded-details');
+      if (seeMoreBtn && detailsBody) {
+        seeMoreBtn.addEventListener('click', (e) => {
+          e.stopPropagation();
+          const isOpen = detailsBody.classList.toggle('open');
+          seeMoreBtn.textContent = isOpen ? 'See less' : 'See more';
         });
       }
 
-      const dtToggle = arBlock.querySelector('.card-details-toggle');
-      const dtBody = arBlock.querySelector('.card-details-body');
-      dtToggle.addEventListener('click', () => {
-        const open = dtBody.classList.toggle('open');
-        dtToggle.querySelector('span').textContent = open ? 'إخفاء التفاصيل ▴' : 'التفاصيل والأمثلة ▾';
-      });
-
-      el.appendChild(arBlock);
+      el.appendChild(enSection);
     }
+
+    // Bilingual Divider if both languages are shown
+    if (currentLang === 'both' && card.en && card.ar) {
+      const bdiv = document.createElement('div');
+      bdiv.className = 'card-bilingual-divider';
+      bdiv.innerHTML = `<span>المحتوى بالمصري · Egyptian Arabic</span>`;
+      el.appendChild(bdiv);
+    }
+
+    // 3. Arabic Section
+    const showAr = (currentLang === 'both' || currentLang === 'ar') && card.ar;
+    if (showAr) {
+      const ar = card.ar;
+      const arSection = document.createElement('div');
+      arSection.className = 'card-editorial-content rtl';
+      arSection.dir = 'rtl';
+
+      const hasArDetails = !!(ar.why || ar.when || ar.example || ar.mistake);
+
+      arSection.innerHTML = `
+        <h2 class="card-editorial-headline ar">${ar.title || ''}</h2>
+        ${ar.hook ? `<div class="card-hook-text ar">${ar.hook}</div>` : ''}
+
+        ${hasArDetails ? `
+          <button type="button" class="card-see-more-btn ar">اقرأ المزيد</button>
+          <div class="card-expanded-details ar">
+            ${ar.why ? `<div class="detail-row"><strong>💡 ليه بتشتغل:</strong> ${ar.why}</div>` : ''}
+            ${ar.when ? `<div class="detail-row"><strong>⏱ إمتى تستخدمها:</strong> ${ar.when}</div>` : ''}
+            ${ar.example ? `<div class="detail-row"><strong>📖 مثال واقعي:</strong> ${ar.example}</div>` : ''}
+            ${ar.mistake ? `<div class="detail-row"><strong>⚠️ الغلطة الشائعة:</strong> ${ar.mistake}</div>` : ''}
+          </div>
+        ` : ''}
+
+        ${ar.key_phrase ? `
+          <div class="card-callout-box rtl">
+            <div class="callout-header">
+              <span class="callout-label">قول كدة بالمصري</span>
+              <button type="button" class="copy-phrase-btn" title="نسخ الجملة">📋 نسخ</button>
+            </div>
+            <div class="callout-quote ar">«${ar.key_phrase}»</div>
+          </div>
+        ` : ''}
+
+        ${ar.action ? `
+          <div class="card-move-row ar">
+            <strong class="move-label ar">الخلاصة:</strong>
+            <span class="move-text">${ar.action}</span>
+          </div>
+        ` : ''}
+      `;
+
+      const cpBtnAr = arSection.querySelector('.copy-phrase-btn');
+      if (cpBtnAr) {
+        cpBtnAr.addEventListener('click', (e) => {
+          e.stopPropagation();
+          navigator.clipboard.writeText(ar.key_phrase);
+          cpBtnAr.textContent = '✓ تم النسخ';
+          setTimeout(() => { cpBtnAr.textContent = '📋 نسخ'; }, 1800);
+        });
+      }
+
+      const seeMoreBtnAr = arSection.querySelector('.card-see-more-btn');
+      const detailsBodyAr = arSection.querySelector('.card-expanded-details');
+      if (seeMoreBtnAr && detailsBodyAr) {
+        seeMoreBtnAr.addEventListener('click', (e) => {
+          e.stopPropagation();
+          const isOpen = detailsBodyAr.classList.toggle('open');
+          seeMoreBtnAr.textContent = isOpen ? 'اقرأ أقل' : 'اقرأ المزيد';
+        });
+      }
+
+      el.appendChild(arSection);
+    }
+
+    // 4. Divider Line
+    const hr = document.createElement('hr');
+    hr.className = 'card-footer-divider';
+    el.appendChild(hr);
+
+    // 5. Footer Actions (Like on left, Save on right, Quiz & Delete)
+    const footer = document.createElement('div');
+    footer.className = 'card-editorial-footer';
+
+    // Left actions: Like + Quiz
+    const leftActions = document.createElement('div');
+    leftActions.className = 'card-footer-left';
+
+    const likeBtn = document.createElement('button');
+    likeBtn.type = 'button';
+    likeBtn.className = 'card-footer-btn like-btn' + (isLiked ? ' liked' : '');
+    likeBtn.innerHTML = `
+      <svg class="footer-icon heart-icon" viewBox="0 0 24 24" fill="${isLiked ? 'currentColor' : 'none'}" stroke="currentColor" stroke-width="2">
+        <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+      </svg>
+      <span class="btn-text">${isLiked ? 'Liked' : 'Like'}</span>
+    `;
+    likeBtn.addEventListener('click', () => toggleLike(card.id, likeBtn));
+    leftActions.appendChild(likeBtn);
+
+    const quizBtn = document.createElement('button');
+    quizBtn.type = 'button';
+    quizBtn.className = 'card-footer-btn quiz-btn';
+    quizBtn.title = 'Test yourself with this card\'s quiz question';
+    quizBtn.innerHTML = `
+      <span class="icon">🧠</span>
+      <span class="btn-text">Quiz</span>
+    `;
+    quizBtn.addEventListener('click', () => {
+      runInteractiveQuizSession(`🧠 Quiz: Card #${num}`, [card], null);
+    });
+    leftActions.appendChild(quizBtn);
+
+    // Right actions: Save + Delete
+    const rightActions = document.createElement('div');
+    rightActions.className = 'card-footer-right';
+
+    const saveBtn = document.createElement('button');
+    saveBtn.type = 'button';
+    saveBtn.className = 'card-footer-btn save-btn' + (isSaved ? ' saved' : '');
+    saveBtn.title = isSaved ? 'Saved in your Saved tab' : 'Save card to your Saved tab';
+    saveBtn.innerHTML = `
+      <svg class="footer-icon bookmark-icon" viewBox="0 0 24 24" fill="${isSaved ? 'currentColor' : 'none'}" stroke="currentColor" stroke-width="2">
+        <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path>
+      </svg>
+      <span class="btn-text">${isSaved ? 'Saved' : 'Save'}</span>
+    `;
+    saveBtn.addEventListener('click', () => toggleSave(card.id, saveBtn));
+    rightActions.appendChild(saveBtn);
+
+    const deleteBtn = document.createElement('button');
+    deleteBtn.type = 'button';
+    deleteBtn.className = 'card-footer-btn delete-btn';
+    deleteBtn.title = 'Delete card (Password protected)';
+    deleteBtn.innerHTML = `
+      <span class="icon">🗑️</span>
+    `;
+    deleteBtn.addEventListener('click', () => confirmDeleteCard(card.id));
+    rightActions.appendChild(deleteBtn);
+
+    footer.appendChild(leftActions);
+    footer.appendChild(rightActions);
+    el.appendChild(footer);
 
     return el;
   }
 
-  // Toggle Save Card (Single Bookmark Action)
-  function toggleSave(cardId, btnEl) {
-    if (userProgress.saves[cardId]) {
-      delete userProgress.saves[cardId];
-      btnEl.classList.remove('saved');
-      btnEl.innerHTML = '☆ Save';
+  // Toggle Like Card
+  function toggleLike(cardId, btnEl) {
+    userProgress.likes = userProgress.likes || {};
+    const isNowLiked = !userProgress.likes[cardId];
+    if (isNowLiked) {
+      userProgress.likes[cardId] = Date.now();
+      btnEl.classList.add('liked');
+      btnEl.querySelector('.heart-icon')?.setAttribute('fill', 'currentColor');
+      btnEl.querySelector('.btn-text').textContent = 'Liked';
     } else {
+      delete userProgress.likes[cardId];
+      btnEl.classList.remove('liked');
+      btnEl.querySelector('.heart-icon')?.setAttribute('fill', 'none');
+      btnEl.querySelector('.btn-text').textContent = 'Like';
+    }
+    saveUserProgress();
+  }
+
+  // Toggle Save Card (Bookmark Action)
+  function toggleSave(cardId, btnEl) {
+    const isNowSaved = !userProgress.saves[cardId];
+    if (isNowSaved) {
       userProgress.saves[cardId] = Date.now();
       btnEl.classList.add('saved');
-      btnEl.innerHTML = '⭐ Saved';
+      btnEl.querySelector('.bookmark-icon')?.setAttribute('fill', 'currentColor');
+      btnEl.querySelector('.btn-text').textContent = 'Saved';
       if (!userProgress.srs[cardId]) {
         userProgress.srs[cardId] = {
           stage: 0,
@@ -732,6 +843,11 @@
           updated_at: new Date().toISOString()
         };
       }
+    } else {
+      delete userProgress.saves[cardId];
+      btnEl.classList.remove('saved');
+      btnEl.querySelector('.bookmark-icon')?.setAttribute('fill', 'none');
+      btnEl.querySelector('.btn-text').textContent = 'Save';
     }
     saveUserProgress();
     if (activeTab === 'saved') renderFeed();
@@ -1433,11 +1549,15 @@
     document.getElementById('btnTopicsPicker')?.addEventListener('click', openTopicsModal);
 
     // Header Buttons
-    setupModal('btnAddPatch', 'addPatchModal');
     setupModal('btnSettings', 'settingsModal');
     document.getElementById('btnCombinedQuiz')?.addEventListener('click', openQuizHubModal);
     document.getElementById('btnHistory')?.addEventListener('click', openHistoryModal);
-    document.getElementById('btnStatusHistoryLink')?.addEventListener('click', openHistoryModal);
+
+    // Open Add Patch modal from inside Settings
+    document.getElementById('btnOpenAddPatchFromSettings')?.addEventListener('click', () => {
+      closeModal('settingsModal');
+      openModal('addPatchModal');
+    });
 
     // Close modal buttons
     document.querySelectorAll('[data-close]').forEach(btn => {
@@ -1597,11 +1717,16 @@
     publishValidatedJsonPatch();
   }
 
+  function openModal(modalId) {
+    const modal = document.getElementById(modalId);
+    if (modal) modal.classList.add('open');
+  }
+
   function setupModal(triggerId, modalId) {
     const trigger = document.getElementById(triggerId);
     const modal = document.getElementById(modalId);
     if (!trigger || !modal) return;
-    trigger.addEventListener('click', () => modal.classList.add('open'));
+    trigger.addEventListener('click', () => openModal(modalId));
   }
 
   function closeModal(modalId) {

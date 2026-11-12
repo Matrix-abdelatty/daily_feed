@@ -1,6 +1,12 @@
 # DECISIONS
 > Entries newest on top. All decided by owner on 2026-11-12.
 
+## 2026-11-12 23:55 +02:00 — Editorial Card Styling & Navigation Reorganization
+- D25. **Warm Editorial Card Aesthetic:** Adopted the reference publication card styling featuring warm paper background, dark navy slate "DL" avatar, sage green topic pills, bold Merriweather serif titles, warm terracotta "SAY THIS" callouts, and pine teal "The move" takeaways.
+- D26. **Settings-Centric JSON Upload:** Moved "+ Add JSON Patch or Card" inside Settings (⚙️) to keep top header minimal and distraction-free.
+- D27. **Status Bar Simplification:** Deleted redundant "View Log ▸" link from the patch status bar since the header has a dedicated "📜 History" button.
+- D28. **Topics Modal Language Selector:** Positioned the Card Language switch (`Both | EN | عربي`) at the start inside the Topics modal.
+
 ## 2026-11-12 23:10 +02:00 — Patch-Based UX, Model Hierarchy & Mobile-First Upgrade
 - D17. **Model Chain:** `gemini-3.8-flash` (Primary) → `gemini-3.5-flash` (Secondary) → Groq `openai/gpt-oss-120b` (Emergency backup only). Removed `3.5-flash-lite`.
 - D18. **Daily Generation:** 15 cards/day in **3 separate Patches of 5 cards each** (`3 × 5`). Includes backoff retry on 503/429 and surgical single-card replacement.
