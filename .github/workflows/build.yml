@@ -48,6 +48,7 @@ jobs:
           git add data/
           if ! git diff --cached --quiet; then
             git commit -m "Auto-update index, numbers, and search index [skip ci]"
+            git pull --rebase origin main
             git push origin main
           fi
 
