@@ -1,0 +1,268 @@
+{
+  "schema_version": 1,
+  "batch_id": "2026-11-12_patch_04",
+  "created_at": "2026-11-12T08:15:00+02:00",
+  "source": "curated",
+  "cards": [
+    {
+      "id": "2026-11-12_psychology_persuasion",
+      "created_at": "2026-11-12T19:40:37.006455+00:00",
+      "topic": "persuasion",
+      "tags": ["psychology", "influence", "communication"],
+      "level": "intermediate",
+      "needs_completion": false,
+      "en": {
+        "title": "The 'Because' Trigger: Give the Brain a Reason to Comply",
+        "hook": "In Harvard's famous copier study, adding the word 'because' jumped compliance from 60% to 93% — even when the reason was obvious.",
+        "action": "Whenever you make an ask, change a deadline, or set a boundary, attach the word 'because' followed by the concrete operational reason.",
+        "key_phrase": "Can we finalize the sign-off by 3:00 PM today, because the engineering sprint locks at 4:00 PM?",
+        "when": "Asking a colleague, client, or stakeholder for a favor, fast approval, or schedule change.",
+        "why": "The human brain resists arbitrary commands (psychological reactance) but switches into cooperative mode as soon as it hears a cause-and-effect 'because'.",
+        "example": "Weak: 'Please send the logo files today.' Strong: 'Could you send the logo files by 2 PM today, because the printer locks the press run at 3 PM?'",
+        "mistake": "Issuing bare requests like 'I need this ASAP' which feel bossy and get pushed to the bottom of their inbox."
+      },
+      "ar": {
+        "title": "سر كلمة «عشان»: ازاي ترفع نسبة الموافقة على أي طلب",
+        "hook": "في تجربة شهيرة بجامعة هارفارد، إضافة كلمة «عشان» بعد الطلب رفعت نسبة موافقة الناس من ٦٠٪ لـ ٩٣٪ فوراً.",
+        "action": "لما تطلب أي طلب أو استثناء أو استعجال من عميل أو زميل، اربطه دايماً بكلمة «عشان» متبوعة بالسبب العملي اللي ورا الطلب.",
+        "key_phrase": "ممكن نعتمد النسخة دي قبل الساعة ٣، عشان المطبعة بتقفل أوامر التشغيل الساعة ٤ بالظبط؟",
+        "when": "لما تطلب موافقة سريعة، تغيير ميعاد، أو مساعدة من زميل أو عميل.",
+        "why": "المخ البشري بيعاند الأوامر الناشفة تلقائياً، لكن أول ما بيسمع كلمة «عشان» وسبب منطقي، بيتحول لوضع التعاون فوراً.",
+        "example": "ضعيف: «ابعتلي الملفات النهاردة ضروري.» قوي: «ممكن تبعتلي الملفات قبل الساعة ٢، عشان نلحق نحجز مكانك في حملة الأسبوع الجاي؟»",
+        "mistake": "إنك تبعت طلبات جافة زي «محتاج ده في أسرع وقت» فتبان كأنك بتأمر اللي قدامك ويتأخر عليك قاصد."
+      },
+      "quiz": {
+        "type": "mcq",
+        "correct_index": 1,
+        "en": {
+          "question": "Why does attaching 'because [concrete reason]' dramatically increase yes-rates on requests?",
+          "options": [
+            "It tricks people into thinking you are their boss",
+            "It disarms psychological resistance to arbitrary demands by satisfying the brain's cause-and-effect trigger",
+            "It makes the email longer",
+            "It forces them to pay a penalty if they say no"
+          ],
+          "explanation": "People resent unexplained demands. A clear 'because' shows respect for their time and triggers automatic cooperation."
+        },
+        "ar": {
+          "question": "ليه ربط طلبك بكلمة «عشان + سبب محدد» بيضاعف نسبة موافقة الناس وتعاونهم معاك؟",
+          "options": [
+            "لأنها بتخوف اللي قدامك منك",
+            "لأنها بتكسر العناد النفسي ضد الأوامر الناشفة وبتشبع حاجة المخ لوجود سبب منطقي",
+            "عشان بتخلي الرسالة شكلها أطول",
+            "عشان تحسس اللي قدامك بالذنب"
+          ],
+          "explanation": "النفس البشرية بترفض الطلبات غير المبررة، لكن وجود سبب واضح بعد كلمة «عشان» بيحول الطلب لتعاون مشترك مريح."
+        }
+      }
+    },
+    {
+      "id": "2026-11-12_negotiation_calibrated-how-question",
+      "created_at": "2026-11-12T20:00:00+02:00",
+      "topic": "negotiation",
+      "tags": ["negotiation", "no", "pricing", "deadlines"],
+      "level": "advanced",
+      "needs_completion": false,
+      "en": {
+        "title": "Say 'No' Without Saying 'No': The Calibrated 'How' Question",
+        "hook": "When a client demands an impossible deadline or a 40% price cut, saying 'No' starts a fight. Making them solve your problem ends it.",
+        "action": "Instead of saying 'No, that's impossible', calmly state the constraint and ask gently: 'How am I supposed to do that?'",
+        "key_phrase": "I want to make this work for you, but at that budget we wouldn't cover our senior engineers — how am I supposed to do that?",
+        "when": "A client, boss, or vendor pushes an unreasonable demand on price, payment terms, or delivery speed.",
+        "why": "A blunt 'No' triggers their ego to push harder. Asking 'How am I supposed to do that?' recruits their brain to look at your constraints and negotiate against themselves.",
+        "example": "Client: 'We need the 6-week build done in 10 days at the same price.' You: 'We'd love to launch fast, but cutting 6 weeks into 10 days means dropping QA testing completely — how am I supposed to deliver a safe launch like that?' Client: 'Fair... let's launch only Phase 1 in 10 days.'",
+        "mistake": "Saying 'No, you're being unreasonable' or silently accepting an impossible demand that dooms the project."
+      },
+      "ar": {
+        "title": "ارفض من غير ما تقول «لأ»: سؤال «إزاي أعمل ده؟»",
+        "hook": "لما عميل يطلب تسليم شغل شهرين في أسبوع أو يطلب خصم مستحيل، كلمة «لأ مينفعش» بتعمل خناقة.. لكن السؤال ده بيخليه يتراجع بنفسه.",
+        "action": "بدل ما ترفض بشكل مباشر، اشرحله العقبة بهدوء واسأله بنبرة متعاونة: «إزاي أقدر أعمل ده من غير ما نضر الجودة؟».",
+        "key_phrase": "أنا نفسي جداً أنفذلك ده، بس بالميزانية دي مش هنقدر نغطي تكلفة الخامات الأصلية.. تفتكر إزاي أقدر أعملها؟",
+        "when": "لما عميل أو مدير يطلب طلب غير منطقي في السعر أو في وقت التسليم.",
+        "why": "كلمة «لأ» بتصطدم بإيجو العميل فيعند أكتر. سؤال «إزاي أعمل ده؟» بينقل المشكلة لملعبه وبيجبر مخه يفكر في القيود الواقعية ويتنازل لوحده.",
+        "example": "العميل: «عايزين نستلم المشروع كله بعد ٥ أيام بنفس السعر!» إنت: «يهمني نسلمك بأعلى سرعة، بس ضغط شهر كامل في ٥ أيام معناه إننا هنلغي مرحلة الفحص والتجربة.. إزاي نقدر نضمن أمان الشغل بالطريقة دي؟» العميل: «عندك حق.. طب نسلم المرحلة الأولى بس بعد ٥ أيام.»",
+        "mistake": "إنك تقول «لأ ده مستحيل» بحدة، أو توافق وإنت عارف إنك مش هتلحق فتغرق في التزامات فاشلة."
+      },
+      "quiz": {
+        "type": "mcq",
+        "correct_index": 2,
+        "en": {
+          "question": "A buyer demands a 90-day payment delay while your team pays suppliers upfront. How do you push back using a calibrated 'How' question?",
+          "options": [
+            "Say: 'Absolutely not, read our contract.'",
+            "Accept the 90-day delay and hope you don't go broke.",
+            "Ask calmly: 'We pay our factory cash on day one — how am I supposed to finance a 90-day gap without raising the unit price?'",
+            "Ignore the email for two weeks."
+          ],
+          "explanation": "Asking 'How am I supposed to do that?' forces the other side to empathize with your real-world constraints and offer a fair compromise."
+        },
+        "ar": {
+          "question": "عميل بيصر يدفع بعد ٩٠ يوم في حين إنك بتدفع للمصنع كاش في أول يوم. إزاي ترفض بأسلوب سؤال «إزاي» الذكي؟",
+          "options": [
+            "تقوله: «لأ طبعاً، ده ضد قوانين شركتنا واقفل الكلام.»",
+            "توافق على الـ٩٠ يوم وتدخل في أزمة سيولة.",
+            "تسأله بهدوء: «إحنا بندفع للمصنع كاش يوم التشغيل.. إزاي أقدر أغطي فجوة ٩٠ يوم من غير ما أزود تكلفة التمويل على السعر؟»",
+            "متردش على تليفوناته أسبوعين."
+          ],
+          "explanation": "السؤال ده بيحط العميل قدام الحقيقة المالية بهدوء، فبيقترح هو بنفسه دفع دفعة مقدمة أو تعديل السعر."
+        }
+      }
+    },
+    {
+      "id": "2026-11-12_psychology_flaw-admission-trust",
+      "created_at": "2026-11-12T20:01:00+02:00",
+      "topic": "psychology",
+      "tags": ["trust", "sales", "persuasion", "honesty"],
+      "level": "intermediate",
+      "needs_completion": false,
+      "en": {
+        "title": "The 'Damaging Admission': Volunteer One Flaw to Multiply Trust",
+        "hook": "When you claim your product is 'the fastest, cheapest, and best at everything', skeptical buyers immediately assume you're lying.",
+        "action": "Early in your pitch, proactively admit one real limitation or who your product is NOT built for, right before stating your core strength.",
+        "key_phrase": "I'll be upfront with you: we are not the cheapest agency in town, and we don't do 24-hour rush jobs. What we do better than anyone is...",
+        "when": "Pitching a skeptical buyer, writing a landing page, or interviewing for a senior role.",
+        "why": "Admitting a minor drawback proves honesty. Once the buyer's brain believes your negative claim, their skepticism drops and they believe your positive claims 10x more.",
+        "example": "Salesperson: 'Look, our software has an ugly dashboard — our designers are engineers. But it processes 100k invoices in 4 seconds without ever crashing.' Buyer: 'I don't care about pretty colors, I need reliability. Sold.'",
+        "mistake": "Pretending you have zero weaknesses, which triggers the buyer's 'too good to be true' radar."
+      },
+      "ar": {
+        "title": "اعتراف العيب المقصود: اكسب ثقة فورية بذكر نقطة ضعف واحدة",
+        "hook": "لما تقول للعميل «إحنا الأرخص والأسرع والأجود في مصر!» العميل الذكي بيقفل منك فوراً لأن مفيش حاجة كاملة.",
+        "action": "في أول كلامك مع العميل، اعترف بنفسك بحدود خدمتك أو الفئة اللي خدمتك «مش مناسبة ليها»، وبعدين اربطها بنقطة قوتك الحقيقية.",
+        "key_phrase": "أكون صريح معاك من الأول: إحنا مش أرخص سعر في السوق ومبنشتغلش شغل مستعجل في ٢٤ ساعة.. لأننا بنركز ١٠٠٪ على...",
+        "when": "وأنت بتعرض شغلك على عميل شكاك، أو في مقابلة شغل، أو في كتابة إعلان بيعي.",
+        "why": "لما تعترف بعيب صغير أو قيد حقيقي بمزاجك، رادار الشك عند العميل بيطفي فوراً، وبيصدق كلامك عن مميزاتك أضعاف لو قعدت تمدح في نفسك بس.",
+        "example": "البياع: «بصراحة، شكل الواجهة عندنا كلاسيكي شوية ومش مبهرج.. بس السيستم بتاعنا مستحيل يقع أو يضيع فاتورة واحدة في عز الضغط.» العميل: «أنا ميهمنيش الألوان، أنا يهمني الأمان.. يلا نبدأ.»",
+        "mistake": "إنك تدّعي الكمال في كل حاجة، فتحسس العميل إنك بياع كلام ومبيصدقش حتى مميزاتك الحقيقية."
+      },
+      "quiz": {
+        "type": "mcq",
+        "correct_index": 0,
+        "en": {
+          "question": "Why does proactively stating who your service is NOT for increase your closing rate?",
+          "options": [
+            "It disarms the buyer's skepticism and makes your core strength completely believable",
+            "It convinces every customer not to buy",
+            "It lowers your taxes",
+            "It hides your core product features"
+          ],
+          "explanation": "Volunteering a real limitation signals extreme candor, making the prospect trust everything you say next."
+        },
+        "ar": {
+          "question": "ليه اعترافك الصريح في البداية بالحاجة اللي «مبتقدمهاش» بيرفع نسبة اقتناع العميل بيك؟",
+          "options": [
+            "لأنه بيطفي رادار الشك عند العميل وبيخليه يصدق نقطة قوتك الأساسية ١٠٠٪",
+            "عشان يطفش كل العملاء",
+            "عشان يقلل قيمة منتجك",
+            "عشان تنهي المقابلة في دقيقة"
+          ],
+          "explanation": "الصراحة المبكرة بخصوص حدود خدمتك بتبني مصداقية فورية، فالعميل بيطمن إنك أمين ومبتبيعش الوهم."
+        }
+      }
+    },
+    {
+      "id": "2026-11-12_business_upfront-negative-contract",
+      "created_at": "2026-11-12T20:02:00+02:00",
+      "topic": "business",
+      "tags": ["sales", "closing", "meetings", "honesty"],
+      "level": "advanced",
+      "needs_completion": false,
+      "en": {
+        "title": "Ban 'Let Me Think About It' in the First 60 Seconds",
+        "hook": "'Let me think about it' almost always means 'No, but I'm too polite to tell you to your face.' Kill that phrase before the meeting even starts.",
+        "action": "In the first minute of any sales call, give the prospect explicit permission to tell you 'No' at the end, in exchange for banning 'Let me think about it.'",
+        "key_phrase": "At the end of our 20 minutes, if it's not a fit, please tell me a straight 'No' — I won't be offended at all. Fair enough?",
+        "when": "During the opening 60 seconds of a discovery call, demo, or pitch meeting.",
+        "why": "Prospects hide behind 'I'll think about it' to avoid awkwardness. Making 'No' safe removes the pressure, so they either give you their real objection (which you can solve) or a real 'Yes'.",
+        "example": "You: 'If this isn't right for you today, just tell me No at the end — no hard feelings. Deal?' Client: 'Deal.' (At the end) Client: 'Honestly, I'd say yes, except I'm worried about migrating our old data.' (Now you can solve the real problem!)",
+        "mistake": "Pushing hard at the end of a call, which forces polite buyers to say 'Send me an email and I'll think about it' before ghosting you."
+      },
+      "ar": {
+        "title": "امنع جملة «هفكر وأرد عليك» في أول دقيقة من المقابلة",
+        "hook": "جملة «سيبني أفكر وأكلمك» معناها الحقيقي في ٩٠٪ من الأوقات: «لأ، بس أنا محرج أقولهالك في وشك».. اقفل الباب ده من أول دقيقة.",
+        "action": "في أول دقيقة في القعدة، ادّي العميل الأمان الكامل إنه يقولك «لأ مش مناسب» في آخر الاجتماع بصراحة، مقابل إنكم تلغوا جملة «هفكر وأرد عليك».",
+        "key_phrase": "اتفاق صريح من البداية: في آخر قعدتنا لو حسيت إن العرض مش مناسب ليكم، قولي «لأ» بصراحة ومش هزعل خالص، بس بلاش «هفكر وأرد عليك».. اتفقنا؟",
+        "when": "في أول دقيقة من أي اجتماع بيعي أو عرض مشروع جديد.",
+        "why": "العميل بيهرب بكلمة «هفكر» عشان محرج يواجهك. لما تخلّي كلمة «لأ» مسموحة ومريحة، الضغط بيتشال، فإما هيقولك السبب الحقيقي اللي مخوفه (فتحله)، أو هيقولك «يلا نبدأ».",
+        "example": "إنت: «لو مش مناسب قولي لأ في الآخر بصراحة، متفقين؟» العميل: «متفقين.» (في آخر القعدة) العميل: «بصراحة أنا عايز أقول آه، بس قلقان من نقل البيانات القديمة.» (كده عرفت المشكلة الحقيقية وتقدر تحلها فوراً!)",
+        "mistake": "إنك تضغط على العميل في آخر القعدة، فيضطر يهرب منك بجملة «ابعتلي الإيميل وهفكر» ويختفي للأبد."
+      },
+      "quiz": {
+        "type": "mcq",
+        "correct_index": 3,
+        "en": {
+          "question": "Why should you invite the prospect to say a candid 'No' right at the start of a meeting?",
+          "options": [
+            "Because you don't want any new clients",
+            "To end the meeting in 1 minute",
+            "To make the prospect angry",
+            "It removes social pressure, preventing polite ghosting ('I'll think about it') and surfacing honest objections"
+          ],
+          "explanation": "When 'No' is safe, buyers drop their guard and share the actual hurdle standing in the way of a 'Yes'."
+        },
+        "ar": {
+          "question": "ليه مهم تدي العميل الأمان إنه يقول «لأ» بصراحة في أول دقيقة من الاجتماع؟",
+          "options": [
+            "عشان تخلّص الاجتماع في دقيقة وتمشي",
+            "عشان تخوف العميل منك",
+            "لأنك مش عايز تبيع",
+            "عشان تشيل الحرج الاجتماعي فتمنع الهروب بجملة «هفكر وأرد عليك» وتسمع الاعتراض الحقيقي وتحلّه"
+          ],
+          "explanation": "لما العميل يطمن إن الصراحة مش هتزعلك، بيبطل يجامل وبيقولك السبب الحقيقي اللي موقف القرار فتقدر تعالجه."
+        }
+      }
+    },
+    {
+      "id": "2026-11-12_money_sunk-cost-exit-test",
+      "created_at": "2026-11-12T20:03:00+02:00",
+      "topic": "money",
+      "tags": ["money", "decision_making", "business", "psychology"],
+      "level": "intermediate",
+      "needs_completion": false,
+      "en": {
+        "title": "The Zero-Base Question to Escape Sunk-Cost Traps",
+        "hook": "'We can't quit now after spending $20,000!' That single sentence has bankrupted more businesses than bad ideas ever did.",
+        "action": "When deciding whether to keep pouring money, time, or energy into a struggling project, hire, or stock, ask the Zero-Base Question: 'If we weren't already in this today, would we pay to enter it right now?'",
+        "key_phrase": "Ignore what we already spent. Knowing what we know today, if we had the cash in hand right now, would we start this from scratch?",
+        "when": "Reviewing an underperforming ad campaign, dragging software build, bad hire, or losing investment.",
+        "why": "Past money is gone forever regardless of what you do next (sunk cost fallacy). Only future return on the next dollar or hour spent matters.",
+        "example": "Partner: 'We already spent 4 months building this feature, we have to spend 2 more!' You: 'The 4 months are gone either way. Knowing that zero customers asked for it, would we spend 2 fresh months starting it today?' Partner: 'No way.' You: 'Then we cut it today.'",
+        "mistake": "Throwing good money and fresh months after bad money just to avoid admitting an earlier decision didn't pan out."
+      },
+      "ar": {
+        "title": "سؤال «نقطة الصفر» للهروب من فخ الفلوس اللي راحت",
+        "hook": "جملة «حرام نوقف دلوقتي بعد ما صرفنا كل ده!» هي أكتر جملة بتغرق شركات ومشاريع في خساير ملهاش آخر.",
+        "action": "لما تحتار تكمل صرف وقت أو فلوس في مشروع متعثر أو موظف غير مناسب، اسأل سؤال نقطة الصفر: «لو كنا بره الموضوع ده النهاردة ومعانا الفلوس في إيدنا، هل كنا هندخل فيه من أول وجديد باللي نعرفه دلوقتي؟».",
+        "key_phrase": "انسى اللي اتصرف خلاص.. باللي نعرفه النهاردة، لو كنا لسه مبدأناش خالص، هل كنا هنوافق نصرف جنيه واحد في المسار ده؟",
+        "when": "وقت تقييم مشروع بيخسر، حملة إعلانات مش جايبة همها، أو قرار استثماري متعثر.",
+        "why": "الفلوس والوقت اللي اتصرفوا في الماضي راحوا خلاص ومش هيرجعوا مهما عملت (فخ التكلفة الغارقة). القرار الصح بيتبني بس على العائد بتاع الجنيه والساعة اللي جايين.",
+        "example": "شريكك: «إحنا ضيعنا ٤ شهور في المنتج ده، لازم نصبر كمان شهرين!» إنت: «الـ٤ شهور راحوا خلاص.. باللي شوفناه من السوق النهاردة، لو كنا لسه على البر، كنا هنبدأ فيه؟» شريكك: «لأ طبعاً.» إنت: «يبقى نوقف النزيف النهاردة ونوجه الشهرين لحاجة كسبانة.»",
+        "mistake": "إنك ترمي فلوس جديدة ووقت جديد ورا فلوس راحت لمجرد إنك مستخسر تعترف إن التجربة الأولى منجحتش."
+      },
+      "quiz": {
+        "type": "mcq",
+        "correct_index": 1,
+        "en": {
+          "question": "You've spent $10,000 on a marketing channel that brought zero sales. How should you decide whether to spend another $5,000?",
+          "options": [
+            "Spend the $5,000 so the first $10,000 wasn't 'wasted'",
+            "Ignore the $10,000 already gone and ask: 'Knowing what I know today, would I invest $5,000 fresh into this right now?'",
+            "Double the budget to $20,000 out of stubbornness",
+            "Never do marketing again"
+          ],
+          "explanation": "Sunk costs cannot be recovered. Rational decisions depend strictly on whether the next dollar has a better return here or somewhere else."
+        },
+        "ar": {
+          "question": "صرفت ٢٠ ألف جنيه في حملة تسويقية مجابتش أي مبيعات. إزاي تقرر تصرف عليها ١٠ آلاف كمان ولا توقف؟",
+          "options": [
+            "تصرف الـ١٠ آلاف عشان الـ٢٠ ألف الأولانية متبقاش راحت على الأرض",
+            "تنسى الـ٢٠ ألف اللي راحت وتسأل: «بالمعلومات اللي معايا النهاردة، هل كنت هدفع ١٠ آلاف جديدة في القناة دي دلوقتي؟»",
+            "تضاعف المبلغ عنداً في السوق",
+            "تقفل الشركة خالص"
+          ],
+          "explanation": "التكلفة اللي اتصرفت في الماضي انتهت، والقرار الذكي بيقيس بس هل الـ١٠ آلاف الجاية هتجيب عائد هنا ولا في مكان تاني أفضل."
+        }
+      }
+    }
+  ]
+}

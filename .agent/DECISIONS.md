@@ -1,5 +1,15 @@
 # DECISIONS
-> Entries newest on top. All decided by owner on 2026-11-12 (planning discussion).
+> Entries newest on top. All decided by owner on 2026-11-12.
+
+## 2026-11-12 23:10 +02:00 — Patch-Based UX, Model Hierarchy & Mobile-First Upgrade
+- D17. **Model Chain:** `gemini-3.8-flash` (Primary) → `gemini-3.5-flash` (Secondary) → Groq `openai/gpt-oss-120b` (Emergency backup only). Removed `3.5-flash-lite`.
+- D18. **Daily Generation:** 15 cards/day in **3 separate Patches of 5 cards each** (`3 × 5`). Includes backoff retry on 503/429 and surgical single-card replacement.
+- D19. **Patch Grouping (5 Cards/Patch):** Cards are grouped into 5-card Patches (`Patch #1` to `Patch #4`, 20 cards total: `#1–#20`). Each patch has an end-of-patch `🧠 Quiz This Patch (5 Qs)` button and a `✅ Mark Patch as Finished` button.
+- D20. **3 Main Feed Tabs:** `🆕 New Feed` (unread patches), `✅ Seen` (finished patches, neatly collapsed with green badge), and `⭐ Saved` (bookmarked individual cards; removed ❤️ Like).
+- D21. **Single Topics Button (`🏷️ Topics ▾`):** All 14 topics grouped inside one modal/bottom-sheet button for a clean mobile-first UI.
+- D22. **Manual JSON Patch Input in UI (`+ Add JSON`):** Supports both **📂 Upload `.json` file** and **📋 Paste JSON text** directly from the UI with live validation and GitHub sync.
+- D23. **Patch Status Bar & History (`📜 History`):** Top status bar shows today's added patches count; History modal lists all patches, card ranges, dates, sources, and status.
+- D24. **Combined Quizzes:** Finished patches feed into a Combined Review Quiz pool with Spaced Repetition (`1, 2, 3, 7, 14, 30` days), 5/10-card mixed quizzes, and Retry Mistakes.
 
 ## 2026-11-12 21:10 +02:00
 - D1. UI English; cards English + **Egyptian Arabic** (عامية مصرية).

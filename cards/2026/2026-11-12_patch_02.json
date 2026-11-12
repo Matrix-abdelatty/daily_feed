@@ -1,0 +1,268 @@
+{
+  "schema_version": 1,
+  "batch_id": "2026-11-12_patch_02",
+  "created_at": "2026-11-12T08:05:00+02:00",
+  "source": "seed+gemini",
+  "cards": [
+    {
+      "id": "2026-11-12_sales_sell-pain-before-specs",
+      "created_at": "2026-11-12T08:00:00+02:00",
+      "topic": "sales",
+      "tags": ["sales", "pitch", "psychology", "communication"],
+      "level": "beginner",
+      "needs_completion": false,
+      "en": {
+        "title": "Never Pitch Specs First: The 3-Step Pain Sequence",
+        "hook": "Nobody wakes up wanting to buy cloud hosting, SEO audits, or legal software. They wake up stressed about lost revenue, manual grind, and missed targets.",
+        "action": "Do not pitch features, specifications, or pricing first. Follow this strict order: 1) The pain/problem, 2) The daily cost of what they lose by keeping it, 3) The solution with timeline and budget.",
+        "key_phrase": "Before we look at the software, if we don't fix this data leak, how much is your team bleeding each quarter?",
+        "when": "Opening any sales conversation, pitching a proposal, or presenting a new initiative.",
+        "why": "People buy emotionally to escape pain, then justify rationally with specs. If they don't feel the burning cost of doing nothing, your price will always look expensive.",
+        "example": "Weak pitch: 'Our CRM has 40 automations and costs $300.' Strong pitch: 'Your reps lose 9 hours a week on manual data entry, costing you 3 lost deals a month. We eliminate that grind in 14 days for $300.'",
+        "mistake": "Dumping technical features, certifications, and pricing before uncovering what is keeping the buyer awake at night."
+      },
+      "ar": {
+        "title": "متبدأش بالمواصفات والأسعار أبداً: ثلاثية الوجع أولاً",
+        "hook": "مفيش حد بيصحى الصبح يقول «نفسي أشتري استضافة سحابية أو برنامج محاسبة». الناس بتصحى قلقانة على الفلوس اللي بتضيع والمشاكل اليومية.",
+        "action": "متبدأش أبداً كلامك بمواصفات الخدمة ولا سعرها. رتّب كلامك بالترتيب ده: ١) المشكلة أو الوجع اللي عندهم، ٢) حجم الخسارة اللي بتحصل طول ما المشكلة دي موجودة، ٣) الحل العملي مع الميزانية والجدول الزمني.",
+        "key_phrase": "قبل ما نتكلم في تفاصيل النظام، لو المشكلة دي فضلت مكملة، البيزنس بتاعكم بيخسر قد إيه كل شهر؟",
+        "when": "في أول أي قعدة بيع، أو تقديم عرض فني ومالي لعميل جديد.",
+        "why": "الناس بتاخد قرار الشراء بالعاطفة عشان تهرب من وجع المشكلة، وبعدين تبرر بالعقل والمواصفات. لو العميل محسّش بحجم الخسارة اللي عايش فيها دلوقتي، أي سعر هتقوله هيبان غالي جداً عليه.",
+        "example": "بياع ضعيف: «البرنامج بتاعنا فيه ٤٠ ميزة وسعره ٥٠٠٠ جنيه». بياع ذكي: «فريقك بيضيع يومين في الأسبوع عشان يطلع تقارير المبيعات، وده بيعطل قفل الصفقات. إحنا هنوفر الوقت ده كله في خلال ١٠ أيام بميزانية ٥٠٠٠ جنيه.»",
+        "mistake": "إنك تفتح البريزنتيشن وتعدّ تسرد في مميزات شركتك وإمكانياتك قبل ما تسمع مشكلته هو أصلاً."
+      },
+      "quiz": {
+        "type": "mcq",
+        "correct_index": 1,
+        "en": {
+          "question": "What is the correct psychological sequence for a persuasive sales conversation?",
+          "options": [
+            "Company history → Product features → Price → Testimonials",
+            "Identify the core pain → Unpack what they lose without fixing it → Present solution with budget & timeline",
+            "Quote the lowest price immediately → Explain why you are better than competitors → Ask for the sale",
+            "Feature demo → Discount offer → Problem exploration → Contract signing"
+          ],
+          "explanation": "Buyers must feel the real cost of inaction before an investment makes sense. Exploring the pain and loss first gives your solution urgent value."
+        },
+        "ar": {
+          "question": "إيه الترتيب النفسي الصح والمقنع في أي محادثة بيعية ناجحة؟",
+          "options": [
+            "تاريخ الشركة ← مواصفات المنتج ← السعر ← آراء العملاء السابقين.",
+            "تحديد المشكلة الحقيقية ← توضيح حجم الخسارة لو متصلحتش ← تقديم الحل بالميزانية والجدول الزمني.",
+            "تقول أقل سعر فوراً ← تقارن نفسك بالمنافسين ← تطلب منه يمضي العقد.",
+            "تجربة المنتج للمواصفات ← عرض خصم كبير ← اكتشاف المشكلة ← قفل الصفقة."
+          ],
+          "explanation": "العميل محتاج يلمس حجم الخسارة الحالية عشان يقدر قيمة الاستثمار في الحل بتاعك. المشكلة والوجع أولاً هي اللي بتخلي السعر يبان استثمار مربح مش تكلفة."
+        }
+      }
+    },
+    {
+      "id": "2026-11-12_business_price_anchoring",
+      "created_at": "2026-11-12T19:40:37.006455+00:00",
+      "topic": "pricing",
+      "tags": ["sales", "negotiation", "money"],
+      "level": "advanced",
+      "needs_completion": false,
+      "en": {
+        "title": "Use High Anchors Before Naming Your Core Price",
+        "hook": "The first number mentioned in a deal acts like gravity for everything that follows. Let that gravity pull up, not down.",
+        "action": "Always present your most comprehensive, high-value package or the cost of hiring a full-time team first. This sets the mental benchmark before they hear your main price.",
+        "key_phrase": "Hiring an in-house specialist for this costs $80k a year; our complete managed tier is $12k, and our core plan is $5k.",
+        "when": "During the initial proposal or price presentation.",
+        "why": "The brain cannot judge price in a vacuum; it only compares against the first number on the table (anchoring & contrast effect).",
+        "example": "Client: 'What's the cost?' You: 'Building this from scratch with an agency runs $25k. Our full-suite deployment is $8k, and our streamlined launch is $3.5k.'",
+        "mistake": "Starting with your cheapest option to 'avoid scaring them', which anchors their brain at the bottom."
+      },
+      "ar": {
+        "title": "حط سقف سعر عالي الأول قبل ما تقول سعرك الأساسي",
+        "hook": "أول رقم بيتقال في أي تفاوض بيشتغل زي المغناطيس لكل الأرقام اللي جاية بعده. خليه يشد لفوق مش لتحت.",
+        "action": "دايماً اذكر تكلفة البديل الأغلى (زي تعيين موظف كامل أو الباقة الشاملة الكبيرة) الأول، وبعدين قول سعر باقتك الأساسية.",
+        "key_phrase": "تعيين فريق كامل للشغل ده بيكلف ٢٠٠ ألف في السنة؛ الباقة الشاملة عندنا بـ٤٠ ألف، والباقة الأساسية بـ١٨ ألف بس.",
+        "when": "أثناء عرض السعر لأول مرة قدام العميل.",
+        "why": "المخ مبيعرفش يقيم السعر في الفراغ، هو بيقارنه بأول رقم سمعه (تأثير التباين والمرجع السعري).",
+        "example": "العميل: «التكلفة كام؟» إنت: «النظام الكامل المخصوص بيتكلف ٨٠ ألف جنيه، وعندنا النسخة الجاهزة السريعة بـ٢٥ ألف جنيه بس.»",
+        "mistake": "إنك تبدأ بأرخص باقة عشان متخوفش العميل، فتثبت سقف توقعاته عند أقل رقم."
+      },
+      "quiz": {
+        "type": "mcq",
+        "correct_index": 2,
+        "en": {
+          "question": "Why should you state the highest-value option or cost benchmark first?",
+          "options": [
+            "To scare away small clients immediately",
+            "To force everyone to buy the most expensive tier",
+            "To establish a high mental benchmark so your core option feels like a bargain",
+            "To end the meeting faster"
+          ],
+          "explanation": "High anchors set the reference point in the buyer's mind, making subsequent options feel remarkably affordable by contrast."
+        },
+        "ar": {
+          "question": "ليه لازم تذكر التكلفة الأعلى أو الباقة الأغلى في بداية كلامك عن الأسعار؟",
+          "options": [
+            "عشان تطرد العملاء الصغيرين من أول دقيقة",
+            "عشان تجبر الكل يشتري أغلى باقة غصب عنهم",
+            "عشان تحط سقف مرجعي عالي يخلي باقتك الأساسية تبان صفقة ممتازة بالمقارنة",
+            "عشان تخلص الاجتماع بسرعة"
+          ],
+          "explanation": "أول رقم بيسمعه العميل بيبقى هو المسطرة اللي بيقيس عليها باقي الأسعار، فالمرجع العالي بيخلي السعر الأساسي مريح ومقبول."
+        }
+      }
+    },
+    {
+      "id": "2026-11-12_career_feedback",
+      "created_at": "2026-11-12T19:40:37.006455+00:00",
+      "topic": "career",
+      "tags": ["feedback", "career", "growth"],
+      "level": "beginner",
+      "needs_completion": false,
+      "en": {
+        "title": "Ask for 'Feedforward' Instead of Generic Feedback",
+        "hook": "Asking 'How am I doing?' gets you a polite, useless 'You're doing fine!' Ask a narrower question to unlock real coaching.",
+        "action": "Instead of asking for general feedback on the past, ask for one specific adjustment you can test in the very next project or meeting.",
+        "key_phrase": "What is one thing I could do differently on our next project to make it a 10/10?",
+        "when": "At the end of a deliverable, sprint, or during a 1-on-1 review with your manager or client.",
+        "why": "People hate feeling like harsh judges of the past, so they say 'All good.' Asking for ONE future tweak removes social awkwardness and gets honest, actionable answers.",
+        "example": "You: 'What's one thing I could do differently on next month's rollout?' Manager: 'Send me the 3-bullet summary on Slack 24 hours before the board call so I'm never caught off guard.'",
+        "mistake": "Asking 'Do you have any feedback for me?' which forces the other person to do too much mental work and defaults to polite praise."
+      },
+      "ar": {
+        "title": "اطلب «تعديل واحد للمستقبل» بدل الفيدباك العام",
+        "hook": "لما تسأل مديرك أو عميلك «إيه رأيك في شغلي؟» هتاخد رد مجاملة مبيفيدش زي «كله تمام الله ينور». غير صيغة السؤال عشان تسمع الحقيقة.",
+        "action": "بدل ما تسأل عن تقييم عام للماضي، اسأل عن تفصيلة واحدة بس لو غيرتها في المشروع الجاي النتيجة تبقى ١٠ من ١٠.",
+        "key_phrase": "إيه الحاجة الوحيدة اللي لو عملتها بشكل مختلف في المشروع الجاي تخلي النتيجة أحسن بكتير؟",
+        "when": "بعد تسليم أي مشروع أو في الاجتماعات الفردية مع مديرك أو عميلك.",
+        "why": "الناس بتتحرج تبان قاسية لما تحكم على اللي فات فتجامل. لما تطلب «تعديل واحد في اللي جاي»، بتشيل الحرج وبتاخد نصيحة ذهبية محددة.",
+        "example": "إنت: «إيه حاجة واحدة لو غيرتها الشهر الجاي تفرق معانا؟» المدير: «لو تبعتلي ملخص من ٣ نقط على الواتساب قبل اجتماع الإدارة بيوم هيسهل عليا جداً.»",
+        "mistake": "إنك تسأل سؤال عايم زي «عندك أي ملاحظات؟» فيستسهل اللي قدامك ويقولك «لأ كله زي الفل»."
+      },
+      "quiz": {
+        "type": "mcq",
+        "correct_index": 0,
+        "en": {
+          "question": "Which question is most likely to get honest, useful advice from a busy manager?",
+          "options": [
+            "'What is one specific thing I can do differently in next week's presentation to make it stronger?'",
+            "'Am I doing a good job overall?'",
+            "'Do you have any feedback for me?'",
+            "'Rate my performance from 1 to 10.'"
+          ],
+          "explanation": "Focusing on a single future action lowers defensiveness and cognitive load, giving you a concrete improvement you can apply immediately."
+        },
+        "ar": {
+          "question": "أنهي سؤال من دول هيخلي مديرك المشغول يديك نصيحة حقيقية ومفيدة فعلاً؟",
+          "options": [
+            "«إيه تفصيلة واحدة ممكن أعملها بشكل مختلف في عرض الأسبوع الجاي عشان يطلع أقوى؟»",
+            "«هو أنا شغلي كويس بشكل عام؟»",
+            "«عندك أي فيدباك ليا؟»",
+            "«قيّم أدائي من ١ لـ ١٠.»"
+          ],
+          "explanation": "التركيز على خطوة واحدة في المستقبل بيشيل الإحراج وبيخلي المدير يديك معلومة عملية ومحددة تطبقها فوراً."
+        }
+      }
+    },
+    {
+      "id": "2026-11-12_communication_listening",
+      "created_at": "2026-11-12T19:40:37.006455+00:00",
+      "topic": "communication",
+      "tags": ["listening", "empathy", "negotiation"],
+      "level": "beginner",
+      "needs_completion": false,
+      "en": {
+        "title": "The FBI 3-Word Mirroring Trick",
+        "hook": "Want someone to reveal their real motive without interrogating them? Repeat their last three words and stay silent.",
+        "action": "Repeat the last 1 to 3 critical words the other person just said with a slight upward questioning tone, then stop talking and wait.",
+        "key_phrase": "'. . .falling behind schedule?' (followed by 4 seconds of calm silence)",
+        "when": "When a client, colleague, or negotiator drops a hint or states an objection without explaining the real reason behind it.",
+        "why": "Mirroring triggers an instinct to elaborate without making them feel cross-examined. They fill the silence with the deeper truth.",
+        "example": "Client: 'We like your offer, but the timing is tricky right now.' You: 'Tricky right now?' Client: 'Yeah, our CFO froze Q4 budgets unless a vendor lets us pay in January.'",
+        "mistake": "Firing 5 rapid-fire questions or jumping in to defend your proposal before uncovering the hidden constraint."
+      },
+      "ar": {
+        "title": "حيلة «المرايا بـ ٣ كلمات» عشان اللي قدامك يفضفض بالسر",
+        "hook": "عايز العميل يقولك السبب الحقيقي اللي في دماغه من غير ما تحسسه إنك بتحقق معاه؟ كرر آخر ٣ كلمات قالهم واسكت.",
+        "action": "كرر آخر كلمتين أو ٣ كلمات مهمة قالهم الشخص اللي قدامك بنبرة سؤال هادية، وبعدها اسكت خالص ٣ أو ٤ ثواني.",
+        "key_phrase": "«... التوقيت صعب دلوقتي؟» (وتسكت بهدوء وتسيبه يكمل)",
+        "when": "لما عميل أو طرف في تفاوض يرمي جملة مختصرة أو اعتراض عائم من غير ما يوضح السبب اللي وراه.",
+        "why": "تكرار آخر كلماته بيحسسه إنك منتبه جداً وبيشجع عقله اللاواعي إنه يفسر ويشرح التفاصيل المخفية عشان يملى السكوت.",
+        "example": "العميل: «العرض ممتاز، بس التوقيت صعب بالنسبة لنا دلوقتي.» إنت: «صعب بالنسبة لكم دلوقتي؟» العميل: «آه، أصل المدير المالي قافل ميزانية الشهر ده، إلا لو الدفع هيبقى أول الشهر الجاي.»",
+        "mistake": "إنك تقاطعه وتبدأ تدافع أو ترمي عليه أسئلة كتير ورا بعض فيقفل الكلام."
+      },
+      "quiz": {
+        "type": "mcq",
+        "correct_index": 1,
+        "en": {
+          "question": "A prospect says: 'Your service looks good, but we had a bad experience last year.' How do you apply mirroring?",
+          "options": [
+            "Say: 'We are totally different from other companies, I promise!'",
+            "Calmly ask: 'A bad experience last year?' and wait in silence.",
+            "Ask: 'Who was the vendor and how much did they charge you?'",
+            "Immediately offer a 10% discount to make them feel safe."
+          ],
+          "explanation": "Echoing their exact phrase ('A bad experience last year?') invites them to share the exact mistake their previous vendor made, telling you how to win their trust."
+        },
+        "ar": {
+          "question": "العميل قالك: «خدمتكم شكلها كويس، بس إحنا كانت لينا تجربة سيئة السنة اللي فاتت.» إزاي تطبق أسلوب المرايا هنا؟",
+          "options": [
+            "تقوله فوراً: «إحنا مختلفين تماماً عن أي شركة تانية والله!»",
+            "تقول بنبرة هادية: «تجربة سيئة السنة اللي فاتت؟» وتسكت وتسمعه.",
+            "تسأله: «مين الشركة اللي ضحكت عليكم ودفعتولهم كام؟»",
+            "تعرض عليه خصم ١٠٪ فوراً عشان يطمن."
+          ],
+          "explanation": "تكرار آخر كلماته بهدوء بيخليه يحكيلك بالظبط إيه اللي ضايقه زمان، فتعرف مفتاح الأمان اللي هيكسبك ثقته."
+        }
+      }
+    },
+    {
+      "id": "2026-11-12_decision_making_premortem",
+      "created_at": "2026-11-12T19:40:37.006455+00:00",
+      "topic": "decision_making",
+      "tags": ["planning", "strategy", "leadership"],
+      "level": "advanced",
+      "needs_completion": false,
+      "en": {
+        "title": "The 'Pre-Mortem': Kill the Failure Before Launch",
+        "hook": "In kickoff meetings, smart team members stay quiet about fatal flaws because nobody wants to look like the negative 'spoiler'.",
+        "action": "Before launching a big plan, run a 10-minute Pre-Mortem: tell the room 'Imagine it is 6 months from today and this project crashed completely. Write down 2 reasons why it failed.'",
+        "key_phrase": "Fast-forward 6 months: this launch was a total disaster. Go around the room — what killed it?",
+        "when": "Right before finalizing a major project plan, campaign, or investment decision.",
+        "why": "Asking 'Does anyone see any risks?' makes speaking up socially risky. Assuming the failure already happened turns critique into a competition of foresight.",
+        "example": "Leader: 'Assume the app launch failed in June. Why?' Silent engineer: 'Because customer support wasn't trained on the new billing flow and tickets exploded on day two.'",
+        "mistake": "Ending planning meetings with 'Is everyone on board?' which manufactures fake agreement and hides obvious landmines."
+      },
+      "ar": {
+        "title": "تقنية «تشريح الفشل قبل ما يحصل» (Pre-Mortem)",
+        "hook": "في اجتماعات بداية أي مشروع، أذكى ناس في الفريق بيسكتوا عن العيوب الخطيرة عشان محدش عايز يبان «الشخص المتشائم اللي بيكسر المقاديف».",
+        "action": "قبل ما تعتمد أي خطة كبيرة، اعمل تمرين ١٠ دقايق: قول للفريق «تخيلوا إننا بعد ٦ شهور من النهاردة والمشروع ده فشل فشل ذريع.. كل واحد يكتب سببين خلوا الكارثة دي تحصل».",
+        "key_phrase": "تعالوا نفترض إننا بعد ٦ شهور والمشروع ده وقع تماماً.. في رأيكم إيه الثغرة اللي وقعته؟",
+        "when": "قبل اعتماد أي مشروع جديد، حملة تسويقية، أو قرار استثماري مهم.",
+        "why": "لما تسأل «حد عنده اعتراض؟» الكل بيسكت محرج. لكن لما تفترض إن الفشل حصل فعلاً، بتشيل الحرج وبتحول اكتشاف الثغرات لمسابقة ذكاء بين الفريق.",
+        "example": "المدير: «افترضوا الإطلاق فشل الشهر الجاي، ليه فشل؟» المهندس الساكت: «عشان خدمة العملاء متدربوش على السيستم الجديد والشكاوى انفجرت من تاني يوم.»",
+        "mistake": "إنك تختم الاجتماع بسؤال «كله موافق يا جماعة؟» فتطلع بموافقة شكلية وتتفاجئ بالمصايب وقت التنفيذ."
+      },
+      "quiz": {
+        "type": "mcq",
+        "correct_index": 3,
+        "en": {
+          "question": "Why does a Pre-Mortem uncover hidden project risks better than asking 'Does anyone have concerns?'",
+          "options": [
+            "Because it forces failed employees to resign early",
+            "Because it cancels risky projects automatically",
+            "Because it shortens the project timeline by half",
+            "It makes pointing out flaws safe and rewarded instead of looking pessimistic"
+          ],
+          "explanation": "By framing the failure as an already-happened hypothetical, team members feel safe voicing quiet doubts without being labeled negative."
+        },
+        "ar": {
+          "question": "ليه تمرين «تشريح الفشل المسبق» بيكشف الثغرات أحسن بكتير من سؤال «حد عنده قلق من حاجة؟»",
+          "options": [
+            "عشان بيجبر الموظفين المقصرين يستقيلوا بدري",
+            "عشان بيلغي المشاريع الصعبة أوتوماتيك",
+            "عشان بيقلل وقت المشروع للنص",
+            "لأنه بيخلي كشف العيوب بطولة وذكاء بدل ما يبان تشاؤم وتكسير مقاديف"
+          ],
+          "explanation": "افتراض إن الفشل حصل خلاص بيشيل الحرج الاجتماعي، فكل عضو في الفريق بيطلع المخاوف الحقيقية اللي كان كاتمها."
+        }
+      }
+    }
+  ]
+}

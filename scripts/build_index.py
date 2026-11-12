@@ -1,13 +1,14 @@
 """
-Build index, assign permanent numbers, and generate search data for Daily Feed.
+Build index, assign permanent card numbers & patch numbers, and generate search data for Daily Feed.
 """
 
 from __future__ import annotations
 
+import re
 import sys
 from datetime import datetime, timezone
 from pathlib import Path
-from typing import Any, Dict, List, Set
+from typing import Any, Dict, List, Set, Tuple
 
 from common import (
     calculate_similarity,
@@ -20,6 +21,15 @@ ROOT_DIR = Path(__file__).resolve().parent.parent
 CARDS_DIR = ROOT_DIR / "cards"
 DATA_DIR = ROOT_DIR / "data"
 CONFIG_DIR = ROOT_DIR / "config"
+
+
+def extract_date_str(batch_id: str, created_at: str, rel_path: str) -> str:
+    """Extract YYYY-MM-DD from batch_id, created_at, or filename."""
+    for candidate in (batch_id, created_at, rel_path):
+        m = re.search(r"(\d{4}-\d{2}-\d{2})", str(candidate))
+        if m:
+            return m.group(1)
+    return datetime.now(timezone.utc).strftime("%Y-%m-%d")
 
 
 def build() -> int:
@@ -39,7 +49,7 @@ def build() -> int:
     seen_ids: Set[str] = set()
     accepted_by_topic: Dict[str, List[Tuple[str, str]]] = {}  # topic -> [(id, text)]
     skipped_cards: List[Dict[str, Any]] = []
-    file_summaries: List[Dict[str, Any]] = []
+    raw_file_entries: List[Dict[str, Any]] = []
 
     for file_path in card_files:
         rel_path = file_path.relative_to(ROOT_DIR).as_posix()
@@ -63,6 +73,9 @@ def build() -> int:
 
         valid_in_file_ids: List[str] = []
         batch_created_at = batch_data.get("created_at") or datetime.now(timezone.utc).isoformat()
+        batch_id = batch_data.get("batch_id") or file_path.stem
+        source = batch_data.get("source") or "auto"
+        date_str = extract_date_str(batch_id, batch_created_at, rel_path)
 
         for card in raw_cards:
             valid, err = validate_card(card)
@@ -108,19 +121,20 @@ def build() -> int:
 
             card_with_meta = dict(card)
             card_with_meta["_file"] = rel_path
+            card_with_meta["_batch_id"] = batch_id
             all_cards.append(card_with_meta)
 
-        file_summaries.append({
+        raw_file_entries.append({
+            "batch_id": batch_id,
             "path": rel_path,
+            "date": date_str,
             "created_at": batch_created_at,
+            "source": source,
             "card_count": len(valid_in_file_ids),
             "card_ids": valid_in_file_ids,
         })
 
-    # Sort files by created_at descending (newest on top)
-    file_summaries.sort(key=lambda x: x.get("created_at", ""), reverse=True)
-
-    # Permanent Numbering:
+    # Permanent Card Numbering:
     # Sort all valid cards chronologically by (created_at ascending, id ascending)
     all_cards_sorted = sorted(all_cards, key=lambda c: (c.get("created_at", ""), c.get("id", "")))
 
@@ -134,15 +148,33 @@ def build() -> int:
     # Save numbers.json
     save_json(DATA_DIR / "numbers.json", numbers_map)
 
-    # Save index.json (file listings)
+    # Sort files chronologically (oldest first) to assign sequential Patch numbers (#1, #2, #3...)
+    raw_file_entries.sort(key=lambda x: (x.get("created_at", ""), x.get("path", "")))
+    file_summaries: List[Dict[str, Any]] = []
+    for idx, entry in enumerate(raw_file_entries, start=1):
+        c_nums = sorted([numbers_map[cid] for cid in entry["card_ids"] if cid in numbers_map])
+        entry["patch_number"] = idx
+        entry["card_numbers"] = c_nums
+        entry["min_number"] = c_nums[0] if c_nums else 0
+        entry["max_number"] = c_nums[-1] if c_nums else 0
+        file_summaries.append(entry)
+
+    # Sort patches descending by patch_number (newest patch on top)
+    file_summaries.sort(key=lambda x: x["patch_number"], reverse=True)
+
+    # Save index.json (patch listings)
     save_json(DATA_DIR / "index.json", {
         "generated_at": datetime.now(timezone.utc).isoformat(),
         "total_files": len(file_summaries),
+        "total_patches": len(file_summaries),
         "total_cards": len(all_cards),
+        "batches_per_day_target": int(generator_config.get("batches_per_day", 3)),
+        "batch_size_target": int(generator_config.get("batch_size", 5)),
         "files": file_summaries,
     })
 
     # Build search.json
+    patch_by_file = {f["path"]: f["patch_number"] for f in file_summaries}
     search_records: List[Dict[str, Any]] = []
     for card in all_cards:
         c_id = card["id"]
@@ -151,6 +183,7 @@ def build() -> int:
         search_records.append({
             "id": c_id,
             "number": numbers_map.get(c_id, 0),
+            "patch_number": patch_by_file.get(card.get("_file", ""), 0),
             "topic": card.get("topic"),
             "level": card.get("level", "beginner"),
             "tags": card.get("tags", []),
@@ -176,6 +209,7 @@ def build() -> int:
     report = {
         "timestamp": datetime.now(timezone.utc).isoformat(),
         "total_files_scanned": len(card_files),
+        "total_patches": len(file_summaries),
         "total_valid_cards": len(all_cards),
         "total_active_search_cards": len(search_records),
         "deleted_cards_count": len(deleted_ids),
@@ -185,7 +219,10 @@ def build() -> int:
     }
     save_json(DATA_DIR / "build_report.json", report)
 
-    print(f"[OK] Build complete: {len(all_cards)} cards indexed, highest number #{current_max_number}. Skipped {len(skipped_cards)}.")
+    print(
+        f"[OK] Build complete: {len(file_summaries)} patches ({len(all_cards)} cards) indexed, "
+        f"highest card #{current_max_number}. Skipped {len(skipped_cards)}."
+    )
     return 0
 
 

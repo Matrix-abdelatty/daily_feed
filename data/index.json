@@ -1,37 +1,110 @@
 {
-  "generated_at": "2026-11-12T19:47:49.747677+00:00",
-  "total_files": 2,
-  "total_cards": 16,
+  "generated_at": "2026-11-12T21:00:41.306474+00:00",
+  "total_files": 4,
+  "total_patches": 4,
+  "total_cards": 20,
+  "batches_per_day_target": 3,
+  "batch_size_target": 5,
   "files": [
     {
-      "path": "cards/2026/2026-11-12_auto_01.json",
-      "created_at": "2026-11-12T19:40:37.006455+00:00",
-      "card_count": 10,
+      "batch_id": "2026-11-12_patch_04",
+      "path": "cards/2026/2026-11-12_patch_04.json",
+      "date": "2026-11-12",
+      "created_at": "2026-11-12T08:15:00+02:00",
+      "source": "curated",
+      "card_count": 5,
       "card_ids": [
-        "2026-11-12_meetings_agenda_control",
-        "2026-11-12_business_price_anchoring",
-        "2026-11-12_career_feedback",
-        "2026-11-12_productivity_deep_work",
-        "2026-11-12_communication_listening",
-        "2026-11-12_decision_making_premortem",
-        "2026-11-12_leadership_delegation",
         "2026-11-12_psychology_persuasion",
-        "2026-11-12_money_value_focus",
-        "2026-11-12_learning_feynman_technique"
-      ]
+        "2026-11-12_negotiation_calibrated-how-question",
+        "2026-11-12_psychology_flaw-admission-trust",
+        "2026-11-12_business_upfront-negative-contract",
+        "2026-11-12_money_sunk-cost-exit-test"
+      ],
+      "patch_number": 4,
+      "card_numbers": [
+        16,
+        17,
+        18,
+        19,
+        20
+      ],
+      "min_number": 16,
+      "max_number": 20
     },
     {
-      "path": "cards/2026/2026-11-12_seed_01.json",
-      "created_at": "2026-11-12T08:00:00+02:00",
-      "card_count": 6,
+      "batch_id": "2026-11-12_patch_03",
+      "path": "cards/2026/2026-11-12_patch_03.json",
+      "date": "2026-11-12",
+      "created_at": "2026-11-12T08:10:00+02:00",
+      "source": "gemini",
+      "card_count": 5,
       "card_ids": [
-        "2026-11-12_negotiation_discount-remove-part",
-        "2026-11-12_pricing_three-options-not-one-price",
-        "2026-11-12_persuasion_statue-and-the-king",
+        "2026-11-12_leadership_delegation",
+        "2026-11-12_learning_feynman_technique",
+        "2026-11-12_meetings_agenda_control",
+        "2026-11-12_money_value_focus",
+        "2026-11-12_productivity_deep_work"
+      ],
+      "patch_number": 3,
+      "card_numbers": [
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "min_number": 11,
+      "max_number": 15
+    },
+    {
+      "batch_id": "2026-11-12_patch_02",
+      "path": "cards/2026/2026-11-12_patch_02.json",
+      "date": "2026-11-12",
+      "created_at": "2026-11-12T08:05:00+02:00",
+      "source": "seed+gemini",
+      "card_count": 5,
+      "card_ids": [
         "2026-11-12_sales_sell-pain-before-specs",
-        "2026-11-12_sales_four-step-compelling-close",
-        "2026-11-12_meetings_handled-attack-skip-basics"
-      ]
+        "2026-11-12_business_price_anchoring",
+        "2026-11-12_career_feedback",
+        "2026-11-12_communication_listening",
+        "2026-11-12_decision_making_premortem"
+      ],
+      "patch_number": 2,
+      "card_numbers": [
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "min_number": 6,
+      "max_number": 10
+    },
+    {
+      "batch_id": "2026-11-12_patch_01",
+      "path": "cards/2026/2026-11-12_patch_01.json",
+      "date": "2026-11-12",
+      "created_at": "2026-11-12T08:00:00+02:00",
+      "source": "seed",
+      "card_count": 5,
+      "card_ids": [
+        "2026-11-12_meetings_handled-attack-skip-basics",
+        "2026-11-12_negotiation_discount-remove-part",
+        "2026-11-12_persuasion_statue-and-the-king",
+        "2026-11-12_pricing_three-options-not-one-price",
+        "2026-11-12_sales_four-step-compelling-close"
+      ],
+      "patch_number": 1,
+      "card_numbers": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "min_number": 1,
+      "max_number": 5
     }
   ]
 }

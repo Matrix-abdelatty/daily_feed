@@ -1,9 +1,61 @@
 {
   "schema_version": 1,
-  "batch_id": "2026-11-12_seed_01",
+  "batch_id": "2026-11-12_patch_01",
   "created_at": "2026-11-12T08:00:00+02:00",
   "source": "seed",
   "cards": [
+    {
+      "id": "2026-11-12_meetings_handled-attack-skip-basics",
+      "created_at": "2026-11-12T08:00:00+02:00",
+      "topic": "meetings",
+      "tags": ["meetings", "conflict", "status", "communication"],
+      "level": "intermediate",
+      "needs_completion": false,
+      "en": {
+        "title": "Attacked in a Meeting? Don't Defend — Skip the Basics",
+        "hook": "When someone ambushes your presentation with 'This approach doesn't make any sense!', defending yourself makes you look guilty and weak.",
+        "action": "Do not get defensive. Stay calm, smile slightly, and invite them into the spotlight: 'Show us what I'm missing.' If they start listing obvious textbook basics, gently cut in: 'Let's skip the basics — what's the core flaw?'",
+        "key_phrase": "Show us what I'm missing here... And let's skip the basics.",
+        "when": "A colleague or stakeholder interrupts your presentation with a vague, aggressive, or hostile challenge in front of peers.",
+        "why": "Meeting attackers rely on creating fog to assert dominance. Calling their bluff forces them to either deliver substantive evidence (which helps the room) or expose their attack as hollow noise.",
+        "example": "Heckler: 'This timeline is completely unrealistic!' You: 'Show the room what I'm missing in the critical path.' Heckler: 'Well, development takes time and testing is hard...' You: 'Let's skip the basics. What specific dependency didn't we account for?' Heckler: '...I'll review my notes.'",
+        "mistake": "Raising your voice, reciting your credentials, or scrambling to explain why your work is actually good."
+      },
+      "ar": {
+        "title": "حد هاجمك في اجتماع؟ اوعى تدافع — «تخطى الأساسيات»",
+        "hook": "لما حد يقطع كلامك في اجتماع ويقول باستهزاء: «الخطة دي ملهاش أي معنى!»، دفاعك عن نفسك بيخليك تبان مهزوز وفي موقف المتهم.",
+        "action": "إياك تدافع أو تبرر. حافظ على هدوءك التام وبص له واسأله بكل ثقة: «وضّحلنا إيه النقطة اللي فايتاني؟». ولو بدأ يلف ويدور في بديهيات عامة، قاطعه بهدوء: «خلينا نتخطى الأساسيات.. إيه المشكلة المحددة بالظبط؟».",
+        "key_phrase": "وضحلنا إيه النقطة اللي فايتاني هنا؟ وخلينا نتخطى الأساسيات المعروفة للكل.",
+        "when": "لما زميل أو طرف في الاجتماع يهاجم فكرتك هجوم عام أو استعراضي قدام المدير أو الفريق.",
+        "why": "اللي بيهاجم في العلن بيعتمد على إرباكك ورمي كلام عام عشان يكسب بونط. لما تطلب منه تفصيل محدد وتمنعه من تكرار البديهيات، إنت بتكبس الهجوم: إما عنده نقطة بجد هتفيد الكل، أو هيبان إنه كان بيتكلم لمجرد الاستعراض.",
+        "example": "المهاجم: «الجدول الزمني ده مستحيل يتنفذ!» إنت: «وضحلنا إيه النقطة اللي فايتاني هنا؟» المهاجم: «أصل البرمجة بتاخد وقت والتستنج محتاج تركيز...» إنت: «خلينا نتخطى الأساسيات، إيه المهمة المحددة اللي شايف وقتها غير كافي؟» المهاجم: «... هبقى أراجع الجدول تاني وأقولك.»",
+        "mistake": "إنك تنفعل وتدخل في خناقة وتعد تشرح تاريخك وخبرتك، فتحقق له هدفه في إفساد العرض بتاعك."
+      },
+      "quiz": {
+        "type": "mcq",
+        "correct_index": 0,
+        "en": {
+          "question": "When faced with an aggressive, vague critique during a team presentation, what is the best tactical move?",
+          "options": [
+            "Calmly ask them to specify what you missed, and ask them to skip obvious basics to reveal their actual argument.",
+            "Counter-attack by questioning their performance on recent projects.",
+            "Immediately apologize and promise to rewrite the presentation.",
+            "Ignore them completely and keep reading your slides."
+          ],
+          "explanation": "Inviting specific critique disarms bad-faith attacks while remaining professional. Forcing them past obvious generalities reveals whether they have a real point or were merely posturing."
+        },
+        "ar": {
+          "question": "لما تتعرض لهجوم استعراضي مبهم أثناء عرض شغلك في اجتماع، إيه هو أذكى تصرف تكتيكي؟",
+          "options": [
+            "تسأله بهدوء يوضح بالظبط إيه اللي فاتك، وتطلب منه يتخطى البديهيات عشان يظهر دليله الحقيقي.",
+            "تهاجمه في المقابل وتفكره بغلطاته في المشاريع اللي فاتت.",
+            "تعتذر فوراً قدام الناس وتوعد إنك هتعدل العرض.",
+            "تتجاهل كلامه تماماً وتكمل قراءة السلايدز وكأنه متكلمش."
+          ],
+          "explanation": "مطالبته بنقطة محددة وتجاوز البديهيات بيكشف فوراً لو كان عنده نقد حقيقي أو مجرد استعراض فارغ، وبيحافظ على هيبتك وهدوء القعدة."
+        }
+      }
+    },
     {
       "id": "2026-11-12_negotiation_discount-remove-part",
       "created_at": "2026-11-12T08:00:00+02:00",
@@ -53,58 +105,6 @@
             "تسأله على ميزانيته بالظبط وتنزله على مقاسها."
           ],
           "explanation": "ربط السعر بالخدمات بيثبت إن تسعيرك مبني على شغل حقيقي. التنازل السهل بيقلل قيمتك، والرفض الناشف بيخسر العميل."
-        }
-      }
-    },
-    {
-      "id": "2026-11-12_pricing_three-options-not-one-price",
-      "created_at": "2026-11-12T08:00:00+02:00",
-      "topic": "pricing",
-      "tags": ["pricing", "psychology", "anchoring", "sales"],
-      "level": "beginner",
-      "needs_completion": false,
-      "en": {
-        "title": "Never Quote a Single Price: Offer Three Tiers",
-        "hook": "'How much does it cost?' is a trap. If you give one number, their brain only has one question to answer: 'Yes or No?'",
-        "action": "When asked for price, always respond with three tiers: an elite package ($20), a stripped-down basic package ($2), and your standard target package ($10).",
-        "key_phrase": "We have the Elite tier at $20, the Basic at $2, and our most popular Standard package at $10.",
-        "when": "A prospect asks 'What is your rate?' or 'How much do you charge for this?'",
-        "why": "Single prices force a binary buy/don't buy decision. Three options shift psychology from 'Should I buy?' to 'Which one fits best?', anchoring them against the high price and making the target feel like the smart choice.",
-        "example": "Customer: 'How much for monthly marketing?' You: 'We have three plans: Growth Partner at $2,000/mo, Starter Audit at $300 one-time, and Core Acceleration at $950/mo which 80% of our clients pick.'",
-        "mistake": "Giving a single flat rate and sitting in awkward silence while they decide whether to walk away."
-      },
-      "ar": {
-        "title": "متقولش سعر واحد أبداً: قدّم ٣ اختيارات",
-        "hook": "سؤال «بكام ده؟» فخ. لو رديت برقم واحد بس، مخ العميل هيفكر في اختيار واحد: «أشتري ولا لأ؟»",
-        "action": "لما تتسأل عن السعر، اعرض ٣ باقات: باقة مميزة جداً بسعر عالي، وباقة بسيطة بسعر قليل، والباقة المتوسطة اللي إنت أصلاً مستهدف تبيعها.",
-        "key_phrase": "عندنا الباقة الشاملة بـ٢٠، والأساسية بـ٢، والباقة المتوسطة الأكثر طلباً بـ١٠.",
-        "when": "أول ما العميل يسأل «إيه أسعاركم؟» أو «بتكلف كام الحكاية دي؟».",
-        "why": "السعر الواحد بيحط العميل في زاوية (آه أو لأ). التلات اختيارات بتغيّر تفكيره من «أشتري ولا لأ؟» لـ«أختار أنهي باقة فيهم؟»، والسعر العالي بيخلّي المتوسط يبان لقطة ومعقول جداً.",
-        "example": "العميل: «إدارة الصفحة الشهرية بكام؟» إنت: «عندنا باقة الـVIP بـ٢٠٠٠، والباقة الأساسية بـ٣٠٠، والباقة الاحترافية اللي ٨٠٪ من عملائنا بيختاروها بـ٩٥٠.»",
-        "mistake": "إنك ترمي رقم واحد وتسكت، فتخلّي قرار الرفض سهل جداً عليه."
-      },
-      "quiz": {
-        "type": "mcq",
-        "correct_index": 1,
-        "en": {
-          "question": "Why is presenting three pricing tiers psychologically superior to quoting a single price?",
-          "options": [
-            "Because clients always end up buying the most expensive tier.",
-            "It shifts the customer's mental debate from 'Yes or No' to 'Which option fits best?'",
-            "Because it confuses the client into spending more money.",
-            "It guarantees that you will never receive price pushback."
-          ],
-          "explanation": "Three tiers reframe the decision from whether to work with you to how to work with you. The high price anchors expectations, making the target middle tier feel safe and reasonable."
-        },
-        "ar": {
-          "question": "ليه تقديم ٣ باقات أسعار أفضل نفسياً بكتير من إعطاء سعر واحد؟",
-          "options": [
-            "لأن العميل دايماً في الآخر بيشتري أغلى باقة.",
-            "لأنها بتحوّل تفكير العميل من «أشتري ولا مأشتريش» إلى «أنهي باقة تناسبني أكتر؟».",
-            "عشان تلخبط العميل فيدفع فلوس أكتر من غير ما يحس.",
-            "لأنها بتضمن إن مفيش أي عميل هيعترض على السعر نهائياً."
-          ],
-          "explanation": "التلات اختيارات بتعيد صياغة السؤال في عقل العميل من قرار شراء/رفض إلى مقارنة بين بدائل، والسعر العالي بيخلّي الباقة المتوسطة تبان خيار طبيعي ومريح."
         }
       }
     },
@@ -161,54 +161,54 @@
       }
     },
     {
-      "id": "2026-11-12_sales_sell-pain-before-specs",
+      "id": "2026-11-12_pricing_three-options-not-one-price",
       "created_at": "2026-11-12T08:00:00+02:00",
-      "topic": "sales",
-      "tags": ["sales", "pitch", "psychology", "communication"],
+      "topic": "pricing",
+      "tags": ["pricing", "psychology", "anchoring", "sales"],
       "level": "beginner",
       "needs_completion": false,
       "en": {
-        "title": "Never Pitch Specs First: The 3-Step Pain Sequence",
-        "hook": "Nobody wakes up wanting to buy cloud hosting, SEO audits, or legal software. They wake up stressed about lost revenue, manual grind, and missed targets.",
-        "action": "Do not pitch features, specifications, or pricing first. Follow this strict order: 1) The pain/problem, 2) The daily cost of what they lose by keeping it, 3) The solution with timeline and budget.",
-        "key_phrase": "Before we look at the software, if we don't fix this data leak, how much is your team bleeding each quarter?",
-        "when": "Opening any sales conversation, pitching a proposal, or presenting a new initiative.",
-        "why": "People buy emotionally to escape pain, then justify rationally with specs. If they don't feel the burning cost of doing nothing, your price will always look expensive.",
-        "example": "Weak pitch: 'Our CRM has 40 automations and costs $300.' Strong pitch: 'Your reps lose 9 hours a week on manual data entry, costing you 3 lost deals a month. We eliminate that grind in 14 days for $300.'",
-        "mistake": "Dumping technical features, certifications, and pricing before uncovering what is keeping the buyer awake at night."
+        "title": "Never Quote a Single Price: Offer Three Tiers",
+        "hook": "'How much does it cost?' is a trap. If you give one number, their brain only has one question to answer: 'Yes or No?'",
+        "action": "When asked for price, always respond with three tiers: an elite package ($20), a stripped-down basic package ($2), and your standard target package ($10).",
+        "key_phrase": "We have the Elite tier at $20, the Basic at $2, and our most popular Standard package at $10.",
+        "when": "A prospect asks 'What is your rate?' or 'How much do you charge for this?'",
+        "why": "Single prices force a binary buy/don't buy decision. Three options shift psychology from 'Should I buy?' to 'Which one fits best?', anchoring them against the high price and making the target feel like the smart choice.",
+        "example": "Customer: 'How much for monthly marketing?' You: 'We have three plans: Growth Partner at $2,000/mo, Starter Audit at $300 one-time, and Core Acceleration at $950/mo which 80% of our clients pick.'",
+        "mistake": "Giving a single flat rate and sitting in awkward silence while they decide whether to walk away."
       },
       "ar": {
-        "title": "متبدأش بالمواصفات والأسعار أبداً: ثلاثية الوجع أولاً",
-        "hook": "مفيش حد بيصحى الصبح يقول «نفسي أشتري استضافة سحابية أو برنامج محاسبة». الناس بتصحى قلقانة على الفلوس اللي بتضيع والمشاكل اليومية.",
-        "action": "متبدأش أبداً كلامك بمواصفات الخدمة ولا سعرها. رتّب كلامك بالترتيب ده: ١) المشكلة أو الوجع اللي عندهم، ٢) حجم الخسارة اللي بتحصل طول ما المشكلة دي موجودة، ٣) الحل العملي مع الميزانية والجدول الزمني.",
-        "key_phrase": "قبل ما نتكلم في تفاصيل النظام، لو المشكلة دي فضلت مكملة، البيزنس بتاعكم بيخسر قد إيه كل شهر؟",
-        "when": "في أول أي قعدة بيع، أو تقديم عرض فني ومالي لعميل جديد.",
-        "why": "الناس بتاخد قرار الشراء بالعاطفة عشان تهرب من وجع المشكلة، وبعدين تبرر بالعقل والمواصفات. لو العميل محسّش بحجم الخسارة اللي عايش فيها دلوقتي، أي سعر هتقوله هيبان غالي جداً عليه.",
-        "example": "بياع ضعيف: «البرنامج بتاعنا فيه ٤٠ ميزة وسعره ٥٠٠٠ جنيه». بياع ذكي: «فريقك بيضيع يومين في الأسبوع عشان يطلع تقارير المبيعات، وده بيعطل قفل الصفقات. إحنا هنوفر الوقت ده كله في خلال ١٠ أيام بميزانية ٥٠٠٠ جنيه.»",
-        "mistake": "إنك تفتح البريزنتيشن وتعدّ تسرد في مميزات شركتك وإمكانياتك قبل ما تسمع مشكلته هو أصلاً."
+        "title": "متقولش سعر واحد أبداً: قدّم ٣ اختيارات",
+        "hook": "سؤال «بكام ده؟» فخ. لو رديت برقم واحد بس، مخ العميل هيفكر في اختيار واحد: «أشتري ولا لأ؟»",
+        "action": "لما تتسأل عن السعر، اعرض ٣ باقات: باقة مميزة جداً بسعر عالي، وباقة بسيطة بسعر قليل، والباقة المتوسطة اللي إنت أصلاً مستهدف تبيعها.",
+        "key_phrase": "عندنا الباقة الشاملة بـ٢٠، والأساسية بـ٢، والباقة المتوسطة الأكثر طلباً بـ١٠.",
+        "when": "أول ما العميل يسأل «إيه أسعاركم؟» أو «بتكلف كام الحكاية دي؟».",
+        "why": "السعر الواحد بيحط العميل في زاوية (آه أو لأ). التلات اختيارات بتغيّر تفكيره من «أشتري ولا لأ؟» لـ«أختار أنهي باقة فيهم؟»، والسعر العالي بيخلّي المتوسط يبان لقطة ومعقول جداً.",
+        "example": "العميل: «إدارة الصفحة الشهرية بكام؟» إنت: «عندنا باقة الـVIP بـ٢٠٠٠، والباقة الأساسية بـ٣٠٠، والباقة الاحترافية اللي ٨٠٪ من عملائنا بيختاروها بـ٩٥٠.»",
+        "mistake": "إنك ترمي رقم واحد وتسكت، فتخلّي قرار الرفض سهل جداً عليه."
       },
       "quiz": {
         "type": "mcq",
         "correct_index": 1,
         "en": {
-          "question": "What is the correct psychological sequence for a persuasive sales conversation?",
+          "question": "Why is presenting three pricing tiers psychologically superior to quoting a single price?",
           "options": [
-            "Company history → Product features → Price → Testimonials",
-            "Identify the core pain → Unpack what they lose without fixing it → Present solution with budget & timeline",
-            "Quote the lowest price immediately → Explain why you are better than competitors → Ask for the sale",
-            "Feature demo → Discount offer → Problem exploration → Contract signing"
+            "Because clients always end up buying the most expensive tier.",
+            "It shifts the customer's mental debate from 'Yes or No' to 'Which option fits best?'",
+            "Because it confuses the client into spending more money.",
+            "It guarantees that you will never receive price pushback."
           ],
-          "explanation": "Buyers must feel the real cost of inaction before an investment makes sense. Exploring the pain and loss first gives your solution urgent value."
+          "explanation": "Three tiers reframe the decision from whether to work with you to how to work with you. The high price anchors expectations, making the target middle tier feel safe and reasonable."
         },
         "ar": {
-          "question": "إيه الترتيب النفسي الصح والمقنع في أي محادثة بيعية ناجحة؟",
+          "question": "ليه تقديم ٣ باقات أسعار أفضل نفسياً بكتير من إعطاء سعر واحد؟",
           "options": [
-            "تاريخ الشركة ← مواصفات المنتج ← السعر ← آراء العملاء السابقين.",
-            "تحديد المشكلة الحقيقية ← توضيح حجم الخسارة لو متصلحتش ← تقديم الحل بالميزانية والجدول الزمني.",
-            "تقول أقل سعر فوراً ← تقارن نفسك بالمنافسين ← تطلب منه يمضي العقد.",
-            "تجربة المنتج للمواصفات ← عرض خصم كبير ← اكتشاف المشكلة ← قفل الصفقة."
+            "لأن العميل دايماً في الآخر بيشتري أغلى باقة.",
+            "لأنها بتحوّل تفكير العميل من «أشتري ولا مأشتريش» إلى «أنهي باقة تناسبني أكتر؟».",
+            "عشان تلخبط العميل فيدفع فلوس أكتر من غير ما يحس.",
+            "لأنها بتضمن إن مفيش أي عميل هيعترض على السعر نهائياً."
           ],
-          "explanation": "العميل محتاج يلمس حجم الخسارة الحالية عشان يقدر قيمة الاستثمار في الحل بتاعك. المشكلة والوجع أولاً هي اللي بتخلي السعر يبان استثمار مربح مش تكلفة."
+          "explanation": "التلات اختيارات بتعيد صياغة السؤال في عقل العميل من قرار شراء/رفض إلى مقارنة بين بدائل، والسعر العالي بيخلّي الباقة المتوسطة تبان خيار طبيعي ومريح."
         }
       }
     },
@@ -261,58 +261,6 @@
             "«تحب ننسق جلسة البداية يوم الخميس ده، ولا الاتنين الصبح هيكون أنسب لفريقكم؟»"
           ],
           "explanation": "سؤال الاختيار بين موعدين بيعتبر الموافقة خطوة طبيعية ويوجّه تركيز العميل لترتيبات التنفيذ بدل الوقوع في فخ التردد والتأجيل."
-        }
-      }
-    },
-    {
-      "id": "2026-11-12_meetings_handled-attack-skip-basics",
-      "created_at": "2026-11-12T08:00:00+02:00",
-      "topic": "meetings",
-      "tags": ["meetings", "conflict", "status", "communication"],
-      "level": "intermediate",
-      "needs_completion": false,
-      "en": {
-        "title": "Attacked in a Meeting? Don't Defend — Skip the Basics",
-        "hook": "When someone ambushes your presentation with 'This approach doesn't make any sense!', defending yourself makes you look guilty and weak.",
-        "action": "Do not get defensive. Stay calm, smile slightly, and invite them into the spotlight: 'Show us what I'm missing.' If they start listing obvious textbook basics, gently cut in: 'Let's skip the basics — what's the core flaw?'",
-        "key_phrase": "Show us what I'm missing here... And let's skip the basics.",
-        "when": "A colleague or stakeholder interrupts your presentation with a vague, aggressive, or hostile challenge in front of peers.",
-        "why": "Meeting attackers rely on creating fog to assert dominance. Calling their bluff forces them to either deliver substantive evidence (which helps the room) or expose their attack as hollow noise.",
-        "example": "Heckler: 'This timeline is completely unrealistic!' You: 'Show the room what I'm missing in the critical path.' Heckler: 'Well, development takes time and testing is hard...' You: 'Let's skip the basics. What specific dependency didn't we account for?' Heckler: '...I'll review my notes.'",
-        "mistake": "Raising your voice, reciting your credentials, or scrambling to explain why your work is actually good."
-      },
-      "ar": {
-        "title": "حد هاجمك في اجتماع؟ اوعى تدافع — «تخطى الأساسيات»",
-        "hook": "لما حد يقطع كلامك في اجتماع ويقول باستهزاء: «الخطة دي ملهاش أي معنى!»، دفاعك عن نفسك بيخليك تبان مهزوز وفي موقف المتهم.",
-        "action": "إياك تدافع أو تبرر. حافظ على هدوءك التام وبص له واسأله بكل ثقة: «وضّحلنا إيه النقطة اللي فايتاني؟». ولو بدأ يلف ويدور في بديهيات عامة، قاطعه بهدوء: «خلينا نتخطى الأساسيات.. إيه المشكلة المحددة بالظبط؟».",
-        "key_phrase": "وضحلنا إيه النقطة اللي فايتاني هنا؟ وخلينا نتخطى الأساسيات المعروفة للكل.",
-        "when": "لما زميل أو طرف في الاجتماع يهاجم فكرتك هجوم عام أو استعراضي قدام المدير أو الفريق.",
-        "why": "اللي بيهاجم في العلن بيعتمد على إرباكك ورمي كلام عام عشان يكسب بونط. لما تطلب منه تفصيل محدد وتمنعه من تكرار البديهيات، إنت بتكبس الهجوم: إما عنده نقطة بجد هتفيد الكل، أو هيبان إنه كان بيتكلم لمجرد الاستعراض.",
-        "example": "المهاجم: «الجدول الزمني ده مستحيل يتنفذ!» إنت: «وضحلنا إيه النقطة اللي فايتاني هنا؟» المهاجم: «أصل البرمجة بتاخد وقت والتستنج محتاج تركيز...» إنت: «خلينا نتخطى الأساسيات، إيه المهمة المحددة اللي شايف وقتها غير كافي؟» المهاجم: «... هبقى أراجع الجدول تاني وأقولك.»",
-        "mistake": "إنك تنفعل وتدخل في خناقة وتعد تشرح تاريخك وخبرتك، فتحقق له هدفه في إفساد العرض بتاعك."
-      },
-      "quiz": {
-        "type": "mcq",
-        "correct_index": 0,
-        "en": {
-          "question": "When faced with an aggressive, vague critique during a team presentation, what is the best tactical move?",
-          "options": [
-            "Calmly ask them to specify what you missed, and ask them to skip obvious basics to reveal their actual argument.",
-            "Counter-attack by questioning their performance on recent projects.",
-            "Immediately apologize and promise to rewrite the presentation.",
-            "Ignore them completely and keep reading your slides."
-          ],
-          "explanation": "Inviting specific critique disarms bad-faith attacks while remaining professional. Forcing them past obvious generalities reveals whether they have a real point or were merely posturing."
-        },
-        "ar": {
-          "question": "لما تتعرض لهجوم استعراضي مبهم أثناء عرض شغلك في اجتماع، إيه هو أذكى تصرف تكتيكي؟",
-          "options": [
-            "تسأله بهدوء يوضح بالظبط إيه اللي فاتك، وتطلب منه يتخطى البديهيات عشان يظهر دليله الحقيقي.",
-            "تهاجمه في المقابل وتفكره بغلطاته في المشاريع اللي فاتت.",
-            "تعتذر فوراً قدام الناس وتوعد إنك هتعدل العرض.",
-            "تتجاهل كلامه تماماً وتكمل قراءة السلايدز وكأنه متكلمش."
-          ],
-          "explanation": "مطالبته بنقطة محددة وتجاوز البديهيات بيكشف فوراً لو كان عنده نقد حقيقي أو مجرد استعراض فارغ، وبيحافظ على هيبتك وهدوء القعدة."
         }
       }
     }

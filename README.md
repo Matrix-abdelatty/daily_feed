@@ -80,3 +80,4 @@ python scripts/generate_daily.py
 - **Zero hardcoded credentials**: All API keys are stored exclusively as GitHub Actions Secrets (`GEMINI_API_KEY`, `GROQ_API_KEY`).
 - **Owner Token**: Stored strictly in your browser's `localStorage` on your private devices. Never committed to git.
 - **Client data**: Likes, saves, and quiz progress stay in your browser. No trackers, no accounts.
+

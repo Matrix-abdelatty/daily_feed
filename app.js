@@ -1,11 +1,11 @@
 /**
- * Daily Feed — Core Application Logic
+ * Daily Feed — Patch-Based Micro-Learning & Combined Quiz Application
  */
 
 (function () {
   'use strict';
 
-  // State
+  // Configuration & Metadata State
   let appConfig = {
     app_name: 'Daily Feed',
     default_card_language: 'both',
@@ -16,36 +16,39 @@
   };
 
   let topics = [];
-  let indexData = { files: [] };
+  let indexData = { files: [], batches_per_day_target: 3, batch_size_target: 5 };
   let numbersMap = {};
-  let searchIndex = [];
   let repoDeletedIds = new Set();
+  let buildReport = { skipped_details: [] };
 
-  let loadedCardsMap = new Map(); // id -> card object
-  let loadedFiles = new Set();
-  let filesQueue = [];
+  // Loaded Patches & Cards
+  let patchesList = []; // Array of patch objects: { patch_number, batch_id, date, created_at, source, cards: [...] }
+  let loadedCardsMap = new Map(); // card.id -> card
   let isLoading = false;
 
-  // View state
+  // UI View State
   let currentLang = 'both';
-  let activeTab = 'all'; // all, saved, liked, due, mistakes
+  let activeTab = 'new'; // 'new' | 'seen' | 'saved'
   let activeTopic = null;
   let currentSearch = '';
+  let expandedPatches = new Set(); // Patch batch_ids explicitly expanded in 'seen' tab
 
-  // Local user progress storage
-  const STORAGE_KEY = 'daily_feed_progress_v1';
+  // Local User Progress Storage
+  const STORAGE_KEY = 'daily_feed_progress_v2';
+  const LEGACY_KEY = 'daily_feed_progress_v1';
   let userProgress = {
-    likes: {},     // id -> timestamp
-    saves: {},     // id -> timestamp
-    srs: {},       // id -> { stage: 0, due: 'YYYY-MM-DD', updated_at: '...' }
-    mistakes: {},  // id -> timestamp
-    hidden: {},    // id -> timestamp (locally deleted)
-    local_cards: [], // user-composed cards
+    saves: {},            // cardId -> timestamp (Single bookmark action: Save ⭐)
+    finished_patches: {}, // batchId -> { finished_at, score, total }
+    srs: {},              // cardId -> { stage: 0..6, due: 'YYYY-MM-DD', updated_at: '...' }
+    mistakes: {},         // cardId -> timestamp
+    hidden: {},           // cardId -> timestamp (locally deleted)
+    local_patches: [],    // Array of user-uploaded JSON patch objects
     owner_token: '',
-    delete_password: '123'
+    delete_password: '123',
+    lang_display: 'both'
   };
 
-  // Helper: today's date string YYYY-MM-DD
+  // Date Helpers
   function getTodayStr() {
     const d = new Date();
     return d.toISOString().split('T')[0];
@@ -57,17 +60,37 @@
     return d.toISOString().split('T')[0];
   }
 
-  // Load progress from localStorage
+  // Load & Migrate User Progress
   function loadUserProgress() {
     try {
-      const raw = localStorage.getItem(STORAGE_KEY);
-      if (raw) {
-        const parsed = JSON.parse(raw);
+      const rawV2 = localStorage.getItem(STORAGE_KEY);
+      if (rawV2) {
+        const parsed = JSON.parse(rawV2);
         userProgress = Object.assign(userProgress, parsed);
-        // Load saved language preference
-        if (parsed.lang_display) {
-          currentLang = parsed.lang_display;
+      } else {
+        // Migrate from v1 if present
+        const rawV1 = localStorage.getItem(LEGACY_KEY);
+        if (rawV1) {
+          const v1 = JSON.parse(rawV1);
+          userProgress.saves = Object.assign({}, v1.saves || {}, v1.likes || {});
+          userProgress.srs = v1.srs || {};
+          userProgress.mistakes = v1.mistakes || {};
+          userProgress.hidden = v1.hidden || {};
+          userProgress.owner_token = v1.owner_token || '';
+          userProgress.delete_password = v1.delete_password || '123';
+          if (Array.isArray(v1.local_cards) && v1.local_cards.length > 0) {
+            userProgress.local_patches = [{
+              batch_id: 'local_custom_01',
+              date: getTodayStr(),
+              created_at: new Date().toISOString(),
+              source: 'manual',
+              cards: v1.local_cards
+            }];
+          }
         }
+      }
+      if (userProgress.lang_display) {
+        currentLang = userProgress.lang_display;
       }
     } catch (e) {
       console.error('Failed to load user progress:', e);
@@ -78,48 +101,42 @@
     try {
       userProgress.lang_display = currentLang;
       localStorage.setItem(STORAGE_KEY, JSON.stringify(userProgress));
-      updateCounts();
+      updateCountsAndStatusBar();
     } catch (e) {
       console.error('Failed to save user progress:', e);
     }
   }
 
-  // Fetch JSON helper
   async function fetchJSON(url) {
     const resp = await fetch(url + '?_t=' + Date.now());
     if (!resp.ok) throw new Error(`HTTP ${resp.status} for ${url}`);
     return await resp.json();
   }
 
-  // Initialize
+  // Initialization
   async function init() {
     loadUserProgress();
 
-    // Setup language buttons
+    // Language toggle buttons
     document.querySelectorAll('.lang-btn').forEach(btn => {
-      if (btn.dataset.lang === currentLang) {
-        btn.classList.add('active');
-      } else {
-        btn.classList.remove('active');
-      }
+      btn.classList.toggle('active', btn.dataset.lang === currentLang);
       btn.addEventListener('click', () => {
         document.querySelectorAll('.lang-btn').forEach(b => b.classList.remove('active'));
         btn.classList.add('active');
         currentLang = btn.dataset.lang;
         saveUserProgress();
-        renderCards();
+        renderFeed();
       });
     });
 
-    // Load configs and metadata
     try {
-      const [cfg, top, idx, nums, deleted, search] = await Promise.all([
+      const [cfg, top, idx, nums, deleted, report] = await Promise.all([
         fetchJSON('config/app.config.json').catch(() => appConfig),
         fetchJSON('config/topics.json').catch(() => []),
         fetchJSON('data/index.json').catch(() => ({ files: [] })),
         fetchJSON('data/numbers.json').catch(() => ({})),
         fetchJSON('data/deleted.json').catch(() => []),
-        fetchJSON('data/search.json').catch(() => [])
+        fetchJSON('data/build_report.json').catch(() => ({ skipped_details: [] }))
       ]);
 
       appConfig = Object.assign(appConfig, cfg);
@@ -127,68 +144,1242 @@
       indexData = idx;
       numbersMap = nums;
       repoDeletedIds = new Set(deleted);
-      searchIndex = search;
-
-      filesQueue = (indexData.files || []).map(f => f.path);
-    } catch (err) {
-      console.error('Initial data fetch error:', err);
+      buildReport = report;
+    } catch (e) {
+      console.error('Metadata load error:', e);
     }
 
-    renderTopicChips();
     populateComposerTopics();
     setupEventListeners();
-
-    // Inject any locally created cards into loadedCardsMap
-    if (Array.isArray(userProgress.local_cards)) {
-      userProgress.local_cards.forEach(card => {
-        loadedCardsMap.set(card.id, card);
-        if (!numbersMap[card.id]) {
-          numbersMap[card.id] = (Object.values(numbersMap).reduce((a, b) => Math.max(a, b), 0) || 0) + 1;
-        }
-      });
-    }
-
-    // Load initial batch of card files
-    await loadNextBatch();
-    await loadNextBatch(); // load 2nd file if exists
-    updateCounts();
+    await loadAllPatches();
+    updateCountsAndStatusBar();
+    renderFeed();
   }
 
-  // Render Topic chips in navigation
-  function renderTopicChips() {
-    const container = document.getElementById('topicChipsContainer');
+  // Load all patch files listed in index.json + local patches
+  async function loadAllPatches() {
+    isLoading = true;
+    const statusEl = document.getElementById('feedStatusText');
+    if (statusEl) statusEl.textContent = 'Loading patches...';
+
+    const files = indexData.files || [];
+    const loadedRepoPatches = [];
+
+    await Promise.all(files.map(async (fileMeta) => {
+      try {
+        const batchData = await fetchJSON(fileMeta.path);
+        const cards = (batchData && Array.isArray(batchData.cards)) ? batchData.cards : [];
+        cards.forEach(c => {
+          c._patch_id = fileMeta.batch_id;
+          c._patch_number = fileMeta.patch_number;
+          loadedCardsMap.set(c.id, c);
+        });
+        loadedRepoPatches.push({
+          patch_number: fileMeta.patch_number || 1,
+          batch_id: fileMeta.batch_id || fileMeta.path,
+          path: fileMeta.path,
+          date: fileMeta.date || (fileMeta.created_at || '').slice(0, 10),
+          created_at: fileMeta.created_at || batchData.created_at || '',
+          source: fileMeta.source || batchData.source || 'auto',
+          cards: cards
+        });
+      } catch (err) {
+        console.warn('Failed to load patch:', fileMeta.path, err);
+      }
+    }));
+
+    // Merge local uploaded patches (that aren't already in repo)
+    const repoBatchIds = new Set(loadedRepoPatches.map(p => p.batch_id));
+    let maxPatchNum = loadedRepoPatches.reduce((m, p) => Math.max(m, p.patch_number || 0), 0);
+    let maxCardNum = Object.values(numbersMap).reduce((m, n) => Math.max(m, n || 0), 0);
+
+    const localPatches = [];
+    (userProgress.local_patches || []).forEach(lp => {
+      if (repoBatchIds.has(lp.batch_id)) return;
+      maxPatchNum += 1;
+      const pNum = lp.patch_number || maxPatchNum;
+      const cards = lp.cards || [];
+      cards.forEach(c => {
+        if (!numbersMap[c.id]) {
+          maxCardNum += 1;
+          numbersMap[c.id] = maxCardNum;
+        }
+        c._patch_id = lp.batch_id;
+        c._patch_number = pNum;
+        loadedCardsMap.set(c.id, c);
+      });
+      localPatches.push({
+        patch_number: pNum,
+        batch_id: lp.batch_id,
+        path: 'local browser',
+        date: lp.date || (lp.created_at || '').slice(0, 10) || getTodayStr(),
+        created_at: lp.created_at || new Date().toISOString(),
+        source: lp.source || 'manual-ui',
+        cards: cards
+      });
+    });
+
+    patchesList = [...localPatches, ...loadedRepoPatches];
+    patchesList.sort((a, b) => (b.patch_number || 0) - (a.patch_number || 0));
+
+    isLoading = false;
+    if (statusEl) {
+      statusEl.textContent = `${patchesList.length} Patches (${loadedCardsMap.size} Cards) Loaded`;
+    }
+  }
+
+  function isCardHidden(cardId) {
+    return repoDeletedIds.has(cardId) || !!userProgress.hidden[cardId];
+  }
+
+  function isPatchFinished(batchId) {
+    return !!userProgress.finished_patches[batchId];
+  }
+
+  // Update Tab Counters & Top Patch Status Bar
+  function updateCountsAndStatusBar() {
+    const today = getTodayStr();
+
+    let newPatchesCount = 0;
+    let seenPatchesCount = 0;
+    let savedCardsCount = 0;
+    let dueSrsCount = 0;
+    let todayPatchesCount = 0;
+    let todayCardsCount = 0;
+
+    patchesList.forEach(p => {
+      const visibleCards = p.cards.filter(c => !isCardHidden(c.id));
+      if (visibleCards.length === 0) return;
+
+      if (isPatchFinished(p.batch_id)) {
+        seenPatchesCount++;
+      } else {
+        newPatchesCount++;
+      }
+
+      if (p.date === today) {
+        todayPatchesCount++;
+        todayCardsCount += visibleCards.length;
+      }
+    });
+
+    loadedCardsMap.forEach(c => {
+      if (isCardHidden(c.id)) return;
+      if (userProgress.saves[c.id]) {
+        savedCardsCount++;
+      }
+    });
+
+    // Count SRS due cards (cards from finished patches or saved cards)
+    getReviewPoolCards().forEach(c => {
+      const s = userProgress.srs[c.id];
+      if (!s || (s.due && s.due <= today)) {
+        dueSrsCount++;
+      }
+    });
+
+    const setTxt = (id, val) => {
+      const el = document.getElementById(id);
+      if (el) el.textContent = val;
+    };
+
+    setTxt('countNew', newPatchesCount);
+    setTxt('countSeen', seenPatchesCount);
+    setTxt('countSaved', savedCardsCount);
+    setTxt('srsDueCount', dueSrsCount);
+
+    // Update Top Daily Patch Status Bar
+    const dotEl = document.getElementById('todayStatusDot');
+    const txtEl = document.getElementById('todayStatusText');
+    const targetPatches = indexData.batches_per_day_target || 3;
+
+    if (txtEl && dotEl) {
+      const latestPatch = patchesList[0];
+      const latestDate = latestPatch ? latestPatch.date : 'None';
+      if (todayPatchesCount > 0) {
+        dotEl.className = 'status-dot';
+        txtEl.innerHTML = `<strong>Today (${today}):</strong> ${todayPatchesCount} Patch${todayPatchesCount > 1 ? 'es' : ''} Added (+${todayCardsCount} cards) · Total: ${patchesList.length} Patches`;
+      } else {
+        dotEl.className = 'status-dot pending';
+        txtEl.innerHTML = `<strong>Today (${today}):</strong> 0/${targetPatches} Patches Added yet · Last added: ${latestDate} (${patchesList.length} Patches total)`;
+      }
+    }
+  }
+
+  // Get all cards eligible for Combined Review Quiz (from Finished Patches + Saved Cards)
+  function getReviewPoolCards() {
+    const poolMap = new Map();
+    patchesList.forEach(p => {
+      if (isPatchFinished(p.batch_id)) {
+        p.cards.forEach(c => {
+          if (!isCardHidden(c.id)) poolMap.set(c.id, c);
+        });
+      }
+    });
+    loadedCardsMap.forEach(c => {
+      if (!isCardHidden(c.id) && userProgress.saves[c.id]) {
+        poolMap.set(c.id, c);
+      }
+    });
+    return Array.from(poolMap.values());
+  }
+
+  // Render Main Feed (Patches Mode or Filtered Cards Mode)
+  function renderFeed() {
+    const container = document.getElementById('cardsList');
     if (!container) return;
     container.innerHTML = '';
 
-    const allChip = document.createElement('button');
-    allChip.className = 'topic-chip' + (activeTopic === null ? ' active' : '');
-    allChip.innerHTML = '✨ All Topics';
-    allChip.addEventListener('click', () => {
-      activeTopic = null;
-      document.querySelectorAll('.topic-chip').forEach(c => c.classList.remove('active'));
-      allChip.classList.add('active');
-      renderCards();
+    // Topic button indicator
+    const topicBtn = document.getElementById('btnTopicsPicker');
+    const topicLabel = document.getElementById('activeTopicLabel');
+    if (topicBtn && topicLabel) {
+      if (activeTopic) {
+        const tObj = topics.find(t => t.id === activeTopic) || { label: activeTopic, icon: '🏷️' };
+        topicLabel.textContent = `${tObj.icon} ${tObj.label}`;
+        topicBtn.classList.add('filtered');
+      } else {
+        topicLabel.textContent = '🏷️ Topics';
+        topicBtn.classList.remove('filtered');
+      }
+    }
+
+    // Filter banner
+    const banner = document.getElementById('filterBanner');
+    const bannerText = document.getElementById('filterBannerText');
+    if (banner && bannerText) {
+      if (activeTopic || currentSearch.trim()) {
+        banner.classList.remove('hidden');
+        let parts = [];
+        if (activeTopic) parts.push(`Topic: ${activeTopic}`);
+        if (currentSearch.trim()) parts.push(`Search: "${currentSearch.trim()}"`);
+        bannerText.textContent = parts.join(' · ');
+      } else {
+        banner.classList.add('hidden');
+      }
+    }
+
+    // If user is on "Saved ⭐" tab OR searching/filtering by topic -> render matching cards
+    if (activeTab === 'saved' || activeTopic || currentSearch.trim()) {
+      renderFilteredCardsView(container);
+      return;
+    }
+
+    // Otherwise render grouped 5-Card Patches for 'new' or 'seen' tabs!
+    const targetPatches = patchesList.filter(p => {
+      const visible = p.cards.filter(c => !isCardHidden(c.id));
+      if (visible.length === 0) return false;
+      const done = isPatchFinished(p.batch_id);
+      return activeTab === 'seen' ? done : !done;
     });
-    container.appendChild(allChip);
+
+    if (targetPatches.length === 0) {
+      if (activeTab === 'new') {
+        container.innerHTML = `
+          <div class="card-item" style="text-align: center; padding: 36px 18px;">
+            <p style="font-size: 28px; margin-bottom: 8px;">🎉</p>
+            <h3 style="font-size: 17px; margin-bottom: 6px;">You're all caught up on New Patches!</h3>
+            <p style="color: var(--text-secondary); font-size: 13px; margin-bottom: 16px;">
+              You have finished all current patches. Check your <strong>✅ Seen</strong> tab or take a <strong>🧠 Combined Review Quiz</strong>!
+            </p>
+            <div style="display: flex; gap: 8px; justify-content: center; flex-wrap: wrap;">
+              <button class="primary-btn" id="emptyGoQuizBtn">🧠 Take Combined Review Quiz</button>
+              <button class="secondary-btn" id="emptyGoSeenBtn">✅ View Seen Patches</button>
+            </div>
+          </div>
+        `;
+        const qBtn = document.getElementById('emptyGoQuizBtn');
+        if (qBtn) qBtn.addEventListener('click', () => openQuizHubModal());
+        const sBtn = document.getElementById('emptyGoSeenBtn');
+        if (sBtn) sBtn.addEventListener('click', () => switchTab('seen'));
+      } else {
+        container.innerHTML = `
+          <div class="card-item" style="text-align: center; padding: 36px 18px;">
+            <p style="font-size: 26px; margin-bottom: 8px;">📭</p>
+            <h3 style="font-size: 16px; margin-bottom: 6px;">No Finished Patches Yet</h3>
+            <p style="color: var(--text-secondary); font-size: 13px;">
+              Read a 5-card patch in <strong>🆕 New Feed</strong> and tap <strong>✅ Mark Patch Finished</strong> (or complete its 5-question quiz) to move it here.
+            </p>
+          </div>
+        `;
+      }
+      return;
+    }
+
+    targetPatches.forEach(patch => {
+      container.appendChild(createPatchGroupElement(patch));
+    });
+  }
+
+  // Render Filtered / Saved Individual Cards
+  function renderFilteredCardsView(container) {
+    let cards = Array.from(loadedCardsMap.values()).filter(c => !isCardHidden(c.id));
+
+    if (activeTab === 'saved') {
+      cards = cards.filter(c => !!userProgress.saves[c.id]);
+    }
+
+    if (activeTopic) {
+      cards = cards.filter(c => c.topic === activeTopic);
+    }
+
+    if (currentSearch.trim()) {
+      const q = currentSearch.toLowerCase().trim();
+      cards = cards.filter(c => {
+        const en = c.en || {};
+        const ar = c.ar || {};
+        const blob = `${en.title || ''} ${en.hook || ''} ${en.action || ''} ${en.key_phrase || ''} ${ar.title || ''} ${ar.hook || ''} ${ar.action || ''} ${ar.key_phrase || ''} ${(c.tags || []).join(' ')}`.toLowerCase();
+        return blob.includes(q);
+      });
+    }
+
+    cards.sort((a, b) => (numbersMap[b.id] || 0) - (numbersMap[a.id] || 0));
+
+    if (cards.length === 0) {
+      container.innerHTML = `
+        <div class="card-item" style="text-align: center; padding: 36px 18px;">
+          <p style="font-size: 24px; margin-bottom: 8px;">🔍</p>
+          <h3 style="font-size: 16px; margin-bottom: 6px;">No matching cards</h3>
+          <p style="color: var(--text-secondary); font-size: 13px;">
+            ${activeTab === 'saved' ? 'Tap ⭐ Save on any card to bookmark it here.' : 'Try resetting your topic or search filter.'}
+          </p>
+        </div>
+      `;
+      return;
+    }
+
+    cards.forEach(card => {
+      container.appendChild(createCardElement(card));
+    });
+  }
+
+  // Create a 5-Card Patch Container Element
+  function createPatchGroupElement(patch) {
+    const visibleCards = patch.cards
+      .filter(c => !isCardHidden(c.id))
+      .sort((a, b) => (numbersMap[a.id] || 0) - (numbersMap[b.id] || 0));
+
+    const nums = visibleCards.map(c => numbersMap[c.id] || 0).filter(Boolean);
+    const minNum = nums.length ? Math.min(...nums) : '?';
+    const maxNum = nums.length ? Math.max(...nums) : '?';
+
+    const doneInfo = userProgress.finished_patches[patch.batch_id];
+    const isDone = !!doneInfo;
+
+    // In 'seen' tab, finished patches start neatly collapsed unless user expanded them
+    const isCollapsed = isDone && !expandedPatches.has(patch.batch_id);
+
+    const wrap = document.createElement('section');
+    wrap.className = 'patch-group' + (isDone ? ' finished-patch' : '') + (isCollapsed ? ' collapsed' : '');
+    wrap.id = `patch-${patch.batch_id}`;
+
+    const scoreBadge = (doneInfo && typeof doneInfo.score === 'number')
+      ? ` · Quiz: ${doneInfo.score}/${doneInfo.total}`
+      : '';
+
+    // Patch Header
+    const header = document.createElement('div');
+    header.className = 'patch-header';
+    header.innerHTML = `
+      <div class="patch-header-left">
+        <span class="patch-title-badge">📦 Patch #${patch.patch_number}</span>
+        <span class="patch-range-text">Cards #${minNum}–#${maxNum}</span>
+        <span class="patch-meta-sub">(${visibleCards.length} cards · ${patch.date || ''}${scoreBadge})</span>
+      </div>
+      <div class="patch-header-right">
+        <span class="patch-status-pill ${isDone ? 'done' : ''}">
+          ${isDone ? '✅ Finished' : '🆕 Unread'}
+        </span>
+        <button type="button" class="patch-collapse-btn">
+          ${isCollapsed ? '▾ Expand' : '▴ Collapse'}
+        </button>
+      </div>
+    `;
+
+    header.addEventListener('click', () => {
+      const nowCollapsed = wrap.classList.toggle('collapsed');
+      if (nowCollapsed) {
+        expandedPatches.delete(patch.batch_id);
+      } else {
+        expandedPatches.add(patch.batch_id);
+      }
+      const btn = header.querySelector('.patch-collapse-btn');
+      if (btn) btn.textContent = nowCollapsed ? '▾ Expand' : '▴ Collapse';
+    });
+
+    wrap.appendChild(header);
+
+    // Collapsed summary bar (shown when collapsed)
+    const collapsedBar = document.createElement('div');
+    collapsedBar.className = 'patch-collapsed-bar';
+    const previewTitles = visibleCards.slice(0, 2).map(c => c.en?.title || '').join(' · ');
+    collapsedBar.innerHTML = `
+      <span style="overflow: hidden; text-overflow: ellipsis; white-space: nowrap; max-width: 65%;">
+        ${previewTitles}...
+      </span>
+      <div style="display: flex; gap: 6px;">
+        <button type="button" class="secondary-btn small btn-requiz-collapsed">🧠 Quiz (${visibleCards.length})</button>
+        <button type="button" class="secondary-btn small btn-unfinish-collapsed">↩️ Mark Unread</button>
+      </div>
+    `;
+    collapsedBar.querySelector('.btn-requiz-collapsed').addEventListener('click', (e) => {
+      e.stopPropagation();
+      startPatchQuizSession(patch, visibleCards);
+    });
+    collapsedBar.querySelector('.btn-unfinish-collapsed').addEventListener('click', (e) => {
+      e.stopPropagation();
+      toggleFinishPatch(patch, visibleCards);
+    });
+    wrap.appendChild(collapsedBar);
+
+    // Cards List inside Patch
+    const cardsWrapper = document.createElement('div');
+    cardsWrapper.className = 'patch-cards-wrapper';
+    visibleCards.forEach(card => {
+      cardsWrapper.appendChild(createCardElement(card));
+    });
+    wrap.appendChild(cardsWrapper);
+
+    // End-of-Patch Footer: Quiz This Patch (5 Qs) + Mark Patch Finished
+    const footer = document.createElement('div');
+    footer.className = 'patch-footer';
+    footer.innerHTML = `
+      <div class="patch-footer-info">
+        Finished reading <strong>Patch #${patch.patch_number}</strong> (Cards #${minNum}–#${maxNum})? Test yourself or mark it done:
+      </div>
+      <div class="patch-footer-actions">
+        <button type="button" class="patch-action-btn quiz-btn">
+          🧠 Quiz This Patch (${visibleCards.length} Questions)
+        </button>
+        <button type="button" class="patch-action-btn finish-btn ${isDone ? 'is-finished' : ''}">
+          ${isDone ? '✅ Patch Finished (Tap to Unmark)' : '✅ Mark Patch as Finished'}
+        </button>
+      </div>
+    `;
+
+    footer.querySelector('.quiz-btn').addEventListener('click', () => {
+      startPatchQuizSession(patch, visibleCards);
+    });
+
+    footer.querySelector('.finish-btn').addEventListener('click', () => {
+      toggleFinishPatch(patch, visibleCards);
+    });
+
+    wrap.appendChild(footer);
+    return wrap;
+  }
+
+  // Create Single Card Element (Clean Reading View — Only ⭐ Save and 🗑️ Delete)
+  function createCardElement(card) {
+    const el = document.createElement('article');
+    el.className = 'card-item';
+    el.id = `card-${card.id}`;
+
+    const num = numbersMap[card.id] || '?';
+    const isSaved = !!userProgress.saves[card.id];
+    const topicObj = topics.find(t => t.id === card.topic) || { label: card.topic, icon: '📌' };
+
+    const headerRow = document.createElement('div');
+    headerRow.className = 'card-header-row';
+
+    const metaLeft = document.createElement('div');
+    metaLeft.className = 'card-meta-left';
+    metaLeft.innerHTML = `
+      <span class="card-number-badge">#${num}</span>
+      <span class="card-topic-badge">${topicObj.icon} ${topicObj.label}</span>
+      <span class="card-level-badge ${card.level || 'beginner'}">${card.level || 'beginner'}</span>
+      ${card._patch_number ? `<span class="card-topic-badge">Patch #${card._patch_number}</span>` : ''}
+    `;
+
+    const actionsRight = document.createElement('div');
+    actionsRight.className = 'card-actions-right';
+
+    // Single Bookmark Action: ⭐ Save
+    const saveBtn = document.createElement('button');
+    saveBtn.type = 'button';
+    saveBtn.className = 'card-action-btn' + (isSaved ? ' saved' : '');
+    saveBtn.title = isSaved ? 'Saved in your Saved tab' : 'Save card to your Saved tab';
+    saveBtn.innerHTML = isSaved ? '⭐ Saved' : '☆ Save';
+    saveBtn.addEventListener('click', () => toggleSave(card.id, saveBtn));
+
+    // Delete Button (password guard)
+    const deleteBtn = document.createElement('button');
+    deleteBtn.type = 'button';
+    deleteBtn.className = 'card-action-btn delete-btn';
+    deleteBtn.title = 'Delete this card';
+    deleteBtn.innerHTML = '🗑️';
+    deleteBtn.addEventListener('click', () => confirmDeleteCard(card.id));
+
+    actionsRight.appendChild(saveBtn);
+    actionsRight.appendChild(deleteBtn);
+
+    headerRow.appendChild(metaLeft);
+    headerRow.appendChild(actionsRight);
+    el.appendChild(headerRow);
+
+    // English Content Block
+    const showEn = (currentLang === 'both' || currentLang === 'en') && card.en;
+    if (showEn) {
+      const enBlock = document.createElement('div');
+      enBlock.className = 'content-block';
+      enBlock.innerHTML = `
+        <h2 class="card-title">${card.en.title || ''}</h2>
+        ${card.en.hook ? `<div class="card-hook">💡 ${card.en.hook}</div>` : ''}
+        ${card.en.key_phrase ? `
+          <div class="card-key-phrase">
+            <span>💬 "${card.en.key_phrase}"</span>
+            <button type="button" class="copy-phrase-btn">📋 Copy</button>
+          </div>` : ''}
+        <button type="button" class="card-details-toggle">
+          <span>Read Details &amp; Examples ▾</span>
+        </button>
+        <div class="card-details-body">
+          <div class="detail-row"><strong>🎯 Do / Say:</strong> ${card.en.action || ''}</div>
+          ${card.en.when ? `<div class="detail-row"><strong>⏱ When:</strong> ${card.en.when}</div>` : ''}
+          ${card.en.why ? `<div class="detail-row"><strong>💡 Why:</strong> ${card.en.why}</div>` : ''}
+          ${card.en.example ? `<div class="detail-row"><strong>📖 Example:</strong> ${card.en.example}</div>` : ''}
+          ${card.en.mistake ? `<div class="detail-row"><strong>⚠️ Avoid:</strong> ${card.en.mistake}</div>` : ''}
+        </div>
+      `;
+
+      const cpBtn = enBlock.querySelector('.copy-phrase-btn');
+      if (cpBtn) {
+        cpBtn.addEventListener('click', () => {
+          navigator.clipboard.writeText(card.en.key_phrase);
+          cpBtn.textContent = '✓ Copied';
+          setTimeout(() => { cpBtn.textContent = '📋 Copy'; }, 1800);
+        });
+      }
+
+      const dtToggle = enBlock.querySelector('.card-details-toggle');
+      const dtBody = enBlock.querySelector('.card-details-body');
+      dtToggle.addEventListener('click', () => {
+        const open = dtBody.classList.toggle('open');
+        dtToggle.querySelector('span').textContent = open ? 'Hide Details ▴' : 'Read Details & Examples ▾';
+      });
+
+      el.appendChild(enBlock);
+    }
+
+    if (currentLang === 'both' && card.en && card.ar) {
+      const div = document.createElement('div');
+      div.className = 'bilingual-divider';
+      el.appendChild(div);
+    }
+
+    // Arabic Content Block
+    const showAr = (currentLang === 'both' || currentLang === 'ar') && card.ar;
+    if (showAr) {
+      const arBlock = document.createElement('div');
+      arBlock.className = 'content-block rtl';
+      arBlock.dir = 'rtl';
+      arBlock.innerHTML = `
+        <h2 class="card-title">${card.ar.title || ''}</h2>
+        ${card.ar.hook ? `<div class="card-hook">💡 ${card.ar.hook}</div>` : ''}
+        ${card.ar.key_phrase ? `
+          <div class="card-key-phrase">
+            <span>💬 «${card.ar.key_phrase}»</span>
+            <button type="button" class="copy-phrase-btn">📋 نسخ</button>
+          </div>` : ''}
+        <button type="button" class="card-details-toggle">
+          <span>التفاصيل والأمثلة ▾</span>
+        </button>
+        <div class="card-details-body">
+          <div class="detail-row"><strong>🎯 الخطوة:</strong> ${card.ar.action || ''}</div>
+          ${card.ar.when ? `<div class="detail-row"><strong>⏱ التوقيت:</strong> ${card.ar.when}</div>` : ''}
+          ${card.ar.why ? `<div class="detail-row"><strong>💡 ليه بتشتغل:</strong> ${card.ar.why}</div>` : ''}
+          ${card.ar.example ? `<div class="detail-row"><strong>📖 مثال عملي:</strong> ${card.ar.example}</div>` : ''}
+          ${card.ar.mistake ? `<div class="detail-row"><strong>⚠️ الغلطة:</strong> ${card.ar.mistake}</div>` : ''}
+        </div>
+      `;
+
+      const cpBtn = arBlock.querySelector('.copy-phrase-btn');
+      if (cpBtn) {
+        cpBtn.addEventListener('click', () => {
+          navigator.clipboard.writeText(card.ar.key_phrase);
+          cpBtn.textContent = '✓ تم النسخ';
+          setTimeout(() => { cpBtn.textContent = '📋 نسخ'; }, 1800);
+        });
+      }
+
+      const dtToggle = arBlock.querySelector('.card-details-toggle');
+      const dtBody = arBlock.querySelector('.card-details-body');
+      dtToggle.addEventListener('click', () => {
+        const open = dtBody.classList.toggle('open');
+        dtToggle.querySelector('span').textContent = open ? 'إخفاء التفاصيل ▴' : 'التفاصيل والأمثلة ▾';
+      });
+
+      el.appendChild(arBlock);
+    }
+
+    return el;
+  }
+
+  // Toggle Save Card (Single Bookmark Action)
+  function toggleSave(cardId, btnEl) {
+    if (userProgress.saves[cardId]) {
+      delete userProgress.saves[cardId];
+      btnEl.classList.remove('saved');
+      btnEl.innerHTML = '☆ Save';
+    } else {
+      userProgress.saves[cardId] = Date.now();
+      btnEl.classList.add('saved');
+      btnEl.innerHTML = '⭐ Saved';
+      if (!userProgress.srs[cardId]) {
+        userProgress.srs[cardId] = {
+          stage: 0,
+          due: getTodayStr(),
+          updated_at: new Date().toISOString()
+        };
+      }
+    }
+    saveUserProgress();
+    if (activeTab === 'saved') renderFeed();
+  }
+
+  // Toggle Mark Patch as Finished / Read
+  function toggleFinishPatch(patch, visibleCards, quizScoreObj) {
+    const batchId = patch.batch_id;
+    const today = getTodayStr();
+
+    if (userProgress.finished_patches[batchId] && !quizScoreObj) {
+      delete userProgress.finished_patches[batchId];
+      expandedPatches.delete(batchId);
+      saveUserProgress();
+      renderFeed();
+      return;
+    }
+
+    userProgress.finished_patches[batchId] = {
+      finished_at: new Date().toISOString(),
+      score: quizScoreObj ? quizScoreObj.score : undefined,
+      total: quizScoreObj ? quizScoreObj.total : visibleCards.length
+    };
+
+    // Enroll all 5 cards of the finished patch into the Spaced Repetition Review Pool
+    visibleCards.forEach(c => {
+      if (!userProgress.srs[c.id]) {
+        userProgress.srs[c.id] = {
+          stage: 0,
+          due: today,
+          updated_at: new Date().toISOString()
+        };
+      }
+    });
+
+    expandedPatches.delete(batchId);
+    saveUserProgress();
+    renderFeed();
+  }
+
+  // ========================================================
+  // PATCH QUIZ & COMBINED REVIEW QUIZ ENGINE
+  // ========================================================
+  function openQuizHubModal() {
+    const modal = document.getElementById('quizModal');
+    const titleEl = document.getElementById('quizModalTitle');
+    const bodyEl = document.getElementById('quizModalBody');
+    if (!modal || !bodyEl) return;
+
+    titleEl.textContent = '🧠 Combined Quiz & Review Hub';
+
+    const today = getTodayStr();
+    const poolCards = getReviewPoolCards();
+    const dueCards = poolCards.filter(c => {
+      const s = userProgress.srs[c.id];
+      return !s || (s.due && s.due <= today);
+    });
+    const mistakeCards = Array.from(loadedCardsMap.values()).filter(
+      c => !isCardHidden(c.id) && !!userProgress.mistakes[c.id]
+    );
+    let masteredCount = 0;
+    Object.values(userProgress.srs).forEach(s => {
+      if (s && s.stage >= 6) masteredCount++;
+    });
+
+    const finishedPatchesCount = Object.keys(userProgress.finished_patches).length;
+
+    bodyEl.innerHTML = `
+      <div class="quiz-hub-stats">
+        <div class="stat-card">
+          <span class="stat-num" style="color: #34d399;">${finishedPatchesCount}</span>
+          <span class="stat-label">Finished Patches</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-num" style="color: #38bdf8;">${dueCards.length}</span>
+          <span class="stat-label">Due Today (SRS)</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-num" style="color: #fbbf24;">${mistakeCards.length}</span>
+          <span class="stat-label">Need Retry</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-num" style="color: #c084fc;">${poolCards.length}</span>
+          <span class="stat-label">Cards in Review Pool</span>
+        </div>
+      </div>
+
+      <div class="quiz-mode-list">
+        <button type="button" class="primary-btn" id="btnStartSrsDue" ${dueCards.length === 0 ? 'disabled style="opacity:0.5"' : ''}>
+          ⏰ Review Due Today (${dueCards.length} Cards · Spaced Repetition)
+        </button>
+
+        <button type="button" class="secondary-btn" id="btnStartCombined5" ${poolCards.length === 0 ? 'disabled style="opacity:0.5"' : ''}>
+          🔀 Combined Quiz: Mix 5 Cards from Finished Patches
+        </button>
+
+        <button type="button" class="secondary-btn" id="btnStartCombined10" ${poolCards.length === 0 ? 'disabled style="opacity:0.5"' : ''}>
+          🔀 Combined Quiz: Mix 10 Cards from Finished Patches
+        </button>
+
+        <button type="button" class="secondary-btn" id="btnStartMistakes" ${mistakeCards.length === 0 ? 'disabled style="opacity:0.5"' : ''}>
+          🔄 Retry Mistakes (${mistakeCards.length} Cards)
+        </button>
+
+        <button type="button" class="secondary-btn" id="btnStartAllRandom">
+          ⚡ Quick Practice: Mix 5 Cards from All Patches
+        </button>
+      </div>
+
+      <div style="margin-top: 14px; font-size: 12px; color: var(--text-secondary); line-height: 1.5;">
+        <strong>How it works:</strong> When you finish a 5-card patch, its cards enter your Review Pool. Spaced repetition schedules reviews at <strong>1 → 2 → 3 → 7 → 14 → 30 days</strong> (${masteredCount} mastered so far).
+      </div>
+    `;
+
+    const shuffle = arr => [...arr].sort(() => Math.random() - 0.5);
+
+    bodyEl.querySelector('#btnStartSrsDue')?.addEventListener('click', () => {
+      runInteractiveQuizSession('⏰ Due Today (Spaced Repetition)', dueCards.slice(0, 15), null);
+    });
+
+    bodyEl.querySelector('#btnStartCombined5')?.addEventListener('click', () => {
+      runInteractiveQuizSession('🔀 Combined Review (5 Finished Cards)', shuffle(poolCards).slice(0, 5), null);
+    });
+
+    bodyEl.querySelector('#btnStartCombined10')?.addEventListener('click', () => {
+      runInteractiveQuizSession('🔀 Combined Review (10 Finished Cards)', shuffle(poolCards).slice(0, 10), null);
+    });
+
+    bodyEl.querySelector('#btnStartMistakes')?.addEventListener('click', () => {
+      runInteractiveQuizSession('🔄 Retry Mistakes', mistakeCards, null);
+    });
+
+    bodyEl.querySelector('#btnStartAllRandom')?.addEventListener('click', () => {
+      const allVisible = Array.from(loadedCardsMap.values()).filter(c => !isCardHidden(c.id));
+      runInteractiveQuizSession('⚡ Quick 5-Card Mix', shuffle(allVisible).slice(0, 5), null);
+    });
+
+    modal.classList.add('open');
+  }
+
+  function startPatchQuizSession(patch, visibleCards) {
+    const modal = document.getElementById('quizModal');
+    if (modal) modal.classList.add('open');
+    runInteractiveQuizSession(
+      `📦 Patch #${patch.patch_number} Quiz (${visibleCards.length} Questions)`,
+      visibleCards,
+      patch
+    );
+  }
+
+  function runInteractiveQuizSession(sessionTitle, cardsQueue, associatedPatch) {
+    const titleEl = document.getElementById('quizModalTitle');
+    const bodyEl = document.getElementById('quizModalBody');
+    if (!bodyEl) return;
+
+    const validCards = cardsQueue.filter(c => c && c.quiz);
+    if (validCards.length === 0) {
+      bodyEl.innerHTML = `<p>No quiz questions available for this selection.</p>`;
+      return;
+    }
+
+    titleEl.textContent = sessionTitle;
+    let currentIdx = 0;
+    let correctCount = 0;
+
+    function renderQuestionStep() {
+      if (currentIdx >= validCards.length) {
+        // Quiz finished summary!
+        const pct = Math.round((correctCount / validCards.length) * 100);
+        if (associatedPatch) {
+          toggleFinishPatch(associatedPatch, validCards, {
+            score: correctCount,
+            total: validCards.length
+          });
+        }
+
+        bodyEl.innerHTML = `
+          <div class="quiz-runner-card" style="text-align: center; padding: 24px 16px;">
+            <div style="font-size: 36px; margin-bottom: 8px;">${pct >= 80 ? '🏆' : '🎯'}</div>
+            <h3 style="font-size: 18px; margin-bottom: 6px;">
+              Quiz Complete: ${correctCount} / ${validCards.length} (${pct}%)
+            </h3>
+            <p style="font-size: 13px; color: var(--text-secondary); margin-bottom: 18px;">
+              ${associatedPatch
+                ? `Patch #${associatedPatch.patch_number} has been marked as <strong>✅ Finished</strong> and added to your Review Pool!`
+                : 'Your Spaced Repetition intervals have been updated!'}
+            </p>
+            <div style="display: flex; gap: 8px; justify-content: center; flex-wrap: wrap;">
+              <button type="button" class="secondary-btn" id="btnRetryThisQuiz">🔄 Replay Quiz</button>
+              <button type="button" class="primary-btn" id="btnDoneQuizClose">Done ✓</button>
+            </div>
+          </div>
+        `;
+
+        bodyEl.querySelector('#btnRetryThisQuiz')?.addEventListener('click', () => {
+          currentIdx = 0;
+          correctCount = 0;
+          renderQuestionStep();
+        });
+        bodyEl.querySelector('#btnDoneQuizClose')?.addEventListener('click', () => {
+          closeModal('quizModal');
+        });
+        return;
+      }
+
+      const card = validCards[currentIdx];
+      const num = numbersMap[card.id] || '?';
+      const qEn = card.quiz.en || {};
+      const qAr = card.quiz.ar || {};
+      const showEn = currentLang !== 'ar';
+      const showAr = currentLang !== 'en';
+      const optionsCount = (qEn.options || qAr.options || []).length;
+
+      bodyEl.innerHTML = `
+        <div class="quiz-runner-card">
+          <div class="quiz-progress-top">
+            <span>Question <strong>${currentIdx + 1} of ${validCards.length}</strong> · Card #${num}</span>
+            <span>Score: ${correctCount}/${currentIdx}</span>
+          </div>
+
+          ${showEn && qEn.question ? `<div class="quiz-q-title">${qEn.question}</div>` : ''}
+          ${showAr && qAr.question ? `<div class="quiz-q-ar">${qAr.question}</div>` : ''}
+
+          <div class="quiz-options">
+            ${Array.from({ length: optionsCount }).map((_, idx) => {
+              const optEn = qEn.options ? qEn.options[idx] : '';
+              const optAr = qAr.options ? qAr.options[idx] : '';
+              return `
+                <button type="button" class="quiz-opt-btn" data-idx="${idx}">
+                  ${showEn && optEn ? `<div><strong>${String.fromCharCode(65 + idx)}.</strong> ${optEn}</div>` : ''}
+                  ${showAr && optAr ? `<div dir="rtl" style="font-family: var(--font-ar); color: #cbd5e1; margin-top: 2px;">${optAr}</div>` : ''}
+                </button>
+              `;
+            }).join('')}
+          </div>
+
+          <div class="quiz-feedback" id="runnerFeedback"></div>
+
+          <div class="modal-footer" style="display: none;" id="runnerNextFooter">
+            <button type="button" class="primary-btn" id="btnNextQuestion">
+              ${currentIdx + 1 < validCards.length ? 'Next Question ▸' : 'See Results 🏆'}
+            </button>
+          </div>
+        </div>
+      `;
+
+      const optBtns = bodyEl.querySelectorAll('.quiz-opt-btn');
+      const fbEl = bodyEl.querySelector('#runnerFeedback');
+      const nextFooter = bodyEl.querySelector('#runnerNextFooter');
+
+      optBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+          const chosen = parseInt(btn.dataset.idx, 10);
+          const correct = card.quiz.correct_index;
+          optBtns.forEach(b => { b.disabled = true; });
+
+          const isRight = chosen === correct;
+          if (isRight) {
+            correctCount++;
+            btn.classList.add('correct');
+          } else {
+            btn.classList.add('wrong');
+            if (optBtns[correct]) optBtns[correct].classList.add('correct');
+          }
+
+          handleSrsAnswer(card.id, isRight);
+
+          fbEl.className = 'quiz-feedback show ' + (isRight ? 'success' : 'fail');
+          fbEl.innerHTML = `
+            <div><strong>${isRight ? '✓ Correct!' : '✕ Not quite.'}</strong></div>
+            ${showEn && qEn.explanation ? `<div style="margin-top:4px;">${qEn.explanation}</div>` : ''}
+            ${showAr && qAr.explanation ? `<div dir="rtl" style="font-family: var(--font-ar); margin-top:4px;">${qAr.explanation}</div>` : ''}
+          `;
+
+          nextFooter.style.display = 'flex';
+        });
+      });
+
+      bodyEl.querySelector('#btnNextQuestion')?.addEventListener('click', () => {
+        currentIdx++;
+        renderQuestionStep();
+      });
+    }
+
+    renderQuestionStep();
+  }
+
+  function handleSrsAnswer(cardId, isCorrect) {
+    const today = getTodayStr();
+    const intervals = appConfig.srs_intervals_days || [1, 2, 3, 7, 14, 30];
+    if (!userProgress.srs[cardId]) {
+      userProgress.srs[cardId] = { stage: 0, due: today, updated_at: new Date().toISOString() };
+    }
+    const state = userProgress.srs[cardId];
+    if (isCorrect) {
+      delete userProgress.mistakes[cardId];
+      const nextDays = intervals[state.stage] || 30;
+      state.stage = Math.min(state.stage + 1, intervals.length);
+      state.due = addDays(today, nextDays);
+    } else {
+      userProgress.mistakes[cardId] = Date.now();
+      state.stage = 0;
+      state.due = today;
+    }
+    state.updated_at = new Date().toISOString();
+    saveUserProgress();
+  }
+
+  // ========================================================
+  // TOPIC PICKER MODAL (All 14 Topics Grouped Under 1 Button)
+  // ========================================================
+  function openTopicsModal() {
+    const modal = document.getElementById('topicsModal');
+    const grid = document.getElementById('topicsGridContainer');
+    if (!modal || !grid) return;
+
+    // Count active cards per topic
+    const counts = {};
+    let totalVisible = 0;
+    loadedCardsMap.forEach(c => {
+      if (isCardHidden(c.id)) return;
+      totalVisible++;
+      counts[c.topic] = (counts[c.topic] || 0) + 1;
+    });
+
+    grid.innerHTML = '';
+
+    const allBtn = document.createElement('button');
+    allBtn.type = 'button';
+    allBtn.className = 'topic-grid-btn full-span' + (activeTopic === null ? ' active' : '');
+    allBtn.innerHTML = `
+      <span>✨ All Topics (Show Patches)</span>
+      <span class="topic-count-pill">${totalVisible} cards</span>
+    `;
+    allBtn.addEventListener('click', () => {
+      activeTopic = null;
+      closeModal('topicsModal');
+      renderFeed();
+    });
+    grid.appendChild(allBtn);
 
     topics.forEach(t => {
-      const chip = document.createElement('button');
-      chip.className = 'topic-chip' + (activeTopic === t.id ? ' active' : '');
-      chip.innerHTML = `${t.icon || '📌'} ${t.label}`;
-      chip.addEventListener('click', () => {
-        if (activeTopic === t.id) {
-          activeTopic = null;
-          chip.classList.remove('active');
-          allChip.classList.add('active');
-        } else {
-          activeTopic = t.id;
-          document.querySelectorAll('.topic-chip').forEach(c => c.classList.remove('active'));
-          chip.classList.add('active');
-        }
-        renderCards();
+      const cCount = counts[t.id] || 0;
+      const btn = document.createElement('button');
+      btn.type = 'button';
+      btn.className = 'topic-grid-btn' + (activeTopic === t.id ? ' active' : '');
+      btn.innerHTML = `
+        <span>${t.icon || '📌'} ${t.label}</span>
+        <span class="topic-count-pill">${cCount}</span>
+      `;
+      btn.addEventListener('click', () => {
+        activeTopic = (activeTopic === t.id) ? null : t.id;
+        closeModal('topicsModal');
+        renderFeed();
       });
-      container.appendChild(chip);
+      grid.appendChild(btn);
     });
+
+    modal.classList.add('open');
+  }
+
+  // ========================================================
+  // PATCH STATUS & HISTORY MODAL
+  // ========================================================
+  function openHistoryModal() {
+    const modal = document.getElementById('historyModal');
+    const body = document.getElementById('historyModalBody');
+    if (!modal || !body) return;
+
+    const today = getTodayStr();
+    const todayPatches = patchesList.filter(p => p.date === today);
+
+    let html = `
+      <div class="history-summary-box">
+        <div><strong>Today's Date:</strong> ${today}</div>
+        <div><strong>Added Today:</strong> ${todayPatches.length} Patch(es) (Target: 3 patches / 15 cards per day)</div>
+        <div><strong>Total in Library:</strong> ${patchesList.length} Patches (${loadedCardsMap.size} Cards)</div>
+      </div>
+      <h3 style="font-size: 14px; margin-bottom: 8px;">All Patches (Newest First)</h3>
+      <div class="history-list">
+    `;
+
+    patchesList.forEach(p => {
+      const visible = p.cards.filter(c => !isCardHidden(c.id));
+      const nums = visible.map(c => numbersMap[c.id] || 0).filter(Boolean);
+      const minN = nums.length ? Math.min(...nums) : '?';
+      const maxN = nums.length ? Math.max(...nums) : '?';
+      const done = isPatchFinished(p.batch_id);
+
+      html += `
+        <div class="history-item">
+          <div>
+            <div>
+              <strong>📦 Patch #${p.patch_number}</strong> · Cards #${minN}–#${maxN} (${visible.length} cards)
+            </div>
+            <div style="font-size: 11.5px; color: var(--text-secondary);">
+              Date: ${p.date || 'N/A'} · Source: <code>${p.source || 'auto'}</code> · ID: <code>${p.batch_id}</code>
+            </div>
+          </div>
+          <div style="display: flex; align-items: center; gap: 6px;">
+            <span class="patch-status-pill ${done ? 'done' : ''}">${done ? '✅ Finished' : '🆕 Unread'}</span>
+            <button type="button" class="secondary-btn small" data-quiz-patch="${p.batch_id}">🧠 Quiz</button>
+          </div>
+        </div>
+      `;
+    });
+
+    html += `</div>`;
+
+    if (buildReport && Array.isArray(buildReport.skipped_details) && buildReport.skipped_details.length > 0) {
+      html += `
+        <h3 style="font-size: 14px; margin: 16px 0 6px; color: var(--color-warning);">⚠️ Skipped / Invalid Cards Report</h3>
+        <div style="font-size: 12px; color: var(--text-secondary);">
+          ${buildReport.skipped_details.map(s => `<div>• ${s.file} (${s.card_id}): ${s.reason}</div>`).join('')}
+        </div>
+      `;
+    }
+
+    body.innerHTML = html;
+
+    body.querySelectorAll('[data-quiz-patch]').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const bId = btn.dataset.quizPatch;
+        const found = patchesList.find(p => p.batch_id === bId);
+        if (found) {
+          closeModal('historyModal');
+          const vis = found.cards.filter(c => !isCardHidden(c.id));
+          startPatchQuizSession(found, vis);
+        }
+      });
+    });
+
+    modal.classList.add('open');
+  }
+
+  // ========================================================
+  // ADD JSON PATCH (UPLOAD FILE OR PASTE JSON) & SYNC TO GITHUB
+  // ========================================================
+  function parseAndValidateJsonPatchText(rawText) {
+    if (!rawText || !rawText.trim()) {
+      return { valid: false, error: 'Please upload a .json file or paste JSON text first.' };
+    }
+    let cleaned = rawText.trim();
+    const fenceMatch = cleaned.match(/```(?:json)?\s*([\s\S]*?)\s*```/);
+    if (fenceMatch) cleaned = fenceMatch[1].trim();
+
+    let parsed;
+    try {
+      parsed = JSON.parse(cleaned);
+    } catch (e) {
+      return { valid: false, error: 'Invalid JSON syntax: ' + e.message };
+    }
+
+    const cards = Array.isArray(parsed) ? parsed : (parsed && Array.isArray(parsed.cards) ? parsed.cards : null);
+    if (!cards || cards.length === 0) {
+      return { valid: false, error: 'JSON must contain a "cards": [...] array (or be an array of card objects).' };
+    }
+
+    const validCards = [];
+    const errors = [];
+    const today = getTodayStr();
+
+    cards.forEach((c, idx) => {
+      if (!c || typeof c !== 'object') {
+        errors.push(`Card #${idx + 1} is not an object.`);
+        return;
+      }
+      if (!c.en || !c.en.title || !c.en.action) {
+        errors.push(`Card #${idx + 1} is missing en.title or en.action.`);
+        return;
+      }
+      const topic = c.topic || 'sales';
+      const slug = c.en.title.toLowerCase().replace(/[^\w\s-]/g, '').trim().replace(/\s+/g, '-').slice(0, 28);
+      if (!c.id) {
+        c.id = `${today}_${topic}_${slug}-${Date.now().toString().slice(-3)}${idx}`;
+      }
+      if (!c.created_at) c.created_at = new Date().toISOString();
+      if (!c.ar) {
+        c.ar = Object.assign({}, c.en);
+      }
+      if (!c.quiz || !c.quiz.en) {
+        c.quiz = {
+          type: 'mcq',
+          correct_index: 0,
+          en: {
+            question: `What is the key action for "${c.en.title}"?`,
+            options: [c.en.action, 'Do nothing and wait', 'Argue directly', 'Offer an immediate discount'],
+            explanation: c.en.why || 'This approach protects value and achieves results.'
+          },
+          ar: {
+            question: `إيه التصرف الصح في «${c.ar.title || c.en.title}»؟`,
+            options: [c.ar.action || c.en.action, 'الانتظار بدون حركة', 'الدخول في جدال مباشر', 'تقديم تنازل فوري'],
+            explanation: c.ar.why || c.en.why || 'الأسلوب ده بيحقق أفضل نتيجة.'
+          }
+        };
+      }
+      validCards.push(c);
+    });
+
+    if (validCards.length === 0) {
+      return { valid: false, error: errors.join(' | ') || 'No valid cards found.' };
+    }
+
+    return {
+      valid: true,
+      cards: validCards,
+      batch_id: (parsed && parsed.batch_id) ? parsed.batch_id : `${today}_manual_${Date.now().toString().slice(-4)}`,
+      source: (parsed && parsed.source) ? parsed.source : 'manual-json',
+      warnings: errors
+    };
+  }
+
+  async function publishValidatedJsonPatch() {
+    const textarea = document.getElementById('jsonPatchTextarea');
+    const previewEl = document.getElementById('jsonValidationPreview');
+    const res = parseAndValidateJsonPatchText(textarea ? textarea.value : '');
+
+    if (!res.valid) {
+      if (previewEl) {
+        previewEl.className = 'validation-preview invalid';
+        previewEl.textContent = '❌ ' + res.error;
+      }
+      return;
+    }
+
+    const expectedPass = userProgress.delete_password || appConfig.delete_password || '123';
+    const entered = window.prompt(`Confirm publishing ${res.cards.length}-card JSON Patch:\nEnter password (default: ${expectedPass}):`);
+    if (entered === null) return;
+    if (entered !== expectedPass) {
+      alert('Incorrect password.');
+      return;
+    }
+
+    const today = getTodayStr();
+    const maxPatchNum = patchesList.reduce((m, p) => Math.max(m, p.patch_number || 0), 0);
+    let maxCardNum = Object.values(numbersMap).reduce((m, n) => Math.max(m, n || 0), 0);
+
+    const newPatchNum = maxPatchNum + 1;
+    res.cards.forEach(c => {
+      if (!numbersMap[c.id]) {
+        maxCardNum += 1;
+        numbersMap[c.id] = maxCardNum;
+      }
+      c._patch_id = res.batch_id;
+      c._patch_number = newPatchNum;
+      loadedCardsMap.set(c.id, c);
+    });
+
+    const newPatchObj = {
+      patch_number: newPatchNum,
+      batch_id: res.batch_id,
+      path: `cards/${today.slice(0, 4)}/${res.batch_id}.json`,
+      date: today,
+      created_at: new Date().toISOString(),
+      source: res.source,
+      cards: res.cards
+    };
+
+    if (!Array.isArray(userProgress.local_patches)) userProgress.local_patches = [];
+    userProgress.local_patches.unshift(newPatchObj);
+    patchesList.unshift(newPatchObj);
+    saveUserProgress();
+
+    // If Owner GitHub token is set, also push the JSON file straight to GitHub repo!
+    let githubMsg = 'Saved immediately to your feed!';
+    if (userProgress.owner_token && appConfig.github) {
+      try {
+        await pushPatchFileToGitHub(newPatchObj);
+        githubMsg = 'Published to your feed AND pushed to GitHub repository!';
+      } catch (e) {
+        console.warn('GitHub push notice:', e);
+        githubMsg = `Added to your feed! (GitHub push note: ${e.message})`;
+      }
+    }
+
+    if (textarea) textarea.value = '';
+    if (previewEl) previewEl.className = 'validation-preview hidden';
+    const fileLabel = document.getElementById('uploadedFileName');
+    if (fileLabel) fileLabel.textContent = '';
+
+    closeModal('addPatchModal');
+    switchTab('new');
+    alert(`✅ Patch #${newPatchNum} (${res.cards.length} cards) added!\n${githubMsg}`);
+  }
+
+  async function pushPatchFileToGitHub(patchObj) {
+    const { owner, repo, branch = 'main' } = appConfig.github;
+    const year = (patchObj.date || getTodayStr()).slice(0, 4);
+    const filePath = `cards/${year}/${patchObj.batch_id}.json`;
+    const url = `https://api.github.com/repos/${owner}/${repo}/contents/${filePath}`;
+
+    const cleanCards = patchObj.cards.map(c => {
+      const copy = Object.assign({}, c);
+      delete copy._patch_id;
+      delete copy._patch_number;
+      return copy;
+    });
+
+    const payloadObj = {
+      schema_version: 1,
+      batch_id: patchObj.batch_id,
+      created_at: patchObj.created_at,
+      source: patchObj.source || 'manual-ui',
+      cards: cleanCards
+    };
+
+    const jsonStr = JSON.stringify(payloadObj, null, 2) + '\n';
+    const contentBase64 = btoa(unescape(encodeURIComponent(jsonStr)));
+
+    const putResp = await fetch(url, {
+      method: 'PUT',
+      headers: {
+        Authorization: `token ${userProgress.owner_token}`,
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({
+        message: `Add manual patch ${patchObj.batch_id} (${cleanCards.length} cards)`,
+        content: contentBase64,
+        branch
+      })
+    });
+
+    if (!putResp.ok) {
+      throw new Error(`GitHub API HTTP ${putResp.status}`);
+    }
+  }
+
+  // Delete Single Card (Password Guard)
+  async function confirmDeleteCard(cardId) {
+    const expectedPass = userProgress.delete_password || appConfig.delete_password || '123';
+    const entered = window.prompt(`Delete Single Card (#${numbersMap[cardId] || ''}):\nEnter password (default: ${expectedPass}):`);
+    if (entered === null) return;
+    if (entered !== expectedPass) {
+      alert('Incorrect password. Card was not deleted.');
+      return;
+    }
+
+    userProgress.hidden[cardId] = Date.now();
+    saveUserProgress();
+    renderFeed();
+  }
+
+  function switchTab(tabName) {
+    activeTab = tabName;
+    document.querySelectorAll('.feed-tab').forEach(t => {
+      t.classList.toggle('active', t.dataset.tab === tabName);
+    });
+    renderFeed();
   }
 
   function populateComposerTopics() {
@@ -203,627 +1394,121 @@
     });
   }
 
-  // Load next file batch from index queue
-  async function loadNextBatch() {
-    if (isLoading || filesQueue.length === 0) return;
-    isLoading = true;
-    const feedStatus = document.getElementById('feedStatusText');
-    if (feedStatus) feedStatus.textContent = 'Loading more cards...';
-
-    const filePath = filesQueue.shift();
-    if (loadedFiles.has(filePath)) {
-      isLoading = false;
-      return;
-    }
-
-    try {
-      const batchData = await fetchJSON(filePath);
-      loadedFiles.add(filePath);
-      if (batchData && Array.isArray(batchData.cards)) {
-        batchData.cards.forEach(card => {
-          loadedCardsMap.set(card.id, card);
-        });
-      }
-    } catch (e) {
-      console.warn(`Could not load batch ${filePath}:`, e);
-    }
-
-    isLoading = false;
-    renderCards();
-
-    if (feedStatus) {
-      feedStatus.textContent = filesQueue.length > 0 ? 'Scroll down for more' : 'All caught up! 🎉';
-    }
-  }
-
-  // Check if a card is visible
-  function isCardHidden(id) {
-    return repoDeletedIds.has(id) || !!userProgress.hidden[id];
-  }
-
-  // Get active cards list based on current filters
-  function getFilteredCards() {
-    const today = getTodayStr();
-    let cards = Array.from(loadedCardsMap.values());
-
-    // Filter hidden
-    cards = cards.filter(c => !isCardHidden(c.id));
-
-    // Tab filter
-    if (activeTab === 'saved') {
-      cards = cards.filter(c => !!userProgress.saves[c.id]);
-    } else if (activeTab === 'liked') {
-      cards = cards.filter(c => !!userProgress.likes[c.id]);
-    } else if (activeTab === 'due') {
-      cards = cards.filter(c => {
-        if (!userProgress.saves[c.id]) return false;
-        const s = userProgress.srs[c.id];
-        return !s || (s.due && s.due <= today);
-      });
-    } else if (activeTab === 'mistakes') {
-      cards = cards.filter(c => !!userProgress.mistakes[c.id]);
-    }
-
-    // Topic filter
-    if (activeTopic) {
-      cards = cards.filter(c => c.topic === activeTopic);
-    }
-
-    // Search query
-    if (currentSearch.trim()) {
-      const q = currentSearch.toLowerCase().trim();
-      cards = cards.filter(c => {
-        const enTitle = (c.en && c.en.title) ? c.en.title.toLowerCase() : '';
-        const arTitle = (c.ar && c.ar.title) ? c.ar.title.toLowerCase() : '';
-        const enAction = (c.en && c.en.action) ? c.en.action.toLowerCase() : '';
-        const arAction = (c.ar && c.ar.action) ? c.ar.action.toLowerCase() : '';
-        const tags = (c.tags || []).join(' ').toLowerCase();
-        return enTitle.includes(q) || arTitle.includes(q) || enAction.includes(q) || arAction.includes(q) || tags.includes(q);
-      });
-    }
-
-    // Sort by card number descending (newest on top)
-    cards.sort((a, b) => {
-      const numA = numbersMap[a.id] || 0;
-      const numB = numbersMap[b.id] || 0;
-      return numB - numA;
-    });
-
-    return cards;
-  }
-
-  // Update badge counters
-  function updateCounts() {
-    const today = getTodayStr();
-    let all = 0, saved = 0, liked = 0, due = 0, mistakes = 0;
-
-    loadedCardsMap.forEach(c => {
-      if (isCardHidden(c.id)) return;
-      all++;
-      if (userProgress.saves[c.id]) {
-        saved++;
-        const s = userProgress.srs[c.id];
-        if (!s || (s.due && s.due <= today)) due++;
-      }
-      if (userProgress.likes[c.id]) liked++;
-      if (userProgress.mistakes[c.id]) mistakes++;
-    });
-
-    const setTxt = (id, val) => {
-      const el = document.getElementById(id);
-      if (el) el.textContent = val;
-    };
-
-    setTxt('countAll', all);
-    setTxt('countSaved', saved);
-    setTxt('countLiked', liked);
-    setTxt('countDue', due);
-    setTxt('countMistakes', mistakes);
-    setTxt('srsDueCount', due);
-
-    setTxt('statSaved', saved);
-    setTxt('statDue', due);
-    setTxt('statMistakes', mistakes);
-
-    // Count mastered
-    let mastered = 0;
-    Object.values(userProgress.srs).forEach(s => {
-      if (s.stage >= 6) mastered++;
-    });
-    setTxt('statMastered', mastered);
-  }
-
-  // Render cards to DOM
-  function renderCards() {
-    const container = document.getElementById('cardsList');
-    if (!container) return;
-
-    const cards = getFilteredCards();
-
-    // Check banner
-    const banner = document.getElementById('filterBanner');
-    const bannerText = document.getElementById('filterBannerText');
-    if (banner && bannerText) {
-      if (activeTopic || currentSearch || activeTab !== 'all') {
-        banner.classList.remove('hidden');
-        let txt = `Showing: ${activeTab.toUpperCase()}`;
-        if (activeTopic) txt += ` · Topic: ${activeTopic}`;
-        if (currentSearch) txt += ` · Search: "${currentSearch}"`;
-        txt += ` (${cards.length} cards)`;
-        bannerText.textContent = txt;
-      } else {
-        banner.classList.add('hidden');
-      }
-    }
-
-    if (cards.length === 0) {
-      container.innerHTML = `
-        <div class="card-item" style="text-align: center; padding: 40px 20px;">
-          <p style="font-size: 24px; margin-bottom: 8px;">🔍</p>
-          <h3 style="font-size: 16px; margin-bottom: 6px;">No cards found</h3>
-          <p style="color: var(--text-muted); font-size: 13px;">Try clearing filters or search terms.</p>
-        </div>
-      `;
-      return;
-    }
-
-    container.innerHTML = '';
-    cards.forEach(card => {
-      container.appendChild(createCardElement(card));
-    });
-
-    updateCounts();
-  }
-
-  // Create single card DOM element
-  function createCardElement(card) {
-    const el = document.createElement('article');
-    el.className = 'card-item';
-    el.id = `card-${card.id}`;
-
-    const num = numbersMap[card.id] || '?';
-    const isLiked = !!userProgress.likes[card.id];
-    const isSaved = !!userProgress.saves[card.id];
-    const topicObj = topics.find(t => t.id === card.topic) || { label: card.topic, icon: '📌' };
-
-    // Header Row
-    const headerRow = document.createElement('div');
-    headerRow.className = 'card-header-row';
-
-    const metaLeft = document.createElement('div');
-    metaLeft.className = 'card-meta-left';
-    metaLeft.innerHTML = `
-      <span class="card-number-badge">#${num}</span>
-      <span class="card-topic-badge">${topicObj.icon} ${topicObj.label}</span>
-      <span class="card-level-badge ${card.level || 'beginner'}">${card.level || 'beginner'}</span>
-      ${card.needs_completion ? '<span class="card-level-badge intermediate">Draft / Completing</span>' : ''}
-    `;
-
-    const actionsRight = document.createElement('div');
-    actionsRight.className = 'card-actions-right';
-
-    // Like button
-    const likeBtn = document.createElement('button');
-    likeBtn.className = 'card-action-btn' + (isLiked ? ' liked' : '');
-    likeBtn.title = isLiked ? 'Unlike' : 'Like';
-    likeBtn.innerHTML = isLiked ? '❤️' : '🤍';
-    likeBtn.addEventListener('click', () => toggleLike(card.id, likeBtn));
-
-    // Save button (enables SRS quiz)
-    const saveBtn = document.createElement('button');
-    saveBtn.className = 'card-action-btn' + (isSaved ? ' saved' : '');
-    saveBtn.title = isSaved ? 'Saved in Quiz review queue' : 'Save to review with quiz';
-    saveBtn.innerHTML = isSaved ? '⭐' : '☆';
-    saveBtn.addEventListener('click', () => toggleSave(card.id, saveBtn));
-
-    // Delete button (password guard)
-    const deleteBtn = document.createElement('button');
-    deleteBtn.className = 'card-action-btn delete-btn';
-    deleteBtn.title = 'Delete this card';
-    deleteBtn.innerHTML = '🗑️';
-    deleteBtn.addEventListener('click', () => confirmDeleteCard(card.id));
-
-    actionsRight.appendChild(likeBtn);
-    actionsRight.appendChild(saveBtn);
-    actionsRight.appendChild(deleteBtn);
-
-    headerRow.appendChild(metaLeft);
-    headerRow.appendChild(actionsRight);
-    el.appendChild(headerRow);
-
-    // English Block
-    const showEn = (currentLang === 'both' || currentLang === 'en') && card.en;
-    if (showEn) {
-      const enBlock = document.createElement('div');
-      enBlock.className = 'content-block';
-
-      enBlock.innerHTML = `
-        <h2 class="card-title">${card.en.title || ''}</h2>
-        ${card.en.hook ? `<div class="card-hook">💡 ${card.en.hook}</div>` : ''}
-        ${card.en.key_phrase ? `
-          <div class="card-key-phrase">
-            <span class="phrase-text">💬 "${card.en.key_phrase}"</span>
-            <button class="copy-phrase-btn" title="Copy to clipboard">📋 Copy</button>
-          </div>` : ''}
-        
-        <button class="card-details-toggle" data-target="details-en-${card.id}">
-          <span>Read Details & Examples ▾</span>
-        </button>
-
-        <div class="card-details-body" id="details-en-${card.id}">
-          <div class="detail-row"><strong>🎯 Do / Say:</strong> ${card.en.action || ''}</div>
-          ${card.en.when ? `<div class="detail-row"><strong>⏱ When:</strong> ${card.en.when}</div>` : ''}
-          ${card.en.why ? `<div class="detail-row"><strong>💡 Why:</strong> ${card.en.why}</div>` : ''}
-          ${card.en.example ? `<div class="detail-row"><strong>📖 Example:</strong> ${card.en.example}</div>` : ''}
-          ${card.en.mistake ? `<div class="detail-row"><strong>⚠️ Avoid:</strong> ${card.en.mistake}</div>` : ''}
-        </div>
-      `;
-
-      // Copy phrase action
-      const cpBtn = enBlock.querySelector('.copy-phrase-btn');
-      if (cpBtn) {
-        cpBtn.addEventListener('click', () => {
-          navigator.clipboard.writeText(card.en.key_phrase);
-          cpBtn.textContent = '✓ Copied!';
-          setTimeout(() => { cpBtn.textContent = '📋 Copy'; }, 2000);
-        });
-      }
-
-      // Details toggle
-      const dtToggle = enBlock.querySelector('.card-details-toggle');
-      const dtBody = enBlock.querySelector('.card-details-body');
-      dtToggle.addEventListener('click', () => {
-        const isOpen = dtBody.classList.toggle('open');
-        dtToggle.querySelector('span').textContent = isOpen ? 'Hide Details ▴' : 'Read Details & Examples ▾';
-      });
-
-      el.appendChild(enBlock);
-    }
-
-    // Divider if both
-    if (currentLang === 'both' && card.en && card.ar) {
-      const divider = document.createElement('div');
-      divider.className = 'bilingual-divider';
-      el.appendChild(divider);
-    }
-
-    // Arabic Block
-    const showAr = (currentLang === 'both' || currentLang === 'ar') && card.ar;
-    if (showAr) {
-      const arBlock = document.createElement('div');
-      arBlock.className = 'content-block rtl';
-      arBlock.dir = 'rtl';
-
-      arBlock.innerHTML = `
-        <h2 class="card-title">${card.ar.title || ''}</h2>
-        ${card.ar.hook ? `<div class="card-hook">💡 ${card.ar.hook}</div>` : ''}
-        ${card.ar.key_phrase ? `
-          <div class="card-key-phrase">
-            <span class="phrase-text">💬 «${card.ar.key_phrase}»</span>
-            <button class="copy-phrase-btn" title="نسخ">📋 نسخ</button>
-          </div>` : ''}
-        
-        <button class="card-details-toggle" data-target="details-ar-${card.id}">
-          <span>التفاصيل والأمثلة ▾</span>
-        </button>
-
-        <div class="card-details-body" id="details-ar-${card.id}">
-          <div class="detail-row"><strong>🎯 الخطوة:</strong> ${card.ar.action || ''}</div>
-          ${card.ar.when ? `<div class="detail-row"><strong>⏱ التوقيت:</strong> ${card.ar.when}</div>` : ''}
-          ${card.ar.why ? `<div class="detail-row"><strong>💡 ليه بتشتغل:</strong> ${card.ar.why}</div>` : ''}
-          ${card.ar.example ? `<div class="detail-row"><strong>📖 مثال عملي:</strong> ${card.ar.example}</div>` : ''}
-          ${card.ar.mistake ? `<div class="detail-row"><strong>⚠️ الغلطة:</strong> ${card.ar.mistake}</div>` : ''}
-        </div>
-      `;
-
-      // Copy phrase action
-      const cpBtn = arBlock.querySelector('.copy-phrase-btn');
-      if (cpBtn) {
-        cpBtn.addEventListener('click', () => {
-          navigator.clipboard.writeText(card.ar.key_phrase);
-          cpBtn.textContent = '✓ تم النسخ!';
-          setTimeout(() => { cpBtn.textContent = '📋 نسخ'; }, 2000);
-        });
-      }
-
-      // Details toggle
-      const dtToggle = arBlock.querySelector('.card-details-toggle');
-      const dtBody = arBlock.querySelector('.card-details-body');
-      dtToggle.addEventListener('click', () => {
-        const isOpen = dtBody.classList.toggle('open');
-        dtToggle.querySelector('span').textContent = isOpen ? 'إخفاء التفاصيل ▴' : 'التفاصيل والأمثلة ▾';
-      });
-
-      el.appendChild(arBlock);
-    }
-
-    // Quiz Section
-    if (card.quiz) {
-      const quizSection = renderQuizSection(card);
-      el.appendChild(quizSection);
-    }
-
-    return el;
-  }
-
-  // Render Interactive MCQ Quiz section for a card
-  function renderQuizSection(card) {
-    const wrap = document.createElement('div');
-    wrap.className = 'quiz-section';
-
-    const isQuizAr = currentLang === 'ar';
-    const qData = (isQuizAr && card.quiz.ar) ? card.quiz.ar : card.quiz.en;
-    if (!qData) return wrap;
-
-    const srsState = userProgress.srs[card.id] || { stage: 0 };
-    const stageDays = appConfig.srs_intervals_days || [1, 2, 3, 7, 14, 30];
-    const nextInterval = stageDays[srsState.stage] || 30;
-
-    wrap.innerHTML = `
-      <div class="quiz-header">
-        <span class="quiz-badge">🧠 Quiz Check</span>
-        <span class="quiz-srs-status">Stage ${srsState.stage}/6 · Next review: ${nextInterval}d</span>
-      </div>
-      <p class="quiz-question">${qData.question}</p>
-      <div class="quiz-options">
-        ${(qData.options || []).map((opt, idx) => `
-          <button class="quiz-opt-btn" data-idx="${idx}">${String.fromCharCode(65 + idx)}. ${opt}</button>
-        `).join('')}
-      </div>
-      <div class="quiz-feedback"></div>
-    `;
-
-    const feedbackEl = wrap.querySelector('.quiz-feedback');
-    const optionBtns = wrap.querySelectorAll('.quiz-opt-btn');
-
-    optionBtns.forEach(btn => {
-      btn.addEventListener('click', () => {
-        const chosen = parseInt(btn.dataset.idx, 10);
-        const correct = card.quiz.correct_index;
-
-        optionBtns.forEach(b => b.disabled = true);
-
-        if (chosen === correct) {
-          btn.classList.add('correct');
-          feedbackEl.className = 'quiz-feedback show success';
-          feedbackEl.innerHTML = `
-            <strong>✓ Correct!</strong> ${qData.explanation || ''}
-            <div style="margin-top: 4px; font-size: 11px;">Advancing review interval to <strong>${nextInterval} days</strong>!</div>
-          `;
-          handleSrsAnswer(card.id, true);
-        } else {
-          btn.classList.add('wrong');
-          if (optionBtns[correct]) optionBtns[correct].classList.add('correct');
-          feedbackEl.className = 'quiz-feedback show fail';
-          feedbackEl.innerHTML = `
-            <strong>✕ Not quite.</strong> ${qData.explanation || ''}
-            <div style="margin-top: 4px; font-size: 11px;">Moved to "Retry Mistakes" queue to master today.</div>
-          `;
-          handleSrsAnswer(card.id, false);
-        }
-      });
-    });
-
-    return wrap;
-  }
-
-  // Spaced repetition progression handler
-  function handleSrsAnswer(cardId, isCorrect) {
-    const today = getTodayStr();
-    const intervals = appConfig.srs_intervals_days || [1, 2, 3, 7, 14, 30];
-
-    if (!userProgress.srs[cardId]) {
-      userProgress.srs[cardId] = { stage: 0, due: today, updated_at: new Date().toISOString() };
-    }
-
-    const state = userProgress.srs[cardId];
-
-    if (isCorrect) {
-      delete userProgress.mistakes[cardId];
-      const nextDays = intervals[state.stage] || 30;
-      state.stage = Math.min(state.stage + 1, intervals.length);
-      state.due = addDays(today, nextDays);
-    } else {
-      userProgress.mistakes[cardId] = Date.now();
-      state.stage = 0;
-      state.due = today;
-    }
-
-    state.updated_at = new Date().toISOString();
-    saveUserProgress();
-  }
-
-  // Actions: Like
-  function toggleLike(id, btnEl) {
-    if (userProgress.likes[id]) {
-      delete userProgress.likes[id];
-      btnEl.classList.remove('liked');
-      btnEl.innerHTML = '🤍';
-    } else {
-      userProgress.likes[id] = Date.now();
-      btnEl.classList.add('liked');
-      btnEl.innerHTML = '❤️';
-    }
-    saveUserProgress();
-  }
-
-  // Actions: Save (enters SRS queue)
-  function toggleSave(id, btnEl) {
-    if (userProgress.saves[id]) {
-      delete userProgress.saves[id];
-      btnEl.classList.remove('saved');
-      btnEl.innerHTML = '☆';
-    } else {
-      userProgress.saves[id] = Date.now();
-      btnEl.classList.add('saved');
-      btnEl.innerHTML = '⭐';
-
-      // Initialize in SRS queue
-      if (!userProgress.srs[id]) {
-        userProgress.srs[id] = {
-          stage: 0,
-          due: getTodayStr(),
-          updated_at: new Date().toISOString()
-        };
-      }
-    }
-    saveUserProgress();
-  }
-
-  // Actions: Delete single card (password prompt)
-  async function confirmDeleteCard(cardId) {
-    const expectedPass = userProgress.delete_password || appConfig.delete_password || '123';
-    const entered = window.prompt(`Delete Card Confirmation:\nEnter password (default is ${expectedPass}):`);
-
-    if (entered === null) return; // User cancelled
-    if (entered !== expectedPass) {
-      alert('Incorrect password. Card was not deleted.');
-      return;
-    }
-
-    // Soft delete locally
-    userProgress.hidden[cardId] = Date.now();
-    saveUserProgress();
-
-    // If owner token is present, sync delete to GitHub repository
-    if (userProgress.owner_token && appConfig.github) {
-      try {
-        await syncDeleteToGitHub(cardId);
-        alert('Card deleted locally and synced to GitHub repository deleted.json!');
-      } catch (err) {
-        console.error('Owner GitHub delete sync error:', err);
-        alert(`Card deleted locally! (GitHub sync notice: ${err.message})`);
-      }
-    } else {
-      alert('Card hidden from your feed.');
-    }
-
-    renderCards();
-  }
-
-  // Sync delete to GitHub repository via Contents API
-  async function syncDeleteToGitHub(cardId) {
-    const { owner, repo, branch = 'main' } = appConfig.github;
-    const url = `https://api.github.com/repos/${owner}/${repo}/contents/data/deleted.json`;
-    const token = userProgress.owner_token;
-
-    // 1. Get existing deleted.json and SHA
-    const getResp = await fetch(url + `?ref=${branch}`, {
-      headers: { Authorization: `token ${token}` }
-    });
-    if (!getResp.ok) throw new Error(`Could not fetch deleted.json from GitHub (${getResp.status})`);
-    const fileData = await getResp.json();
-    const existingList = JSON.parse(atob(fileData.content));
-
-    if (!existingList.includes(cardId)) {
-      existingList.push(cardId);
-      const updatedContentBase64 = btoa(JSON.stringify(existingList, null, 2) + '\n');
-
-      const putResp = await fetch(url, {
-        method: 'PUT',
-        headers: {
-          Authorization: `token ${token}`,
-          'Content-Type': 'application/json'
-        },
-        body: JSON.stringify({
-          message: `Soft delete card ${cardId}`,
-          content: updatedContentBase64,
-          sha: fileData.sha,
-          branch
-        })
-      });
-      if (!putResp.ok) throw new Error(`GitHub commit failed (${putResp.status})`);
-    }
-  }
-
-  // Event Listeners Setup
+  // Setup Event Listeners
   function setupEventListeners() {
-    // Search input
+    // 3 Main Feed Tabs
+    document.querySelectorAll('.feed-tab').forEach(tab => {
+      tab.addEventListener('click', () => switchTab(tab.dataset.tab));
+    });
+
+    // Search Input
     const searchInput = document.getElementById('searchInput');
-    const clearSearchBtn = document.getElementById('clearSearch');
+    const clearSearch = document.getElementById('clearSearch');
     if (searchInput) {
       searchInput.addEventListener('input', (e) => {
         currentSearch = e.target.value;
-        if (clearSearchBtn) {
-          clearSearchBtn.style.display = currentSearch ? 'block' : 'none';
-        }
-        renderCards();
+        if (clearSearch) clearSearch.style.display = currentSearch ? 'block' : 'none';
+        renderFeed();
       });
     }
-    if (clearSearchBtn) {
-      clearSearchBtn.addEventListener('click', () => {
+    if (clearSearch) {
+      clearSearch.addEventListener('click', () => {
         if (searchInput) searchInput.value = '';
         currentSearch = '';
-        clearSearchBtn.style.display = 'none';
-        renderCards();
+        clearSearch.style.display = 'none';
+        renderFeed();
       });
     }
 
-    // Reset filter banner button
-    const resetFilterBtn = document.getElementById('resetFilterBtn');
-    if (resetFilterBtn) {
-      resetFilterBtn.addEventListener('click', () => {
-        activeTab = 'all';
-        activeTopic = null;
-        currentSearch = '';
-        if (searchInput) searchInput.value = '';
-        if (clearSearchBtn) clearSearchBtn.style.display = 'none';
-        document.querySelectorAll('.feed-tab').forEach(t => t.classList.remove('active'));
-        document.querySelector('.feed-tab[data-tab="all"]').classList.add('active');
-        document.querySelectorAll('.topic-chip').forEach(c => c.classList.remove('active'));
-        const allChip = document.querySelector('.topic-chip');
-        if (allChip) allChip.classList.add('active');
-        renderCards();
-      });
-    }
+    // Reset Filter Banner
+    document.getElementById('resetFilterBtn')?.addEventListener('click', () => {
+      activeTopic = null;
+      currentSearch = '';
+      if (searchInput) searchInput.value = '';
+      if (clearSearch) clearSearch.style.display = 'none';
+      renderFeed();
+    });
 
-    // Feed Tabs
-    document.querySelectorAll('.feed-tab').forEach(tab => {
-      tab.addEventListener('click', () => {
-        document.querySelectorAll('.feed-tab').forEach(t => t.classList.remove('active'));
-        tab.classList.add('active');
-        activeTab = tab.dataset.tab;
-        renderCards();
+    // Single Grouped Topics Button
+    document.getElementById('btnTopicsPicker')?.addEventListener('click', openTopicsModal);
+
+    // Header Buttons
+    setupModal('btnAddPatch', 'addPatchModal');
+    setupModal('btnSettings', 'settingsModal');
+    document.getElementById('btnCombinedQuiz')?.addEventListener('click', openQuizHubModal);
+    document.getElementById('btnHistory')?.addEventListener('click', openHistoryModal);
+    document.getElementById('btnStatusHistoryLink')?.addEventListener('click', openHistoryModal);
+
+    // Close modal buttons
+    document.querySelectorAll('[data-close]').forEach(btn => {
+      btn.addEventListener('click', () => closeModal(btn.dataset.close));
+    });
+    document.querySelectorAll('.modal-backdrop').forEach(modal => {
+      modal.addEventListener('click', (e) => {
+        if (e.target === modal) modal.classList.remove('open');
       });
     });
 
-    // Modals
-    setupModal('btnComposer', 'composerModal');
-    setupModal('btnSrsStats', 'srsModal');
-    setupModal('btnSettings', 'settingsModal');
+    // Mode tabs inside Add Patch Modal (JSON vs Single Card)
+    document.querySelectorAll('.mode-tab').forEach(mTab => {
+      mTab.addEventListener('click', () => {
+        document.querySelectorAll('.mode-tab').forEach(b => b.classList.remove('active'));
+        mTab.classList.add('active');
+        const mode = mTab.dataset.mode;
+        document.getElementById('modeJsonPanel')?.classList.toggle('hidden', mode !== 'json');
+        document.getElementById('composerForm')?.classList.toggle('hidden', mode !== 'single');
+      });
+    });
 
-    // Review session button from SRS modal
-    const startReviewBtn = document.getElementById('btnStartDueReview');
-    if (startReviewBtn) {
-      startReviewBtn.addEventListener('click', () => {
-        closeModal('srsModal');
-        activeTab = 'due';
-        document.querySelectorAll('.feed-tab').forEach(t => t.classList.remove('active'));
-        const dueTab = document.querySelector('.feed-tab[data-tab="due"]');
-        if (dueTab) dueTab.classList.add('active');
-        renderCards();
+    // Upload .json File Picker
+    const btnPickJsonFile = document.getElementById('btnPickJsonFile');
+    const jsonFileInput = document.getElementById('jsonPatchFileInput');
+    if (btnPickJsonFile && jsonFileInput) {
+      btnPickJsonFile.addEventListener('click', () => jsonFileInput.click());
+      jsonFileInput.addEventListener('change', (e) => {
+        const file = e.target.files && e.target.files[0];
+        if (!file) return;
+        const nameEl = document.getElementById('uploadedFileName');
+        if (nameEl) nameEl.textContent = `✓ Loaded file: ${file.name}`;
+        const reader = new FileReader();
+        reader.onload = (ev) => {
+          const textarea = document.getElementById('jsonPatchTextarea');
+          if (textarea) {
+            textarea.value = ev.target.result;
+            showJsonPreview();
+          }
+        };
+        reader.readAsText(file);
+        e.target.value = '';
       });
     }
 
-    // Composer Form Submit
-    const compForm = document.getElementById('composerForm');
-    if (compForm) {
-      compForm.addEventListener('submit', handleComposerSubmit);
-    }
+    // Live JSON Check & Publish
+    document.getElementById('btnValidateJson')?.addEventListener('click', showJsonPreview);
+    document.getElementById('jsonPatchTextarea')?.addEventListener('input', showJsonPreview);
+    document.getElementById('btnPublishJsonPatch')?.addEventListener('click', publishValidatedJsonPatch);
 
-    // Export Progress
-    const btnExportProgress = document.getElementById('btnExportProgress');
-    if (btnExportProgress) {
-      btnExportProgress.addEventListener('click', exportProgressJSON);
-    }
+    // Copy AI Prompt Button
+    document.getElementById('btnCopyAiPrompt')?.addEventListener('click', async (e) => {
+      const btn = e.currentTarget;
+      try {
+        const resp = await fetch('prompts/card_prompt.md');
+        const txt = await resp.text();
+        await navigator.clipboard.writeText(txt);
+        btn.textContent = '✓ Prompt Copied!';
+      } catch (_) {
+        btn.textContent = '✓ Copied!';
+      }
+      setTimeout(() => { btn.textContent = '📋 Copy AI Prompt'; }, 2000);
+    });
 
-    // Export All Content
-    const btnExportAllContent = document.getElementById('btnExportAllContent');
-    if (btnExportAllContent) {
-      btnExportAllContent.addEventListener('click', exportAllContentJSON);
-    }
+    // Single Card Composer Form
+    document.getElementById('composerForm')?.addEventListener('submit', handleSingleCardSubmit);
 
-    // Import Progress
+    // Export / Import / Settings
+    document.getElementById('btnExportProgress')?.addEventListener('click', exportProgressJSON);
+    document.getElementById('btnExportAllContent')?.addEventListener('click', exportAllContentJSON);
+
     const btnTriggerImport = document.getElementById('btnTriggerImport');
     const importFileInput = document.getElementById('importFileInput');
     if (btnTriggerImport && importFileInput) {
@@ -831,67 +1516,52 @@
       importFileInput.addEventListener('change', handleImportProgressFile);
     }
 
-    // Save Settings
-    const btnSaveSettings = document.getElementById('btnSaveSettings');
-    if (btnSaveSettings) {
-      btnSaveSettings.addEventListener('click', () => {
-        const pass = document.getElementById('settingDeletePassword').value.trim();
-        const token = document.getElementById('settingOwnerToken').value.trim();
-        if (pass) userProgress.delete_password = pass;
-        userProgress.owner_token = token;
-        saveUserProgress();
-        alert('Settings saved successfully!');
-        closeModal('settingsModal');
-      });
+    document.getElementById('btnSaveSettings')?.addEventListener('click', () => {
+      const pass = document.getElementById('settingDeletePassword').value.trim();
+      const token = document.getElementById('settingOwnerToken').value.trim();
+      if (pass) userProgress.delete_password = pass;
+      if (token) userProgress.owner_token = token;
+      saveUserProgress();
+      alert('Settings saved!');
+      closeModal('settingsModal');
+    });
+
+    document.getElementById('btnRestoreHidden')?.addEventListener('click', () => {
+      userProgress.hidden = {};
+      saveUserProgress();
+      renderFeed();
+      alert('All locally hidden cards restored!');
+    });
+  }
+
+  function showJsonPreview() {
+    const textarea = document.getElementById('jsonPatchTextarea');
+    const previewEl = document.getElementById('jsonValidationPreview');
+    if (!textarea || !previewEl) return;
+
+    if (!textarea.value.trim()) {
+      previewEl.className = 'validation-preview hidden';
+      return;
     }
 
-    // Restore hidden cards
-    const btnRestoreHidden = document.getElementById('btnRestoreHidden');
-    if (btnRestoreHidden) {
-      btnRestoreHidden.addEventListener('click', () => {
-        userProgress.hidden = {};
-        saveUserProgress();
-        alert('All locally hidden cards restored!');
-        renderCards();
-      });
+    const res = parseAndValidateJsonPatchText(textarea.value);
+    if (!res.valid) {
+      previewEl.className = 'validation-preview invalid';
+      previewEl.innerHTML = `❌ <strong>Invalid JSON:</strong> ${res.error}`;
+    } else {
+      const titles = res.cards.map((c, i) => `${i + 1}. [${c.topic}] ${c.en.title}`).join('<br>');
+      previewEl.className = 'validation-preview valid';
+      previewEl.innerHTML = `
+        <div>✅ <strong>Valid Patch! ${res.cards.length} Card(s) Ready to Publish:</strong></div>
+        <div style="margin-top: 4px; font-size: 11.5px; color: #e2e8f0;">${titles}</div>
+      `;
     }
-
-    // Infinite scroll
-    window.addEventListener('scroll', () => {
-      if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight - 400) {
-        loadNextBatch();
-      }
-    });
   }
 
-  function setupModal(triggerBtnId, modalId) {
-    const trigger = document.getElementById(triggerBtnId);
-    const modal = document.getElementById(modalId);
-    if (!trigger || !modal) return;
-
-    trigger.addEventListener('click', () => modal.classList.add('open'));
-    modal.querySelectorAll('[data-close]').forEach(btn => {
-      btn.addEventListener('click', () => modal.classList.remove('open'));
-    });
-    modal.addEventListener('click', (e) => {
-      if (e.target === modal) modal.classList.remove('open');
-    });
-  }
-
-  function closeModal(modalId) {
-    const modal = document.getElementById(modalId);
-    if (modal) modal.classList.remove('open');
-  }
-
-  // Handle composer submission
-  async function handleComposerSubmit(e) {
+  function handleSingleCardSubmit(e) {
     e.preventDefault();
-    const today = getTodayStr();
     const topic = document.getElementById('compTopic').value;
     const level = document.getElementById('compLevel').value;
-    const rawTags = document.getElementById('compTags').value;
-    const tags = rawTags.split(',').map(s => s.trim().toLowerCase()).filter(Boolean);
-
     const enTitle = document.getElementById('compEnTitle').value.trim();
     const enHook = document.getElementById('compEnHook').value.trim();
     const enKeyPhrase = document.getElementById('compEnKeyPhrase').value.trim();
@@ -901,119 +1571,74 @@
     const enExample = document.getElementById('compEnExample').value.trim();
     const enMistake = document.getElementById('compEnMistake').value.trim();
 
-    const arTitle = document.getElementById('compArTitle').value.trim();
-    const arHook = document.getElementById('compArHook').value.trim();
-    const arKeyPhrase = document.getElementById('compArKeyPhrase').value.trim();
-    const arAction = document.getElementById('compArAction').value.trim();
-    const arWhen = document.getElementById('compArWhen').value.trim();
-    const arWhy = document.getElementById('compArWhy').value.trim();
-    const arExample = document.getElementById('compArExample').value.trim();
-    const arMistake = document.getElementById('compArMistake').value.trim();
+    const arTitle = document.getElementById('compArTitle').value.trim() || enTitle;
+    const arHook = document.getElementById('compArHook').value.trim() || enHook;
+    const arKeyPhrase = document.getElementById('compArKeyPhrase').value.trim() || enKeyPhrase;
+    const arAction = document.getElementById('compArAction').value.trim() || enAction;
+    const arWhen = document.getElementById('compArWhen').value.trim() || enWhen;
+    const arWhy = document.getElementById('compArWhy').value.trim() || enWhy;
+    const arExample = document.getElementById('compArExample').value.trim() || enExample;
+    const arMistake = document.getElementById('compArMistake').value.trim() || enMistake;
 
-    const slug = enTitle.toLowerCase().replace(/[^\w\s-]/g, '').trim().replace(/\s+/g, '-').slice(0, 30);
-    const cardId = `${today}_${topic}_${slug || 'custom'}-${Date.now().toString().slice(-4)}`;
+    const singlePatchJson = JSON.stringify({
+      batch_id: `${getTodayStr()}_single_${Date.now().toString().slice(-4)}`,
+      source: 'manual-single',
+      cards: [{
+        topic,
+        level,
+        en: { title: enTitle, hook: enHook, key_phrase: enKeyPhrase, action: enAction, when: enWhen, why: enWhy, example: enExample, mistake: enMistake },
+        ar: { title: arTitle, hook: arHook, key_phrase: arKeyPhrase, action: arAction, when: arWhen, why: arWhy, example: arExample, mistake: arMistake }
+      }]
+    });
 
-    const needsCompletion = !arTitle || !arAction;
-
-    const newCard = {
-      id: cardId,
-      created_at: new Date().toISOString(),
-      topic,
-      tags: tags.length ? tags : [topic],
-      level,
-      needs_completion: needsCompletion,
-      en: {
-        title: enTitle,
-        hook: enHook,
-        key_phrase: enKeyPhrase,
-        action: enAction,
-        when: enWhen,
-        why: enWhy,
-        example: enExample,
-        mistake: enMistake
-      },
-      ar: {
-        title: arTitle || enTitle,
-        hook: arHook || enHook,
-        key_phrase: arKeyPhrase || enKeyPhrase,
-        action: arAction || enAction,
-        when: arWhen || enWhen,
-        why: arWhy || enWhy,
-        example: arExample || enExample,
-        mistake: arMistake || enMistake
-      },
-      quiz: {
-        type: 'mcq',
-        correct_index: 0,
-        en: {
-          question: `What is the core takeaway of "${enTitle}"?`,
-          options: [
-            enAction.slice(0, 80) || 'Follow the recommended action.',
-            'Wait for the other party to make the first move.',
-            'Defend your position aggressively.',
-            'Give an immediate concession.'
-          ],
-          explanation: enWhy || 'This technique aligns incentives and protects your position.'
-        },
-        ar: {
-          question: `إيه هو الدرس الأساسي من «${arTitle || enTitle}»؟`,
-          options: [
-            arAction.slice(0, 80) || 'تنفيذ الإجراء الموصى به.',
-            'الانتظار لحد ما الطرف التاني يبدأ.',
-            'الدخول في جدال لإثبات وجهة النظر.',
-            'التنازل الفوري بدون مقابل.'
-          ],
-          explanation: arWhy || 'الأسلوب ده بيحمي قيمتك وبيحقق نتيجة أفضل.'
-        }
-      }
-    };
-
-    // Assign temporary or permanent number
-    const maxNum = Object.values(numbersMap).reduce((a, b) => Math.max(a, b), 0) || 0;
-    numbersMap[newCard.id] = maxNum + 1;
-
-    // Save locally
-    if (!Array.isArray(userProgress.local_cards)) userProgress.local_cards = [];
-    userProgress.local_cards.unshift(newCard);
-    loadedCardsMap.set(newCard.id, newCard);
-    saveUserProgress();
-
-    closeModal('composerModal');
+    const textarea = document.getElementById('jsonPatchTextarea');
+    if (textarea) textarea.value = singlePatchJson;
     e.target.reset();
-    renderCards();
-
-    alert(`Card published! Assigned number #${numbersMap[newCard.id]}.`);
+    publishValidatedJsonPatch();
   }
 
-  // Export Progress JSON
+  function setupModal(triggerId, modalId) {
+    const trigger = document.getElementById(triggerId);
+    const modal = document.getElementById(modalId);
+    if (!trigger || !modal) return;
+    trigger.addEventListener('click', () => modal.classList.add('open'));
+  }
+
+  function closeModal(modalId) {
+    const modal = document.getElementById(modalId);
+    if (modal) modal.classList.remove('open');
+  }
+
+  // Export & Import
   function exportProgressJSON() {
-    const exportData = {
-      schema_version: 1,
+    const data = {
+      schema_version: 2,
       exported_at: new Date().toISOString(),
-      likes: userProgress.likes,
       saves: userProgress.saves,
+      finished_patches: userProgress.finished_patches,
       srs: userProgress.srs,
       mistakes: userProgress.mistakes,
       hidden: userProgress.hidden,
-      local_cards: userProgress.local_cards || []
+      local_patches: userProgress.local_patches || []
     };
-    downloadJSON(exportData, `daily-feed-progress-${getTodayStr()}.json`);
+    downloadJSON(data, `daily-feed-progress-${getTodayStr()}.json`);
   }
 
-  // Export All Visible Content JSON
   function exportAllContentJSON() {
-    const all = Array.from(loadedCardsMap.values()).map(c => {
-      const copy = Object.assign({}, c);
-      copy.permanent_number = numbersMap[c.id] || 0;
-      return copy;
-    });
-    const exportData = {
-      schema_version: 1,
+    const allPatches = patchesList.map(p => ({
+      patch_number: p.patch_number,
+      batch_id: p.batch_id,
+      date: p.date,
+      source: p.source,
+      cards: p.cards.map(c => Object.assign({ permanent_number: numbersMap[c.id] || 0 }, c))
+    }));
+    downloadJSON({
+      schema_version: 2,
       exported_at: new Date().toISOString(),
-      total_cards: all.length,
-      cards: all
-    };
-    downloadJSON(exportData, `daily-feed-all-cards-${getTodayStr()}.json`);
+      total_patches: allPatches.length,
+      total_cards: loadedCardsMap.size,
+      patches: allPatches
+    }, `daily-feed-all-patches-${getTodayStr()}.json`);
   }
 
   function downloadJSON(data, filename) {
@@ -1028,82 +1653,46 @@
     URL.revokeObjectURL(url);
   }
 
-  // Handle Import Progress with Merge logic
   function handleImportProgressFile(e) {
     const file = e.target.files && e.target.files[0];
     if (!file) return;
-
     const reader = new FileReader();
-    reader.onload = function (event) {
+    reader.onload = async (ev) => {
       try {
-        const imported = JSON.parse(event.target.result);
-        if (!imported || typeof imported !== 'object') {
-          throw new Error('Invalid JSON format');
-        }
-
-        // Merge logic: union items, preserve existing progress
-        let addedLikes = 0, addedSaves = 0, addedSrs = 0;
-
-        if (imported.likes) {
-          Object.keys(imported.likes).forEach(id => {
-            if (!userProgress.likes[id]) {
-              userProgress.likes[id] = imported.likes[id];
-              addedLikes++;
+        const imp = JSON.parse(ev.target.result);
+        if (!imp || typeof imp !== 'object') throw new Error('Invalid JSON object');
+        userProgress.saves = Object.assign({}, userProgress.saves, imp.saves || {}, imp.likes || {});
+        userProgress.finished_patches = Object.assign({}, userProgress.finished_patches, imp.finished_patches || {});
+        userProgress.mistakes = Object.assign({}, userProgress.mistakes, imp.mistakes || {});
+        userProgress.hidden = Object.assign({}, userProgress.hidden, imp.hidden || {});
+        if (imp.srs) {
+          Object.keys(imp.srs).forEach(id => {
+            const cur = userProgress.srs[id];
+            const inc = imp.srs[id];
+            if (!cur || (inc.updated_at && inc.updated_at > (cur.updated_at || ''))) {
+              userProgress.srs[id] = inc;
             }
           });
         }
-
-        if (imported.saves) {
-          Object.keys(imported.saves).forEach(id => {
-            if (!userProgress.saves[id]) {
-              userProgress.saves[id] = imported.saves[id];
-              addedSaves++;
-            }
+        if (Array.isArray(imp.local_patches)) {
+          const existingIds = new Set((userProgress.local_patches || []).map(p => p.batch_id));
+          imp.local_patches.forEach(lp => {
+            if (!existingIds.has(lp.batch_id)) userProgress.local_patches.push(lp);
           });
         }
-
-        if (imported.srs) {
-          Object.keys(imported.srs).forEach(id => {
-            const existing = userProgress.srs[id];
-            const incoming = imported.srs[id];
-            if (!existing || (incoming.updated_at && incoming.updated_at > (existing.updated_at || ''))) {
-              userProgress.srs[id] = incoming;
-              addedSrs++;
-            }
-          });
-        }
-
-        if (imported.mistakes) {
-          userProgress.mistakes = Object.assign({}, userProgress.mistakes, imported.mistakes);
-        }
-
-        if (imported.hidden) {
-          userProgress.hidden = Object.assign({}, userProgress.hidden, imported.hidden);
-        }
-
-        if (Array.isArray(imported.local_cards)) {
-          const currentIds = new Set((userProgress.local_cards || []).map(c => c.id));
-          imported.local_cards.forEach(c => {
-            if (!currentIds.has(c.id)) {
-              userProgress.local_cards.push(c);
-              loadedCardsMap.set(c.id, c);
-            }
-          });
-        }
-
         saveUserProgress();
-        renderCards();
-        alert(`Progress imported & merged successfully!\n+${addedLikes} likes, +${addedSaves} saves, +${addedSrs} SRS updates.`);
+        await loadAllPatches();
+        renderFeed();
+        alert('Progress imported and merged!');
         closeModal('settingsModal');
       } catch (err) {
-        alert('Failed to import progress file: ' + err.message);
+        alert('Import error: ' + err.message);
       }
     };
     reader.readAsText(file);
-    e.target.value = ''; // Reset input
+    e.target.value = '';
   }
 
-  // Start app on DOM load
   if (document.readyState === 'loading') {
     document.addEventListener('DOMContentLoaded', init);
   } else {

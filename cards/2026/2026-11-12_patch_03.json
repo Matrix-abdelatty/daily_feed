@@ -1,0 +1,268 @@
+{
+  "schema_version": 1,
+  "batch_id": "2026-11-12_patch_03",
+  "created_at": "2026-11-12T08:10:00+02:00",
+  "source": "gemini",
+  "cards": [
+    {
+      "id": "2026-11-12_leadership_delegation",
+      "created_at": "2026-11-12T19:40:37.006455+00:00",
+      "topic": "leadership",
+      "tags": ["delegation", "management", "leadership"],
+      "level": "intermediate",
+      "needs_completion": false,
+      "en": {
+        "title": "Delegate Outcomes, Then Ask for the Reverse Brief",
+        "hook": "Asking 'Did you understand?' guarantees a nod — and a wrong deliverable on Friday.",
+        "action": "Define the exact outcome and deadline, then ask the team member to brief you back on their first two steps and what 'done' looks like.",
+        "key_phrase": "Just so we're 100% aligned, walk me through how you're planning to tackle this and what the final deliverable will look like.",
+        "when": "Whenever you hand off an important task or project to a colleague or direct report.",
+        "why": "People say 'Got it!' out of politeness or fear of looking slow. A reverse brief exposes misunderstandings in 30 seconds instead of 5 days later.",
+        "example": "You: 'We need the Q3 churn report by Thursday noon. Walk me through your plan?' Member: 'I'll pull enterprise accounts...' You: 'Ah — include SMB accounts too, that's where the spike happened.'",
+        "mistake": "Ending delegation with 'Does that make sense?' which almost always gets a fake 'Yes'."
+      },
+      "ar": {
+        "title": "فوّض النتيجة واطلب «ملخص عكسي للخطة»",
+        "hook": "سؤال «فهمت قصدي؟» دايماً إجابته هزة راس و«تمام يا فندم».. وبعدين تتفاجئ يوم التسليم بشغل تاني خالص غير اللي طلبته.",
+        "action": "اشرح النتيجة النهائية المطلوبة وميعادها، وبعدين اطلب من الشخص يشرحلك هو في ٣٠ ثانية ناوي يبدأ إزاي وشكل التسليم النهائي هيبقى إيه.",
+        "key_phrase": "عشان نبقى متفقين ١٠٠٪ وموفرين وقت بعض، قولي كده ناوي تبدأ فيها إزاي وشكل الملف النهائي هيبقى إيه؟",
+        "when": "لما تسلّم مهمة جديدة أو ملف مهم لحد في فريقك.",
+        "why": "الناس بتقول «فهمت» محرجين يبانوا بطاء. لما يخليه يشرحلك خطته بصوته، أي سوء تفاهم هيبان في نص دقيقة بدل ما يضيع أسبوع كامل.",
+        "example": "إنت: «محتاجين تقرير العملاء المتأخرين الخميس الضهر.. قولي هتبدأ إزاي؟» الموظف: «هسحب الشركات الكبيرة...» إنت: «كويس إنك قلت! ضيف الشركات الصغيرة كمان لأن المشكلة هناك.»",
+        "mistake": "إنك تختم كلامك بـ«واضح كده؟» وتكتفي بكلمة «تمام» من غير ما تتأكد هو فهم إيه."
+      },
+      "quiz": {
+        "type": "mcq",
+        "correct_index": 0,
+        "en": {
+          "question": "After explaining a delegated task, what is the smartest way to verify alignment?",
+          "options": [
+            "Ask them to briefly walk you through their plan and what the final output will look like",
+            "Ask 'Did you understand everything I just said?'",
+            "Write a 15-page micromanagement manual for them",
+            "Check on them every 15 minutes until Friday"
+          ],
+          "explanation": "A reverse brief catches blind spots immediately while giving the team member full ownership of their plan."
+        },
+        "ar": {
+          "question": "بعد ما تشرح مهمة لموظف في فريقك، إيه أذكى طريقة تتأكد بيها إنكم على نفس الخط؟",
+          "options": [
+            "تطلب منه يقولك في ثواني ناوي ينفذها إزاي وشكل النتيجة النهائية هيبقى إيه",
+            "تسأله «فهمت كل كلامي ولا أعيد تاني؟»",
+            "تقف فوق راسه كل نص ساعة تراقبه",
+            "تسيبه لحد يوم التسليم وتتفاجئ بالنتيجة"
+          ],
+          "explanation": "الملخص العكسي بيكشف أي سوء تفاهم في أول دقيقة وبيحافظ على ثقة الموظف واستقلاليته."
+        }
+      }
+    },
+    {
+      "id": "2026-11-12_learning_feynman_technique",
+      "created_at": "2026-11-12T19:40:37.006455+00:00",
+      "topic": "learning",
+      "tags": ["learning", "knowledge", "communication"],
+      "level": "intermediate",
+      "needs_completion": false,
+      "en": {
+        "title": "The Feynman Jargon-Strip Test",
+        "hook": "If you need buzzwords to explain an idea, you don't own the idea yet — the buzzwords own you.",
+        "action": "Take a complex concept or pitch and explain it out loud as if talking to a bright 12-year-old, banning all industry jargon. Wherever you stumble or reach for a buzzword, that is your exact blind spot.",
+        "key_phrase": "In plain language, without industry buzzwords, here is how this actually works...",
+        "when": "Before pitching a technical product to executives, studying a new field, or testing your own strategy.",
+        "why": "Jargon hides fuzzy thinking. Forcing plain words exposes the exact link in the chain you don't actually understand.",
+        "example": "Jargon: 'We leverage omnichannel retargeting synergies.' Feynman: 'When someone visits your store and leaves empty-handed, we show them the exact item on Instagram that evening with a 24-hour perk.'",
+        "mistake": "Hiding behind fancy terminology in meetings, which makes buyers nod politely and never sign."
+      },
+      "ar": {
+        "title": "اختبار «فاينمان» لكشف الفهم المزيف",
+        "hook": "لو محتاج مصطلحات مجعلصة وكلام كبير عشان تشرح فكرتك، يبقى إنت لسه مهضمتش الفكرة بجد.",
+        "action": "اشرح الفكرة أو العرض بتاعك بصوت عالي كأنك بتكلم طفل ذكي عنده ١٢ سنة، وامنع نفسك من أي مصطلحات إنجليزي أو تخصصية. الحتة اللي تتهته فيها هي دي الثغرة اللي محتاج تذاكرها.",
+        "key_phrase": "بلغة بسيطة خالص ومن غير مصطلحات معقدة، الفكرة بتشتغل كالتالي...",
+        "when": "قبل ما تشرح مشروع لعميل غير متخصص، أو لما تذاكر مجال جديد وتحب تختبر فهمك.",
+        "why": "المصطلحات الكبيرة بتداري عدم الفهم. التبسيط الإجباري بيفضح فوراً الجزء اللي إنت حافظه ومش فاهمه.",
+        "example": "بدل: «بنعمل تحسين لمعدل التحويل متعدد القنوات».. قول: «لما زبون يدخل موقعك ويخرج من غير ما يشتري، بنفكره بنفس المنتج بليل على السوشيال ميديا بعرض سريع يرجعه يكمّل الطلب.»",
+        "mistake": "إنك تستعرض بمصطلحات صعبة قدام العميل، فيهز راسه محرج منك وميشتريش في الآخر."
+      },
+      "quiz": {
+        "type": "mcq",
+        "correct_index": 2,
+        "en": {
+          "question": "What does stumbling while trying to explain a concept in simple, jargon-free words reveal?",
+          "options": [
+            "That the topic is impossible for normal people to understand",
+            "That you should use more technical terms",
+            "The exact gap in your own understanding of the mechanism",
+            "That you need longer slides"
+          ],
+          "explanation": "Difficulty simplifying a concept pinpoints where memorization ended and true cause-and-effect understanding is missing."
+        },
+        "ar": {
+          "question": "لما تعطل وإنت بتحاول تشرح فكرة بكلمات بسيطة من غير مصطلحات معقدة، ده بيكشف إيه؟",
+          "options": [
+            "إن الموضوع مستحيل حد عادي يفهمه",
+            "إنك محتاج تزود مصطلحات إنجليزي أكتر",
+            "المكان المحدد اللي فيه فجوة في فهمك الحقيقي للفكرة",
+            "إنك محتاج تطول البرزنتيشن"
+          ],
+          "explanation": "العطلة وقت التبسيط بتشاور بالظبط على الحتة اللي كنت حافظها كاسم من غير ما تفهم بتشتغل إزاي."
+        }
+      }
+    },
+    {
+      "id": "2026-11-12_meetings_agenda_control",
+      "created_at": "2026-11-12T19:40:37.006455+00:00",
+      "topic": "meetings",
+      "tags": ["meetings", "productivity", "focus"],
+      "level": "intermediate",
+      "needs_completion": false,
+      "en": {
+        "title": "The 'Visible Goal & Parking Lot' Meeting Lock",
+        "hook": "Ever watch a 30-minute decision meeting turn into a 90-minute debate about a side topic? Stop playing polite referee.",
+        "action": "Write the single decision goal at the top of the shared screen. When someone drifts onto a tangent, praise the point, put it on a visible 'Parking Lot' list, and ask if it must block today's decision.",
+        "key_phrase": "Great point — let's capture that in the Parking Lot so we don't lose it, and finish locking today's main decision first.",
+        "when": "When a participant derails a focused meeting with an unrelated tangent.",
+        "why": "People repeat tangents because they fear their idea will be forgotten. Writing it down visibly satisfies their ego while keeping the room on rails.",
+        "example": "Colleague: 'We also need to rethink Q4 hiring!' You: 'Important point — I'm adding Q4 hiring to the Parking Lot on screen right now so we book a slot for it. Now, back to the launch budget...'",
+        "mistake": "Either letting the tangent eat 30 minutes, or bluntly saying 'That's off-topic' and making the person defensive."
+      },
+      "ar": {
+        "title": "حيلة «ركن المواضيع الجانبية» للسيطرة على أي اجتماع",
+        "hook": "كام مرة دخلت اجتماع نص ساعة عشان تاخدوا قرار واحد، وخرجتوا بعد ساعة ونص بتتكلموا في موضوع تاني خالص؟",
+        "action": "اكتب «القرار المطلوب النهاردة» فوق على الشاشة قدام الكل. لو حد فتح موضوع جانبي، اشكره واكتب نقطته قدام عينه في خانة اسمها «مؤجلات مهمة»، وارجع فوراً لقرار اليوم.",
+        "key_phrase": "نقطة مهمة جداً.. هكتبها دلوقتي قدامنا في قايمة المتابعة عشان متضيعش، ونقفل قرار النهاردة الأول.",
+        "when": "لما حد يفتح نقاش فرعي يسحب الاجتماع بعيد عن هدفه الأساسي.",
+        "why": "اللي بيفتح موضوع جانبي بيزنّ عليه عشان خايف فكرته تتنسي. لما يشوفك كتبتها قدام الكل، بيطمن إن صوته اتسمع وبيرجع يركز معاك بسهولة.",
+        "example": "زميلك: «لازم نتكلم كمان في تعيينات الشهر الجاي!» إنت: «مهم جداً، كتبتها أهو على الشاشة في نقاط المتابعة عشان نحددلها قعدة خاصة.. نرجع بقى لاعتماد الميزانية الحالية.»",
+        "mistake": "إنك تسيب الاجتماع يسرقكم بدون قرار، أو تحرج زميلك وتقوله «ده بره الموضوع» فيقلب الاجتماع عناد."
+      },
+      "quiz": {
+        "type": "mcq",
+        "correct_index": 1,
+        "en": {
+          "question": "A colleague brings up an unrelated issue mid-meeting. How do you keep the meeting on track without offending them?",
+          "options": [
+            "Ignore them and talk louder",
+            "Write their point visibly in a 'Parking Lot' list for follow-up and pivot back to today's goal",
+            "Spend 25 minutes debating their new topic right away",
+            "Tell them their point is irrelevant"
+          ],
+          "explanation": "Visibly recording the point validates the speaker and removes their fear of being ignored, letting you steer back effortlessly."
+        },
+        "ar": {
+          "question": "زميلك فتح موضوع فرعي في نص اجتماع حاسم. إزاي ترجع التركيز من غير ما تحرجه؟",
+          "options": [
+            "تتجاهله تماماً وتعلّي صوتك",
+            "توثّق نقطته قدام الكل في قايمة «المتابعة اللاحقة» وترجع لهدف الاجتماع الأساسي",
+            "تسيب جدول الأعمال وتقعدوا تناقشوا موضوعه نص ساعة",
+            "تقوله قدام الناس إن كلامه ملوش علاقة بالاجتماع"
+          ],
+          "explanation": "كتابة النقطة قدام عينه بتحترمه وبتطمنه إنها مش هتتنسي، وفي نفس الوقت بتحمي وقت الاجتماع."
+        }
+      }
+    },
+    {
+      "id": "2026-11-12_money_value_focus",
+      "created_at": "2026-11-12T19:40:37.006455+00:00",
+      "topic": "money",
+      "tags": ["value", "business", "pricing"],
+      "level": "beginner",
+      "needs_completion": false,
+      "en": {
+        "title": "Frame Price Against the Cost of One Mistake",
+        "hook": "A $1,000 fee looks expensive when compared to $0. It looks tiny when compared to a $15,000 mistake.",
+        "action": "Never state your fee next to your hours worked. Always state it right next to the financial cost of the single problem or mistake it prevents.",
+        "key_phrase": "One compliance penalty costs $15,000; this audit locks your protection in for $1,200.",
+        "when": "Presenting a quote for consulting, financial, technical, or B2B services.",
+        "why": "Buyers evaluate numbers relative to whatever number sits in the same sentence. Pairing your fee with the cost of risk turns an expense into cheap insurance.",
+        "example": "Weak: 'I charge $100/hour for 10 hours ($1,000).' Strong: 'One day of checkout downtime costs your store $8,000 in lost orders. We harden the server for a flat $1,000.'",
+        "mistake": "Itemizing your price by hours spent, which invites clients to haggle over how fast you type."
+      },
+      "ar": {
+        "title": "حط سعرك جنب «تكلفة غلطة واحدة» مش جنب عدد ساعاتك",
+        "hook": "الـ١٠ آلاف جنيه تبان غالية لو قارنتها بـ«صفر».. بس بتبان ملاليم لو حطيتها في نفس الجملة جنب خسارة ١٠٠ ألف جنيه.",
+        "action": "إوعى تبرر سعرك بعدد الساعات اللي هتشتغلها. دايماً اذكر سعرك في نفس الجملة مع حجم الخسارة أو الغلطة الواحدة اللي خدمتك بتمنعها.",
+        "key_phrase": "غلطة واحدة في الإقرارات بتكلف غرامة ١٠٠ ألف جنيه؛ المراجعة الكاملة عندنا بتأمنك تماماً بـ٨ آلاف جنيه.",
+        "when": "لما تقدم عرض سعر لخدمة استشارية، تقنية، أو بيزنس.",
+        "why": "المخ بيقيّم أي رقم مقارنة بالرقم اللي جنبه في نفس الجملة. لما تقارن أتعابك بتكلفة الخطر، سعرك بيتحول من «مصروف» لـ«بوليصة تأمين رخيصة».",
+        "example": "غلط: «هاخد ١٠ آلاف عشان هشتغل ٢٠ ساعة.» صح: «وقوع الموقع يوم واحد في الموسم بيضيع عليكم مبيعات بـ٨٠ ألف جنيه.. إحنا بنأمن السيرفر بالكامل بـ١٠ آلاف جنيه.»",
+        "mistake": "إنك تحسب سعرك بالساعة قدام العميل، فيقعد يحاسبك إنت خلصت الشغل في ساعتين ولا عشرة."
+      },
+      "quiz": {
+        "type": "mcq",
+        "correct_index": 0,
+        "en": {
+          "question": "What should you place in the same sentence right before stating your service fee?",
+          "options": [
+            "The concrete financial cost of the problem or mistake your service prevents",
+            "The exact number of hours it takes you to do the work",
+            "An apology for how high your rates are",
+            "A list of your office expenses"
+          ],
+          "explanation": "Comparing your fee to the much larger cost of the problem makes the investment an obvious financial win."
+        },
+        "ar": {
+          "question": "إيه الرقم اللي لازم تحطه في نفس الجملة قبل ما تنطق سعر خدمتك؟",
+          "options": [
+            "التكلفة المالية الحقيقية للمشكلة أو الغلطة اللي خدمتك هتمنعها",
+            "عدد الساعات والدقايق اللي هتاخدها في الشغل",
+            "اعتذار عن ارتفاع الأسعار في السوق",
+            "تفاصيل إيجار مكتبك ومصاريفك الشخصية"
+          ],
+          "explanation": "مقارنة أتعابك بحجم الخسارة اللي بتمنعها بتخلي العميل يشوف الرقم كصفقة رابحة وموفرة مش عبء مالي."
+        }
+      }
+    },
+    {
+      "id": "2026-11-12_productivity_deep_work",
+      "created_at": "2026-11-12T19:40:37.006455+00:00",
+      "topic": "productivity",
+      "tags": ["focus", "time-management", "communication"],
+      "level": "intermediate",
+      "needs_completion": false,
+      "en": {
+        "title": "Deflect Interruptions with a Exact Callback Time",
+        "hook": "Saying 'I'm busy right now' sounds rude and makes people hover. Giving an exact time makes them walk away happy.",
+        "action": "When interrupted during deep focus, never say a vague 'Later'. Give a specific clock time when you will come to them, and ask if it can wait until then.",
+        "key_phrase": "I'm heads-down finishing this proposal until 2:15 PM — can I swing by your desk at 2:15 sharp?",
+        "when": "A colleague drops by your desk or pings you with a non-emergency question while you are in deep work.",
+        "why": "People interrupt because they want certainty that their issue won't be forgotten. A concrete timestamp ('2:15 PM') gives them certainty so their brain can let go.",
+        "example": "Colleague: 'Got a quick minute?' You: 'I'm locked into client numbers until 11:30 — if I call you at 11:30 sharp, does that work?' Colleague: '11:30 is great, thanks!'",
+        "mistake": "Saying 'Sure, what's up?' and losing 25 minutes of mental context for a 2-minute non-urgent question."
+      },
+      "ar": {
+        "title": "احمي تركيزك بـ«ساعة محددة للرجوع» مش بكلمة «مشغول»",
+        "hook": "لما تقول لزميلك «أنا مشغول دلوقتي» بيزعل وبيفضل واقف، ولما تقوله «اتفضل» بتضيع نص ساعة تركيز. الحل في رقم الساعة.",
+        "action": "لما حد يقاطعك في نص شغل محتاج تركيز، متقولش «كلمني بعدين». اديله ساعة محددة بالدقيقة هترجعله فيها، واسأله لو الموضوع يستنى للساعة دي.",
+        "key_phrase": "أنا بقفل ملف العميل ده لحد الساعة ٢:١٥ بالظبط.. ينفع أجيلك مكتبك ٢:١٥ نتكلم براحتنا؟",
+        "when": "لما زميل يجيلك المكتب أو يبعتلك في نص وقت تركيزك في مهمة تقيلة.",
+        "why": "اللي بيقاطعك بيبقى عايز بس يطمن إن طلبه مش هيتنسي. لما تديله ميعاد محدد بالدقيقة (٢:١٥)، مخه بيطمن وبيسيبك تركز وهو مبسوط.",
+        "example": "زميلك: «معاك دقيقة ع السريع؟» إنت: «إيدي في حسابات دقيقة هتخلص ١١:٣٠ بالظبط.. لو كلمتك ١١:٣٠ يناسبك؟» زميلك: «ممتاز، هستناك ١١:٣٠.»",
+        "mistake": "إنك تقول «آه قول بسرعة» فـ«الدقيقة» تقلب تلت ساعة وتنسى إنت كنت واقف فين في شغلك."
+      },
+      "quiz": {
+        "type": "mcq",
+        "correct_index": 2,
+        "en": {
+          "question": "Why does offering an exact time ('2:15 PM') stop interruptions better than saying 'I'll get back to you later'?",
+          "options": [
+            "Because people don't know how to read clocks",
+            "Because it tricks them into forgetting their question",
+            "It gives the other person certainty that they won't be forgotten, so they gladly let you focus",
+            "It makes you look too busy to ever talk to"
+          ],
+          "explanation": "A specific time commitment removes the requester's anxiety about being ignored, protecting your focus and your relationship at the same time."
+        },
+        "ar": {
+          "question": "ليه إعطاء ساعة محددة (زي «الساعة ٢:١٥») بيحمي تركيزك أحسن بكتير من كلمة «هكلمك بعدين»؟",
+          "options": [
+            "عشان بيخلي زميلك ينسى سؤاله",
+            "عشان تبان مدير مهم ومش فاضي",
+            "لأنه بيدي اللي قدامك يقين واطمئنان إنك مش هتنساه، فيسيبك تركز عن طيب خاطر",
+            "عشان محدش يطلب منك حاجة تاني"
+          ],
+          "explanation": "الميعاد المحدد بالدقيقة بيشيل قلق التجاهل عند زميلك، فتحافظ على تركيزك وعلى علاقتك الحلوة بيه في نفس الوقت."
+        }
+      }
+    }
+  ]
+}

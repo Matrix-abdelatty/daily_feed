@@ -1,10 +1,15 @@
 {
   "provider": "gemini",
-  "gemini_model": "gemini-3.1-flash-lite",
+  "gemini_models": [
+    "gemini-3.8-flash",
+    "gemini-3.5-flash"
+  ],
   "groq_model": "openai/gpt-oss-120b",
-  "cards_per_day": 10,
+  "cards_per_day": 15,
+  "batch_size": 5,
+  "batches_per_day": 3,
   "min_review_score": 7,
-  "max_retries": 2,
+  "max_retries": 3,
   "similarity_threshold": 0.85,
   "recent_titles_limit": 150,
   "arabic_style": "egyptian",

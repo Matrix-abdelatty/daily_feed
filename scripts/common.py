@@ -116,3 +116,4 @@ def validate_card(card: Dict[str, Any]) -> Tuple[bool, Optional[str]]:
                 return False, f"Missing quiz.{lang}.explanation"
 
     return True, None
+
