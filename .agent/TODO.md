@@ -1,6 +1,16 @@
 # TODO
 > Entries newest on top.
 
+## 2026-11-12 23:10 +02:00
+### Completed
+- [x] v2 Patch-Based Architecture: 20 cards structured into 4 patches (`#1–#5`, `#6–#10`, `#11–#15`, `#16–#20`)
+- [x] 15 cards/day generation pipeline (3 batches × 5 cards) using `gemini-3.8-flash` with 3 requests/day limit safety
+- [x] Streamlined UI: 3 tabs (`🆕 New Feed`, `✅ Seen`, `⭐ Saved`), removed like button, single `🏷️ Topics ▾` dropdown button
+- [x] Collapsed finished patches with green badge in `Seen` tab
+- [x] `+ Add JSON` modal with file upload and direct JSON paste options
+- [x] Top patch status bar and `📜 History` log
+- [x] End-of-patch 5-question quizzes + Combined Spaced Repetition quiz hub
+
 ## 2026-11-12 21:50 +02:00
 ### Completed
 - [x] Public GitHub repo created: `Matrix-abdelatty/daily_feed`
