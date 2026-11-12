@@ -1,0 +1,16 @@
+[
+  { "id": "sales", "label": "Sales", "icon": "💼", "ar": "مبيعات" },
+  { "id": "negotiation", "label": "Negotiation", "icon": "🤝", "ar": "تفاوض" },
+  { "id": "pricing", "label": "Pricing", "icon": "🏷️", "ar": "تسعير" },
+  { "id": "persuasion", "label": "Persuasion", "icon": "🎯", "ar": "إقناع" },
+  { "id": "communication", "label": "Communication", "icon": "🗣️", "ar": "تواصل" },
+  { "id": "meetings", "label": "Meetings", "icon": "👥", "ar": "اجتماعات" },
+  { "id": "psychology", "label": "Psychology", "icon": "🧠", "ar": "علم نفس" },
+  { "id": "productivity", "label": "Productivity", "icon": "⚡", "ar": "إنتاجية" },
+  { "id": "business", "label": "Business", "icon": "🏢", "ar": "بيزنس" },
+  { "id": "money", "label": "Money", "icon": "💰", "ar": "فلوس" },
+  { "id": "leadership", "label": "Leadership", "icon": "👑", "ar": "قيادة" },
+  { "id": "decision_making", "label": "Decision Making", "icon": "🧭", "ar": "اتخاذ قرارات" },
+  { "id": "career", "label": "Career", "icon": "🚀", "ar": "كارير" },
+  { "id": "learning", "label": "Learning", "icon": "📚", "ar": "تعلم" }
+]

@@ -1,0 +1,13 @@
+{
+  "provider": "gemini",
+  "gemini_model": "gemini-3.1-flash-lite",
+  "groq_model": "openai/gpt-oss-120b",
+  "cards_per_day": 10,
+  "min_review_score": 7,
+  "max_retries": 2,
+  "similarity_threshold": 0.85,
+  "recent_titles_limit": 150,
+  "arabic_style": "egyptian",
+  "timezone": "Africa/Cairo",
+  "prompt_file": "prompts/card_prompt.md"
+}

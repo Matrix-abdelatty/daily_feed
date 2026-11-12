@@ -1,0 +1,16 @@
+{
+  "app_name": "Daily Feed",
+  "tagline": "Practical daily insights — English & Egyptian Arabic",
+  "ui_language": "en",
+  "default_card_language": "both",
+  "delete_password": "123",
+  "srs_intervals_days": [1, 2, 3, 7, 14, 30],
+  "max_reviews_per_day": 50,
+  "session_retry_gap": 3,
+  "files_per_page": 4,
+  "github": {
+    "owner": "Matrix-abdelatty",
+    "repo": "daily_feed",
+    "branch": "main"
+  }
+}

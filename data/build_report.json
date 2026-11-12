@@ -1,0 +1,10 @@
+{
+  "timestamp": "2026-11-12T19:41:02.994568+00:00",
+  "total_files_scanned": 2,
+  "total_valid_cards": 16,
+  "total_active_search_cards": 16,
+  "deleted_cards_count": 0,
+  "highest_card_number": 16,
+  "skipped_cards_count": 0,
+  "skipped_details": []
+}

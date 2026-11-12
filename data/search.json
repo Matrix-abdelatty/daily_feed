@@ -1,0 +1,369 @@
+[
+  {
+    "id": "2026-11-12_psychology_persuasion",
+    "number": 16,
+    "topic": "persuasion",
+    "level": "intermediate",
+    "tags": [
+      "psychology",
+      "influence"
+    ],
+    "created_at": "2026-11-12T19:40:37.006455+00:00",
+    "file": "cards/2026/2026-11-12_auto_01.json",
+    "en": {
+      "title": "The power of 'Because'",
+      "hook": "People are more likely to comply with a request if you provide a reason—even if the reason is simple.",
+      "key_phrase": "Could you help me with this report, because I'm on a tight deadline?"
+    },
+    "ar": {
+      "title": "قوة كلمة 'عشان'",
+      "hook": "الناس بتميل توافق على طلباتك أكتر بكتير لو قلت 'ليه'. حتى لو السبب بسيط جداً.",
+      "key_phrase": "ممكن تساعدني في التقرير ده، عشان عندي ديدلاين ضيق جداً؟"
+    }
+  },
+  {
+    "id": "2026-11-12_productivity_deep_work",
+    "number": 15,
+    "topic": "productivity",
+    "level": "intermediate",
+    "tags": [
+      "focus",
+      "time-management"
+    ],
+    "created_at": "2026-11-12T19:40:37.006455+00:00",
+    "file": "cards/2026/2026-11-12_auto_01.json",
+    "en": {
+      "title": "Protect your focus time",
+      "hook": "Your brain takes 20 minutes to refocus after an interruption. If you get interrupted 3 times, you've lost an hour of depth.",
+      "key_phrase": "I'm in deep work mode for the next 90 minutes. I'll be available to chat at 2:00 PM."
+    },
+    "ar": {
+      "title": "إزاي تحمي وقت تركيزك",
+      "hook": "مخك بياخد 20 دقيقة عشان يرجع يركز بعد أي مقاطعة. لو حد قاطعك 3 مرات، أنت ضيعت ساعة كاملة من التركيز العميق.",
+      "key_phrase": "أنا مركز في شغل مهم دلوقتي، هكون متاح للكلام الساعة 2."
+    }
+  },
+  {
+    "id": "2026-11-12_money_value_focus",
+    "number": 14,
+    "topic": "money",
+    "level": "beginner",
+    "tags": [
+      "value",
+      "business"
+    ],
+    "created_at": "2026-11-12T19:40:37.006455+00:00",
+    "file": "cards/2026/2026-11-12_auto_01.json",
+    "en": {
+      "title": "Sell the value, not the cost",
+      "hook": "When you focus on the price, you make it a commodity. When you focus on the value, you make it an investment.",
+      "key_phrase": "This will save you 10 hours a week. It costs $500."
+    },
+    "ar": {
+      "title": "بيع القيمة مش السعر",
+      "hook": "لما تركز في سعرك، بتخلي خدمتك مجرد سلعة. لما تركز في قيمتك، بتخليها استثمار.",
+      "key_phrase": "ده هيوفر عليك 10 ساعات في الأسبوع. تكلفته 500 جنيه."
+    }
+  },
+  {
+    "id": "2026-11-12_meetings_agenda_control",
+    "number": 13,
+    "topic": "meetings",
+    "level": "intermediate",
+    "tags": [
+      "meetings",
+      "productivity",
+      "focus"
+    ],
+    "created_at": "2026-11-12T19:40:37.006455+00:00",
+    "file": "cards/2026/2026-11-12_auto_01.json",
+    "en": {
+      "title": "Stop meetings from derailing",
+      "hook": "Ever felt a meeting go on forever with no clear conclusion? Most people just let the clock run out.",
+      "key_phrase": "Let's pause. Does this new point take priority over our main goal, or should we park it for later?"
+    },
+    "ar": {
+      "title": "إزاي تسيطر على الاجتماع من غير ما تضيع وقت",
+      "hook": "عمرك خرجت من اجتماع طويل وأنت حاسس إن مفيش حاجة خلصت؟ معظم الناس بتسيب الكلام ياخد بعضه ويضيعوا وقتهم.",
+      "key_phrase": "نقف لحظة.. هل الموضوع ده أهم من هدفنا الأساسي دلوقتي، ولا نأجله لوقت تاني؟"
+    }
+  },
+  {
+    "id": "2026-11-12_learning_feynman_technique",
+    "number": 12,
+    "topic": "learning",
+    "level": "intermediate",
+    "tags": [
+      "learning",
+      "knowledge"
+    ],
+    "created_at": "2026-11-12T19:40:37.006455+00:00",
+    "file": "cards/2026/2026-11-12_auto_01.json",
+    "en": {
+      "title": "The Feynman technique",
+      "hook": "You don't know a subject until you can explain it to a child. Complexity is often a mask for confusion.",
+      "key_phrase": "How would I explain this to a 10-year-old?"
+    },
+    "ar": {
+      "title": "تقنية 'فاينمان' للتعلم",
+      "hook": "أنت مش فاهم أي موضوع بجد غير لما تقدر تشرحه لطفل. التعقيد غالباً بيكون قناع للجهل.",
+      "key_phrase": "إزاي أشرح ده لطفل عنده 10 سنين؟"
+    }
+  },
+  {
+    "id": "2026-11-12_leadership_delegation",
+    "number": 11,
+    "topic": "leadership",
+    "level": "intermediate",
+    "tags": [
+      "delegation",
+      "management"
+    ],
+    "created_at": "2026-11-12T19:40:37.006455+00:00",
+    "file": "cards/2026/2026-11-12_auto_01.json",
+    "en": {
+      "title": "Delegate outcomes, not tasks",
+      "hook": "Micromanaging happens because you're focused on the 'how' instead of the 'what'. Stop it now.",
+      "key_phrase": "I need this report to show X data by Friday. How do you plan to get that done?"
+    },
+    "ar": {
+      "title": "فوض النتائج مش المهام",
+      "hook": "التدخل في كل تفصيلة بيحصل لما بتركز على 'إزاي' الشغل بيتعمل بدل 'إيه' النتيجة المطلوبة. بطل ده فوراً.",
+      "key_phrase": "محتاج التقرير ده يوضح بيانات (س) يوم الجمعة. ناوي تعمل ده إزاي؟"
+    }
+  },
+  {
+    "id": "2026-11-12_decision_making_premortem",
+    "number": 10,
+    "topic": "decision_making",
+    "level": "advanced",
+    "tags": [
+      "planning",
+      "strategy"
+    ],
+    "created_at": "2026-11-12T19:40:37.006455+00:00",
+    "file": "cards/2026/2026-11-12_auto_01.json",
+    "en": {
+      "title": "The Premortem technique",
+      "hook": "We are biased to think our projects will succeed. A premortem forces you to see the failure before it happens.",
+      "key_phrase": "Let's assume it's one year later and this failed. What went wrong?"
+    },
+    "ar": {
+      "title": "تقنية 'الوفاة الاستباقية' للمشاريع",
+      "hook": "عندنا ميل طبيعي نظن إن مشاريعنا هتنجح. تقنية 'الوفاة الاستباقية' بتخليك تشوف الفشل قبل ما يحصل.",
+      "key_phrase": "تعالوا نفترض إننا بعد سنة والمشروع فشل. إيه اللي حصل غلط؟"
+    }
+  },
+  {
+    "id": "2026-11-12_communication_listening",
+    "number": 9,
+    "topic": "communication",
+    "level": "beginner",
+    "tags": [
+      "listening",
+      "empathy"
+    ],
+    "created_at": "2026-11-12T19:40:37.006455+00:00",
+    "file": "cards/2026/2026-11-12_auto_01.json",
+    "en": {
+      "title": "Use mirroring to build rapport",
+      "hook": "People love being heard, but most people just wait for their turn to speak. Mirroring proves you're listening.",
+      "key_phrase": "So, you're worried about the timeline?"
+    },
+    "ar": {
+      "title": "استخدم 'المرايا' عشان تكسب ثقة اللي قدامك",
+      "hook": "الناس بتحب تحس إنها مسموعة، بس أغلبنا بيستنى دوره في الكلام. طريقة 'المرايا' بتثبت إنك مهتم.",
+      "key_phrase": "يعني أنت قلقان من الجدول الزمني؟"
+    }
+  },
+  {
+    "id": "2026-11-12_career_feedback",
+    "number": 8,
+    "topic": "career",
+    "level": "beginner",
+    "tags": [
+      "feedback",
+      "career",
+      "growth"
+    ],
+    "created_at": "2026-11-12T19:40:37.006455+00:00",
+    "file": "cards/2026/2026-11-12_auto_01.json",
+    "en": {
+      "title": "Get better feedback from your boss",
+      "hook": "Asking 'How am I doing?' gets you a generic 'Fine.' You need specific data to grow.",
+      "key_phrase": "What is one thing I could do differently in our next project to get a better result?"
+    },
+    "ar": {
+      "title": "إزاي تاخد فيدباك حقيقي من مديرك",
+      "hook": "لما تسأل 'أنا عامل إيه؟' غالباً هتاخد إجابة سطحية زي 'تمام'. أنت محتاج تفاصيل عشان تطور نفسك.",
+      "key_phrase": "إيه الحاجة الوحيدة اللي ممكن أعملها بشكل مختلف في المشروع الجاي عشان النتيجة تكون أحسن؟"
+    }
+  },
+  {
+    "id": "2026-11-12_business_price_anchoring",
+    "number": 7,
+    "topic": "pricing",
+    "level": "advanced",
+    "tags": [
+      "sales",
+      "negotiation",
+      "money"
+    ],
+    "created_at": "2026-11-12T19:40:37.006455+00:00",
+    "file": "cards/2026/2026-11-12_auto_01.json",
+    "en": {
+      "title": "Use high anchors to close deals",
+      "hook": "The first number mentioned in a deal acts like a magnet for everything that follows. Use this to your advantage.",
+      "key_phrase": "Our premium solution, which covers X, Y, and Z, is priced at [high amount]."
+    },
+    "ar": {
+      "title": "استخدم السعر العالي كمرجع للصفقة",
+      "hook": "أول رقم بيتقال في أي تفاوض بيشتغل زي المغناطيس لكل اللي جاي بعده. استخدم ده لصالحك.",
+      "key_phrase": "الباقة الكاملة اللي بتغطي (س) و (ص) و (ع) تكلفتها [مبلغ عالي]."
+    }
+  },
+  {
+    "id": "2026-11-12_sales_sell-pain-before-specs",
+    "number": 6,
+    "topic": "sales",
+    "level": "beginner",
+    "tags": [
+      "sales",
+      "pitch",
+      "psychology",
+      "communication"
+    ],
+    "created_at": "2026-11-12T08:00:00+02:00",
+    "file": "cards/2026/2026-11-12_seed_01.json",
+    "en": {
+      "title": "Never Pitch Specs First: The 3-Step Pain Sequence",
+      "hook": "Nobody wakes up wanting to buy cloud hosting, SEO audits, or legal software. They wake up stressed about lost revenue, manual grind, and missed targets.",
+      "key_phrase": "Before we look at the software, if we don't fix this data leak, how much is your team bleeding each quarter?"
+    },
+    "ar": {
+      "title": "متبدأش بالمواصفات والأسعار أبداً: ثلاثية الوجع أولاً",
+      "hook": "مفيش حد بيصحى الصبح يقول «نفسي أشتري استضافة سحابية أو برنامج محاسبة». الناس بتصحى قلقانة على الفلوس اللي بتضيع والمشاكل اليومية.",
+      "key_phrase": "قبل ما نتكلم في تفاصيل النظام، لو المشكلة دي فضلت مكملة، البيزنس بتاعكم بيخسر قد إيه كل شهر؟"
+    }
+  },
+  {
+    "id": "2026-11-12_sales_four-step-compelling-close",
+    "number": 5,
+    "topic": "sales",
+    "level": "intermediate",
+    "tags": [
+      "closing",
+      "sales",
+      "objections",
+      "persuasion"
+    ],
+    "created_at": "2026-11-12T08:00:00+02:00",
+    "file": "cards/2026/2026-11-12_seed_01.json",
+    "en": {
+      "title": "The 4-Step Sale & The Compelling Choice Close",
+      "hook": "Asking 'Does this work for you?' hands the prospect a free ticket to procrastinate: 'Let me think about it.' Here is how to close cleanly without pressure.",
+      "key_phrase": "Should we kick this off this week, or does next Monday suit your calendar better?"
+    },
+    "ar": {
+      "title": "خطوات البيع الأربعة وقفلة الاختيار الذكية",
+      "hook": "سؤال «إيه رأيك عجبك العرض؟» بيدّي العميل تذكرة مجانية للتأجيل: «طب هفكر وأرد عليك». دي الطريقة الصح عشان تقفل البيعة باحترافية.",
+      "key_phrase": "تحب نبدأ الخطوات التنفيذية الأسبوع ده، ولا نخلّي البداية أول الأسبوع الجاي أحسن لمواعيدكم؟"
+    }
+  },
+  {
+    "id": "2026-11-12_pricing_three-options-not-one-price",
+    "number": 4,
+    "topic": "pricing",
+    "level": "beginner",
+    "tags": [
+      "pricing",
+      "psychology",
+      "anchoring",
+      "sales"
+    ],
+    "created_at": "2026-11-12T08:00:00+02:00",
+    "file": "cards/2026/2026-11-12_seed_01.json",
+    "en": {
+      "title": "Never Quote a Single Price: Offer Three Tiers",
+      "hook": "'How much does it cost?' is a trap. If you give one number, their brain only has one question to answer: 'Yes or No?'",
+      "key_phrase": "We have the Elite tier at $20, the Basic at $2, and our most popular Standard package at $10."
+    },
+    "ar": {
+      "title": "متقولش سعر واحد أبداً: قدّم ٣ اختيارات",
+      "hook": "سؤال «بكام ده؟» فخ. لو رديت برقم واحد بس، مخ العميل هيفكر في اختيار واحد: «أشتري ولا لأ؟»",
+      "key_phrase": "عندنا الباقة الشاملة بـ٢٠، والأساسية بـ٢، والباقة المتوسطة الأكثر طلباً بـ١٠."
+    }
+  },
+  {
+    "id": "2026-11-12_persuasion_statue-and-the-king",
+    "number": 3,
+    "topic": "persuasion",
+    "level": "intermediate",
+    "tags": [
+      "ego",
+      "communication",
+      "clients",
+      "persuasion"
+    ],
+    "created_at": "2026-11-12T08:00:00+02:00",
+    "file": "cards/2026/2026-11-12_seed_01.json",
+    "en": {
+      "title": "The Statue & The King: Don't Win the Argument and Lose the King",
+      "hook": "A master sculptor was told by the king: 'The statue's nose is too big.' The sculptor didn't argue. He picked up his chisel, tapped gently, and threw some marble dust from his pocket.",
+      "key_phrase": "You have a great eye for detail. Let me adjust that right now and show you."
+    },
+    "ar": {
+      "title": "حكاية التمثال والملك: اوعى تكسب المناقشة وتخسر الملك",
+      "hook": "نحات مشهور عمل تمثال للملك، فالملك بص وقاله: «مناخيره كبيرة شوية!».. النحات مجادلش، طلع بالسقالة ورمى شوية غبار رخام من جيبه ونزل.",
+      "key_phrase": "نظرة حضرتك دقيقة جداً يا فندم! حالا هظبط التفصيلة دي زي ما تحب."
+    }
+  },
+  {
+    "id": "2026-11-12_negotiation_discount-remove-part",
+    "number": 2,
+    "topic": "negotiation",
+    "level": "beginner",
+    "tags": [
+      "discount",
+      "negotiation",
+      "pricing",
+      "objection"
+    ],
+    "created_at": "2026-11-12T08:00:00+02:00",
+    "file": "cards/2026/2026-11-12_seed_01.json",
+    "en": {
+      "title": "Never Say Yes or No to a Discount Request",
+      "hook": "The second you discount without asking for something back, the client realizes your original price was made up.",
+      "key_phrase": "Okay, no problem at all! Which part of the scope should we remove?"
+    },
+    "ar": {
+      "title": "إوعى تقول «آه» أو «لأ» لما العميل يطلب خصم",
+      "hook": "أول ما توافق على خصم من غير ما تنقص من الشغل، العميل هيتأكد فوراً إن سعرك الأولاني كان مبالغ فيه.",
+      "key_phrase": "تمام، مفيش أي مشكلة! تحب نشيل أنهي جزء من الشغل عشان يناسب الميزانية دي؟"
+    }
+  },
+  {
+    "id": "2026-11-12_meetings_handled-attack-skip-basics",
+    "number": 1,
+    "topic": "meetings",
+    "level": "intermediate",
+    "tags": [
+      "meetings",
+      "conflict",
+      "status",
+      "communication"
+    ],
+    "created_at": "2026-11-12T08:00:00+02:00",
+    "file": "cards/2026/2026-11-12_seed_01.json",
+    "en": {
+      "title": "Attacked in a Meeting? Don't Defend — Skip the Basics",
+      "hook": "When someone ambushes your presentation with 'This approach doesn't make any sense!', defending yourself makes you look guilty and weak.",
+      "key_phrase": "Show us what I'm missing here... And let's skip the basics."
+    },
+    "ar": {
+      "title": "حد هاجمك في اجتماع؟ اوعى تدافع — «تخطى الأساسيات»",
+      "hook": "لما حد يقطع كلامك في اجتماع ويقول باستهزاء: «الخطة دي ملهاش أي معنى!»، دفاعك عن نفسك بيخليك تبان مهزوز وفي موقف المتهم.",
+      "key_phrase": "وضحلنا إيه النقطة اللي فايتاني هنا؟ وخلينا نتخطى الأساسيات المعروفة للكل."
+    }
+  }
+]

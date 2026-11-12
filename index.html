@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daily Feed — Practical Daily Insights</title>
+  <meta name="description" content="Short, practical info cards in English and Egyptian Arabic to replace mindless scrolling. Spaced repetition quiz, 100% free forever.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Top Navigation Header -->
+  <header class="app-header">
+    <div class="header-container">
+      <div class="brand">
+        <span class="brand-icon">⚡</span>
+        <div>
+          <h1 class="brand-title">Daily Feed</h1>
+          <p class="brand-subtitle">Smart daily micro-lessons · EN & Egyptian Arabic</p>
+        </div>
+      </div>
+
+      <div class="header-actions">
+        <!-- Language Display Toggle -->
+        <div class="lang-toggle-group" id="langToggle">
+          <button class="lang-btn active" data-lang="both" title="Show both English & Arabic">Both</button>
+          <button class="lang-btn" data-lang="en" title="Show English only">EN</button>
+          <button class="lang-btn" data-lang="ar" title="Show Arabic only">عربي</button>
+        </div>
+
+        <button class="icon-btn" id="btnComposer" title="Add a new card">
+          <span>+ Add Card</span>
+        </button>
+        <button class="icon-btn" id="btnSrsStats" title="Quiz & Review status">
+          <span>🧠 Quiz (<span id="srsDueCount">0</span>)</span>
+        </button>
+        <button class="icon-btn icon-only" id="btnSettings" title="Settings, Backup & Export">
+          ⚙️
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Filter & Topic Navigation -->
+  <nav class="sub-nav">
+    <div class="nav-container">
+      <!-- Search input -->
+      <div class="search-wrapper">
+        <span class="search-icon">🔍</span>
+        <input type="text" id="searchInput" placeholder="Search cards by topic, keyword, or words..." autocomplete="off">
+        <button class="clear-search-btn" id="clearSearch" title="Clear search">✕</button>
+      </div>
+
+      <!-- Feed Mode Filter Tabs -->
+      <div class="feed-tabs">
+        <button class="feed-tab active" data-tab="all">All Feed (<span id="countAll">0</span>)</button>
+        <button class="feed-tab" data-tab="saved">Saved ⭐ (<span id="countSaved">0</span>)</button>
+        <button class="feed-tab" data-tab="liked">Liked ❤️ (<span id="countLiked">0</span>)</button>
+        <button class="feed-tab" data-tab="due">Review Today ⏰ (<span id="countDue">0</span>)</button>
+        <button class="feed-tab" data-tab="mistakes">Retry Mistakes 🔄 (<span id="countMistakes">0</span>)</button>
+      </div>
+
+      <!-- Topic Carousel / Chips -->
+      <div class="topic-chips" id="topicChipsContainer">
+        <!-- Injected via JavaScript from topics.json -->
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Feed Container -->
+  <main class="feed-main">
+    <div class="feed-container">
+      <!-- Notice banner for empty states or active filters -->
+      <div id="filterBanner" class="filter-banner hidden">
+        <span id="filterBannerText">Showing filtered cards</span>
+        <button id="resetFilterBtn">Reset Filter</button>
+      </div>
+
+      <!-- Feed Cards List -->
+      <div id="cardsList" class="cards-list">
+        <!-- Skeleton Loading Cards -->
+        <div class="card-skeleton">
+          <div class="skeleton-line short"></div>
+          <div class="skeleton-line title"></div>
+          <div class="skeleton-line"></div>
+          <div class="skeleton-line"></div>
+        </div>
+      </div>
+
+      <!-- Infinite Scroll / Load More Status -->
+      <div id="feedStatus" class="feed-status">
+        <span id="feedStatusText">Loading cards...</span>
+      </div>
+    </div>
+  </main>
+
+  <!-- Composer Modal -->
+  <div class="modal-backdrop" id="composerModal">
+    <div class="modal-dialog">
+      <div class="modal-header">
+        <h2>Add a New Lesson Card</h2>
+        <button class="modal-close-btn" data-close="composerModal">✕</button>
+      </div>
+      <form id="composerForm" class="modal-body">
+        <div class="form-row two-cols">
+          <div class="form-group">
+            <label for="compTopic">Topic *</label>
+            <select id="compTopic" required></select>
+          </div>
+          <div class="form-group">
+            <label for="compLevel">Difficulty Level</label>
+            <select id="compLevel">
+              <option value="beginner">Beginner</option>
+              <option value="intermediate">Intermediate</option>
+              <option value="advanced">Advanced</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="compTags">Tags (comma separated)</label>
+          <input type="text" id="compTags" placeholder="e.g. discount, objections, pricing">
+        </div>
+
+        <div class="bilingual-form-grid">
+          <!-- English Block -->
+          <div class="form-lang-block">
+            <h3>English Content</h3>
+            <div class="form-group">
+              <label>Title *</label>
+              <input type="text" id="compEnTitle" placeholder="Catchy, direct tip" required>
+            </div>
+            <div class="form-group">
+              <label>Hook (1-2 lines)</label>
+              <input type="text" id="compEnHook" placeholder="Mini story or surprising opening">
+            </div>
+            <div class="form-group">
+              <label>Key Phrase (exact words to say)</label>
+              <input type="text" id="compEnKeyPhrase" placeholder="e.g. Which part should we remove?">
+            </div>
+            <div class="form-group">
+              <label>What to do / say (Action) *</label>
+              <textarea id="compEnAction" rows="2" placeholder="Concrete steps" required></textarea>
+            </div>
+            <div class="form-group">
+              <label>When to use</label>
+              <input type="text" id="compEnWhen" placeholder="The exact scenario">
+            </div>
+            <div class="form-group">
+              <label>Why it works</label>
+              <textarea id="compEnWhy" rows="2" placeholder="Psychological mechanism"></textarea>
+            </div>
+            <div class="form-group">
+              <label>Real Example</label>
+              <textarea id="compEnExample" rows="2" placeholder="Dialogue or mini case study"></textarea>
+            </div>
+            <div class="form-group">
+              <label>Common Mistake</label>
+              <input type="text" id="compEnMistake" placeholder="What people usually do wrong">
+            </div>
+          </div>
+
+          <!-- Arabic Block -->
+          <div class="form-lang-block rtl" dir="rtl">
+            <h3>المحتوى بالعامية المصرية (اختياري)</h3>
+            <div class="form-group">
+              <label>العنوان</label>
+              <input type="text" id="compArTitle" placeholder="عنوان مباشر وسريع">
+            </div>
+            <div class="form-group">
+              <label>الجملة الافتتاحية (الهوك)</label>
+              <input type="text" id="compArHook" placeholder="جملة تشد القارئ">
+            </div>
+            <div class="form-group">
+              <label>الجملة السحرية (الرد بالظبط)</label>
+              <input type="text" id="compArKeyPhrase" placeholder="الكلام اللي يتقال">
+            </div>
+            <div class="form-group">
+              <label>إيه اللي تعمله أو تقوله</label>
+              <textarea id="compArAction" rows="2" placeholder="خطوات عملية"></textarea>
+            </div>
+            <div class="form-group">
+              <label>امتى تستخدمها</label>
+              <input type="text" id="compArWhen" placeholder="الموقف بالظبط">
+            </div>
+            <div class="form-group">
+              <label>ليه بتشتغل</label>
+              <textarea id="compArWhy" rows="2" placeholder="السبب النفسي"></textarea>
+            </div>
+            <div class="form-group">
+              <label>مثال واقعي</label>
+              <textarea id="compArExample" rows="2" placeholder="حوار سريع يوضح الفكرة"></textarea>
+            </div>
+            <div class="form-group">
+              <label>الغلطة الشائعة</label>
+              <input type="text" id="compArMistake" placeholder="الغلطة اللي بنتجنبها">
+            </div>
+          </div>
+        </div>
+
+        <div class="modal-footer">
+          <p class="form-hint">Note: If you leave the Arabic block empty, it will be completed automatically in the daily job.</p>
+          <button type="submit" class="primary-btn">Publish Card</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- Quiz & Spaced Repetition Modal -->
+  <div class="modal-backdrop" id="srsModal">
+    <div class="modal-dialog">
+      <div class="modal-header">
+        <h2>Spaced Repetition & Quiz Stats</h2>
+        <button class="modal-close-btn" data-close="srsModal">✕</button>
+      </div>
+      <div class="modal-body">
+        <div class="stats-grid">
+          <div class="stat-card">
+            <span class="stat-num" id="statSaved">0</span>
+            <span class="stat-label">Saved Cards</span>
+          </div>
+          <div class="stat-card urgent">
+            <span class="stat-num" id="statDue">0</span>
+            <span class="stat-label">Due Today</span>
+          </div>
+          <div class="stat-card warning">
+            <span class="stat-num" id="statMistakes">0</span>
+            <span class="stat-label">Need Retry</span>
+          </div>
+          <div class="stat-card success">
+            <span class="stat-num" id="statMastered">0</span>
+            <span class="stat-label">Mastered (30d+)</span>
+          </div>
+        </div>
+
+        <div class="srs-actions">
+          <button class="primary-btn wide" id="btnStartDueReview">Start Review Session Now</button>
+        </div>
+
+        <div class="srs-info-box">
+          <h4>How Spaced Repetition Works:</h4>
+          <p>When you save a card, it enters your review queue. Each correct answer pushes the card to the next interval: <strong>1 → 2 → 3 → 7 → 14 → 30 days</strong>. If you make a mistake, you review the explanation and retry it until mastered.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Settings, Backup & Export Modal -->
+  <div class="modal-backdrop" id="settingsModal">
+    <div class="modal-dialog">
+      <div class="modal-header">
+        <h2>Settings & Data Portability</h2>
+        <button class="modal-close-btn" data-close="settingsModal">✕</button>
+      </div>
+      <div class="modal-body settings-body">
+        <section class="settings-section">
+          <h3>📦 Export & Backup</h3>
+          <p>Your likes, saves, quiz progress, and custom cards belong to you. Download or transfer anytime.</p>
+          <div class="btn-group">
+            <button class="secondary-btn" id="btnExportProgress">📥 Export My Progress (JSON)</button>
+            <button class="secondary-btn" id="btnExportAllContent">📑 Export All Cards (JSON)</button>
+          </div>
+        </section>
+
+        <section class="settings-section">
+          <h3>📤 Import Progress (Merge)</h3>
+          <p>Restore your saved progress or merge from another device. Existing progress is preserved.</p>
+          <input type="file" id="importFileInput" accept=".json" style="display: none;">
+          <button class="secondary-btn" id="btnTriggerImport">📂 Choose File & Merge Progress</button>
+        </section>
+
+        <section class="settings-section">
+          <h3>🔒 Owner & Security Settings</h3>
+          <div class="form-group">
+            <label for="settingDeletePassword">Card Delete Password (Guard)</label>
+            <input type="password" id="settingDeletePassword" placeholder="Default: 123">
+          </div>
+          <div class="form-group">
+            <label for="settingOwnerToken">Owner GitHub Token (Optional)</label>
+            <input type="password" id="settingOwnerToken" placeholder="GitHub Personal Access Token">
+            <small>If set on this device, deleted cards and new cards you create will sync directly to the public GitHub repo.</small>
+          </div>
+          <button class="primary-btn" id="btnSaveSettings">Save Preferences</button>
+        </section>
+
+        <section class="settings-section danger-zone">
+          <h3>🗑️ Hidden / Deleted Cards</h3>
+          <p>Restore cards you previously hid or deleted on this device:</p>
+          <button class="secondary-btn small" id="btnRestoreHidden">Restore All Hidden Cards</button>
+        </section>
+      </div>
+    </div>
+  </div>
+
+  <footer class="app-footer">
+    <p>Daily Feed · 100% Free Open Source · No Ads · No Subscriptions</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

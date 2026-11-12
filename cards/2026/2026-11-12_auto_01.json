@@ -1,0 +1,561 @@
+{
+  "schema_version": 1,
+  "batch_id": "2026-11-12_auto_01",
+  "created_at": "2026-11-12T19:40:37.006455+00:00",
+  "source": "gemini",
+  "cards": [
+    {
+      "id": "2026-11-12_meetings_agenda_control",
+      "created_at": "2026-11-12T19:40:37.006455+00:00",
+      "topic": "meetings",
+      "tags": [
+        "meetings",
+        "productivity",
+        "focus"
+      ],
+      "level": "intermediate",
+      "needs_completion": false,
+      "en": {
+        "title": "Stop meetings from derailing",
+        "hook": "Ever felt a meeting go on forever with no clear conclusion? Most people just let the clock run out.",
+        "action": "At the start, write the meeting goal on a whiteboard or shared screen. If the conversation drifts, point to it and ask if the new topic is a priority over the goal.",
+        "key_phrase": "Let's pause. Does this new point take priority over our main goal, or should we park it for later?",
+        "when": "When someone starts a tangent that isn't on the agenda.",
+        "why": "It forces people to consciously choose between the original goal and the distraction, making them more likely to self-police.",
+        "example": "Colleague: 'We should also discuss the new office decor.' You: 'Let's pause. Does this take priority over finalizing the budget, or should we park it?'",
+        "mistake": "Staying silent and letting the meeting run over time."
+      },
+      "ar": {
+        "title": "إزاي تسيطر على الاجتماع من غير ما تضيع وقت",
+        "hook": "عمرك خرجت من اجتماع طويل وأنت حاسس إن مفيش حاجة خلصت؟ معظم الناس بتسيب الكلام ياخد بعضه ويضيعوا وقتهم.",
+        "action": "في أول الاجتماع، اكتب هدف الاجتماع على سبورة أو شاشة قدام الكل. لو الكلام خرج عن الموضوع، شاور على الهدف واسألهم لو الموضوع الجديد أهم من الهدف الأساسي.",
+        "key_phrase": "نقف لحظة.. هل الموضوع ده أهم من هدفنا الأساسي دلوقتي، ولا نأجله لوقت تاني؟",
+        "when": "لما حد يبدأ يتكلم في مواضيع بره جدول الأعمال.",
+        "why": "بتخلي الناس تختار بوعي بين الهدف الأساسي والتشتيت، فبيبدأوا يلموا نفسهم لوحدهم.",
+        "example": "زميلك: 'يا جماعة لازم نتكلم في ديكور المكتب الجديد'. أنت: 'نقف لحظة.. هل ده أهم من ميزانية المشروع، ولا نأجله لوقت تاني؟'",
+        "mistake": "إنك تسكت وتخلي الاجتماع يطول من غير لازمة."
+      },
+      "quiz": {
+        "type": "mcq",
+        "correct_index": 1,
+        "en": {
+          "question": "A colleague interrupts your project planning meeting to discuss office coffee. What do you do?",
+          "options": [
+            "Ignore them and keep talking",
+            "Use the 'parking' technique to refocus",
+            "Agree with them and change the topic",
+            "Cancel the meeting immediately"
+          ],
+          "explanation": "Acknowledging the topic but parking it respects the colleague while maintaining the meeting's efficiency."
+        },
+        "ar": {
+          "question": "زميلك قاطعك في اجتماع تخطيط المشروع عشان يتكلم في نوع القهوة اللي في المكتب. تعمل إيه؟",
+          "options": [
+            "تتجاهله وتكمل كلامك",
+            "تستخدم أسلوب 'التأجيل' عشان ترجع التركيز",
+            "توافقه وتغير الموضوع",
+            "تلغي الاجتماع فوراً"
+          ],
+          "explanation": "الاعتراف بالموضوع وتأجيله بيحترم زميلك وفي نفس الوقت بيحافظ على كفاءة الاجتماع."
+        }
+      }
+    },
+    {
+      "id": "2026-11-12_business_price_anchoring",
+      "created_at": "2026-11-12T19:40:37.006455+00:00",
+      "topic": "pricing",
+      "tags": [
+        "sales",
+        "negotiation",
+        "money"
+      ],
+      "level": "advanced",
+      "needs_completion": false,
+      "en": {
+        "title": "Use high anchors to close deals",
+        "hook": "The first number mentioned in a deal acts like a magnet for everything that follows. Use this to your advantage.",
+        "action": "Always present your most comprehensive, high-value package first. This sets the mental benchmark for the project's worth.",
+        "key_phrase": "Our premium solution, which covers X, Y, and Z, is priced at [high amount].",
+        "when": "During the initial proposal or price presentation.",
+        "why": "It creates a contrast effect. Subsequent lower-priced options feel much more affordable by comparison.",
+        "example": "Client: 'What's the cost?' You: 'Our full service is $5k. We also have a streamlined version for $2k.'",
+        "mistake": "Starting with your cheapest option, which lowers the perceived value of your work."
+      },
+      "ar": {
+        "title": "استخدم السعر العالي كمرجع للصفقة",
+        "hook": "أول رقم بيتقال في أي تفاوض بيشتغل زي المغناطيس لكل اللي جاي بعده. استخدم ده لصالحك.",
+        "action": "دايماً اعرض أغلى وأشمل باقة عندك الأول. ده بيحط سقف في دماغ العميل لقيمة المشروع.",
+        "key_phrase": "الباقة الكاملة اللي بتغطي (س) و (ص) و (ع) تكلفتها [مبلغ عالي].",
+        "when": "أثناء عرض السعر لأول مرة.",
+        "why": "بتعمل تأثير تباين؛ أي خيار تاني أرخص بيبان سعره منطقي جداً بالمقارنة.",
+        "example": "العميل: 'إيه التكلفة؟' أنت: 'الخدمة الشاملة بـ 5000 جنيه، وعندنا نسخة تانية مختصرة بـ 2000 جنيه.'",
+        "mistake": "إنك تبدأ بأرخص حاجة، فبتقلل من قيمة شغلك في نظر العميل."
+      },
+      "quiz": {
+        "type": "mcq",
+        "correct_index": 2,
+        "en": {
+          "question": "Why should you present the highest-priced package first?",
+          "options": [
+            "To scare the client away",
+            "To make the client feel poor",
+            "To set a high value anchor for subsequent options",
+            "To finish the meeting quickly"
+          ],
+          "explanation": "High anchors make all subsequent lower prices feel like a better value."
+        },
+        "ar": {
+          "question": "ليه لازم تعرض أغلى باقة عندك الأول؟",
+          "options": [
+            "عشان تخوف العميل",
+            "عشان تحسس العميل إنه فقير",
+            "عشان تحط سقف عالي للقيمة يخلي باقي الخيارات أرخص",
+            "عشان تخلص الاجتماع بسرعة"
+          ],
+          "explanation": "المرجع العالي بيخلي أي سعر أقل بعده يبان كأنه صفقة أحسن."
+        }
+      }
+    },
+    {
+      "id": "2026-11-12_career_feedback",
+      "created_at": "2026-11-12T19:40:37.006455+00:00",
+      "topic": "career",
+      "tags": [
+        "feedback",
+        "career",
+        "growth"
+      ],
+      "level": "beginner",
+      "needs_completion": false,
+      "en": {
+        "title": "Get better feedback from your boss",
+        "hook": "Asking 'How am I doing?' gets you a generic 'Fine.' You need specific data to grow.",
+        "action": "Ask a specific question about one future action. This forces your manager to think about your performance in a concrete way.",
+        "key_phrase": "What is one thing I could do differently in our next project to get a better result?",
+        "when": "At the end of a project or during a 1-on-1 meeting.",
+        "why": "It shifts the focus from a vague judgment of your character to a specific, actionable improvement.",
+        "example": "You: 'What is one thing I could do differently in our next project to get a better result?' Boss: 'Actually, if you send the report 24 hours earlier, I can review it better.'",
+        "mistake": "Asking for general feedback that leads to meaningless praise."
+      },
+      "ar": {
+        "title": "إزاي تاخد فيدباك حقيقي من مديرك",
+        "hook": "لما تسأل 'أنا عامل إيه؟' غالباً هتاخد إجابة سطحية زي 'تمام'. أنت محتاج تفاصيل عشان تطور نفسك.",
+        "action": "اسأل سؤال محدد عن حاجة واحدة ممكن تعملها في المستقبل. ده بيجبر مديرك يفكر في أداءك بشكل واقعي.",
+        "key_phrase": "إيه الحاجة الوحيدة اللي ممكن أعملها بشكل مختلف في المشروع الجاي عشان النتيجة تكون أحسن؟",
+        "when": "في نهاية أي مشروع أو خلال اجتماع فردي.",
+        "why": "بينقل الكلام من تقييم عام لشخصيتك لنصيحة محددة تقدر تنفذها.",
+        "example": "أنت: 'إيه الحاجة الوحيدة اللي ممكن أعملها بشكل مختلف المشروع الجاي؟' المدير: 'لو تبعت التقرير قبل ميعاده بـ 24 ساعة، هقدر أراجعه أحسن.'",
+        "mistake": "إنك تطلب فيدباك عام بيخلي المدير يجامل وبس."
+      },
+      "quiz": {
+        "type": "mcq",
+        "correct_index": 0,
+        "en": {
+          "question": "Which question is most likely to result in actionable feedback?",
+          "options": [
+            "What is one thing I can improve for the next project?",
+            "Am I doing a good job?",
+            "Do you like my work?",
+            "What should I change about myself?"
+          ],
+          "explanation": "Specific requests about future actions provide concrete, actionable answers."
+        },
+        "ar": {
+          "question": "أي سؤال من دول هيجيبلك فيدباك تقدر تستفيد منه فعلاً؟",
+          "options": [
+            "إيه الحاجة اللي ممكن أحسنها في المشروع الجاي؟",
+            "أنا شغلي كويس؟",
+            "هل عاجبك شغلي؟",
+            "إيه اللي المفروض أغيره في شخصيتي؟"
+          ],
+          "explanation": "الطلب المباشر عن حاجة محددة في المستقبل بيخلي الرد عملي وقابل للتنفيذ."
+        }
+      }
+    },
+    {
+      "id": "2026-11-12_productivity_deep_work",
+      "created_at": "2026-11-12T19:40:37.006455+00:00",
+      "topic": "productivity",
+      "tags": [
+        "focus",
+        "time-management"
+      ],
+      "level": "intermediate",
+      "needs_completion": false,
+      "en": {
+        "title": "Protect your focus time",
+        "hook": "Your brain takes 20 minutes to refocus after an interruption. If you get interrupted 3 times, you've lost an hour of depth.",
+        "action": "Use a 'visual signal' for deep work. Wear specific headphones or put a sign on your desk when you are in 'do not disturb' mode.",
+        "key_phrase": "I'm in deep work mode for the next 90 minutes. I'll be available to chat at 2:00 PM.",
+        "when": "When you have a task that requires high concentration.",
+        "why": "It sets a clear expectation for others without you having to explain yourself every time.",
+        "example": "Colleague approaches. You: 'Hey! I'm in deep work mode until 2:00 PM. Let's catch up then?'",
+        "mistake": "Trying to multitask and responding to every notification immediately."
+      },
+      "ar": {
+        "title": "إزاي تحمي وقت تركيزك",
+        "hook": "مخك بياخد 20 دقيقة عشان يرجع يركز بعد أي مقاطعة. لو حد قاطعك 3 مرات، أنت ضيعت ساعة كاملة من التركيز العميق.",
+        "action": "استخدم 'إشارة بصرية' وقت الشغل المهم. البس سماعات معينة أو حط علامة على مكتبك إنك في وضع 'ممنوع الإزعاج'.",
+        "key_phrase": "أنا مركز في شغل مهم دلوقتي، هكون متاح للكلام الساعة 2.",
+        "when": "لما يكون عندك مهمة محتاجة تركيز عالي.",
+        "why": "بتحط حدود واضحة للي حواليك من غير ما تضطر تبرر كل مرة.",
+        "example": "زميلك بيقرب منك. أنت: 'أهلاً! أنا في وضع تركيز لحد الساعة 2، ممكن ندردش بعدها؟'",
+        "mistake": "إنك تحاول تعمل كذا حاجة في نفس الوقت وترد على كل التنبيهات فوراً."
+      },
+      "quiz": {
+        "type": "mcq",
+        "correct_index": 2,
+        "en": {
+          "question": "Why is it important to use a visual signal for deep work?",
+          "options": [
+            "To look professional",
+            "To keep your desk clean",
+            "To set expectations without constant verbal reminders",
+            "To scare people away"
+          ],
+          "explanation": "Visual signals act as a silent boundary, reducing the need for repeated explanations."
+        },
+        "ar": {
+          "question": "ليه استخدام 'إشارة بصرية' وقت الشغل المهم مهم؟",
+          "options": [
+            "عشان شكلك يبان بروفيشنال",
+            "عشان مكتبك يفضل نضيف",
+            "عشان تحط حدود واضحة من غير ما تضطر تشرح كل شوية",
+            "عشان تخوف الناس منك"
+          ],
+          "explanation": "الإشارات البصرية بتشتغل كحدود صامتة، بتقلل الحاجة إنك تبرر وتتكلم كل مرة حد يجيلك."
+        }
+      }
+    },
+    {
+      "id": "2026-11-12_communication_listening",
+      "created_at": "2026-11-12T19:40:37.006455+00:00",
+      "topic": "communication",
+      "tags": [
+        "listening",
+        "empathy"
+      ],
+      "level": "beginner",
+      "needs_completion": false,
+      "en": {
+        "title": "Use mirroring to build rapport",
+        "hook": "People love being heard, but most people just wait for their turn to speak. Mirroring proves you're listening.",
+        "action": "Repeat the last 3 words (or the most important phrase) of what the other person just said as a question.",
+        "key_phrase": "So, you're worried about the timeline?",
+        "when": "When someone is explaining a problem or expressing frustration.",
+        "why": "It encourages the speaker to elaborate and makes them feel understood without you offering unsolicited advice.",
+        "example": "Colleague: 'The project is really falling behind.' You: 'Falling behind?' Colleague: 'Yes, because we lack design support...'",
+        "mistake": "Immediately jumping in to solve the problem before they finish."
+      },
+      "ar": {
+        "title": "استخدم 'المرايا' عشان تكسب ثقة اللي قدامك",
+        "hook": "الناس بتحب تحس إنها مسموعة، بس أغلبنا بيستنى دوره في الكلام. طريقة 'المرايا' بتثبت إنك مهتم.",
+        "action": "كرر آخر 3 كلمات (أو أهم جملة) قالها الشخص اللي قدامك في صيغة سؤال.",
+        "key_phrase": "يعني أنت قلقان من الجدول الزمني؟",
+        "when": "لما حد بيشرح مشكلة أو بيعبر عن ضيقه.",
+        "why": "بتشجع الشخص يكمل كلامه ويحس إنك فاهمه من غير ما تدي نصايح في غير وقتها.",
+        "example": "زميلك: 'المشروع متأخر جداً.' أنت: 'متأخر؟' زميلك: 'أيوه، عشان ناقصنا دعم فريق التصميم...'",
+        "mistake": "إنك تقاطع عشان تحل المشكلة قبل ما يخلص كلامه."
+      },
+      "quiz": {
+        "type": "mcq",
+        "correct_index": 1,
+        "en": {
+          "question": "What is the primary goal of mirroring?",
+          "options": [
+            "To annoy the speaker",
+            "To show you are listening and encourage more detail",
+            "To correct the speaker's grammar",
+            "To change the subject"
+          ],
+          "explanation": "Mirroring confirms you heard them and invites them to expand on their thoughts."
+        },
+        "ar": {
+          "question": "إيه الهدف الأساسي من استخدام 'المرايا'؟",
+          "options": [
+            "إنك تضايق اللي قدامك",
+            "إنك تبين إنك سامع وتشجعه يكمل كلامه",
+            "إنك تصحح له غلطات لغوية",
+            "إنك تغير الموضوع"
+          ],
+          "explanation": "المرايا بتأكد إنك سمعته وبتشجعه يكمل ويوضح وجهة نظره."
+        }
+      }
+    },
+    {
+      "id": "2026-11-12_decision_making_premortem",
+      "created_at": "2026-11-12T19:40:37.006455+00:00",
+      "topic": "decision_making",
+      "tags": [
+        "planning",
+        "strategy"
+      ],
+      "level": "advanced",
+      "needs_completion": false,
+      "en": {
+        "title": "The Premortem technique",
+        "hook": "We are biased to think our projects will succeed. A premortem forces you to see the failure before it happens.",
+        "action": "Imagine you are in the future and the project has failed. Now, ask: 'What caused this failure?' Write down every potential risk.",
+        "key_phrase": "Let's assume it's one year later and this failed. What went wrong?",
+        "when": "Before starting a new initiative or major project.",
+        "why": "It gives the team permission to be critical without feeling like they are being negative.",
+        "example": "Team meeting: 'Let's assume it's next year and this launch failed. What went wrong?' Response: 'We ignored the feedback from the QA team.'",
+        "mistake": "Ignoring potential risks until they actually become problems."
+      },
+      "ar": {
+        "title": "تقنية 'الوفاة الاستباقية' للمشاريع",
+        "hook": "عندنا ميل طبيعي نظن إن مشاريعنا هتنجح. تقنية 'الوفاة الاستباقية' بتخليك تشوف الفشل قبل ما يحصل.",
+        "action": "تخيل إننا في المستقبل والمشروع فشل. اسأل: 'إيه اللي تسبب في الفشل ده؟' واكتب كل المخاطر اللي ممكن تحصل.",
+        "key_phrase": "تعالوا نفترض إننا بعد سنة والمشروع فشل. إيه اللي حصل غلط؟",
+        "when": "قبل ما تبدأ أي مبادرة أو مشروع كبير.",
+        "why": "بتدي الفريق مساحة ينقدوا الخطة من غير ما يحسوا إنهم سلبيين.",
+        "example": "اجتماع الفريق: 'نفترض إننا بعد سنة والمشروع فشل. إيه اللي حصل غلط؟' الرد: 'كنا تجاهلنا ملاحظات فريق الجودة.'",
+        "mistake": "إنك تتجاهل المخاطر المحتملة لحد ما تتحول لمشاكل حقيقية."
+      },
+      "quiz": {
+        "type": "mcq",
+        "correct_index": 3,
+        "en": {
+          "question": "When should you use the premortem technique?",
+          "options": [
+            "After a project fails",
+            "During the project review",
+            "When you feel confident",
+            "Before starting a new project"
+          ],
+          "explanation": "Premortems are designed to identify risks before they happen, so they must be done at the start."
+        },
+        "ar": {
+          "question": "إمتى تستخدم تقنية 'الوفاة الاستباقية'؟",
+          "options": [
+            "بعد ما المشروع يفشل",
+            "أثناء مراجعة المشروع",
+            "لما تحس إنك واثق في الخطة",
+            "قبل ما تبدأ أي مشروع جديد"
+          ],
+          "explanation": "التقنية دي معموله عشان تكتشف المخاطر قبل ما تحصل، فمهم تتعمل في البداية."
+        }
+      }
+    },
+    {
+      "id": "2026-11-12_leadership_delegation",
+      "created_at": "2026-11-12T19:40:37.006455+00:00",
+      "topic": "leadership",
+      "tags": [
+        "delegation",
+        "management"
+      ],
+      "level": "intermediate",
+      "needs_completion": false,
+      "en": {
+        "title": "Delegate outcomes, not tasks",
+        "hook": "Micromanaging happens because you're focused on the 'how' instead of the 'what'. Stop it now.",
+        "action": "Describe the desired result clearly. Then, ask the person to tell you their plan to achieve it. Only intervene if the plan is dangerous.",
+        "key_phrase": "I need this report to show X data by Friday. How do you plan to get that done?",
+        "when": "When assigning a responsibility to a team member.",
+        "why": "It empowers the team member to own the process and learn, while ensuring you get the result you need.",
+        "example": "You: 'I need this report to show X data by Friday. How do you plan to get that done?' Member: 'I'll pull the logs from the server...'",
+        "mistake": "Giving step-by-step instructions that kill initiative."
+      },
+      "ar": {
+        "title": "فوض النتائج مش المهام",
+        "hook": "التدخل في كل تفصيلة بيحصل لما بتركز على 'إزاي' الشغل بيتعمل بدل 'إيه' النتيجة المطلوبة. بطل ده فوراً.",
+        "action": "اشرح النتيجة المطلوبة بوضوح. وبعدين، اطلب من الشخص يقولك خطته عشان يوصل للنتيجة دي. اتدخل بس لو الخطة فيها مخاطرة.",
+        "key_phrase": "محتاج التقرير ده يوضح بيانات (س) يوم الجمعة. ناوي تعمل ده إزاي؟",
+        "when": "لما توكل مسؤولية لعضو في فريقك.",
+        "why": "بتخلي الشخص يحس بمسؤولية تجاه العملية ويطور نفسه، وفي نفس الوقت بتضمن النتيجة اللي عايزها.",
+        "example": "أنت: 'محتاج التقرير يوضح بيانات (س) يوم الجمعة. ناوي تعمل ده إزاي؟' العضو: 'هسحب البيانات من السيرفر وأصنفها...'",
+        "mistake": "إنك تدي تعليمات خطوة بخطوة بتموت روح المبادرة عند الفريق."
+      },
+      "quiz": {
+        "type": "mcq",
+        "correct_index": 0,
+        "en": {
+          "question": "What is the best way to delegate effectively?",
+          "options": [
+            "Define the result and ask for their plan",
+            "Give them a strict step-by-step guide",
+            "Do it yourself if they ask questions",
+            "Don't delegate at all"
+          ],
+          "explanation": "Delegating the outcome builds autonomy and allows the team to find their own efficient methods."
+        },
+        "ar": {
+          "question": "إيه أحسن طريقة عشان تفوض شغل بفاعلية؟",
+          "options": [
+            "حدد النتيجة واسألهم عن خطتهم",
+            "اديهم دليل خطوات صارم",
+            "اعمل الشغل بنفسك لو سألوك أسئلة",
+            "ماتفوضش الشغل خالص"
+          ],
+          "explanation": "تفويض النتيجة بيبني استقلالية وبيسمح للفريق يلاقي طرقهم الخاصة والفعالة في الشغل."
+        }
+      }
+    },
+    {
+      "id": "2026-11-12_psychology_persuasion",
+      "created_at": "2026-11-12T19:40:37.006455+00:00",
+      "topic": "persuasion",
+      "tags": [
+        "psychology",
+        "influence"
+      ],
+      "level": "intermediate",
+      "needs_completion": false,
+      "en": {
+        "title": "The power of 'Because'",
+        "hook": "People are more likely to comply with a request if you provide a reason—even if the reason is simple.",
+        "action": "Always add the word 'because' followed by a genuine reason, no matter how small the request.",
+        "key_phrase": "Could you help me with this report, because I'm on a tight deadline?",
+        "when": "Whenever you need someone to do something for you.",
+        "why": "The word 'because' triggers an automatic compliance response in the brain.",
+        "example": "You: 'Can I use the printer first, because I have a meeting in 5 minutes?'",
+        "mistake": "Making requests without providing context."
+      },
+      "ar": {
+        "title": "قوة كلمة 'عشان'",
+        "hook": "الناس بتميل توافق على طلباتك أكتر بكتير لو قلت 'ليه'. حتى لو السبب بسيط جداً.",
+        "action": "دايماً استخدم كلمة 'عشان' وقول سبب حقيقي، مهما كان طلبك صغير.",
+        "key_phrase": "ممكن تساعدني في التقرير ده، عشان عندي ديدلاين ضيق جداً؟",
+        "when": "في أي وقت تطلب من حد حاجة.",
+        "why": "كلمة 'عشان' بتخلي المخ يستجيب للطلب بشكل أوتوماتيكي.",
+        "example": "أنت: 'ممكن أستخدم البرنتر قبلك، عشان عندي اجتماع بعد 5 دقايق؟'",
+        "mistake": "إنك تطلب حاجة من غير ما توضح السبب."
+      },
+      "quiz": {
+        "type": "mcq",
+        "correct_index": 1,
+        "en": {
+          "question": "Why does adding 'because' make people more likely to agree?",
+          "options": [
+            "It confuses them",
+            "It provides a rational trigger for compliance",
+            "It makes them feel guilty",
+            "It saves time"
+          ],
+          "explanation": "Providing a reason satisfies the brain's need for logic, making it easier to say yes."
+        },
+        "ar": {
+          "question": "ليه إضافة كلمة 'عشان' بتخلي الناس توافق أكتر؟",
+          "options": [
+            "لأنها بتلخبطهم",
+            "لأنها بتقدم مبرر منطقي للاستجابة",
+            "لأنها بتحسسهم بالذنب",
+            "عشان بتوفر وقت"
+          ],
+          "explanation": "تقديم سبب بيشبع حاجة المخ للمنطق، فبيخلي الموافقة أسهل."
+        }
+      }
+    },
+    {
+      "id": "2026-11-12_money_value_focus",
+      "created_at": "2026-11-12T19:40:37.006455+00:00",
+      "topic": "money",
+      "tags": [
+        "value",
+        "business"
+      ],
+      "level": "beginner",
+      "needs_completion": false,
+      "en": {
+        "title": "Sell the value, not the cost",
+        "hook": "When you focus on the price, you make it a commodity. When you focus on the value, you make it an investment.",
+        "action": "When asked for price, immediately pivot to the benefit. Describe what the client gains, then state the price.",
+        "key_phrase": "This will save you 10 hours a week. It costs $500.",
+        "when": "When a client asks for a quote.",
+        "why": "It changes the conversation from 'How much do I lose?' to 'What do I gain?'",
+        "example": "Client: 'How much?' You: 'By implementing this, you'll save 10 hours a week. The cost is $500.'",
+        "mistake": "Giving the price first without context."
+      },
+      "ar": {
+        "title": "بيع القيمة مش السعر",
+        "hook": "لما تركز في سعرك، بتخلي خدمتك مجرد سلعة. لما تركز في قيمتك، بتخليها استثمار.",
+        "action": "لما حد يسألك عن السعر، انقل الكلام فوراً للميزة. اشرح العميل هيستفيد إيه، وبعدين قول السعر.",
+        "key_phrase": "ده هيوفر عليك 10 ساعات في الأسبوع. تكلفته 500 جنيه.",
+        "when": "لما عميل يسألك عن سعر الخدمة.",
+        "why": "بتنقل الحوار من 'أنا هدفع كام؟' لـ 'أنا هكسب إيه؟'",
+        "example": "العميل: 'بكام؟' أنت: 'لما نطبق ده، هتوفر 10 ساعات في الأسبوع، والتكلفة 500 جنيه.'",
+        "mistake": "إنك تقول السعر الأول من غير سياق."
+      },
+      "quiz": {
+        "type": "mcq",
+        "correct_index": 0,
+        "en": {
+          "question": "What is the best way to handle a price question?",
+          "options": [
+            "Highlight the benefit first, then the price",
+            "Give the price immediately to be honest",
+            "Say the price is negotiable",
+            "Ask them what their budget is first"
+          ],
+          "explanation": "Framing the value first makes the price seem like a fair exchange for the gain."
+        },
+        "ar": {
+          "question": "إيه أحسن طريقة للرد على سؤال عن السعر؟",
+          "options": [
+            "وضح الفائدة الأول، وبعدين السعر",
+            "قول السعر فوراً عشان تكون صريح",
+            "قول إن السعر قابل للتفاوض",
+            "اسألهم الأول ميزانيتهم كام"
+          ],
+          "explanation": "عرض القيمة الأول بيخلي السعر يبان كأنه مقابل عادل للمكسب اللي هيحصلوا عليه."
+        }
+      }
+    },
+    {
+      "id": "2026-11-12_learning_feynman_technique",
+      "created_at": "2026-11-12T19:40:37.006455+00:00",
+      "topic": "learning",
+      "tags": [
+        "learning",
+        "knowledge"
+      ],
+      "level": "intermediate",
+      "needs_completion": false,
+      "en": {
+        "title": "The Feynman technique",
+        "hook": "You don't know a subject until you can explain it to a child. Complexity is often a mask for confusion.",
+        "action": "Take a topic you're learning. Try to write an explanation for a 10-year-old. Wherever you get stuck, go back to the source material.",
+        "key_phrase": "How would I explain this to a 10-year-old?",
+        "when": "When you're trying to master a complex concept.",
+        "why": "Simplifying forces you to understand the core logic, not just memorize jargon.",
+        "example": "You: 'Blockchain is like a digital notebook that everyone has a copy of, so no one can erase what's written.'",
+        "mistake": "Memorizing definitions without understanding the underlying logic."
+      },
+      "ar": {
+        "title": "تقنية 'فاينمان' للتعلم",
+        "hook": "أنت مش فاهم أي موضوع بجد غير لما تقدر تشرحه لطفل. التعقيد غالباً بيكون قناع للجهل.",
+        "action": "خد موضوع بتتعلمه، وحاول تكتب شرح ليه لطفل عنده 10 سنين. أي حتة تعطل فيها، ارجع ذاكرها تاني.",
+        "key_phrase": "إزاي أشرح ده لطفل عنده 10 سنين؟",
+        "when": "لما تكون بتحاول تفهم مفهوم معقد.",
+        "why": "التبسيط بيجبرك تفهم المنطق الأساسي، مش بس تحفظ مصطلحات.",
+        "example": "أنت: 'البلوكشين ده زي كراسة رقمية عند الكل نسخة منها، فمحدش يقدر يمسح اللي اتكتب فيها.'",
+        "mistake": "إنك تحفظ التعريفات من غير ما تفهم الأساس المنطقي."
+      },
+      "quiz": {
+        "type": "mcq",
+        "correct_index": 2,
+        "en": {
+          "question": "What is the main purpose of the Feynman technique?",
+          "options": [
+            "To write a book for kids",
+            "To memorize facts quickly",
+            "To test your understanding of a concept",
+            "To impress your boss"
+          ],
+          "explanation": "The technique reveals gaps in your knowledge by forcing you to simplify complex ideas."
+        },
+        "ar": {
+          "question": "إيه الغرض الأساسي من تقنية 'فاينمان'؟",
+          "options": [
+            "إنك تكتب كتاب للأطفال",
+            "إنك تحفظ الحقائق بسرعة",
+            "إنك تختبر فهمك للمفهوم",
+            "إنك تبهر مديرك"
+          ],
+          "explanation": "التقنية دي بتكشف الفجوات في فهمك لما بتجبرك تبسط الأفكار المعقدة."
+        }
+      }
+    }
+  ]
+}
