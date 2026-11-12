@@ -16,19 +16,19 @@
     const picker = document.getElementById('cardSelectPicker');
     if (!picker) return;
 
-    picker.innerHTML = '<option value="">🎯 Jump to Card...</option>';
+    const isAr = state.currentLang === 'ar';
+    picker.innerHTML = isAr
+      ? '<option value="">🎯 انتقال إلى كارت...</option>'
+      : '<option value="">🎯 Jump to Card...</option>';
 
     const allCards = Array.from(state.loadedCardsMap.values()).filter(c => !DailyFeed.isCardHidden(c.id));
     allCards.sort((a, b) => (state.numbersMap[a.id] || 0) - (state.numbersMap[b.id] || 0));
 
     allCards.forEach(c => {
       const num = state.numbersMap[c.id] || '?';
-      const isAr = state.currentLang === 'ar';
-      const title = (isAr && c.ar?.title) ? c.ar.title : (c.en?.title || c.ar?.title || 'Untitled');
-      const topic = (c.topic || 'General').toUpperCase();
       const opt = document.createElement('option');
       opt.value = c.id;
-      opt.textContent = `#${num} · [${topic}] ${title}`;
+      opt.textContent = isAr ? `كارت #${num}` : `Card #${num}`;
       picker.appendChild(opt);
     });
   };
@@ -257,3 +257,4 @@
   };
 
 })(window);
+

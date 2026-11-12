@@ -1,6 +1,9 @@
 # CHANGELOG
 > Entries newest on top. Only implemented changes.
 
+## 2026-11-13 01:25 +02:00
+- **Compact Jump-to-Card Selector:** Updated `DailyFeed.populateCardSelector` in `js/cards.js` to show cards only (`Card #1`, `Card #2`... / `كارت #1`, `كارت #2`...) rather than full headlines/infos, preventing overflow and keeping the dropdown sleek and fast to navigate.
+
 ## 2026-11-13 00:52 +02:00
 - **Modular Codebase Split & Token Optimization:** Split the 1,850+ line monolithic `app.js` into 8 cleanly decoupled modules under `js/` sharing `window.DailyFeed`:
   * `js/state.js` (~70 lines): Reactive state, topics, numbers map, date & JSON fetch helpers.

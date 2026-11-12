@@ -1,6 +1,9 @@
 # DECISIONS
 > Entries newest on top. All decided by owner on 2026-11-12 and 2026-11-13.
 
+## 2026-11-13 01:25 +02:00 — Compact Jump-to-Card Selector
+- D37. **Cards-Only Jump Selector:** The "Jump to Card" dropdown displays clean, compact card numbers only (`Card #1`, `Card #2`... / `كارت #1`, `كارت #2`...) rather than full card info headlines, keeping the control clean and mobile-friendly without information leaks.
+
 ## 2026-11-13 00:52 +02:00 — Modular Script Decomposition & Token Optimization
 - D36. **Modular Script Split (`js/*.js`):** Monolithic `app.js` split into 8 focused single-responsibility scripts under `js/` sharing `window.DailyFeed`. This drastically reduces LLM token consumption by avoiding large file rereads, isolates concerns, and eliminates regression risks during future modifications.
 

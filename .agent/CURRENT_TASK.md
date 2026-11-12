@@ -1,6 +1,11 @@
 # CURRENT TASK
 > Entries newest on top.
 
+## 2026-11-13 01:25 +02:00 — Compact Jump-to-Card Selector (Cards Only, No Info Text)
+- **Status:** Complete, verified in live Chrome, and deployed!
+- **Refinement:** Updated `DailyFeed.populateCardSelector` in `js/cards.js` so the dropdown options show clean, compact card identifiers (`Card #1`, `Card #2`, ... `Card #20` / `كارت #1`, `كارت #2`...) instead of dumping the full headline and info titles (`#N · [TOPIC] Title...`).
+- **Verified:** Clean compact dropdown on both desktop and mobile, verified in English and Arabic.
+
 ## 2026-11-13 00:52 +02:00 — Monolithic `app.js` Modular Split & Token Optimization Complete
 - **Status:** Complete, tested, verified across automated CDP tests in live Chrome, and deployed!
 - **Goal Achieved:** Replaced 1,850+ line monolithic `app.js` with 8 clean, lightweight modules under `js/` to save tokens and eliminate reading/editing overhead:
