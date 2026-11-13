@@ -1,0 +1,288 @@
+{
+  "schema_version": 1,
+  "batch_id": "2026-11-13_auto_03",
+  "created_at": "2026-11-13T14:14:19.383945+00:00",
+  "source": "gemini-3.5-flash",
+  "cards": [
+    {
+      "id": "2026-11-13_money_hourly-rate-test",
+      "created_at": "2026-11-13T14:14:19.383945+00:00",
+      "topic": "money",
+      "tags": [
+        "spending",
+        "budgeting",
+        "mindset"
+      ],
+      "level": "beginner",
+      "needs_completion": false,
+      "en": {
+        "title": "Convert Prices Into Hours Worked Before Buying",
+        "hook": "You see a $200 jacket on sale and feel rich. But what if it costs 10 hours of desk fatigue?",
+        "action": "Divide any non-essential item's price by your net hourly income. Ask yourself if the item is worth spending those exact hours of effort.",
+        "key_phrase": "Is this purchase worth 10 hours of my desk job?",
+        "when": "When you are tempted by an impulse purchase online or in a shop.",
+        "why": "Money figures are abstract, but trading tangible hours of your life triggers loss aversion.",
+        "example": "You want a $150 gadget. You earn $15/hour net. That gadget costs 10 hours of active labor. You realize you don't want to trade a full workday for it.",
+        "mistake": "Thinking in percentage discounts instead of actual working time traded."
+      },
+      "ar": {
+        "title": "احسب سعر أي حاجة بساعات شغلك",
+        "hook": "بتشوف جاكيت بـ 2000 جنيه وتحس إنه فرصة، بس هل فكرت إنه بيكلفك 3 أيام تعب في المكتب؟",
+        "action": "اقسم سعر الحاجة اللي عاوز تشتريها على دخلك في الساعة. واسأل نفسك: هل الحاجة دي تستاهل عدد الساعات دي من عمرك وشغلك؟",
+        "key_phrase": "هل الحاجة دي تستاهل 15 ساعة شغل من عمري؟",
+        "when": "لما تكون هيغمى عليك وتشتري حاجة مش أساسية أونلاين أو في محل.",
+        "why": "الفلوس أرقام مجردة، بس لما تحولها لساعات شغل بتتحول لجهد حقيقي عقلك بيخاف يضيعه.",
+        "example": "شفت ساعة بـ 3000 جنيه، وساعتك في الشغل بـ 100 جنيه. ده معناه 30 ساعة شغل كاملين. أول ما حسبتها حسيت إنها مش مستاهلة وسبتها.",
+        "mistake": "التفكير في الخصم والتخفيض بدل التفكير في وقتك اللي هيضيع قصاد الحاجة دي."
+      },
+      "quiz": {
+        "type": "mcq",
+        "correct_index": 1,
+        "en": {
+          "question": "You earn $20/hour net and want a $200 pair of sneakers on sale. How do you evaluate the purchase?",
+          "options": [
+            "Buy it immediately because it has a 30% discount.",
+            "Calculate that it costs 10 hours of work and decide if the trade-off is worth it.",
+            "Wait until your next paycheck to buy it.",
+            "Put it on a credit card to avoid paying cash today."
+          ],
+          "explanation": "Translating cash into net hours worked (10 hours) turns an abstract number into real effort, stopping impulse buys."
+        },
+        "ar": {
+          "question": "بتعمل 100 جنيه في الساعة ومحتاج تشتري كوتشي بـ 1000 جنيه عليه خصم. تقيم الشروة دي إزاي؟",
+          "options": [
+            "تشتريه فوراً عشان عليه خصم 30%.",
+            "تحسب إنه بيكلفك 10 ساعات شغل وتشوف هل يستاهل الجهد ده ولا لأ.",
+            "تستنى لما القبض الجديد ينزل وتشتري على طول.",
+            "تشتري بالفيزاقسط عشان متدفعش كاش دلوقتي."
+          ],
+          "explanation": "تحويل الفلوس لساعات شغل حقيقية (10 ساعات) بيخلي العقل يدرك قيمة الجهد المبذول ويوقف الشراء الاندفاعي."
+        }
+      }
+    },
+    {
+      "id": "2026-11-13_negotiation_label-their-hesitation",
+      "created_at": "2026-11-13T14:14:19.383945+00:00",
+      "topic": "negotiation",
+      "tags": [
+        "tactics",
+        "psychology",
+        "sales"
+      ],
+      "level": "intermediate",
+      "needs_completion": false,
+      "en": {
+        "title": "Label Hesitation to Break Deadlocks",
+        "hook": "The client goes silent right after hearing your quote. Demanding an immediate answer makes them defensive.",
+        "action": "Name the underlying emotion or concern neutrally without pressing. Start your statement with 'It seems like...' or 'It sounds like...'.",
+        "key_phrase": "It seems like you have some reservations about this timeline.",
+        "when": "When the other party suddenly stalls, hesitates, or freezes during a deal.",
+        "why": "Naming a negative emotion neutralizes it and invites the other side to explain their real issue.",
+        "example": "Client hesitates on signing. You say: 'It seems like you're worried about hidden costs.' Client replies: 'Honestly yes, our last vendor surprised us with extra fees.'",
+        "mistake": "Asking aggressive questions like 'Why haven't you responded?' or immediately offering discounts."
+      },
+      "ar": {
+        "title": "سمّي قلق العميل عشان تفك الزنقة في التفاوض",
+        "hook": "العميل سكت فجأة بعد ما سمع السعر. لو ضغطت عليه هيقفل منك أكتر.",
+        "action": "توصف القلق أو التردد اللي حاسس بيه من غير ما تهاجمه. ابدأ بـ 'شكله كده...' أو 'واضح إن...'.",
+        "key_phrase": "شكله كده عندك تحفظ على وقت التسليم؟",
+        "when": "لما الطرف التاني يتردد أو يسكت فجأة في نص الكلام.",
+        "why": "تسمية المشاعر السلبية بتهدّيها بتخلي الطرف التاني يفضفض بالسبب الحقيقي لتردده.",
+        "example": "العميل متردد يوقع العقد. فتقول: 'واضح إنك خايف من مصاريف مستخبية.' العميل يرد: 'صحيح، عشان اتلسعنا من شركة تانية السنة اللي فاتت.'",
+        "mistake": "الضغط بأسئلة هجومية زي 'ما بتردش ليه؟' أو إنك تنزل بسعرك فوراً من غير ما تفهم السبب."
+      },
+      "quiz": {
+        "type": "mcq",
+        "correct_index": 2,
+        "en": {
+          "question": "A prospect goes quiet for 10 seconds after seeing your contract terms. What should you say?",
+          "options": [
+            "If you sign right now, I can give you a 10% discount.",
+            "Are you going to sign or not?",
+            "It seems like something in these terms is making you pause.",
+            "Don't worry, everyone signs this exact contract."
+          ],
+          "explanation": "Labeling their quiet pause neutrally ('It seems like...') disarms fear and brings the hidden objection to light."
+        },
+        "ar": {
+          "question": "عميل سكت لمدة 10 ثواني أول ما شاف بنود العقد. إيه أفضل رد تقوله؟",
+          "options": [
+            "لو وقعت دلوقتي هعملك خصم 10%.",
+            "هتوقع العقد ده ولا أدفعه لغيرك؟",
+            "شكله كده في بند معين مخليك تقلق وتتردد؟",
+            "متقلقش، كل الناس بتوقع على نفس العقد ده عادي."
+          ],
+          "explanation": "تسمية التردد بشكل محايد ('شكله كده...') بيمتص التوتر وبيخلي العميل يقول الاعتراض الحقيقي اللي كاتمه."
+        }
+      }
+    },
+    {
+      "id": "2026-11-13_persuasion_freedom-of-choice",
+      "created_at": "2026-11-13T14:14:19.383945+00:00",
+      "topic": "persuasion",
+      "tags": [
+        "influence",
+        "communication",
+        "psychology"
+      ],
+      "level": "beginner",
+      "needs_completion": false,
+      "en": {
+        "title": "End Requests with 'But You Are Free to Say No'",
+        "hook": "People hate feeling cornered. The moment you push hard, their mental defenses immediately block you.",
+        "action": "After pitching an idea or asking for a favor, explicitly affirm their complete freedom to decline.",
+        "key_phrase": "Take your time, but of course you are completely free to say no.",
+        "when": "When asking for a favor, pitching a proposal, or closing a soft offer.",
+        "why": "Reminding people of their autonomy removes psychological reactance, making them twice as likely to agree.",
+        "example": "'Can you review this slide deck tonight? But totally feel free to say no if your schedule is packed.' They reply: 'No worries, send it over!'",
+        "mistake": "Using pushy, high-pressure statements that force people into a corner."
+      },
+      "ar": {
+        "title": "أنهي طلبك بـ 'براحتك خالص طبعاً'",
+        "hook": "محدش بيحب يحس إنه مزنوق في زاوية. أول ما تضغط على حد، دفاعاته بتتفعل فوراً.",
+        "action": "بعد ما تطلب طلبك أو تعرض فكرتك، فكّر الطرف التاني إن قرار الرفض كامل في إيده من غير أي حرج.",
+        "key_phrase": "فكر في الموضوع براحتك، وطبعاً ليك مطلق الحرية ترفض.",
+        "when": "لما تطلب خدمة من حد، أو تعرض فكرة جديدة على مديرك أو عميلك.",
+        "why": "لما بتفكر الشخص بحريته، المقاومة النفسية جواه بتقل للنص وبيحس بارتياح أكتر يوافق.",
+        "example": "'ممكن تراجع معايا الملف ده النهاردة؟ بس طبعاً براحتك خالص لو وراك ضغط شغل.' النتيجة: بيحس بالاحترام ويوافق أسهل.",
+        "mistake": "الإلحاح والضغط بأسلوب 'لازم تعمل كدة دلوقتي' اللي بيكهرب الجو."
+      },
+      "quiz": {
+        "type": "mcq",
+        "correct_index": 0,
+        "en": {
+          "question": "You need a colleague from another team to assist you with a tight deadline. How should you ask?",
+          "options": [
+            "Could you give me a hand with this task? But totally feel free to decline if you're loaded.",
+            "You have to help me with this right now or we will miss the launch.",
+            "I helped you last month, so you owe me one on this report.",
+            "I'm assigning this task to you because nobody else can do it."
+          ],
+          "explanation": "Explicitly affirming their freedom to say no reduces friction and increases their willingness to help."
+        },
+        "ar": {
+          "question": "محتاج زميل من فريق تاني يساعدك في تسليم مشروع مستعجل. تطلب منه إزاي؟",
+          "options": [
+            "ممكن تساعدني في الجزئية دي؟ بس طبعاً براحتك خالص لو وراك شغل تاني.",
+            "لازم تساعدني دلوقتي وإلا الشغل كله هيتعطل بسببك.",
+            "أنا ساعدتك الشهر اللي فات، فالمفروض تردلي الجميل النهاردة.",
+            "أنا هرمي التاسك دي عليك عشان محدش فاضي يعملها غيرك."
+          ],
+          "explanation": "تأكيد حرية الشخص في الرفض بيشيل الضغط النفسي وبيخليه يوافق براحة ورغبة حقيقية."
+        }
+      }
+    },
+    {
+      "id": "2026-11-13_pricing_decoy-tier-strategy",
+      "created_at": "2026-11-13T14:14:19.383945+00:00",
+      "topic": "pricing",
+      "tags": [
+        "anchoring",
+        "sales",
+        "strategy"
+      ],
+      "level": "intermediate",
+      "needs_completion": false,
+      "en": {
+        "title": "Add a Decoy Package to Sell Your Core Offer",
+        "hook": "Struggling to get clients to buy your standard package? They might just lack a frame of reference.",
+        "action": "Offer three options where the top tier is priced significantly higher with minor perks, making your core middle tier look like an incredible value.",
+        "key_phrase": "Most clients choose Tier B because it offers 90% of Tier C at half the cost.",
+        "when": "Designing proposal pricing, service packages, or product tiers.",
+        "why": "Human brains judge value using comparative contrast rather than absolute values.",
+        "example": "Basic: $100. Standard: $250 (Full features). Premium: $700 (Full features + minor extras). Standard instantly feels like a bargain next to Premium.",
+        "mistake": "Presenting only one flat price point with no comparative options."
+      },
+      "ar": {
+        "title": "حط باقة غالية قوي عشان تبيع الباقة الوسطانية",
+        "hook": "محتار ليه العملاء بيستغلوا باقتك الرئيسية؟ الغالبية مش عارفين يقارنوا قيمتها بإيه.",
+        "action": "اعرض 3 باقات: حط الباقة العالية بسعر مرتفع جداً وخدمات إضافية بسيطة، ساعتها الباقة الوسطانية هتظهر كأنها لقطة.",
+        "key_phrase": "أغلب العملاء بيختاروا الباقة 'ب' عشان فيها 90% من ميزات 'ج' وبنص السعر.",
+        "when": "لما تعمل جدول أسعار لخدماتك أو تجهز عرض سعر لعميل.",
+        "why": "العقل البشري بيقيم السعر عن طريق المقارنة، مش بالقيمة المطلقة للمبلغ.",
+        "example": "باقة أ: 1000ج، باقة ب: 2500ج (فيها كل حاجة)، باقة ج: 7000ج (فيها كل حاجة + استشارة مجانية). الباقة ب بقت تبان لقطة مقارنة بـ ج.",
+        "mistake": "إنك تفرض سعر واحد بس من غير أي خيارات تقارن بينها."
+      },
+      "quiz": {
+        "type": "mcq",
+        "correct_index": 3,
+        "en": {
+          "question": "You want clients to buy your $500/mo service tier. How should you structure your price proposal?",
+          "options": [
+            "Show only the $500 option so they don't get confused.",
+            "Show a $500 option and a $450 option with almost no difference.",
+            "Give them a list of 10 different custom price points.",
+            "Show $200 (Basic), $500 (Standard - Core), and $1,500 (Premium Decoy)."
+          ],
+          "explanation": "The $1,500 premium tier serves as an anchor decoy, making the $500 standard option feel high-value and reasonably priced."
+        },
+        "ar": {
+          "question": "عايز تبيع باقة خدمات بـ 5000 جنيه في الشهر. ترتب الجدول إزاي عشان تشجع العميل؟",
+          "options": [
+            "تعرض سعر الـ 5000 بس عشان متشتتش العميل.",
+            "تعرض باقة بـ 5000 وباقة بـ 4800 مفيش بينهم أي فرق.",
+            "تكتب لستة فيها 10 أسعار مختلفة وتخليه يختار براحته.",
+            "تعرض 2000 (بسيطة)، 5000 (أساسية ومكتملة)، و 15000 (فاخرة جداً)."
+          ],
+          "explanation": "الباقة الفاخرة بـ 15000 بتعمل مرساة عالية (Decoy)، بتخلي الباقة الأساسية بـ 5000 تظهر كصفقة ممتازة وذكية."
+        }
+      }
+    },
+    {
+      "id": "2026-11-13_productivity_five-minute-starter",
+      "created_at": "2026-11-13T14:14:19.383945+00:00",
+      "topic": "productivity",
+      "tags": [
+        "procrastination",
+        "focus",
+        "habits"
+      ],
+      "level": "beginner",
+      "needs_completion": false,
+      "en": {
+        "title": "Commit to Just 5 Minutes to Overcome Task Inertia",
+        "hook": "Staring at a massive report and suddenly feeling the urge to clean your desk? That's start-friction.",
+        "action": "Tell yourself you will work on the task for exactly 5 minutes, after which you are completely allowed to stop.",
+        "key_phrase": "I'll work on this file for 5 minutes only, then I can stop.",
+        "when": "When procrastinating on a complex, boring, or intimidating project.",
+        "why": "The brain fears the total effort of completion, not the start. Once momentum builds, 80% of people continue.",
+        "example": "You dread writing a proposal. You set a timer for 5 minutes just to outline headings. 30 minutes later, you are deep in flow state.",
+        "mistake": "Staring at the entire task mountain and waiting for inspiration to strike."
+      },
+      "ar": {
+        "title": "اشتغل 5 دقائق بس عشان تكسر تسويف المهام الصعبة",
+        "hook": "كل ما تفتح تقرير كبير تلاقي نفسك فجأة عاوز تنضف المكتب؟ ده التردد بتاع البداية.",
+        "action": "اقنع عقلك إنك هتشتغل على التاسك الرخمة دي لمدة 5 دقائق بالظبط، وبعدها ليك كامل الحق تقف وتقفل الملف.",
+        "key_phrase": "أنا هفتح الملف ده لمدة 5 دقائق بس، وبعدها هقفل عادي.",
+        "when": "لما تلاقي نفسك بتأجل تاسك كبيرة أو مملة ومش عارف تبدأ منين.",
+        "why": "المخ بيخاف من الجهد الكلي بتاع المهمة مش من البداية. أول ما تتحرك والعداد يشتغل، 80% من الناس بيكملوا عادي.",
+        "example": "مش قادر تبدأ تكتب بروبوزال. تضبط تايمر 5 دقايق عشان تكتب عناوين بس. تعدي نص ساعة وتلاقيك اندمجت وكملت كتبته كله.",
+        "mistake": "إنك تبص للمشروع كله كتلة واحدة وتستنى الشغف ينزل عليك عشان تبدأ."
+      },
+      "quiz": {
+        "type": "mcq",
+        "correct_index": 1,
+        "en": {
+          "question": "You have been delaying a tedious spreadsheet for 3 days. What is the best way to break the freeze?",
+          "options": [
+            "Wait until midnight when there are no distractions.",
+            "Commit to working on the spreadsheet for just 5 minutes with permission to quit after.",
+            "Force yourself to sit for 4 solid hours without taking any breaks.",
+            "Switch to an easier task like cleaning your inbox."
+          ],
+          "explanation": "A micro-commitment of 5 minutes lowers start-friction, leveraging momentum to help you continue working."
+        },
+        "ar": {
+          "question": "بقالك 3 أيام بتأجل شيت أكسيل رخيم ومتقيل على قلبك. إيه أفضل طريقة تبدأ بيها؟",
+          "options": [
+            "تستنى لنص الليل لما الجو يهدى خالص وميبقاش في تشتيت.",
+            "تتفق مع نفسك تشتغل عليه 5 دقايق بس بالظبط ولك الحق تقفل بعدهم.",
+            "تغصب على نفسك تقعد 4 ساعات متواصلين من غير ما تقوم.",
+            "تسيب الشيت وتروح تنضف الإيميل وتعمل تاسكات سهلة."
+          ],
+          "explanation": "الاتفاق المصغر على 5 دقائق بيقلل خوف العقل من البداية، وبمجرد ما تبدأ بتتحرك المومينتم وبتكمل."
+        }
+      }
+    }
+  ]
+}

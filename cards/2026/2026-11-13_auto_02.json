@@ -1,0 +1,288 @@
+{
+  "schema_version": 1,
+  "batch_id": "2026-11-13_auto_02",
+  "created_at": "2026-11-13T14:05:42.928810+00:00",
+  "source": "gemini-3.5-flash",
+  "cards": [
+    {
+      "id": "2026-11-13_communication_pause-and-bridge",
+      "created_at": "2026-11-13T14:05:42.928810+00:00",
+      "topic": "communication",
+      "tags": [
+        "speaking",
+        "conflict",
+        "listening"
+      ],
+      "level": "beginner",
+      "needs_completion": false,
+      "en": {
+        "title": "Stop competing with interrupters—use the 2-second pause",
+        "hook": "Someone cuts you off in a heated meeting. You talk louder, they talk louder, and suddenly it's a screaming match.",
+        "action": "When interrupted, stop completely. Wait two seconds after they finish, paraphrase their point in five words, then pivot back.",
+        "key_phrase": "I hear your point on [X], and here is how that fits into...",
+        "when": "When someone interrupts you in a meeting or discussion.",
+        "why": "Pausing asserts quiet authority, while acknowledging their point lowers their emotional defensive walls.",
+        "example": "'...so we need to lower—' 'That's too expensive!' (2-sec pause) 'I hear your point on budget, and here is how we offset that expense...'",
+        "mistake": "Talking faster or louder over the interrupter."
+      },
+      "ar": {
+        "title": "لما حد يقاطعك، ما تعليش صوتك.. استخدم وقفة الثانيتين",
+        "hook": "انت بتبسط فكرتك في اجتماع وفجأة حد قاطعك بصوت عالي. بترد عليه بعلو الصوت والاجتماع بيتحول لخناقة.",
+        "action": "أول ما حد يقاطعك، اسكُت خالص. استنى ثانيتين بعد ما يخلص، لخص كلامه في 5 كلمات، وارجع لكلامك تاني.",
+        "key_phrase": "فاهم نقطتك بخصوص [كذا]، وعشان كده...",
+        "when": "لما حد يقاطعك وأنت بتتكلم في اجتماع أو مناقشة.",
+        "why": "السكوت بيدي إيحاء بالسيطرة والهدوء، وتلخيص كلامهم بيمتص هجومهم النفسي.",
+        "example": "'إحنا محتاجين نغير...' 'بس ده غالي أوي!' (سكوت ثانيتين) 'فاهم قلقك من التكلفة، وعشان كده الخطة دي هتوفر...'",
+        "mistake": "إنك تعلي صوتك وتتكلم فوق صوته عشان تسبقه."
+      },
+      "quiz": {
+        "type": "mcq",
+        "correct_index": 1,
+        "en": {
+          "question": "Someone rudely interrupts your presentation with an objection. What is your move?",
+          "options": [
+            "Talk faster to finish your thought before they can speak",
+            "Pause two seconds, validate their point briefly, then continue",
+            "Ignore them completely and keep talking at the same volume",
+            "Ask them why they are being disrespectful"
+          ],
+          "explanation": "Pausing displays composure and summarizing their point neutralizes hostility before you steer back."
+        },
+        "ar": {
+          "question": "حد قاطعك بحدة وأنت بتشرح فكرة في اجتماع. أنسب تصرف تعمل إيه؟",
+          "options": [
+            "تعلي صوتك وتتكلم أسرع عشان تخلص كلامك قبل ما ياخد المايك منك",
+            "تسكت ثانيتين، تأكد إنك سمعت نقطته باختصار، وبعدين تكمل كلامك",
+            "تطنش وجوده وتكمل كلامك بنفس النبرة وكأنه مجمعش",
+            "تسأله في الوش هو ليه بيمارس عليك قلة أدب ومقاطعة"
+          ],
+          "explanation": "السكوت ثانيتين بيبين إنك واثق في نفسك، وتأكيد نقطته بيمتص غضبه ويرجعلك الكنترول."
+        }
+      }
+    },
+    {
+      "id": "2026-11-13_decision_making_ten-ten-ten-rule",
+      "created_at": "2026-11-13T14:05:42.928810+00:00",
+      "topic": "decision_making",
+      "tags": [
+        "clarity",
+        "emotion",
+        "productivity"
+      ],
+      "level": "intermediate",
+      "needs_completion": false,
+      "en": {
+        "title": "Filter impulsive choices using the 10/10/10 framework",
+        "hook": "You're furious about an email and ready to send a fiery reply that could burn a bridge.",
+        "action": "Ask yourself: How will I feel about this choice in 10 minutes? 10 months? 10 years?",
+        "key_phrase": "How will this decision affect me in 10 months?",
+        "when": "Before making emotionally charged or high-anxiety decisions.",
+        "why": "It forces your brain to shift from short-term emotional reactivity to long-term prospective logic.",
+        "example": "Sending an angry email feels great for 10 minutes, feels disastrous in 10 months, and won't matter in 10 years. Decision: Draft it, don't send.",
+        "mistake": "Deciding based on current emotional intensity."
+      },
+      "ar": {
+        "title": "صفّي قراراتك الانفعالية بقاعدة 10/10/10",
+        "hook": "مضايق جداً من إيميل وصلك ومستعد تبعت رد ناري يطير شغلانتك أو يبوظ علاقتك بزميلك.",
+        "action": "اسأل نفسك 3 أسئلة: إحساسي إيه تجاه القرار ده بعد 10 دقائق؟ بعد 10 شهور؟ بعد 10 سنين؟",
+        "key_phrase": "القرار ده هيأثر عليا إزاي بعد 10 شهور؟",
+        "when": "قبل ما تاخد أي قرار وأنت منفعل أو مشدود.",
+        "why": "القاعدة دي بتجبر مخك يخرج من حالة الانفعال اللحظي ويفكر بمنظور مستقبلي أهدى.",
+        "example": "إنك تهزأ زميلك في إيميل هيخليك مبسوط 10 دقايق، بس هينكد عليك حياتك بعد 10 شهور، وما لوش أي قيمة بعد 10 سنين. القرار: اكتب الرد وما تبعتوش.",
+        "mistake": "إنك تاخد قرار سريع لمجرد إنه يريحك نفسياً دلوقتي."
+      },
+      "quiz": {
+        "type": "mcq",
+        "correct_index": 2,
+        "en": {
+          "question": "You want to quit a project immediately because of a frustrating client meeting. How does 10/10/10 help?",
+          "options": [
+            "It reminds you to sleep for 10 hours before deciding",
+            "It divides your decision time into 10-minute intervals",
+            "It projects consequences into 10 minutes, 10 months, and 10 years to neutralize immediate anger",
+            "It makes you ask 10 people for their opinions"
+          ],
+          "explanation": "10/10/10 shifts perspective away from temporary anger to long-term impacts."
+        },
+        "ar": {
+          "question": "متغابي من عميل ورخم ومحتاج تاخد قرار تسيب المشروع حالاً. إزاي قاعدة 10/10/10 هتساعدك؟",
+          "options": [
+            "بتفكرك تنام 10 ساعات قبل ما تاخد أي قرار",
+            "بتقسم وقت التفكير لـ 10 دقايق كل مرة",
+            "بتقيس نتيجة القرار بعد 10 دقايق، 10 شهور، و10 سنين عشان تهدي انفعالك اللحظي",
+            "بتخليك تاخد رأي 10 أفراد من زمايلك"
+          ],
+          "explanation": "القاعدة بتخليك تشوف الصورة الكاملة بدل ما الانفعال اللحظي يتحكم في مستقبلك."
+        }
+      }
+    },
+    {
+      "id": "2026-11-13_leadership_bottom-line-up-front",
+      "created_at": "2026-11-13T14:05:42.928810+00:00",
+      "topic": "leadership",
+      "tags": [
+        "executive",
+        "clarity",
+        "reporting"
+      ],
+      "level": "intermediate",
+      "needs_completion": false,
+      "en": {
+        "title": "Lead status updates with the outcome, not the backstory",
+        "hook": "You start an update with 'So on Tuesday we called vendor X...' and your boss instantly zones out.",
+        "action": "State the final result or key decision in the first sentence, then provide context only if asked.",
+        "key_phrase": "The bottom line is [outcome]. Here are two details why...",
+        "when": "Giving status updates, pitching executives, or writing project emails.",
+        "why": "Busy leaders process information top-down; leading with details signals a lack of strategic focus.",
+        "example": "Instead of detailing 5 calls with suppliers, say: 'We secured a 15% discount on shipping. Here is how we did it...'",
+        "mistake": "Chronologically telling the story of how you arrived at the answer."
+      },
+      "ar": {
+        "title": "ابتدى بالنتيجة قبل المحكيات.. أسلوب الـ BLUF",
+        "hook": "بدأت كلامك مع مديرك بـ 'بص يا فندم يوم الثلاث اللي فات كلمنا المورد...' ولقيت عينيه تسرح منك ومبقاش مركز.",
+        "action": "قول النتيجة النهائية أو القرار في أول جملة بالظبط، وبعدين ادخل في التفاصيل لو طلبت منك.",
+        "key_phrase": "الخلاصة إننا [النتيجة]. والتفاصيل كالتالي...",
+        "when": "لما تدي تحديث لمديرك، أو تبعت إيميل مهم لشخص مشغول.",
+        "why": "المديرين والقيادات تفكيرهم بيحب الخلاصة الأول، سرد التفاصيل من البداية بيحسسهم إنك تائه.",
+        "example": "بدل ما تحكي قصص 5 مكالمات مع موردين، قول: 'قدرنا ناخد خصم 15% على الشحن. ودي الخطوات السريعة اللي عملناها...'",
+        "mistake": "إنك تحكي التفاصيل بالترتيب الزمني من الأول خالص."
+      },
+      "quiz": {
+        "type": "mcq",
+        "correct_index": 0,
+        "en": {
+          "question": "You need to inform your VP about a delay in product launch. What is the BLUF approach?",
+          "options": [
+            "\"The launch is delayed by 2 weeks due to QA testing; here is our recovery plan.\"",
+            "\"Last month our QA team found bugs, so we scheduled three meetings, and then...\"",
+            "\"Everything is going great, but we might have a minor tiny update soon.\"",
+            "Send a 5-page PDF detailing daily bug logs."
+          ],
+          "explanation": "BLUF puts the critical outcome (2-week delay + solution) in sentence one."
+        },
+        "ar": {
+          "question": "محتاج تبلغ مدير الشركة إن إطلاق المنتج هيتأخر. إزاي تطبق أسلوب الـ BLUF؟",
+          "options": [
+            "\"الإطلاق هيتأخر أسبوعين بسبب اختبارات الجودة، وده خطتنا للتعويض.\"",
+            "\"الشهر اللي فات التيم اكتشف مشاكل وقعدنا 3 اجتماعات وبعدها...\"",
+            "\"كل حاجة تمام يا فندم بس احتمال بسيط أوي نغير الميعاد.\"",
+            "تبعت إيميل فيه 5 صفحات شرح مفصل للمشاكل اليومية."
+          ],
+          "explanation": "أسلوب BLUF بيدي النتيجة المباشرة (التأخير + الحل) في أول جملة على طول."
+        }
+      }
+    },
+    {
+      "id": "2026-11-13_learning_feynman-twelve-year-old-test",
+      "created_at": "2026-11-13T14:05:42.928810+00:00",
+      "topic": "learning",
+      "tags": [
+        "mastery",
+        "comprehension",
+        "study"
+      ],
+      "level": "beginner",
+      "needs_completion": false,
+      "en": {
+        "title": "Test real understanding by explaining to a 12-year-old",
+        "hook": "You read three books on blockchain and feel smart—until someone asks you to explain it simply and you freeze.",
+        "action": "Write down the concept using only simple words a 6th grader knows. If you use jargon, you don't understand it yet.",
+        "key_phrase": "Imagine a shared notebook that everyone can see but no one can erase...",
+        "when": "After reading a complex topic, document, or learning a new skill.",
+        "why": "Jargon masks gaps in knowledge; stripping away complexity forces true comprehension.",
+        "example": "Instead of saying 'decentralized immutable ledger', say 'a public notebook where past entries can never be rubbed out.'",
+        "mistake": "Hiding behind technical buzzwords to feel competent."
+      },
+      "ar": {
+        "title": "اختبر فهمك الحقيقي: اشرح الفكرة لطفل في 6 ابتدائي",
+        "hook": "قريت كتابين عن الذكاء الاصطناعي وحاسس إنك برنس، وفجأة حد سألك تشرحهول بأسلوب بسيط، لقيت نفسك اتكعبلت.",
+        "action": "اكتب الفكرة في ورقة باستخدام مصطلحات بسيطة يفهمها طفل في 6 ابتدائي. لو اضطريت تستخدم مصطلحات معقدة، يبقى لسة مافهمتهاش.",
+        "key_phrase": "تخيل كشكول مفتوح للكل، أي حد يقدر يكتب فيه بس محدش يقدر يمسح القديم...",
+        "when": "بعد ما تقرا تقرير معقد، كتاب جديد، أو تتعلم مهارة جديدة.",
+        "why": "المصطلحات الكبيرة بتداري الثغرات اللي في فهمك، التبسيط الشديد هو المقياس الحقيقي للفهم.",
+        "example": "بدل ما تقول 'قاعدة بيانات موزعة مشفرة'، قول: 'كشكول معروض للناس كلها، ماحدش يقدر يقطع منه ورقة بعد ما تنكتب.'",
+        "mistake": "الاستخفاء ورا المصطلحات الإنجليزي أو المعقدة عشان تبان فاهم."
+      },
+      "quiz": {
+        "type": "mcq",
+        "correct_index": 3,
+        "en": {
+          "question": "You want to know if you truly master a new business methodology. What should you do?",
+          "options": [
+            "Memorize the glossary of technical terms",
+            "Re-read the textbook three times",
+            "Present it to your boss using complex charts",
+            "Explain the core mechanism to a non-expert without using industry jargon"
+          ],
+          "explanation": "Explaining complex topics simply reveals whether you grasp the fundamentals or just memorized words."
+        },
+        "ar": {
+          "question": "عاوز تتأكد إنك فهمت طريقة شغل جديدة تماماً مش مجرد حافظها. تعمل إيه؟",
+          "options": [
+            "تحفظ قاموس المصطلحات الإنجليزي الخاصة بالموضوع",
+            "تقرا التقرير 3 مرات ورا بعض",
+            "تعمل عرض تقديمي مليان رسم بياني معقد لمديرك",
+            "تشرح الفكرة الأساسية لشخص بره المجال خالص من غير ما تستخدم مصطلحات معقدة"
+          ],
+          "explanation": "تبسيط الفكرة لشخص بره المجال بيبيّن لو كنت فاهم الجوهر ولا مجرد حافظ كلام."
+        }
+      }
+    },
+    {
+      "id": "2026-11-13_meetings_silent-brainstorming",
+      "created_at": "2026-11-13T14:05:42.928810+00:00",
+      "topic": "meetings",
+      "tags": [
+        "facilitation",
+        "ideas",
+        "collaboration"
+      ],
+      "level": "advanced",
+      "needs_completion": false,
+      "en": {
+        "title": "Replace noisy brainstorming with 3 minutes of silent writing",
+        "hook": "You call a brainstorming session, and within 30 seconds the extroverts take over while the quiet geniuses stay silent.",
+        "action": "Give everyone sticky notes. Require 3 minutes of total silence where each person writes their ideas before anyone speaks.",
+        "key_phrase": "Before we discuss out loud, everyone gets 3 minutes of silence to write 3 ideas.",
+        "when": "Starting a group problem-solving or creative meeting.",
+        "why": "Silence prevents anchored thinking and gives introverts equal airspace to contribute high-quality ideas.",
+        "example": "'Okay team, zero talking for 3 minutes. Put 3 ideas on sticky notes. Then we'll put them all on the wall together.'",
+        "mistake": "Asking 'Any ideas?' out loud right away, allowing first-speaker bias."
+      },
+      "ar": {
+        "title": "بدل عصف ذهني بالصوت.. جرب 3 دقائق كتابة في صمت",
+        "hook": "جمعت التيم عشان تفكروا في حل، وفي أول 30 ثانية أكتر حد بيحب يتكلم مسك القاعدة، والناس المبدعة الهادية سكتت خالص.",
+        "action": "وزع ورق صغير، واطلب 3 دقائق صمت تام، كل واحد يكتب أفكاره بنفسه قبل ما أي حد يفتح بقه.",
+        "key_phrase": "قبل ما نتكلم بصوت عالي، قدامنا 3 دقايق صمت كل واحد يكتب 3 أفكار في ورقة.",
+        "when": "في بداية أي اجتماع عاوز تطلع منه بأفكار حقيقية ومبتكرة.",
+        "why": "السكوت بيمنع إن أول فكرة تقال تسيطر على الباقي، وبيدي مساحة للهادئين يطلعوا أحسن ما عندهم.",
+        "example": "'يا شباب، 3 دقايق صمت تام، كل واحد يكتب 3 حلول في ورق، وبعدها هنجمع كل الورق على السبورة.'",
+        "mistake": "إنك تسأل 'مين عنده أفكار؟' بصوت عالي، فتسيب المجال لأعلى صوت في الأوضة."
+      },
+      "quiz": {
+        "type": "mcq",
+        "correct_index": 1,
+        "en": {
+          "question": "How do you stop a dominant team member from hogging all ideas during a brainstorm?",
+          "options": [
+            "Ask them to leave the room for 15 minutes",
+            "Enforce a 3-minute silent writing phase before any verbal discussion starts",
+            "Debate their ideas immediately to prove them wrong",
+            "Cancel the meeting and work solo"
+          ],
+          "explanation": "Silent writing creates an equal playing field before extroverts steer the conversation."
+        },
+        "ar": {
+          "question": "إزاي تمنع الشخص الأكثر كلاماً في الفريق إنه يستولي على اجتماع الأفكار (العصف الذهني)؟",
+          "options": [
+            "تطلب منه يخرج برة الأوضة 15 دقيقة",
+            "تطبق مرحلة كتابة في صمت لمدة 3 دقايق قبل ما أي حد يتكلم",
+            "تدخل معاه في جدال أول ما يتكلم عشان تثبت إن فكرته غلط",
+            "تلغي الاجتماع وتشتغل لوحدك"
+          ],
+          "explanation": "الكتابة في صمت بتخلي كل الأفكار تنزل على الورق بالتساوي من غير ما نفوذ أعلى صوت يسيطر على الاجتماع."
+        }
+      }
+    }
+  ]
+}

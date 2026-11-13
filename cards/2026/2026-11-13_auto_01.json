@@ -1,0 +1,293 @@
+{
+  "schema_version": 1,
+  "batch_id": "2026-11-13_auto_01",
+  "created_at": "2026-11-13T13:59:27.533488+00:00",
+  "source": "gemini-3.5-flash",
+  "cards": [
+    {
+      "id": "2026-11-13_learning_feynman-technique-toddler",
+      "created_at": "2026-11-13T13:59:27.533488+00:00",
+      "topic": "learning",
+      "tags": [
+        "mental-models",
+        "comprehension",
+        "study-hacks",
+        "memory"
+      ],
+      "level": "beginner",
+      "needs_completion": false,
+      "en": {
+        "title": "Explain concepts to a child to find your blind spots",
+        "hook": "You read a 300-page book and feel smart, until someone asks: 'So what was it about?' and you freeze.",
+        "action": "Explain the core idea in plain language as if speaking to a 10-year-old. If you use jargon, stop and rewrite it simply.",
+        "key_phrase": "If I can't explain this to a 10-year-old, I don't really understand it yet.",
+        "when": "Right after finishing a chapter, article, or online course module.",
+        "why": "Simple translation forces your brain to clarify concepts and immediately exposes hidden knowledge gaps.",
+        "example": "Instead of saying 'We use asynchronous event loops for non-blocking I/O', say 'The waiter takes your order, hands it to the kitchen, and serves others while your food cooks.'",
+        "mistake": "Re-reading highlighted text repeatedly, which creates a false sense of mastery without real comprehension."
+      },
+      "ar": {
+        "title": "اشرح الفكرة لطفل عشان تكتشف اللي مش فاهمه",
+        "hook": "بتقرأ كتاب كامل وتفتكر إنك خلاص فهمته، لحد ما حد يسألك: 'هو كان بيتكلم عن إيه؟' وتلاقي نفسك ساكت ومش عارف تقول جملتين مفيدين.",
+        "action": "اشرح الفكرة الأساسية بأسلوب بسيط جداً كأنك بتكلم طفل عنده 10 سنين. لو لقيت نفسك بتستخدم مصطلحات معقدة، اقف وبسطها لروابط سريرية بسيطة.",
+        "key_phrase": "لو مش عارف اشرح ده لطفل عنده 10 سنين، يبقى أنا لسه مابفهموش كفاية.",
+        "when": "أول ما تخلص فصل من كتاب، أو مقال، أو جزء من كورس.",
+        "why": "التبسيط بيكبر دماغك يجمع الفكرة من غير ما يستخبى ورا مصطلحات مكلكعة، وبيكشف نقط الضعف فوراً.",
+        "example": "بدل ما تقول 'إحنا بنستخدم إشارات غير متزامنة عشان نسرع النظام'، قول 'الويتر بياخد طلبك يوديه المطبخ، ويروح يخدم زباين تانيين عقبال ما أكلك يستوي'.",
+        "mistake": "إنك تقعد تعيد قراءة السطور المظلمة وخلاص، وده بيدي إحساس مزيف إنك فاهم وأنت حافظ."
+      },
+      "quiz": {
+        "type": "mcq",
+        "correct_index": 1,
+        "en": {
+          "question": "You just read a complex chapter on inflation. What is the best test to confirm you understood it?",
+          "options": [
+            "Highlight the main definitions in red ink.",
+            "Explain how inflation works to a friend using an everyday market shopping scenario without technical terms.",
+            "Re-read the chapter summary three times fast.",
+            "Memorize the exact textbook definition word for word."
+          ],
+          "explanation": "Translating complex ideas into simple, real-world analogies forces core understanding, whereas highlighting or memorizing jargon only tests recognition."
+        },
+        "ar": {
+          "question": "قريت فصل معقد عن التضخم الاقتصادي. إيه أحسن اختبار يثبت إنك فهمته صح؟",
+          "options": [
+            "تعلم بالماركر الأحمر على التعاريف المهمة.",
+            "تشرح فكرة التضخم لصاحبك بمثال بسيط من السوق من غير ما تستخدم مصطلحات معقدة.",
+            "تعيد قراءة ملخص الفصل ثلاث مرات بسرعة.",
+            "تحفظ التعريف النصي اللي مكتوب في الكتاب بالحرف."
+          ],
+          "explanation": "إنك تشرح الفكرة ببساطة وبأمثلة عامية بيكشف لو كنت فاهم الجوهر، إنما الحفظ أو التظليم بيديك إحساس خادع بالفهم."
+        }
+      }
+    },
+    {
+      "id": "2026-11-13_productivity_two-minute-rule-modified",
+      "created_at": "2026-11-13T13:59:27.533488+00:00",
+      "topic": "productivity",
+      "tags": [
+        "procrastination",
+        "focus",
+        "habits",
+        "time-management"
+      ],
+      "level": "beginner",
+      "needs_completion": false,
+      "en": {
+        "title": "Use the 2-minute micro-start to break heavy task inertia",
+        "hook": "Writing a 10-page report feels so daunting at 9 AM that you spend two hours sorting your emails instead.",
+        "action": "Commit to working on the dreaded task for exactly two minutes. Give yourself full permission to stop when the timer rings.",
+        "key_phrase": "I am just going to open the document and write for two minutes.",
+        "when": "Whenever you catch yourself procrastinating on a large or boring task.",
+        "why": "Friction is highest at initiation. Once you cross the starting threshold, cognitive momentum takes over.",
+        "example": "Don't promise to write the entire business proposal. Promise to open Google Docs and type one ugly sentence. 80% of the time, you will keep going.",
+        "mistake": "Waiting for the perfect burst of motivation or blocking out a terrifying 4-hour slot."
+      },
+      "ar": {
+        "title": "استخدم قانون الدقيقتين عشان تكسر كسوف البداية",
+        "hook": "كتابة تقرير من 10 صفحات بتحسس تقيلة أوي الساعة 9 الصبح، فبتلاقي نفسك بتقضي ساعتين بترتب الإيميلات عشان تخلع.",
+        "action": "اوعد نفسك إنك هتشتغل على المظلوم ده لمدة دقيقتين بس بالظبط. وادّي لنفسك إذن كامل إنك تقفل وتقوم أول ما المؤقت يرن.",
+        "key_phrase": "أنا هفتح الفايل وأكتب فيه دقيقتين بس ومش مطلوب مني أكتر من كده.",
+        "when": "أول ما تلاقي نفسك بتأجل شغلانة كبيرة أو ممله وخايف تبدأ فيها.",
+        "why": "أكبر مقاومة بتكون في أول خطوة. بمجرد ما تبدأ وتكسر الحاجز، عقلك بيكمل تلقائياً بسبب الدفع الذاتي.",
+        "example": "ماتوعدش نفسك إنك تخلص البروبوزال كلو. اوعدها تفتح الصفحة وتكتب جملة واحدة حتى لو وحشة. 80% من المرات هتلاقي نفسك كملت.",
+        "mistake": "إنك تقعد تستنى المزاج أو الشغف يجي، أو تحجز 4 ساعات كاملين وتخوف نفسك."
+      },
+      "quiz": {
+        "type": "mcq",
+        "correct_index": 2,
+        "en": {
+          "question": "You've been procrastinating on starting a massive quarterly analysis for 3 days. What is the most effective immediate action?",
+          "options": [
+            "Wait until tomorrow morning when your mind is fresh.",
+            "Schedule a uninterrupted 5-hour work block for Saturday.",
+            "Set a timer for 2 minutes, open the spreadsheet, and input just one column of data.",
+            "Drink another coffee and browse motivation quotes."
+          ],
+          "explanation": "Lowering the barrier to entry to a tiny 2-minute effort bypasses brain resistance and builds momentum to keep going."
+        },
+        "ar": {
+          "question": "بقالك 3 أيام بتأجل بداية تحليل البيانات السنوي لأنه كبير جداً. إيه أكتر تصرف صح تصرفه دلوقتي؟",
+          "options": [
+            "تستنى لبكرة الصبح لما تكون رايق ومصحصح.",
+            "تحجز 5 ساعات كاملين يوم السبت وتغلق التليفون.",
+            "تظبط تايمر على دقيقتين، تفتح الشيت وتكتب صف واحد بس من البيانات.",
+            "تشرب فنجان قهوة تاني وتتفرج على فيديوهات تحفيزية."
+          ],
+          "explanation": "تقليل المجهود المطلوب لـ دقيقتين بس بيهرب من مقاومة المخ، وبيخليك تبدأ وتاخد زقّة الحركة بسهولة."
+        }
+      }
+    },
+    {
+      "id": "2026-11-13_psychology_spotlight-effect-reset",
+      "created_at": "2026-11-13T13:59:27.533488+00:00",
+      "topic": "psychology",
+      "tags": [
+        "confidence",
+        "social-skills",
+        "mindset",
+        "public-speaking"
+      ],
+      "level": "intermediate",
+      "needs_completion": false,
+      "en": {
+        "title": "Use a swift focus reset when you fumble in public",
+        "hook": "You mispronounced a key word in front of 20 colleagues and spent the next hour cringing inside.",
+        "action": "Acknowledge the mistake neutrally in under 3 seconds, state the fix, and instantly re-direct attention back to the topic.",
+        "key_phrase": "My mistake. Here is the correct figure, let's move forward.",
+        "when": "Immediately after making a minor slip, verbal stumble, or small error in a group setting.",
+        "why": "The Spotlight Effect makes you overestimate how much people care. Over-apologizing draws attention; fast resets signals confidence.",
+        "example": "You cited last year's sales numbers by mistake. Don't spend 2 minutes apologizing. Say: 'Correction, that's $50k for this year. Moving to slide three...' and continue.",
+        "mistake": "Apologizing repeatedly, which forces everyone to focus on your mistake longer than they would have."
+      },
+      "ar": {
+        "title": "اتعلم تتجاوز الغلطة بسرعة قدام الناس من غير كـسوف",
+        "hook": "غلطت في كلمة أو رقم قدام 20 واحد في الاجتماع، وقضيت باقي اليوم بتاكل في نفسك ومكسوف من الحركة.",
+        "action": "صلح الغلطة في 3 ثواني ببرود تام، وادخل في الموضوع اللي بعده على طول من غير ما تعمل دراما.",
+        "key_phrase": "غلطة مني، الرقم الصح هو كذا.. يلا نكمل النقطه اللي بعدها.",
+        "when": "أول ما تقع في غلطة بسيطة أو تهنج في الكلام قدام مجموعة في شغل أو بريزينتيشن.",
+        "why": "تأثير الكشاف (Spotlight Effect) بيخليك تفتكر إن الناس مركزة معاك، بينما هم نسيوا خلاص. كثرة الاعتذار هي اللي بتفكرهم.",
+        "example": "قلت رقم المبيعات غلط. بدل ما تقعد تعتذر وتبرر دقيقتين، قول: 'عفواً، قصدي 50 ألف السنة دي. نيجى بقى للنقطة اللي بعدها...' وكمل عادي.",
+        "mistake": "إنك تفضل تعتذر كذا مرة وتعمل موضوع كبير من غلطة محدش كان هيركز فيها."
+      },
+      "quiz": {
+        "type": "mcq",
+        "correct_index": 0,
+        "en": {
+          "question": "During a presentation, your slide deck crashes and you forget your sentence. What should you do?",
+          "options": [
+            "Smile, say 'Technical pause. As I was saying about revenue...', and continue speaking.",
+            "Apologize endlessly for 2 minutes explaining your laptop is old.",
+            "Freeze and wait silently for someone to fix the projector.",
+            "Cancel the presentation and offer to send an email later."
+          ],
+          "explanation": "Acknowledging the hiccup calmly and maintaining focus keeps the audience engaged without amplifying the disruption."
+        },
+        "ar": {
+          "question": "وأنت بتقدم العرض قدام الإدارة، البريزينتيشن قفلت وفقدت الشغف والكلمات. تعمل إيه؟",
+          "options": [
+            "تأبتسم وتقول 'عطل فني بسيط، زي ما كنا بنقول عن الأرباح...' وتكمل كلامك عادي.",
+            "تقعد تعتذر لمدة دقيقتين وتطول في شرح إن اللابتوب قديم وبطيء.",
+            "تسكت خالص وتستنى لحد ما حد يجي يصلح الجهاز.",
+            "تلغي الاجتماع وتقولهم هبعتلكم الإيميل بعدين."
+          ],
+          "explanation": "الهدوء والتجاوز السريع بيبين ثقتك في نفسك، وبيخلي الناس تركز مع كلامك مش مع المشكلة التقنية."
+        }
+      }
+    },
+    {
+      "id": "2026-11-13_business_skin-in-the-game-pricing",
+      "created_at": "2026-11-13T13:59:27.533488+00:00",
+      "topic": "business",
+      "tags": [
+        "pricing",
+        "negotiation",
+        "sales",
+        "freelancing"
+      ],
+      "level": "intermediate",
+      "needs_completion": false,
+      "en": {
+        "title": "Offer performance-tied pricing instead of discounting",
+        "hook": "A prospective client loves your proposal but demands an instant 30% discount before signing.",
+        "action": "Protect your baseline fee, but offer a lower upfront rate paired with a success bonus when defined targets are met.",
+        "key_phrase": "I can't discount my rate, but I can lower the upfront cost if we add a outcome-based bonus.",
+        "when": "When a client pushes hard for a discount on value-driven projects.",
+        "why": "Slashing prices destroys perceived value. Performance pricing signals absolute confidence in your ability to deliver ROI.",
+        "example": "Client: 'Can you do this $10k project for $7k?' You: 'My fee reflects the output. But we can do $7k upfront, plus $4k once we hit a 20% conversion increase.'",
+        "mistake": "Giving away flat discounts without modifying project scope or securing alternative upside."
+      },
+      "ar": {
+        "title": "اربط جزء من السعر بالنتائج بدل ما تدي خصم مباشر",
+        "hook": "العميل عاجبه العرض جداً، بس قبل ما يوقع طلب منك خصم 30% فجأة وبدون مقدمات.",
+        "action": "حافظ على قيمتك، واعرض عليه يقلل المقدم شوية مقابل بونص ياخده شغل لما تحققوله الأهداف المتفق عليها.",
+        "key_phrase": "صعب أنزل في السعر، بس ممكن ننزل الـ Upfront ونربط باقي المبلغ بالـ KPI لما نحقق الهدف.",
+        "when": "لما العميل يضغط عليك جامد عشان تدي خصم في مشروع ليه مخرجات واضحة.",
+        "why": "الخصم المباشر بيقلل من قيمتك في نظر العميل. لكن ربط السعر بالنتيجة بيبين إنك واثق جداً من شغل شغل وشاطر.",
+        "example": "العميل: 'المشروع بـ 100 ألف، ينفع نعمله بـ 70؟' أنت: 'السعر بيعكس الجودة، بس ممكن نخليه 70 ألف دلوقتي + 40 ألف لما نرفع المبيعات بنسبة 20%'",
+        "mistake": "إنك تنزل في السعر فوراً من غير ما تقلل حجم الشغل أو تاخد ميزة تانية قصاد الخصم."
+      },
+      "quiz": {
+        "type": "mcq",
+        "correct_index": 3,
+        "en": {
+          "question": "A client says: 'Your $5,000 marketing audit is too expensive, cut it to $3,500 and we deal.' What is the best response?",
+          "options": [
+            "Accept immediately so you don't lose the deal.",
+            "Reject them rudely and tell them to find someone cheaper.",
+            "Agree to $3,500 but keep all original deliverables the same.",
+            "Offer $3,500 for a scaled-down scope, or $3,500 upfront + $2,500 bonus upon reaching the lead target."
+          ],
+          "explanation": "Protecting your pricing structure by adjusting scope or introducing outcome bonuses maintains high perceived value and protects profit margins."
+        },
+        "ar": {
+          "question": "عميل قالك: 'خدمة الاستشارات بـ 50 ألف غالية، خليها 35 ألف ونمضي دلوقتي'. أفضل رد إيه؟",
+          "options": [
+            "توفق فوراً عشان خايف الصفقة تضيع منك.",
+            "ترفض بأسلوب هجومي وتقوله دور على حد أرخص.",
+            "توافق على 35 ألف وتقدم نفس الخدمات كاملة زي ما هي.",
+            "تقترح تقليل الخدمات لتناسب 35 ألف، أو 35 ألف مقدم + 20 ألف بونص لما نحقق هدف المبيعات."
+          ],
+          "explanation": "ربط السعر بالحجم أو النتيجة بيحافظ على قيمتك وسعرك في السوق بدلاً من تقليل قيمتك مجاناً."
+        }
+      }
+    },
+    {
+      "id": "2026-11-13_career_brag-document-habit",
+      "created_at": "2026-11-13T13:59:27.533488+00:00",
+      "topic": "career",
+      "tags": [
+        "promotions",
+        "career-growth",
+        "self-advocacy",
+        "management"
+      ],
+      "level": "intermediate",
+      "needs_completion": false,
+      "en": {
+        "title": "Keep a weekly brag document to land your next promotion",
+        "hook": "Annual performance review season arrives and you suddenly can't remember a single achievement from six months ago.",
+        "action": "Spend 3 minutes every Friday logging wins, metric improvements, crisis fixes, and positive emails in a private doc.",
+        "key_phrase": "Here is the log of the 5 major outcomes my initiatives delivered over the past two quarters.",
+        "when": "Every Friday afternoon, and before one-on-one review meetings with your manager.",
+        "why": "Managers experience recency bias. Concrete, dated metrics replace vague memories and force fair evaluation.",
+        "example": "Don't say: 'I worked really hard this year.' Say: 'In Q2, I automated reporting which saved the team 12 hours weekly and cut error rates by 15%.'",
+        "mistake": "Relying on your memory or assuming your manager keeps track of your everyday achievements."
+      },
+      "ar": {
+        "title": "اعمل وثيقة إنجازات أسبوعية عشان تضمن الترقية",
+        "hook": "معاد التقييم السنوي يجي، وتلاقي نفسك مش فاكر أي إنجاز عملته من 6 شهور فاتوا وتطلع فاضي الإيدين.",
+        "action": "خصص 3 دقائق كل يوم جمعة أو خميس واكتب في ملف خاص: الأرقام اللي حسنتها، المشاكل اللي حلّيتها، وإيميلات الشكر.",
+        "key_phrase": "ده ملخص سريع للأرقام والإنجازات اللي حققتها في آخر 6 شهور.",
+        "when": "كل نهاية أسبوع، وقبل اجتماعات التقييم أو مناقشة المرتب مع مديرك.",
+        "why": "المديرين بينسوا وبيفتكروا آخر أسبوعين بس (Recency Bias). البيانات والأرقام الموثقة بتجبرهم يقدروا مجهودك صح.",
+        "example": "بدل ما تقول: 'أنا تعبت أوي السنة دي'، قول: 'في الربع التاني، أنا اختصرت خطوات الشغل ووفرت على الفريق 12 ساعة أسبوعياً'.",
+        "mistake": "إنك تعتمد على ذاكرتك أو تفترض إن مديرك مركز ومتابع كل الإنجازات اللي بتعملها أول بأول."
+      },
+      "quiz": {
+        "type": "mcq",
+        "correct_index": 1,
+        "en": {
+          "question": "You are preparing for your annual salary review. How should you present your contributions?",
+          "options": [
+            "Explain that inflation has risen and you need more money.",
+            "Present a documented list of specific projects, metrics improved, and time saved across the year.",
+            "Tell your boss how many hours of overtime you sat in the office.",
+            "Say you did a great job and ask them to choose a fair raise percentage."
+          ],
+          "explanation": "Data-backed results clearly demonstrate ROI to the business, making your raise request objective and hard to dismiss."
+        },
+        "ar": {
+          "question": "بتستعد لاجتماع تقييم المرتب السنوي. إيه أفضل طريقة تعرض بيها شغلك؟",
+          "options": [
+            "تقول إن أسعار المعيشة زادت وأنت محتاج زيادة عشان الظروف.",
+            "تعرض قائمة موثقة بالمشاريع بالأرقام، والوقت والفلوس اللي وفرتها للشركة على مدار السنة.",
+            "تقول لمديرك عدد الساعات الإضافية اللي قعدتها في المكتب.",
+            "تقول إنك عملت شغل عالي وتطلب منه هو يحدد الزيادة المناسبة."
+          ],
+          "explanation": "عرض النتائج بالأرقام والمستندات بيثبت قيمتك ومساهمتك في أرباح الشركة، وده بيكلي طلب الزيادة مبرر وقوي."
+        }
+      }
+    }
+  ]
+}

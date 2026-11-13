@@ -1,5 +1,370 @@
 [
   {
+    "id": "2026-11-13_productivity_five-minute-starter",
+    "number": 40,
+    "patch_number": 8,
+    "topic": "productivity",
+    "level": "beginner",
+    "tags": [
+      "procrastination",
+      "focus",
+      "habits"
+    ],
+    "created_at": "2026-11-13T14:14:19.383945+00:00",
+    "file": "cards/2026/2026-11-13_auto_03.json",
+    "en": {
+      "title": "Commit to Just 5 Minutes to Overcome Task Inertia",
+      "hook": "Staring at a massive report and suddenly feeling the urge to clean your desk? That's start-friction.",
+      "key_phrase": "I'll work on this file for 5 minutes only, then I can stop."
+    },
+    "ar": {
+      "title": "اشتغل 5 دقائق بس عشان تكسر تسويف المهام الصعبة",
+      "hook": "كل ما تفتح تقرير كبير تلاقي نفسك فجأة عاوز تنضف المكتب؟ ده التردد بتاع البداية.",
+      "key_phrase": "أنا هفتح الملف ده لمدة 5 دقائق بس، وبعدها هقفل عادي."
+    }
+  },
+  {
+    "id": "2026-11-13_pricing_decoy-tier-strategy",
+    "number": 39,
+    "patch_number": 8,
+    "topic": "pricing",
+    "level": "intermediate",
+    "tags": [
+      "anchoring",
+      "sales",
+      "strategy"
+    ],
+    "created_at": "2026-11-13T14:14:19.383945+00:00",
+    "file": "cards/2026/2026-11-13_auto_03.json",
+    "en": {
+      "title": "Add a Decoy Package to Sell Your Core Offer",
+      "hook": "Struggling to get clients to buy your standard package? They might just lack a frame of reference.",
+      "key_phrase": "Most clients choose Tier B because it offers 90% of Tier C at half the cost."
+    },
+    "ar": {
+      "title": "حط باقة غالية قوي عشان تبيع الباقة الوسطانية",
+      "hook": "محتار ليه العملاء بيستغلوا باقتك الرئيسية؟ الغالبية مش عارفين يقارنوا قيمتها بإيه.",
+      "key_phrase": "أغلب العملاء بيختاروا الباقة 'ب' عشان فيها 90% من ميزات 'ج' وبنص السعر."
+    }
+  },
+  {
+    "id": "2026-11-13_persuasion_freedom-of-choice",
+    "number": 38,
+    "patch_number": 8,
+    "topic": "persuasion",
+    "level": "beginner",
+    "tags": [
+      "influence",
+      "communication",
+      "psychology"
+    ],
+    "created_at": "2026-11-13T14:14:19.383945+00:00",
+    "file": "cards/2026/2026-11-13_auto_03.json",
+    "en": {
+      "title": "End Requests with 'But You Are Free to Say No'",
+      "hook": "People hate feeling cornered. The moment you push hard, their mental defenses immediately block you.",
+      "key_phrase": "Take your time, but of course you are completely free to say no."
+    },
+    "ar": {
+      "title": "أنهي طلبك بـ 'براحتك خالص طبعاً'",
+      "hook": "محدش بيحب يحس إنه مزنوق في زاوية. أول ما تضغط على حد، دفاعاته بتتفعل فوراً.",
+      "key_phrase": "فكر في الموضوع براحتك، وطبعاً ليك مطلق الحرية ترفض."
+    }
+  },
+  {
+    "id": "2026-11-13_negotiation_label-their-hesitation",
+    "number": 37,
+    "patch_number": 8,
+    "topic": "negotiation",
+    "level": "intermediate",
+    "tags": [
+      "tactics",
+      "psychology",
+      "sales"
+    ],
+    "created_at": "2026-11-13T14:14:19.383945+00:00",
+    "file": "cards/2026/2026-11-13_auto_03.json",
+    "en": {
+      "title": "Label Hesitation to Break Deadlocks",
+      "hook": "The client goes silent right after hearing your quote. Demanding an immediate answer makes them defensive.",
+      "key_phrase": "It seems like you have some reservations about this timeline."
+    },
+    "ar": {
+      "title": "سمّي قلق العميل عشان تفك الزنقة في التفاوض",
+      "hook": "العميل سكت فجأة بعد ما سمع السعر. لو ضغطت عليه هيقفل منك أكتر.",
+      "key_phrase": "شكله كده عندك تحفظ على وقت التسليم؟"
+    }
+  },
+  {
+    "id": "2026-11-13_money_hourly-rate-test",
+    "number": 36,
+    "patch_number": 8,
+    "topic": "money",
+    "level": "beginner",
+    "tags": [
+      "spending",
+      "budgeting",
+      "mindset"
+    ],
+    "created_at": "2026-11-13T14:14:19.383945+00:00",
+    "file": "cards/2026/2026-11-13_auto_03.json",
+    "en": {
+      "title": "Convert Prices Into Hours Worked Before Buying",
+      "hook": "You see a $200 jacket on sale and feel rich. But what if it costs 10 hours of desk fatigue?",
+      "key_phrase": "Is this purchase worth 10 hours of my desk job?"
+    },
+    "ar": {
+      "title": "احسب سعر أي حاجة بساعات شغلك",
+      "hook": "بتشوف جاكيت بـ 2000 جنيه وتحس إنه فرصة، بس هل فكرت إنه بيكلفك 3 أيام تعب في المكتب؟",
+      "key_phrase": "هل الحاجة دي تستاهل 15 ساعة شغل من عمري؟"
+    }
+  },
+  {
+    "id": "2026-11-13_meetings_silent-brainstorming",
+    "number": 35,
+    "patch_number": 7,
+    "topic": "meetings",
+    "level": "advanced",
+    "tags": [
+      "facilitation",
+      "ideas",
+      "collaboration"
+    ],
+    "created_at": "2026-11-13T14:05:42.928810+00:00",
+    "file": "cards/2026/2026-11-13_auto_02.json",
+    "en": {
+      "title": "Replace noisy brainstorming with 3 minutes of silent writing",
+      "hook": "You call a brainstorming session, and within 30 seconds the extroverts take over while the quiet geniuses stay silent.",
+      "key_phrase": "Before we discuss out loud, everyone gets 3 minutes of silence to write 3 ideas."
+    },
+    "ar": {
+      "title": "بدل عصف ذهني بالصوت.. جرب 3 دقائق كتابة في صمت",
+      "hook": "جمعت التيم عشان تفكروا في حل، وفي أول 30 ثانية أكتر حد بيحب يتكلم مسك القاعدة، والناس المبدعة الهادية سكتت خالص.",
+      "key_phrase": "قبل ما نتكلم بصوت عالي، قدامنا 3 دقايق صمت كل واحد يكتب 3 أفكار في ورقة."
+    }
+  },
+  {
+    "id": "2026-11-13_learning_feynman-twelve-year-old-test",
+    "number": 34,
+    "patch_number": 7,
+    "topic": "learning",
+    "level": "beginner",
+    "tags": [
+      "mastery",
+      "comprehension",
+      "study"
+    ],
+    "created_at": "2026-11-13T14:05:42.928810+00:00",
+    "file": "cards/2026/2026-11-13_auto_02.json",
+    "en": {
+      "title": "Test real understanding by explaining to a 12-year-old",
+      "hook": "You read three books on blockchain and feel smart—until someone asks you to explain it simply and you freeze.",
+      "key_phrase": "Imagine a shared notebook that everyone can see but no one can erase..."
+    },
+    "ar": {
+      "title": "اختبر فهمك الحقيقي: اشرح الفكرة لطفل في 6 ابتدائي",
+      "hook": "قريت كتابين عن الذكاء الاصطناعي وحاسس إنك برنس، وفجأة حد سألك تشرحهول بأسلوب بسيط، لقيت نفسك اتكعبلت.",
+      "key_phrase": "تخيل كشكول مفتوح للكل، أي حد يقدر يكتب فيه بس محدش يقدر يمسح القديم..."
+    }
+  },
+  {
+    "id": "2026-11-13_leadership_bottom-line-up-front",
+    "number": 33,
+    "patch_number": 7,
+    "topic": "leadership",
+    "level": "intermediate",
+    "tags": [
+      "executive",
+      "clarity",
+      "reporting"
+    ],
+    "created_at": "2026-11-13T14:05:42.928810+00:00",
+    "file": "cards/2026/2026-11-13_auto_02.json",
+    "en": {
+      "title": "Lead status updates with the outcome, not the backstory",
+      "hook": "You start an update with 'So on Tuesday we called vendor X...' and your boss instantly zones out.",
+      "key_phrase": "The bottom line is [outcome]. Here are two details why..."
+    },
+    "ar": {
+      "title": "ابتدى بالنتيجة قبل المحكيات.. أسلوب الـ BLUF",
+      "hook": "بدأت كلامك مع مديرك بـ 'بص يا فندم يوم الثلاث اللي فات كلمنا المورد...' ولقيت عينيه تسرح منك ومبقاش مركز.",
+      "key_phrase": "الخلاصة إننا [النتيجة]. والتفاصيل كالتالي..."
+    }
+  },
+  {
+    "id": "2026-11-13_decision_making_ten-ten-ten-rule",
+    "number": 32,
+    "patch_number": 7,
+    "topic": "decision_making",
+    "level": "intermediate",
+    "tags": [
+      "clarity",
+      "emotion",
+      "productivity"
+    ],
+    "created_at": "2026-11-13T14:05:42.928810+00:00",
+    "file": "cards/2026/2026-11-13_auto_02.json",
+    "en": {
+      "title": "Filter impulsive choices using the 10/10/10 framework",
+      "hook": "You're furious about an email and ready to send a fiery reply that could burn a bridge.",
+      "key_phrase": "How will this decision affect me in 10 months?"
+    },
+    "ar": {
+      "title": "صفّي قراراتك الانفعالية بقاعدة 10/10/10",
+      "hook": "مضايق جداً من إيميل وصلك ومستعد تبعت رد ناري يطير شغلانتك أو يبوظ علاقتك بزميلك.",
+      "key_phrase": "القرار ده هيأثر عليا إزاي بعد 10 شهور؟"
+    }
+  },
+  {
+    "id": "2026-11-13_communication_pause-and-bridge",
+    "number": 31,
+    "patch_number": 7,
+    "topic": "communication",
+    "level": "beginner",
+    "tags": [
+      "speaking",
+      "conflict",
+      "listening"
+    ],
+    "created_at": "2026-11-13T14:05:42.928810+00:00",
+    "file": "cards/2026/2026-11-13_auto_02.json",
+    "en": {
+      "title": "Stop competing with interrupters—use the 2-second pause",
+      "hook": "Someone cuts you off in a heated meeting. You talk louder, they talk louder, and suddenly it's a screaming match.",
+      "key_phrase": "I hear your point on [X], and here is how that fits into..."
+    },
+    "ar": {
+      "title": "لما حد يقاطعك، ما تعليش صوتك.. استخدم وقفة الثانيتين",
+      "hook": "انت بتبسط فكرتك في اجتماع وفجأة حد قاطعك بصوت عالي. بترد عليه بعلو الصوت والاجتماع بيتحول لخناقة.",
+      "key_phrase": "فاهم نقطتك بخصوص [كذا]، وعشان كده..."
+    }
+  },
+  {
+    "id": "2026-11-13_psychology_spotlight-effect-reset",
+    "number": 30,
+    "patch_number": 6,
+    "topic": "psychology",
+    "level": "intermediate",
+    "tags": [
+      "confidence",
+      "social-skills",
+      "mindset",
+      "public-speaking"
+    ],
+    "created_at": "2026-11-13T13:59:27.533488+00:00",
+    "file": "cards/2026/2026-11-13_auto_01.json",
+    "en": {
+      "title": "Use a swift focus reset when you fumble in public",
+      "hook": "You mispronounced a key word in front of 20 colleagues and spent the next hour cringing inside.",
+      "key_phrase": "My mistake. Here is the correct figure, let's move forward."
+    },
+    "ar": {
+      "title": "اتعلم تتجاوز الغلطة بسرعة قدام الناس من غير كـسوف",
+      "hook": "غلطت في كلمة أو رقم قدام 20 واحد في الاجتماع، وقضيت باقي اليوم بتاكل في نفسك ومكسوف من الحركة.",
+      "key_phrase": "غلطة مني، الرقم الصح هو كذا.. يلا نكمل النقطه اللي بعدها."
+    }
+  },
+  {
+    "id": "2026-11-13_productivity_two-minute-rule-modified",
+    "number": 29,
+    "patch_number": 6,
+    "topic": "productivity",
+    "level": "beginner",
+    "tags": [
+      "procrastination",
+      "focus",
+      "habits",
+      "time-management"
+    ],
+    "created_at": "2026-11-13T13:59:27.533488+00:00",
+    "file": "cards/2026/2026-11-13_auto_01.json",
+    "en": {
+      "title": "Use the 2-minute micro-start to break heavy task inertia",
+      "hook": "Writing a 10-page report feels so daunting at 9 AM that you spend two hours sorting your emails instead.",
+      "key_phrase": "I am just going to open the document and write for two minutes."
+    },
+    "ar": {
+      "title": "استخدم قانون الدقيقتين عشان تكسر كسوف البداية",
+      "hook": "كتابة تقرير من 10 صفحات بتحسس تقيلة أوي الساعة 9 الصبح، فبتلاقي نفسك بتقضي ساعتين بترتب الإيميلات عشان تخلع.",
+      "key_phrase": "أنا هفتح الفايل وأكتب فيه دقيقتين بس ومش مطلوب مني أكتر من كده."
+    }
+  },
+  {
+    "id": "2026-11-13_learning_feynman-technique-toddler",
+    "number": 28,
+    "patch_number": 6,
+    "topic": "learning",
+    "level": "beginner",
+    "tags": [
+      "mental-models",
+      "comprehension",
+      "study-hacks",
+      "memory"
+    ],
+    "created_at": "2026-11-13T13:59:27.533488+00:00",
+    "file": "cards/2026/2026-11-13_auto_01.json",
+    "en": {
+      "title": "Explain concepts to a child to find your blind spots",
+      "hook": "You read a 300-page book and feel smart, until someone asks: 'So what was it about?' and you freeze.",
+      "key_phrase": "If I can't explain this to a 10-year-old, I don't really understand it yet."
+    },
+    "ar": {
+      "title": "اشرح الفكرة لطفل عشان تكتشف اللي مش فاهمه",
+      "hook": "بتقرأ كتاب كامل وتفتكر إنك خلاص فهمته، لحد ما حد يسألك: 'هو كان بيتكلم عن إيه؟' وتلاقي نفسك ساكت ومش عارف تقول جملتين مفيدين.",
+      "key_phrase": "لو مش عارف اشرح ده لطفل عنده 10 سنين، يبقى أنا لسه مابفهموش كفاية."
+    }
+  },
+  {
+    "id": "2026-11-13_career_brag-document-habit",
+    "number": 27,
+    "patch_number": 6,
+    "topic": "career",
+    "level": "intermediate",
+    "tags": [
+      "promotions",
+      "career-growth",
+      "self-advocacy",
+      "management"
+    ],
+    "created_at": "2026-11-13T13:59:27.533488+00:00",
+    "file": "cards/2026/2026-11-13_auto_01.json",
+    "en": {
+      "title": "Keep a weekly brag document to land your next promotion",
+      "hook": "Annual performance review season arrives and you suddenly can't remember a single achievement from six months ago.",
+      "key_phrase": "Here is the log of the 5 major outcomes my initiatives delivered over the past two quarters."
+    },
+    "ar": {
+      "title": "اعمل وثيقة إنجازات أسبوعية عشان تضمن الترقية",
+      "hook": "معاد التقييم السنوي يجي، وتلاقي نفسك مش فاكر أي إنجاز عملته من 6 شهور فاتوا وتطلع فاضي الإيدين.",
+      "key_phrase": "ده ملخص سريع للأرقام والإنجازات اللي حققتها في آخر 6 شهور."
+    }
+  },
+  {
+    "id": "2026-11-13_business_skin-in-the-game-pricing",
+    "number": 26,
+    "patch_number": 6,
+    "topic": "business",
+    "level": "intermediate",
+    "tags": [
+      "pricing",
+      "negotiation",
+      "sales",
+      "freelancing"
+    ],
+    "created_at": "2026-11-13T13:59:27.533488+00:00",
+    "file": "cards/2026/2026-11-13_auto_01.json",
+    "en": {
+      "title": "Offer performance-tied pricing instead of discounting",
+      "hook": "A prospective client loves your proposal but demands an instant 30% discount before signing.",
+      "key_phrase": "I can't discount my rate, but I can lower the upfront cost if we add a outcome-based bonus."
+    },
+    "ar": {
+      "title": "اربط جزء من السعر بالنتائج بدل ما تدي خصم مباشر",
+      "hook": "العميل عاجبه العرض جداً، بس قبل ما يوقع طلب منك خصم 30% فجأة وبدون مقدمات.",
+      "key_phrase": "صعب أنزل في السعر، بس ممكن ننزل الـ Upfront ونربط باقي المبلغ بالـ KPI لما نحقق الهدف."
+    }
+  },
+  {
     "id": "2026-11-12_leadership_bring-solutions-first",
     "number": 25,
     "patch_number": 5,

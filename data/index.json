@@ -1,11 +1,86 @@
 {
-  "generated_at": "2026-11-12T23:56:39.889891+00:00",
-  "total_files": 5,
-  "total_patches": 5,
-  "total_cards": 25,
+  "generated_at": "2026-11-13T14:17:26.526430+00:00",
+  "total_files": 8,
+  "total_patches": 8,
+  "total_cards": 40,
   "batches_per_day_target": 3,
   "batch_size_target": 5,
   "files": [
+    {
+      "batch_id": "2026-11-13_auto_03",
+      "path": "cards/2026/2026-11-13_auto_03.json",
+      "date": "2026-11-13",
+      "created_at": "2026-11-13T14:14:19.383945+00:00",
+      "source": "gemini-3.5-flash",
+      "card_count": 5,
+      "card_ids": [
+        "2026-11-13_money_hourly-rate-test",
+        "2026-11-13_negotiation_label-their-hesitation",
+        "2026-11-13_persuasion_freedom-of-choice",
+        "2026-11-13_pricing_decoy-tier-strategy",
+        "2026-11-13_productivity_five-minute-starter"
+      ],
+      "patch_number": 8,
+      "card_numbers": [
+        36,
+        37,
+        38,
+        39,
+        40
+      ],
+      "min_number": 36,
+      "max_number": 40
+    },
+    {
+      "batch_id": "2026-11-13_auto_02",
+      "path": "cards/2026/2026-11-13_auto_02.json",
+      "date": "2026-11-13",
+      "created_at": "2026-11-13T14:05:42.928810+00:00",
+      "source": "gemini-3.5-flash",
+      "card_count": 5,
+      "card_ids": [
+        "2026-11-13_communication_pause-and-bridge",
+        "2026-11-13_decision_making_ten-ten-ten-rule",
+        "2026-11-13_leadership_bottom-line-up-front",
+        "2026-11-13_learning_feynman-twelve-year-old-test",
+        "2026-11-13_meetings_silent-brainstorming"
+      ],
+      "patch_number": 7,
+      "card_numbers": [
+        31,
+        32,
+        33,
+        34,
+        35
+      ],
+      "min_number": 31,
+      "max_number": 35
+    },
+    {
+      "batch_id": "2026-11-13_auto_01",
+      "path": "cards/2026/2026-11-13_auto_01.json",
+      "date": "2026-11-13",
+      "created_at": "2026-11-13T13:59:27.533488+00:00",
+      "source": "gemini-3.5-flash",
+      "card_count": 5,
+      "card_ids": [
+        "2026-11-13_learning_feynman-technique-toddler",
+        "2026-11-13_productivity_two-minute-rule-modified",
+        "2026-11-13_psychology_spotlight-effect-reset",
+        "2026-11-13_business_skin-in-the-game-pricing",
+        "2026-11-13_career_brag-document-habit"
+      ],
+      "patch_number": 6,
+      "card_numbers": [
+        26,
+        27,
+        28,
+        29,
+        30
+      ],
+      "min_number": 26,
+      "max_number": 30
+    },
     {
       "batch_id": "2026-11-12_auto_01",
       "path": "cards/2026/2026-11-12_auto_01.json",
