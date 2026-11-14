@@ -1,0 +1,293 @@
+{
+  "schema_version": 1,
+  "batch_id": "2026-11-14_auto_01",
+  "created_at": "2026-11-14T13:01:50.772467+00:00",
+  "source": "gemini-3.5-flash",
+  "cards": [
+    {
+      "id": "2026-11-14_psychology_pratfall-effect",
+      "created_at": "2026-11-14T13:01:50.772467+00:00",
+      "topic": "psychology",
+      "tags": [
+        "trust",
+        "persuasion",
+        "pratfall-effect",
+        "psychology"
+      ],
+      "level": "intermediate",
+      "needs_completion": false,
+      "en": {
+        "title": "Admit a minor flaw to build instant trust",
+        "hook": "Perfect people feel fake. When a high-performing product or person reveals one small downside, trust skyrockets.",
+        "action": "When pitching an idea or product, mention a minor, non-dealbreaker flaw before your audience discovers it.",
+        "key_phrase": "Full disclosure: the only downside is...",
+        "when": "Pitching an idea, selling a product, or in a job interview.",
+        "why": "Flawless presentations trigger natural skepticism. A small admission lowers cognitive defenses and proves honesty.",
+        "example": "Client: 'Is this software fully custom?' You: 'Full disclosure: the core is pre-built so setup takes 3 days, but security is enterprise-grade.'",
+        "mistake": "Trying to sound 100% perfect, which makes people search for the hidden trap."
+      },
+      "ar": {
+        "title": "اعترف بعيب صغير عشان تكسب ثقة أي حد فوراً",
+        "hook": "الناس مبترتاحش للشخص أو المنتج المثالي زيادة عن اللزوم. لما بتبين عيب صغير جداً، الناس بتصدقك أكتر بكتير.",
+        "action": "وأنت بتعرض فكرتك أو منتجك، اذكر عيب صغير مش بيأثر على الجوهر قبل ما هما يكتشفوه.",
+        "key_phrase": "عشان أكون صريح معاك تماماً، العيب الوحيد هو...",
+        "when": "وأنت بتبيع منتج، بتقدم فكرة، أو حتى في انترفيو شغل.",
+        "why": "الكمال المطلق بيبان مزيف وبيخلي القدامك يدور على الخدعة. الاعتراف بصراحة بيهد دفاعاته.",
+        "example": "العميل: 'هل السيستم ده متفصل بالكامل؟' أنت: 'عشان أكون صريح معاك، النواة جاهزة فبياخد 3 أيام تجهيز، بس الأمان بتاعه عالي جداً.'",
+        "mistake": "تحاول تبان كامل 100%، فتقلق القدامك ويقعد يدور على الفخ."
+      },
+      "quiz": {
+        "type": "mcq",
+        "correct_index": 1,
+        "en": {
+          "question": "You are presenting a new project proposal to your CEO. What's the best way to present it?",
+          "options": [
+            "Claim there are zero risks involved to show confidence.",
+            "Point out a minor operational challenge early on, then explain how you will handle it.",
+            "Hide all potential downsides and hope nobody asks about them.",
+            "Focus only on competitor mistakes without addressing your own project's status."
+          ],
+          "explanation": "Highlighting a minor limitation voluntarily shows honesty, disarms skepticism, and makes your major strengths far more credible."
+        },
+        "ar": {
+          "question": "بتعرض مشروع جديد على مديرك التنفيذي. إيه أفضل طريقة تعرضه بيها؟",
+          "options": [
+            "تقول إن المشروع مفيش فيه أي مخاطرة تماماً عشان تبان واثق.",
+            "توضح تحدي تشغيلي بسيط في الأول وتشرَح هتعالجه إزاي.",
+            "تخبي كل العيوب وتتمنى محدش يسأل عنها.",
+            "تركز بس على أخطاء المنافسين ومن غير ما تتكلم عن تفاصيل مشروعك."
+          ],
+          "explanation": "لما تبدأ بالاعتراف بتحدي صغير بتبان صادق، وبتخلي القدامك يقتنع بمميزاتك الكبيرة من غير ما يشك في كلامك."
+        }
+      }
+    },
+    {
+      "id": "2026-11-14_sales_label-objections",
+      "created_at": "2026-11-14T13:01:50.772467+00:00",
+      "topic": "sales",
+      "tags": [
+        "sales",
+        "objections",
+        "empathy",
+        "negotiation"
+      ],
+      "level": "intermediate",
+      "needs_completion": false,
+      "en": {
+        "title": "Label the client's hidden fear out loud",
+        "hook": "Arguing with a hesitant client pushes them away. Naming their fear out loud neutralizes it immediately.",
+        "action": "Start your observation with 'It seems like you're worried about...' to bring hesitation into the light safely.",
+        "key_phrase": "It seems like you're concerned about...",
+        "when": "When a prospect hesitates or goes quiet during a discussion.",
+        "why": "Verbalizing negative emotions deactivates fear responses in the brain, turning tension into collaboration.",
+        "example": "You: 'It seems like you're concerned we won't deliver on time like your last vendor.' Client: 'Exactly! They ruined our launch.'",
+        "mistake": "Pushing more features and benefits while the client is secretly anxious."
+      },
+      "ar": {
+        "title": "سمّ الخوف المستخبي عند العميل بصوت عالي",
+        "hook": "لمّا تعاند مع عميل متردد بيبعد أكتر. الحل إنك تقول الخوف بتاعه بنفسك قبل ما هو ينطقه.",
+        "action": "ابدأ جملتك بـ 'شكلك قلقان من...' عشان تطلع التردد بتاعه للنور من غير ما يتحفز دفاعياً.",
+        "key_phrase": "شكل حضرتك قلقان من نقطة...",
+        "when": "لما العميل يتردد أو يسكت فجأة وأنت بتعرض السعر أو الشروط.",
+        "why": "تسمية المشاعر السلبية بتهدي مركز الخوف في المخ وتحول الموقف لمشاركة بدل هجوم ودفاع.",
+        "example": "أنت: 'شكل حضرتك قلقان إننا مالتزمش بالمواعيد زي الشركة القديمة؟' العميل: 'بالظبط! هما فعلاً بوظوا لنا الإطلاق.'",
+        "mistake": "العافية والضغط بـ ميزات المنتج والعميل من جوا قلقان ومش مرتاح."
+      },
+      "quiz": {
+        "type": "mcq",
+        "correct_index": 2,
+        "en": {
+          "question": "A prospect suddenly gets quiet after seeing your price quote. What should you say?",
+          "options": [
+            "'Our pricing is the absolute best in the market!'",
+            "'If you sign today, I can give you a 5% discount.'",
+            "'It seems like you're worried this investment won't pay off fast enough.'",
+            "'Why are you hesitating? This is a great deal.'"
+          ],
+          "explanation": "Option C labels their unstated emotion accurately without being aggressive, allowing them to clarify their real concern."
+        },
+        "ar": {
+          "question": "عميل سكت فجأة أول ما شاف عرض السعر بتاعك. المفروض تقول إيه؟",
+          "options": [
+            "'أسعارنا هي الأحسن في السوق كله على فكرة!'",
+            "'لو أمضيت النهاردة هعملك خصم 5%.'",
+            "'شكل حضرتك قلقان إن الاستثمار ده ميردش تكلفته بسرعة.'",
+            "'أنت متردد ليه؟ ده عرض ميتعوضش!'"
+          ],
+          "explanation": "الإجابة التالتة بتسمي الخوف المستخبي بلطف ومن غير هجوم، فبتخليه يفتح قلبه ويقول المشكلة الحقيقية."
+        }
+      }
+    },
+    {
+      "id": "2026-11-14_business_pre-mortem-planning",
+      "created_at": "2026-11-14T13:01:50.772467+00:00",
+      "topic": "business",
+      "tags": [
+        "risk-management",
+        "planning",
+        "strategy",
+        "business"
+      ],
+      "level": "beginner",
+      "needs_completion": false,
+      "en": {
+        "title": "Run a 'Pre-Mortem' before launching any project",
+        "hook": "Post-mortems ask why a project died. A pre-mortem assumes it failed BEFORE starting, saving it in advance.",
+        "action": "Ask your team: 'Assume it's 6 months from now and this project completely bombed. What caused it?'",
+        "key_phrase": "Assume this fails badly in 6 months—what went wrong?",
+        "when": "Right before launching a major initiative, campaign, or feature.",
+        "why": "It removes optimism bias and allows team members to voice real flaws without looking negative.",
+        "example": "Manager: 'Assume it's Q4 and our new app launch zeroed out. Why?' Dev: 'We didn't budget for customer support.'",
+        "mistake": "Asking 'Does anyone see any risks?' which usually results in polite silence."
+      },
+      "ar": {
+        "title": "اعمل 'تحليل وفاة مبكر' للمشروع قبل ما تبتديه",
+        "hook": "تحليل الوفاة العادي بيعرفك المشروع باظ ليه بعد فوات الأوان. التحليل المبكر بيفترض الفشل من الأول عشان ينقذه.",
+        "action": "اجمع فريقك وقولهم: 'تخيلوا إننا بعد 6 شهور والمشروع ده فشل تماماً.. تفتكروا إيه السبب؟'",
+        "key_phrase": "نفترض إن المشروع ده فشل ذريع كمان 6 شهور.. إيه السبب؟",
+        "when": "قبل ما تبدأ أي مشروع جديد أو تطلق ميزة كبيرة في الشغل.",
+        "why": "بيكسر الانحياز للتفاؤل المزيف وبيخلي الناس تقول المخاوف بحرية من غير ما يبانوا إنهم محبطين.",
+        "example": "المدير: 'تخيلوا إننا في آخر السنة والبرنامج الجديد محدش نزله خالص. فشلنا ليه؟' المطور: 'عشان مخصصناش ميزانية للدعم الفني.'",
+        "mistake": "تسأل 'حد شايف أي مخاطر؟' فالكل يسكت عشان متوترين يبانوا سلبيين."
+      },
+      "quiz": {
+        "type": "mcq",
+        "correct_index": 0,
+        "en": {
+          "question": "How should a project manager surface hidden operational risks before launch?",
+          "options": [
+            "Ask the team to pretend the project has already failed and list the causes.",
+            "Ask everyone if they feel confident about success.",
+            "Wait for issues to arise during implementation.",
+            "Hire an external consultant to write a risk report."
+          ],
+          "explanation": "Framing failure as a past event makes people comfortable sharing critical flaws without fear of being labeled bad team players."
+        },
+        "ar": {
+          "question": "إزاي مدير المشروع يكتشف المخاطر المستخبية قبل ما يبدأ التنفيذ؟",
+          "options": [
+            "يطلب من الفريق يفترضوا إن المشروع فشل فعلاً ويكتبوا الأسباب.",
+            "يسأل كل واحد لو كان حاسس بالثقة في النجاح ولا لأ.",
+            "يستنى لما المشاكل تظهر لوحدها وقت شغل المشروع.",
+            "يأجر استشاري خارجي يكتبله تقرير مخاطر."
+          ],
+          "explanation": "صياغة الفشل كأنه حصل خلاص بتخلي الفريق يتكلم بصراحة عن العيوب من غير ما يخافوا يبانوا سلبيين."
+        }
+      }
+    },
+    {
+      "id": "2026-11-14_career_brag-sheet-habit",
+      "created_at": "2026-11-14T13:01:50.772467+00:00",
+      "topic": "career",
+      "tags": [
+        "career-growth",
+        "promotion",
+        "productivity",
+        "habits"
+      ],
+      "level": "beginner",
+      "needs_completion": false,
+      "en": {
+        "title": "Keep a 5-minute Friday 'Brag Sheet'",
+        "hook": "Your manager won't remember your wins from 4 months ago. If you don't track them, your raise dies of forgotten details.",
+        "action": "Spend 5 minutes every Friday logging 2 lines: metric moved, problem solved, or client praise received.",
+        "key_phrase": "Here is the summary of specific outcomes I delivered this quarter...",
+        "when": "Weekly self-management and right before performance review meetings.",
+        "why": "Managers suffer from recency bias. Concrete, dated metrics make your promotion a fact-based discussion, not a negotiation.",
+        "example": "Logged: 'Reduced site loading time by 40%, saving $2k/mo.' Review day: Presented data -> Immediate raise approval.",
+        "mistake": "Relying on memory during review week and making vague claims like 'I worked really hard.'"
+      },
+      "ar": {
+        "title": "اعمل 'ملف إنجازات' لمدة 5 دقائق كل جمعة",
+        "hook": "مديرك مش هيفتكر إنجازاتك بتاعت من 4 شهور. لو مسجلتهاش بنفسك، الترقيات هتضيع في زحمة النسيان.",
+        "action": "خصص 5 دقايق كل يوم جمعة واكتب سطرين: رقم حسّنته، مشكلة حلّيتها، أو شكر جالك من عميل.",
+        "key_phrase": "ده ملخص بالأرقام للإنجازات اللي حققتها الربع ده...",
+        "when": "ملخص أسبوعي لنفسك، وقبل اجتماعات التقييم السنوي.",
+        "why": "المديرين بيتأثروا باللي فاكرينه أخر كام أسبوع بس. لما تقدم أرقام ومواقف مظبوطة، الترقية بتبقى حق مش فصال.",
+        "example": "سجلت: 'قللت وقت التحميل 40% ووفرت 2000 دولار شهرياً.' عرضتها في التقييم -> الترقيّة نزلِت فوراً.",
+        "mistake": "تعتمد على ذاكرتك وقت التقييم، فتقول جمل عايمة زي 'أنا تعبت واشتغلت جامد السنة دي'."
+      },
+      "quiz": {
+        "type": "mcq",
+        "correct_index": 3,
+        "en": {
+          "question": "What is the most effective preparation for a performance review to justify a raise?",
+          "options": [
+            "Explaining how expensive your cost of living has become.",
+            "Asking colleagues to email your manager saying you are nice.",
+            "Mentally recalling your hardest working months right before entering.",
+            "Presenting a documented log of specific numbers, projects, and solved problems over the year."
+          ],
+          "explanation": "Concrete, documented achievements remove subjectivity and counteract recency bias, making your case indisputable."
+        },
+        "ar": {
+          "question": "إيه أفضل تجهيز لتقييم الشغل السنوي عشان تضمن زيادة في المرتب؟",
+          "options": [
+            "تشرح قد إيه مصاريف المعيشة غليت عليك.",
+            "تطلب من زمايلك يبعتوا إيميل لمديرك يقولوا إنك طيب وشاطر.",
+            "تفتكر في سرك المواقف الصعبة اللي اشتغلت فيها قبل الاجتماع بخمس دقايق.",
+            "تقدم ملف فيه أرقام محددة ومشاريع ومشاكل حلّيتها متسجلة على مدار السنة."
+          ],
+          "explanation": "الإنجازات الموثقة بالأرقام بتشيل الانطباعات الشخصية وتخلي طلب الترقية مبني على حقايق يترد عليها بـ نعم."
+        }
+      }
+    },
+    {
+      "id": "2026-11-14_communication_bottom-line-up-front",
+      "created_at": "2026-11-14T13:01:50.772467+00:00",
+      "topic": "communication",
+      "tags": [
+        "email",
+        "clarity",
+        "leadership",
+        "communication"
+      ],
+      "level": "beginner",
+      "needs_completion": false,
+      "en": {
+        "title": "Put the conclusion in the first sentence (BLUF)",
+        "hook": "Busy executives skip long backstories. Put your key request at the end, and your message goes to the 'read later' grave.",
+        "action": "Write your core ask or key conclusion as line one, then provide details underneath.",
+        "key_phrase": "Decision needed: [X] by [Time]. Context below:",
+        "when": "Writing emails or messages to executives, stakeholders, or busy clients.",
+        "why": "Cognitive attention is highest at the start; delivering the bottom line immediately dramatically speeds up action.",
+        "example": "Email line 1: 'BLUF: Need approval for $400 server upgrade by 2 PM to prevent downtime.' (Details follow below).",
+        "mistake": "Writing 3 long paragraphs of context before revealing what you actually need."
+      },
+      "ar": {
+        "title": "حط الخلاصة والطلب في أول سطر (أسلوب BLUF)",
+        "hook": "المديرين والناس المشغولة مبتتقراش مقدمات. لو طلبك في آخر الإيميل، رسالتك هتروح في أرشيف 'هقراه بعدين' ومحدش هيرد.",
+        "action": "اكتب القرار المطلوب أو الخلاصة في أول سطر بالظبط، وبعدين حط التفاصيل والسياق تحتيه.",
+        "key_phrase": "المطلوب: موافقة على [س] قبل الساعة [ص]. التفاصيل تحت:",
+        "when": "وأنت بتكتب إيميل أو رسالة لمدير مشغُول أو عميل وقته ضيق.",
+        "why": "طاقة التركيز بتبقى في أقصاها أول الجملة. لما تدي الخلاصة فوراً بتخليه ياخد قرار أسرع بكتير.",
+        "example": "أول الإيميل: 'الخلاصة: محتاجين موافقة على 400 دولار سيرفرات قبل الساعة 2 النهاردة عشان الموقع ميعطلش. التفاصيل تحت:'",
+        "mistake": "تكتب 3 فقرات حكي ومقدمات قبل ما تقول هو أنت عاوز إيه بالظبط."
+      },
+      "quiz": {
+        "type": "mcq",
+        "correct_index": 1,
+        "en": {
+          "question": "You need an urgent approval from a busy director. How should you open your email?",
+          "options": [
+            "'Hope you are doing well! I wanted to give you a quick update on what happened yesterday...'",
+            "'Action required: Need budget approval for X by 3 PM today. Background details below.'",
+            "'As you know, our team has been working very hard on the recent project...'",
+            "'Attached is a 15-page document explaining our strategy.'"
+          ],
+          "explanation": "Starting with the explicit action required and deadline (BLUF) respects their time and gets immediate decision-making priority."
+        },
+        "ar": {
+          "question": "محتاج موافقة عاجلة من مدير وقته ضيق جداً. تفتح الإيميل إزاي؟",
+          "options": [
+            "'أتمنى تكون بخير! كنت حابب يديك فكرة سريعة عن اللي حصل امبارح...'",
+            "'مطلوب قرار: محتاجين موافقة على ميزانية كذا قبل الساعة 3 النهاردة. التفاصيل تحت.'",
+            "'زي ما حضرتك عارف، الفريق بتاعنا بيشتغل بجد جامد الفترة اللي فاتت...'",
+            "'مرفق ملف 15 صفحة بيشرح استراتيجية العمل.'"
+          ],
+          "explanation": "البداية بالطلب الصريح والميعاد المحدد في أول سطر بيوفر وقته ويضمن إن رسالتك تاخد أولوية واهتمام فوراً."
+        }
+      }
+    }
+  ]
+}

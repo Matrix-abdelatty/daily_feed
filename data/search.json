@@ -1,5 +1,370 @@
 [
   {
+    "id": "2026-11-14_psychology_pratfall-effect-flaw-first",
+    "number": 55,
+    "patch_number": 11,
+    "topic": "psychology",
+    "level": "intermediate",
+    "tags": [
+      "psychology",
+      "trust",
+      "persuasion"
+    ],
+    "created_at": "2026-11-14T13:15:12.843680+00:00",
+    "file": "cards/2026/2026-11-14_auto_03.json",
+    "en": {
+      "title": "Admit a minor flaw first to make your main pitch irresistible",
+      "hook": "A job candidate who admits they spill coffee occasionally is often rated MORE competent than a candidate who acts perfect.",
+      "key_phrase": "To be upfront, our software has a learning curve for the first two days, but it reduces your weekly workload by half."
+    },
+    "ar": {
+      "title": "اعترف بعيب صغير في الأول عشان الناس تصدق ميزتك الكبيرة",
+      "hook": "اللي بيمتحن في انترفيو ويعترف إنه بيسرح ساعات، بيتقيم إنه أكفأ من الشخص اللي بيمثل إنه مبيغلطش أبداً!",
+      "key_phrase": "عشان أكون صريح معاك، البرنامج بتاعنا بيحتاج يومين تدريب في الأول، بس بيوفر نص وقت شغل الأسبوع كله."
+    }
+  },
+  {
+    "id": "2026-11-14_productivity_implementation-intentions",
+    "number": 54,
+    "patch_number": 11,
+    "topic": "productivity",
+    "level": "beginner",
+    "tags": [
+      "productivity",
+      "habits",
+      "focus"
+    ],
+    "created_at": "2026-11-14T13:15:12.843680+00:00",
+    "file": "cards/2026/2026-11-14_auto_03.json",
+    "en": {
+      "title": "Eliminate procrastination using exact 'If-Then' triggers",
+      "hook": "Deciding to 'work on the presentation tomorrow' fails 80% of the time. Adding a precise trigger changes everything.",
+      "key_phrase": "If it is 9:00 AM and I open my laptop at my desk, then I will open the slide deck and draft slide 1."
+    },
+    "ar": {
+      "title": "اقضي على التسويف باستخدام معادلة 'لو حصل كذا.. هعمل كذا'",
+      "hook": "إنك تقرر 'هشتغل على البريزنتيشن بكرة' بتفشل بنسبة 80%. بس لو حطيت شرط محدد، المعادلة بتتغير تماماً.",
+      "key_phrase": "لو الساعة جابِت 9 وقعدت على مكتبي، إذن هفتح الملف وأكتب أول سلايد بس."
+    }
+  },
+  {
+    "id": "2026-11-14_pricing_bracket-pricing-anchoring",
+    "number": 53,
+    "patch_number": 11,
+    "topic": "pricing",
+    "level": "intermediate",
+    "tags": [
+      "pricing",
+      "anchoring",
+      "sales"
+    ],
+    "created_at": "2026-11-14T13:15:12.843680+00:00",
+    "file": "cards/2026/2026-11-14_auto_03.json",
+    "en": {
+      "title": "Use a high-priced decoy option to make your target offer look cheap",
+      "hook": "Steve Jobs pitched the iPad by building up a $999 price tag before revealing it was actually $499.",
+      "key_phrase": "Most of our clients select the Professional package because it offers 90% of our Enterprise features at less than half the price."
+    },
+    "ar": {
+      "title": "حُط باقة غالية جداً عشان تخلي العرض الأساسي يبان رخيص",
+      "hook": "ستيف جوبز لما قدم الـ iPad فضل 10 دقايق يقنع الناس إنه يستاهل 1000 دولار، وبعدين أعلن إن سعره 500 بس!",
+      "key_phrase": "معظم عملائنا بيختاروا الباقة التانية لأنها بتديك 90% من ميزات الباقة الكبيرة وبأقل من نص السعر."
+    }
+  },
+  {
+    "id": "2026-11-14_persuasion_label-their-negative-emotions",
+    "number": 52,
+    "patch_number": 11,
+    "topic": "persuasion",
+    "level": "beginner",
+    "tags": [
+      "persuasion",
+      "empathy",
+      "communication"
+    ],
+    "created_at": "2026-11-14T13:15:12.843680+00:00",
+    "file": "cards/2026/2026-11-14_auto_03.json",
+    "en": {
+      "title": "Defuse tension by labeling their hidden negative emotions",
+      "hook": "Telling an angry client to 'calm down' is like throwing gasoline on a fire.",
+      "key_phrase": "It seems like you're concerned that we're rushing this launch without protecting your budget."
+    },
+    "ar": {
+      "title": "هدّي التوتر لما تسمي مشاعرهم السلبية بصراحة",
+      "hook": "إنك تقول لعميل زعلان 'إهدى بس' زي اللي بيرمي بنزين على النار بالظبط.",
+      "key_phrase": "شكلك قلقان إننا بنستعجل المشروع ده من غير ما نراعي ميزانيتك."
+    }
+  },
+  {
+    "id": "2026-11-14_negotiation_ackermann-bargaining-system",
+    "number": 51,
+    "patch_number": 11,
+    "topic": "negotiation",
+    "level": "intermediate",
+    "tags": [
+      "negotiation",
+      "pricing",
+      "anchoring"
+    ],
+    "created_at": "2026-11-14T13:15:12.843680+00:00",
+    "file": "cards/2026/2026-11-14_auto_03.json",
+    "en": {
+      "title": "Offer 65% first, then step up using precise non-round numbers",
+      "hook": "Ever wonder why top FBI negotiators never offer round numbers like $5,000? Round numbers feel fake.",
+      "key_phrase": "I squeezed every dollar out of my budget, and the absolute maximum I can reach is $4,875."
+    },
+    "ar": {
+      "title": "إبدأ بـ 65% وزود بالتدريج بأرقام مش صحيحة",
+      "hook": "عمرك فكرت ليه مفاوضين الـ FBI مبيعرضوش أبداً أرقام مقفولة زي 5000 دولار؟ عشان الأرقام المقفولة بتبان متألفة.",
+      "key_phrase": "أنا عصَرت الميزانية لآخر جنيه، وأقصى رقم أقدر أوصله بالظبط هو 4,875 جنيه."
+    }
+  },
+  {
+    "id": "2026-11-14_money_hourly-rate-impulse-filter",
+    "number": 50,
+    "patch_number": 10,
+    "topic": "money",
+    "level": "beginner",
+    "tags": [
+      "money",
+      "budgeting",
+      "mindset"
+    ],
+    "created_at": "2026-11-14T13:06:46.652807+00:00",
+    "file": "cards/2026/2026-11-14_auto_02.json",
+    "en": {
+      "title": "Translate prices into working hours before impulse buying",
+      "hook": "You see a $200 jacket on sale and think 'I deserve a treat.' But do you deserve working 10 hours straight just to own it?",
+      "key_phrase": "Is this worth working X hours of my life for?"
+    },
+    "ar": {
+      "title": "احسب المشتريات بساعات شغلك قبل ما تشتري",
+      "hook": "شفت جاكيت بـ 3000 جنيه وقُلت 'أنا أستاهل أدلع نفسي'. بس هل تستاهل تشتغل 20 ساعة كاملة عشان الجاكيت ده؟",
+      "key_phrase": "هل الحاجة دي تستاهل أشتغل عشانها كذا ساعة؟"
+    }
+  },
+  {
+    "id": "2026-11-14_meetings_elmo-rule",
+    "number": 49,
+    "patch_number": 10,
+    "topic": "meetings",
+    "level": "intermediate",
+    "tags": [
+      "meetings",
+      "productivity",
+      "communication"
+    ],
+    "created_at": "2026-11-14T13:06:46.652807+00:00",
+    "file": "cards/2026/2026-11-14_auto_02.json",
+    "en": {
+      "title": "Use off-line parking to stop meeting tangents",
+      "hook": "You're 30 minutes into a strategic meeting, and two colleagues spend 15 minutes arguing about a minor formatting issue.",
+      "key_phrase": "Let me park this point off-line so we can protect the main agenda."
+    },
+    "ar": {
+      "title": "استخدم فكرة 'التأجيل الجانبي' عشان تمنع الرغي في الاجتماعات",
+      "hook": "عدى 30 دقيقة من الاجتماع، واثنين زمايلك ماسكين في نقطة فرعية جانبة ما تهمش باقي الناس ولا ليها علاقة بالهدف.",
+      "key_phrase": "ممكن ننقل النقطة دي لمناقشة جانبية عشان نحافظ على وقت الاجتماع؟"
+    }
+  },
+  {
+    "id": "2026-11-14_learning_retrieval-practice-blurting",
+    "number": 48,
+    "patch_number": 10,
+    "topic": "learning",
+    "level": "beginner",
+    "tags": [
+      "learning",
+      "memory",
+      "productivity"
+    ],
+    "created_at": "2026-11-14T13:06:46.652807+00:00",
+    "file": "cards/2026/2026-11-14_auto_02.json",
+    "en": {
+      "title": "Use active retrieval instead of re-reading your notes",
+      "hook": "You spent three hours highlighting notes and felt like a genius—only to forget 80% the next day. Re-reading creates a false sense of mastery.",
+      "key_phrase": ""
+    },
+    "ar": {
+      "title": "استخدم التسميع السريع بدل ما تقعد تعيد القراءة",
+      "hook": "قعدت 3 ساعات تظلل في الكورس وبقيت حاسس إنك فاهم كل حاجة، وتاني يوم نسيت 80%! إعادة القراءة بتديك إحساس وهمي بالفهم.",
+      "key_phrase": ""
+    }
+  },
+  {
+    "id": "2026-11-14_leadership_help-me-understand-debrief",
+    "number": 47,
+    "patch_number": 10,
+    "topic": "leadership",
+    "level": "intermediate",
+    "tags": [
+      "leadership",
+      "management",
+      "communication"
+    ],
+    "created_at": "2026-11-14T13:06:46.652807+00:00",
+    "file": "cards/2026/2026-11-14_auto_02.json",
+    "en": {
+      "title": "Say 'Help me understand' when a team member makes a mistake",
+      "hook": "A team member missed a key deadline. Your instinct is to ask 'Why didn't you finish this?'—which instantly triggers defensiveness.",
+      "key_phrase": "Help me understand what happened with..."
+    },
+    "ar": {
+      "title": "قول 'ساعدني أفهم' لما حد في فريقك يغلط",
+      "hook": "واحد في فريقك فوت ديدلاين مهم، وأول حاجة بتيجي في بالك: 'ليه ماعملتش كده؟'.. وده بيخليه يدخل في دفاع عن نفسه على طول.",
+      "key_phrase": "ساعدني أفهم إيه اللي حصل في..."
+    }
+  },
+  {
+    "id": "2026-11-14_decision_making_10-10-10-rule",
+    "number": 46,
+    "patch_number": 10,
+    "topic": "decision_making",
+    "level": "beginner",
+    "tags": [
+      "decisions",
+      "productivity",
+      "mindset"
+    ],
+    "created_at": "2026-11-14T13:06:46.652807+00:00",
+    "file": "cards/2026/2026-11-14_auto_02.json",
+    "en": {
+      "title": "Use the 10-10-10 rule to cure decision paralysis",
+      "hook": "You've been obsessing over a tricky email for hours. Your brain treats it like a life-or-death crisis, but it isn't.",
+      "key_phrase": "How will I feel about this in 10 minutes, 10 months, and 10 years?"
+    },
+    "ar": {
+      "title": "استخدم قاعدة 10-10-10 عشان تخلص من التفكير الزيادة",
+      "hook": "بقالك ساعتين عمال تفكر ترسل إيميل خايف منه، وعقلك محسسك إن حياتك هتتدمر لو أترفضت!",
+      "key_phrase": "هحس بإيه بعد 10 دقائق، 10 شهور، و10 سنين؟"
+    }
+  },
+  {
+    "id": "2026-11-14_sales_label-objections",
+    "number": 45,
+    "patch_number": 9,
+    "topic": "sales",
+    "level": "intermediate",
+    "tags": [
+      "sales",
+      "objections",
+      "empathy",
+      "negotiation"
+    ],
+    "created_at": "2026-11-14T13:01:50.772467+00:00",
+    "file": "cards/2026/2026-11-14_auto_01.json",
+    "en": {
+      "title": "Label the client's hidden fear out loud",
+      "hook": "Arguing with a hesitant client pushes them away. Naming their fear out loud neutralizes it immediately.",
+      "key_phrase": "It seems like you're concerned about..."
+    },
+    "ar": {
+      "title": "سمّ الخوف المستخبي عند العميل بصوت عالي",
+      "hook": "لمّا تعاند مع عميل متردد بيبعد أكتر. الحل إنك تقول الخوف بتاعه بنفسك قبل ما هو ينطقه.",
+      "key_phrase": "شكل حضرتك قلقان من نقطة..."
+    }
+  },
+  {
+    "id": "2026-11-14_psychology_pratfall-effect",
+    "number": 44,
+    "patch_number": 9,
+    "topic": "psychology",
+    "level": "intermediate",
+    "tags": [
+      "trust",
+      "persuasion",
+      "pratfall-effect",
+      "psychology"
+    ],
+    "created_at": "2026-11-14T13:01:50.772467+00:00",
+    "file": "cards/2026/2026-11-14_auto_01.json",
+    "en": {
+      "title": "Admit a minor flaw to build instant trust",
+      "hook": "Perfect people feel fake. When a high-performing product or person reveals one small downside, trust skyrockets.",
+      "key_phrase": "Full disclosure: the only downside is..."
+    },
+    "ar": {
+      "title": "اعترف بعيب صغير عشان تكسب ثقة أي حد فوراً",
+      "hook": "الناس مبترتاحش للشخص أو المنتج المثالي زيادة عن اللزوم. لما بتبين عيب صغير جداً، الناس بتصدقك أكتر بكتير.",
+      "key_phrase": "عشان أكون صريح معاك تماماً، العيب الوحيد هو..."
+    }
+  },
+  {
+    "id": "2026-11-14_communication_bottom-line-up-front",
+    "number": 43,
+    "patch_number": 9,
+    "topic": "communication",
+    "level": "beginner",
+    "tags": [
+      "email",
+      "clarity",
+      "leadership",
+      "communication"
+    ],
+    "created_at": "2026-11-14T13:01:50.772467+00:00",
+    "file": "cards/2026/2026-11-14_auto_01.json",
+    "en": {
+      "title": "Put the conclusion in the first sentence (BLUF)",
+      "hook": "Busy executives skip long backstories. Put your key request at the end, and your message goes to the 'read later' grave.",
+      "key_phrase": "Decision needed: [X] by [Time]. Context below:"
+    },
+    "ar": {
+      "title": "حط الخلاصة والطلب في أول سطر (أسلوب BLUF)",
+      "hook": "المديرين والناس المشغولة مبتتقراش مقدمات. لو طلبك في آخر الإيميل، رسالتك هتروح في أرشيف 'هقراه بعدين' ومحدش هيرد.",
+      "key_phrase": "المطلوب: موافقة على [س] قبل الساعة [ص]. التفاصيل تحت:"
+    }
+  },
+  {
+    "id": "2026-11-14_career_brag-sheet-habit",
+    "number": 42,
+    "patch_number": 9,
+    "topic": "career",
+    "level": "beginner",
+    "tags": [
+      "career-growth",
+      "promotion",
+      "productivity",
+      "habits"
+    ],
+    "created_at": "2026-11-14T13:01:50.772467+00:00",
+    "file": "cards/2026/2026-11-14_auto_01.json",
+    "en": {
+      "title": "Keep a 5-minute Friday 'Brag Sheet'",
+      "hook": "Your manager won't remember your wins from 4 months ago. If you don't track them, your raise dies of forgotten details.",
+      "key_phrase": "Here is the summary of specific outcomes I delivered this quarter..."
+    },
+    "ar": {
+      "title": "اعمل 'ملف إنجازات' لمدة 5 دقائق كل جمعة",
+      "hook": "مديرك مش هيفتكر إنجازاتك بتاعت من 4 شهور. لو مسجلتهاش بنفسك، الترقيات هتضيع في زحمة النسيان.",
+      "key_phrase": "ده ملخص بالأرقام للإنجازات اللي حققتها الربع ده..."
+    }
+  },
+  {
+    "id": "2026-11-14_business_pre-mortem-planning",
+    "number": 41,
+    "patch_number": 9,
+    "topic": "business",
+    "level": "beginner",
+    "tags": [
+      "risk-management",
+      "planning",
+      "strategy",
+      "business"
+    ],
+    "created_at": "2026-11-14T13:01:50.772467+00:00",
+    "file": "cards/2026/2026-11-14_auto_01.json",
+    "en": {
+      "title": "Run a 'Pre-Mortem' before launching any project",
+      "hook": "Post-mortems ask why a project died. A pre-mortem assumes it failed BEFORE starting, saving it in advance.",
+      "key_phrase": "Assume this fails badly in 6 months—what went wrong?"
+    },
+    "ar": {
+      "title": "اعمل 'تحليل وفاة مبكر' للمشروع قبل ما تبتديه",
+      "hook": "تحليل الوفاة العادي بيعرفك المشروع باظ ليه بعد فوات الأوان. التحليل المبكر بيفترض الفشل من الأول عشان ينقذه.",
+      "key_phrase": "نفترض إن المشروع ده فشل ذريع كمان 6 شهور.. إيه السبب؟"
+    }
+  },
+  {
     "id": "2026-11-13_productivity_five-minute-starter",
     "number": 40,
     "patch_number": 8,

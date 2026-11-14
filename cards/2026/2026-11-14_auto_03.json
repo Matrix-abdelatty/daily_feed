@@ -1,0 +1,288 @@
+{
+  "schema_version": 1,
+  "batch_id": "2026-11-14_auto_03",
+  "created_at": "2026-11-14T13:15:12.843680+00:00",
+  "source": "gemini-3.5-flash",
+  "cards": [
+    {
+      "id": "2026-11-14_negotiation_ackermann-bargaining-system",
+      "created_at": "2026-11-14T13:15:12.843680+00:00",
+      "topic": "negotiation",
+      "tags": [
+        "negotiation",
+        "pricing",
+        "anchoring"
+      ],
+      "level": "intermediate",
+      "needs_completion": false,
+      "en": {
+        "title": "Offer 65% first, then step up using precise non-round numbers",
+        "hook": "Ever wonder why top FBI negotiators never offer round numbers like $5,000? Round numbers feel fake.",
+        "action": "Set a target price. Offer 65% of it first. Increment in smaller steps (85%, 95%), then give a final non-round figure down to the exact dollar.",
+        "key_phrase": "I squeezed every dollar out of my budget, and the absolute maximum I can reach is $4,875.",
+        "when": "Negotiating the final price for a service, purchase, or salary agreement.",
+        "why": "Non-round numbers give the psychological impression that you have calculated your absolute limit to the penny.",
+        "example": "Client: Can you do $5,000? You: $5,000 is above my cap. After checking my balance, the absolute maximum I can do is $4,875. Client: Deal, let me send the invoice.",
+        "mistake": "Offering round numbers like $4,500 and jumping straight to $5,000, revealing your numbers are arbitrary."
+      },
+      "ar": {
+        "title": "إبدأ بـ 65% وزود بالتدريج بأرقام مش صحيحة",
+        "hook": "عمرك فكرت ليه مفاوضين الـ FBI مبيعرضوش أبداً أرقام مقفولة زي 5000 دولار؟ عشان الأرقام المقفولة بتبان متألفة.",
+        "action": "حدد السعر النهائي اللي عايزه. إبدأ بعرض 65% منه، وبعدين زود على مراحل صغيرة (85% ثم 95%)، وأخيراً قول رقم محدد بالظبط مش مدور.",
+        "key_phrase": "أنا عصَرت الميزانية لآخر جنيه، وأقصى رقم أقدر أوصله بالظبط هو 4,875 جنيه.",
+        "when": "وأنت بتتفاوض على سعر خدمة أو شراء منتج أو عقد شغل.",
+        "why": "الأرقام الغريبة والمحددة بالظبط بتدي إيحاء نفسي إنك حسابتك دقيقة جداً وده أخيرك فعلاً ومش بتعك.",
+        "example": "العميل: ينفع تخلصها بـ 5000؟ أنت: 5000 فوق ميزانيتي، بس بعد ما راجعت الحسابات بالظبط آخر رقم أقدر أدفعه هو 4875. العميل: خلاص تمام اعتمد.",
+        "mistake": "إنك تعرض أرقام مقفولة زي 4500 وبعدها تقفز لـ 5000 على طول، فتبان إن أرقامك عشوائية ومفيهاش حقيقة."
+      },
+      "quiz": {
+        "type": "mcq",
+        "correct_index": 1,
+        "en": {
+          "question": "You want to buy a service for a target max budget of $5,000. How should you deliver your final counter-offer?",
+          "options": [
+            "Offer $4,000 and say 'take it or leave it'.",
+            "Offer $4,875 after smaller increments and explain it's your absolute calculated limit.",
+            "Offer $4,500 upfront and immediately round up to $5,000 when pressed.",
+            "Ask them to lower their price without naming any specific figure."
+          ],
+          "explanation": "Offering a precise non-round figure ($4,875) after step-by-step increases signals you've reached your genuine financial ceiling, making the seller far more likely to accept."
+        },
+        "ar": {
+          "question": "عايز تشتري خدمة وميزانيتك الأخيرة 5000 جنيه. إيه أحسن طريقة تقدم بيها عرضك الأخير؟",
+          "options": [
+            "تعرض 4000 وتقول يا كدة يا إما خلاص.",
+            "تعرض 4875 بعد ما زدت بالتدريج وتوضح إن ده أقصى رقم حسابك يسمح بيه.",
+            "تعرض 4500 ومن أول ضغطة تقفلها 5000 على طول.",
+            "تطلب منهم ينزلوا السعر من غير ما تقول أي رقم محدد."
+          ],
+          "explanation": "تقديم رقم غير دائر ومحدد بالظبط (4875) بعد زيادات تدريجية بيبين إنك وصلت لآخر قرش في ميزانيتك فعلاً، فبالتالي هيقبلوا العرض."
+        }
+      }
+    },
+    {
+      "id": "2026-11-14_persuasion_label-their-negative-emotions",
+      "created_at": "2026-11-14T13:15:12.843680+00:00",
+      "topic": "persuasion",
+      "tags": [
+        "persuasion",
+        "empathy",
+        "communication"
+      ],
+      "level": "beginner",
+      "needs_completion": false,
+      "en": {
+        "title": "Defuse tension by labeling their hidden negative emotions",
+        "hook": "Telling an angry client to 'calm down' is like throwing gasoline on a fire.",
+        "action": "Name their unspoken fear or frustration using neutral phrases like 'It sounds like you're worried that...' or 'It seems like you feel...'.",
+        "key_phrase": "It seems like you're concerned that we're rushing this launch without protecting your budget.",
+        "when": "Dealing with a defensive team member, angry customer, or reluctant decision-maker.",
+        "why": "Verbally labeling negative feelings reduces amygdala activity, disarming their defensive posture so they can listen to reason.",
+        "example": "You: It sounds like you feel we completely ignored your feedback on the design. Client: Exactly! We spent hours on that. You: I completely get it. Let me show you how we incorporated your main notes.",
+        "mistake": "Defending yourself right away or telling them their emotional reaction is unnecessary."
+      },
+      "ar": {
+        "title": "هدّي التوتر لما تسمي مشاعرهم السلبية بصراحة",
+        "hook": "إنك تقول لعميل زعلان 'إهدى بس' زي اللي بيرمي بنزين على النار بالظبط.",
+        "action": "قول الخوف أو الضيق اللي جواهم بصوت عالي وبطريقة محايدة زي: 'شكلك قلقان من...' أو 'حاسس إنك حاسس بـ...'.",
+        "key_phrase": "شكلك قلقان إننا بنستعجل المشروع ده من غير ما نراعي ميزانيتك.",
+        "when": "لما تتعامل مع عميل متضايق، أو زميل منفعل، أو مدير خايف ياخد قرار.",
+        "why": "تسمية المشاعر السلبية بتقلل التوتر النفسي في المخ وتخليه يهدى ويسمع كلامك بعقلانية.",
+        "example": "أنت: شكلك حاسس إننا طنشنا ملاحظاتك على التصميم. العميل: بالظبط! إحنا تعبنا فيها. أنت: فاهمك جداً، تعالى أوريك إزاي عدلنا النقط الأساسية اللي طلبتها.",
+        "mistake": "إنك تدافع عن نفسك فوراً أو تقول للشخص المصدوم 'مفيش داعي للعصبية دي'."
+      },
+      "quiz": {
+        "type": "mcq",
+        "correct_index": 2,
+        "en": {
+          "question": "A team member is furious that a project deadline was moved up. How do you respond using emotion labeling?",
+          "options": [
+            "Please calm down, panicking won't help us finish faster.",
+            "It wasn't my decision, management pushed the deadline.",
+            "It sounds like you feel overwhelmed and unfair that the timeline shifted without warning.",
+            "Let's focus on the solutions instead of wasting time complaining."
+          ],
+          "explanation": "Option 3 labels their feeling without judgment or defense, immediately lowering their anger and making them receptive to working out solutions."
+        },
+        "ar": {
+          "question": "زميلك في الفريق غضبان جداً عشان ميعاد تسليم المشروع اتدربك وبقى بدري. ترد عليه إزاي بتكتيك تسمية المشاعر؟",
+          "options": [
+            "إهدى بس يا سيدي، العصبية مش هتحل حاجة ولا هتسرع الشغل.",
+            "مش أنا اللي اخترت كدة، الإدارة هي اللي زنقتنا.",
+            "شكلك حاسس إنه ظلم وضغط كبير إن الميعاد يقرب من غير ما نرجعلك.",
+            "بلاش نضيع وقت في الشكوى وتعالى نركز في الحلول على طول."
+          ],
+          "explanation": "الخيار الثالث بيسمي احساسه بالظبط وبدون دفاع، وده بيهدي غضبه فوراً ويخليه يستوعب الشغل معاك."
+        }
+      }
+    },
+    {
+      "id": "2026-11-14_pricing_bracket-pricing-anchoring",
+      "created_at": "2026-11-14T13:15:12.843680+00:00",
+      "topic": "pricing",
+      "tags": [
+        "pricing",
+        "anchoring",
+        "sales"
+      ],
+      "level": "intermediate",
+      "needs_completion": false,
+      "en": {
+        "title": "Use a high-priced decoy option to make your target offer look cheap",
+        "hook": "Steve Jobs pitched the iPad by building up a $999 price tag before revealing it was actually $499.",
+        "action": "Offer 3 pricing tiers. Make Tier 3 expensive with premium extras. Your target offer (Tier 2) will instantly feel like a bargain.",
+        "key_phrase": "Most of our clients select the Professional package because it offers 90% of our Enterprise features at less than half the price.",
+        "when": "Sending proposals, creating pricing pages, or pitching service packages.",
+        "why": "Humans evaluate value relatively. Anchoring high establishes a high mental reference price.",
+        "example": "Tier 1: $100/mo (Basic). Tier 2: $300/mo (Full access). Tier 3: $1,200/mo (VIP Concierge). Result: Most buyers pick Tier 2 because Tier 3 made $300 look reasonable.",
+        "mistake": "Presenting a single price option, which forces the client to compare your price against competitor costs."
+      },
+      "ar": {
+        "title": "حُط باقة غالية جداً عشان تخلي العرض الأساسي يبان رخيص",
+        "hook": "ستيف جوبز لما قدم الـ iPad فضل 10 دقايق يقنع الناس إنه يستاهل 1000 دولار، وبعدين أعلن إن سعره 500 بس!",
+        "action": "اعرض 3 باقات. خلي الباقة التالتة غالية جداً وفيه ميزات VIP. ساعتها الباقة التانية (اللي انت عايز تبيعها) هتبان لقطة.",
+        "key_phrase": "معظم عملائنا بيختاروا الباقة التانية لأنها بتديك 90% من ميزات الباقة الكبيرة وبأقل من نص السعر.",
+        "when": "لما تكون بتقدم عرض سعر (Proposal) أو بتصمم صفحة أسعار لخدمتك.",
+        "why": "الناس بتقيم السعر بالمقارنة. لما تحط سعر عالي في الأول، السعر اللي بعده بيبان فرصة ما تتفوتش.",
+        "example": "باقة 1: 1000 جنيه. باقة 2: 3000 جنيه (الهدف). باقة 3: 12000 جنيه. النتيجة: 80% من الناس هيشتروا باقة 2 لأن باقة 3 خلت الـ 3000 يبانوا ولا حاجة.",
+        "mistake": "إنك تقدم سعر واحد بس، فتبقي جبرت العميل يقارن سعرك بأسعار المنافسين برة."
+      },
+      "quiz": {
+        "type": "mcq",
+        "correct_index": 0,
+        "en": {
+          "question": "You want to sell a consulting package for $2,000. How should you structure your offer?",
+          "options": [
+            "Present three tiers: $800, $2,000, and a VIP tier for $6,500.",
+            "Offer only the $2,000 package and promise a discount if they hesitate.",
+            "Start by offering $1,500 and slowly negotiate up to $2,000.",
+            "Present a range from $500 to $2,000 without explaining differences."
+          ],
+          "explanation": "Introducing a $6,500 premium tier anchors expectations high, making the $2,000 target option appear valuable and affordable by comparison."
+        },
+        "ar": {
+          "question": "عايز تبيع باقة استشارات بـ 2000 دولار. إزاي تقدم العرض بتاعك بشكل ذكي؟",
+          "options": [
+            "تعرض 3 باقات: 800 دولار، 2000 دولار، وباقة VIP بـ 6500 دولار.",
+            "تعرض باقة الـ 2000 دولار بس وتوعد بخصم لو ترددوا.",
+            "تبدأ بـ 1500 وتفضل تفاوض وتزود لحد ما توصل لـ 2000.",
+            "تعرض الرينج من 500 لـ 2000 دولار من غير ما توضح الفرق بينهم."
+          ],
+          "explanation": "وجود باقة بـ 6500 دولار بيبني نقطة مرجعية عالية في عقل العميل، فـ 2000 دولار تبان صفقة رابحة جداً."
+        }
+      }
+    },
+    {
+      "id": "2026-11-14_productivity_implementation-intentions",
+      "created_at": "2026-11-14T13:15:12.843680+00:00",
+      "topic": "productivity",
+      "tags": [
+        "productivity",
+        "habits",
+        "focus"
+      ],
+      "level": "beginner",
+      "needs_completion": false,
+      "en": {
+        "title": "Eliminate procrastination using exact 'If-Then' triggers",
+        "hook": "Deciding to 'work on the presentation tomorrow' fails 80% of the time. Adding a precise trigger changes everything.",
+        "action": "Format your task into an exact formula: 'IF [specific time + location], THEN I will [micro-action for 10 minutes]'.",
+        "key_phrase": "If it is 9:00 AM and I open my laptop at my desk, then I will open the slide deck and draft slide 1.",
+        "when": "Struggling to start complex, boring, or easily postponed tasks.",
+        "why": "It delegates the decision to act to an environmental cue, removing brain friction and decision fatigue.",
+        "example": "Vague: 'I will write the article tomorrow.' Specific: 'IF I finish my morning coffee at 8:30 AM, THEN I will open Google Docs and write 100 words.' Result: Task initiated effortlessly.",
+        "mistake": "Setting general task reminders without specifying the exact environmental trigger and first 2-minute step."
+      },
+      "ar": {
+        "title": "اقضي على التسويف باستخدام معادلة 'لو حصل كذا.. هعمل كذا'",
+        "hook": "إنك تقرر 'هشتغل على البريزنتيشن بكرة' بتفشل بنسبة 80%. بس لو حطيت شرط محدد، المعادلة بتتغير تماماً.",
+        "action": "اكتب مهمتك بالصيغة دي بالظبط: 'لو [وقت ومكان معينين]، إذن هقوم بـ [فعل صغير لمدة 10 دقائق]'.",
+        "key_phrase": "لو الساعة جابِت 9 وقعدت على مكتبي، إذن هفتح الملف وأكتب أول سلايد بس.",
+        "when": "لما تكون مأجل مهمة ثقيلة أو مكسل تبدأ في شغل رخيم.",
+        "why": "المعادلة دي بتشيل التردد والتفكير من مخك وبتخلي البيئة المحيطة هي اللي تزقك تبدأ تلقائياً.",
+        "example": "غلط: 'هكتب التقرير بكرة'. صح: 'لو خلصت كباية الشاي الساعة 10، إذن هفتح الوورد وأكتب أول 3 سطور'. النتيجة: البداية بقت أسهل بكتير.",
+        "mistake": "كتابة مهام عامة في قائمة الإنجازات من غير تحديد المكان والزمان والخطوة الأولى الصغيرة."
+      },
+      "quiz": {
+        "type": "mcq",
+        "correct_index": 3,
+        "en": {
+          "question": "Which of the following task goals is structured to overcome procrastination effectively?",
+          "options": [
+            "I will study financial analysis for two hours tomorrow afternoon.",
+            "I need to make progress on the budget spreadsheet today.",
+            "I will try my best to focus on writing code after lunch.",
+            "IF it is 9:00 AM and I sit at my desk, THEN I will open the budget sheet and fill in the first column."
+          ],
+          "explanation": "Option 4 uses a clear environmental trigger (9:00 AM at desk) paired with an immediate micro-action, eliminating friction to start."
+        },
+        "ar": {
+          "question": "أنهي هدف من دول مكتوب بطريقة تحميك من التسويف فعلاً؟",
+          "options": [
+            "هذاكر التحليل المالي لمدة ساعتين بكرة بعد الضهر.",
+            "لازم أعمل تقدم في شيت الميزانية النهاردة.",
+            "هحاول على قد ما أقدر أركز في الكود بعد الغدا.",
+            "لو الساعة جابِت 9 وقعدت على مكتبي، إذن هفتح شيت الميزانية وأملى أول عمود."
+          ],
+          "explanation": "الخيار الرابع بيحدد المحفز البيئي (الساعة 9 والمكتب) مع خطوة صغيرة جداً ومحددة، وده بيشيل أي مقاومة للبداية."
+        }
+      }
+    },
+    {
+      "id": "2026-11-14_psychology_pratfall-effect-flaw-first",
+      "created_at": "2026-11-14T13:15:12.843680+00:00",
+      "topic": "psychology",
+      "tags": [
+        "psychology",
+        "trust",
+        "persuasion"
+      ],
+      "level": "intermediate",
+      "needs_completion": false,
+      "en": {
+        "title": "Admit a minor flaw first to make your main pitch irresistible",
+        "hook": "A job candidate who admits they spill coffee occasionally is often rated MORE competent than a candidate who acts perfect.",
+        "action": "Mention a small, harmless limitation of your product or skill before highlighting your strongest advantage.",
+        "key_phrase": "To be upfront, our software has a learning curve for the first two days, but it reduces your weekly workload by half.",
+        "when": "Pitching to skeptical prospects, interviewing for a job, or presenting sales quotes.",
+        "why": "Admitting a small flaw proves honesty, making all your subsequent claims far more believable.",
+        "example": "Salesperson: Look, this laptop is slightly heavier at 2kg, but the battery lasts 20 hours straight. Client: Honestly, I'd much rather have the battery life.",
+        "mistake": "Trying to present yourself or your product as 100% flawless, triggering immediate suspicion."
+      },
+      "ar": {
+        "title": "اعترف بعيب صغير في الأول عشان الناس تصدق ميزتك الكبيرة",
+        "hook": "اللي بيمتحن في انترفيو ويعترف إنه بيسرح ساعات، بيتقيم إنه أكفأ من الشخص اللي بيمثل إنه مبيغلطش أبداً!",
+        "action": "قول عيب بسيط ومش مؤثر في منتجك أو في نفسك الأول، وبعدها حط ميزتك القوية على طول.",
+        "key_phrase": "عشان أكون صريح معاك، البرنامج بتاعنا بيحتاج يومين تدريب في الأول، بس بيوفر نص وقت شغل الأسبوع كله.",
+        "when": "وأنت بتبيع لعميل شكاك، أو في انترفيو شغل، أو بتقدم عرض لعميل جديد.",
+        "why": "لما تعترف بعيب صغير الأول، العميل بيطمن إنك أَمين، فبيصدق أي ميزة تانية تقولها بعد كده.",
+        "example": "البائع: بص، اللابتوب ده تقيل شوية وزنه 2 كيلو، بس بطاريته بتكمل 20 ساعة شغال. الزبون: مش مشكلة الوزن المهم البطارية تعيش معايا.",
+        "mistake": "إنك تحاول تظهر إنك أو منتجك مثالي 100%، فالعميل يدور على الخدعة والمستخبى."
+      },
+      "quiz": {
+        "type": "mcq",
+        "correct_index": 1,
+        "en": {
+          "question": "You are pitching a marketing app to a prospective client. How should you present your offer?",
+          "options": [
+            "Our software is flawless, completely intuitive, and has zero downsides.",
+            "Our UI is plain and simple, but our analytics algorithms are twice as accurate as competitors.",
+            "We have a few major system bugs, but we are working to fix them soon.",
+            "Don't look at other apps because they all have terrible customer service."
+          ],
+          "explanation": "Option 2 admits a small aesthetic flaw ('plain UI') which builds trust, making the claim about superior accuracy far more believable."
+        },
+        "ar": {
+          "question": "بتعرض أبلكيشن تسويق على عميل جديد. إزاي تطبق تكتيك الاعتراف بعيب صغير؟",
+          "options": [
+            "البرنامج بتاعنا خالي من أي عيوب، وسهل جداً ومفيهوش أي سلبيات.",
+            "الشكل بتاع البرنامج بسيط ومش بهرجان، بس الخوارزميات بتاعتنا أدق مرتين من أي منافس.",
+            "عندنا مشاكل وسيستم بيقع كتير، بس بنحاول نصلحها قريب.",
+            "متبصش على البرامج التانية عشان خدمة العملاء عندهم زفت."
+          ],
+          "explanation": "الخيار الثاني بيعترف بعيب شكلي بسيط جداً ('الشكل بسيط') وده بيخليه يثق في كلامك فوراً لما تقول إن الدقة أعلى مرتين."
+        }
+      }
+    }
+  ]
+}

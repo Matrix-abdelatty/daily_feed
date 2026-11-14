@@ -1,0 +1,288 @@
+{
+  "schema_version": 1,
+  "batch_id": "2026-11-14_auto_02",
+  "created_at": "2026-11-14T13:06:46.652807+00:00",
+  "source": "gemini-3.5-flash",
+  "cards": [
+    {
+      "id": "2026-11-14_decision_making_10-10-10-rule",
+      "created_at": "2026-11-14T13:06:46.652807+00:00",
+      "topic": "decision_making",
+      "tags": [
+        "decisions",
+        "productivity",
+        "mindset"
+      ],
+      "level": "beginner",
+      "needs_completion": false,
+      "en": {
+        "title": "Use the 10-10-10 rule to cure decision paralysis",
+        "hook": "You've been obsessing over a tricky email for hours. Your brain treats it like a life-or-death crisis, but it isn't.",
+        "action": "Ask yourself: How will I feel about this choice in 10 minutes, 10 months, and 10 years? Lean on the 10-year outlook to dissolve panic.",
+        "key_phrase": "How will I feel about this in 10 minutes, 10 months, and 10 years?",
+        "when": "When overthinking an uncomfortable email, awkward request, or small risky decision.",
+        "why": "Short-term anxiety exaggerates risk. Temporal distance activates rational processing and quiets emotional fear.",
+        "example": "You need to decline a pushy client. 10 minutes: uncomfortable. 10 months: forgotten. 10 years: totally irrelevant. Send the email.",
+        "mistake": "Treating temporary social discomfort like a permanent career-ending mistake."
+      },
+      "ar": {
+        "title": "استخدم قاعدة 10-10-10 عشان تخلص من التفكير الزيادة",
+        "hook": "بقالك ساعتين عمال تفكر ترسل إيميل خايف منه، وعقلك محسسك إن حياتك هتتدمر لو أترفضت!",
+        "action": "اسأل نفسك: هتستشعر إيه ناحية القرار ده بعد 10 دقائق، و10 شهور، و10 سنين؟ ركز على 10 سنين عشان تهدي الفزع اللي مالوش لازمة.",
+        "key_phrase": "هحس بإيه بعد 10 دقائق، 10 شهور، و10 سنين؟",
+        "when": "لما تلاقي نفسك بتفكر زيادة عن اللزوم في إيميل سخيف أو حوار محرج.",
+        "why": "القلق اللحظي بيكبر الحجم الحقيقي للمشكلة. البعد الزمني بيشغل التفكير العقلاني ويهدي التوتر.",
+        "example": "عايز تعتذر لعميل غلس. 10 دقائق: إحراج. 10 شهور: نسيت الموضوع. 10 سنين: ولا ليها أي قيمة. ابعت الإيميل.",
+        "mistake": "إنك تتعامل مع الإحراج المؤقت على إنه كارثة مستمرة مدى الحياة."
+      },
+      "quiz": {
+        "type": "mcq",
+        "correct_index": 2,
+        "en": {
+          "question": "You're panicked about asking your manager for a deadline extension. How does applying the 10-10-10 rule help?",
+          "options": [
+            "It guarantees your manager will say yes without questions.",
+            "It forces you to write down 10 separate reasons for the delay.",
+            "It shifts your focus to 10 months and 10 years, shrinking short-term panic.",
+            "It reminds you to wait exactly 10 days before asking."
+          ],
+          "explanation": "The 10-10-10 rule reframes short-term anxiety by evaluating long-term impact, making immediate emotional discomfort feel manageable."
+        },
+        "ar": {
+          "question": "مرعوب تطلب من مديرك تمديد الديدلاين. قاعدة 10-10-10 بتساعدك إزاي؟",
+          "options": [
+            "بتضمن لك إن المدير يوافق فوراً من غير ما يسأل.",
+            "بتجبرك تكتب 10 أسباب مختلفة للـتأخير.",
+            "بتخليك تبص لبعد 10 شهور و10 سنين فتصغر الخوف اللحظي.",
+            "بتفكرك تستنى 10 أيام قبل ما تطلب."
+          ],
+          "explanation": "القاعدة بتغير زاوية رؤيتك للتوتر القريب من خلال تقييم أثره البعيد، وده بيصغّر حجم الخوف والنكد اللحظي."
+        }
+      }
+    },
+    {
+      "id": "2026-11-14_leadership_help-me-understand-debrief",
+      "created_at": "2026-11-14T13:06:46.652807+00:00",
+      "topic": "leadership",
+      "tags": [
+        "leadership",
+        "management",
+        "communication"
+      ],
+      "level": "intermediate",
+      "needs_completion": false,
+      "en": {
+        "title": "Say 'Help me understand' when a team member makes a mistake",
+        "hook": "A team member missed a key deadline. Your instinct is to ask 'Why didn't you finish this?'—which instantly triggers defensiveness.",
+        "action": "Start the conversation with: 'Help me understand what happened with X.' Pause and let them explain completely without interrupting.",
+        "key_phrase": "Help me understand what happened with...",
+        "when": "When addressing a mistake, missed deadline, or poor outcome with a direct report.",
+        "why": "It frames the situation as a shared puzzle to solve rather than an interrogation, encouraging root-cause honesty instead of cover-ups.",
+        "example": "Manager: 'Help me understand what happened with the pitch delivery.' Employee: 'The client added 5 new requirements late yesterday, and I hit a roadblock.'",
+        "mistake": "Asking 'Why did you...' which sounds accusatory and invites excuses or defensiveness."
+      },
+      "ar": {
+        "title": "قول 'ساعدني أفهم' لما حد في فريقك يغلط",
+        "hook": "واحد في فريقك فوت ديدلاين مهم، وأول حاجة بتيجي في بالك: 'ليه ماعملتش كده؟'.. وده بيخليه يدخل في دفاع عن نفسه على طول.",
+        "action": "ابتدأ الكلام بـ: 'ساعدني أفهم إيه اللي حصل في موضوع كذا'، واسمعه للأخر من غير ما تقاطعه.",
+        "key_phrase": "ساعدني أفهم إيه اللي حصل في...",
+        "when": "لما تكون عايز تناقش غلطة أو ديدلاين ضاع أو نتيجة مش كويسة من حد في فريقك.",
+        "why": "الأسلوب ده بيبين إن المشكلة حاجة بنحلها سوا مش تحقيق ومحاكمة، فبيشجع الصراحة بدل التلفيق.",
+        "example": "المدير: 'ساعدني أفهم إيه اللي حصل في العرض اللي اتأخر.' الموظف: 'العميل طلب 5 تعديلات زيادة امبارح بالليل وما لحقتش.'",
+        "mistake": "إنك تسأل 'ليه عملت كده؟' بأسلوب هجومي يخليه يدور على حجج."
+      },
+      "quiz": {
+        "type": "mcq",
+        "correct_index": 0,
+        "en": {
+          "question": "An employee forgot to send critical report attachments before a meeting. What is the most productive opening line?",
+          "options": [
+            "\"Help me understand what happened with the report email today.\"",
+            "\"Why do you always forget to check attachments?\"",
+            "\"Don't worry about it, mistakes happen to everyone!\"",
+            "\"You really need to be more careful with your work.\""
+          ],
+          "explanation": "'Help me understand' invites problem-solving and psychological safety, whereas 'Why' sounds accusatory and general praise ignores the error."
+        },
+        "ar": {
+          "question": "موظف نسي يرفق ملفات مهمة في إيميل التقرير قبل الاجتماع. إيه أفضل جملة تبدأ بيها الكلام؟",
+          "options": [
+            "\"ساعدني أفهم إيه اللي حصل في إيميل التقرير النهاردة.\"",
+            "\"ليه على طول بتنسى تحط المرفقات؟\"",
+            "\"ولا يهمك عاد، كلنا بنغلط!\"",
+            "\"لازم تركز أكتر من كده في شغلك المره الجاية.\""
+          ],
+          "explanation": "جملة 'ساعدني أفهم' بتفتح باب للحوار البنّاء والأمان النفسي، عكس 'ليه' اللي بتحط الموظف في موقف اتهام."
+        }
+      }
+    },
+    {
+      "id": "2026-11-14_learning_retrieval-practice-blurting",
+      "created_at": "2026-11-14T13:06:46.652807+00:00",
+      "topic": "learning",
+      "tags": [
+        "learning",
+        "memory",
+        "productivity"
+      ],
+      "level": "beginner",
+      "needs_completion": false,
+      "en": {
+        "title": "Use active retrieval instead of re-reading your notes",
+        "hook": "You spent three hours highlighting notes and felt like a genius—only to forget 80% the next day. Re-reading creates a false sense of mastery.",
+        "action": "Read a section once, close the material, and write down everything you remember on a blank sheet. Then check and correct what you missed.",
+        "key_phrase": "",
+        "when": "When studying complex technical topics, preparing for presentations, or mastering new skills.",
+        "why": "Forced mental recall strengthens neural connections, making memory far more durable than passive re-reading.",
+        "example": "Read 2 pages on marketing strategy. Close notebook. Write down the 4 key metrics from memory. Open notebook and circle missed concepts in red.",
+        "mistake": "Passively re-reading and highlighting text over and over without testing your memory."
+      },
+      "ar": {
+        "title": "استخدم التسميع السريع بدل ما تقعد تعيد القراءة",
+        "hook": "قعدت 3 ساعات تظلل في الكورس وبقيت حاسس إنك فاهم كل حاجة، وتاني يوم نسيت 80%! إعادة القراءة بتديك إحساس وهمي بالفهم.",
+        "action": "اقرأ الجزء مرة واحدة، اقفل الورق، واكتب كل اللي فاكره في ورقة بيضا من دماغك. وبعدين ارجع قارن اللي كتبته بالأصل.",
+        "key_phrase": "",
+        "when": "لما تكون بتذاكر حاجة فيها تفاصيل كتير، كورس جديد، أو بتستعد لبريزنتيشن مهمة.",
+        "why": "الاستدعاء النشط للمعلومة بيجبر العقل يبني روابط عصبية قوية، فالمعلومة تثبت أكتر بكثير من القراءة السطحية.",
+        "example": "تقرأ صفحتين في التسويق. تقفل الكشكول. تكتب النقاط اللي فاكرها من دماغك. تفتح تاني وتشوف النقاط اللي وقعت منك وتعلم عليها.",
+        "mistake": "إنك تقعد تقرأ وتظلل في الورق رايح جاي من غير ما تختبر نفسك."
+      },
+      "quiz": {
+        "type": "mcq",
+        "correct_index": 1,
+        "en": {
+          "question": "You need to learn 10 new financial concepts for a presentation tomorrow. What is the most effective study method?",
+          "options": [
+            "Highlight key terms repeatedly until the whole page is yellow.",
+            "Read one concept, hide the notes, and explain it aloud or on paper from memory.",
+            "Re-read the entire deck 5 times right before sleeping.",
+            "Listen to recorded audio of the presentation while doing chores."
+          ],
+          "explanation": "Active retrieval forces your brain to recall information without cues, which builds strong memory retention compared to passive exposure."
+        },
+        "ar": {
+          "question": "محتاج تحفظ 10 مصطلحات مالية جديدة لبريزنتيشن بكره. إيه أفضل طريقة تذاكر بيها؟",
+          "options": [
+            "تظلل على المصطلحات المهمة كذا مرة لحد ما الورق كله ينور.",
+            "تقرأ المصطلح، تغطي الورق، وتشرحه بصوت عالي أو تكتبه من دماغك.",
+            "تعيد قراءة العرض كله 5 مرات قبل ما تنام على طول.",
+            "تشغل تسجيل صوتي للـعرض وأنت بتعمل حاجات تانية."
+          ],
+          "explanation": "الاسترجاع النشط بيجبر عقلك يفتكر المعلومة من غير غش، وده بيثبتها في الذاكرة عكس القراءة والاستماع السلبي."
+        }
+      }
+    },
+    {
+      "id": "2026-11-14_meetings_elmo-rule",
+      "created_at": "2026-11-14T13:06:46.652807+00:00",
+      "topic": "meetings",
+      "tags": [
+        "meetings",
+        "productivity",
+        "communication"
+      ],
+      "level": "intermediate",
+      "needs_completion": false,
+      "en": {
+        "title": "Use off-line parking to stop meeting tangents",
+        "hook": "You're 30 minutes into a strategic meeting, and two colleagues spend 15 minutes arguing about a minor formatting issue.",
+        "action": "Intervene politely by stating: 'Let me park this specific point so we can protect our remaining agenda time.' Write it on a visible board or chat.",
+        "key_phrase": "Let me park this point off-line so we can protect the main agenda.",
+        "when": "When two people debate a detailed sub-topic that doesn't involve the rest of the group.",
+        "why": "Parking issues validates the speakers' concerns while giving the rest of the room permission to move on productively.",
+        "example": "Sara and Tom argue about server names. You say: 'Let's park server naming in the chat so we can stick to our launch roadmap today.'",
+        "mistake": "Sitting silently while two participants hijack the entire meeting's schedule."
+      },
+      "ar": {
+        "title": "استخدم فكرة 'التأجيل الجانبي' عشان تمنع الرغي في الاجتماعات",
+        "hook": "عدى 30 دقيقة من الاجتماع، واثنين زمايلك ماسكين في نقطة فرعية جانبة ما تهمش باقي الناس ولا ليها علاقة بالهدف.",
+        "action": "اقطع الكلام بلطف وقول: 'ممكن نأجل النقطة دي لمناقشة جانبية عشان نلحق باقي أجندة الاجتماع؟' واكتبها في جنب.",
+        "key_phrase": "ممكن ننقل النقطة دي لمناقشة جانبية عشان نحافظ على وقت الاجتماع؟",
+        "when": "لما الاجتماع يقلب مناقشة بين اتنين بس في موضوع جانبي.",
+        "why": "الأسلوب ده بيدي تنبيه محترم ومباشر إن الوقت بيضيع من غير ما تحرج أو تضايق المتكلمين.",
+        "example": "سارة وأحمد بيتناقشوا في تفاصيل السيرفرات بقالهم 10 دقائق. تقولهم: 'ممكن ننقل دي جانبي عشان نركز في ميعاد إطلاق المنتج؟'",
+        "mistake": "إنك تسكت وتسيب اتنين يضيعوا وقت الاجتماع كله في موضوع جانبي."
+      },
+      "quiz": {
+        "type": "mcq",
+        "correct_index": 3,
+        "en": {
+          "question": "Two engineers start a deep technical argument during a project scope meeting. How should the facilitator handle it?",
+          "options": [
+            "Mute both participants instantly without saying anything.",
+            "Let them argue for as long as it takes to find a winner.",
+            "Leave the meeting room to show disapproval.",
+            "Offer to park the technical discussion for a separate follow-up session."
+          ],
+          "explanation": "Parking the topic acknowledges its importance without allowing it to derail the primary goal of the current meeting."
+        },
+        "ar": {
+          "question": "اتنين مهندسين بدأوا جدال تقني عميق في اجتماع تخصيص المهام. مدير الاجتماع المفروض يعمل إيه؟",
+          "options": [
+            "يقفل المايك عليهم من غير ما يقول حاجة.",
+            "يسيبهم يتناقشوا لحد ما واحد فيهم يكسب الجدال.",
+            "يخرج من الاجتماع عشان يوريهم إنه متضايق.",
+            "يعرض إنه يأجل النقاش التقني ده لاجتماع منفصل ويرجع للأجندة."
+          ],
+          "explanation": "تأجيل النقطة بيعترف بأهميتها لكن بيمنعها تعطل الهدف الأساسي للاجتماع الحالي."
+        }
+      }
+    },
+    {
+      "id": "2026-11-14_money_hourly-rate-impulse-filter",
+      "created_at": "2026-11-14T13:06:46.652807+00:00",
+      "topic": "money",
+      "tags": [
+        "money",
+        "budgeting",
+        "mindset"
+      ],
+      "level": "beginner",
+      "needs_completion": false,
+      "en": {
+        "title": "Translate prices into working hours before impulse buying",
+        "hook": "You see a $200 jacket on sale and think 'I deserve a treat.' But do you deserve working 10 hours straight just to own it?",
+        "action": "Divide the price by your hourly net income. Ask yourself if the item is worth spending that exact number of work hours.",
+        "key_phrase": "Is this worth working X hours of my life for?",
+        "when": "When tempted by unplanned impulse purchases like clothing, gadgets, or luxury eating out.",
+        "why": "Converting currency into labor hours creates a concrete trade-off cost, countering instant emotional gratification.",
+        "example": "You net $20/hour. A $100 pair of shoes costs 5 hours at your desk. Ask: 'Am I willing to work from 9 AM to 2 PM just for these shoes?'",
+        "mistake": "Viewing price tags only as abstract money instead of personal life-hours spent."
+      },
+      "ar": {
+        "title": "احسب المشتريات بساعات شغلك قبل ما تشتري",
+        "hook": "شفت جاكيت بـ 3000 جنيه وقُلت 'أنا أستاهل أدلع نفسي'. بس هل تستاهل تشتغل 20 ساعة كاملة عشان الجاكيت ده؟",
+        "action": "اقسم سعر الحاجة على الصافي اللي بتكسبه في الساعة. واسأل نفسك: هل الحاجة دي تستاهل عدد الساعات دي من مجهودي؟",
+        "key_phrase": "هل الحاجة دي تستاهل أشتغل عشانها كذا ساعة؟",
+        "when": "لما تحس بغواية إنك تشتري حاجة مش متخطط لها زي لبس، أجهزة، أو خروجات غالية.",
+        "why": "لما بتحول الفلوس لساعات شغل، بتشوف التكلفة الحقيقية لمجهودك وده بيفرمل الشراء العاطفي السريع.",
+        "example": "ساعتك بتقف عليك بـ 100 جنيه. شفت كوتشي بـ 1500 جنيه يعني 15 ساعة شغل. اسأل نفسك: 'هل مستعد أشتغل يومين كاملين عشان الكوتشي ده؟'",
+        "mistake": "إنك تبص للسعر كأرقام فلوس وخلاص، بدل ما تبص عليه كساعات من عمرك ومجهودك."
+      },
+      "quiz": {
+        "type": "mcq",
+        "correct_index": 2,
+        "en": {
+          "question": "You earn $25 net per hour and want to buy a $200 smartwatch impulsively. What is the best evaluation framework?",
+          "options": [
+            "Buy it immediately if you have enough space on your credit card.",
+            "Wait for a 10% discount coupon online before checking out.",
+            "Calculate that it costs 8 hours of work and decide if it's worth a full workday.",
+            "Ask your coworkers if they think the smartwatch looks good."
+          ],
+          "explanation": "Translating cost to 8 hours of labor forces you to measure true effort against momentary desire."
+        },
+        "ar": {
+          "question": "بتكسب 100 جنيه في الساعة صافي، ونفسك تشتري ساعة بـ 800 جنيه فجأة. إيه أفضل طريقة تقيم بيها الشروة؟",
+          "options": [
+            "تشتريها على طول طالما الفيزا فيها مبلغ يكفي.",
+            "تستنى لما ينزل عليها خصم 10% أونلاين.",
+            "تحسب إنها موازية لـ 8 ساعات شغل وتشوف هل تستاهل شغل يوم كامل ولا لا.",
+            "تسأل صحابك في العمل رأيهم في شكل الساعة."
+          ],
+          "explanation": "تحويل التكلفة لـ 8 ساعات مجهود بيجبرك تقيس تعبك الحقيقي قصاد الرغبة اللحظية الشراء."
+        }
+      }
+    }
+  ]
+}
