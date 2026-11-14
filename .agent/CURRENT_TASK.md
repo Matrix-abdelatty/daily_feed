@@ -1,6 +1,14 @@
 # CURRENT TASK
 > Entries newest on top.
 
+## 2026-11-14 05:56 +02:00 — Fix GitHub Actions `build.yml` & `daily.yml` Workflows & Idempotent Index Build
+- **Status:** Changes implemented locally and ready to commit, push, and verify live on GitHub Actions.
+- **Issues Addressed:**
+  * Fixed Step 5 (`Commit build artifacts if changed`) exit code `1` conflict failures when `origin/main` advances or an older run is re-run, by syncing with `origin/main` before rebuilding/committing in `.github/workflows/build.yml` and adding rebase-conflict recovery with `build_index.py` rebuild in `.github/workflows/daily.yml`.
+  * Made `scripts/build_index.py` idempotent: preserves existing `generated_at` in `data/index.json` and `timestamp` in `data/build_report.json` when content (excluding timestamps) is unchanged, verified locally with consecutive runs yielding zero `git status` diff in `data/`.
+  * Upgraded GitHub Actions in both workflows to native Node 24 major versions (`actions/checkout@v7`, `actions/setup-python@v7`, `actions/configure-pages@v6`, `actions/upload-pages-artifact@v5`, `actions/deploy-pages@v5`) to eliminate the Node.js 20 deprecation warning.
+  * Pinned `runs-on: ubuntu-24.04` in both workflows to remove the Ubuntu 26 `ubuntu-latest` migration notice, and added `.github/workflows/**` to `build.yml` path triggers.
+
 ## 2026-11-13 01:50 +02:00 — Whole-Card Navigation Alignment & Gemini API Test Generation Complete
 - **Status:** Complete, tested, verified live in Chrome (port 9222), and deployed!
 - **Whole-Card Jump Alignment:**

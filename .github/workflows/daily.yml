@@ -17,15 +17,15 @@ concurrency:
 
 jobs:
   generate:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
         with:
           fetch-depth: 0
 
       - name: Set up Python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v7
         with:
           python-version: '3.11'
 
@@ -43,18 +43,21 @@ jobs:
           git add cards/ data/
           if ! git diff --cached --quiet; then
             git commit -m "Auto-generate 15 daily cards (3x5 patches) for $(date -u +'%Y-%m-%d') [skip ci]"
-            git pull --rebase origin main
-            git push origin main
+            if ! git push origin HEAD:main; then
+              git fetch origin main
+              git rebase -X ours origin/main || (git checkout --theirs data/ && python scripts/build_index.py && git add data/ && GIT_EDITOR=true git rebase --continue)
+              git push origin HEAD:main
+            fi
           fi
 
       - name: Setup Pages
-        uses: actions/configure-pages@v5
+        uses: actions/configure-pages@v6
 
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
+        uses: actions/upload-pages-artifact@v5
         with:
           path: '.'
 
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v4
+        uses: actions/deploy-pages@v5

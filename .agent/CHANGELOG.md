@@ -1,6 +1,13 @@
 # CHANGELOG
 > Entries newest on top. Only implemented changes.
 
+## 2026-11-14 05:56 +02:00
+- **Idempotent Index & Report Generation (`scripts/build_index.py`):** Added `_without_key` and `_preserve_timestamp_if_unchanged` helpers so `data/index.json` (`generated_at`) and `data/build_report.json` (`timestamp`) retain existing timestamps when no card/patch/config content changed.
+- **GitHub Actions Conflict-Safe Commit & Push (`.github/workflows/build.yml`, `.github/workflows/daily.yml`):**
+  * Replaced unsafe `git commit` + `git pull --rebase origin main` in `build.yml` with `git fetch origin main` check, `git reset --hard origin/main`, `python scripts/build_index.py` rebuild when `HEAD` lags behind `origin/main`, and push via `HEAD:main`. Also added `.github/workflows/**` to `build.yml` push path triggers.
+  * Hardened `daily.yml` push step to retry with `git rebase -X ours origin/main` and regenerate `data/` via `python scripts/build_index.py` on conflict before pushing `HEAD:main`.
+- **Workflow Runner & Runtime Upgrades:** Pinned `runs-on: ubuntu-24.04` and upgraded workflow actions to `actions/checkout@v7`, `actions/setup-python@v7`, `actions/configure-pages@v6`, `actions/upload-pages-artifact@v5`, and `actions/deploy-pages@v5` across `build.yml` and `daily.yml`.
+
 ## 2026-11-13 01:50 +02:00
 - **Whole-Card Jump Alignment:** Aligned structure so that 1 Card holds 5 Infos. The `Jump to Card` dropdown lists whole cards (`Card #1 (Infos #1–#5)` ... `Card #5 (Infos #21–#25)`). Selecting a card immediately loads and navigates to the whole card with its 5 infos. Individual items inside are labeled `Info #N`.
 - **API Test Generation (Card #5):** Executed `scripts/generate_daily.py --batches 1` with user's Gemini key. Automatically handled 503 backoff on `gemini-3.8-flash` and generated Card #5 (`2026-11-12_auto_01.json`, Infos #21–#25) via `gemini-3.5-flash` with authentic Egyptian Arabic and scenario MCQs. Updated `data/index.json` to 25 total infos.

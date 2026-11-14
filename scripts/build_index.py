@@ -32,6 +32,34 @@ def extract_date_str(batch_id: str, created_at: str, rel_path: str) -> str:
     return datetime.now(timezone.utc).strftime("%Y-%m-%d")
 
 
+def _without_key(data: Any, key: str) -> Any:
+    """Return a shallow copy of a dict excluding `key` for idempotent comparisons."""
+    if isinstance(data, dict):
+        return {k: v for k, v in data.items() if k != key}
+    return data
+
+
+def _preserve_timestamp_if_unchanged(
+    path: Path,
+    payload: Dict[str, Any],
+    ts_key: str,
+    force_update: bool = False,
+) -> Tuple[Dict[str, Any], bool]:
+    """Preserve existing timestamp if payload content (excluding ts_key) is unchanged."""
+    existing = load_json(path)
+    if (
+        not force_update
+        and isinstance(existing, dict)
+        and isinstance(existing.get(ts_key), str)
+        and existing.get(ts_key)
+        and _without_key(existing, ts_key) == _without_key(payload, ts_key)
+    ):
+        updated = dict(payload)
+        updated[ts_key] = existing[ts_key]
+        return updated, False
+    return payload, True
+
+
 def build() -> int:
     DATA_DIR.mkdir(parents=True, exist_ok=True)
 
@@ -163,7 +191,8 @@ def build() -> int:
     file_summaries.sort(key=lambda x: x["patch_number"], reverse=True)
 
     # Save index.json (patch listings)
-    save_json(DATA_DIR / "index.json", {
+    index_path = DATA_DIR / "index.json"
+    index_payload = {
         "generated_at": datetime.now(timezone.utc).isoformat(),
         "total_files": len(file_summaries),
         "total_patches": len(file_summaries),
@@ -171,7 +200,11 @@ def build() -> int:
         "batches_per_day_target": int(generator_config.get("batches_per_day", 3)),
         "batch_size_target": int(generator_config.get("batch_size", 5)),
         "files": file_summaries,
-    })
+    }
+    index_payload, index_changed = _preserve_timestamp_if_unchanged(
+        index_path, index_payload, "generated_at"
+    )
+    save_json(index_path, index_payload)
 
     # Build search.json
     patch_by_file = {f["path"]: f["patch_number"] for f in file_summaries}
@@ -206,6 +239,7 @@ def build() -> int:
     save_json(DATA_DIR / "search.json", search_records)
 
     # Save build report
+    report_path = DATA_DIR / "build_report.json"
     report = {
         "timestamp": datetime.now(timezone.utc).isoformat(),
         "total_files_scanned": len(card_files),
@@ -217,7 +251,10 @@ def build() -> int:
         "skipped_cards_count": len(skipped_cards),
         "skipped_details": skipped_cards,
     }
-    save_json(DATA_DIR / "build_report.json", report)
+    report, _ = _preserve_timestamp_if_unchanged(
+        report_path, report, "timestamp", force_update=index_changed
+    )
+    save_json(report_path, report)
 
     print(
         f"[OK] Build complete: {len(file_summaries)} patches ({len(all_cards)} cards) indexed, "
