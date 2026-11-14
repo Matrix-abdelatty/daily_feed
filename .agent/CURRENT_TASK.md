@@ -2,7 +2,7 @@
 > Entries newest on top.
 
 ## 2026-11-14 05:56 +02:00 — Fix GitHub Actions `build.yml` & `daily.yml` Workflows & Idempotent Index Build
-- **Status:** Changes implemented locally and ready to commit, push, and verify live on GitHub Actions.
+- **Status:** Complete, pushed (`a54b49a`), and verified live on GitHub Actions (`Build Index & Deploy Pages` Run `#9` / ID `43554187950`: `conclusion=success`, `0` annotations).
 - **Issues Addressed:**
   * Fixed Step 5 (`Commit build artifacts if changed`) exit code `1` conflict failures when `origin/main` advances or an older run is re-run, by syncing with `origin/main` before rebuilding/committing in `.github/workflows/build.yml` and adding rebase-conflict recovery with `build_index.py` rebuild in `.github/workflows/daily.yml`.
   * Made `scripts/build_index.py` idempotent: preserves existing `generated_at` in `data/index.json` and `timestamp` in `data/build_report.json` when content (excluding timestamps) is unchanged, verified locally with consecutive runs yielding zero `git status` diff in `data/`.
