@@ -1,0 +1,288 @@
+{
+  "schema_version": 1,
+  "batch_id": "2026-11-15_auto_02",
+  "created_at": "2026-11-15T13:30:58.055632+00:00",
+  "source": "gemini-3.8-flash",
+  "cards": [
+    {
+      "id": "2026-11-15_leadership_speak-last-rule",
+      "created_at": "2026-11-15T13:30:58.055632+00:00",
+      "topic": "leadership",
+      "tags": [
+        "management",
+        "teamwork",
+        "listening"
+      ],
+      "level": "intermediate",
+      "needs_completion": false,
+      "en": {
+        "title": "Speak Last in Problem-Solving Meetings",
+        "hook": "The moment the boss says 'I think we should do X', the room stops thinking and starts nodding.",
+        "action": "Frame the problem, then ask each person for their perspective before revealing your own take. Summarize patterns you noticed across their ideas at the end.",
+        "key_phrase": "I want to hear everyone's read on this before I weigh in.",
+        "when": "When leading a team discussion where you need genuine input, not just consensus.",
+        "why": "Authority bias silences dissenting opinions early; speaking last protects psychological safety and surfaces hidden risks.",
+        "example": "Leader: 'Our churn spiked 4% this month. Nour, what's your view on why? Then Omar.' After everyone talks: 'Based on what you all said, three issues keep surfacing. Let's tackle Nour's point first.'",
+        "mistake": "Sharing your preferred solution in the opening two minutes, then asking 'Any thoughts?'"
+      },
+      "ar": {
+        "title": "اتكلم آخر واحد في اجتماعات حل المشاكل",
+        "hook": "أول ما المدير يقول 'أنا شايف نعمل كذا'، كل اللي في القاعة بيبطلوا تفكير ويبدأوا يهزوا دماغهم موافقة.",
+        "action": "اطرح المشكلة بس، وخلي كل واحد يقول رأيه الأول قبل ما تقول وجهة نظرك إنت خالص. في الآخر، لخص النقط المشتركة اللي سمعتها منهم.",
+        "key_phrase": "عايز أسمع تقييم كل واحد فيكم للموقف قبل ما أقول رأيي.",
+        "when": "وأنت بتدير نقاش مع تيمك ومحتاج أفكار حقيقية مش مجرد تطبيل وموافقة وخلاص.",
+        "why": "هيبة منصبك بتخلي الناس تخاف تعارضك من البداية؛ لما تتكلم في الآخر بتديهم أمان يطلعوا المشاكل المستخبية.",
+        "example": "المدير: 'نسبة الإلغاء زادت 4% الشهر ده. نور، شايفة إيه السبب؟ وبعدك عمر.' بعد ما الكل خلص: 'سامع نقط مشتركة عندكم كلكم، تعالوا نبدأ بالنقطة اللي قالتها نور.'",
+        "mistake": "إنك تبدأ الميتنج بحلك المقترح وتقول بعدها 'حد عنده رأي تاني؟'"
+      },
+      "quiz": {
+        "type": "mcq",
+        "correct_index": 2,
+        "en": {
+          "question": "You manage a team and need to figure out why a launch failed. How do you open the retrospective?",
+          "options": [
+            "Explain exactly what went wrong and ask the team if they agree.",
+            "Ask the most senior engineer to break down the timeline while you take notes.",
+            "State the outcome neutrally and invite the junior members to share what they noticed first.",
+            "Let everyone speak freely with no structure until someone hits on the right answer."
+          ],
+          "explanation": "Starting neutrally and inviting less vocal or junior members first prevents authority bias and encourages unvarnished observations."
+        },
+        "ar": {
+          "question": "إنت مدير تيم وعايز تفهم سبب فشل إطلاق منتج معين. تفتح ميتنج تقييم التجربة إزاي؟",
+          "options": [
+            "تشرح إيه اللي باظ بالظبط وتسأل التيم لو موافقين على كلامك.",
+            "تطلب من أقدم مهندس يحكي القصة وإنت تكتب وراه ملاحظات.",
+            "توضح النتيجة بموضوعية وتطلب من الأصغر في التيم يقولوا ملاحظاتهم الأول.",
+            "تسيب الكل يتكلم بعشوائية من غير نظام لحد ما حد يوصل للحل الصح بالصدفة."
+          ],
+          "explanation": "البداية بموضوعية وسماع الأفراد الأصغر أو الأقل كلاماً بيمنع انحياز السلطة وبيطلع حقائق مش متجملة."
+        }
+      }
+    },
+    {
+      "id": "2026-11-15_learning_the-generation-effect",
+      "created_at": "2026-11-15T13:30:58.055632+00:00",
+      "topic": "learning",
+      "tags": [
+        "memory",
+        "study-skills",
+        "retention"
+      ],
+      "level": "beginner",
+      "needs_completion": false,
+      "en": {
+        "title": "Guess Before Looking Up the Answer",
+        "hook": "Googling the answer instantly feels efficient, but your brain dumps the info three minutes later.",
+        "action": "Whenever you hit a concept or fact you forgot, spend 15 seconds actively guessing the answer before opening the book or searching.",
+        "key_phrase": "",
+        "when": "When reviewing technical terms, industry metrics, or study material.",
+        "why": "The cognitive effort of retrieval creates an 'anticipatory gap' in memory, making the correct answer stick much deeper once revealed.",
+        "example": "Instead of checking your notes for a pricing formula: 'Wait, was it margin times unit cost or price minus cost? Let me guess... price minus cost divided by price.' Then you check. Even if wrong, it locks in.",
+        "mistake": "Rereading highlighted summaries and assuming recognition equals long-term retention."
+      },
+      "ar": {
+        "title": "خمّن الأول قبل ما تبص على الإجابة",
+        "hook": "إنك تجري تعمل سيرش على جوجل أول ما تنسى معلومة بيحسسك بالإنجاز، بس مخك بيمسحها بعد تلت دقايق.",
+        "action": "أول ما تقف قدام معلومة أو مصطلح ناسيه، اقف 15 ثانية وحاول تخمن الإجابة من دماغك قبل ما تدور عليها.",
+        "key_phrase": "",
+        "when": "وإنت بتذاكر مهارة جديدة، أرقام تخص شغلك، أو بتراجع مصطلحات معقدة.",
+        "why": "المجهود اللي مخك بيبذله عشان يسترجع المعلومة بيعمل زي فراغ وتوقع، فالمعلومة الصح بتثبت جامد لما تشوفها.",
+        "example": "بدل ما تبص في كشكولك على معادلة حساب الأرباح: 'استنى كده، كانت الهامش في التكلفة ولا السعر ناقص التكلفة؟ هخمن إنها السعر ناقص التكلفة على السعر.' بعدين تكشفها. حتى لو غلطت، هتثبت.",
+        "mistake": "إنك تعيد قراءة الكلام اللي إنت معلم عليه بالماركر وتتخيل إنك كده حافظه."
+      },
+      "quiz": {
+        "type": "mcq",
+        "correct_index": 1,
+        "en": {
+          "question": "You are preparing for an interview and cannot remember a technical definition. What builds the strongest memory?",
+          "options": [
+            "Immediately check the definition so you don't reinforce an incorrect answer.",
+            "Force yourself to formulate a definition from memory first, then verify with your notes.",
+            "Write the definition down ten times in a notebook.",
+            "Skip that question and move on to definitions you already know well."
+          ],
+          "explanation": "Active retrieval and generating an attempt primes the brain to encode the correct answer far more durably than immediate lookup."
+        },
+        "ar": {
+          "question": "بتستعد لإنترفيو ونسيت تعريف مصطلح تكنيكال مهم. إيه أكتر حاجة هتثبته في مخك؟",
+          "options": [
+            "تبص فوراً على التعريف عشان متثبتش معلومة غلط في دماغك.",
+            "تجبر نفسك تصيغ التعريف من ذاكرتك الأول، وبعدين تتأكد من مذكراتك.",
+            "تكتب التعريف عشر مرات ورا بعض في كشكول.",
+            "تعدي النقطة دي وتراجع الحاجات اللي إنت حافظها كويس أصلاً."
+          ],
+          "explanation": "محاولة الاسترجاع النشط والتخمين بتخلي المخ يستقبل المعلومة الصح ويحفرها أضعاف ما لو دورت عليها فوراً."
+        }
+      }
+    },
+    {
+      "id": "2026-11-15_meetings_parking-lot-technique",
+      "created_at": "2026-11-15T13:30:58.055632+00:00",
+      "topic": "meetings",
+      "tags": [
+        "facilitation",
+        "time-management",
+        "focus"
+      ],
+      "level": "intermediate",
+      "needs_completion": false,
+      "en": {
+        "title": "Use a Public Parking Lot for Tangents",
+        "hook": "One side tangent can burn 20 minutes of high-value meeting time without resolving a single thing.",
+        "action": "Acknowledge the point explicitly, write it in a shared visible note labeled 'Parking Lot', and assign the speaker 5 minutes at the very end to decide next steps for it.",
+        "key_phrase": "That's a crucial point that deserves its own focus; let me add it to the Parking Lot so we don't lose it.",
+        "when": "When an attendee introduces an off-topic debate during an agenda-focused meeting.",
+        "why": "People repeat off-topic points because they fear being ignored; writing it down validates them while keeping the room focused.",
+        "example": "Speaker: 'We also need to overhaul our customer support tool!' Moderator: 'Crucial issue. I just wrote \"Support Tool Overhaul\" in our Parking Lot. If we finish the product launch agenda with 5 minutes left, we'll assign an owner for it.'",
+        "mistake": "Telling someone 'let's take this offline' without writing it down, making them feel dismissed."
+      },
+      "ar": {
+        "title": "اعمل 'باركنج' للنقط الفرعية اللي بتضيع الوقت",
+        "hook": "موضوع جانبي واحد بيتفتح في نص الكلام ممكن يبلع 20 دقيقة من الميتنج من غير ما تحلوا حاجة.",
+        "action": "اعترف بأهمية النقطة واكتبها قدام الكل في مكان اسمه 'الباركنج'، وحدد آخر 5 دقايق في الميتنج عشان تشوفوا مين هيتابعها.",
+        "key_phrase": "دي نقطة مهمة جداً ومحتاجة تركيز لوحدها؛ هكتبها في الباركنج عشان منسهاش ونكمل جدولنا.",
+        "when": "لما حد يفتح نقاش فرعي بعيد عن الهدف الأساسي للاجتماع.",
+        "why": "الناس بتفضل تعيد وتزيد في النقطة لو حست إنك بتطنشهم؛ كتابتها قدامهم بتطمنهم إن صوتهم وصل وبتحمي وقت الاجتماع.",
+        "example": "زميلك: 'على فكرة نظام خدمة العملاء واقع ولازم نغير السيستم!' إنت: 'نقطة جوهرية جداً. كتبتها حالاً في الباركنج تحت بند \"تحديث خدمة العملاء\". هنخلص بند الإطلاق الأول، وآخر 5 دقايق نحدد مين يمسكها.'",
+        "mistake": "إنك تقول 'طب خلينا نتكلم في دي برة الميتنج' من غير ما تسجلها، فيحس إنك بتقلل من كلامه."
+      },
+      "quiz": {
+        "type": "mcq",
+        "correct_index": 0,
+        "en": {
+          "question": "During a Q3 budget review, a colleague starts debating office seating arrangements. How do you redirect?",
+          "options": [
+            "Log 'Seating layout' on the shared agenda Parking Lot and return to the budget numbers.",
+            "Tell them firmly that this topic is completely irrelevant to the meeting.",
+            "Pause the budget review for 10 minutes to solve seating quickly so everyone feels heard.",
+            "Ignore the comment completely and keep reading your slide."
+          ],
+          "explanation": "Logging it visually honors their input without derailing the primary objective, avoiding defensive arguments."
+        },
+        "ar": {
+          "question": "وإنتوا بتناقشوا ميزانية الربع التالت، زميل فتح كلام عن ترتيب مكاتب الموظفين. ترجع الميتنج لمساره إزاي؟",
+          "options": [
+            "تسجل 'ترتيب المكاتب' في خانة الباركنج في الأجندة قدامهم وترجع لأرقام الميزانية.",
+            "تقوله بحزم وبصوت عالي إن الموضوع ده ملوش أي علاقة بالاجتماع.",
+            "توقف مراجعة الميزانية 10 دقايق تخلصوا موضوع المكاتب عشان محدش يزعل.",
+            "تتجاهل كلامه تماماً وتكمل قراية في السلايد كأنه مقالش حاجة."
+          ],
+          "explanation": "تسجيل النقطة قدامه بيحترم رأيه من غير ما يضيع الهدف الأساسي للاجتماع، وده بيمنع أي حساسية أو جدال."
+        }
+      }
+    },
+    {
+      "id": "2026-11-15_money_the-72-hour-friction-rule",
+      "created_at": "2026-11-15T13:30:58.055632+00:00",
+      "topic": "money",
+      "tags": [
+        "personal-finance",
+        "habits",
+        "budgeting"
+      ],
+      "level": "beginner",
+      "needs_completion": false,
+      "en": {
+        "title": "Put a 72-Hour Cooldown on Non-Essential Buys",
+        "hook": "E-commerce apps are designed to make you tap 'Buy Now' before your rational brain even realizes what happened.",
+        "action": "For any non-essential purchase over a set amount, add it to a wishlist note with today's date, then delete the item from your cart for 72 hours.",
+        "key_phrase": "",
+        "when": "When browsing online sales or feeling the sudden urge to buy gadgets, clothes, or subscriptions.",
+        "why": "Dopamine peaks during anticipation, not ownership; waiting 72 hours lets the neurochemical spike drop so you evaluate real utility.",
+        "example": "You see a smart watch with a 30% discount. Instead of paying, you type in a phone note: 'Smart Watch - $180 - Nov 15'. On Nov 18, you look at the note. Over 60% of the time, the urge is completely gone.",
+        "mistake": "Leaving items in the active cart with saved credit cards, relying purely on willpower to avoid checkout."
+      },
+      "ar": {
+        "title": "طبق قاعدة الـ 72 ساعة على أي شرا مش ضروري",
+        "hook": "تطبيقات الشوبنج معمولة مخصوص عشان تدوس 'اشتري الآن' قبل ما عقلك الواعي يستوعب إيه اللي بيحصل.",
+        "action": "أي حاجة تشتريها مش أساسية وتعدي مبلغ معين، حطها في نوتة باسمها وتاريخ النهاردة، وامسحها من عربة الشراء لمدة 72 ساعة كاملة.",
+        "key_phrase": "",
+        "when": "وإنت بتقلب في عروض الأونلاين وجاتلك رغبة مفاجئة تشتري لبس، أجهزة، أو اشتراك جديد.",
+        "why": "إفراز الدوبامين بيوصل قمته في مرحلة الرغبة والتوقع مش بعد الامتلاك؛ مهلة 72 ساعة بتهدي الحماس وتخليك تشوف قيمتها الحقيقية.",
+        "example": "شوفت ساعة سمارت عليها خصم مغري. بدل ما تدفع، اكتب في الموبايل: 'ساعة سمارت - 3000 جنيه - 15 نوفمبر'. يوم 18 ارجع بص عليها؛ في أغلب الأوقات هتلاقي الرغبة اتبخرت ومش محتاجها أصلاً.",
+        "mistake": "إنك تسيب الحاجة في عربة الشراء والفيزا متسجلة، وتعتمد بس على قوة إرادتك إنك متدوسش دفع."
+      },
+      "quiz": {
+        "type": "mcq",
+        "correct_index": 3,
+        "en": {
+          "question": "You see an expensive pair of noise-canceling headphones on a 24-hour flash sale. What is the most financially disciplined move?",
+          "options": [
+            "Buy it immediately because the flash sale discount outweighs future regrets.",
+            "Borrow money from a friend to avoid touching your active savings account.",
+            "Buy two and plan to resell one later to cover the initial expense.",
+            "Calculate if you budgeted for it beforehand; if not, pass and let the sale expire."
+          ],
+          "explanation": "Impulse buys triggered by artificial urgency are emotional; adhering to pre-planned budgets protects you from manufactured FOMO."
+        },
+        "ar": {
+          "question": "شوفت سماعة غالية عليها عرض فلاش هينتهي خلال 24 ساعة. إيه أصح تصرف مالي تعمله؟",
+          "options": [
+            "تشتريها فوراً عشان اللحاق بالخصم هيكسبك فلوس على المدى الطويل.",
+            "تستلف تمنها من صاحبك عشان متقربش من حساب التوفير بتاعك.",
+            "تشتري اتنين وتبيع واحدة منهم عشان تغطي تمن التانية.",
+            "تشوف هل إنت كنت حاططها في ميزانيتك من قبل كده ولا لأ؛ لو لأ، سيب العرض يفوت."
+          ],
+          "explanation": "الشراء المندفع الناتج عن العروض السريعة بيكون دافعه الخوف من فوات الفرصة؛ الالتزام بالخطة المسبقة هو اللي بيحمي فلوسك."
+        }
+      }
+    },
+    {
+      "id": "2026-11-15_negotiation_the-labeling-tactic",
+      "created_at": "2026-11-15T13:30:58.055632+00:00",
+      "topic": "negotiation",
+      "tags": [
+        "tactics",
+        "persuasion",
+        "empathy"
+      ],
+      "level": "advanced",
+      "needs_completion": false,
+      "en": {
+        "title": "Label Their Hesitation Instead of Defending Your Price",
+        "hook": "When a client pushes back with silence or stiffness, defending your offer makes you look desperate.",
+        "action": "Name their unexpressed emotion or hesitation using an observation format, then stay completely silent until they respond.",
+        "key_phrase": "It seems like you feel this scope doesn't justify the investment.",
+        "when": "When the other party crosses their arms, hesitates, or goes cold after seeing your proposal.",
+        "why": "Labeling neutralizes negative emotions in the brain's amygdala and prompts the client to explain their actual constraint.",
+        "example": "Client looks at the retainer proposal and frowns. Freelancer: 'It sounds like this timeline feels too aggressive for your internal approvals.' Client sighs: 'Honestly, yes, our legal team takes three weeks for anything.'",
+        "mistake": "Immediately offering an unprompted discount the moment you notice awkward silence."
+      },
+      "ar": {
+        "title": "سمّي ترددهم بالاسم بدل ما تدافع عن سعرك",
+        "hook": "لما العميل يقفش أو يسكت بعد ما يشوف عرضك، دفاعك المستميت عن السعر بيخليك تبان واقع ومزنوق.",
+        "action": "اوصف التردد أو القلق اللي باين عليه في جملة هادية، واسكت تماماً ومتنطقش بحرف لحد ما هو يرد.",
+        "key_phrase": "شكله حاسس إن العرض ده فيه مخاطرة أو مش متماشي مع ميزانيتكم الحالية.",
+        "when": "لما الطرف التاني يكشر، يسكت، أو تلاحظ إنه اتوتر أول ما سمع الرقم.",
+        "why": "تسمية المشاعر والقلق بتهدي التوتر في المخ وبتخليه يفتح قلبه ويشرحلك المانع الحقيقي اللي مضايقه.",
+        "example": "العميل بص في الورقة وكشر. إنت: 'باين على حضرتك قلقان إن مدة التنفيذ دي متناسبش موافقات الإدارة عندكم.' العميل: 'بصراحة أه، الشؤون القانونية عندنا بتاخد شهر على أي عقد.'",
+        "mistake": "إنك تتبرع بتخفيض فوري من نفسك أول ما تلاقي العميل سكت شوية."
+      },
+      "quiz": {
+        "type": "mcq",
+        "correct_index": 1,
+        "en": {
+          "question": "You present a proposal and the prospective client leans back, sighs, and looks away. What is the most effective reaction?",
+          "options": [
+            "Immediately offer a 10% discount to show flexibility.",
+            "Say: 'It seems like something about these payment terms feels uncomfortable.' Then pause.",
+            "Ask: 'Why are you unhappy with this very standard rate?'",
+            "Keep talking through the features of your service to justify the cost."
+          ],
+          "explanation": "Labeling the perceived discomfort without judgment encourages them to explain the real barrier without triggering defensiveness."
+        },
+        "ar": {
+          "question": "قدمت عرضك للعميل، فرجع ضهره لورا، اتنهد وبص في السقف. إيه أنسب رد فعل تعمله؟",
+          "options": [
+            "تعرض فوراً خصم 10% عشان تظهر له إنك مرن معاه.",
+            "تقوله بهدوء: 'شكله في حاجة في شروط الدفع دي مقلقاك شوية.' وتسكت خالص.",
+            "تسأله: 'هو إيه اللي مش عاجبك في السعر ده مع إنه سعر السوق العادي؟'",
+            "تكمل كلام وتعدد مميزات خدمتك وتبرر التكلفة عشان تقنعه بالعافية."
+          ],
+          "explanation": "تسمية التردد والقلق من غير هجوم بتخلي العميل يتكلم بوضوح عن مشكلته الحقيقية بدل ما يتقوقع أو ينهي الديل."
+        }
+      }
+    }
+  ]
+}

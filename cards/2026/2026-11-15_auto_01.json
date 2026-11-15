@@ -1,0 +1,288 @@
+{
+  "schema_version": 1,
+  "batch_id": "2026-11-15_auto_01",
+  "created_at": "2026-11-15T13:29:41.596641+00:00",
+  "source": "gemini-3.8-flash",
+  "cards": [
+    {
+      "id": "2026-11-15_sales_reverse-scale-question",
+      "created_at": "2026-11-15T13:29:41.596641+00:00",
+      "topic": "sales",
+      "tags": [
+        "objections",
+        "closing",
+        "discovery"
+      ],
+      "level": "intermediate",
+      "needs_completion": false,
+      "en": {
+        "title": "Ask 'Why not lower?' to make prospects sell themselves",
+        "hook": "You ask a prospect how ready they are from 1 to 10. They say 7. Your instinct is to ask, 'What makes it not a 10?' That's a trap.",
+        "action": "Ask them why they didn't pick a lower number instead of asking why they didn't pick a 10. Let them defend why they want your solution.",
+        "key_phrase": "Why a 7 and not a 4 or 5?",
+        "when": "A prospect seems interested but hesitates to sign or commit.",
+        "why": "Asking why it isn't higher triggers defensiveness and objections. Asking why it isn't lower forces them to voice all the positive reasons to buy.",
+        "example": "Sales rep: 'On a scale from 1 to 10, how well does this fit?' Buyer: 'About a 6.' Sales rep: 'Fair enough. Why a 6 and not a 3?' Buyer: 'Well, your integration saves us hours and your onboarding is much faster.'",
+        "mistake": "Asking 'What do we need to do to get you to 10?', which invites a wish list of discounts and extra demands."
+      },
+      "ar": {
+        "title": "اسأله 'ليه مش أقل؟' عشان تخليه يبيع لنفسه",
+        "hook": "بتسأل العميل جاهز يشتري بنسبة كام من 10، فيقولك 7. أول رد بيجي في بالك: 'ليه مش 10؟' الفخ بدأ هنا.",
+        "action": "بدل ما تسأله إيه اللي ناقص عشان يوصل لـ 10، اسأله ليه اختار رقم عالي وما قالش رقم أقل. خليه هو اللي يبرر إعجابه بالخدمة.",
+        "key_phrase": "تمام، بس ليه اديتنا 7 وما قلتش 4 أو 5 مثلاً؟",
+        "when": "لما العميل يكون متردد أو بيفكر بعد ما شاف العرض ولسه ما قفلش البيعة.",
+        "why": "لو سألته ليه مش 10 هيفضل يفتكر المشاكل والعيوب. لكن لما تسأله ليه مش أقل، مخه بيشتغل عشان يدافع عن الحاجات الحلوة اللي شافها عندك.",
+        "example": "البياع: 'لو قيّمنا الحل ده من 1 لـ 10، شايفه مناسب بنسبة كام؟' العميل: 'حوالي 6.' البياع: 'حلو، بس ليه 6 ومش 3 مثلاً؟' العميل: 'بصراحة لأن السيستم بتاعكم هيوفرلنا ساعتين شغل كل يوم، والدعم الفني عندكم سريع.'",
+        "mistake": "إنك تسأله 'إيه اللي ناقص عشان نوصل لـ 10؟'، فتديله فرصة يطلب خصم أو مزايا زيادة ببلاش."
+      },
+      "quiz": {
+        "type": "mcq",
+        "correct_index": 2,
+        "en": {
+          "question": "A client rates your proposal a 7 out of 10. What is your best response?",
+          "options": [
+            "What discount would turn that 7 into a 10?",
+            "What features are missing that kept it from being a 10?",
+            "Out of curiosity, why a 7 and not a 3 or 4?",
+            "Let me schedule another demo to clear up your doubts."
+          ],
+          "explanation": "Asking why the rating isn't lower prompts the client to verbalize their genuine reasons for buying, shifting their focus to value rather than objections."
+        },
+        "ar": {
+          "question": "العميل قالك إنه مقتنع بالعرض بتاعك بنسبة 7 من 10. أفضل رد تقوله إيه؟",
+          "options": [
+            "تحب نقدملك خصم كام عشان تخليها 10؟",
+            "إيه اللي ناقص في السيستم عشان توصله لـ 10؟",
+            "طب فضول مني، ليه اديتنا 7 وما قلتش 3 أو 4؟",
+            "خليني أعملك ديمو تاني عشان أجاوب على كل شكوكم."
+          ],
+          "explanation": "سؤال العميل 'ليه مش أقل' بيخليه يعدد بنفسه مزايا العرض بتاعك ويبرر سبب اهتمامه، بدل ما يركز في العيوب."
+        }
+      }
+    },
+    {
+      "id": "2026-11-15_business_kill-metrics",
+      "created_at": "2026-11-15T13:29:41.596641+00:00",
+      "topic": "business",
+      "tags": [
+        "strategy",
+        "experiments",
+        "risk"
+      ],
+      "level": "intermediate",
+      "needs_completion": false,
+      "en": {
+        "title": "Set a 'Kill Metric' before you launch any new project",
+        "hook": "Most failing projects don't die of a single crash. They bleed cash for eighteen months because nobody agreed on when to pull the plug.",
+        "action": "Before spending any budget or development hours, write down the exact hard number and exact date that will trigger an automatic shutdown.",
+        "key_phrase": "If this doesn't hit X metric by Y date, we kill it without debate.",
+        "when": "Planning a new feature, marketing campaign, product line, or pilot partnership.",
+        "why": "Sunk cost bias blinds teams once money is spent. Committing to an exit condition while calm prevents emotional, rationalized extensions.",
+        "example": "Founder: 'We're launching outbound cold emails. If we don't book 15 qualified calls at under $100 CAC within 45 days, we kill the channel and reallocate the budget.'",
+        "mistake": "Launching an initiative with only success targets and hoping people will simply 'know' when to stop."
+      },
+      "ar": {
+        "title": "حدد 'شرط الإلغاء' قبل ما تبدأ أي مشروع جديد",
+        "hook": "المشاريع الفاشلة مش بتموت فجأة، دي بتفضل تنزف فلوس لسنة كاملة عشان مفيش حد اتفق من الأول امتى نقفل الحنفية.",
+        "action": "قبل ما تدفع جنيه واحد أو تبدأ شغل، اكتب رقم محدد وتاريخ واضح؛ لو ما وصلناش للرقم ده في التاريخ ده، المشروع يقف فوراً.",
+        "key_phrase": "لو ما حققناش الرقم ده بالظبط بحلول يوم كذا، هنوقف التجربة دي من غير نقاش.",
+        "when": "وأنت بتخطط لحملة إعلانية جديدة، أو ميزة في المنتج، أو بتفتح خط شغل جديد.",
+        "why": "بعد ما بتصرف فلوس، بيبقى صعب نفسياً تعترف بالخسارة وبتفضل تبرر. لكن تحديد شرط الإلغاء بدري بيحميك من العواطف وقرارات العند.",
+        "example": "مدير البيزنس: 'هنجرب إعلانات تيك توك. لو ما جابتش 50 طلب بسعر تكلفة أقل من 100 جنيه خلال 30 يوم، هنقفل الحملات فوراً ونوفر الميزانية.'",
+        "mistake": "إنك تبدأ المشروع بأهداف للنجاح بس، وتفترض إن الفريق هيعرف لوحده امتى يوقف لو الأمور باظت."
+      },
+      "quiz": {
+        "type": "mcq",
+        "correct_index": 0,
+        "en": {
+          "question": "A team is testing a new subscription plan. What makes a true Kill Metric?",
+          "options": [
+            "Fewer than 100 paid renewals by day 60 triggers immediate project cancellation.",
+            "If engagement feels soft after two months, the team will brainstorm adjustments.",
+            "The goal is 500 active subscribers by the end of Q3.",
+            "We will keep optimizing until customer feedback turns positive."
+          ],
+          "explanation": "A kill metric must be a pre-agreed threshold and specific deadline tied to shutting the project down, not a vague review or an aspirational target."
+        },
+        "ar": {
+          "question": "فريق بيجرب باقة اشتراكات جديدة في التطبيق. إيه في دول يعتبر 'شرط إلغاء' حقيقي؟",
+          "options": [
+            "لو ما وصلناش لـ 100 مشترك دفعوا بحلول اليوم الـ 60، المشروع يقف فوراً.",
+            "لو حسينا إن التفاعل ضعيف بعد شهرين، نقعد ونفكر في تعديلات.",
+            "هدفنا نوصل لـ 500 مشترك نشط مع نهاية الربع التالت.",
+            "هنفضل نطور في الباقة لحد ما آراء العملاء تبقى إيجابية."
+          ],
+          "explanation": "شرط الإلغاء الصح لازم يكون رقم قطعي محدد بتاريخ زمني واضح يترتب عليه وقف المشروع تماماً، مش مجرد هدف عام أو إحساس."
+        }
+      }
+    },
+    {
+      "id": "2026-11-15_career_the-1-3-1-rule",
+      "created_at": "2026-11-15T13:29:41.596641+00:00",
+      "topic": "career",
+      "tags": [
+        "managing-up",
+        "leadership",
+        "visibility"
+      ],
+      "level": "beginner",
+      "needs_completion": false,
+      "en": {
+        "title": "Use the 1-3-1 Rule to manage up like a senior leader",
+        "hook": "Junior employees bring problems. Mid-level employees bring ideas. Senior operators bring the exact decision ready to sign.",
+        "action": "Structure your update as: 1 core problem (2 sentences), 3 possible solutions with trade-offs, and 1 clear recommendation of what to do next.",
+        "key_phrase": "Here is the issue, here are three viable paths, and here is the one I recommend we execute today.",
+        "when": "Escalating a blocker, budget shortfall, or client crisis to your manager or executive.",
+        "why": "Executives suffer from decision fatigue. When you present structured choices with a pick, you reduce their cognitive burden and prove you own the outcome.",
+        "example": "'Our vendor missed the sprint deadline (Problem). We can: 1) pay a rush fee, 2) drop feature B, or 3) push launch by two days. I recommend option 2 because feature B has only 4% usage and we protect our launch date.'",
+        "mistake": "Dumping raw panic into your boss's inbox with 'What should we do about this?'"
+      },
+      "ar": {
+        "title": "طبق قاعدة 1-3-1 عشان تترقى وتفكر زي المديرين",
+        "hook": "الموظف المبتدئ بيرمي المشكلة في حجر مديره. الموظف الشاطر بيجيب القرار جاهز على الإمضاء.",
+        "action": "لخص رسالتك لمديرك في تلات حاجات: مشكلة واحدة محددة، 3 حلول مقترحة بعيوبها وميزاتها، واقتراح واحد واضح تختاره وتبرره.",
+        "key_phrase": "دي المشكلة باختصار، ودول تلات اختيارات نقدر نتحرك فيهم، وأنا شايف ننفذ الحل التاني للأسباب دي.",
+        "when": "لما تواجه أزمة في الشغل أو تعطل مفاجئ ومحتاج موافقة أو توجيه من مديرك.",
+        "why": "المدير بيكون غرقان في قرارات تانية؛ لما تديله الاختيارات جاهزة بالحل الأفضل، بتريحه من التفكير وتثبت إنك قائد مش مجرد منفذ.",
+        "example": "'المورد اتأخر في التسليم (المشكلة). عندنا 3 حلول: ندفع مصاريف شحن سريع، أو نأجل الإطلاق يومين، أو ننزل بالنسخة الأساسية ونأجل الميزة الإضافية. بقترح نلغي الميزة الإضافية مؤقتاً عشان نحافظ على ميعادنا.'",
+        "mistake": "إنك تبعت لمديرك إيميل فيه مصيبة وتقوله: 'المشروع واقف، نعمل إيه دلوقتي؟'"
+      },
+      "quiz": {
+        "type": "mcq",
+        "correct_index": 3,
+        "en": {
+          "question": "A major bug threatens an app launch. How should an engineer escalate this to their VP?",
+          "options": [
+            "Send a message saying: 'Big bug in checkout, let me know how you want to handle it.'",
+            "Write a 4-page detailed post-mortem explaining whose code caused the failure.",
+            "Fix it secretly over the weekend without telling anyone to avoid panic.",
+            "Outline the bug, give 3 trade-off options (delay, hotfix, or ship partial), and recommend the best one."
+          ],
+          "explanation": "Giving clear options paired with a justified recommendation saves leadership time and proves strategic judgment under pressure."
+        },
+        "ar": {
+          "question": "ظهرت مشكلة تقنية كبيرة بتهدد ميعاد إطلاق التطبيق. إزاي المبرمج يبلغ رئيس قطاع التكنولوجيا؟",
+          "options": [
+            "يبعتله رسالة: 'في باج ضخمة في صفحة الدفع، قولي اتصرف إزاي.'",
+            "يكتب تقرير من 4 صفحات يشرح فيه بالتفصيل مين المبرمج اللي كتب الكود الغلط.",
+            "يصلحها في الويك إند في السر من غير ما يبلغ حد عشان محدش يقلق.",
+            "يشرح المشكلة في جملتين، يعرض 3 خيارات بتكلفتهم، ويوصي بأفضل حل ينفذوه فوراً."
+          ],
+          "explanation": "عرض المشكلة مصحوبة بـ 3 حلول مع ترشيح الحل الأنسب بيحل الأزمة فوراً ويبين إنك صاحب قرار وتفكير استراتيجي."
+        }
+      }
+    },
+    {
+      "id": "2026-11-15_communication_tactical-pause",
+      "created_at": "2026-11-15T13:29:41.596641+00:00",
+      "topic": "communication",
+      "tags": [
+        "clarity",
+        "difficult-conversations",
+        "assertiveness"
+      ],
+      "level": "intermediate",
+      "needs_completion": false,
+      "en": {
+        "title": "Use the Tactical Silence right after giving bad news",
+        "hook": "When delivering hard news, the most damaging words are the ones you say right after the sentence ends.",
+        "action": "Say the difficult fact clearly in one sentence, then clamp your mouth shut for three full seconds. Do not justify, hedge, or apologize in the same breath.",
+        "key_phrase": "We cannot match that delivery date. [Silence]",
+        "when": "Delivering price increases, scope rejections, performance feedback, or missed milestones.",
+        "why": "Nervous rambling after bad news signals guilt and weakens your authority. Silence lets the other person process the reality without giving them ammo to debate.",
+        "example": "Bad: 'We can't hit Friday, but it's really because supplier X had issues and traffic was bad, sorry about that!' Good: 'We won't be able to deliver by Friday. [Silence until client responds]'",
+        "mistake": "Filling the silence with unrequested justifications and self-blame to soothe your own social discomfort."
+      },
+      "ar": {
+        "title": "اسكت تماماً أول ما تقول خبر سيئ أو ترفض طلب",
+        "hook": "لما بتيجي تقول خبر وحش لحد، أكتر كلام بيوديك في داهية هو الكلام الزيادة اللي بتقوله بعد جملتك الأساسية علطول.",
+        "action": "قول الخبر الصعب أو الرفض في جملة واحدة واضحة ومباشرة، وبعدها اقفل بقك تماماً وسيب تلات ثواني صمت. بلاش رغي ولا تبرير في نفس النفس.",
+        "key_phrase": "للأسف مش هنقدر نسلم في الميعاد ده. [واسكت]",
+        "when": "لما تيجي تبلغ العميل بزيادة أسعار، أو ترفض طلب زيادة شغل، أو تبلغ عن تأخير.",
+        "why": "الرغي وتبرير الموقف بعد الخبر الوحش بيبينك مهزوز وحاسس بالذنب، لكن السكوت بيدي وزن لكلامك وبيخلي الطرف التاني يستوعب الحقيقة من غير ما تمسك عليه غلطة.",
+        "example": "غلط: 'مش هنقدر نسلم الجمعة والله عشان المورد اتأخر والكهربا قطعت ومحروج جداً منك!' صح: 'مش هنقدر نسلم الشغل يوم الجمعة الجاية. [سكوت تام لحد ما العميل يرد]'",
+        "mistake": "إنك تملى الفراغ بالتبريرات السريعة عشان تهرب من إحساسك بالكسوف أو التوتر."
+      },
+      "quiz": {
+        "type": "mcq",
+        "correct_index": 1,
+        "en": {
+          "question": "You have to tell a client that their requested project timeline is impossible. What should you do?",
+          "options": [
+            "Say yes to the date, then apologize next month when you miss it.",
+            "State clearly that the date cannot be met, then pause and let them react first.",
+            "Immediately offer a 20% discount before they express anger.",
+            "List every internal bottleneck and blame your subcontractor for the delay."
+          ],
+          "explanation": "Stating the hard reality plainly and maintaining silence keeps your credibility intact and avoids negotiating against yourself out of nervousness."
+        },
+        "ar": {
+          "question": "مضطر تبلغ العميل إن ميعاد التسليم اللي طالبه مستحيل يتنفذ. التصرف الصح إيه؟",
+          "options": [
+            "توافق على الميعاد وخلاص، ولما تتأخر الشهر الجاي تعتذرله.",
+            "تبلغه بوضوح إن الميعاد ده مش متاح، وتسكت تماماً وتسيبه يرد الأول.",
+            "تعرض عليه خصم 20% فوراً قبل ما يلحق يزعل أو يتعصب.",
+            "تقعد تشرح كل المشاكل الداخلية في شركتكم وترمي اللوم على الموردين."
+          ],
+          "explanation": "إنك تقول الحقيقة في جملة مباشرة وتسكت بيحافظ على هيبتك ومصداقيتك، وبيمنعك من إنك تبرر بضعف أو تقدم تنازلات من غير داعي."
+        }
+      }
+    },
+    {
+      "id": "2026-11-15_decision-making_pre-mortem-drill",
+      "created_at": "2026-11-15T13:29:41.596641+00:00",
+      "topic": "decision_making",
+      "tags": [
+        "risk-management",
+        "planning",
+        "bias"
+      ],
+      "level": "beginner",
+      "needs_completion": false,
+      "en": {
+        "title": "Run a 10-Minute Pre-Mortem to catch blind spots early",
+        "hook": "Post-mortems tell you why your project died. A pre-mortem performs the autopsy while the patient is still perfectly alive.",
+        "action": "Gather your team and say: 'Imagine it is one year from today, and this initiative failed completely and catastrophically. Write down why it failed in 3 minutes.'",
+        "key_phrase": "Assume we failed completely: what specifically caused our disaster?",
+        "when": "Before locking in a final decision on any major project, contract, or strategy shift.",
+        "why": "Optimism bias and social conformity silence dissenters during planning. Granting permission to imagine failure legitimatizes critical warnings without making people feel negative.",
+        "example": "Before launching a new app, the team does a pre-mortem. The quietest engineer writes: 'Our API provider throttles us at 500 concurrent users.' The team spots the fatal flaw and switches providers before spending marketing dollars.",
+        "mistake": "Asking 'Does anyone see any risks?', which social pressure routinely silences."
+      },
+      "ar": {
+        "title": "اعمل جلسة 'تشريح مسبق' عشان تكشف الكوارث قبل ما تبدأ",
+        "hook": "تقارير ما بعد الفشل بتقولك المشروع مات ليه بعد فوات الأوان. لكن 'التشريح المسبق' بيكشف سبب الوفاة والمريض لسه عايش وصحته كويسة.",
+        "action": "اجمع فريقك وقولهم: 'تخيلوا إننا بعد سنة من دلوقتي والمشروع فشل بنسبة 100% وخسرنا كل فلوسنا. اكتبوا في ورقة إيه السبب اللي موّته.'",
+        "key_phrase": "تخيلوا إن المشروع خرب وفشل تماماً.. يا ترى إيه الغلطة اللي عملناها وسببت ده؟",
+        "when": "قبل ما تمضي عقد كبير، أو تدوس على زرار إطلاق منتج، أو تاخد قرار استراتيجي مصيري.",
+        "why": "الناس بتخاف تطلع عيوب وهي بتخطط عشان ميبانوش محبطين. السؤال ده بيديهم رخصة نفسية يتكلموا عن المشاكل الحقيقية بصراحة من غير خوف.",
+        "example": "قبل ما يطلقوا تطبيق جديد، المدير سأل السؤال ده. مبرمج ساكت كتب: 'الخادم هيقع لو دخل 1000 يوزر في نفس اللحظة.' لحقوا المشكلة وغيروا السيرفر قبل الحملة الإعلانية.",
+        "mistake": "إنك تسأل بطريقة تقليدية: 'حد شايف أي مخاطر في الخطة دي؟'، فكل الناس تسكت وتجامل."
+      },
+      "quiz": {
+        "type": "mcq",
+        "correct_index": 2,
+        "en": {
+          "question": "Why is running a pre-mortem more effective than asking 'Are there any risks?'",
+          "options": [
+            "It guarantees that no team member will ever make mistakes.",
+            "It forces you to hire outside consultants to check your work.",
+            "It removes the social penalty of being seen as negative or pessimistic.",
+            "It creates a formal paper trail to assign blame if the project fails."
+          ],
+          "explanation": "Assuming failure as a given frees team members from the social pressure of appearing unsupportive, unleashing honest critiques."
+        },
+        "ar": {
+          "question": "ليه أسلوب 'التشريح المسبق' أضمن بكتير من سؤال 'حد عنده أي اعتراض على الخطة؟'؟",
+          "options": [
+            "عشان بيضمن إن مفيش أي فرد في التيم هيغلط نهائياً.",
+            "عشان بيجبر الإدارة تعين استشاري خارجي يراجع الشغل.",
+            "عشان بيشيل الإحراج والخوف من إن اللي ينتقد يتقال عليه شخص سلبي أو محبط.",
+            "عشان بيعمل ورق يثبت مين الغلطان لما المشروع يفشل."
+          ],
+          "explanation": "افتراض الفشل كأمر واقع بيكسر حاجز الخوف المجتمعي؛ الموظف بيتكلم براحته لأنه مش بيهاجم الفكرة، ده بيلعب سيناريو مفروض عليه."
+        }
+      }
+    }
+  ]
+}

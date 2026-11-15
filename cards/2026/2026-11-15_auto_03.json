@@ -1,0 +1,288 @@
+{
+  "schema_version": 1,
+  "batch_id": "2026-11-15_auto_03",
+  "created_at": "2026-11-15T13:32:10.383238+00:00",
+  "source": "gemini-3.8-flash",
+  "cards": [
+    {
+      "id": "2026-11-15_persuasion_dead-thread-revival",
+      "created_at": "2026-11-15T13:32:10.383238+00:00",
+      "topic": "persuasion",
+      "tags": [
+        "follow-up",
+        "negotiation",
+        "email"
+      ],
+      "level": "beginner",
+      "needs_completion": false,
+      "en": {
+        "title": "Revive ghosted leads with a 'No-oriented' question",
+        "hook": "You sent three follow-ups, and they disappeared. Begging for a reply makes you look desperate; nudging them to say 'No' gets them typing in minutes.",
+        "action": "Send a one-sentence message that gives them full permission to walk away. Ask if they have decided to give up on the project.",
+        "key_phrase": "Have you given up on this project?",
+        "when": "A prospect or partner stops answering after initial interest and two polite follow-ups.",
+        "why": "People hate feeling trapped into saying 'Yes', but they love the safety and autonomy of saying 'No'. Triggering loss aversion makes them reply to clarify.",
+        "example": "Email Subject: Quick check.\nBody: Hi Tarek, have you given up on launching the mobile app redesign this quarter?\nResult: 'No, sorry! We got swamped with audits. Let’s talk Thursday.'",
+        "mistake": "Sending 'Just following up to see if you saw my last email!' which feels like nagging homework."
+      },
+      "ar": {
+        "title": "رجّع العميل اللي طنّشك بسؤال يخليه يقول 'لأ'",
+        "hook": "بعت إيميلين وتلاتة والطرف التاني فص ملح وداب؟ الزن بيقلل قيمتك، لكن لما تديله مساحة يقول 'لأ' هيرد عليك في دقايق.",
+        "action": "ابعت جملة واحدة بس تديه فيها كامل الحق إنه يلغي الشغلانة، واسأله بصراحة هل صرف نظر عن المشروع ولا لأ.",
+        "key_phrase": "هل لغيتوا فكرة المشروع ده خلاص؟",
+        "when": "عميل أو شريك كان متحمس وفجأة اختفى ومبقاش يرد بعد كذا محاولة متابعة.",
+        "why": "الناس بتتوتر من كلمة 'أيوة' عشان فيها التزام، لكن بتحس بالأمان والسيطرة لما تقول 'لأ'. ده بيخليه يرد فوراً عشان يثبت إنه مفرّطش في الفرصة.",
+        "example": "الإيميل: 'مساء الخير يا طارق، هل لغيتوا فكرة تجديد الأبلكيشن الربع ده خلاص؟'\nالرد بعد ساعتين: 'لأ طبعاً يا فادي! كان عندنا ضغط مراجعات، خلينا نتكلم الخميس.'",
+        "mistake": "إنك تبعت 'حبيت أطمن وأشوف لو شفت إيميلي اللي فات'، جملة بتخليه يحس إنك بتسمّعله واجب ومستني منه مصلحة."
+      },
+      "quiz": {
+        "type": "mcq",
+        "correct_index": 1,
+        "en": {
+          "question": "A client stops replying after receiving your proposal. Which follow-up has the highest response rate?",
+          "options": [
+            "Just checking in to make sure you got my proposal! Any thoughts?",
+            "Have you given up on solving the inventory delays this quarter?",
+            "Can we hop on a quick 5-minute call so I can answer your questions?",
+            "Our schedule is filling up fast, so please let me know soon."
+          ],
+          "explanation": "Asking if they gave up allows them to protect their autonomy and say 'No', prompting an instant correction rather than feeling pressured by polite nagging."
+        },
+        "ar": {
+          "question": "عميل أخد منك عرض السعر ومبقاش يرد خالص، إيه الرسالة اللي احتمال ردّه عليها أعلى بكتير؟",
+          "options": [
+            "حبيت أطمن إن العرض وصل لحضرتك، إيه الأخبار؟",
+            "هل صرفتوا نظر تماماً عن حل مشكلة تأخير المخازن الربع ده؟",
+            "ممكن مكالمة سريعة في 5 دقايق أجاوب فيها على استفساراتك؟",
+            "جدولنا بيقفل بسرعة، فيا ريت تديني رد في أقرب وقت."
+          ],
+          "explanation": "سؤال 'هل صرفتوا نظر' بيديله أمان نفسي إنه يقول 'لأ، مفرطناش'، وبيرجعه يبرر موقفه بدل ما يهرب من الزن التقليدي."
+        }
+      }
+    },
+    {
+      "id": "2026-11-15_pricing_cut-scope-not-margin",
+      "created_at": "2026-11-15T13:32:10.383238+00:00",
+      "topic": "pricing",
+      "tags": [
+        "pricing",
+        "scope-creep",
+        "negotiation"
+      ],
+      "level": "intermediate",
+      "needs_completion": false,
+      "en": {
+        "title": "Never discount price without removing deliverables",
+        "hook": "The moment you say 'Okay, I can drop it by 20%', you instantly confess you were overcharging them in the first place.",
+        "action": "Agree to meet their lower budget, but immediately remove specific features, revisions, or timeline speed to match that exact number.",
+        "key_phrase": "We can hit that number, but we'll need to drop the second revision round and delivery will take 4 weeks instead of 2.",
+        "when": "A client likes your work and proposal but asks for a discount before signing.",
+        "why": "It protects your perceived value. If lower price yields less product, your rate remains justified, preventing margin collapse and resentment.",
+        "example": "Client: 'Your quote is $10k, but we only have $8k.'\nYou: 'We can definitely fit an $8k budget. To do that, we’ll exclude the custom animations and use standard assets instead. Fair?'\nClient: 'Actually, we need the animations, let me find the extra $2k.'",
+        "mistake": "Slashing your price on the spot without changing a single deliverable, which destroys trust and invites endless future haggling."
+      },
+      "ar": {
+        "title": "أوعى تنزل في السعر من غير ما تقص من الشغل",
+        "hook": "أول ما تقول للعميل: 'خلاص عشان خاطرك هنزل 20%'، أنت بتعترف له رسمياً إنك كنت بتنفخ السعر عليه من البداية.",
+        "action": "وافق إنك تتماشى مع ميزانيته القليلة، بس في نفس اللحظة شيل خدمات أو مميزات محددة من العرض عشان تناسب الرقم ده.",
+        "key_phrase": "نقدر ننزل للرقم ده، بس هنشيل ميزة كذا والتسليم هيكون بعد شهر بدل أسبوعين.",
+        "when": "العميل يكون مقتنع بشغلك جداً بس بيطلب خصم قبل ما يوقّع الاتفاق.",
+        "why": "عشان تحافظ على قيمة شغلك؛ لما يعرف إن السعر الأقل معناه استلامات أقل، هيفهم إن كل قرش له وزنه، وغالباً هيدور على الميزانية عشان ما يخسرش مميزات.",
+        "example": "العميل: 'العرض بـ 50 ألف وإحنا ميزانيتنا 40 ألف بس.'\nأنت: 'نقدر نظبطها بـ 40 ألف طبعاً، بس هنشيل فيديوهات الموشن جرافيك ونكتفي بالبوستات الثابتة، يناسبك ده؟'\nالعميل: 'لأ إحنا محتاجين الفيديو، هحاول أعتمد الـ 10 الباقية.'",
+        "mistake": "إنك توافق تنزل في السعر فوراً من غير ما تعدل حرف في التسليمات، وده بيمسح هيبتك وبيفتح باب الفصال للأبد."
+      },
+      "quiz": {
+        "type": "mcq",
+        "correct_index": 2,
+        "en": {
+          "question": "A client says your $5,000 project fee is too high and asks for $4,000. What is your best response?",
+          "options": [
+            "Offer to meet halfway at $4,500 to show good faith.",
+            "Tell them firmly that your price is non-negotiable and walk away.",
+            "Agree to the $4,000 price point, but remove the dedicated QA testing and one revision cycle.",
+            "Discount to $4,000 only if they agree to give you a positive testimonial later."
+          ],
+          "explanation": "Reducing scope preserves your hourly rate and teaches the client that lower price means less output, without being confrontational."
+        },
+        "ar": {
+          "question": "عميل قالك إن عرضك بـ 50 ألف غالي وميزانيته 40 ألف بس. أحسن رد احترافي هو إيه؟",
+          "options": [
+            "تنزل معاه للنص عند 45 ألف عشان تثبت حسن النية.",
+            "ترفض بصرامة وتقوله أسعارنا غير قابلة للتفاوض وتقفل السكة.",
+            "توافق على ميزانية الـ 40 ألف، بس تبلغه إننا هنشيل مرحلة المراجعات والتسليم السريع قصادها.",
+            "توافق على الخصم فوراً بشرط يكتبلك ريفيو محترم بعد ما تخلص."
+          ],
+          "explanation": "تقليل نطاق العمل بيحافظ على قيمة سعرك، وبيفهم العميل إن الخصم مش تساهل، ده معناه استلامات أقل توازي الرقم اللي دفعه."
+        }
+      }
+    },
+    {
+      "id": "2026-11-15_productivity_tomorrow-landing-strip",
+      "created_at": "2026-11-15T13:32:10.383238+00:00",
+      "topic": "productivity",
+      "tags": [
+        "focus",
+        "friction",
+        "habits"
+      ],
+      "level": "beginner",
+      "needs_completion": false,
+      "en": {
+        "title": "Build a 'Landing Strip' the night before",
+        "hook": "Morning procrastination isn't laziness; it's the cognitive friction of deciding where to start when your brain is half-asleep.",
+        "action": "Before shutting your laptop, open the exact document or tool for tomorrow's first priority, write the first sentence or bullet point, and leave it full screen.",
+        "key_phrase": "",
+        "when": "The final 5 minutes of your workday.",
+        "why": "Eliminates activation energy. When you open your screen, you bypass choices and instantly enter execution mode.",
+        "example": "Instead of closing tabs at 6 PM, leave your budget spreadsheet open on cell B14 with note: 'Plug Q3 logistics cost'. At 9 AM, you type the number in 5 seconds instead of checking news.",
+        "mistake": "Ending the day with a vague to-do like 'Work on strategy', forcing you to figure out logistics next morning."
+      },
+      "ar": {
+        "title": "جهّز 'مدرج الهبوط' قبل ما تقفل جهازك بالليل",
+        "hook": "تسويف أول ساعة في اليوم مش كسل، ده بيحصل بسبب التوهان والضغط الذهني وأنت لسه بتفرك عينك وبتحاول تقرر هتبدأ بإيه.",
+        "action": "قبل ما تقفل اللابتوب، افتح الملف بالظبط اللي هتشتغل عليه الصبح، واكتب أول سطر أو نقطة وسيبه مفتوح في وش الشاشة.",
+        "key_phrase": "",
+        "when": "آخر 5 دقايق في يوم عملك قبل ما تقفل المكتب.",
+        "why": "بيلغي مقاومة البداية تماماً؛ أول ما تفتح جهازك تاني يوم، عقلك مش محتاج يقرر، بيدخل في التنفيذ على طول من غير تشتيت.",
+        "example": "بدل ما تقفل الشغل كله الساعة 5، سيب شيت الإكسيل مفتوح على خانة مصاريف التسويق مع ملاحظة: 'اكتب أرقام حملة فيسبوك'. الصبح هتكتب الرقم في ثانيتين بدل ما تسرح في تصفح الأخبار.",
+        "mistake": "إنك تقفل يومك بمهام عامة زي 'أشتغل على الاستراتيجية'، فتيجي الصبح تائه ومش عارف تفتح أنهي فايل فتهرب للسوشيال ميديا."
+      },
+      "quiz": {
+        "type": "mcq",
+        "correct_index": 0,
+        "en": {
+          "question": "Why is leaving your first document open with an unfinished line more effective than a simple morning to-do list?",
+          "options": [
+            "It eliminates decision fatigue and starter friction right when mental energy is booting up.",
+            "It forces you to work longer hours late into the evening.",
+            "It tricks your computer into preserving temporary memory cache.",
+            "It prevents colleagues from assigning you urgent morning tasks."
+          ],
+          "explanation": "Having the exact file open with the first stroke already laid down removes friction and activation energy, letting momentum carry you instantly."
+        },
+        "ar": {
+          "question": "ليه فتح الملف وكتابة أول سطر فيه قبل ما تقفل بيوم أحسن بكتير من مجرد لستة مهام مكتوبة؟",
+          "options": [
+            "عشان بيلغي الحيرة ومقاومة البداية في أول اليوم لما يكون التركيز لسه بيجمّع.",
+            "عشان بيجبرك تسهر وتشتغل ساعات إضافية بالليل.",
+            "عشان بيخلي اللابتوب أسرع في استرجاع البرامج الصبح.",
+            "عشان بيمنع زمايلك في الشغل إنهم يرموا عليك مهام مفاجئة الصبح."
+          ],
+          "explanation": "وجود الملف مفتوح وجاهز على أول حركة بيشيل عائق البداية تماماً، وبيخليك تندمج في الشغل قبل ما عقلك يلحق يسوّف."
+        }
+      }
+    },
+    {
+      "id": "2026-11-15_psychology_ben-franklin-advice-hook",
+      "created_at": "2026-11-15T13:32:10.383238+00:00",
+      "topic": "psychology",
+      "tags": [
+        "workplace",
+        "influence",
+        "rapport"
+      ],
+      "level": "intermediate",
+      "needs_completion": false,
+      "en": {
+        "title": "Turn a workplace skeptic into an ally by asking for advice",
+        "hook": "Trying to prove your competence to someone who dislikes you only makes them defensive. Asking for their opinion disarms them instantly.",
+        "action": "Approach them privately with a small, specific question in their area of expertise. Frame it as valuing their experience.",
+        "key_phrase": "I know you've navigated client pushback on this before. Could I get your gut take on this slide before I present?",
+        "when": "A colleague or stakeholder is cold, resistant, or critical of your presence.",
+        "why": "Cognitive dissonance (The Ben Franklin Effect). The brain rationalizes: 'If I am helping this person, I must respect and like them.'",
+        "example": "Junior product manager approaches a cynical engineering lead: 'Karim, before I lock the roadmap, could you glance at the data pipeline item? You know the system bottlenecks best.' Karim stops blocking meetings and starts advocating.",
+        "mistake": "Over-explaining your qualifications or arguing your point to force their respect, which deepens resistance."
+      },
+      "ar": {
+        "title": "حوّل الشخص اللي مش طايقك في الشغل لحليف بطلب رأي صغير",
+        "hook": "كل ما تحاول تثبت شطارتك قدام زميل مش مرتاحلك بتخليه يعاند أكتر. بس لما تطلب نصيحته، دفاعاته بتنهار في ثانية.",
+        "action": "روحله على انفراد واطلب رأيه في حاجة صغيرة ومحددة هو بيفهم فيها جداً، وحسسه إنك مقدّر خبرته.",
+        "key_phrase": "أنا عارف إنك مريت بالموقف ده مع العملاء قبل كده، ممكن آخد رأيك السريع في السلايد دي قبل ما أعرضها؟",
+        "when": "لما يكون فيه زميل أو مدير معترض دايماً على كلامك أو حاطط بينك وبينه حاجز في الشغل.",
+        "why": "العقل البشري بيكره التناقض (تأثير بن فرانكلين)؛ عقله الباطن هيقوله: 'طالما بساعده وبديله نصيحة، يبقى أنا أكيد بحترمه وشايفه شخص كويس'.",
+        "example": "مدير تسويق جديد دخل لمهندس تقيل بيعارضه دايماً: 'يا كريم، قبل ما أعتمد الخطة، ممكن تبص ثانية على جزئية السيرفرات؟ خبرتك هنا أهم من أي حد.' كريم بدّل هجومه وبقى أكبر مدافع عنه في الاجتماعات.",
+        "mistake": "إنك تقعد تناطحه وتستعرض عضلاتك في الميتنجز عشان تثبتله إنك صح، وده بيخليه يعند أكتر."
+      },
+      "quiz": {
+        "type": "mcq",
+        "correct_index": 3,
+        "en": {
+          "question": "A senior team member constantly shoots down your proposals in meetings. What is the most psychological way to neutralize their resistance?",
+          "options": [
+            "Call them out publicly in the next meeting for being negative.",
+            "Ignore them completely and pitch only to the upper manager.",
+            "Send them your full resume and past success metrics to prove your credibility.",
+            "Ask them privately for input on a specific challenge before the next meeting."
+          ],
+          "explanation": "Asking for their input beforehand gives them psychological ownership and leverages the Ben Franklin effect, turning an opponent into a co-author."
+        },
+        "ar": {
+          "question": "زميل قديم في الشركة بيهاجم أفكارك دايماً في الاجتماعات، إيه أذكى تصرف نفسي يكسر عداءه ده؟",
+          "options": [
+            "تكسفه قدام الناس في الاجتماع الجاي وتتهمه بالسلبية وتصيد الأخطاء.",
+            "تتجاهل وجوده تماماً وتوجه كلامك للمدير الكبير بس.",
+            "تبعتله السي في بتاعك وإنجازاتك القديمة عشان تفهمه أنت مين.",
+            "تطلب منه رأيه على انفراد في نقطة معينة في المشروع قبل الاجتماع الجاي."
+          ],
+          "explanation": "طلبك لرأيه بيحسسه بالاحترام وبيخليه شريك في الفكرة، وده بيحوله من معارض في العلن لمدافع عن الشغل."
+        }
+      }
+    },
+    {
+      "id": "2026-11-15_sales_lean-back-disqualify",
+      "created_at": "2026-11-15T13:32:10.383238+00:00",
+      "topic": "sales",
+      "tags": [
+        "objections",
+        "closing",
+        "framing"
+      ],
+      "level": "advanced",
+      "needs_completion": false,
+      "en": {
+        "title": "When a prospect pulls away, lean back and disqualify",
+        "hook": "When a prospect hesitates, amateur salespeople lean in with more features. Pros lean back and suggest the deal might not be right for them.",
+        "action": "Acknowledge their hesitation, validate that this solution might not fit their current stage, and gently offer them an exit.",
+        "key_phrase": "To be completely honest, hearing your setup, this might actually be overkill for where your team is at right now.",
+        "when": "A prospect starts hedging, acting ambivalent, or pulling away during a sales conversation.",
+        "why": "Humans instinctively pull when pushed, and pursue when things are taken away. Disqualifying breaks sales tension and makes them sell you on why they qualify.",
+        "example": "Prospect: 'Well, it sounds good, but we just have so much going on...'\nRep: 'Honestly, Layla, if your team is already stretched this thin, implementing our tool right now might just cause more chaos. Maybe wait 6 months?'\nProspect: 'Wait, no, if we don't fix this now, chaos is guaranteed. We need to start next month.'",
+        "mistake": "Piling on discounts or reading 5 more bullet points to convince an uncommitted buyer."
+      },
+      "ar": {
+        "title": "لما العميل يتردد.. ارجع خطوة لورا بدل ما تزن",
+        "hook": "أول ما العميل يبدأ يتردد، البياع الهاوي بيهجم بمميزات وخصومات زيادة، أما المحترف بيرجع ضهره لورا ويلمح إن الحل ممكن ميكونش مناسب ليهم أصلاً.",
+        "action": "حسسه إنك متفهم تردده تماماً، واقترح بهدوء إن الخدمة دي ممكن تكون أكبر من احتياجهم أو مش وقتها المناسب.",
+        "key_phrase": "بصراحة كده، بالوضع اللي أنتم فيه ده، السيستم ده ممكن يكون زيادة عن احتياجكم ومش أولوية دلوقتي.",
+        "when": "لما العميل يبدأ يقول ردود عايمة زي 'والله لسه بنفكر' أو تحسه بيهرب بهدوء وسط المكالمة.",
+        "why": "طبيعة البشر بتكره اللي يضغط عليها وتجري ورا اللي يبعد؛ لما تسحب العرض، التوتر البيعي بيختفي وهو اللي بيبدأ يقنعك إنه محتاج الخدمة دلوقتي.",
+        "example": "العميل: 'الكلام حلو بس حاسس إن عندنا دربكة كتير حالياً...'\nأنت: 'بصراحة يا ليلى، لو الفريق عندكم مضغوط كده، فالسيستم ده هيعملكم صداع إضافي. رأيي تستنوا 6 شهور.'\nالعميل: 'لأ طبعاً! ما هو لو معملناش ده دلوقتي الدربكة هتزيد، إحنا لازم نبدأ الشهر الجاي.'",
+        "mistake": "إنك تنزل بوابل من الخصومات أو تعيد شرح كل المميزات تاني، وده بيأكد للعميل إنك مزنوق وميت على البيعة."
+      },
+      "quiz": {
+        "type": "mcq",
+        "correct_index": 1,
+        "en": {
+          "question": "A prospect sighs and says, 'I like the platform, but it just feels like a huge commitment right now.' What is the most effective response?",
+          "options": [
+            "We can give you 30% off your first three months if you sign today!",
+            "You might be right; if your team can't spare 2 hours for onboarding, this might actually hurt more than it helps.",
+            "Let me walk you through our customer testimonials to show how easy it is.",
+            "Why do you say that? Everyone else in your industry is using it."
+          ],
+          "explanation": "Validating their concern and offering an exit removes sales pressure, triggering psychological reactance and prompting them to argue in favor of buying."
+        },
+        "ar": {
+          "question": "عميل قالك بتنهيدة: 'المنصة ممتازة، بس حاسس إن ده التزام كبير علينا ومش وقته.' إيه أحسن رد تكتيكي تقوله؟",
+          "options": [
+            "طب إيه رأيك أعملك خصم 30% على أول 3 شهور لو وقعنا العقد النهارده؟",
+            "عندك حق، لو فريقك مش فاضي يخصص ساعتين للتدريب، النظام ده ممكن يعطّلكم أكتر ما يفيدكم.",
+            "خليني أوريك آراء العملاء التانيين عشان تتأكد بنفسك قد إيه الموضوع سهل.",
+            "ليه بتقول كده بس؟ ده كل المنافسين في مجالك شغالين بيه من زمان!"
+          ],
+          "explanation": "تأكيدك على مخاوفه وسحب الخدمة بيلغي ضغط البيع، فبيخلي العميل هو اللي يبرر لنفسه وليه لازم ياخد الخطوة دلوقتي."
+        }
+      }
+    }
+  ]
+}

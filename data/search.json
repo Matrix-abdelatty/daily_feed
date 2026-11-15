@@ -1,5 +1,365 @@
 [
   {
+    "id": "2026-11-15_sales_lean-back-disqualify",
+    "number": 70,
+    "patch_number": 14,
+    "topic": "sales",
+    "level": "advanced",
+    "tags": [
+      "objections",
+      "closing",
+      "framing"
+    ],
+    "created_at": "2026-11-15T13:32:10.383238+00:00",
+    "file": "cards/2026/2026-11-15_auto_03.json",
+    "en": {
+      "title": "When a prospect pulls away, lean back and disqualify",
+      "hook": "When a prospect hesitates, amateur salespeople lean in with more features. Pros lean back and suggest the deal might not be right for them.",
+      "key_phrase": "To be completely honest, hearing your setup, this might actually be overkill for where your team is at right now."
+    },
+    "ar": {
+      "title": "لما العميل يتردد.. ارجع خطوة لورا بدل ما تزن",
+      "hook": "أول ما العميل يبدأ يتردد، البياع الهاوي بيهجم بمميزات وخصومات زيادة، أما المحترف بيرجع ضهره لورا ويلمح إن الحل ممكن ميكونش مناسب ليهم أصلاً.",
+      "key_phrase": "بصراحة كده، بالوضع اللي أنتم فيه ده، السيستم ده ممكن يكون زيادة عن احتياجكم ومش أولوية دلوقتي."
+    }
+  },
+  {
+    "id": "2026-11-15_psychology_ben-franklin-advice-hook",
+    "number": 69,
+    "patch_number": 14,
+    "topic": "psychology",
+    "level": "intermediate",
+    "tags": [
+      "workplace",
+      "influence",
+      "rapport"
+    ],
+    "created_at": "2026-11-15T13:32:10.383238+00:00",
+    "file": "cards/2026/2026-11-15_auto_03.json",
+    "en": {
+      "title": "Turn a workplace skeptic into an ally by asking for advice",
+      "hook": "Trying to prove your competence to someone who dislikes you only makes them defensive. Asking for their opinion disarms them instantly.",
+      "key_phrase": "I know you've navigated client pushback on this before. Could I get your gut take on this slide before I present?"
+    },
+    "ar": {
+      "title": "حوّل الشخص اللي مش طايقك في الشغل لحليف بطلب رأي صغير",
+      "hook": "كل ما تحاول تثبت شطارتك قدام زميل مش مرتاحلك بتخليه يعاند أكتر. بس لما تطلب نصيحته، دفاعاته بتنهار في ثانية.",
+      "key_phrase": "أنا عارف إنك مريت بالموقف ده مع العملاء قبل كده، ممكن آخد رأيك السريع في السلايد دي قبل ما أعرضها؟"
+    }
+  },
+  {
+    "id": "2026-11-15_productivity_tomorrow-landing-strip",
+    "number": 68,
+    "patch_number": 14,
+    "topic": "productivity",
+    "level": "beginner",
+    "tags": [
+      "focus",
+      "friction",
+      "habits"
+    ],
+    "created_at": "2026-11-15T13:32:10.383238+00:00",
+    "file": "cards/2026/2026-11-15_auto_03.json",
+    "en": {
+      "title": "Build a 'Landing Strip' the night before",
+      "hook": "Morning procrastination isn't laziness; it's the cognitive friction of deciding where to start when your brain is half-asleep.",
+      "key_phrase": ""
+    },
+    "ar": {
+      "title": "جهّز 'مدرج الهبوط' قبل ما تقفل جهازك بالليل",
+      "hook": "تسويف أول ساعة في اليوم مش كسل، ده بيحصل بسبب التوهان والضغط الذهني وأنت لسه بتفرك عينك وبتحاول تقرر هتبدأ بإيه.",
+      "key_phrase": ""
+    }
+  },
+  {
+    "id": "2026-11-15_pricing_cut-scope-not-margin",
+    "number": 67,
+    "patch_number": 14,
+    "topic": "pricing",
+    "level": "intermediate",
+    "tags": [
+      "pricing",
+      "scope-creep",
+      "negotiation"
+    ],
+    "created_at": "2026-11-15T13:32:10.383238+00:00",
+    "file": "cards/2026/2026-11-15_auto_03.json",
+    "en": {
+      "title": "Never discount price without removing deliverables",
+      "hook": "The moment you say 'Okay, I can drop it by 20%', you instantly confess you were overcharging them in the first place.",
+      "key_phrase": "We can hit that number, but we'll need to drop the second revision round and delivery will take 4 weeks instead of 2."
+    },
+    "ar": {
+      "title": "أوعى تنزل في السعر من غير ما تقص من الشغل",
+      "hook": "أول ما تقول للعميل: 'خلاص عشان خاطرك هنزل 20%'، أنت بتعترف له رسمياً إنك كنت بتنفخ السعر عليه من البداية.",
+      "key_phrase": "نقدر ننزل للرقم ده، بس هنشيل ميزة كذا والتسليم هيكون بعد شهر بدل أسبوعين."
+    }
+  },
+  {
+    "id": "2026-11-15_persuasion_dead-thread-revival",
+    "number": 66,
+    "patch_number": 14,
+    "topic": "persuasion",
+    "level": "beginner",
+    "tags": [
+      "follow-up",
+      "negotiation",
+      "email"
+    ],
+    "created_at": "2026-11-15T13:32:10.383238+00:00",
+    "file": "cards/2026/2026-11-15_auto_03.json",
+    "en": {
+      "title": "Revive ghosted leads with a 'No-oriented' question",
+      "hook": "You sent three follow-ups, and they disappeared. Begging for a reply makes you look desperate; nudging them to say 'No' gets them typing in minutes.",
+      "key_phrase": "Have you given up on this project?"
+    },
+    "ar": {
+      "title": "رجّع العميل اللي طنّشك بسؤال يخليه يقول 'لأ'",
+      "hook": "بعت إيميلين وتلاتة والطرف التاني فص ملح وداب؟ الزن بيقلل قيمتك، لكن لما تديله مساحة يقول 'لأ' هيرد عليك في دقايق.",
+      "key_phrase": "هل لغيتوا فكرة المشروع ده خلاص؟"
+    }
+  },
+  {
+    "id": "2026-11-15_negotiation_the-labeling-tactic",
+    "number": 65,
+    "patch_number": 13,
+    "topic": "negotiation",
+    "level": "advanced",
+    "tags": [
+      "tactics",
+      "persuasion",
+      "empathy"
+    ],
+    "created_at": "2026-11-15T13:30:58.055632+00:00",
+    "file": "cards/2026/2026-11-15_auto_02.json",
+    "en": {
+      "title": "Label Their Hesitation Instead of Defending Your Price",
+      "hook": "When a client pushes back with silence or stiffness, defending your offer makes you look desperate.",
+      "key_phrase": "It seems like you feel this scope doesn't justify the investment."
+    },
+    "ar": {
+      "title": "سمّي ترددهم بالاسم بدل ما تدافع عن سعرك",
+      "hook": "لما العميل يقفش أو يسكت بعد ما يشوف عرضك، دفاعك المستميت عن السعر بيخليك تبان واقع ومزنوق.",
+      "key_phrase": "شكله حاسس إن العرض ده فيه مخاطرة أو مش متماشي مع ميزانيتكم الحالية."
+    }
+  },
+  {
+    "id": "2026-11-15_money_the-72-hour-friction-rule",
+    "number": 64,
+    "patch_number": 13,
+    "topic": "money",
+    "level": "beginner",
+    "tags": [
+      "personal-finance",
+      "habits",
+      "budgeting"
+    ],
+    "created_at": "2026-11-15T13:30:58.055632+00:00",
+    "file": "cards/2026/2026-11-15_auto_02.json",
+    "en": {
+      "title": "Put a 72-Hour Cooldown on Non-Essential Buys",
+      "hook": "E-commerce apps are designed to make you tap 'Buy Now' before your rational brain even realizes what happened.",
+      "key_phrase": ""
+    },
+    "ar": {
+      "title": "طبق قاعدة الـ 72 ساعة على أي شرا مش ضروري",
+      "hook": "تطبيقات الشوبنج معمولة مخصوص عشان تدوس 'اشتري الآن' قبل ما عقلك الواعي يستوعب إيه اللي بيحصل.",
+      "key_phrase": ""
+    }
+  },
+  {
+    "id": "2026-11-15_meetings_parking-lot-technique",
+    "number": 63,
+    "patch_number": 13,
+    "topic": "meetings",
+    "level": "intermediate",
+    "tags": [
+      "facilitation",
+      "time-management",
+      "focus"
+    ],
+    "created_at": "2026-11-15T13:30:58.055632+00:00",
+    "file": "cards/2026/2026-11-15_auto_02.json",
+    "en": {
+      "title": "Use a Public Parking Lot for Tangents",
+      "hook": "One side tangent can burn 20 minutes of high-value meeting time without resolving a single thing.",
+      "key_phrase": "That's a crucial point that deserves its own focus; let me add it to the Parking Lot so we don't lose it."
+    },
+    "ar": {
+      "title": "اعمل 'باركنج' للنقط الفرعية اللي بتضيع الوقت",
+      "hook": "موضوع جانبي واحد بيتفتح في نص الكلام ممكن يبلع 20 دقيقة من الميتنج من غير ما تحلوا حاجة.",
+      "key_phrase": "دي نقطة مهمة جداً ومحتاجة تركيز لوحدها؛ هكتبها في الباركنج عشان منسهاش ونكمل جدولنا."
+    }
+  },
+  {
+    "id": "2026-11-15_learning_the-generation-effect",
+    "number": 62,
+    "patch_number": 13,
+    "topic": "learning",
+    "level": "beginner",
+    "tags": [
+      "memory",
+      "study-skills",
+      "retention"
+    ],
+    "created_at": "2026-11-15T13:30:58.055632+00:00",
+    "file": "cards/2026/2026-11-15_auto_02.json",
+    "en": {
+      "title": "Guess Before Looking Up the Answer",
+      "hook": "Googling the answer instantly feels efficient, but your brain dumps the info three minutes later.",
+      "key_phrase": ""
+    },
+    "ar": {
+      "title": "خمّن الأول قبل ما تبص على الإجابة",
+      "hook": "إنك تجري تعمل سيرش على جوجل أول ما تنسى معلومة بيحسسك بالإنجاز، بس مخك بيمسحها بعد تلت دقايق.",
+      "key_phrase": ""
+    }
+  },
+  {
+    "id": "2026-11-15_leadership_speak-last-rule",
+    "number": 61,
+    "patch_number": 13,
+    "topic": "leadership",
+    "level": "intermediate",
+    "tags": [
+      "management",
+      "teamwork",
+      "listening"
+    ],
+    "created_at": "2026-11-15T13:30:58.055632+00:00",
+    "file": "cards/2026/2026-11-15_auto_02.json",
+    "en": {
+      "title": "Speak Last in Problem-Solving Meetings",
+      "hook": "The moment the boss says 'I think we should do X', the room stops thinking and starts nodding.",
+      "key_phrase": "I want to hear everyone's read on this before I weigh in."
+    },
+    "ar": {
+      "title": "اتكلم آخر واحد في اجتماعات حل المشاكل",
+      "hook": "أول ما المدير يقول 'أنا شايف نعمل كذا'، كل اللي في القاعة بيبطلوا تفكير ويبدأوا يهزوا دماغهم موافقة.",
+      "key_phrase": "عايز أسمع تقييم كل واحد فيكم للموقف قبل ما أقول رأيي."
+    }
+  },
+  {
+    "id": "2026-11-15_sales_reverse-scale-question",
+    "number": 60,
+    "patch_number": 12,
+    "topic": "sales",
+    "level": "intermediate",
+    "tags": [
+      "objections",
+      "closing",
+      "discovery"
+    ],
+    "created_at": "2026-11-15T13:29:41.596641+00:00",
+    "file": "cards/2026/2026-11-15_auto_01.json",
+    "en": {
+      "title": "Ask 'Why not lower?' to make prospects sell themselves",
+      "hook": "You ask a prospect how ready they are from 1 to 10. They say 7. Your instinct is to ask, 'What makes it not a 10?' That's a trap.",
+      "key_phrase": "Why a 7 and not a 4 or 5?"
+    },
+    "ar": {
+      "title": "اسأله 'ليه مش أقل؟' عشان تخليه يبيع لنفسه",
+      "hook": "بتسأل العميل جاهز يشتري بنسبة كام من 10، فيقولك 7. أول رد بيجي في بالك: 'ليه مش 10؟' الفخ بدأ هنا.",
+      "key_phrase": "تمام، بس ليه اديتنا 7 وما قلتش 4 أو 5 مثلاً؟"
+    }
+  },
+  {
+    "id": "2026-11-15_decision-making_pre-mortem-drill",
+    "number": 59,
+    "patch_number": 12,
+    "topic": "decision_making",
+    "level": "beginner",
+    "tags": [
+      "risk-management",
+      "planning",
+      "bias"
+    ],
+    "created_at": "2026-11-15T13:29:41.596641+00:00",
+    "file": "cards/2026/2026-11-15_auto_01.json",
+    "en": {
+      "title": "Run a 10-Minute Pre-Mortem to catch blind spots early",
+      "hook": "Post-mortems tell you why your project died. A pre-mortem performs the autopsy while the patient is still perfectly alive.",
+      "key_phrase": "Assume we failed completely: what specifically caused our disaster?"
+    },
+    "ar": {
+      "title": "اعمل جلسة 'تشريح مسبق' عشان تكشف الكوارث قبل ما تبدأ",
+      "hook": "تقارير ما بعد الفشل بتقولك المشروع مات ليه بعد فوات الأوان. لكن 'التشريح المسبق' بيكشف سبب الوفاة والمريض لسه عايش وصحته كويسة.",
+      "key_phrase": "تخيلوا إن المشروع خرب وفشل تماماً.. يا ترى إيه الغلطة اللي عملناها وسببت ده؟"
+    }
+  },
+  {
+    "id": "2026-11-15_communication_tactical-pause",
+    "number": 58,
+    "patch_number": 12,
+    "topic": "communication",
+    "level": "intermediate",
+    "tags": [
+      "clarity",
+      "difficult-conversations",
+      "assertiveness"
+    ],
+    "created_at": "2026-11-15T13:29:41.596641+00:00",
+    "file": "cards/2026/2026-11-15_auto_01.json",
+    "en": {
+      "title": "Use the Tactical Silence right after giving bad news",
+      "hook": "When delivering hard news, the most damaging words are the ones you say right after the sentence ends.",
+      "key_phrase": "We cannot match that delivery date. [Silence]"
+    },
+    "ar": {
+      "title": "اسكت تماماً أول ما تقول خبر سيئ أو ترفض طلب",
+      "hook": "لما بتيجي تقول خبر وحش لحد، أكتر كلام بيوديك في داهية هو الكلام الزيادة اللي بتقوله بعد جملتك الأساسية علطول.",
+      "key_phrase": "للأسف مش هنقدر نسلم في الميعاد ده. [واسكت]"
+    }
+  },
+  {
+    "id": "2026-11-15_career_the-1-3-1-rule",
+    "number": 57,
+    "patch_number": 12,
+    "topic": "career",
+    "level": "beginner",
+    "tags": [
+      "managing-up",
+      "leadership",
+      "visibility"
+    ],
+    "created_at": "2026-11-15T13:29:41.596641+00:00",
+    "file": "cards/2026/2026-11-15_auto_01.json",
+    "en": {
+      "title": "Use the 1-3-1 Rule to manage up like a senior leader",
+      "hook": "Junior employees bring problems. Mid-level employees bring ideas. Senior operators bring the exact decision ready to sign.",
+      "key_phrase": "Here is the issue, here are three viable paths, and here is the one I recommend we execute today."
+    },
+    "ar": {
+      "title": "طبق قاعدة 1-3-1 عشان تترقى وتفكر زي المديرين",
+      "hook": "الموظف المبتدئ بيرمي المشكلة في حجر مديره. الموظف الشاطر بيجيب القرار جاهز على الإمضاء.",
+      "key_phrase": "دي المشكلة باختصار، ودول تلات اختيارات نقدر نتحرك فيهم، وأنا شايف ننفذ الحل التاني للأسباب دي."
+    }
+  },
+  {
+    "id": "2026-11-15_business_kill-metrics",
+    "number": 56,
+    "patch_number": 12,
+    "topic": "business",
+    "level": "intermediate",
+    "tags": [
+      "strategy",
+      "experiments",
+      "risk"
+    ],
+    "created_at": "2026-11-15T13:29:41.596641+00:00",
+    "file": "cards/2026/2026-11-15_auto_01.json",
+    "en": {
+      "title": "Set a 'Kill Metric' before you launch any new project",
+      "hook": "Most failing projects don't die of a single crash. They bleed cash for eighteen months because nobody agreed on when to pull the plug.",
+      "key_phrase": "If this doesn't hit X metric by Y date, we kill it without debate."
+    },
+    "ar": {
+      "title": "حدد 'شرط الإلغاء' قبل ما تبدأ أي مشروع جديد",
+      "hook": "المشاريع الفاشلة مش بتموت فجأة، دي بتفضل تنزف فلوس لسنة كاملة عشان مفيش حد اتفق من الأول امتى نقفل الحنفية.",
+      "key_phrase": "لو ما حققناش الرقم ده بالظبط بحلول يوم كذا، هنوقف التجربة دي من غير نقاش."
+    }
+  },
+  {
     "id": "2026-11-14_psychology_pratfall-effect-flaw-first",
     "number": 55,
     "patch_number": 11,
