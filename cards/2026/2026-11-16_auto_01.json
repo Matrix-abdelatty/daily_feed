@@ -1,0 +1,293 @@
+{
+  "schema_version": 1,
+  "batch_id": "2026-11-16_auto_01",
+  "created_at": "2026-11-16T14:56:35.362039+00:00",
+  "source": "gemini-3.5-flash",
+  "cards": [
+    {
+      "id": "2026-11-16_pricing_anchor-high-first",
+      "created_at": "2026-11-16T14:56:35.362039+00:00",
+      "topic": "pricing",
+      "tags": [
+        "pricing",
+        "negotiation",
+        "sales",
+        "anchoring"
+      ],
+      "level": "intermediate",
+      "needs_completion": false,
+      "en": {
+        "title": "Anchor high before presenting your standard price",
+        "hook": "A client asked for a quote and immediately ghosted. You gave them a fair price, but without context, it felt too expensive.",
+        "action": "Always offer three option tiers: Premium, Standard, and Basic. Present the highest price first so your target price feels like a reasonable middle ground.",
+        "key_phrase": "Our full VIP setup is $10k, but our standard $4k plan covers everything most clients need.",
+        "when": "Sending proposals or discussing price options with prospective clients.",
+        "why": "Anchoring bias makes people evaluate price relative to the first number mentioned, making standard options feel cheaper.",
+        "example": "Client: 'How much for a new website?' You: 'Our full VIP build with copywriting is $8,000. But our standard launch package is $3,200.' Client: '$3,200 sounds very reasonable.'",
+        "mistake": "Giving a single price with no frame of reference."
+      },
+      "ar": {
+        "title": "ثبّت السعر العالي الأول عشان رقمك يبان لقطة",
+        "hook": "العميل سألك عن السعر، فقلت له رقمك العادل، لقيتها اختفى وماردش عليك تاني! السبب إن السعر ماكانش ليه مرجع يقارن بيه.",
+        "action": "اعرض دايماً ٣ باقات: VIP، والعادية، وبسيطة. ابدأ بالـ VIP الأول عشان السعر العالي يثبت في دماغه، فتبان الباقة العادية فرصة ما تترفضش.",
+        "key_phrase": "باقة الـ VIP كاملة بـ 50 ألف، بس الباقة القياسية بـ 20 ألف ودي فيها كل اللي تحتاجه.",
+        "when": "وأنت بتبعت عروض الأسعار أو بتتكلم في الفلوس مع عميل جديد.",
+        "why": "عقل الإنسان بيقارب أي سعر بأول رقم يسمعه (الانحياز للتثبيت)، فبالتالي الرقم التاني دايماً بيبان أرخص.",
+        "example": "العميل: 'المشروع ده هيكلف كام؟' أنت: 'التنفيذ الكامل مع متابعة سنة بـ 40 ألف، بس الباقة الأساسية مع المتابعة شهرين بـ 18 ألف.' العميل: 'خلاص تمام، الباقة الأساسية كويسة جداً.'",
+        "mistake": "إنك تدي سعر واحد مباشر من غير ما تدي مرجع للعميل يقارن بيه."
+      },
+      "quiz": {
+        "type": "mcq",
+        "correct_index": 1,
+        "en": {
+          "question": "A prospect asks for your consulting fee. What is the best strategy?",
+          "options": [
+            "Give them your absolute lowest price to win the deal immediately.",
+            "Offer a premium package first, then introduce your standard package.",
+            "Ask them how much money they have in their budget before naming any price.",
+            "Send a long list of hourly rates without a project total."
+          ],
+          "explanation": "Anchoring high first sets a mental reference point, making your standard target rate feel far more acceptable and budget-friendly."
+        },
+        "ar": {
+          "question": "عميل يسألك عن تكلفة استشارتك، إيه أفضل أسلوب لتقديم السعر؟",
+          "options": [
+            "تديله أقل سعر عندك من الأول عشان تضمن إنك تقفل البيعة بسرعة.",
+            "تعرض الباقة الـ VIP العالية الأول، وبعدين تعرض الباقة القياسية اللي إنت عايز تبيعها.",
+            "تسأله معاك ميزانية كام بالظبط قبل ما تقول أي أرقام.",
+            "تبعتبله لستة أسعار بالساعة من غير ما تدي سعر إجمالي للمشروع."
+          ],
+          "explanation": "عرض السعر العالي الأول بيعمل تثبيت لعقل العميل، فيخلي السعر القياسي يبان منطقي جداً ومش غالي."
+        }
+      }
+    },
+    {
+      "id": "2026-11-16_sales_label-unspoken-fears",
+      "created_at": "2026-11-16T14:56:35.362039+00:00",
+      "topic": "sales",
+      "tags": [
+        "sales",
+        "negotiation",
+        "objections",
+        "psychology"
+      ],
+      "level": "intermediate",
+      "needs_completion": false,
+      "en": {
+        "title": "Label hidden hesitation instead of pushing harder",
+        "hook": "You pitch your solution, they nod and say 'Sounds great, let me think about it.' You lost them, and you don't even know why.",
+        "action": "Call out their silent worry using a neutral observation starting with 'It seems like...'. Then stay completely silent.",
+        "key_phrase": "It seems like you're hesitant about the implementation timeline.",
+        "when": "When a prospect gives a vague delay tactic like 'I need to talk to my team'.",
+        "why": "Labeling negative emotions neutralizes defense mechanisms and forces the prospect to reveal their real objection.",
+        "example": "Prospect: 'Looks good, we'll email you next week.' You: 'It seems like you have some reservations about changing your current process.' Prospect: 'Honestly, yes, my team hates learning new tools.'",
+        "mistake": "Re-explaining features or pushing for a quick close when they pull away."
+      },
+      "ar": {
+        "title": "سمِّ المخاوف المستخبية بدل ما تضغط على العميل",
+        "hook": "عرضت فكرتك، والعميل ابتسم وقال: 'جميل جداً، هفكر وأرد عليك'. إنت كده خسرت البيعة وأنت مش فاهم السبب!",
+        "action": "أول ما تحس بتردد، نوّه عن الخوف المستخبي بجملة محايدة تبدأ بـ 'شكلك محتار من ناحية...' واسكت خالص بعدها.",
+        "key_phrase": "شكلك قلقان من وقت التنفيذ وياخد مجهود قد إيه من فريقك.",
+        "when": "لما العميل يهرب بجملة مبهمة زي 'هفكر وأرجعلك' أو 'هتكلم مع الشركاء'.",
+        "why": "تسمية الملاحظات والاعتراضات بتهدّي الدفاعات النفسية وتخليه يصرح بالسبب الحقيقي للرفض.",
+        "example": "العميل: 'تمام، هدرس الموضوع وهتصل بيك.' أنت: 'شكلك مش مطمن إن البرنامج ده هيحل المشكلة الفعلية عندكم.' العميل: 'بصراحة أه، جربنا حجر شبهه السنة اللي فاتت وماعملش حاجة.'",
+        "mistake": "إنك تعيد شرح المميزات أو تضغط عليه عشان ياخد قرار في ساعتها."
+      },
+      "quiz": {
+        "type": "mcq",
+        "correct_index": 2,
+        "en": {
+          "question": "A potential buyer says: 'Everything looks fine, I'll get back to you later.' What is the best move?",
+          "options": [
+            "Offer them a 10% discount on the spot to sign right now.",
+            "Ask them: 'What exactly do you need to think about?' in an aggressive tone.",
+            "Say: 'It seems like you're worried about how much effort this migration takes.'",
+            "Send them your brochure again via email with a reminder."
+          ],
+          "explanation": "Labeling their underlying feeling neutrally ('It seems like...') disarms their guard and reveals the actual objection."
+        },
+        "ar": {
+          "question": "عميل محتمل قالك: 'كل حاجة تمام، هبقى أرجعلك بعدين.' تصرفك الصح إيه؟",
+          "options": [
+            "تعرض عليه خصم 10% فوراً عشان يمضي معاك دلوقتي.",
+            "تسأله بحدة: 'هو إيه بالظبط اللي محتاج تفكر فيه؟'",
+            "تقوله: 'شكلك خايف إن نقل المبيعات للنظام الجديد ياخد وقت طويل.'",
+            "تبعتبله الكتالوج تاني على الإيميل وتعمله فولو أب كل يومين."
+          ],
+          "explanation": "استخدام أسلوب التسمية (شكلك قلقان من...) بيكسر الحرج وبيخلي العميل يقول السبب الحقيقي لتردده."
+        }
+      }
+    },
+    {
+      "id": "2026-11-16_career_weekly-impact-log",
+      "created_at": "2026-11-16T14:56:35.362039+00:00",
+      "topic": "career",
+      "tags": [
+        "career",
+        "productivity",
+        "management",
+        "promotions"
+      ],
+      "level": "beginner",
+      "needs_completion": false,
+      "en": {
+        "title": "Maintain a 2-minute weekly impact log",
+        "hook": "It is annual performance review week, and your boss asks what you achieved this year. Your mind goes completely blank.",
+        "action": "Every Friday afternoon, write down 2 bullets: a problem you solved and the measurable business outcome. Use this list during 1-on-1s.",
+        "key_phrase": "Here is a quick summary of the metrics and key outcomes my team delivered this month.",
+        "when": "During self-evaluations, 1-on-1 manager check-ins, and promotion discussions.",
+        "why": "Recency bias makes managers remember only last week's work. Documented results guarantee objective evaluation.",
+        "example": "Manager: 'How did Q3 go for you?' You: 'Great. As logged here, I automated the billing report, saving 5 hours weekly, and onboarded 4 clients.'",
+        "mistake": "Relying on memory or hoping your manager notices your hard work."
+      },
+      "ar": {
+        "title": "سجّل إنجازاتك الأسبوعية في دقيقتين بس",
+        "hook": "وقت التقييم السنوي جه، ومديرك بيسألك: 'عملت إيه جديد السنة دي؟'.. فجأة دماغك فضيت ومش فاكر أي حاجة!",
+        "action": "كل يوم جمعة، اكتب نقطتين: المشكلة اللي حلّتها والنتيجة بالـ numbers. اجمعهم واستخدمهم في اجتماعات المتابعة والتقييم.",
+        "key_phrase": "ده ملخص سريع للأرقام والمشاريع اللي خلصتها الشهر ده بالنتائج بتاعتها.",
+        "when": "قبل اجتماعات الـ 1-on-1 مع مديرك وفي مناقشات الترقيات والزيادات.",
+        "why": "المديرين بيفتكروا بس آخر أسبوعين شغل بفضل 'انحياز الحداثة'. التوثيق بالأرقام بيضمن حقك بالكامل.",
+        "example": "المدير: 'عملت إيه الفترة اللي فاتت؟' أنت: 'أنا وثقت ده؛ وفرت 4 ساعات أسبوعياً بعد ما أتمتة نظام التقرير، وخلصت مشروع س مع العملاء.'",
+        "mistake": "إنك تعتمد على الذاكرة أو تستنى المدير يلاحظ شطارتك ولوحده."
+      },
+      "quiz": {
+        "type": "mcq",
+        "correct_index": 0,
+        "en": {
+          "question": "How should you prepare for your annual promotion or salary review meeting?",
+          "options": [
+            "Bring a logged record of specific problems solved and measurable results over the year.",
+            "Tell your manager how hard you worked and how inflation affected your personal life.",
+            "Wait for your manager to list your accomplishments and agree with them.",
+            "Ask your team members to send complaints about their workload to your manager."
+          ],
+          "explanation": "A factual impact log based on clear outcomes prevents recency bias and proves your value undeniably."
+        },
+        "ar": {
+          "question": "إزاي تستعد بشكل صح لاجتماع الترقيات أو طلب زيادة المرتب؟",
+          "options": [
+            "تجهز قائمة فيها المشاكل اللي حلّتها بالأرقام والنتائج على مدار السنة.",
+            "تشرح لمديرك قد إيه تعبت وإن الغلاء مأثر عليك شخصياً.",
+            "تستنى مديرك هو اللي يقول إنجازاتك وتوافق على كلامه وخلاص.",
+            "تطلب من زمايلك يبعتوا لمديرك يقولوله إنك بتشيل شغل كتير."
+          ],
+          "explanation": "سجل الإنجازات الموثق بالأرقام بيحسم النقاش وبيثبت قيمتك بدون جدال عاطفي."
+        }
+      }
+    },
+    {
+      "id": "2026-11-16_communication_lead-with-bottom-line",
+      "created_at": "2026-11-16T14:56:35.362039+00:00",
+      "topic": "communication",
+      "tags": [
+        "communication",
+        "writing",
+        "productivity",
+        "management"
+      ],
+      "level": "beginner",
+      "needs_completion": false,
+      "en": {
+        "title": "Lead with your takeaway, not the background story",
+        "hook": "You sent a detailed 4-paragraph email explaining a project delay. Your boss replied: 'What is the decision required here?'",
+        "action": "Put your recommendation or main request in the very first sentence. Add context and operational background only afterward.",
+        "key_phrase": "I recommend postponing launch to Thursday to fix a database bug. Here is the background...",
+        "when": "Writing emails, messaging executives, or updating project stakeholders.",
+        "why": "Busy decision-makers scan for key actions. Placing the conclusion upfront reduces cognitive fatigue and speeds up approvals.",
+        "example": "Email Subject: Request to move launch to Thursday. Line 1: 'Please approve a 2-day delay so we can fix a staging server bug. Context below...'",
+        "mistake": "Writing chronologically, starting with how the issue began step-by-step."
+      },
+      "ar": {
+        "title": "ابدأ بالخلاصة والطلب الأول قبل الحكاية",
+        "hook": "بعت إيميل طويل من 4 فقرات بتشرح فيه مشكلة في المشروع، المدير رد عليك بجملة واحدة: 'إيه المطلوب مني أعمله بالظبط؟'",
+        "action": "حُط القرار أو الطلب الرئيسي في أول جملة في الإيميل، وبعدين اكتب التفاصيل والسياق تحتها.",
+        "key_phrase": "أنا برشح نأجل الإطلاق ليوم الخميس عشان نصلح ثغرة الداتا بيز. التفاصيل كالتالي...",
+        "when": "وأنت بتكتب إيميلات للمديرين، أو رسائل سريعة لأصحاب القرار.",
+        "why": "المديرين معندهمش وقت يقرأوا مقدمات؛ لما تديهم الخلاصة الأول بتوفر وقتهم وبتاخد موافقة أسرع.",
+        "example": "عنوان الإيميل: طلب تأجيل الإطلاق لخميس. أول سطر: 'مطلوب الموافقة على تأجيل الإطلاق 48 ساعة لتفادي خطأ السيرفر. التفاصيل:'",
+        "mistake": "إنك تحكي القصة بالترتيب الزمني وتخلي المطلوب في آخر سطر تحت خالص."
+      },
+      "quiz": {
+        "type": "mcq",
+        "correct_index": 3,
+        "en": {
+          "question": "You need budget approval from a busy director. How should you open your email?",
+          "options": [
+            "Start with: 'As you know, back in March we discussed upgrading our server infrastructure...'",
+            "Start with: 'Hope you are having a wonderful week! Let me share a quick story.'",
+            "Start with: 'Our team spent 3 weeks analyzing 10 different tools and here are the options.'",
+            "Start with: 'Requesting approval for $2,000 to purchase software X, which saves us 10 hours weekly.'"
+          ],
+          "explanation": "Leading with the bottom line (BLUF) states the request and benefit upfront, respecting the recipient's time."
+        },
+        "ar": {
+          "question": "محتاج موافقة على ميزانية من مدير مش فاضي، تبدأ الإيميل بإيه؟",
+          "options": [
+            "تبدأ بـ: 'زي ما حضرتك عارف، في مارس اللي فات كنا اتكلمنا عن تطوير السيرفرات...'",
+            "تبدأ بـ: 'أتمنى تكون أسبوعك لطيف، حابب أحكيلك موقف سريع حصلي في الشغل.'",
+            "تبدأ بـ: 'الفريق بتاعنا قعد 3 أسابيع يدرس 10 أدوات مختلفة ودي نتائج البحث.'",
+            "تبدأ بـ: 'مطلوب موافقة على 2000 دولار لشراء أداة X اللي هتسَرّع الشغل 10 ساعات أسبوعياً.'"
+          ],
+          "explanation": "البداية بالخلاصة والطلب مباشرة بتخلي صاحب القرار يفهم المطلوب في ثواني وياخد قرار سريع."
+        }
+      }
+    },
+    {
+      "id": "2026-11-16_decision_making_10-10-10-rule",
+      "created_at": "2026-11-16T14:56:35.362039+00:00",
+      "topic": "decision_making",
+      "tags": [
+        "decision_making",
+        "psychology",
+        "mindset",
+        "productivity"
+      ],
+      "level": "beginner",
+      "needs_completion": false,
+      "en": {
+        "title": "Evaluate tough choices using the 10/10/10 rule",
+        "hook": "You are agonizing over quitting a safe job or sending a difficult email, completely paralyzed by short-term anxiety.",
+        "action": "Ask yourself: How will I feel about this decision in 10 minutes, 10 months, and 10 years? Write down answers for all three.",
+        "key_phrase": "Will this choice matter to my career 10 years from now?",
+        "when": "Facing emotionally charged, high-stress, or paralyzing career decisions.",
+        "why": "Short-term fear overpowers rational thought. Temporal framing shifts perspective to long-term growth.",
+        "example": "Stressed about leaving a cozy role: '10 mins: Terrified. 10 months: Adapted to new growth. 10 years: Best career move I ever made.'",
+        "mistake": "Letting immediate 10-minute discomfort prevent high-payoff long-term steps."
+      },
+      "ar": {
+        "title": "اقهر التردد في القرارات الصعبة بقاعدة 10/10/10",
+        "hook": "محتار تسيب شغلك الأمان ولا لأ، أو خايف تبعت إيميل مواجهة؟ التوتر المباشر شالّ تفكيرك ومخليك مكانك.",
+        "action": "اسأل نفسك: إحساسي بالقرار ده هيكون إيه بعد 10 دقائق؟ و10 شهور؟ و10 سنين؟ واكتب إجاباتك بصراحة.",
+        "key_phrase": "هل القرار ده هيفرق معايا فعلاً بعد 10 سنين ولا ده توتر مؤقت؟",
+        "when": "لما تكون قدام قرار مصيري أو حاسس بالخوف والتردد القوي.",
+        "why": "الخوف المؤقت بيسود التفكير، التفكير المدى الطويل بيرجّع المنطق للحيّز التنفيذي في دماغك.",
+        "example": "خايف يقدم استقالته لبدء مشروعه: '10 دقائق: مرعوب. 10 شهور: اتأقلمت وشغال. 10 سنين: فخور إني أخدت الخطوة وشغال لحسابي.'",
+        "mistake": "إنك تخلي عدم الراحة بتاع أول 10 دقائق يحرّمك من فرص نجاح على مدى 10 سنين."
+      },
+      "quiz": {
+        "type": "mcq",
+        "correct_index": 1,
+        "en": {
+          "question": "How does the 10/10/10 rule help you overcome decision paralysis?",
+          "options": [
+            "It guarantees that every choice you make will succeed within 10 days.",
+            "It creates distance from short-term fear by assessing long-term impact.",
+            "It requires you to wait 10 hours before answering any urgent message.",
+            "It forces you to consult 10 different advisors before taking action."
+          ],
+          "explanation": "Looking at 10 months and 10 years down the line dilutes immediate 10-minute anxiety, enabling clear strategic thinking."
+        },
+        "ar": {
+          "question": "إزاي قاعدة 10/10/10 بتساعدك تتغلب على التردد وتأخذ قرار صح؟",
+          "options": [
+            "بتضمن لك إن القرار ينجح في خلال 10 أيام بالظبط.",
+            "بتبعدك عن الخوف اللحظي عن طريق تقييم تأثير القرار على المدى الطويل.",
+            "بتجبرك تستنى 10 ساعات قبل ما ترد على أي إيميل مهم.",
+            "بتخليك تأخد رأي 10 أشخاص مختلفين قبل ما تتحرك."
+          ],
+          "explanation": "النظر لمدى 10 شهور و10 سنين بيقلل التوتر والرهبة بتاعة أول 10 دقائق، فيخليك تشوف الصورة الكاملة."
+        }
+      }
+    }
+  ]
+}

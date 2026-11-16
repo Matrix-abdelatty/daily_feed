@@ -1,11 +1,11 @@
 {
-  "timestamp": "2026-11-15T13:36:04.541628+00:00",
-  "total_files_scanned": 14,
-  "total_patches": 14,
-  "total_valid_cards": 70,
-  "total_active_search_cards": 70,
+  "timestamp": "2026-11-16T15:14:24.293290+00:00",
+  "total_files_scanned": 17,
+  "total_patches": 17,
+  "total_valid_cards": 85,
+  "total_active_search_cards": 85,
   "deleted_cards_count": 0,
-  "highest_card_number": 70,
+  "highest_card_number": 85,
   "skipped_cards_count": 0,
   "skipped_details": []
 }

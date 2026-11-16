@@ -1,0 +1,293 @@
+{
+  "schema_version": 1,
+  "batch_id": "2026-11-16_auto_02",
+  "created_at": "2026-11-16T15:02:18.701318+00:00",
+  "source": "gemini-3.5-flash",
+  "cards": [
+    {
+      "id": "2026-11-16_meetings_do-nothing-question",
+      "created_at": "2026-11-16T15:02:18.701318+00:00",
+      "topic": "meetings",
+      "tags": [
+        "meetings",
+        "productivity",
+        "decisions",
+        "communication"
+      ],
+      "level": "intermediate",
+      "needs_completion": false,
+      "en": {
+        "title": "Ask \"What happens if we do nothing?\" to cut endless debates.",
+        "hook": "You're 45 minutes into a meeting, everyone is arguing over minor details, and no decision is in sight.",
+        "action": "Pause the room and ask the team to state the concrete consequence of taking zero action right now.",
+        "key_phrase": "If we don't make this decision today, what is the immediate impact tomorrow?",
+        "when": "When a meeting devolves into endless debate over minor options.",
+        "why": "It forces people to step back from emotional preferences and assess actual risk and priority.",
+        "example": "Sarah: 'Should we redesign the email footer red or blue?'\nYou: 'If we do nothing and keep it as is, what breaks tomorrow?'\nSarah: 'Honestly? Nothing.'\nYou: 'Great, let's move to the launch plan.'",
+        "mistake": "Letting people debate tiny details just to make everyone feel included."
+      },
+      "ar": {
+        "title": "اسأل \"إيه اللي هيحصل لو ما عملناش حاجة؟\" عشان تنهي الرغي",
+        "hook": "بقالك 45 دقيقة قاعد في اجتماع، والناس عمالة تتناقش في تفاصيل غريبة ومافيش أي قرار واضح.",
+        "action": "وقف الكلام واسأل المجموعة فوراً عن النتيجة الحقيقية لعدم اتخاذ أي إجراء في اللحظة دي.",
+        "key_phrase": "لو ما اتخذناش القرار ده النهاردة، إيه الضرر الفعلي اللي هيحصل بكرة؟",
+        "when": "لما الاجتماع يدخل في تفاصيل مش مهمة والوقت يضيع من غير قرارات.",
+        "why": "السؤال ده بيرجع التركيز فوراً للأولويات والحجم الحقيقي للمشكلة من غير عواطف.",
+        "example": "أحمد: 'ممكن نغير لون الزرار ده ونجرب نعمل ديزاين تاني..'\nأنت: 'تمام، بس لو سيبناه زي ما هو وما عملناش حاجة النهاردة، إيه العواقب؟'\nأحمد: 'صحيح.. مش هتعطلنا خالص.'",
+        "mistake": "إنك تسيب الناس تتناقش في تفاصيل مالهاش قيمة عشان خايف تقاطعهم."
+      },
+      "quiz": {
+        "type": "mcq",
+        "correct_index": 1,
+        "en": {
+          "question": "Your team is debating a minor feature change for 30 minutes. What is the best move?",
+          "options": [
+            "Take a vote immediately to pick a winner.",
+            "Ask what actual damage occurs if you do nothing today.",
+            "Extend the meeting by 15 minutes to reach consensus.",
+            "Tell the loudest person to make the final call."
+          ],
+          "explanation": "Asking the cost of inaction exposes whether the decision actually matters right now or if it's a waste of time."
+        },
+        "ar": {
+          "question": "فريقك بقاله نص ساعة بيتخانق على تعديل بسيط مش أساسي. تصرفك الصح إيه؟",
+          "options": [
+            "تخلي الفريق يصوت فوراً ونخلص.",
+            "تسأل إيه الضرر الفعلي لو ما عملناش التعديل ده النهاردة.",
+            "تزود وقت الاجتماع 15 دقيقة عشان ترضوا الكل.",
+            "تخلي أكتر واحد بيزعق هو اللي يقرر."
+          ],
+          "explanation": "السؤال عن نتيجة 'عدم الفعل' بيكشف فوراً هل القرار مستاهل تضيع وقت فيه دلوقتي ولا لأ."
+        }
+      }
+    },
+    {
+      "id": "2026-11-16_negotiation_accusation-audit",
+      "created_at": "2026-11-16T15:02:18.701318+00:00",
+      "topic": "negotiation",
+      "tags": [
+        "negotiation",
+        "psychology",
+        "communication",
+        "deals"
+      ],
+      "level": "advanced",
+      "needs_completion": false,
+      "en": {
+        "title": "Use an \"Accusation Audit\" to disarm the other side early.",
+        "hook": "Before making your tough request, list every negative thought they might have about you out loud.",
+        "action": "Start by stating all the worst things the other party could accuse you of before they get the chance to say them.",
+        "key_phrase": "You're probably going to think I'm being completely unreasonable and demanding...",
+        "when": "Before presenting a difficult condition, price increase, or delayed deadline.",
+        "why": "Voicing negative assumptions yourself neutralizes their emotional punch and makes the counterpart feel understood.",
+        "example": "You: 'Before I share the new timeline, you're probably thinking we are disorganized and pushing our luck here.'\nClient: 'Well, I wouldn't say disorganized, but we are tight on time.'\nYou: 'Fair enough, let's look at how we protect your deadline.'",
+        "mistake": "Hoping the other side won't notice the negative aspects of your proposal."
+      },
+      "ar": {
+        "title": "استخدم \"جرد الاتهامات\" عشان تفك عصبية اللي قدامك قبل ما تبدأ",
+        "hook": "قبل ما تطلب الطلب الصعب، قول كل الحاجات الوحشة اللي الشخص التاني ممكن يفكر فيها عنك بصوت عالٍ.",
+        "action": "ابدأ بذكر كل التخوفات أو الأفكار السلبية اللي عند الطرف التاني بنفسك قبل ما هو يقولها.",
+        "key_phrase": "غالباً حضرتك شايف إن الطلب ده مبالغ فيه وإني جاي أضغط عليك...",
+        "when": "لما تكون عارف إن شرطك أو سعرك هيضايق العميل أو الطرف التاني.",
+        "why": "لما تطلع الأفكار السلبية للنور بنفسك، بتسحب القوة منها وتخلي اللي قدامك يهدأ ويحس إنك فاهمه.",
+        "example": "أنت: 'قبل ما أقولك الميعاد الجديد، أنت غالباً شايف إننا مقصرين وبنضغط على وقتك.'\nالعميل: 'مش تقصير، بس الوقت فعلاً مضغوط.'\nأنت: 'مقدر ده جداً، عشان كده تعالى نشوف نسلم المشروع في ميعاده إزاي.'",
+        "mistake": "إنك تتجاهل تخوفات الطرف التاني وتتفاجأ بيها بتدمر الصفقة في الآخر."
+      },
+      "quiz": {
+        "type": "mcq",
+        "correct_index": 2,
+        "en": {
+          "question": "You have to tell a client that costs increased by 15%. How should you open?",
+          "options": [
+            "Explain market inflation data first to justify the increase.",
+            "Offer a discount on another service to soften the blow.",
+            "Acknowledge upfront that they will probably feel this price hike is unfair.",
+            "Send the invoice via email and wait for them to respond."
+          ],
+          "explanation": "Disarming the objection upfront (Accusation Audit) stops them from reacting defensively and opens room for problem-solving."
+        },
+        "ar": {
+          "question": "مضطر تقول لعميلك إن الأسعار زادت 15%. تبدأ معاه إزاي؟",
+          "options": [
+            "تشرح له نسب التضخم في السوق الأول عشان تبرر الزيادة.",
+            "تعرض عليه خصم على خدمة تانية عشان تهديه.",
+            "تعترف فوراً إنه غالباً شايف إن الزيادة دي غير عادلة ومفاجئة.",
+            "تبعث الفاتورة الجديدة في إيميل وتستنى رده."
+          ],
+          "explanation": "الاعتراف بالتخوفات قبل ما العميل يقولها بيسحب طاقة الغضب وبيخليه يتقبل المناقشة بشكل أهدى."
+        }
+      }
+    },
+    {
+      "id": "2026-11-16_persuasion_byaf-technique",
+      "created_at": "2026-11-16T15:02:18.701318+00:00",
+      "topic": "persuasion",
+      "tags": [
+        "persuasion",
+        "influence",
+        "psychology",
+        "communication"
+      ],
+      "level": "beginner",
+      "needs_completion": false,
+      "en": {
+        "title": "Add \"But you are free to say no\" to double agreement rates.",
+        "hook": "Push someone to agree, and their natural instinct is to resist. Remind them they have a choice, and they relax.",
+        "action": "Make your proposal, then immediately clarify that compliance is entirely their choice.",
+        "key_phrase": "Take a look at this offer, but obviously, you're completely free to say no.",
+        "when": "When pitching an idea to a stakeholder, asking for a favor, or closing a sale.",
+        "why": "It removes the threat to their autonomy, instantly lowering psychological reactance.",
+        "example": "You: 'I'd love for you to review this draft today, but of course, feel free to say no if your plate is full.'\nColleague: 'No problem at all, send it over and I'll check it by 3 PM.'",
+        "mistake": "Using high-pressure language that backs the other person into a corner."
+      },
+      "ar": {
+        "title": "ضيف \"بس طبعاً براحتك ترفض\" عشان تضاعف فرص موافقتهم",
+        "hook": "لما بتضغط على حد عشان يوافق، الفطرة عنده بتخليه يقاومك. بس لو أديته الحرية، بيسمعك بقلب مفتوح.",
+        "action": "اعرض أفكارك أو طلبك عادي، وتتبعها فوراً بجملة تفكرهم إن القرار في إيدهم بالكامل.",
+        "key_phrase": "بص على المقترح ده، وبراحتك خالص لو مش مناسبك ترفضه.",
+        "when": "لما تطلب طلب كبير أو تقترح فكرة جديدة على مديرك أو عميلك.",
+        "why": "تذكير الشخص بحريته بيلغي الخوف من الاستغلال وبيرفع نسبة الموافقة فوراً.",
+        "example": "أنت: 'ممكن تجرب السيستم ده أسبوع وتشوف النتائج بنفسك، وطبعاً ليك مطلق الحرية ترفض لو ما عجبكش.'\nالعميل: 'تمام، طالما مافيش التزام خليني أجرب.'",
+        "mistake": "الإصرار والضغط على العميل وكأنك بتجبره، وده بيكبر دفاعاته ضدك."
+      },
+      "quiz": {
+        "type": "mcq",
+        "correct_index": 0,
+        "en": {
+          "question": "Why does adding 'But you are free to decline' increase compliance?",
+          "options": [
+            "It restores the person's feeling of autonomy and control.",
+            "It makes you sound weak, so people feel pity.",
+            "It confuses the listener into agreeing quickly.",
+            "It shifts the legal responsibility of the decision to them."
+          ],
+          "explanation": "When people feel their freedom of choice is respected, their natural defense against being persuaded disappears."
+        },
+        "ar": {
+          "question": "ليه جملة 'بس طبعاً براحتك ترفض' بتزود نسبة موافقة الناس على طلبك؟",
+          "options": [
+            "عشان بترجع للشخص شعوره بالاستقلالية والسيطرة على قراره.",
+            "عشان بتخليك تبان ضعيف فالناس تتعاطف معاك.",
+            "عشان بتلخبط اللي قدامك فيوافق من غير ما يفكر.",
+            "عشان بتشيل من عليك المسؤولية القانونية للقرار."
+          ],
+          "explanation": "لما تحسس الشخص إن حريته محفوظة، دفاعاته النفسية ضد الإقناع بتقل جداً وبيوافق أسهل."
+        }
+      }
+    },
+    {
+      "id": "2026-11-16_pricing_top-down-anchoring",
+      "created_at": "2026-11-16T15:02:18.701318+00:00",
+      "topic": "pricing",
+      "tags": [
+        "pricing",
+        "sales",
+        "anchoring",
+        "psychology"
+      ],
+      "level": "intermediate",
+      "needs_completion": false,
+      "en": {
+        "title": "Present your highest tier first to anchor price expectations.",
+        "hook": "If a customer hears $5,000 after seeing a $20,000 option, $5,000 feels like a bargain.",
+        "action": "Always state your premium, fully-loaded offer before introducing your target or standard package.",
+        "key_phrase": "Our full custom enterprise setup is $25,000, but most clients start with our core package at $6,000.",
+        "when": "During price presentations, proposal reviews, or sales pitches.",
+        "why": "Human brains evaluate cost relatively based on the first anchor price introduced.",
+        "example": "Client: 'How much does working together cost?'\nYou: 'Our full execution package is $30k. However, for your current phase, our advisory tier is $8k.'\nClient: 'Okay, $8k works within our budget.'",
+        "mistake": "Starting with your lowest price and trying to upsell later."
+      },
+      "ar": {
+        "title": "اعرض أغلى باقة الأول عشان تظبط توقعات السعر",
+        "hook": "لو قلت لعميلك السعر 5,000 جنيه بعد ما سمع عن باقة بـ 20,000 جنيه، الرقم الأصغر هيبان لقطة.",
+        "action": "ابدأ دايماً بعرض الخدمة الأكبر أو الأغلى قيمة عندك قبل ما تقول رقم الخدمة اللي العميل محتاجها بالظبط.",
+        "key_phrase": "باقة الشاملة عندنا بـ 50 ألف، بس أغلب عملائنا بيحبوا يبتدوا بالباقة الأساسية اللي بـ 15 ألف.",
+        "when": "لما تُسأل عن أسعار منتجاتك أو خدماتك في اجتماعات المبيعات.",
+        "why": "المخ بيقيس أي رقم بناءً على أول مرساة اتذكرت، فالسعر الأصغر بيبان أرخص بكتير بالمقارنة.",
+        "example": "العميل: 'تكلفة المشروع ده كام؟'\nأنت: 'حلولنا الكاملة بتوصل لـ 100 ألف، بس بالنسبة لاحتياجك الحالي، الباقة المتوسطة بـ 30 ألف.'\nالعميل: 'تمام، 30 ألف مناسب جداً.'",
+        "mistake": "إنك تبدأ بأرخص سعر عندك، وتتفاجأ إن العميل بيحاول يفاصل فيه أكتر."
+      },
+      "quiz": {
+        "type": "mcq",
+        "correct_index": 3,
+        "en": {
+          "question": "How should you structure pricing for a $5,000 standard service?",
+          "options": [
+            "Offer $5,000 right away, then discount to $4,500 if they hesitate.",
+            "Start at $1,000 and slowly add features until reaching $5,000.",
+            "Only mention the $5,000 price and refuse to discuss other options.",
+            "Mention the $15,000 premium package first, then introduce the $5,000 option."
+          ],
+          "explanation": "Anchoring high makes the $5,000 price feel significantly more reasonable than presenting it alone or bottom-up."
+        },
+        "ar": {
+          "question": "تعرض سعر خدمتك الأساسية (اللي بـ 5,000 جنيه) إزاي؟",
+          "options": [
+            "تقول 5,000 جنيه على طول، وتعمل خصم 4,500 لو تردد.",
+            "تبدأ بـ 1,000 جنيه وتزود خدمات لغاية ما توصل لـ 5,000.",
+            "تقول 5,000 جنيه وترفض تتكلم في أي باقات تانية.",
+            "تذكر باقة الـ 15,000 الشاملة الأول، وبعدين تعرض خيار الـ 5,000 جنيه."
+          ],
+          "explanation": "تحديد مرساة سعرية عالية في الأول بيخلي مبلغ الـ 5,000 جنيه يبان منطقي جداً ومش غالي."
+        }
+      }
+    },
+    {
+      "id": "2026-11-16_sales_isolation-question",
+      "created_at": "2026-11-16T15:02:18.701318+00:00",
+      "topic": "sales",
+      "tags": [
+        "sales",
+        "objections",
+        "closing",
+        "communication"
+      ],
+      "level": "intermediate",
+      "needs_completion": false,
+      "en": {
+        "title": "Ask the \"Isolation Question\" to uncover hidden objections.",
+        "hook": "A prospect says \"I need to think about it.\" Is that the real problem, or just a polite brush-off?",
+        "action": "Temporarily remove their stated concern to test if there are deeper objections underneath.",
+        "key_phrase": "Setting price aside for a second, is there any other reason we couldn't start next week?",
+        "when": "When a prospect gives a vague stall tactic like 'I need to consult my team' or 'Let me check budget'.",
+        "why": "It forces the prospect to reveal their true blocker instead of hiding behind generic excuses.",
+        "example": "Prospect: 'I need to review the budget.'\nYou: 'Makes sense. If budget wasn't an issue, do you feel this product fits your team's needs?'\nProspect: 'Honestly, I'm worried about the onboarding timeline.'",
+        "mistake": "Accepting vague excuses at face value and letting the deal go cold."
+      },
+      "ar": {
+        "title": "اسأل \"سؤال العزل\" عشان تكتشف المشكلة الحقيقية المستخبية",
+        "hook": "العميل بيقولك \"هفكر وأرجعلك\".. يا ترى المشكلة فعلاً في التفكير ولا فيه عذر تاني مستخبي؟",
+        "action": "اعزل المانع المذكور مؤقتاً عشان تكتشف لو فيه أسباب تانية مخلياهم مترددين.",
+        "key_phrase": "بعيداً عن السعر للدقيقة، هل فيه أي حاجة تانية تخلينا ما نبدأش مع بعض الأسبوع الجاي؟",
+        "when": "لما العميل يتردد أو يدي حجج عامة زي \"محتاج وقت أدرس الموضوع\".",
+        "why": "السؤال ده بيستبعد العذر الروتيني ويجبر العميل يصارحك بالسبب الحقيقي اللي معطل الصفقة.",
+        "example": "العميل: 'هحتاج وقت أراجع الميزانية.'\nأنت: 'تمام، بس لو فرضنا إن الميزانية مظبوطة، هل فيه أي حاجة تانية مخلياك متردد؟'\nالعميل: 'بصراحة، خايف من الوقت اللي هياخده التدريب.'",
+        "mistake": "إنك تقول \"تمام خد وقتك\" وتسيب العميل يمشي من غير ما تعرف السبب الحقيقي."
+      },
+      "quiz": {
+        "type": "mcq",
+        "correct_index": 1,
+        "en": {
+          "question": "A buyer says, 'Your price is a bit high.' How do you isolate the objection?",
+          "options": [
+            "Immediately offer a 10% discount.",
+            "Ask: 'If price were no object, is this the solution you'd choose?'",
+            "Explain why your product is worth every penny.",
+            "End the call and send a follow-up brochure."
+          ],
+          "explanation": "If they answer 'yes', price is the only barrier. If they say 'no', you just uncovered the real non-price objection."
+        },
+        "ar": {
+          "question": "عميل قالك: 'السعر حاسه غالي شوية.' تـعزل الاعتراض ده إزاي؟",
+          "options": [
+            "تخدمه وتديله خصم 10% فوراً.",
+            "تسأله: 'لو فرضنا السعر مناسب، هل ده الحل اللي شايفه صح لشغلك؟'",
+            "تشرح له بالتفصيل ليه المنتج يستاهل كل قرش.",
+            "تنهي المكالمة وتبعث له ملف فيه تفاصيل أكتر."
+          ],
+          "explanation": "لو قال 'أيوة'، يبقى السعر فعلاً هو العائق الوحيد. لو قال 'لأ'، يبقى اكتشفت المشكلة الحقيقية المستخبية."
+        }
+      }
+    }
+  ]
+}

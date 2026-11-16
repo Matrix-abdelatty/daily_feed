@@ -1,0 +1,288 @@
+{
+  "schema_version": 1,
+  "batch_id": "2026-11-16_auto_03",
+  "created_at": "2026-11-16T15:08:11.997054+00:00",
+  "source": "gemini-3.5-flash",
+  "cards": [
+    {
+      "id": "2026-11-16_business_set-project-kill-criteria",
+      "created_at": "2026-11-16T15:08:11.997054+00:00",
+      "topic": "business",
+      "tags": [
+        "strategy",
+        "risk",
+        "business"
+      ],
+      "level": "intermediate",
+      "needs_completion": false,
+      "en": {
+        "title": "Set a \"Kill Criterion\" Before Launching Any Product",
+        "hook": "We keep pouring money into dying projects because our egos hate quitting.",
+        "action": "Define exact failing metrics before launch, and agree on an automatic shutdown date if they aren't met.",
+        "key_phrase": "If we don't hit 500 active users by day 60, we kill the project.",
+        "when": "Before starting any new initiative, feature, or marketing campaign.",
+        "why": "It removes emotional bias when a project is failing, saving money and time.",
+        "example": "Boss: \"Let's give this ad campaign another month!\" You: \"We agreed on day 1 that if cost-per-lead stayed above $50 after 30 days, we'd pull the budget. It's at $85.\"",
+        "mistake": "Continuing to spend resources on a failed idea hoping it magically turns around."
+      },
+      "ar": {
+        "title": "حدد شرط لإلغاء المشروع قبل ما تبدأ فيه",
+        "hook": "بنزود مصاريف على مشاريع خسرانة لمجرد إننا مكسوفين نعتبر نفسنا فشلنا.",
+        "action": "حدد أرقام واضحة للفشل قبل ما تبدأ، واتفقوا إن لو الأرقام دي ما تحققتش المشروع يقف فوراً.",
+        "key_phrase": "لو ما وصلناش لـ 500 مستخدم في 60 يوم، هنوقف المشروع بدون مناقشة.",
+        "when": "قبل ما تبدأ أي مشروع أو ميزة جديدة أو حملة تسويقية.",
+        "why": "بتبعد العواطف وقت الفشل وبتوفر وقتك وفلوسك بدل ما تضيعهم على أمل مزيف.",
+        "example": "المدير: \"تعالى ندي الحملة دي شهر كمان!\" انت: \"احنا اتفقنا من أول يوم إن لو تكلفة العميل زادت عن 50 دولار بعد 30 يوم هنوقف، هي حالياً 85.\"",
+        "mistake": "الاستمرار في ضخ فلوس ووقت في فكرة فاشلة على أمل إنها تظبط لوحدها."
+      },
+      "quiz": {
+        "type": "mcq",
+        "correct_index": 1,
+        "en": {
+          "question": "Your new product feature isn't getting traction after 60 days. You had set a kill criterion of 1,000 users, but only have 100. What should you do?",
+          "options": [
+            "Triple the marketing budget to force growth quickly",
+            "Apply the kill criterion immediately and pivot or shut it down",
+            "Extend the trial period by 3 more months to collect more data",
+            "Blame the development team for delivering late"
+          ],
+          "explanation": "Kill criteria exist to stop emotional bias. If you don't enforce them when metrics fail, setting them was pointless."
+        },
+        "ar": {
+          "question": "الميزة الجديدة مش جايبة نتائج بعد 60 يوم. انت كنت محدد شرط إلغاء إن يجيلك 1000 مستخدم، بس جاك 100 بس. تعمل إيه؟",
+          "options": [
+            "تزود ميزانية الإعلانات 3 أضعاف عشان تكبر السلسلة بالعافية",
+            "تطبق شرط الإلغاء فوراً وتوقف المشروع أو تغير اتجاهك",
+            "تمد الموعد النهائي 3 شهور كمان عشان تجمع بيانات أكتر",
+            "تلوم فريق البرمجة إنه تأخر في التسليم"
+          ],
+          "explanation": "شروط الإلغاء موجودة عشان تلغي القرارات العاطفية. لو ما طبقتهاش لما الأرقام تفشل، يبقى ما كانش ليها لازمة من الأول."
+        }
+      }
+    },
+    {
+      "id": "2026-11-16_career_weekly-impact-log-32",
+      "created_at": "2026-11-16T15:08:11.997054+00:00",
+      "topic": "career",
+      "tags": [
+        "career",
+        "promotion",
+        "productivity"
+      ],
+      "level": "beginner",
+      "needs_completion": false,
+      "en": {
+        "title": "Keep a 5-Minute Weekly \"Impact Log\"",
+        "hook": "Annual performance reviews are terrifying because you forgot 90% of what you built six months ago.",
+        "action": "Every Friday at 4 PM, spend 5 minutes logging specific numbers and wins from the week into a private document.",
+        "key_phrase": "Saved 4 hours/week by automating client onboarding.",
+        "when": "At the end of every work week.",
+        "why": "Recency bias makes managers remember only recent work; hard historical data forces fair evaluations.",
+        "example": "During review, instead of saying \"I worked hard this year,\" you present: \"In Q2, I resolved 140 critical tickets and reduced client churn by 4%.\"",
+        "mistake": "Relying on memory or vague promises during annual salary review time."
+      },
+      "ar": {
+        "title": "اعمل \"سجل إنجازات أسبوعي\" في 5 دقائق",
+        "hook": "تقييم السنة بيبقى مرعب عشان بتكون نسيت 90% من اللي عملته طول السنة.",
+        "action": "كل يوم جمعة أو خميس، خد 5 دقايق واكتب في ملف خاص بيك إنجازاتك وأرقامك الحقيقية خلال الأسبوع.",
+        "key_phrase": "وفرت 4 ساعات أسبوعياً بعد ما غيرت نظام تسليم العملاء.",
+        "when": "في نهاية كل أسبوع عمل.",
+        "why": "المديرين بيفتكروا بس آخر شغل عملته، لكن الأرقام الموثقة بتجبرهم يقيموك بإنصاف.",
+        "example": "في التقييم بدل ما تقول \"أنا تعبت السنة دي\"، بتعرض: \"في الربع التاني، حليت 140 مشكلة معقدة وقضيت على إلغاء الاشتراكات بنسبة 4%.\"",
+        "mistake": "الاعتماد على ذاكرتك لما ييجي وقت طلب الزيادة السنوية."
+      },
+      "quiz": {
+        "type": "mcq",
+        "correct_index": 2,
+        "en": {
+          "question": "Your annual review is coming up and you want to ask for a raise. What is the most effective pitch?",
+          "options": [
+            "Remind your boss how loyal you have been for the past 3 years",
+            "Explain that inflation has increased your personal living expenses",
+            "Present a document showing specific metrics and revenue impacts from your weekly log",
+            "Promise to work twice as hard next quarter if they give you the raise"
+          ],
+          "explanation": "Specific data of past business impact makes it easy for management to justify giving you a raise."
+        },
+        "ar": {
+          "question": "تقييمك السنوي قرب ومحتاج تطلب زيادة. إيه أفضل طريقة تقنع بيها مديرك؟",
+          "options": [
+            "تفكر مديرك بأد إيه انت مخلص للشركة بقالك 3 سنين",
+            "تشرح إن الغلاء زاد ومصاريفك الشخصية كبرت",
+            "تعرض ملف فيه أرقامك وإنجازاتك الدقيقة اللي سجلتها أسبوعياً وتأثيرها على الشغل",
+            "توعده إنك هتشتغل ضعف المجهود الربع الجاي لو اداك الزيادة"
+          ],
+          "explanation": "عرض بيانات وإنجازات بالأرقام بتسهل على الإدارة جداً إنها تاخد قرار بالزيادة بدون تردد."
+        }
+      }
+    },
+    {
+      "id": "2026-11-16_communication_bluf-communication-method",
+      "created_at": "2026-11-16T15:08:11.997054+00:00",
+      "topic": "communication",
+      "tags": [
+        "communication",
+        "email",
+        "clarity"
+      ],
+      "level": "beginner",
+      "needs_completion": false,
+      "en": {
+        "title": "Use the BLUF Rule (Bottom Line Up Front)",
+        "hook": "Busy leaders delete long, rambling emails before they ever reach your actual question.",
+        "action": "State your core request or decision needed in the very first sentence, then provide supporting context below.",
+        "key_phrase": "Action Required: Need approval for $500 software subscription by 3 PM.",
+        "when": "Writing workplace emails, Slack updates, or executive summaries.",
+        "why": "It respects attention spans and guarantees your core request is read even during a quick scan.",
+        "example": "Subject: [Decision Needed] Software Purchase. Line 1: \"Requesting approval to spend $500 on Tool X for the design team.\" Line 2+: \"Details: This replaces Tool Y and saves 3 hours per week...\"",
+        "mistake": "Telling a long backstory before finally asking for what you need at the very end."
+      },
+      "ar": {
+        "title": "استخدم قاعدة \"الخلاصة في الأول\" (BLUF)",
+        "hook": "المديرين المشغولين بيمسحوا الإيميلات الطويلة قبل ما يوصلوا حتى لطلبك الأساسي.",
+        "action": "حط طلبك أو خلاصتك في أول جملة بالظبط في الإيميل، وبعد كده حط التفاصيل والسياق تحتها.",
+        "key_phrase": "مطلوب موافقة: محتاجين نعتمد 500 دولار لشراء البرنامج قبل الساعة 3.",
+        "when": "وأنت بتكتب إيميل للشغل، رسالة سلاك، أو تقرير للمدير.",
+        "why": "بتوفر وقت اللي بيقرا وبتضمن إن طلبك هتشاف حتى لو قرا أول 3 ثواني بس.",
+        "example": "عنوان الإيميل: [مطلوب قرار] شراء برنامج. أول سطر: \"مطلوب موافقة على شراء برنامج X بـ 500 دولار لفريق التصميم.\" السطر التاني+: \"التفاصيل: البرنامج ده هيوفر 3 ساعات أسبوعياً...\"",
+        "mistake": "حكي قصة طويلة من البداية قبل ما تقول انت محتاج إيه في الآخر."
+      },
+      "quiz": {
+        "type": "mcq",
+        "correct_index": 0,
+        "en": {
+          "question": "You need budget approval from a busy executive. How should you open your email?",
+          "options": [
+            "\"Hi! I'm requesting approval for $2,000 for server upgrades to fix speed issues.\"",
+            "\"Hi! As you know, our servers have been running slow since last Tuesday...\"",
+            "\"Hope you are having a great week! I wanted to touch base regarding our Q3 budget...\"",
+            "\"Attached is a 10-page report detailing our IT infrastructure problems.\""
+          ],
+          "explanation": "Starting with the direct ask (BLUF) respects executive time and gets fast decisions."
+        },
+        "ar": {
+          "question": "محتاج موافقة على ميزانية من مدير مشغولي جداً. تفتح الإيميل بإيه؟",
+          "options": [
+            "\"صباح الخير، محتاج موافقة على 2000 دولار لتحديث السيرفرات لحل مشكلة البطء.\"",
+            "\"صباح الخير، زي ما انت عارف السيرفرات عندنا بطيئة من يوم الثلاثاء اللي فات...\"",
+            "\"يا رب تكون بخير! كنت حابب أدردش معاك بخصوص ميزانية الربع التالت...\"",
+            "\"مرفق تقرير من 10 صفحات بيشرح مشاكل البنية التحتية للشركة.\""
+          ],
+          "explanation": "البدء بالطلب المباشر في أول جملة بيكسب وقت المدير وبيضمن رد سريع."
+        }
+      }
+    },
+    {
+      "id": "2026-11-16_decision_making_two-way-door-decisions",
+      "created_at": "2026-11-16T15:08:11.997054+00:00",
+      "topic": "decision_making",
+      "tags": [
+        "decision-making",
+        "speed",
+        "productivity"
+      ],
+      "level": "intermediate",
+      "needs_completion": false,
+      "en": {
+        "title": "Separate 1-Way Doors from 2-Way Door Decisions",
+        "hook": "Analysis paralysis happens when you treat reversible decisions like permanent life choices.",
+        "action": "Ask if a decision can be easily reversed (2-way door). If yes, decide fast with 70% information. If irreversible (1-way door), deliberate carefully.",
+        "key_phrase": "Is this easily reversible? If yes, let's decide right now.",
+        "when": "When decision-making is slowing down your team's momentum.",
+        "why": "Most operational decisions are reversible; treating them as permanent kills business speed.",
+        "example": "Teammate: \"Should we test blue or green for this sign-up button?\" You: \"That's a 2-way door. Pick blue now; if conversion drops, we swap it back in 5 minutes.\"",
+        "mistake": "Spending weeks researching decisions that can be undone in five minutes."
+      },
+      "ar": {
+        "title": "فرق بين القرارات اللي فيها رجعة والقرارات المصيرية",
+        "hook": "التردد والبطء بيحصلوا لما تدرس كل قرار كأنه قرار مصيري مفيش فيه رجوع.",
+        "action": "اسأل نفسك: هل القرار ده ينفع نرجع فيه لو طلع غلط؟ لو اه، خده بسرعة بـ 70% معلومات. لو لا، ادرسه براحتك.",
+        "key_phrase": "هل القرار ده فيه رجعة؟ لو اه، يلا ناخد القرار دلوقتي.",
+        "when": "لما تلاقي نفسك أو فريقك معطلين بسبب دراسة قرار معين.",
+        "why": "معظم القرارات التشغيلية ينفع تتعدل عادي، فالبطء الشديد في التفكير بيقتل سرعة الشغل.",
+        "example": "زميلك: \"نخلي لون الزرار أزرق ولا أخضر؟\" انت: \"ده قرار فيه رجعة، اختار أزرق دلوقتي ولو التفاعل قل نقدر نغيره بكرة بضغطة زرار.\"",
+        "mistake": "قضاء أسابيع في تحليل اختيار ينفع تتراجع عنه في 5 دقايق."
+      },
+      "quiz": {
+        "type": "mcq",
+        "correct_index": 3,
+        "en": {
+          "question": "Your team is arguing about which phrase to use in a social media ad. They want to spend 3 days polling customers. How should a good leader respond?",
+          "options": [
+            "Approve the 3-day poll to make sure no mistakes are made",
+            "Make the decision yourself after hiring an external consultant",
+            "Delay the campaign indefinitely until everyone agrees",
+            "Recognize it's a 2-way door decision, pick one immediately, and test it live"
+          ],
+          "explanation": "An ad text change is easily reversible (2-way door). Delays cost more than picking an option and testing live."
+        },
+        "ar": {
+          "question": "فريقك بيتناقش بقاله يومين على صيغة إعلان على السوشيال ميديا، ومحتاجين 3 أيام كمان عشان يسألوا عملاء. القائد الشاطر يتصرف إزاي؟",
+          "options": [
+            "يوافق على الاستطلاع لمد 3 أيام عشان يضمن مفيش أخطاء",
+            "ياخد القرار بنفسه بعد ما يأجر استشاري خارجي",
+            "يأجل الحملة لأجل غير مسمى لحد ما الكبار يتفقوا",
+            "يعرف إن ده قرار فيه رجعة، يختار صيغة فوراً ويجربها في السوق حي"
+          ],
+          "explanation": "تغيير نص الإعلان قرار سهلة الرجوع فيه. التعطيل بيكلف أكتر من إنك تنزل بالتجربة وتعدل لو ما ضبطتش."
+        }
+      }
+    },
+    {
+      "id": "2026-11-16_leadership_intent-based-leadership",
+      "created_at": "2026-11-16T15:08:11.997054+00:00",
+      "topic": "leadership",
+      "tags": [
+        "leadership",
+        "management",
+        "delegation"
+      ],
+      "level": "advanced",
+      "needs_completion": false,
+      "en": {
+        "title": "Move Team Members from Asking to \"I Intent To...\"",
+        "hook": "If your team constantly asks \"What should I do?\", you are building dependents, not leaders.",
+        "action": "Train your team to replace \"What do I do?\" with \"I intend to X, because Y.\" Reply only with approval or adjustments.",
+        "key_phrase": "I intend to offer the client a 10% refund because of the delivery delay.",
+        "when": "When team members ask you to make minor routine decisions for them.",
+        "why": "Forces employees to think through problems and own the solution before approaching you.",
+        "example": "Employee: \"The shipment is late, what should I do?\" You: \"Rephrase that as an intention.\" Employee: \"I intend to call the courier and issue a partial refund to the customer.\" You: \"Approved.\"",
+        "mistake": "Answering every passive question directly, creating an absolute management bottleneck."
+      },
+      "ar": {
+        "title": "حول جملة \"أعمل إيه؟\" لـ \"أنا ناوي أعمل كذا\"",
+        "hook": "لو فريقك بيكلمك كل شوية يسألك \"أعمل إيه هنا؟\"، انت بتصنع ناس متكلة عليك مش قادة.",
+        "action": "درب فريقك يستبدلوا سؤال \"أعمل إيه؟\" بجملة \"أنا ناوي أعمل كذا عشان سبب كذا\". ودورك بس وافق أو عدل.",
+        "key_phrase": "أنا ناوي أدي العميل خصم 10% عشان التأخير اللي حصل.",
+        "when": "لما حد من فريقك ييجي يسألك تاخد قرار روتيني مكانه.",
+        "why": "بتجبرهم يفكروا ويتحملوا المسئولية ويلاقوا حلول قبل ما يرجعولك.",
+        "example": "الموظف: \"الشحنة اتأخرت، أعمل إيه؟\" انت: \"قولها لي بصيغة نية.\" الموظف: \"أنا ناوي أكلم شركة الشحن وأعمل خصم بسيط للعميل.\" انت: \"موافق، نفذ.\"",
+        "mistake": "إنك تجاوب على كل سؤال بنفسك، فتبقى انت العطلة والوحيد اللي بيأخذ قرار."
+      },
+      "quiz": {
+        "type": "mcq",
+        "correct_index": 1,
+        "en": {
+          "question": "A direct report asks: \"Client X is complaining about a bug. What should I tell them?\" What is the best leadership response?",
+          "options": [
+            "Tell them exactly word-for-word what email to send",
+            "Ask: \"What do you intend to do, and why?\"",
+            "Take over the account and email the client yourself",
+            "Tell them to ignore the client until the bug is fixed"
+          ],
+          "explanation": "Asking them what they intend to do shifts ownership to them and trains their decision-making skills."
+        },
+        "ar": {
+          "question": "موظف عندك بيسألك: \"العميل بيشتكي من مشكلة في السيستم، أرد أقوله إيه؟\" إيه أفضل تصرف منك كقائد؟",
+          "options": [
+            "تمليه حرفياً يكتب إيه في الإيميل",
+            "تسأله: \"انت ناوي تعمل إيه وليه؟\"",
+            "تاخد المشكلة منه وتراسل العميل بنفسك",
+            "تقوله يطنش العميل لحد ما المشكلة تتحل"
+          ],
+          "explanation": "سؤالهم عن نيتهم وحلهم بيحولهم من مجرد منفذين لـ أصحاب قرار وبيطور تفكيرهم."
+        }
+      }
+    }
+  ]
+}

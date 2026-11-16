@@ -1,5 +1,375 @@
 [
   {
+    "id": "2026-11-16_leadership_intent-based-leadership",
+    "number": 85,
+    "patch_number": 17,
+    "topic": "leadership",
+    "level": "advanced",
+    "tags": [
+      "leadership",
+      "management",
+      "delegation"
+    ],
+    "created_at": "2026-11-16T15:08:11.997054+00:00",
+    "file": "cards/2026/2026-11-16_auto_03.json",
+    "en": {
+      "title": "Move Team Members from Asking to \"I Intent To...\"",
+      "hook": "If your team constantly asks \"What should I do?\", you are building dependents, not leaders.",
+      "key_phrase": "I intend to offer the client a 10% refund because of the delivery delay."
+    },
+    "ar": {
+      "title": "حول جملة \"أعمل إيه؟\" لـ \"أنا ناوي أعمل كذا\"",
+      "hook": "لو فريقك بيكلمك كل شوية يسألك \"أعمل إيه هنا؟\"، انت بتصنع ناس متكلة عليك مش قادة.",
+      "key_phrase": "أنا ناوي أدي العميل خصم 10% عشان التأخير اللي حصل."
+    }
+  },
+  {
+    "id": "2026-11-16_decision_making_two-way-door-decisions",
+    "number": 84,
+    "patch_number": 17,
+    "topic": "decision_making",
+    "level": "intermediate",
+    "tags": [
+      "decision-making",
+      "speed",
+      "productivity"
+    ],
+    "created_at": "2026-11-16T15:08:11.997054+00:00",
+    "file": "cards/2026/2026-11-16_auto_03.json",
+    "en": {
+      "title": "Separate 1-Way Doors from 2-Way Door Decisions",
+      "hook": "Analysis paralysis happens when you treat reversible decisions like permanent life choices.",
+      "key_phrase": "Is this easily reversible? If yes, let's decide right now."
+    },
+    "ar": {
+      "title": "فرق بين القرارات اللي فيها رجعة والقرارات المصيرية",
+      "hook": "التردد والبطء بيحصلوا لما تدرس كل قرار كأنه قرار مصيري مفيش فيه رجوع.",
+      "key_phrase": "هل القرار ده فيه رجعة؟ لو اه، يلا ناخد القرار دلوقتي."
+    }
+  },
+  {
+    "id": "2026-11-16_communication_bluf-communication-method",
+    "number": 83,
+    "patch_number": 17,
+    "topic": "communication",
+    "level": "beginner",
+    "tags": [
+      "communication",
+      "email",
+      "clarity"
+    ],
+    "created_at": "2026-11-16T15:08:11.997054+00:00",
+    "file": "cards/2026/2026-11-16_auto_03.json",
+    "en": {
+      "title": "Use the BLUF Rule (Bottom Line Up Front)",
+      "hook": "Busy leaders delete long, rambling emails before they ever reach your actual question.",
+      "key_phrase": "Action Required: Need approval for $500 software subscription by 3 PM."
+    },
+    "ar": {
+      "title": "استخدم قاعدة \"الخلاصة في الأول\" (BLUF)",
+      "hook": "المديرين المشغولين بيمسحوا الإيميلات الطويلة قبل ما يوصلوا حتى لطلبك الأساسي.",
+      "key_phrase": "مطلوب موافقة: محتاجين نعتمد 500 دولار لشراء البرنامج قبل الساعة 3."
+    }
+  },
+  {
+    "id": "2026-11-16_career_weekly-impact-log-32",
+    "number": 82,
+    "patch_number": 17,
+    "topic": "career",
+    "level": "beginner",
+    "tags": [
+      "career",
+      "promotion",
+      "productivity"
+    ],
+    "created_at": "2026-11-16T15:08:11.997054+00:00",
+    "file": "cards/2026/2026-11-16_auto_03.json",
+    "en": {
+      "title": "Keep a 5-Minute Weekly \"Impact Log\"",
+      "hook": "Annual performance reviews are terrifying because you forgot 90% of what you built six months ago.",
+      "key_phrase": "Saved 4 hours/week by automating client onboarding."
+    },
+    "ar": {
+      "title": "اعمل \"سجل إنجازات أسبوعي\" في 5 دقائق",
+      "hook": "تقييم السنة بيبقى مرعب عشان بتكون نسيت 90% من اللي عملته طول السنة.",
+      "key_phrase": "وفرت 4 ساعات أسبوعياً بعد ما غيرت نظام تسليم العملاء."
+    }
+  },
+  {
+    "id": "2026-11-16_business_set-project-kill-criteria",
+    "number": 81,
+    "patch_number": 17,
+    "topic": "business",
+    "level": "intermediate",
+    "tags": [
+      "strategy",
+      "risk",
+      "business"
+    ],
+    "created_at": "2026-11-16T15:08:11.997054+00:00",
+    "file": "cards/2026/2026-11-16_auto_03.json",
+    "en": {
+      "title": "Set a \"Kill Criterion\" Before Launching Any Product",
+      "hook": "We keep pouring money into dying projects because our egos hate quitting.",
+      "key_phrase": "If we don't hit 500 active users by day 60, we kill the project."
+    },
+    "ar": {
+      "title": "حدد شرط لإلغاء المشروع قبل ما تبدأ فيه",
+      "hook": "بنزود مصاريف على مشاريع خسرانة لمجرد إننا مكسوفين نعتبر نفسنا فشلنا.",
+      "key_phrase": "لو ما وصلناش لـ 500 مستخدم في 60 يوم، هنوقف المشروع بدون مناقشة."
+    }
+  },
+  {
+    "id": "2026-11-16_sales_isolation-question",
+    "number": 80,
+    "patch_number": 16,
+    "topic": "sales",
+    "level": "intermediate",
+    "tags": [
+      "sales",
+      "objections",
+      "closing",
+      "communication"
+    ],
+    "created_at": "2026-11-16T15:02:18.701318+00:00",
+    "file": "cards/2026/2026-11-16_auto_02.json",
+    "en": {
+      "title": "Ask the \"Isolation Question\" to uncover hidden objections.",
+      "hook": "A prospect says \"I need to think about it.\" Is that the real problem, or just a polite brush-off?",
+      "key_phrase": "Setting price aside for a second, is there any other reason we couldn't start next week?"
+    },
+    "ar": {
+      "title": "اسأل \"سؤال العزل\" عشان تكتشف المشكلة الحقيقية المستخبية",
+      "hook": "العميل بيقولك \"هفكر وأرجعلك\".. يا ترى المشكلة فعلاً في التفكير ولا فيه عذر تاني مستخبي؟",
+      "key_phrase": "بعيداً عن السعر للدقيقة، هل فيه أي حاجة تانية تخلينا ما نبدأش مع بعض الأسبوع الجاي؟"
+    }
+  },
+  {
+    "id": "2026-11-16_pricing_top-down-anchoring",
+    "number": 79,
+    "patch_number": 16,
+    "topic": "pricing",
+    "level": "intermediate",
+    "tags": [
+      "pricing",
+      "sales",
+      "anchoring",
+      "psychology"
+    ],
+    "created_at": "2026-11-16T15:02:18.701318+00:00",
+    "file": "cards/2026/2026-11-16_auto_02.json",
+    "en": {
+      "title": "Present your highest tier first to anchor price expectations.",
+      "hook": "If a customer hears $5,000 after seeing a $20,000 option, $5,000 feels like a bargain.",
+      "key_phrase": "Our full custom enterprise setup is $25,000, but most clients start with our core package at $6,000."
+    },
+    "ar": {
+      "title": "اعرض أغلى باقة الأول عشان تظبط توقعات السعر",
+      "hook": "لو قلت لعميلك السعر 5,000 جنيه بعد ما سمع عن باقة بـ 20,000 جنيه، الرقم الأصغر هيبان لقطة.",
+      "key_phrase": "باقة الشاملة عندنا بـ 50 ألف، بس أغلب عملائنا بيحبوا يبتدوا بالباقة الأساسية اللي بـ 15 ألف."
+    }
+  },
+  {
+    "id": "2026-11-16_persuasion_byaf-technique",
+    "number": 78,
+    "patch_number": 16,
+    "topic": "persuasion",
+    "level": "beginner",
+    "tags": [
+      "persuasion",
+      "influence",
+      "psychology",
+      "communication"
+    ],
+    "created_at": "2026-11-16T15:02:18.701318+00:00",
+    "file": "cards/2026/2026-11-16_auto_02.json",
+    "en": {
+      "title": "Add \"But you are free to say no\" to double agreement rates.",
+      "hook": "Push someone to agree, and their natural instinct is to resist. Remind them they have a choice, and they relax.",
+      "key_phrase": "Take a look at this offer, but obviously, you're completely free to say no."
+    },
+    "ar": {
+      "title": "ضيف \"بس طبعاً براحتك ترفض\" عشان تضاعف فرص موافقتهم",
+      "hook": "لما بتضغط على حد عشان يوافق، الفطرة عنده بتخليه يقاومك. بس لو أديته الحرية، بيسمعك بقلب مفتوح.",
+      "key_phrase": "بص على المقترح ده، وبراحتك خالص لو مش مناسبك ترفضه."
+    }
+  },
+  {
+    "id": "2026-11-16_negotiation_accusation-audit",
+    "number": 77,
+    "patch_number": 16,
+    "topic": "negotiation",
+    "level": "advanced",
+    "tags": [
+      "negotiation",
+      "psychology",
+      "communication",
+      "deals"
+    ],
+    "created_at": "2026-11-16T15:02:18.701318+00:00",
+    "file": "cards/2026/2026-11-16_auto_02.json",
+    "en": {
+      "title": "Use an \"Accusation Audit\" to disarm the other side early.",
+      "hook": "Before making your tough request, list every negative thought they might have about you out loud.",
+      "key_phrase": "You're probably going to think I'm being completely unreasonable and demanding..."
+    },
+    "ar": {
+      "title": "استخدم \"جرد الاتهامات\" عشان تفك عصبية اللي قدامك قبل ما تبدأ",
+      "hook": "قبل ما تطلب الطلب الصعب، قول كل الحاجات الوحشة اللي الشخص التاني ممكن يفكر فيها عنك بصوت عالٍ.",
+      "key_phrase": "غالباً حضرتك شايف إن الطلب ده مبالغ فيه وإني جاي أضغط عليك..."
+    }
+  },
+  {
+    "id": "2026-11-16_meetings_do-nothing-question",
+    "number": 76,
+    "patch_number": 16,
+    "topic": "meetings",
+    "level": "intermediate",
+    "tags": [
+      "meetings",
+      "productivity",
+      "decisions",
+      "communication"
+    ],
+    "created_at": "2026-11-16T15:02:18.701318+00:00",
+    "file": "cards/2026/2026-11-16_auto_02.json",
+    "en": {
+      "title": "Ask \"What happens if we do nothing?\" to cut endless debates.",
+      "hook": "You're 45 minutes into a meeting, everyone is arguing over minor details, and no decision is in sight.",
+      "key_phrase": "If we don't make this decision today, what is the immediate impact tomorrow?"
+    },
+    "ar": {
+      "title": "اسأل \"إيه اللي هيحصل لو ما عملناش حاجة؟\" عشان تنهي الرغي",
+      "hook": "بقالك 45 دقيقة قاعد في اجتماع، والناس عمالة تتناقش في تفاصيل غريبة ومافيش أي قرار واضح.",
+      "key_phrase": "لو ما اتخذناش القرار ده النهاردة، إيه الضرر الفعلي اللي هيحصل بكرة؟"
+    }
+  },
+  {
+    "id": "2026-11-16_sales_label-unspoken-fears",
+    "number": 75,
+    "patch_number": 15,
+    "topic": "sales",
+    "level": "intermediate",
+    "tags": [
+      "sales",
+      "negotiation",
+      "objections",
+      "psychology"
+    ],
+    "created_at": "2026-11-16T14:56:35.362039+00:00",
+    "file": "cards/2026/2026-11-16_auto_01.json",
+    "en": {
+      "title": "Label hidden hesitation instead of pushing harder",
+      "hook": "You pitch your solution, they nod and say 'Sounds great, let me think about it.' You lost them, and you don't even know why.",
+      "key_phrase": "It seems like you're hesitant about the implementation timeline."
+    },
+    "ar": {
+      "title": "سمِّ المخاوف المستخبية بدل ما تضغط على العميل",
+      "hook": "عرضت فكرتك، والعميل ابتسم وقال: 'جميل جداً، هفكر وأرد عليك'. إنت كده خسرت البيعة وأنت مش فاهم السبب!",
+      "key_phrase": "شكلك قلقان من وقت التنفيذ وياخد مجهود قد إيه من فريقك."
+    }
+  },
+  {
+    "id": "2026-11-16_pricing_anchor-high-first",
+    "number": 74,
+    "patch_number": 15,
+    "topic": "pricing",
+    "level": "intermediate",
+    "tags": [
+      "pricing",
+      "negotiation",
+      "sales",
+      "anchoring"
+    ],
+    "created_at": "2026-11-16T14:56:35.362039+00:00",
+    "file": "cards/2026/2026-11-16_auto_01.json",
+    "en": {
+      "title": "Anchor high before presenting your standard price",
+      "hook": "A client asked for a quote and immediately ghosted. You gave them a fair price, but without context, it felt too expensive.",
+      "key_phrase": "Our full VIP setup is $10k, but our standard $4k plan covers everything most clients need."
+    },
+    "ar": {
+      "title": "ثبّت السعر العالي الأول عشان رقمك يبان لقطة",
+      "hook": "العميل سألك عن السعر، فقلت له رقمك العادل، لقيتها اختفى وماردش عليك تاني! السبب إن السعر ماكانش ليه مرجع يقارن بيه.",
+      "key_phrase": "باقة الـ VIP كاملة بـ 50 ألف، بس الباقة القياسية بـ 20 ألف ودي فيها كل اللي تحتاجه."
+    }
+  },
+  {
+    "id": "2026-11-16_decision_making_10-10-10-rule",
+    "number": 73,
+    "patch_number": 15,
+    "topic": "decision_making",
+    "level": "beginner",
+    "tags": [
+      "decision_making",
+      "psychology",
+      "mindset",
+      "productivity"
+    ],
+    "created_at": "2026-11-16T14:56:35.362039+00:00",
+    "file": "cards/2026/2026-11-16_auto_01.json",
+    "en": {
+      "title": "Evaluate tough choices using the 10/10/10 rule",
+      "hook": "You are agonizing over quitting a safe job or sending a difficult email, completely paralyzed by short-term anxiety.",
+      "key_phrase": "Will this choice matter to my career 10 years from now?"
+    },
+    "ar": {
+      "title": "اقهر التردد في القرارات الصعبة بقاعدة 10/10/10",
+      "hook": "محتار تسيب شغلك الأمان ولا لأ، أو خايف تبعت إيميل مواجهة؟ التوتر المباشر شالّ تفكيرك ومخليك مكانك.",
+      "key_phrase": "هل القرار ده هيفرق معايا فعلاً بعد 10 سنين ولا ده توتر مؤقت؟"
+    }
+  },
+  {
+    "id": "2026-11-16_communication_lead-with-bottom-line",
+    "number": 72,
+    "patch_number": 15,
+    "topic": "communication",
+    "level": "beginner",
+    "tags": [
+      "communication",
+      "writing",
+      "productivity",
+      "management"
+    ],
+    "created_at": "2026-11-16T14:56:35.362039+00:00",
+    "file": "cards/2026/2026-11-16_auto_01.json",
+    "en": {
+      "title": "Lead with your takeaway, not the background story",
+      "hook": "You sent a detailed 4-paragraph email explaining a project delay. Your boss replied: 'What is the decision required here?'",
+      "key_phrase": "I recommend postponing launch to Thursday to fix a database bug. Here is the background..."
+    },
+    "ar": {
+      "title": "ابدأ بالخلاصة والطلب الأول قبل الحكاية",
+      "hook": "بعت إيميل طويل من 4 فقرات بتشرح فيه مشكلة في المشروع، المدير رد عليك بجملة واحدة: 'إيه المطلوب مني أعمله بالظبط؟'",
+      "key_phrase": "أنا برشح نأجل الإطلاق ليوم الخميس عشان نصلح ثغرة الداتا بيز. التفاصيل كالتالي..."
+    }
+  },
+  {
+    "id": "2026-11-16_career_weekly-impact-log",
+    "number": 71,
+    "patch_number": 15,
+    "topic": "career",
+    "level": "beginner",
+    "tags": [
+      "career",
+      "productivity",
+      "management",
+      "promotions"
+    ],
+    "created_at": "2026-11-16T14:56:35.362039+00:00",
+    "file": "cards/2026/2026-11-16_auto_01.json",
+    "en": {
+      "title": "Maintain a 2-minute weekly impact log",
+      "hook": "It is annual performance review week, and your boss asks what you achieved this year. Your mind goes completely blank.",
+      "key_phrase": "Here is a quick summary of the metrics and key outcomes my team delivered this month."
+    },
+    "ar": {
+      "title": "سجّل إنجازاتك الأسبوعية في دقيقتين بس",
+      "hook": "وقت التقييم السنوي جه، ومديرك بيسألك: 'عملت إيه جديد السنة دي؟'.. فجأة دماغك فضيت ومش فاكر أي حاجة!",
+      "key_phrase": "ده ملخص سريع للأرقام والمشاريع اللي خلصتها الشهر ده بالنتائج بتاعتها."
+    }
+  },
+  {
     "id": "2026-11-15_sales_lean-back-disqualify",
     "number": 70,
     "patch_number": 14,

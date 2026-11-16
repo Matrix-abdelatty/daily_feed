@@ -1,11 +1,86 @@
 {
-  "generated_at": "2026-11-15T13:36:04.538877+00:00",
-  "total_files": 14,
-  "total_patches": 14,
-  "total_cards": 70,
+  "generated_at": "2026-11-16T15:14:24.290209+00:00",
+  "total_files": 17,
+  "total_patches": 17,
+  "total_cards": 85,
   "batches_per_day_target": 3,
   "batch_size_target": 5,
   "files": [
+    {
+      "batch_id": "2026-11-16_auto_03",
+      "path": "cards/2026/2026-11-16_auto_03.json",
+      "date": "2026-11-16",
+      "created_at": "2026-11-16T15:08:11.997054+00:00",
+      "source": "gemini-3.5-flash",
+      "card_count": 5,
+      "card_ids": [
+        "2026-11-16_business_set-project-kill-criteria",
+        "2026-11-16_career_weekly-impact-log-32",
+        "2026-11-16_communication_bluf-communication-method",
+        "2026-11-16_decision_making_two-way-door-decisions",
+        "2026-11-16_leadership_intent-based-leadership"
+      ],
+      "patch_number": 17,
+      "card_numbers": [
+        81,
+        82,
+        83,
+        84,
+        85
+      ],
+      "min_number": 81,
+      "max_number": 85
+    },
+    {
+      "batch_id": "2026-11-16_auto_02",
+      "path": "cards/2026/2026-11-16_auto_02.json",
+      "date": "2026-11-16",
+      "created_at": "2026-11-16T15:02:18.701318+00:00",
+      "source": "gemini-3.5-flash",
+      "card_count": 5,
+      "card_ids": [
+        "2026-11-16_meetings_do-nothing-question",
+        "2026-11-16_negotiation_accusation-audit",
+        "2026-11-16_persuasion_byaf-technique",
+        "2026-11-16_pricing_top-down-anchoring",
+        "2026-11-16_sales_isolation-question"
+      ],
+      "patch_number": 16,
+      "card_numbers": [
+        76,
+        77,
+        78,
+        79,
+        80
+      ],
+      "min_number": 76,
+      "max_number": 80
+    },
+    {
+      "batch_id": "2026-11-16_auto_01",
+      "path": "cards/2026/2026-11-16_auto_01.json",
+      "date": "2026-11-16",
+      "created_at": "2026-11-16T14:56:35.362039+00:00",
+      "source": "gemini-3.5-flash",
+      "card_count": 5,
+      "card_ids": [
+        "2026-11-16_pricing_anchor-high-first",
+        "2026-11-16_sales_label-unspoken-fears",
+        "2026-11-16_career_weekly-impact-log",
+        "2026-11-16_communication_lead-with-bottom-line",
+        "2026-11-16_decision_making_10-10-10-rule"
+      ],
+      "patch_number": 15,
+      "card_numbers": [
+        71,
+        72,
+        73,
+        74,
+        75
+      ],
+      "min_number": 71,
+      "max_number": 75
+    },
     {
       "batch_id": "2026-11-15_auto_03",
       "path": "cards/2026/2026-11-15_auto_03.json",
