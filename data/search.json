@@ -1,5 +1,101 @@
 [
   {
+    "id": "2026-11-17_money_roundup_savings",
+    "number": 89,
+    "patch_number": 18,
+    "topic": "money",
+    "level": "beginner",
+    "tags": [
+      "budgeting",
+      "habit",
+      "saving"
+    ],
+    "created_at": "2026-11-17T15:34:23.034104+00:00",
+    "file": "cards/2026/2026-11-17_auto_01.json",
+    "en": {
+      "title": "Round‑up Savings with the 52‑Week Rule",
+      "hook": "You noticed a few dollars left in your wallet each week and thought, ‘What if I let that grow?’",
+      "key_phrase": ""
+    },
+    "ar": {
+      "title": "زود مدخراتك بقاعدة الـ52 أسبوع",
+      "hook": "لقيت شوية فكة كل أسبوع وفكرت: إيه لو خليتها تكبر؟",
+      "key_phrase": ""
+    }
+  },
+  {
+    "id": "2026-11-17_learning_3question_loop",
+    "number": 88,
+    "patch_number": 18,
+    "topic": "learning",
+    "level": "beginner",
+    "tags": [
+      "reading",
+      "memory",
+      "recall"
+    ],
+    "created_at": "2026-11-17T15:34:23.034104+00:00",
+    "file": "cards/2026/2026-11-17_auto_01.json",
+    "en": {
+      "title": "The 3‑Question Recall Loop after any reading",
+      "hook": "I used to forget half of what I read—until I added a three‑question habit after every article.",
+      "key_phrase": ""
+    },
+    "ar": {
+      "title": "حلقة تذكّر 3 أسئلة بعد أي قراءة",
+      "hook": "كنت بنسى نص المقالات لحد ما بدأت أكتب 3 أسئلة بعد كل قراءة",
+      "key_phrase": ""
+    }
+  },
+  {
+    "id": "2026-11-17_leadership_win_checkin",
+    "number": 87,
+    "patch_number": 18,
+    "topic": "leadership",
+    "level": "intermediate",
+    "tags": [
+      "team",
+      "morale",
+      "daily"
+    ],
+    "created_at": "2026-11-17T15:34:23.034104+00:00",
+    "file": "cards/2026/2026-11-17_auto_01.json",
+    "en": {
+      "title": "Start each day with a 1‑minute win‑and‑obstacle check‑in",
+      "hook": "Ever watched a team drift after a tough sprint? I stopped it with a simple 60‑second question.",
+      "key_phrase": "What’s one win you had yesterday, and what’s one obstacle you need help with?"
+    },
+    "ar": {
+      "title": "ابدأ اليوم بـ 1 دقيقة لتشارك إنجاز وعقبة",
+      "hook": "شفت فريق بيقل حماسه بعد سبرينت صعب؟ حليتها بسؤال دقيقة واحدة",
+      "key_phrase": "إيه الإنجاز اللي حققته امبارح وإيه العقبة اللي محتاج مساعدة فيها؟"
+    }
+  },
+  {
+    "id": "2026-11-17_business_validate_idea",
+    "number": 86,
+    "patch_number": 18,
+    "topic": "business",
+    "level": "intermediate",
+    "tags": [
+      "validation",
+      "customer",
+      "mvp"
+    ],
+    "created_at": "2026-11-17T15:34:23.034104+00:00",
+    "file": "cards/2026/2026-11-17_auto_01.json",
+    "en": {
+      "title": "Validate a Product Idea with 3 Customer Interviews",
+      "hook": "You launched a feature that no one used—turn that around before you build anything.",
+      "key_phrase": ""
+    },
+    "ar": {
+      "title": "أكد فكرة منتجك بـ3 مقابلات عملاء",
+      "hook": "طلعت ميزة ولا حد استخدمها—اعمل خطوة قبل ما تبني أي حاجة.",
+      "key_phrase": ""
+    }
+  },
+  {
     "id": "2026-11-16_leadership_intent-based-leadership",
     "number": 85,
     "patch_number": 17,

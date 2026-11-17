@@ -1,11 +1,34 @@
 {
-  "generated_at": "2026-11-16T15:14:24.290209+00:00",
-  "total_files": 17,
-  "total_patches": 17,
-  "total_cards": 85,
+  "generated_at": "2026-11-17T15:54:52.110596+00:00",
+  "total_files": 18,
+  "total_patches": 18,
+  "total_cards": 89,
   "batches_per_day_target": 3,
   "batch_size_target": 5,
   "files": [
+    {
+      "batch_id": "2026-11-17_auto_01",
+      "path": "cards/2026/2026-11-17_auto_01.json",
+      "date": "2026-11-17",
+      "created_at": "2026-11-17T15:34:23.034104+00:00",
+      "source": "groq:openai/gpt-oss-120b",
+      "card_count": 4,
+      "card_ids": [
+        "2026-11-17_money_roundup_savings",
+        "2026-11-17_business_validate_idea",
+        "2026-11-17_leadership_win_checkin",
+        "2026-11-17_learning_3question_loop"
+      ],
+      "patch_number": 18,
+      "card_numbers": [
+        86,
+        87,
+        88,
+        89
+      ],
+      "min_number": 86,
+      "max_number": 89
+    },
     {
       "batch_id": "2026-11-16_auto_03",
       "path": "cards/2026/2026-11-16_auto_03.json",

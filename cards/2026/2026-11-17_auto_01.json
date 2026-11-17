@@ -1,0 +1,232 @@
+{
+  "schema_version": 1,
+  "batch_id": "2026-11-17_auto_01",
+  "created_at": "2026-11-17T15:34:23.034104+00:00",
+  "source": "groq:openai/gpt-oss-120b",
+  "cards": [
+    {
+      "id": "2026-11-17_money_roundup_savings",
+      "created_at": "2026-11-17T15:34:23.034104+00:00",
+      "topic": "money",
+      "tags": [
+        "budgeting",
+        "habit",
+        "saving"
+      ],
+      "level": "beginner",
+      "needs_completion": false,
+      "en": {
+        "title": "Round‑up Savings with the 52‑Week Rule",
+        "hook": "You noticed a few dollars left in your wallet each week and thought, ‘What if I let that grow?’",
+        "action": "Start week 1 by saving $1. Each following week add $1 more than the previous week (week 2 $2, week 3 $3, … up to week 52).",
+        "key_phrase": "",
+        "when": "When you’re setting up a personal budget or want to build an emergency fund without feeling the pinch.",
+        "why": "The incremental increase feels easy, yet the total (≈$1,378) compounds without you noticing the effort.",
+        "example": "You: ‘I’ll put $1 in the jar today.’\nFriend: ‘Next week $2?’\nYou: ‘Exactly, by the end of the year I’ll have over a thousand dollars saved.’",
+        "mistake": "Assuming you need a big lump‑sum to start saving."
+      },
+      "ar": {
+        "title": "زود مدخراتك بقاعدة الـ52 أسبوع",
+        "hook": "لقيت شوية فكة كل أسبوع وفكرت: إيه لو خليتها تكبر؟",
+        "action": "ابدأ بالأسبوع الأول بخزن 1 جنيه. كل أسبوع بعده زود جنيه واحد (الأسبوع 2 2 جنيه، الأسبوع 3 3 جنيه … لحد الأسبوع 52).",
+        "key_phrase": "",
+        "when": "لما تحط ميزانية شخصية أو عايز صندوق طوارئ من غير ما تحس بالضغط.",
+        "why": "الزيادة الصغيرة كل أسبوع سهل تتقبلها، لكن في آخر السنة هتجمع حوالي ١٣٨٠ جنيه من غير ما تحس بالجهد.",
+        "example": "أنت: ‘هحط جنيه النهاردة.’\nصاحبك: ‘الأسبوع الجاي 2 جنيه؟’\nأنت: ‘بالظبط، في آخر السنة هكون جمعت أكتر من ألف جنيه.’",
+        "mistake": "إنك تفكر إنك محتاج مبلغ كبير عشان تبدأ تدخر."
+      },
+      "quiz": {
+        "type": "mcq",
+        "correct_index": 1,
+        "en": {
+          "question": "You decide to start the 52‑week savings rule. Which weekly amount should you save first?",
+          "options": [
+            "$1",
+            "$5",
+            "$10",
+            "$0"
+          ],
+          "explanation": "The rule begins with $1 in week 1 and adds $1 each week. Starting with $5 or $10 skips the incremental habit building."
+        },
+        "ar": {
+          "question": "عايز تبدأ قاعدة الـ52 أسبوع للادخار. هتدخر كام في أول أسبوع؟",
+          "options": [
+            "1 جنيه",
+            "5 جنيه",
+            "10 جنيه",
+            "0 جنيه"
+          ],
+          "explanation": "القواعد بتبدأ بجنيه واحد في الأسبوع الأول وتزود جنيه كل أسبوع. البدء بخمسة أو عشرة جنيهات يخليك تفوت عادة الزيادة البسيطة."
+        }
+      }
+    },
+    {
+      "id": "2026-11-17_business_validate_idea",
+      "created_at": "2026-11-17T15:34:23.034104+00:00",
+      "topic": "business",
+      "tags": [
+        "validation",
+        "customer",
+        "mvp"
+      ],
+      "level": "intermediate",
+      "needs_completion": false,
+      "en": {
+        "title": "Validate a Product Idea with 3 Customer Interviews",
+        "hook": "You launched a feature that no one used—turn that around before you build anything.",
+        "action": "Find three target customers. Ask: 1) What problem are you trying to solve? 2) How do you handle it now? 3) Would you pay $X for a better solution?",
+        "key_phrase": "",
+        "when": "Before you invest time in a prototype or MVP.",
+        "why": "Real feedback uncovers hidden objections and tells you if people actually need the solution, saving resources.",
+        "example": "You: ‘What’s the biggest hassle with your current invoicing?’\nClient: ‘I lose receipts all the time.’\nYou: ‘If an app could auto‑scan receipts for $15/month, would you try it?’",
+        "mistake": "Building based on assumptions instead of actual user input."
+      },
+      "ar": {
+        "title": "أكد فكرة منتجك بـ3 مقابلات عملاء",
+        "hook": "طلعت ميزة ولا حد استخدمها—اعمل خطوة قبل ما تبني أي حاجة.",
+        "action": "دور على 3 عملاء هدف. اسألهم: 1) إيه المشكلة اللي بتحاول تحلها؟ 2) إزاي بتتعامل معاها دلوقتي؟ 3) هل هتدفع $X لحل أحسن؟",
+        "key_phrase": "",
+        "when": "قبل ما تبتدي تبني نموذج أولي أو MVP.",
+        "why": "ردود فعل حقيقية بتكشف الاعتراضات المخفية وبتأكد إن الناس فعلاً محتاجة الحل، وبتوفر وقت ومجهود.",
+        "example": "أنت: ‘إيه أكبر مشكلة في نظام الفواتير عندك؟’\nعميل: ‘بضيع الإيصالات كتير.’\nأنت: ‘لو تطبيق يمسح الإيصالات تلقائيًا بـ15 جنيه في الشهر، تحب تجربه؟’",
+        "mistake": "إنك تبني على افتراضات من غير ما تستشير المستخدمين."
+      },
+      "quiz": {
+        "type": "mcq",
+        "correct_index": 0,
+        "en": {
+          "question": "Before building a new feature, what’s the most efficient first step?",
+          "options": [
+            "Interview three target customers",
+            "Launch a beta to everyone",
+            "Run a paid ad campaign",
+            "Raise a seed round"
+          ],
+          "explanation": "Interviewing three real users gives direct insight and validates demand before any development. The other options waste resources without proof of need."
+        },
+        "ar": {
+          "question": "قبل ما تبني ميزة جديدة، إيه الخطوة الأكثر كفاءة؟",
+          "options": [
+            "مقابلة 3 عملاء هدف",
+            "إطلاق نسخة تجريبية للجميع",
+            "تشغيل حملة إعلانية مدفوعة",
+            "جمع تمويل أولي"
+          ],
+          "explanation": "مقابلة ثلاثة عملاء حقيقيين بتديك فكرة واضحة عن الطلب قبل ما تصرف أي وقت على التطوير. الخيارات التانية بتضيع موارد من غير ما تتأكد من الحاجة."
+        }
+      }
+    },
+    {
+      "id": "2026-11-17_leadership_win_checkin",
+      "created_at": "2026-11-17T15:34:23.034104+00:00",
+      "topic": "leadership",
+      "tags": [
+        "team",
+        "morale",
+        "daily"
+      ],
+      "level": "intermediate",
+      "needs_completion": false,
+      "en": {
+        "title": "Start each day with a 1‑minute win‑and‑obstacle check‑in",
+        "hook": "Ever watched a team drift after a tough sprint? I stopped it with a simple 60‑second question.",
+        "action": "At the start of the day say, “What’s one win you had yesterday, and what’s one obstacle you need help with?”",
+        "key_phrase": "What’s one win you had yesterday, and what’s one obstacle you need help with?",
+        "when": "During daily stand‑ups or morning huddles",
+        "why": "Celebrates progress and surfaces blockers early, so morale stays high and problems get solved before they snowball.",
+        "example": "Leader: “Hey team, quick round—what’s one win you had yesterday?”\nAnna: “Closed the client demo.”\nLeader: “Great! And any obstacle?”\nBen: “Stuck on the API rate‑limit bug.”\nLeader: “Ben, I’ll pair with you after the stand‑up.”",
+        "mistake": "Skipping the win part and jumping straight to tasks, which leaves the team unmotivated and blockers hidden."
+      },
+      "ar": {
+        "title": "ابدأ اليوم بـ 1 دقيقة لتشارك إنجاز وعقبة",
+        "hook": "شفت فريق بيقل حماسه بعد سبرينت صعب؟ حليتها بسؤال دقيقة واحدة",
+        "action": "في بداية اليوم قول: “إيه الإنجاز اللي حققته امبارح وإيه العقبة اللي محتاج مساعدة فيها؟”",
+        "key_phrase": "إيه الإنجاز اللي حققته امبارح وإيه العقبة اللي محتاج مساعدة فيها؟",
+        "when": "في الستند‑أب الصباحي أو أي اجتماع صباحي",
+        "why": "بنحتفل بالإنجاز وبنكشف العوائق بدري، فالمزاج بيرتفع والمشاكل بتتحل قبل ما تكبر",
+        "example": "القائد: “يلا يا جماعة، إيه الإنجاز اللي حققته امبارح؟”\nآنا: “خلصت عرض العميل.”\nالقائد: “كويس! وعقبة؟”\nباسم: “معطلني مشكلة الـ API.”\nالقائد: “هتشتغل معايا بعد الستند‑أب.”",
+        "mistake": "تخطي سؤال الإنجاز والانتقال مباشرة للمهام، بيخلي الفريق متعب ومش بيظهر العوائق."
+      },
+      "quiz": {
+        "type": "mcq",
+        "correct_index": 0,
+        "en": {
+          "question": "During a daily stand‑up, a teammate says they’re stuck on a bug. What’s the best follow‑up?",
+          "options": [
+            "Ask them to share the win first, then the obstacle, and offer help",
+            "Tell them to fix it later after the meeting",
+            "Skip the check‑in and move to the agenda",
+            "Assign someone else without asking"
+          ],
+          "explanation": "The correct answer repeats the win‑and‑obstacle formula, keeping morale high and providing immediate support. The other options ignore the purpose of the check‑in."
+        },
+        "ar": {
+          "question": "في الستند‑أب الصباحي، زميل بيقول إنه عالق في مشكلة. إيه أفضل رد؟",
+          "options": [
+            "اسأله عن إنجازه الأول، بعدين عن العقبة، واعرض مساعدة",
+            "قل له يحل المشكلة بعد الاجتماع",
+            "تجاهل الكلام وتكمل جدول الأعمال",
+            "ت assign شخص تاني من غير ما تسأل"
+          ],
+          "explanation": "الإجابة الصحيحة بتطبق صيغة “إنجاز وعقبة” وبتدي دعم فوري. باقي الخيارات بتتجاهل هدف الفحص الصباحي."
+        }
+      }
+    },
+    {
+      "id": "2026-11-17_learning_3question_loop",
+      "created_at": "2026-11-17T15:34:23.034104+00:00",
+      "topic": "learning",
+      "tags": [
+        "reading",
+        "memory",
+        "recall"
+      ],
+      "level": "beginner",
+      "needs_completion": false,
+      "en": {
+        "title": "The 3‑Question Recall Loop after any reading",
+        "hook": "I used to forget half of what I read—until I added a three‑question habit after every article.",
+        "action": "When you finish reading, write down: 1) The main claim, 2) How it links to something you already know, 3) One concrete step you’ll take tomorrow.",
+        "key_phrase": "",
+        "when": "Immediately after finishing a book chapter, article, or report",
+        "why": "Active retrieval forces your brain to reorganize the info, and linking it to existing knowledge creates stronger neural pathways.",
+        "example": "After a marketing article I wrote:\n1) Claim: Short videos boost conversion.\n2) Link: Like the TikTok ads we ran last quarter.\n3) Step: Test a 15‑second video on the landing page next week.",
+        "mistake": "Just highlighting or bookmarking without processing the material."
+      },
+      "ar": {
+        "title": "حلقة تذكّر 3 أسئلة بعد أي قراءة",
+        "hook": "كنت بنسى نص المقالات لحد ما بدأت أكتب 3 أسئلة بعد كل قراءة",
+        "action": "لما تخلص قراءة، اكتب: 1) الفكرة الأساسية، 2) إزاي بتربط بحاجة تعرفها، 3) خطوة عملية هتنفذها بكرة.",
+        "key_phrase": "",
+        "when": "على طول بعد ما تقفل كتاب أو مقالة أو تقرير",
+        "why": "الاسترجاع النشط بيخلي دماغك تعيد ترتيب المعلومة، والربط بحاجات موجودة بيثبتها أكتر في الذاكرة.",
+        "example": "بعد ما قرأت مقال عن الفيديوهات القصيرة:\n1) الفكرة: الفيديوهات القصيرة بتزود التحويل.\n2) الربط: زي حملات تيك توك اللي عملناها قبل كده.\n3) الخطوة: أجرب فيديو 15 ثانية على الصفحة الرئيسية الأسبوع الجاي.",
+        "mistake": "إنك بس تظلل أو تحفظ الروابط من غير ما تعالج المعلومة."
+      },
+      "quiz": {
+        "type": "mcq",
+        "correct_index": 1,
+        "en": {
+          "question": "You’ve just finished a dense report. Which step best ensures you’ll remember its key point?",
+          "options": [
+            "Highlight the abstract and move on",
+            "Write the three recall questions described above",
+            "Read the report again the next day",
+            "Share the report on social media"
+          ],
+          "explanation": "Writing the three recall questions forces active processing, which is proven to improve retention. Highlighting alone is passive; rereading without synthesis is less effective; sharing doesn’t guarantee personal recall."
+        },
+        "ar": {
+          "question": "خلصت تقرير معقد. أي خطوة هتضمن إنك تفتكر أهم نقطة فيه؟",
+          "options": [
+            "تظلل الملخص وتكمل",
+            "تكتب ثلاث أسئلة استرجاع زي ما في المثال",
+            "تقرا التقرير تاني اليوم التالي",
+            "تنشر التقرير على السوشيال ميديا"
+          ],
+          "explanation": "كتابة الأسئلة الثلاثة بتخلي دماغك تعالج المعلومة بعمق، وده بيقوي الذاكرة. التظليل لوحده سلبي، وإعادة القراءة من غير معالجة أقل فاعلية، والنشر مش بيضمن تذكرك."
+        }
+      }
+    }
+  ]
+}
