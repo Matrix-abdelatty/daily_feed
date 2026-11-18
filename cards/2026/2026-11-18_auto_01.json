@@ -1,0 +1,176 @@
+{
+  "schema_version": 1,
+  "batch_id": "2026-11-18_auto_01",
+  "created_at": "2026-11-18T15:12:17.783477+00:00",
+  "source": "groq:openai/gpt-oss-120b",
+  "cards": [
+    {
+      "id": "2026-11-18_productivity_two-minute-rule",
+      "created_at": "2026-11-18T15:12:17.783477+00:00",
+      "topic": "productivity",
+      "tags": [
+        "focus",
+        "time",
+        "habit"
+      ],
+      "level": "beginner",
+      "needs_completion": false,
+      "en": {
+        "title": "Use the Two‑Minute Rule to crush tiny tasks",
+        "hook": "You keep postponing that quick email, and it piles up until your inbox looks like a war zone.",
+        "action": "If a task will take less than two minutes, do it immediately instead of scheduling it later.",
+        "key_phrase": "just do it now",
+        "when": "Whenever a small task pops up—email replies, file renames, quick notes",
+        "why": "Your brain resists open‑ended queues; finishing instantly removes mental clutter and builds momentum.",
+        "example": "You see an email that needs a 90‑second confirmation. You open it, type the reply, hit send, and move on—no extra click to “snooze”.",
+        "mistake": "Marking the task as “later” and letting it sit, which only adds to the backlog."
+      },
+      "ar": {
+        "title": "استخدم قاعدة الدقيقتين عشان تنهي المهام الصغيرة",
+        "hook": "بتأجل رد على إيميل سريع، وبقى صندوق الوارد متكدس كأنه ساحة معركة.",
+        "action": "لو المهمة هتاخد أقل من دقيقتين، اعملها فوراً بدل ما تأجلها.",
+        "key_phrase": "اعملها الآن",
+        "when": "أى لحظة تظهر فيها مهمة صغيرة—رد على إيميل، تعديل ملف، ملاحظة سريعة",
+        "why": "العقل بيكره القوائم المفتوحة؛ إنك تكملها فوراً يفضى دماغك ويخلق زخم إيجابي.",
+        "example": "بصيت على إيميل محتاج تأكيد لمدة ٩٠ ثانية، رديت على طول وبعت، ومكملش غير كده.",
+        "mistake": "تحطها في “لاحقاً” وتسيبها تتراكم."
+      },
+      "quiz": {
+        "type": "mcq",
+        "correct_index": 2,
+        "en": {
+          "question": "You have a 90‑second email reply. What’s the best move?",
+          "options": [
+            "Mark it as “later”",
+            "Delete it and forget",
+            "Reply right now",
+            "Forward it to a teammate"
+          ],
+          "explanation": "Replying immediately follows the Two‑Minute Rule, clearing the task instantly. Marking later adds friction; deleting loses needed info; forwarding adds unnecessary hand‑off."
+        },
+        "ar": {
+          "question": "عندك إيميل محتاج رد ٩٠ ثانية. إيه الأنسب؟",
+          "options": [
+            "تحطه في “لاحقاً”",
+            "تحذفه وتنسيه",
+            "ترد عليه فوراً",
+            "تبعت نسخة لزميل"
+          ],
+          "explanation": "الرد فوراً بيطبق قاعدة الدقيقتين وبيفضى المهمة. التحويل للاحقاً بيضيف عوائق، والحذف يخسر المعلومة، والإحالة لزميل بتضيف خطوة غير لازمة."
+        }
+      }
+    },
+    {
+      "id": "2026-11-18_business_price-anchor",
+      "created_at": "2026-11-18T15:12:17.783477+00:00",
+      "topic": "business",
+      "tags": [
+        "pricing",
+        "psychology",
+        "sales"
+      ],
+      "level": "intermediate",
+      "needs_completion": false,
+      "en": {
+        "title": "Start proposals with a high price anchor",
+        "hook": "Clients often balk at the first number they hear—so give them a bigger one first and watch the real price feel cheaper.",
+        "action": "When presenting a quote, begin with your premium package price, then introduce the standard option you actually want them to choose.",
+        "key_phrase": "Our premium package starts at $5,000",
+        "when": "During the first price discussion in a sales meeting or proposal email",
+        "why": "The initial high figure sets a reference point, making subsequent lower numbers appear more reasonable and valuable.",
+        "example": "You say, “Our premium solution is $5,000 per month, which includes full support. For most clients, the core package at $2,500 meets their needs.” The client perceives $2,500 as a discount.",
+        "mistake": "Launching the conversation with the lowest price, which makes the offer look cheap and reduces perceived value."
+      },
+      "ar": {
+        "title": "ابدأ عرض السعر برقم عالي كمرساة",
+        "hook": "العميل بيستغرب من أول رقم يسمعه—لو تديله رقم أعلى الأول، هتحس إن السعر الحقيقي بقى أرخص.",
+        "action": "في بداية عرض السعر، قول أولاً عن باقة الـPremium وسعرها العالي، بعدين قدّم الباقة العادية اللي أنت عايز العميل يختارها.",
+        "key_phrase": "الباقة المميزة بتبدأ من 5,000 دولار",
+        "when": "أول ما تدخل موضوع السعر في اجتماع أو إيميل عرض",
+        "why": "الرقم الأول العالي بيعمل مرساة ذهنية، فالأرقام اللي بعده بتظهر كأنها خصم أو قيمة معقولة.",
+        "example": "بتقول: “الباقة المميزة 5,000 دولار شهرياً مع دعم كامل. أغلب العملاء بيكفيهم الباقة الأساسية بـ2,500 دولار.” العميل يحس إن 2,500 خصم كبير.",
+        "mistake": "تبدأ بأقل سعر، فالقيمة بتظهر قليلة والعميل يفتقر للثقة في الفائدة."
+      },
+      "quiz": {
+        "type": "mcq",
+        "correct_index": 1,
+        "en": {
+          "question": "When you want a client to see your standard price as a good deal, you should:",
+          "options": [
+            "State the standard price first",
+            "Start with the premium package price",
+            "Give a discount before any price",
+            "Ask the client what they expect to pay"
+          ],
+          "explanation": "Starting with the premium price creates the anchor; the standard price then looks like a bargain. The other options either miss the anchor effect or shift focus."
+        },
+        "ar": {
+          "question": "لو عايز العميل يشوف السعر العادي كصفقة كويسة، تعمل إيه؟",
+          "options": [
+            "تقول السعر العادي أولاً",
+            "تبدأ بسعر الباقة المميزة",
+            "تدي خصم قبل ما تقول أي سعر",
+            "تسأل العميل هو متوقع يدفع كام"
+          ],
+          "explanation": "البدء بسعر الباقة المميزة بيعمل مرساة، والسعر العادي يبقى يبدو خصم. باقي الخيارات ما بتستفيدش من تأثير المرساة."
+        }
+      }
+    },
+    {
+      "id": "2026-11-18_career_skill-gap-mapping",
+      "created_at": "2026-11-18T15:12:17.783477+00:00",
+      "topic": "career",
+      "tags": [
+        "growth",
+        "planning",
+        "development"
+      ],
+      "level": "intermediate",
+      "needs_completion": false,
+      "en": {
+        "title": "Map your skill gap in 30‑minute weekly reviews",
+        "hook": "You’ve been applying for that promotion for months, but you keep hearing “you need more experience.” That’s a clue you’re missing a concrete plan.",
+        "action": "Every Friday, list the top three skills required for your target role, rate yourself 1‑5, and write one micro‑action to improve each before next week.",
+        "key_phrase": "",
+        "when": "During a short Friday afternoon slot (30 min) before the weekend",
+        "why": "Breaking the gap into tiny, time‑boxed actions creates measurable progress and keeps you accountable without overwhelming you.",
+        "example": "Target role needs data visualization. You rate yourself 2/5. Action: “Watch a 10‑minute Tableau tutorial and apply one chart to my current report by Monday.”",
+        "mistake": "Relying on vague resolutions like “I’ll get better at Excel” without a clear, timed step."
+      },
+      "ar": {
+        "title": "اعمل خريطة فجوة المهارات في مراجعة أسبوعية 30 دقيقة",
+        "hook": "بتقدم على ترقية من شهور، وكل مرة بيقولوا لك “محتاج خبرة أكتر”. ده معناه إنك ما عندكش خطة واضحة.",
+        "action": "كل يوم جمعة، اكتب أهم 3 مهارات لازمة للوظيفة اللي عايزها، قيم نفسك من 1‑5، وحط خطوة صغيرة لكل مهارة هتنفذها قبل الأسبوع الجاي.",
+        "key_phrase": "",
+        "when": "في جلسة قصيرة يوم الجمعة قبل الويك إند (30 دقيقة)",
+        "why": "تقسيم الفجوة لمهام صغيرة ومحددة بوقت بيخليك تشوف تقدم واضح وتتحمل المسؤولية من غير ما تحس بالإرهاق.",
+        "example": "الوظيفة محتاجة تصور بيانات. قيمت نفسك 2/5. الخطوة: “أشوف فيديو توتوريال Tableau لمدة 10 دقائق وأطبق مخطط واحد على التقرير اللي شغال عليه قبل الاتنين.”",
+        "mistake": "إنك تقول “هتحسن في إكسل” من غير ما تحط خطوة محددة وزمنية."
+      },
+      "quiz": {
+        "type": "mcq",
+        "correct_index": 3,
+        "en": {
+          "question": "You want to track progress toward a promotion. Which weekly habit is most effective?",
+          "options": [
+            "Write a long‑term career essay",
+            "List all skills you lack without action steps",
+            "Rate required skills and set one micro‑action per skill",
+            "Ask your boss for feedback once a year"
+          ],
+          "explanation": "Rating skills and assigning a micro‑action each week creates concrete, incremental improvement. The other options lack specificity or frequency."
+        },
+        "ar": {
+          "question": "عايز تتابع تقدمك للترقية. أي عادة أسبوعية هي الأنسب؟",
+          "options": [
+            "تكتب مقالة طويلة عن مسارك الوظيفي",
+            "تكتب كل المهارات اللي ناقصك من غير خطوات",
+            "تقيم المهارات المطلوبة وتحط خطوة صغيرة لكل مهارة",
+            "تسأل مديرك رأيه مرة في السنة"
+          ],
+          "explanation": "تقييم المهارات وتحديد خطوة صغيرة كل أسبوع بيوفر تحسين تدريجي واضح. باقي الخيارات مش محددة أو مش متكررة."
+        }
+      }
+    }
+  ]
+}

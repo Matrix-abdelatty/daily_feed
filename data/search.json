@@ -1,5 +1,77 @@
 [
   {
+    "id": "2026-11-18_productivity_two-minute-rule",
+    "number": 92,
+    "patch_number": 19,
+    "topic": "productivity",
+    "level": "beginner",
+    "tags": [
+      "focus",
+      "time",
+      "habit"
+    ],
+    "created_at": "2026-11-18T15:12:17.783477+00:00",
+    "file": "cards/2026/2026-11-18_auto_01.json",
+    "en": {
+      "title": "Use the Two‑Minute Rule to crush tiny tasks",
+      "hook": "You keep postponing that quick email, and it piles up until your inbox looks like a war zone.",
+      "key_phrase": "just do it now"
+    },
+    "ar": {
+      "title": "استخدم قاعدة الدقيقتين عشان تنهي المهام الصغيرة",
+      "hook": "بتأجل رد على إيميل سريع، وبقى صندوق الوارد متكدس كأنه ساحة معركة.",
+      "key_phrase": "اعملها الآن"
+    }
+  },
+  {
+    "id": "2026-11-18_career_skill-gap-mapping",
+    "number": 91,
+    "patch_number": 19,
+    "topic": "career",
+    "level": "intermediate",
+    "tags": [
+      "growth",
+      "planning",
+      "development"
+    ],
+    "created_at": "2026-11-18T15:12:17.783477+00:00",
+    "file": "cards/2026/2026-11-18_auto_01.json",
+    "en": {
+      "title": "Map your skill gap in 30‑minute weekly reviews",
+      "hook": "You’ve been applying for that promotion for months, but you keep hearing “you need more experience.” That’s a clue you’re missing a concrete plan.",
+      "key_phrase": ""
+    },
+    "ar": {
+      "title": "اعمل خريطة فجوة المهارات في مراجعة أسبوعية 30 دقيقة",
+      "hook": "بتقدم على ترقية من شهور، وكل مرة بيقولوا لك “محتاج خبرة أكتر”. ده معناه إنك ما عندكش خطة واضحة.",
+      "key_phrase": ""
+    }
+  },
+  {
+    "id": "2026-11-18_business_price-anchor",
+    "number": 90,
+    "patch_number": 19,
+    "topic": "business",
+    "level": "intermediate",
+    "tags": [
+      "pricing",
+      "psychology",
+      "sales"
+    ],
+    "created_at": "2026-11-18T15:12:17.783477+00:00",
+    "file": "cards/2026/2026-11-18_auto_01.json",
+    "en": {
+      "title": "Start proposals with a high price anchor",
+      "hook": "Clients often balk at the first number they hear—so give them a bigger one first and watch the real price feel cheaper.",
+      "key_phrase": "Our premium package starts at $5,000"
+    },
+    "ar": {
+      "title": "ابدأ عرض السعر برقم عالي كمرساة",
+      "hook": "العميل بيستغرب من أول رقم يسمعه—لو تديله رقم أعلى الأول، هتحس إن السعر الحقيقي بقى أرخص.",
+      "key_phrase": "الباقة المميزة بتبدأ من 5,000 دولار"
+    }
+  },
+  {
     "id": "2026-11-17_money_roundup_savings",
     "number": 89,
     "patch_number": 18,
