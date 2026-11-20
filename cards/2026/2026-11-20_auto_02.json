@@ -1,0 +1,288 @@
+{
+  "schema_version": 1,
+  "batch_id": "2026-11-20_auto_02",
+  "created_at": "2026-11-20T15:04:21.508502+00:00",
+  "source": "gemini-3.5-flash",
+  "cards": [
+    {
+      "id": "2026-11-20_money_24hr-friction-rule",
+      "created_at": "2026-11-20T15:04:21.508502+00:00",
+      "topic": "money",
+      "tags": [
+        "spending",
+        "budgeting",
+        "habits"
+      ],
+      "level": "beginner",
+      "needs_completion": false,
+      "en": {
+        "title": "Pause 24 Hours Before Impulse Shopping",
+        "hook": "You are late at night, one click away from buying a $150 gadget you did not know existed 10 minutes ago.",
+        "action": "Place the item in your cart, close the app immediately, and set a timer for 24 hours before opening checkout.",
+        "key_phrase": "If I still want it tomorrow night, I will buy it.",
+        "when": "Browsing online stores late at night or when feeling bored and stressed.",
+        "why": "It breaks the dopamine loop of instant gratification and gives your rational brain time to evaluate real utility.",
+        "example": "Man, this coffee grinder looks sleek. Added to cart. Alarm set for 8 PM tomorrow. Next day at 8 PM: Actually, my current one works fine.",
+        "mistake": "Buying immediately out of fear of missing a fake limited-time discount."
+      },
+      "ar": {
+        "title": "قانون الـ 24 ساعة عشان توقف الشرا المنفعل",
+        "hook": "قاعد سهران بالليل ونازل تقليب في أبليكيشن الشوبينج، وفاضلك ضغطة واحدة وتشتري حاجة بـ 2000 جنيه مكنتش تعرف إنها موجودة أصلاً من 10 دقايق.",
+        "action": "حط المنتج في السلة، واقفل الأبلكيشن فواً، واضبط تايمر 24 ساعة قبل ما تمم الشرا.",
+        "key_phrase": "لو لسه عايزها بكرة بالليل، هشتريها.",
+        "when": "لما تكون بتتصفح مواقع الشوبينج وإنت زهقان أو مفصول بعد يوم شغل طويل.",
+        "why": "بتكسر دورة الدوبامين اللي بتخليك تشتري باندفاع، وتدي فرصة لعقلك يفكر بالمنطق.",
+        "example": "المطحنة دي شكلها تحفة! حطيتها في الكارت وظبطت المنبه لبكرة 8 بالليل. تاني يوم المنبه ضرب: لأ بصراحة القديمة شغالة وزي الفل.",
+        "mistake": "إنك تشتري في ساعتها عشان خايف الخصم يفوتك أو بتسلي وقتك."
+      },
+      "quiz": {
+        "type": "mcq",
+        "correct_index": 1,
+        "en": {
+          "question": "You find a stylish $100 jacket online late at night. What is the best move to protect your savings?",
+          "options": [
+            "Buy it immediately before it goes out of stock",
+            "Add it to your cart and force a 24-hour waiting period",
+            "Ask three friends right now on WhatsApp if you should buy it",
+            "Look for a more expensive jacket to compare"
+          ],
+          "explanation": "Waiting 24 hours removes the emotional dopamine rush, letting you decide rationally if you actually need the item."
+        },
+        "ar": {
+          "question": "لقيت جاكيت شكله تحفة بـ 1500 جنيه على النت وإنت سهران. إيه أفضل تصرف تحمي بيه فلوسك؟",
+          "options": [
+            "تشتريه فوراً قبل ما الكمية تخلص",
+            "تحطه في السلة وتجبر نفسك تستنى 24 ساعة",
+            "تبعث لأصحابك على الواتساب تسألهم يشتروه ولا لأ في ساعتها",
+            "تدور على جاكيت أغلى عشان تقارن الأسعار"
+          ],
+          "explanation": "انتظار 24 ساعة بيهدّي اندفاع الدوبامين وبيخليك تقرر بعقلك هل إنت محتاجه بجد ولا ده مجرد اندفاع."
+        }
+      }
+    },
+    {
+      "id": "2026-11-20_negotiation_labeling-emotions",
+      "created_at": "2026-11-20T15:04:21.508502+00:00",
+      "topic": "negotiation",
+      "tags": [
+        "empathy",
+        "communication",
+        "tactics"
+      ],
+      "level": "intermediate",
+      "needs_completion": false,
+      "en": {
+        "title": "Label Their Hidden Concern to Cut Resistance",
+        "hook": "The client crossed their arms, frowned, and said: Your price is way too high for our team.",
+        "action": "Do not defend your price. Label their unstated emotion using the starter: It seems like...",
+        "key_phrase": "It seems like you are worried this project will strain your quarterly budget.",
+        "when": "When the other party exhibits hesitation, anger, or strong pushback.",
+        "why": "Labeling a negative emotion calms the emotional center of their brain, making them feel understood rather than defensive.",
+        "example": "Client: $10k is out of the question! You: It seems like you are under heavy pressure to show quick ROI to your board. Client: Exactly, my boss is watching every penny.",
+        "mistake": "Instantly offering a discount or arguing why your price is fair."
+      },
+      "ar": {
+        "title": "سمّي مشاعرهم عشان تكسر مقاومتهم في التفاوض",
+        "hook": "العميل ربع إيده، ووشه اتغير، وقال بحدة: الميزانية دي عالية جداً بصراحة ومش مناسبة لينا خالص.",
+        "action": "متدافعش عن سعرك في ساعتها. وصف مشاعره غير المعلنة باستخدام جملة يبدو إنك قلقان من...",
+        "key_phrase": "يبدو إنك قلقان إن المشروع ده يضغط على ميزانية الربع ده.",
+        "when": "أول ما الطرف التاني يبدي تردد أو اعتراض شديد على عرضك.",
+        "why": "وصف المشاعر السلبية بيهدّي مركز الخوف في المخ، بيحسس اللي قدامك إنك فاهمه فبيقلل دفاعيته.",
+        "example": "العميل: 50 ألف كتير جداً! أنت: شكل حضرتك قلقان من تقديم عائد واضح للإدارة في وقت قصير؟ العميل: بالظبط كده، المدير مركز في كل قرش.",
+        "mistake": "إنك تدي خصم فوري أو تقعد تدافع عن السعر وتعدد مميزاتك."
+      },
+      "quiz": {
+        "type": "mcq",
+        "correct_index": 2,
+        "en": {
+          "question": "A client angrily says your delivery deadline is unacceptable. How should you respond?",
+          "options": [
+            "List all the technical reasons why quality work takes time",
+            "Offer to cut the timeline in half immediately",
+            "Say: It sounds like you are under intense pressure to deliver this quickly to your leadership.",
+            "Tell them they should have reached out earlier"
+          ],
+          "explanation": "Labeling their underlying stress diffuses tension and gets them to open up about their actual constraints."
+        },
+        "ar": {
+          "question": "عميل قالك بغضب إن ميعاد التسليم ده غير مقبول تماماً. إيه أفضل رد تبدأ بيه؟",
+          "options": [
+            "تقعد تشرح له الخوات التفصيلية والشغل بياخد وقت قد إيه",
+            "تعرض عليه تنزل بنص الوقت فورا",
+            "تقول له: يبدو إنك تحت ضغط شديد عشان تسلّم الشغل ده للإدارة في أقرب وقت.",
+            "تقول له المفروض كنتوا تطلبوا بدري عن كده"
+          ],
+          "explanation": "تسمية الضغط اللي عنده بتهدي التوتر وبتخليه يفتح معاك كلام عن الظروف الحقيقية اللي مقابلاني."
+        }
+      }
+    },
+    {
+      "id": "2026-11-20_persuasion_because-reasoning",
+      "created_at": "2026-11-20T15:04:21.508502+00:00",
+      "topic": "persuasion",
+      "tags": [
+        "influence",
+        "psychology",
+        "requests"
+      ],
+      "level": "beginner",
+      "needs_completion": false,
+      "en": {
+        "title": "Use the Magic Word Because for Quick Compliance",
+        "hook": "A researcher asked to cut a long printing line. Adding one single word boosted agreement from 60% to 94%.",
+        "action": "Whenever you make a small request, always insert the word because followed by a reason—even an obvious one.",
+        "key_phrase": "May I do X, because Y?",
+        "when": "Requesting small favors, quick approvals, or getting people to move out of your way.",
+        "why": "The human brain operates on shortcut scripts; the trigger word because signals that a valid reason exists.",
+        "example": "Can I jump ahead of you to print these 5 pages, because I am in a rush to catch a meeting? Response: Sure, go ahead!",
+        "mistake": "Making a blunt request without offering any stated justification."
+      },
+      "ar": {
+        "title": "استخدم كلمة عشان عشان تزنق اللي قدامك يوافق",
+        "hook": "باحث حاول يستأذن يسبق الناس في طابور طابعة المكتبة. كلمة واحدة بس زوّدت نسبة موافقتهم من 60% لـ 94%.",
+        "action": "لما تطلب خدمة صغيرة، دايماً حط كلمة عشان وبعدها سبب، حتى لو السبب ده واضح أو بديهي.",
+        "key_phrase": "ممكن أعمل كذا، عشان كذا؟",
+        "when": "لما تطلب خدمة صغيرة، موافقة سريعة، أو عايز حد ينفذ حاجة حالاً.",
+        "why": "عقليتنا متبمجة على ردود تلقائية؛ كلمة عشان بتدي انطباع إن فيه سبب منطقي فبيوافقوا بسهولة.",
+        "example": "ممكن أطبع الورقتين دول قبلك، عشان محتاج أخلصهم بسرعة عشان اجتماعي؟ الرد: تمام اتفضل يا باشا.",
+        "mistake": "إنك تطلب الطلب جاف من غير ما تذكر سبب خالص."
+      },
+      "quiz": {
+        "type": "mcq",
+        "correct_index": 1,
+        "en": {
+          "question": "You need your busy manager to sign a routine form right now. What is the most effective phrase?",
+          "options": [
+            "Please sign this right now.",
+            "Could you sign this form now because I need to mail it before the end of the day?",
+            "Sign this when you have a free minute.",
+            "Why haven't you signed this form yet?"
+          ],
+          "explanation": "Using 'because' triggers automatic cognitive compliance, making people far more likely to agree to small requests."
+        },
+        "ar": {
+          "question": "محتاج مديرك المشغول يمضي لك على ورقة روتينية حالاً. إيه أكتر طريقة تخليه يوافق بسرعة؟",
+          "options": [
+            "امضي لي على الورقة دي حالاً لو سمحت.",
+            "ممكن تمضي لي الورقة دي دلوقتي عشان محتاج أبعتها بالبريد قبل آخر اليوم؟",
+            "ابقى امضي دي لما تفضى.",
+            "حضرتك ما مضيتش على الورقة دي ليه لغاية دلوقتي؟"
+          ],
+          "explanation": "استخدام كلمة 'عشان' بيستفز الاستجابة التلقائية في مخ الإنسان للموافقة على الطلبات الصغيرة."
+        }
+      }
+    },
+    {
+      "id": "2026-11-20_productivity_five-minute-rule",
+      "created_at": "2026-11-20T15:04:21.508502+00:00",
+      "topic": "productivity",
+      "tags": [
+        "procrastination",
+        "focus",
+        "habits"
+      ],
+      "level": "beginner",
+      "needs_completion": false,
+      "en": {
+        "title": "Use the 5-Minute Rule to Kill Procrastination",
+        "hook": "You have a massive report due tomorrow, but suddenly reorganizing your desk drawer feels deeply important.",
+        "action": "Commit to working on the dreaded task for just 5 minutes. Allow yourself full permission to quit when the timer rings.",
+        "key_phrase": "I only have to do this for 5 minutes.",
+        "when": "Feeling completely paralyzed by a huge, boring, or intimidating task.",
+        "why": "Starting friction is the main psychological hurdle. Once momentum starts, cognitive inertia keeps you going.",
+        "example": "I hate starting this spreadsheet. Timer set for 5 minutes. Timer goes off: Well, I am already here, I might as well finish this section.",
+        "mistake": "Waiting for inspiration or promising yourself you will work 4 uninterrupted hours."
+      },
+      "ar": {
+        "title": "خدعة الـ 5 دقايق عشان تكسر التسويف",
+        "hook": "وراك تقرير مهم لازم يسلم بكرة، بس فجأة تنظيف درج المكتب بقى شكله مسلي ومهم جداً بالنسبة لك!",
+        "action": "ألزم نفسك تشتغل على المادة أو التقرير لمدة 5 دقايق بس، وادّي لنفسك الحق تقف تماماً أول ما الـ 5 دقايق يخلصوا.",
+        "key_phrase": "أنا هشتغل على ده لمدة 5 دقايق بس.",
+        "when": "لما تكون مشلول ومش قادر تبدأ في أي مهمة كبيرة أو مملة.",
+        "why": "أصعب جزء هو مقاوَمة البداية؛ مجرد ما تعدي أصل الاحتكاك الأولاني، حماس الاستمرار بياخدك بمرونة.",
+        "example": "مش طايق أفتح شيت الإكسيل ده. ظبطت تايمر 5 دقايق. لما التايمر ضرب: أنا كده كده فتحته وكتبت، لما أخلصه بالمرة بقى.",
+        "mistake": "إنك تستنى الإلهام يجي لك، أو توعد نفسك بتأدية 4 ساعات شغل متواصلين."
+      },
+      "quiz": {
+        "type": "mcq",
+        "correct_index": 1,
+        "en": {
+          "question": "You have been putting off writing a difficult email for three days. How should you overcome the freeze?",
+          "options": [
+            "Wait until tomorrow morning when your mind is fresh",
+            "Set a timer for 5 minutes and write whatever comes to mind without pressure",
+            "Block off a 3-hour window on your calendar this weekend",
+            "Drink another cup of coffee to get energized"
+          ],
+          "explanation": "Lowering the bar to just 5 minutes breaks starting friction, which is 80% of procrastination."
+        },
+        "ar": {
+          "question": "بقالك 3 أيام بتأجل كتابة إيميل تقيل ومهم. إيه أفضل طريقة تتغلب بيها على العطلة دي؟",
+          "options": [
+            "تستنى لبكرة الصبح لما تكون رايق ومأنتخ",
+            "تظبط تايمر 5 دقايق وتكتب أي كلام يجي في دماغك من غير ضغط",
+            "تحجز 3 ساعات كاملة في الكاليندر يوم الإجازة",
+            "تشرب كباية قهوة كمان عشان تجيلك الطاقة"
+          ],
+          "explanation": "تقليل سقف التوقعات لـ 5 دقايق بس بيكسر المقاومة النفسية للبداية، وده اللي بيحل 80% من المشكلة."
+        }
+      }
+    },
+    {
+      "id": "2026-11-20_psychology_ben-franklin-effect",
+      "created_at": "2026-11-20T15:04:21.508502+00:00",
+      "topic": "psychology",
+      "tags": [
+        "relationships",
+        "rapport",
+        "influence"
+      ],
+      "level": "intermediate",
+      "needs_completion": false,
+      "en": {
+        "title": "Ask for a Small Favor to Win People Over",
+        "hook": "Benjamin Franklin won over a hostile political rival without buying him gifts—he asked to borrow a rare book.",
+        "action": "Ask a distant or difficult colleague for a minor, low-effort favor or their advice on a topic they excel at.",
+        "key_phrase": "Could I get your quick opinion on X?",
+        "when": "Trying to build trust with a cold, defensive, or difficult team member or client.",
+        "why": "Cognitive dissonance forces their brain to reason: I am doing a favor for this person, so I must like them.",
+        "example": "Hey Alex, I know you are an expert in PowerPoint formatting. Could you glance at this slide for 30 seconds? Alex: Sure! (Feels valued and warm towards you).",
+        "mistake": "Overly flattering them or offering unsolicited favors, which triggers suspicion."
+      },
+      "ar": {
+        "title": "اطلب خدمة صغيرة عشان تكسب ثقة أي حد",
+        "hook": "بنيامين فرانكلين كسب قلوب أكبر منافس سياسي ليه من غير ما يدي له فلوس أو يطبل له... طلب منه يستلف كتاب نادر!",
+        "action": "اطلب من زميلك اللي معصلج معاك خدمة بسيطة جداً ومش مكلفة، أو استشيره في حاجة هو شاطر فيها.",
+        "key_phrase": "ممكن أستشير حضرتك بسرعة في نقطة كذا؟",
+        "when": "لما تحب تبني علاقة وطيدة مع زميل أو عميل صعب أو شايف نفسه عليك.",
+        "why": "التنافر المعرفي في مخه بيخليه يقول لنفسه: أنا ساعدته، يبقى أكيد أنا برتاح له وبحترمه.",
+        "example": "يا أحمد، أنا عارف إنك توب في إكسيل، ممكن أستأذنك في دقيقة أبص على معادلة معاك؟ أحمد: حبيبي اتفضل! (حس بقيمته وتقرب منك).",
+        "mistake": "إنك تقعد تطبل له بزيادة أو تحاول تشتري وده بخدمات متواصلة فـ يشك فيك."
+      },
+      "quiz": {
+        "type": "mcq",
+        "correct_index": 2,
+        "en": {
+          "question": "You want to improve a cold relationship with a senior colleague. What is the psychological move?",
+          "options": [
+            "Avoid talking to them until they smile at you",
+            "Send them an expensive gift box to show respect",
+            "Ask for their quick advice on a small detail in their area of expertise",
+            "Constantly compliment their outfits in public meetings"
+          ],
+          "explanation": "Asking for a small favor activates the Ben Franklin Effect, making them naturally feel more positive toward you."
+        },
+        "ar": {
+          "question": "عايز تحسّن علاقتك بزميل قدييم في الشغل معاملته جافة معاك. إيه الحركة الذكية نفسياً؟",
+          "options": [
+            "تتجنب الكلام معاه خالص لحد ما هو يبتسم لك",
+            "تبعث له هدية غالية عشان تكسب وده",
+            "تطلب رأيه السريع في تفصيلة صغيرة في حتة هو شاطر فيها",
+            "تقعد تطبل لشغله ولبسه قدام الناس في الاجتماعات"
+          ],
+          "explanation": "طلب خدمة صغيرة بيشغّل تأثير 'بنيامين فرانكلين'، فبيخلي عقله الباطن يقتنع إنه بيحب يتعامل معاك."
+        }
+      }
+    }
+  ]
+}

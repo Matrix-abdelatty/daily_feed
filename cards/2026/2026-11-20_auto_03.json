@@ -1,0 +1,288 @@
+{
+  "schema_version": 1,
+  "batch_id": "2026-11-20_auto_03",
+  "created_at": "2026-11-20T15:09:02.252039+00:00",
+  "source": "gemini-3.8-flash",
+  "cards": [
+    {
+      "id": "2026-11-20_business_preempt-churn-onboarding",
+      "created_at": "2026-11-20T15:09:02.252039+00:00",
+      "topic": "business",
+      "tags": [
+        "retention",
+        "customer-success",
+        "onboarding"
+      ],
+      "level": "intermediate",
+      "needs_completion": false,
+      "en": {
+        "title": "Ask New Clients What Would Make Them Fire You",
+        "hook": "Most unhappy clients never complain before leaving; they just vanish. Ask them about failure on day one while they still trust you.",
+        "action": "During your kickoff meeting, explicitly ask the client to name their dealbreakers. Document their answers and set up specific internal checkpoints to avoid those exact pitfalls.",
+        "key_phrase": "Looking ahead 6 months, what is the one thing that would make you feel this partnership failed?",
+        "when": "During the first kickoff or onboarding call with a new client.",
+        "why": "Clients reveal their true operational fears when excitement is high, giving you an exact blueprint to prevent future churn.",
+        "example": "Founder: 'Before we dive into deliverables, what would make you regret hiring us three months from now?' Client: 'Radio silence. Our last agency went weeks without sharing updates.' Founder: 'Understood. We will send a bulleted dashboard every Tuesday at 10 AM.'",
+        "mistake": "Only asking about ideal goals and assuming silence means the client is satisfied."
+      },
+      "ar": {
+        "title": "اسأل عميلك الجديد: إيه اللي يخليك تفسخ العقد؟",
+        "hook": "أغلب العملاء اللي بيمشوا مبيشتكوش، بيختفوا فجأة. اسأله عن سيناريو الفشل في أول يوم وهو لسه متحمس وواثق فيك.",
+        "action": "في أول اجتماع شغل، اسأل العميل بصراحة عن الحاجات اللي تقفله تماماً من الشغل. اكتب إجاباته واعتبرها خطوط حمرا فريقك ميتعداهاش.",
+        "key_phrase": "لو بصينا لقدام بعد 6 شهور، إيه الغلطة اللي لو حصلت تخليك تحس إن التجربة معانا فشلت؟",
+        "when": "في أول مكالمة أو اجتماع بداية شغل مع عميل جديد.",
+        "why": "العميل في البداية بيكون صريح جداً في مخاوفه من التجارب القديمة، فبيديك كتالوج الحفاظ عليه بدون تخمين.",
+        "example": "المدير: 'قبل ما نبدأ، إيه الحاجة اللي لو عملناها تندم إنك اشتغلت معانا؟' العميل: 'إنكم تختفوا.. الشركة اللي فاتت كانت بتقعد أسابيع من غير ما ترد.' المدير: 'تمام جداً، كل يوم ثلاثاء الساعة 10 الصبح هيوصلك تقرير بنقط محددة.'",
+        "mistake": "إنك تركز بس على الأهداف الوردية وتفترض إن سكوت العميل معناه إنه مبسوط."
+      },
+      "quiz": {
+        "type": "mcq",
+        "correct_index": 1,
+        "en": {
+          "question": "Why ask a client about their churn triggers during the kickoff call instead of waiting for a quarterly review?",
+          "options": [
+            "To prove that your contract terms are legally binding regardless of issues",
+            "Because clients are candid early on, giving you the exact blueprint to avoid churn",
+            "To lower their expectations so you can underdeliver safely",
+            "Because it shifts the legal blame onto the client if deadlines slip"
+          ],
+          "explanation": "Early on, clients openly share past frustrations, giving you concrete guidelines to prevent dissatisfaction before it starts."
+        },
+        "ar": {
+          "question": "ليه تسأل العميل الجديد في أول مكالمة عن أسباب فسخ العقد وماتستناش لمراجعة كل 3 شهور؟",
+          "options": [
+            "عشان تثبتله إن العقد ملزم قانوناً حتى لو ظهرت مشاكل",
+            "عشان العميل في الأول بيكون صريح ومتحمس، فبيديك خطة واضحة تحميك من إنه يسيبك",
+            "عشان تقلل سقف توقعاته فتعمل شغل قليل براحتك",
+            "عشان ترمي اللوم عليه لو المشروع اتأخر بعدين"
+          ],
+          "explanation": "في بداية التعاقد، العميل بيحكي بصراحة عن تجاربه السيئة القديمة، وده بيديك فرصة تمنع المشاكل قبل ما تظهر أصلاً."
+        }
+      }
+    },
+    {
+      "id": "2026-11-20_career_promotion-pre-mortem",
+      "created_at": "2026-11-20T15:09:02.252039+00:00",
+      "topic": "career",
+      "tags": [
+        "promotions",
+        "managing-up",
+        "reviews"
+      ],
+      "level": "intermediate",
+      "needs_completion": false,
+      "en": {
+        "title": "Run a Promotion Pre-Mortem 6 Months Early",
+        "hook": "Asking for a promotion at your annual review is like studying after taking the exam. Shape the criteria months before ratings get locked.",
+        "action": "Schedule a 1-on-1 with your manager six months before review cycle. Ask what specific gaps would block your promotion, then send a written recap of those milestones.",
+        "key_phrase": "If we get to review time and I don't get the title, what will have been the reason?",
+        "when": "3 to 6 months before annual or semi-annual performance calibrations.",
+        "why": "It forces managers to set clear measurable benchmarks in advance, making it awkward for them to invent vague excuses later.",
+        "example": "Employee: 'My goal is Senior Lead this December. If that doesn't happen, what would be the single reason?' Manager: 'You need to lead a cross-team launch without my help.' Employee: 'Great, let's designate Project Alpha for that, and review progress monthly.'",
+        "mistake": "Waiting until review day to pitch your promotion when budgets and decisions are already decided."
+      },
+      "ar": {
+        "title": "اعمل 'بريمورتم' لترقيتك قبل ميعادها بـ 6 شهور",
+        "hook": "إنك تطلب ترقية يوم التقييم السنوي زي اللي بيذاكر بعد ما الامتحان يخلص. اتفق على شروط نجاحك بدري قبل ما الميزانيات تتقفل.",
+        "action": "احجز ميعاد مع مديرك قبل التقييم بست شهور، واسأله بصراحة إيه العقبة اللي تمنع ترقيتك، ولخص النقط دي في إيميل متابعة مشترك.",
+        "key_phrase": "لو جه ميعاد التقييم ومخدتش الترقية دي، تفتكر إيه هيكون السبب وقتها؟",
+        "when": "قبل ميعاد التقييمات السنوية أو نصف السنوية بـ 3 لـ 6 شهور.",
+        "why": "السؤال بيجبر المدير يحط معايير قياس واضحة ومسبقة، فصعب جداً يرجع يماطل بحجج عامة وقت الترقية.",
+        "example": "الموظف: 'هدفي أترقى سينيور في ديسمبر. لو ده محصلش، تفتكر إيه النقص اللي هيكون عندي؟' المدير: 'إنك تدير مشروع مع فرق تانية من غير تدخلي.' الموظف: 'تمام، خلينا نطبق ده على مشروع ألفا ونراجع التقدم سوا كل شهر.'",
+        "mistake": "إنك تستنى ليوم التقييم عشان تفتح كلام في الترقية وتتفاجأ إن الميزانيات اتوزعت خلاص."
+      },
+      "quiz": {
+        "type": "mcq",
+        "correct_index": 2,
+        "en": {
+          "question": "What is the primary advantage of asking your manager what could block your promotion months beforehand?",
+          "options": [
+            "It forces your manager to commit to a specific financial bonus immediately",
+            "It guarantees that no other team members can be promoted before you",
+            "It converts subjective performance evaluations into concrete milestones you can hit and document",
+            "It relieves you of day-to-day duties so you can focus strictly on new projects"
+          ],
+          "explanation": "It removes ambiguity by getting your manager to explicitly define what success looks like while you still have time to achieve it."
+        },
+        "ar": {
+          "question": "إيه الفايدة الأساسية من إنك تسأل مديرك عن أسباب تعطل ترقيتك قبل التقييم بشهور؟",
+          "options": [
+            "بيجبر المدير يديك مكافأة مالية فورية في نفس الجلسة",
+            "بيضمن إن مفيش أي زميل تاني في التيم يترقى قبلك",
+            "بيحول التقييم من آراء شخصية مطاطة لمعايير عملية تقدر تحققها وتثبتها بالأرقام",
+            "بيعفيك من مهامك اليومية عشان تركز بس على مشاريع الترقية"
+          ],
+          "explanation": "الأسلوب ده بيلغي الحجج العايمة، وبيخلي مديرك يحدد بإيده الشروط المطلوبة عشان تحققها وتوثقها قبل ما يتقفل الباب."
+        }
+      }
+    },
+    {
+      "id": "2026-11-20_communication_ghosting-no-oriented",
+      "created_at": "2026-11-20T15:09:02.252039+00:00",
+      "topic": "communication",
+      "tags": [
+        "email",
+        "follow-up",
+        "negotiation"
+      ],
+      "level": "beginner",
+      "needs_completion": false,
+      "en": {
+        "title": "Revive Ghosted Emails with a No-Oriented Question",
+        "hook": "Sent three follow-ups with zero replies? Polite 'just checking in' emails make busy people feel guilty, so they avoid you more.",
+        "action": "Send a single short sentence that makes saying 'no' feel natural and protective of their time. Do not add fluff, attachments, or pleasantries.",
+        "key_phrase": "Have you given up on this project?",
+        "when": "When a prospect, partner, or colleague stops responding to regular status checks.",
+        "why": "People instinctively defend against loss and prefer saying 'no' rather than committing to a 'yes', triggering an immediate impulse to clarify.",
+        "example": "Subject: Project Atlas\nBody:\nHi Kareem,\nHave you given up on this project?\n— Sarah\n\nReply 12 mins later: 'No, sorry Sarah! Board meeting delayed our budget approval. Calling you at 2 PM.'",
+        "mistake": "Sending lengthy check-ins like 'Just circling back to see if you had a chance to read my previous 4 emails.'"
+      },
+      "ar": {
+        "title": "رجّع اللي بيعملك سين بسؤال إجابته 'لأ'",
+        "hook": "بعت إيميل واتنين ومحدش بيرد؟ أسلوب 'بطمن على الإيميل اللي فات' بيحسس الناس بالذنب، فبيهربوا منك أكتر.",
+        "action": "ابعت سطر واحد بس بيسمح للشخص التاني إنه يقول 'لأ' بارتياح عشان يحمي وقته، من غير رغي ولا اعتذارات ولا مقدمات طويلة.",
+        "key_phrase": "هو حضرتك صرفت نظر عن المشروع ده تماماً؟",
+        "when": "لما عميل أو زميل يختفي فجأة ويبطل يرد على إيميلات المتابعة العادية.",
+        "why": "الناس بطبعها بتخاف من فكرة الخسارة، وبيكون أسهل عليها نفسياً تقول 'لأ' عن إنها تلزم نفسها بـ 'أه'، فبيكتب توضيح سريع فوراً.",
+        "example": "الموضوع: مشروع المنصة\nمحتوى الإيميل:\nمساء الخير يا كريم،\nهو حضرتك صرفت نظر عن المشروع ده؟\n\nالرد بعد 10 دقايق: 'لأ خالص والله يا سارة، بس كان عندنا اجتماع مجلس إدارة عطل الميزانية. هكلمك الساعة 2 بالظبط.'",
+        "mistake": "إنك تبعت إيميل طويل فيه عتاب زي: 'حبيت أرجع أفكرك عشان لو مخدتش بالك من الـ 4 إيميلات اللي فاتوا.'"
+      },
+      "quiz": {
+        "type": "mcq",
+        "correct_index": 0,
+        "en": {
+          "question": "A prospect has ignored your last three proposals. Which email subject and body gets the fastest response?",
+          "options": [
+            "Subject: [Project Name] / Body: 'Have you given up on this project?'",
+            "Subject: Just checking in! / Body: 'Wanted to bubble this to the top of your inbox before Friday.'",
+            "Subject: Urgent update needed / Body: 'Why haven't you answered my previous messages regarding our bid?'",
+            "Subject: Discount inside / Body: 'If budget was the issue, we can lower our initial estimate by 10%.'"
+          ],
+          "explanation": "A no-oriented prompt triggers safety and an impulse to protect the deal without inducing the guilt of open-ended follow-ups."
+        },
+        "ar": {
+          "question": "عميل متجاهل آخر 3 عروض أسعار بعتّهم له. إيه الإيميل اللي هيرد عليه بأسرع شكل؟",
+          "options": [
+            "الموضوع: [اسم المشروع] / المحتوى: 'هو حضرتك صرفت نظر عن المشروع ده؟'",
+            "الموضوع: بسأل عليك! / المحتوى: 'حبيت أفكرك بالإيميل قبل الويك إند عشان يكون فوق عندك.'",
+            "الموضوع: ضروري جداً / المحتوى: 'هو ليه حضرتك مابتردش على رسايلي بخصوص العرض؟'",
+            "الموضوع: خصم خاص / المحتوى: 'لو السعر هو المشكلة فإحنا ممكن ننزل 10% من العرض.'"
+          ],
+          "explanation": "السؤال اللي إجابته 'لأ' بيدي العميل أمان نفسي وبيخليه يصحح الموقف فوراً بدل الهروب من الإحراج."
+        }
+      }
+    },
+    {
+      "id": "2026-11-20_decision_making_two-way-doors",
+      "created_at": "2026-11-20T15:09:02.252039+00:00",
+      "topic": "decision_making",
+      "tags": [
+        "speed",
+        "bias-to-action",
+        "heuristics"
+      ],
+      "level": "beginner",
+      "needs_completion": false,
+      "en": {
+        "title": "Use the Two-Way Door Rule to Cut Overthinking",
+        "hook": "Treating every decision like a lifelong commitment creates endless bottleneck meetings. Classify the door before debating the choice.",
+        "action": "Before analyzing an option, ask: 'Is this reversible?' If yes (a two-way door), pick the best option in 10 minutes. If no (a one-way door), gather committee input.",
+        "key_phrase": "If this fails, can we undo it by Monday with minimal cost?",
+        "when": "Whenever you or your team spend over 15 minutes debating a low-stakes task.",
+        "why": "Most operational decisions are completely reversible. Treating reversible calls like permanent risks kills velocity without improving outcomes.",
+        "example": "Team Lead: 'We've spent 40 minutes debating button colors for the landing page.' PM: 'Is this a two-way door?' Team Lead: 'Yes, takes 5 minutes to revert.' PM: 'Pick green, launch it now, check metrics tomorrow.'",
+        "mistake": "Requiring multiple review meetings for changes that can be rolled back in under an hour."
+      },
+      "ar": {
+        "title": "استخدم قاعدة 'البابين' عشان تبطل تردد في القرارات",
+        "hook": "معاملة كل قرار كأنه جوازة أبدية بيعطلك في اجتماعات ملهاش آخر. اعرف نوع الباب قبل ما تضيع وقتك في النقاش.",
+        "action": "قبل ما تقعد تحلل أي قرار، اسأل: 'لو طلع غلط، نقدر نرجع فيه بسهولة؟' لو ينفع ترجع، خده في 10 دقايق وجرب. لو قرار مفيش فيه رجعة، ادرسه براحتك.",
+        "key_phrase": "لو القرار ده فشل، نقدر نلغيه يوم الاتنين بأقل خساير؟",
+        "when": "أول ما تلاقي التيم بقاله ربع ساعة بيتناقش في تفصيلة صغيرة وتأثيرها محدود.",
+        "why": "معظم القرارات اليومية ليها خط رجعة سهل، وتعطيل الشغل عشان قرارات قابلة للتعديل بيقتل سرعة الشركة ع الفاضي.",
+        "example": "رئيس التيم: 'بقالنا ساعة بنتناقش في لون الزرار في الصفحة الرئيسية.' المدير: 'ده قرار له باب رجوع؟' رئيس التيم: 'أه، تعديله بياخد خمس دقايق في الكود.' المدير: 'يبقى اختار الأخضر وانشره دلوقتي وبكرة نشوف الأرقام.'",
+        "mistake": "إنك تطلب اجتماعات وموافقات إدارية عشان تعديل بسيط تقدر ترجّعه في دقايق لو منفعش."
+      },
+      "quiz": {
+        "type": "mcq",
+        "correct_index": 3,
+        "en": {
+          "question": "Which of the following scenarios should be treated as a 'One-Way Door' requiring detailed deliberation?",
+          "options": [
+            "A/B testing a new headline on your primary marketing landing page",
+            "Swapping your team's weekly standup time from 9 AM to 10 AM",
+            "Offering a temporary 14-day free trial on a self-serve SaaS product",
+            "Signing a 5-year non-cancelable commercial office lease with personal guarantees"
+          ],
+          "explanation": "A multi-year lease with personal liability cannot be easily undone, making it a classic high-stakes, one-way door decision."
+        },
+        "ar": {
+          "question": "أنهي سيناريو من دول يعتبر 'باب خروج باتجاه واحد' ولازم تدرسه كويس جداً قبل ما تاخده؟",
+          "options": [
+            "تجربة عنوان جديد في صفحة البيع على الموقع لمدة أسبوع",
+            "تغيير ميعاد اجتماع التيم الصباحي من 9 الصبح لـ 10 الصبح",
+            "تقديم تجربة مجانية مؤقتة لمدة 14 يوم للمستخدمين الجدد",
+            "إمضاء عقد إيجار مقر للشركة لمدة 5 سنين غير قابل للإلغاء وبضمانات شخصية"
+          ],
+          "explanation": "عقد إيجار طويل الأجل بدون حق الإلغاء قرار مفيش فيه خط رجعة بسهولة وبيلزمك مالياً، فبيحتاج دراسة متأنية."
+        }
+      }
+    },
+    {
+      "id": "2026-11-20_leadership_intent-based-delegation",
+      "created_at": "2026-11-20T15:09:02.252039+00:00",
+      "topic": "leadership",
+      "tags": [
+        "delegation",
+        "autonomy",
+        "management"
+      ],
+      "level": "intermediate",
+      "needs_completion": false,
+      "en": {
+        "title": "Replace 'What Should I Do?' with 'I Intend To'",
+        "hook": "If your team asks permission for every single step, you don't lead a team—you operate human bottleneck machinery.",
+        "action": "Ban team members from asking 'What should I do?' Train them to state what they intend to do, why, and what risks they already considered.",
+        "key_phrase": "Don't ask me what to do. Tell me what you intend to do, and I'll say whether I object.",
+        "when": "When an employee approaches you with an operational problem waiting for your instructions.",
+        "why": "It forces employees to think through solution design and risk mitigation before talking to you, shifting them from passive order-takers to owners.",
+        "example": "Engineer: 'The third-party payment API is down. What do I do?' Manager: 'What do you intend to do?' Engineer: 'I intend to switch traffic to the backup gateway for 2 hours, because error rates hit 12%.' Manager: 'Approved, do it.'",
+        "mistake": "Giving immediate tactical instructions whenever team members report an obstacle."
+      },
+      "ar": {
+        "title": "بدّل جملة 'أعمل إيه يا فندم؟' بـ 'أنا ناوي أعمل كذا'",
+        "hook": "لو كل فرد في تيمك بيستنى موافقتك على كل خطوة، فإنت كدة مش بتدير ناس.. إنت شغال عنق زجاجة معطل الشركة.",
+        "action": "امنع تيمك من إنه يرمي المشكلة عندك ويسأل 'أعمل إيه؟'. عودهم يقولوا: 'المشكلة كذا، وأنا ناوي أحلها بالطريقة الفلانية للأسباب دي'.",
+        "key_phrase": "ماتسألنيش أعمل إيه، قولي إنت ناوي تعمل إيه وأنا هقولك لو عندي مانع.",
+        "when": "لما موظف يجيلك بمشكلة ويستنى تديه الحل خطوة بخطوة.",
+        "why": "ده بيجبر الموظف يفكر في الحل والمخاطر قبل ما يجيلك، فبيتحول من شخص مستني أوامر لصاحب قرار وشريك في النتيجة.",
+        "example": "المهندس: 'بوابة الدفع وقعت، أعمل إيه؟' المدير: 'إنت ناوي تعمل إيه؟' المهندس: 'ناوي أحول الترافيك ع البوابة البديلة لمدة ساعتين عشان نسبة الأخطاء وصلت 12%.' المدير: 'عين العقل، نفذ فوراً.'",
+        "mistake": "إنك تجاوب علطول وتديهم خطوات جاهزة، فتربي عندهم عقلية إن التفكير مسؤوليتك إنت بس."
+      },
+      "quiz": {
+        "type": "mcq",
+        "correct_index": 1,
+        "en": {
+          "question": "A team member asks: 'The supplier raised their cost by 8%. How should I handle this?' What is the best leadership response?",
+          "options": [
+            "Email the supplier yourself to negotiate a grandfathered rate",
+            "'What have you evaluated, and what do you intend to propose to them?'",
+            "'Tell them that if they don't honor the contract, we are leaving.'",
+            "'Let's put this on the agenda for our monthly leadership sync.'"
+          ],
+          "explanation": "Asking them what they intend to do shifts them from passing off responsibility to generating and owning viable business solutions."
+        },
+        "ar": {
+          "question": "موظف جه قالك: 'المورّد زود السعر 8% فجأة، أتصرف إزاي يا فندم؟'. إيه أحسن رد كقائد؟",
+          "options": [
+            "ابعت إيميل للمورد بنفسك وتفاوض معاه عشان تحافظ على السعر القديم",
+            "'إيه الحلول اللي فكرت فيها، وإنت ناوي تعرض عليه إيه بالظبط؟'",
+            "'قوله لو التزمش بالعقد القديم إحنا هنلغي التعامل معاه فوراً'",
+            "'سيب الموضوع ده وتعال نناقشه في الاجتماع الشهري الأسبوع الجاي'"
+          ],
+          "explanation": "لما تسأله عن نيته وخياراته، بتخليه يتحمل مسؤولية التفكير وتقديم حلول بدل ما يعتمد عليك في كل تفصيلة."
+        }
+      }
+    }
+  ]
+}

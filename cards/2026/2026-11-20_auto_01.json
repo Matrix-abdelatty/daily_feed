@@ -1,0 +1,288 @@
+{
+  "schema_version": 1,
+  "batch_id": "2026-11-20_auto_01",
+  "created_at": "2026-11-20T14:57:42.703982+00:00",
+  "source": "gemini-3.5-flash",
+  "cards": [
+    {
+      "id": "2026-11-20_psychology_spotlight-effect-anchor",
+      "created_at": "2026-11-20T14:57:42.703982+00:00",
+      "topic": "psychology",
+      "tags": [
+        "mindset",
+        "public-speaking",
+        "confidence"
+      ],
+      "level": "beginner",
+      "needs_completion": false,
+      "en": {
+        "title": "Stop Worrying About Small Mistakes in Public",
+        "hook": "You spilled coffee on your shirt and thought everyone stared all day. In reality, almost nobody noticed.",
+        "action": "Remind yourself of the Spotlight Effect, and if someone notices, call it out yourself casually before they do.",
+        "key_phrase": "Classic Monday moment, right?",
+        "when": "When you make a minor embarrassing mistake in front of colleagues or friends.",
+        "why": "People overestimate how much others observe them. Self-deprecating humor defuses tension instantly.",
+        "example": "You stumble over your words during a presentation. You smile and say, 'Looks like my morning coffee hasn't kicked in yet,' then move on smoothly.",
+        "mistake": "Panicking, over-apologizing, or hiding, which actually draws more attention to the blunder."
+      },
+      "ar": {
+        "title": "محدش مركز معاك أصلًا.. اتنفس وركز",
+        "hook": "دلقت قهوة على قميصك وحاسس إن الشارع كله بيبص عليك؟ الحقيقة إن محدش واخد باله خالص!",
+        "action": "افتكر إن ده وهم اسمه 'تأثير تسليط الضوء'. ولو حد لاحظ غلطتك الصغيرة، علّق عليها بهزار وسرعة كمل كلامك.",
+        "key_phrase": "واضح إن القهوة لسة مأثرتش عليا النهاردة!",
+        "when": "لما تطلع منك غلطة غير مقصودة أو موقف محرج بسيط وسط ناس.",
+        "why": "المخ بيتهيأله إنه محور الكون، بس الناس مشغولة بنفسها. الهزار الخفيف بيقفل الموضوع فوراً.",
+        "example": "وأنت بتتكلم في اجتماع تلعثمت في الكلمة. تقوم ضاحك وقايل: 'واضح إن القهوة لسة مأثرتش عليا!' وتكمل عادي جدًا.",
+        "mistake": "إنك ترتبك وتعتذر مية مرة، فتعرف الكل إن فيه مصيبة حصلت."
+      },
+      "quiz": {
+        "type": "mcq",
+        "correct_index": 1,
+        "en": {
+          "question": "You drop your pen noisily during a quiet meeting. What is the best psychological response?",
+          "options": [
+            "Apologize profusely to everyone for interrupting.",
+            "Pick it up quietly, make a brief light remark if needed, and continue.",
+            "Leave the room immediately out of embarrassment.",
+            "Pretend it wasn't your pen and ignore it."
+          ],
+          "explanation": "Over-apologizing magnifies a minor distraction. A quick, light brush-off keeps the focus on the meeting."
+        },
+        "ar": {
+          "question": "القلم وقع منك بصوت عالٍ وسط اجتماع ساكت خالص. إيه أفضل تصرف؟",
+          "options": [
+            "تقعد تعتذر لكل الموجودين بشدة على الإزعاج.",
+            "تلم القلم بهدوء، تقول تعليق خفيف سريع لو لزم الأمر، وتكمل.",
+            "تقوم تخرج من القاعة من كتر الإحراج.",
+            "تعمل نفسك مش شايف القلم وتكبر دماغك."
+          ],
+          "explanation": "كثرة الاعتذار بتكبر الموضوع الصغير، بينما التصرف الهادي السريع بيرجع التركيز للاجتماع."
+        }
+      }
+    },
+    {
+      "id": "2026-11-20_communication_label-negative-emotions",
+      "created_at": "2026-11-20T14:57:42.703982+00:00",
+      "topic": "communication",
+      "tags": [
+        "conflict",
+        "empathy",
+        "deescalation"
+      ],
+      "level": "intermediate",
+      "needs_completion": false,
+      "en": {
+        "title": "Diffuse Hostility with Tactical Labeling",
+        "hook": "An angry client starts venting at you. Arguing back with logic only makes them explode further.",
+        "action": "Instead of defending yourself, name their emotion directly without judgment using 'It seems like...'",
+        "key_phrase": "It seems like you're really frustrated with how this was handled.",
+        "when": "When dealing with an upset coworker or client who is emotionally overwhelmed.",
+        "why": "Labeling an emotion activates the brain's rational cortex and makes the person feel heard.",
+        "example": "Client: 'Your team messed up the deadline again!' You: 'It sounds like you feel let down because this delay threatens your product launch.'",
+        "mistake": "Defending your process or explaining why it happened before acknowledging their feelings."
+      },
+      "ar": {
+        "title": "امتص غضب اللي قدامك بكارت التسمية",
+        "hook": "العميل داخل يزعق ومتعصب جداً.. لو رديت عليه بمنطق وحجج، هيولع أكتر!",
+        "action": "بدل ما تدافع عن نفسك، سمّ شعوره بصوت عالي ومن غير هجوم باستخدام جملة 'شكلك حس بـ...'",
+        "key_phrase": "شكلك متضايق جداً من طريقة إدارة الموضوع ده.",
+        "when": "لما تلاقي حد قدامك شايط ومش عارفين نتكلم بمنطق.",
+        "why": "لما بتسمي المشاعر، المخ بيهدى تلقائياً لأنه بيحس إنه اتفهم مش محتاج يعلي صوته.",
+        "example": "العميل: 'فريقك بوظ المواعيد تاني!' انت: 'واضح إنك زعلان جداً لأن التأخير ده مأثر على شغلكم.'",
+        "mistake": "إنك تدخل في دفاع عن نفسك وتشرح تبريرات قبل ما تعترف بزعله."
+      },
+      "quiz": {
+        "type": "mcq",
+        "correct_index": 2,
+        "en": {
+          "question": "A coworker yells: 'You ruined my report layout!' How should you reply using tactical labeling?",
+          "options": [
+            "I didn't ruin it, I just formatted the fonts.",
+            "Calm down, it's not a big deal.",
+            "It sounds like you're stressed about how this presentation will look to management.",
+            "You should have checked it yesterday."
+          ],
+          "explanation": "Option 3 labels their underlying fear/emotion accurately, de-escalating the tension."
+        },
+        "ar": {
+          "question": "زميلك بيزعق: 'أنت بوظت تنسيق التقرير بتاعي!' ترد عليه إزاي؟",
+          "options": [
+            "أنا مابوظتش حاجة، أنا بس غيرت الخطوط.",
+            "اهدأ يا عم الموضوع مش مستاهل كل ده.",
+            "باين عليك قلقان جدًا من شكل التقرير قدام الإدارة.",
+            "ما أنت المفروض كنت تراجعه من امبارح!"
+          ],
+          "explanation": "الخيار التالت بيسمّي الخوف أو الشعور اللي ورا الزعيق، فبيهديه عشان يعرف يتكلم."
+        }
+      }
+    },
+    {
+      "id": "2026-11-20_decision_making_10-10-10-rule",
+      "created_at": "2026-11-20T14:57:42.703982+00:00",
+      "topic": "decision_making",
+      "tags": [
+        "clarity",
+        "stress",
+        "long-term"
+      ],
+      "level": "beginner",
+      "needs_completion": false,
+      "en": {
+        "title": "Use the 10-10-10 Rule to Eliminate Panic",
+        "hook": "Stuck paralyzed on a tough choice? Your brain treats current anxiety like a lifelong disaster.",
+        "action": "Ask yourself how you will feel about this choice in 10 minutes, 10 months, and 10 years.",
+        "key_phrase": "How will I view this choice 10 months from now?",
+        "when": "When facing high-stress decisions where emotional anxiety distorts your perspective.",
+        "why": "Time distance forces the brain to shift from short-term panic to long-term framing.",
+        "example": "Stressing over leaving a bad client? In 10 mins: nervous. In 10 months: relieved and profitable. In 10 years: won't even remember their name.",
+        "mistake": "Making decisions solely based on the immediate discomfort of the next 10 minutes."
+      },
+      "ar": {
+        "title": "اتأخذ قراراتك بقاعدة 10-10-10",
+        "hook": "محتار ومش عارف تاخد قرار ومزنوق في التفكير؟ مخك بيصوّرلك القلق الحالي كأنه كارثة أبدية!",
+        "action": "اسأل نفسك: هحس بإيه ناحية القرار ده بعد 10 دقائق؟ وبعد 10 شهور؟ وبعد 10 سنين؟",
+        "key_phrase": "هكون شايف القرار ده إزاي بعد 10 شهور؟",
+        "when": "لما تكون خايف تاخد قرار بسبب القلق والضغط اللحظي.",
+        "why": "المنظور الزمني بيجبر عقلك يخرج من حالة الفزع اللحظية ويفكر بمنطقية وبعُد نظر.",
+        "example": "خايف تنهي التعامل مع عميل متعب؟ بعد 10 دقائق: قلقان.. بعد 10 شهور: مرتاح وجايب غيره.. بعد 10 سنين: مش فاكر اسمه أصلاً!",
+        "mistake": "إنك تاخد قرار عشان تخلص من الخوف بتاع الـ 10 دقائق الجايين وتخسر على المدى الطويل."
+      },
+      "quiz": {
+        "type": "mcq",
+        "correct_index": 0,
+        "en": {
+          "question": "What is the primary psychological benefit of the 10-10-10 framework?",
+          "options": [
+            "It removes immediate emotional distortion by expanding your temporal perspective.",
+            "It guarantees that every long-term choice will be 100% correct.",
+            "It forces you to wait 10 days before making any major career decision.",
+            "It automates decision making so you never have to think deeply."
+          ],
+          "explanation": "Expanding temporal context lowers immediate panic, enabling clear reasoning."
+        },
+        "ar": {
+          "question": "إيه الفائدة النفسية الأساسية من قاعدة 10-10-10؟",
+          "options": [
+            "بتبعدك عن تأثير العاطفة والقلق اللحظي بتوسيع رؤيتك للزمن.",
+            "بتضمن إن كل قراراتك المستقبلية تطلع صح 100%.",
+            "بتجبرك تستنى 10 أيام قبل ما تاخد أي قرار في شغلك.",
+            "بتخلي القرار يتاخد لوحده من غير تفكير."
+          ],
+          "explanation": "التفكير في المستقبل البعيد بيقلل الرهبة والقلق اللحظي، وبيخليك تشوف الحجم الحقيقي للمشكلة."
+        }
+      }
+    },
+    {
+      "id": "2026-11-20_learning_feynman-technique-child",
+      "created_at": "2026-11-20T14:57:42.703982+00:00",
+      "topic": "learning",
+      "tags": [
+        "mastery",
+        "simplification",
+        "study"
+      ],
+      "level": "intermediate",
+      "needs_completion": false,
+      "en": {
+        "title": "Test Knowledge with the 5-Year-Old Rule",
+        "hook": "You read three books on AI, but when asked to explain it, you choke on buzzwords.",
+        "action": "Explain the concept out loud using plain, everyday language as if speaking to a 5-year-old child.",
+        "key_phrase": "It's simply like...",
+        "when": "When reviewing complex ideas to identify hidden gaps in your understanding.",
+        "why": "Complex jargon masks shallow understanding; simple metaphors require mastery of core principles.",
+        "example": "Instead of saying 'Blockchain is a decentralized ledger,' say 'It's like a shared notebook where everybody keeps a copy, so nobody can cheat.'",
+        "mistake": "Hiding behind technical jargon to convince yourself you master a topic."
+      },
+      "ar": {
+        "title": "لو مش عارف تشرحه لطفل.. يبقى أنت مش فاهمه!",
+        "hook": "قريت كتاب كامل عن الذكاء الاصطناعي، وجيت تشرحه لقيت نفسك بتحفظ مصطلحات ومش عارف تفسر!",
+        "action": "اشرح المفهوم بصوت عالي بلغة بسيطة جداً كأنك بتشرحه لطفل عنده 5 سنين ومن غير مصطلحات معقدة.",
+        "key_phrase": "الموضوع ببساطة شبه...",
+        "when": "لما تحب تتأكد إنك فهمت موضوع معقد بجد مش مجرد حافظه.",
+        "why": "المصطلحات الصعبة بتستخبى وراها الفجوات، لكن التبسيط بيحتاج فهم عميق للأساسيات.",
+        "example": "بدل ما تقول 'البلوك تشين دفتر حسابات لامركزي'، قول: 'شبه كشكول كلنا كاتبين فيه نفس الحاجة، فمحدش يقدر يغش!'",
+        "mistake": "إنك تستخبى ورا كلمات إنجليزية ومصطلحات معقدة عشان تقنع نفسك إنك فاهم."
+      },
+      "quiz": {
+        "type": "mcq",
+        "correct_index": 3,
+        "en": {
+          "question": "You are testing your understanding of a new concept. How do you know you truly master it?",
+          "options": [
+            "You can quote the official technical documentation word-for-word.",
+            "You can complete a 100-question multiple-choice quiz.",
+            "You can talk about it using advanced industry acronyms.",
+            "You can explain it clearly using a simple daily life metaphor."
+          ],
+          "explanation": "Simple metaphors prove you have digested the core mechanism, not just memorized labels."
+        },
+        "ar": {
+          "question": "بتختبر فهمك لمفهوم جديد في الشغل.. إزاي تضمن إنك هضمته بجد؟",
+          "options": [
+            "إنك تسمّع الكلام الموجود في الكتب بالنص.",
+            "إنك تحل امتحان اختيار من متعدد بسهولة.",
+            "إنك تستخدم اختصارات ومصطلحات معقدة وأنت بتتكلم.",
+            "إنك تشرحه بمثال بسيط جداً من الحياة اليومية."
+          ],
+          "explanation": "التشبيهات البسيطة بتثبت إنك هضمت الجوهر مش مجرد حافظ مصطلحات."
+        }
+      }
+    },
+    {
+      "id": "2026-11-20_meetings_silence-five-second-rule",
+      "created_at": "2026-11-20T14:57:42.703982+00:00",
+      "topic": "meetings",
+      "tags": [
+        "facilitation",
+        "patience",
+        "engagement"
+      ],
+      "level": "beginner",
+      "needs_completion": false,
+      "en": {
+        "title": "Count to 5 After Asking a Meeting Question",
+        "hook": "You asked your team, 'Any ideas?' and got dead silence. You immediately panicked and filled the gap.",
+        "action": "Ask your question, then count to 5 slowly in your head while looking around attentively.",
+        "key_phrase": "[Silent 5-second pause]",
+        "when": "When facilitating a meeting and opening the floor for discussion or input.",
+        "why": "People need 3-5 seconds to process questions and formulate thoughts; jumping in prematurely kills participation.",
+        "example": "You ask: 'What's the biggest flaw in this design?' Pause 1... 2... 3... 4... 5. A quiet teammate finally speaks up: 'Actually, step two is confusing.'",
+        "mistake": "Answering your own question after 1 second of silence because quiet makes you uncomfortable."
+      },
+      "ar": {
+        "title": "عد لـ 5 في سرك بعد أي سؤال في الاجتماع",
+        "hook": "سألت الناس في الاجتماع: 'حد عنده أفكار؟' فلقيت سكوت تام، فقلقت وجاوبت على نفسك فوراً!",
+        "action": "اطرح سؤالك، وبعدين عد من 1 لـ 5 في سرك ببطء وأنت باصص للناس بهدوء.",
+        "key_phrase": "[سكوت تام لمدة 5 ثواني]",
+        "when": "لما تكون بتبدأ مناقشة في اجتماع وعايز تسمع مشاركات حقيقية.",
+        "why": "الناس بتحتاج من 3 لـ 5 ثواني عشان تعالج السؤال وترتب أفكارها، استعجالك بيموت النقاش.",
+        "example": "بتقول: 'إيه أكبر مشكلة في الخطة دي؟' وتستنى 1.. 2.. 3.. 4.. 5.. تلاقي أهدى حد في القاعة بدأ يتكلم ويقول نقطة مهمة!",
+        "mistake": "إنك تجاوب على سؤالك بنفسك بعد ثانية واحدة عشان الصمت بيوترك."
+      },
+      "quiz": {
+        "type": "mcq",
+        "correct_index": 1,
+        "en": {
+          "question": "Why is immediate silence right after asking a meeting question actually beneficial?",
+          "options": [
+            "It signals that nobody was listening to you.",
+            "It gives participants processing time to construct thoughtful responses.",
+            "It shows that your question was too difficult.",
+            "It asserts dominance over the participants."
+          ],
+          "explanation": "Humans require a few seconds of cognitive processing time before speaking up thoughtfully."
+        },
+        "ar": {
+          "question": "ليه السكوت اللي بيحصل فوراً بعد ما تطرح سؤال في الاجتماع ده شيء مفيد؟",
+          "options": [
+            "عشان ده دليل إن محدش كان سامعك أصلًا.",
+            "عشان بيدي وقت للناس تفكر وترتب إجابات عميقة.",
+            "عشان ده معناه إن سؤالك معقد ومحدش فاهمه.",
+            "عشان ده بيفرض سيطرتك على الموجودين."
+          ],
+          "explanation": "التفكير بيحتاج كام ثانية صمت عشان المخ يعالج السؤال ويرتب رد محترم."
+        }
+      }
+    }
+  ]
+}

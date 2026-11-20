@@ -1,5 +1,365 @@
 [
   {
+    "id": "2026-11-20_leadership_intent-based-delegation",
+    "number": 107,
+    "patch_number": 22,
+    "topic": "leadership",
+    "level": "intermediate",
+    "tags": [
+      "delegation",
+      "autonomy",
+      "management"
+    ],
+    "created_at": "2026-11-20T15:09:02.252039+00:00",
+    "file": "cards/2026/2026-11-20_auto_03.json",
+    "en": {
+      "title": "Replace 'What Should I Do?' with 'I Intend To'",
+      "hook": "If your team asks permission for every single step, you don't lead a team—you operate human bottleneck machinery.",
+      "key_phrase": "Don't ask me what to do. Tell me what you intend to do, and I'll say whether I object."
+    },
+    "ar": {
+      "title": "بدّل جملة 'أعمل إيه يا فندم؟' بـ 'أنا ناوي أعمل كذا'",
+      "hook": "لو كل فرد في تيمك بيستنى موافقتك على كل خطوة، فإنت كدة مش بتدير ناس.. إنت شغال عنق زجاجة معطل الشركة.",
+      "key_phrase": "ماتسألنيش أعمل إيه، قولي إنت ناوي تعمل إيه وأنا هقولك لو عندي مانع."
+    }
+  },
+  {
+    "id": "2026-11-20_decision_making_two-way-doors",
+    "number": 106,
+    "patch_number": 22,
+    "topic": "decision_making",
+    "level": "beginner",
+    "tags": [
+      "speed",
+      "bias-to-action",
+      "heuristics"
+    ],
+    "created_at": "2026-11-20T15:09:02.252039+00:00",
+    "file": "cards/2026/2026-11-20_auto_03.json",
+    "en": {
+      "title": "Use the Two-Way Door Rule to Cut Overthinking",
+      "hook": "Treating every decision like a lifelong commitment creates endless bottleneck meetings. Classify the door before debating the choice.",
+      "key_phrase": "If this fails, can we undo it by Monday with minimal cost?"
+    },
+    "ar": {
+      "title": "استخدم قاعدة 'البابين' عشان تبطل تردد في القرارات",
+      "hook": "معاملة كل قرار كأنه جوازة أبدية بيعطلك في اجتماعات ملهاش آخر. اعرف نوع الباب قبل ما تضيع وقتك في النقاش.",
+      "key_phrase": "لو القرار ده فشل، نقدر نلغيه يوم الاتنين بأقل خساير؟"
+    }
+  },
+  {
+    "id": "2026-11-20_communication_ghosting-no-oriented",
+    "number": 105,
+    "patch_number": 22,
+    "topic": "communication",
+    "level": "beginner",
+    "tags": [
+      "email",
+      "follow-up",
+      "negotiation"
+    ],
+    "created_at": "2026-11-20T15:09:02.252039+00:00",
+    "file": "cards/2026/2026-11-20_auto_03.json",
+    "en": {
+      "title": "Revive Ghosted Emails with a No-Oriented Question",
+      "hook": "Sent three follow-ups with zero replies? Polite 'just checking in' emails make busy people feel guilty, so they avoid you more.",
+      "key_phrase": "Have you given up on this project?"
+    },
+    "ar": {
+      "title": "رجّع اللي بيعملك سين بسؤال إجابته 'لأ'",
+      "hook": "بعت إيميل واتنين ومحدش بيرد؟ أسلوب 'بطمن على الإيميل اللي فات' بيحسس الناس بالذنب، فبيهربوا منك أكتر.",
+      "key_phrase": "هو حضرتك صرفت نظر عن المشروع ده تماماً؟"
+    }
+  },
+  {
+    "id": "2026-11-20_career_promotion-pre-mortem",
+    "number": 104,
+    "patch_number": 22,
+    "topic": "career",
+    "level": "intermediate",
+    "tags": [
+      "promotions",
+      "managing-up",
+      "reviews"
+    ],
+    "created_at": "2026-11-20T15:09:02.252039+00:00",
+    "file": "cards/2026/2026-11-20_auto_03.json",
+    "en": {
+      "title": "Run a Promotion Pre-Mortem 6 Months Early",
+      "hook": "Asking for a promotion at your annual review is like studying after taking the exam. Shape the criteria months before ratings get locked.",
+      "key_phrase": "If we get to review time and I don't get the title, what will have been the reason?"
+    },
+    "ar": {
+      "title": "اعمل 'بريمورتم' لترقيتك قبل ميعادها بـ 6 شهور",
+      "hook": "إنك تطلب ترقية يوم التقييم السنوي زي اللي بيذاكر بعد ما الامتحان يخلص. اتفق على شروط نجاحك بدري قبل ما الميزانيات تتقفل.",
+      "key_phrase": "لو جه ميعاد التقييم ومخدتش الترقية دي، تفتكر إيه هيكون السبب وقتها؟"
+    }
+  },
+  {
+    "id": "2026-11-20_business_preempt-churn-onboarding",
+    "number": 103,
+    "patch_number": 22,
+    "topic": "business",
+    "level": "intermediate",
+    "tags": [
+      "retention",
+      "customer-success",
+      "onboarding"
+    ],
+    "created_at": "2026-11-20T15:09:02.252039+00:00",
+    "file": "cards/2026/2026-11-20_auto_03.json",
+    "en": {
+      "title": "Ask New Clients What Would Make Them Fire You",
+      "hook": "Most unhappy clients never complain before leaving; they just vanish. Ask them about failure on day one while they still trust you.",
+      "key_phrase": "Looking ahead 6 months, what is the one thing that would make you feel this partnership failed?"
+    },
+    "ar": {
+      "title": "اسأل عميلك الجديد: إيه اللي يخليك تفسخ العقد؟",
+      "hook": "أغلب العملاء اللي بيمشوا مبيشتكوش، بيختفوا فجأة. اسأله عن سيناريو الفشل في أول يوم وهو لسه متحمس وواثق فيك.",
+      "key_phrase": "لو بصينا لقدام بعد 6 شهور، إيه الغلطة اللي لو حصلت تخليك تحس إن التجربة معانا فشلت؟"
+    }
+  },
+  {
+    "id": "2026-11-20_psychology_ben-franklin-effect",
+    "number": 102,
+    "patch_number": 21,
+    "topic": "psychology",
+    "level": "intermediate",
+    "tags": [
+      "relationships",
+      "rapport",
+      "influence"
+    ],
+    "created_at": "2026-11-20T15:04:21.508502+00:00",
+    "file": "cards/2026/2026-11-20_auto_02.json",
+    "en": {
+      "title": "Ask for a Small Favor to Win People Over",
+      "hook": "Benjamin Franklin won over a hostile political rival without buying him gifts—he asked to borrow a rare book.",
+      "key_phrase": "Could I get your quick opinion on X?"
+    },
+    "ar": {
+      "title": "اطلب خدمة صغيرة عشان تكسب ثقة أي حد",
+      "hook": "بنيامين فرانكلين كسب قلوب أكبر منافس سياسي ليه من غير ما يدي له فلوس أو يطبل له... طلب منه يستلف كتاب نادر!",
+      "key_phrase": "ممكن أستشير حضرتك بسرعة في نقطة كذا؟"
+    }
+  },
+  {
+    "id": "2026-11-20_productivity_five-minute-rule",
+    "number": 101,
+    "patch_number": 21,
+    "topic": "productivity",
+    "level": "beginner",
+    "tags": [
+      "procrastination",
+      "focus",
+      "habits"
+    ],
+    "created_at": "2026-11-20T15:04:21.508502+00:00",
+    "file": "cards/2026/2026-11-20_auto_02.json",
+    "en": {
+      "title": "Use the 5-Minute Rule to Kill Procrastination",
+      "hook": "You have a massive report due tomorrow, but suddenly reorganizing your desk drawer feels deeply important.",
+      "key_phrase": "I only have to do this for 5 minutes."
+    },
+    "ar": {
+      "title": "خدعة الـ 5 دقايق عشان تكسر التسويف",
+      "hook": "وراك تقرير مهم لازم يسلم بكرة، بس فجأة تنظيف درج المكتب بقى شكله مسلي ومهم جداً بالنسبة لك!",
+      "key_phrase": "أنا هشتغل على ده لمدة 5 دقايق بس."
+    }
+  },
+  {
+    "id": "2026-11-20_persuasion_because-reasoning",
+    "number": 100,
+    "patch_number": 21,
+    "topic": "persuasion",
+    "level": "beginner",
+    "tags": [
+      "influence",
+      "psychology",
+      "requests"
+    ],
+    "created_at": "2026-11-20T15:04:21.508502+00:00",
+    "file": "cards/2026/2026-11-20_auto_02.json",
+    "en": {
+      "title": "Use the Magic Word Because for Quick Compliance",
+      "hook": "A researcher asked to cut a long printing line. Adding one single word boosted agreement from 60% to 94%.",
+      "key_phrase": "May I do X, because Y?"
+    },
+    "ar": {
+      "title": "استخدم كلمة عشان عشان تزنق اللي قدامك يوافق",
+      "hook": "باحث حاول يستأذن يسبق الناس في طابور طابعة المكتبة. كلمة واحدة بس زوّدت نسبة موافقتهم من 60% لـ 94%.",
+      "key_phrase": "ممكن أعمل كذا، عشان كذا؟"
+    }
+  },
+  {
+    "id": "2026-11-20_negotiation_labeling-emotions",
+    "number": 99,
+    "patch_number": 21,
+    "topic": "negotiation",
+    "level": "intermediate",
+    "tags": [
+      "empathy",
+      "communication",
+      "tactics"
+    ],
+    "created_at": "2026-11-20T15:04:21.508502+00:00",
+    "file": "cards/2026/2026-11-20_auto_02.json",
+    "en": {
+      "title": "Label Their Hidden Concern to Cut Resistance",
+      "hook": "The client crossed their arms, frowned, and said: Your price is way too high for our team.",
+      "key_phrase": "It seems like you are worried this project will strain your quarterly budget."
+    },
+    "ar": {
+      "title": "سمّي مشاعرهم عشان تكسر مقاومتهم في التفاوض",
+      "hook": "العميل ربع إيده، ووشه اتغير، وقال بحدة: الميزانية دي عالية جداً بصراحة ومش مناسبة لينا خالص.",
+      "key_phrase": "يبدو إنك قلقان إن المشروع ده يضغط على ميزانية الربع ده."
+    }
+  },
+  {
+    "id": "2026-11-20_money_24hr-friction-rule",
+    "number": 98,
+    "patch_number": 21,
+    "topic": "money",
+    "level": "beginner",
+    "tags": [
+      "spending",
+      "budgeting",
+      "habits"
+    ],
+    "created_at": "2026-11-20T15:04:21.508502+00:00",
+    "file": "cards/2026/2026-11-20_auto_02.json",
+    "en": {
+      "title": "Pause 24 Hours Before Impulse Shopping",
+      "hook": "You are late at night, one click away from buying a $150 gadget you did not know existed 10 minutes ago.",
+      "key_phrase": "If I still want it tomorrow night, I will buy it."
+    },
+    "ar": {
+      "title": "قانون الـ 24 ساعة عشان توقف الشرا المنفعل",
+      "hook": "قاعد سهران بالليل ونازل تقليب في أبليكيشن الشوبينج، وفاضلك ضغطة واحدة وتشتري حاجة بـ 2000 جنيه مكنتش تعرف إنها موجودة أصلاً من 10 دقايق.",
+      "key_phrase": "لو لسه عايزها بكرة بالليل، هشتريها."
+    }
+  },
+  {
+    "id": "2026-11-20_psychology_spotlight-effect-anchor",
+    "number": 97,
+    "patch_number": 20,
+    "topic": "psychology",
+    "level": "beginner",
+    "tags": [
+      "mindset",
+      "public-speaking",
+      "confidence"
+    ],
+    "created_at": "2026-11-20T14:57:42.703982+00:00",
+    "file": "cards/2026/2026-11-20_auto_01.json",
+    "en": {
+      "title": "Stop Worrying About Small Mistakes in Public",
+      "hook": "You spilled coffee on your shirt and thought everyone stared all day. In reality, almost nobody noticed.",
+      "key_phrase": "Classic Monday moment, right?"
+    },
+    "ar": {
+      "title": "محدش مركز معاك أصلًا.. اتنفس وركز",
+      "hook": "دلقت قهوة على قميصك وحاسس إن الشارع كله بيبص عليك؟ الحقيقة إن محدش واخد باله خالص!",
+      "key_phrase": "واضح إن القهوة لسة مأثرتش عليا النهاردة!"
+    }
+  },
+  {
+    "id": "2026-11-20_meetings_silence-five-second-rule",
+    "number": 96,
+    "patch_number": 20,
+    "topic": "meetings",
+    "level": "beginner",
+    "tags": [
+      "facilitation",
+      "patience",
+      "engagement"
+    ],
+    "created_at": "2026-11-20T14:57:42.703982+00:00",
+    "file": "cards/2026/2026-11-20_auto_01.json",
+    "en": {
+      "title": "Count to 5 After Asking a Meeting Question",
+      "hook": "You asked your team, 'Any ideas?' and got dead silence. You immediately panicked and filled the gap.",
+      "key_phrase": "[Silent 5-second pause]"
+    },
+    "ar": {
+      "title": "عد لـ 5 في سرك بعد أي سؤال في الاجتماع",
+      "hook": "سألت الناس في الاجتماع: 'حد عنده أفكار؟' فلقيت سكوت تام، فقلقت وجاوبت على نفسك فوراً!",
+      "key_phrase": "[سكوت تام لمدة 5 ثواني]"
+    }
+  },
+  {
+    "id": "2026-11-20_learning_feynman-technique-child",
+    "number": 95,
+    "patch_number": 20,
+    "topic": "learning",
+    "level": "intermediate",
+    "tags": [
+      "mastery",
+      "simplification",
+      "study"
+    ],
+    "created_at": "2026-11-20T14:57:42.703982+00:00",
+    "file": "cards/2026/2026-11-20_auto_01.json",
+    "en": {
+      "title": "Test Knowledge with the 5-Year-Old Rule",
+      "hook": "You read three books on AI, but when asked to explain it, you choke on buzzwords.",
+      "key_phrase": "It's simply like..."
+    },
+    "ar": {
+      "title": "لو مش عارف تشرحه لطفل.. يبقى أنت مش فاهمه!",
+      "hook": "قريت كتاب كامل عن الذكاء الاصطناعي، وجيت تشرحه لقيت نفسك بتحفظ مصطلحات ومش عارف تفسر!",
+      "key_phrase": "الموضوع ببساطة شبه..."
+    }
+  },
+  {
+    "id": "2026-11-20_decision_making_10-10-10-rule",
+    "number": 94,
+    "patch_number": 20,
+    "topic": "decision_making",
+    "level": "beginner",
+    "tags": [
+      "clarity",
+      "stress",
+      "long-term"
+    ],
+    "created_at": "2026-11-20T14:57:42.703982+00:00",
+    "file": "cards/2026/2026-11-20_auto_01.json",
+    "en": {
+      "title": "Use the 10-10-10 Rule to Eliminate Panic",
+      "hook": "Stuck paralyzed on a tough choice? Your brain treats current anxiety like a lifelong disaster.",
+      "key_phrase": "How will I view this choice 10 months from now?"
+    },
+    "ar": {
+      "title": "اتأخذ قراراتك بقاعدة 10-10-10",
+      "hook": "محتار ومش عارف تاخد قرار ومزنوق في التفكير؟ مخك بيصوّرلك القلق الحالي كأنه كارثة أبدية!",
+      "key_phrase": "هكون شايف القرار ده إزاي بعد 10 شهور؟"
+    }
+  },
+  {
+    "id": "2026-11-20_communication_label-negative-emotions",
+    "number": 93,
+    "patch_number": 20,
+    "topic": "communication",
+    "level": "intermediate",
+    "tags": [
+      "conflict",
+      "empathy",
+      "deescalation"
+    ],
+    "created_at": "2026-11-20T14:57:42.703982+00:00",
+    "file": "cards/2026/2026-11-20_auto_01.json",
+    "en": {
+      "title": "Diffuse Hostility with Tactical Labeling",
+      "hook": "An angry client starts venting at you. Arguing back with logic only makes them explode further.",
+      "key_phrase": "It seems like you're really frustrated with how this was handled."
+    },
+    "ar": {
+      "title": "امتص غضب اللي قدامك بكارت التسمية",
+      "hook": "العميل داخل يزعق ومتعصب جداً.. لو رديت عليه بمنطق وحجج، هيولع أكتر!",
+      "key_phrase": "شكلك متضايق جداً من طريقة إدارة الموضوع ده."
+    }
+  },
+  {
     "id": "2026-11-18_productivity_two-minute-rule",
     "number": 92,
     "patch_number": 19,
