@@ -1,0 +1,288 @@
+{
+  "schema_version": 1,
+  "batch_id": "2026-11-21_auto_01",
+  "created_at": "2026-11-21T14:17:59.225047+00:00",
+  "source": "gemini-3.5-flash",
+  "cards": [
+    {
+      "id": "2026-11-21_leadership_decouple-person-problem",
+      "created_at": "2026-11-21T14:17:59.225047+00:00",
+      "topic": "leadership",
+      "tags": [
+        "feedback",
+        "management",
+        "leadership"
+      ],
+      "level": "intermediate",
+      "needs_completion": false,
+      "en": {
+        "title": "Criticize the system, not the person",
+        "hook": "A star manager stopped his team from getting defensive during reviews with one simple shift: he stopped using 'you'.",
+        "action": "Shift feedback from individual blame to process flaws. Blame the system for the error, then engage the person on the solution.",
+        "key_phrase": "The process broke down at step X, how do we fix it?",
+        "when": "When addressing a mistake or project failure with a team member.",
+        "why": "Direct personal blame triggers fight-or-flight defensiveness. Criticizing the process keeps the brain in analytical problem-solving mode.",
+        "example": "Instead of 'You forgot to send the report on time,' say: 'The report missed the client deadline. Where in our pipeline did the handoff fail?'",
+        "mistake": "Using personal accusations like 'You dropped the ball on this' which forces immediate defensiveness."
+      },
+      "ar": {
+        "title": "انقد السيستم.. مش الشخص",
+        "hook": "مدير شاطر خلّى فريقه يبطل يدافع عن نفسه في التقييم بحيلة بسيطة: بطل بطل كلمة 'أنت'.",
+        "action": "حوّل نقدك من إلقاء اللوم على الشخص لنقد خطوات العمل. ارمِ المشكلة على السيستم، واشرك الشخص في الحل.",
+        "key_phrase": "الخطوة دي في السيستم وقعت.. إزاي نظبطها؟",
+        "when": "لما يكون فيه غلطة حصلت في الشغل وعايز تعدلها من غير ما تقوم خناقة.",
+        "why": "الهجوم الشخصي بيخلي المخ يدخل في حالة دفاع ورعب. التركيز على السيستم بيخليهم يفكروا في الحل.",
+        "example": "بدل ما تقول 'أنت نسيت تبعت التقرير للعميل'، قول 'التقرير ماوصلش للعميل في ميعاده.. المشكلة حصلت فين في خطوات المتابعة؟'",
+        "mistake": "الاتهام المباشر زي 'أنت بوظت الدنيا هنا' اللي بيخلي اللي قدامك يدافع وخلاص."
+      },
+      "quiz": {
+        "type": "mcq",
+        "correct_index": 2,
+        "en": {
+          "question": "An employee missed a critical client email deadline. How should you start the feedback conversation?",
+          "options": [
+            "Why do you always struggle with email deadlines?",
+            "You made us look unprofessional to the client today.",
+            "Our email dispatch protocol missed the window today. Where did the delay happen?",
+            "Don't worry about it, mistakes happen to everyone."
+          ],
+          "explanation": "Option 3 targets the system process rather than accusing the person, preventing immediate defensiveness while maintaining accountability."
+        },
+        "ar": {
+          "question": "موظف فاته ميعاد إرسال إيميل مهم للعميل. إزاي تبدأ معاه الكلام؟",
+          "options": [
+            "هو أنت ليه على طول بتتأخر في الإيميلات؟",
+            "أنت شكلنا بقى وحش قدام العميل النهاردة.",
+            "سيستم المتابعة بتاعنا فاته ميعاد الإيميل النهاردة.. العطلة حصلت فين بالظبط؟",
+            "ولا يهمك عادي، كلنا بنغلط."
+          ],
+          "explanation": "الخيار الثالث بينقد طريقة العمل ومش بيلوم الشخص مباشر، فبيحافظ على تركيز الموظف في أصل المشكلة بدل ما يدافع عن نفسه."
+        }
+      }
+    },
+    {
+      "id": "2026-11-21_learning_explain-to-a-child",
+      "created_at": "2026-11-21T14:17:59.225047+00:00",
+      "topic": "learning",
+      "tags": [
+        "learning",
+        "feynman-technique",
+        "memory"
+      ],
+      "level": "beginner",
+      "needs_completion": false,
+      "en": {
+        "title": "Use the 10-year-old explanation rule",
+        "hook": "Physicist Richard Feynman could explain quantum mechanics to a child. If you can't explain a concept simply, you don't understand it yet.",
+        "action": "After reading a complex topic, speak out loud as if explaining it to a 10-year-old without technical buzzwords. Study the exact gaps where you struggle.",
+        "key_phrase": "If I had to explain this without jargon, it simply means...",
+        "when": "Right after reading an article, book chapter, or new technical framework.",
+        "why": "Jargon hides weak understanding. Forcing simple language reveals hidden logical gaps immediately.",
+        "example": "Don't say: 'API facilitates asynchronous data exchange.' Say: 'An API is like a waiter taking your order to the kitchen and bringing back your food.'",
+        "mistake": "Passively re-reading highlighted notes and assuming familiarity equals mastery."
+      },
+      "ar": {
+        "title": "اختبار طفل الـ 10 سنين",
+        "hook": "عالم الفيزياء فاينمان كان بيشرح الفيزيا المعقدة لأطفال. لو مش عارف تشرح فكرتك ببساطة، يبقى أنت نفسك مش فاهمها صح.",
+        "action": "بعد ما تقرأ أي موضوع معقد، حاول تشرحه بصوت عالي كأنك بتشرحه لطفل من غير مصطلحات صعبة. المنطقة اللي تعطل فيها هي اللي محتاج تذاكرها تاني.",
+        "key_phrase": "لو هشرح الكلام ده بلغة بسيطة من غير كلكعة، معناه...",
+        "when": "بعد ما تخلص قراية مقال أو كتاب أو موضوع تقني جديد.",
+        "why": "المصطلحات الصعبة بتستخبى وراها الفجوات. الشرح البسيط بيجبر مخك يربط المعلومات صح.",
+        "example": "بدل ما تقول 'الـ API بيعمل مزامنة للبيانات'، قول 'الـ API زي الويتر بياخد طلبك للمطبخ ويرجعلك بالأكل'.",
+        "mistake": "إنك تقعد تقرأ اللي علمته بالهايلايتر وتفتكر إنك كدة فهمت."
+      },
+      "quiz": {
+        "type": "mcq",
+        "correct_index": 1,
+        "en": {
+          "question": "How do you test if you truly understand a complex subject you just studied?",
+          "options": [
+            "Re-read the entire chapter three times without stopping.",
+            "Explain it out loud in plain, everyday words to someone with no background in it.",
+            "Memorize all the industry definitions word-for-word.",
+            "Highlight every key technical term in the document."
+          ],
+          "explanation": "Explaining without technical jargon tests whether you understand the core concepts, whereas memorizing definitions only tests recall."
+        },
+        "ar": {
+          "question": "إزاي تتأكد إنك فهمت موضوع معقد لسه مخلص قرايته؟",
+          "options": [
+            "تقرأ الفصل كله 3 مرات ورا بعض من غير ما تقف.",
+            "تشرحه بصوت عالي بكلمات بسيطة جداً لحد معندوش أي خلفية عن الموضوع.",
+            "تحفظ كل التعاريف والمصطلحات المعقدة حرفياً.",
+            "تعلم بالهايلايتر على كل الكلمات التقنية في الصفحة."
+          ],
+          "explanation": "الشرح ببساطة ومن غير مصطلحات معقدة بيختبر فهمك الحقيقي للمفهوم، عكس الحفظ الظاهري للمصطلحات."
+        }
+      }
+    },
+    {
+      "id": "2026-11-21_meetings_silent-reading-start",
+      "created_at": "2026-11-21T14:17:59.225047+00:00",
+      "topic": "meetings",
+      "tags": [
+        "meetings",
+        "productivity",
+        "time-management"
+      ],
+      "level": "intermediate",
+      "needs_completion": false,
+      "en": {
+        "title": "Start meetings with 5 minutes of silent reading",
+        "hook": "Jeff Bezos banned slide presentations at Amazon. Instead, every critical meeting starts in complete silence.",
+        "action": "Ditch slides. Hand out a 1-page memo and give everyone 5-10 minutes to read quietly at the start of the meeting before talking.",
+        "key_phrase": "Let me give everyone 5 minutes to read this quietly, then we'll jump straight to questions.",
+        "when": "At the beginning of any decision-making or strategy meeting.",
+        "why": "People rarely read attachments in advance. Silent reading ensures everyone shares exact, fresh context without wasting time on presentations.",
+        "example": "Host: 'We have 5 minutes on the clock to read this project brief.' Everyone reads quietly. Minute 6: 'What questions or risks do you see?'",
+        "mistake": "Spending 20 minutes presenting slides while attendees secretly check their phones."
+      },
+      "ar": {
+        "title": "ابدأ اجتماعك بـ 5 دقائق قراءة صامتة",
+        "hook": "جيف بيزوس منع استخدام الباوربوينت في أوبن/أمازون.. وخلا أول ربع ساعة في كل اجتماع قراءة صامتة!",
+        "action": "سيب الباوربوينت. وزع ورقة ملخصة للموضوع وسيب الناس تقرأها في سرها أول 5 لـ 10 دقايق قبل ما تبدأوا كلام.",
+        "key_phrase": "هناخد 5 دقايق نقرأ الورقة دي في سرنا الأول، وبعدها ندخل في الأسئلة على طول.",
+        "when": "في بداية أي اجتماع مخصص لاتخاذ قرارات أو حل مشكلة.",
+        "why": "محدش بيقرا المرفقات قبل الاجتماع. القراءة الصامتة بتضمن إن الكل مركز ومستوعب نفس المعلومات في نفس اللحظة.",
+        "example": "المدير: 'معانا 5 دقايق نقرأ الفكرة من الورقة اللي قدامكم.' وبعد الـ 5 دقايق: 'إيه الأسئلة أو المخاوف اللي عندكم؟'",
+        "mistake": "إنك تضيع 20 دقيقة تعرض شرايح باوربوينت والناس سرحانة في موبايلاتها."
+      },
+      "quiz": {
+        "type": "mcq",
+        "correct_index": 0,
+        "en": {
+          "question": "Why is starting a meeting with silent reading more effective than presenting slides?",
+          "options": [
+            "It guarantees everyone actually absorbs the material at the same time.",
+            "It avoids having to write a document before the meeting.",
+            "It reduces the total meeting time to under two minutes.",
+            "It allows people to sleep during the first 10 minutes."
+          ],
+          "explanation": "Silent reading ensures all participants are fully context-loaded without relying on pre-reading homework that people rarely finish."
+        },
+        "ar": {
+          "question": "ليه القراءة الصامتة في أول الاجتماع أفضل من عرض شاشات الباوربوينت؟",
+          "options": [
+            "بتضمن إن الكل استوعب نفس المعلومات والتركيز موجود في نفس اللحظة.",
+            "بتخليك مش محتاج تجهز أي ورق قبل الاجتماع.",
+            "بتقلل وقت الاجتماع الإجمالي لدقيقتين بس.",
+            "بتدي فرصة للناس تنام في أول 10 دقايق."
+          ],
+          "explanation": "القراءة الصامتة بتضمن إن الجميع أخد المعلومات الكاملة كبداية موحدة، بدل الرهان على إنهم قروها في البيت وده نادراً لما بيحصل."
+        }
+      }
+    },
+    {
+      "id": "2026-11-21_money_pay-yourself-first-automation",
+      "created_at": "2026-11-21T14:17:59.225047+00:00",
+      "topic": "money",
+      "tags": [
+        "money",
+        "budgeting",
+        "personal-finance"
+      ],
+      "level": "beginner",
+      "needs_completion": false,
+      "en": {
+        "title": "Automate paying yourself first on payday",
+        "hook": "Most people save what is left after spending. Wealthy savers flip this rule: they spend what is left after saving.",
+        "action": "Set up an automatic recurring bank transfer of 10-20% to savings on the exact day your paycheck arrives.",
+        "key_phrase": "Automatic transfer set: Payday + 0 days.",
+        "when": "On the day your monthly income hits your account.",
+        "why": "Willpower fades over time. Removing money from your spendable balance before you see it adjusts your baseline lifestyle naturally.",
+        "example": "Paycheck hits on the 1st ($3,000). On the 1st, $300 auto-moves to an investment account. You naturally adapt your spending to $2,700.",
+        "mistake": "Waiting until the last day of the month to save 'whatever is leftover'."
+      },
+      "ar": {
+        "title": "ادفع لنفسك الأول يوم قبضك",
+        "hook": "معظم الناس بتحوش اللي بيتبقى بعد المصاريف.. الأذكياء بيعملوا العكس: بيصرفوا اللي بيتبقى بعد التحويش.",
+        "action": "اعمل تحويل تلقائي من بنكك بنسبة 10 لـ 20% لحساب تحويش أو استثمار في نفس يوم وصول المرتب.",
+        "key_phrase": "التحويل التلقائي يشتغل أول ما المرتب ينزل.",
+        "when": "أول يوم ينزل فيه مرتبك أو دخلك الشهرى.",
+        "why": "إرادتك هتقع أخر الشهر. لما تشيل الفلوس بعيد قبل ما تشوفها، مخك بيظبط مصاريفه تلقائياً على الباقي.",
+        "example": "مرتبك نزل يوم 1 في الشهر.. السيستم يحول 10% فوراً لحساب تاني، وأنت تعيش وتظبط مصاريفك أكن المرتب هو المبلغ المتبقي بس.",
+        "mistake": "استنى لآخر الشهر عشان تشوف 'هيتبقى كام أحوشه'."
+      },
+      "quiz": {
+        "type": "mcq",
+        "correct_index": 3,
+        "en": {
+          "question": "What is the primary psychological reason to automate savings on the day you get paid?",
+          "options": [
+            "It forces your bank to give you higher interest rates.",
+            "It leaves you with zero money for emergency situations.",
+            "It gives you guilt-free permission to spend 100% of your money.",
+            "It removes relying on willpower by lowering your visible spendable baseline immediately."
+          ],
+          "explanation": "Automating savings shifts your perception of available funds immediately, forcing you to budget around the reduced amount effortlessly."
+        },
+        "ar": {
+          "question": "إيه السبب النفسي الرئيسي لعمل تحويل تلقائي للتحويش أول ما ينزل المرتب؟",
+          "options": [
+            "بيجبر البنك يديك فوائد أعلى.",
+            "بيخليك معندكش أي فلوس للطوارئ.",
+            "بيديك إذن تصرف 100% من باقي الفلوس في حاجات رفاهية.",
+            "بيشيل الاعتماد على الإرادة لأنه بيقلل الرقم اللي قدام عينك المتاح للصرف فوراً."
+          ],
+          "explanation": "التحويل التلقائي بيغير إدراكك لمقدار فلوسك المتاحة، فبتظبط مصاريفك تلقائياً على المبلغ الصافي المتبقي من غير ما تتعب إرادتك."
+        }
+      }
+    },
+    {
+      "id": "2026-11-21_negotiation_ackerman-bargaining-model",
+      "created_at": "2026-11-21T14:17:59.225047+00:00",
+      "topic": "negotiation",
+      "tags": [
+        "negotiation",
+        "pricing",
+        "anchoring"
+      ],
+      "level": "advanced",
+      "needs_completion": false,
+      "en": {
+        "title": "Use the Ackerman model for price offers",
+        "hook": "Former FBI negotiator Chris Voss uses a precise mathematical sequence to offer prices without breaking off talks.",
+        "action": "Set your target price, then offer 65% of it, increment to 85%, then 95%, and finally 100% using precise, non-round numbers.",
+        "key_phrase": "I can't match that, but the absolute best limit I can do is $37,850.",
+        "when": "Making counter-offers on price during high-stakes negotiations.",
+        "why": "Specific non-round numbers carry psychological weight—they signal meticulous calculation rather than arbitrary guessing.",
+        "example": "Target: $10,000. Start offer: $6,500. Counter: $8,500. Next: $9,500. Final: $9,875. The exact number signals you have reached your absolute limit.",
+        "mistake": "Throwing out a single round counter-offer or splitting the difference evenly upfront."
+      },
+      "ar": {
+        "title": "أسلوب أكيرمان للمساومة بالفلوس",
+        "hook": "مفاوض الرهائن السابق في الـ FBI بيستخدم نسب مئوية معينة عشان يفاوض في السعر من غير ما يخسر الصفقة.",
+        "action": "حدد السعر النهائي اللي عايزه، وابدأ بـ 65% منه، ثم ارفع لـ 85%، ثم 95%، ورقمك الأخير اخليه غير مدور بالقرش.",
+        "key_phrase": "ماقدرش أدفع الرقم ده، آخر أرقامي الممكنة بالظبط هو 37,850 جنيه.",
+        "when": "لما تعمل عرض مقابل (Counter-offer) في شروة كبيرة أو صفقة مهمة.",
+        "why": "الأرقام الفردية غير المدورة بتوصل إحساس للطرف التاني إن ده أقصى رقم جيبك يسمح بيه ومش مجرد رقم تقريبي.",
+        "example": "هدفك تدفع 10,000. ابدأ بـ 6,500.. ارفع لـ 8,500.. ثم 9,500.. ورقمك النهائي خليه 9,875. هيحس إنك وصلت لآخرك.",
+        "mistake": "إنك ترمي رقم مدور زي '10 تلاف' أو تقول 'نتقابل في النص' من أول دقيقة."
+      },
+      "quiz": {
+        "type": "mcq",
+        "correct_index": 1,
+        "en": {
+          "question": "Why is offering $9,875 more effective as a final counter-offer than offering $10,000?",
+          "options": [
+            "Because round numbers always scare sellers away.",
+            "Precise non-round numbers signal a hard, calculated ceiling rather than a flexible estimate.",
+            "Because odd numbers are statistically proven to cause quick fatigue.",
+            "It tricks the seller into thinking you made a math error."
+          ],
+          "explanation": "Precise, non-round numbers suggest that you have calculated your absolute maximum limit, making the other party less likely to push for more."
+        },
+        "ar": {
+          "question": "ليه تقديم عرض بـ 9,875 جنيه أقوى في ختام التفاوض من تقديم 10,000 جنيه؟",
+          "options": [
+            "عشان الأرقام المقفولة دايماً بتخوف البياع.",
+            "الأرقام الدقيقة غير المدورة بتوصل إن ده أقصى رقم محسوب تقدر ت دفعه ومش مجرد تخمين.",
+            "عشان الأرقام الفردية بتخلّي الطرف التاني يتعب أسرع.",
+            "بتخلي البياع يفتكر إنك غلطت في الحسابات فيوافق بسرعة."
+          ],
+          "explanation": "الرقم الدقيق غير المدور بيدي إيحاء إنك حاسبها بالقرش وده آخِر حدود إمكانياتك، فبيصعب على الطرف التاني يضغط عليك أكتر."
+        }
+      }
+    }
+  ]
+}

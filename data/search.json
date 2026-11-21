@@ -1,5 +1,370 @@
 [
   {
+    "id": "2026-11-21_leadership_intent-based-delegation",
+    "number": 122,
+    "patch_number": 25,
+    "topic": "leadership",
+    "level": "intermediate",
+    "tags": [
+      "delegation",
+      "autonomy",
+      "management",
+      "team-building"
+    ],
+    "created_at": "2026-11-21T14:29:59.279432+00:00",
+    "file": "cards/2026/2026-11-21_auto_03.json",
+    "en": {
+      "title": "Shift from Giving Orders to Requiring Statements of Intent",
+      "hook": "Your team keeps asking 'What should I do next?', turning you into a micro-managing bottleneck.",
+      "key_phrase": "I intend to [Action X] because [Reason Y]. Do you agree?"
+    },
+    "ar": {
+      "title": "غير أسلوب الإدارة من أخذ الأوامر إلى تقديم النية",
+      "hook": "تيم الشغل بتاعك كل شوية يسألك 'نعمل إيه دلوقتي؟' وبقيت أنت العطلة الرئيسية لكل صغيرة وكبيرة؟",
+      "key_phrase": "أنا ناوي أعمل [الخطوة كذا] عشان [السبب كذا].. هل عندك اعتراض؟"
+    }
+  },
+  {
+    "id": "2026-11-21_decision_making_the-10-10-10-rule",
+    "number": 121,
+    "patch_number": 25,
+    "topic": "decision_making",
+    "level": "beginner",
+    "tags": [
+      "emotional-control",
+      "strategy",
+      "perspective",
+      "problem-solving"
+    ],
+    "created_at": "2026-11-21T14:29:59.279432+00:00",
+    "file": "cards/2026/2026-11-21_auto_03.json",
+    "en": {
+      "title": "Evaluate Stressful Choices using the 10-10-10 Rule",
+      "hook": "You are agonizing over a uncomfortable conversation, paralyzed by short-term anxiety and fear.",
+      "key_phrase": "How will I feel about this decision 10 months from now?"
+    },
+    "ar": {
+      "title": "خد قراراتك الصعبة بأسلوب 10-10-10",
+      "hook": "محتار ومش عارف تنهي التعامل مع عميل متعب ولا تستحمل وتكمل، ويومك كله بيضيع في التفكير؟",
+      "key_phrase": "يا ترى هشوف القرار ده إزاي بعد 10 شهور من دلوقتي؟"
+    }
+  },
+  {
+    "id": "2026-11-21_communication_bottom-line-first",
+    "number": 120,
+    "patch_number": 25,
+    "topic": "communication",
+    "level": "beginner",
+    "tags": [
+      "email",
+      "executive-communication",
+      "clarity",
+      "writing"
+    ],
+    "created_at": "2026-11-21T14:29:59.279432+00:00",
+    "file": "cards/2026/2026-11-21_auto_03.json",
+    "en": {
+      "title": "Put Your Recommendation in the First Line of Work Emails",
+      "hook": "Busy executives skim past background context. If your request is buried in paragraph three, it won't get read.",
+      "key_phrase": "Recommendation: We should switch to Vendor B to cut software costs by 15%."
+    },
+    "ar": {
+      "title": "حط الخلاصة والقرار في أول سطر في إيميلاتك",
+      "hook": "مديرك بيجيله 100 إيميل في اليوم. لو إيميلك بدأ بحكاية طويلة، هيسيبه ويقراه 'بعدين' ومش هيقراه أبداً.",
+      "key_phrase": "الاقتراح: بنوصي بالتعاقد مع الشركة 'ب' عشان نوفر 15% من الميزانية."
+    }
+  },
+  {
+    "id": "2026-11-21_career_brag-document-habit",
+    "number": 119,
+    "patch_number": 25,
+    "topic": "career",
+    "level": "beginner",
+    "tags": [
+      "career-growth",
+      "performance-review",
+      "productivity",
+      "visibility"
+    ],
+    "created_at": "2026-11-21T14:29:59.279432+00:00",
+    "file": "cards/2026/2026-11-21_auto_03.json",
+    "en": {
+      "title": "Keep a Weekly Brag Document for Performance Reviews",
+      "hook": "Review season arrives and you suddenly blank on everything you achieved in March, leaving your raise to chance.",
+      "key_phrase": "Here is a summary of key deliverables and impact metrics I completed this quarter."
+    },
+    "ar": {
+      "title": "اعمل ملف إنجازات أسبوعي لتقييم الشغل",
+      "hook": "ييجي وقت التقييم السنوي ومبتكونش فاكر عملت إيه في مارس، فمديرك يديك تقييم 'عادي جداً'.",
+      "key_phrase": "دي قائمة بالإنجازات والأرقام اللي حققتها النصف ده من السنة."
+    }
+  },
+  {
+    "id": "2026-11-21_business_preorder-validation",
+    "number": 118,
+    "patch_number": 25,
+    "topic": "business",
+    "level": "intermediate",
+    "tags": [
+      "validation",
+      "startups",
+      "sales",
+      "mvp"
+    ],
+    "created_at": "2026-11-21T14:29:59.279432+00:00",
+    "file": "cards/2026/2026-11-21_auto_03.json",
+    "en": {
+      "title": "Validate B2B Ideas with Paid Pre-Orders Before Building",
+      "hook": "You spent 3 months coding a product, launched it proudly, and only your cousin signed up. Sound familiar?",
+      "key_phrase": "We are launching in 30 days. Pre-order now at 50% off to lock in your spot."
+    },
+    "ar": {
+      "title": "اختبر فكرة مشروعاتك بالدفع المسبق قبل ما تبني",
+      "hook": "قضيت 3 شهور بتكتب كود لبرنامج جديد، ونزلته ومحدش اشتراه غير ابن عمك؟ الموقف ده بيتكرر كتير.",
+      "key_phrase": "إحنا بنفتح الحجز المسبق لـ 30 يوم، احجز مكانك بخصم 50% دلوقتي."
+    }
+  },
+  {
+    "id": "2026-11-21_sales_labeling-fear-objections",
+    "number": 117,
+    "patch_number": 24,
+    "topic": "sales",
+    "level": "advanced",
+    "tags": [
+      "sales",
+      "objections",
+      "negotiation"
+    ],
+    "created_at": "2026-11-21T14:24:26.245469+00:00",
+    "file": "cards/2026/2026-11-21_auto_02.json",
+    "en": {
+      "title": "Defuse Sales Hesitation by Labeling Unsaid Fears",
+      "hook": "When prospects go quiet, pushing benefits makes you sound needy. Naming their unspoken concern disarms tension instantly.",
+      "key_phrase": "It seems like you're concerned about how your team will handle the learning curve."
+    },
+    "ar": {
+      "title": "سمّي الخوف المستخبي عشان تكسر تردد العميل",
+      "hook": "لما العميل يسكت ويتردد، زق المميزات بيخليك تبان محتاج للبيعة. لما تصرّح بخوفه المستخبي، التوتر بيروح في ثانية.",
+      "key_phrase": "شكل حضرتك قلقان من فكرة إن الفريق عندك يطول عقبال ما يتعود على السيستم الجديد؟"
+    }
+  },
+  {
+    "id": "2026-11-21_psychology_ben-franklin-favor",
+    "number": 116,
+    "patch_number": 24,
+    "topic": "psychology",
+    "level": "intermediate",
+    "tags": [
+      "psychology",
+      "rapport",
+      "relationships"
+    ],
+    "created_at": "2026-11-21T14:24:26.245469+00:00",
+    "file": "cards/2026/2026-11-21_auto_02.json",
+    "en": {
+      "title": "Ask for Small Favors to Build Instant Trust",
+      "hook": "Counter-intuitive truth: People don't like you more when you do them favors; they like you more when THEY do YOU a favor.",
+      "key_phrase": "Could you recommend a quick tool you use for organizing your daily schedule?"
+    },
+    "ar": {
+      "title": "اطلب خدمة صغيرة عشان تكسب قُرب ومحبة القدامك",
+      "hook": "حقيقة نفسية غير متوقعة: الناس مش بتحبك أكتر لما تعملهم خدمات، الناس بتحبك أكتر لما هُما يعملولك خدمة صغيرة!",
+      "key_phrase": "ممكن ترشحلي الأبلكيشن اللي بتنظم بيه وقتك عشان عاجبني تنظيمك؟"
+    }
+  },
+  {
+    "id": "2026-11-21_productivity_micro-start-rule",
+    "number": 115,
+    "patch_number": 24,
+    "topic": "productivity",
+    "level": "beginner",
+    "tags": [
+      "productivity",
+      "focus",
+      "habits"
+    ],
+    "created_at": "2026-11-21T14:24:26.245469+00:00",
+    "file": "cards/2026/2026-11-21_auto_02.json",
+    "en": {
+      "title": "Beat Procrastination with the 2-Minute Entry Rule",
+      "hook": "You don't hate writing the annual budget; you hate the overwhelming friction of starting it.",
+      "key_phrase": "I'm only going to write the outline for two minutes, then I can stop."
+    },
+    "ar": {
+      "title": "اكسر التسويف بقاعدة الدقيقتين",
+      "hook": "انت مش كاره تكتب التقرير الشهري، انت بس خايف من ثقل البداية ومستصعب المشوار.",
+      "key_phrase": "أنا هفتح الفايل وأكتب العناوين لمدة دقيقتين بس، وبعدها هقفل عادي."
+    }
+  },
+  {
+    "id": "2026-11-21_pricing_high-anchor-range",
+    "number": 114,
+    "patch_number": 24,
+    "topic": "pricing",
+    "level": "intermediate",
+    "tags": [
+      "pricing",
+      "negotiation",
+      "sales"
+    ],
+    "created_at": "2026-11-21T14:24:26.245469+00:00",
+    "file": "cards/2026/2026-11-21_auto_02.json",
+    "en": {
+      "title": "Quote a High-Top Range to Make Target Price Feel Safe",
+      "hook": "Give one exact price and buyers negotiate down. Give a range anchored high, and your target price feels like a reasonable middle ground.",
+      "key_phrase": "Projects like this usually run between $5,000 and $8,000 depending on features."
+    },
+    "ar": {
+      "title": "حدد مدى سعري أوّله الرقم اللي انت عايزه",
+      "hook": "لو اديت العميل سعر ثابت هيحاول ينزل فيه، لكن لو اديته مدى (Range) بدايته الرقم المطلوب وأخره أعلى، السعر هيشوفه منطقي جداً.",
+      "key_phrase": "المشاريع اللي زي دي عادة بتتكلف من 50 ألف لـ 80 ألف جنيه حسب المميزات."
+    }
+  },
+  {
+    "id": "2026-11-21_persuasion_because-reasoning-trigger",
+    "number": 113,
+    "patch_number": 24,
+    "topic": "persuasion",
+    "level": "beginner",
+    "tags": [
+      "persuasion",
+      "influence",
+      "communication"
+    ],
+    "created_at": "2026-11-21T14:24:26.245469+00:00",
+    "file": "cards/2026/2026-11-21_auto_02.json",
+    "en": {
+      "title": "Add a 'Because' Clause to Unlock Faster Agreement",
+      "hook": "People skipped line jumpers until one word was added: 'because'. Even weak reasons boosted compliance from 60% to 93%.",
+      "key_phrase": "Could I cut in front of you, because I need to make quick copies?"
+    },
+    "ar": {
+      "title": "استخدم كلمة 'عشان' عشان تاخد موافقة أسرع",
+      "hook": "في تجربة مشهورة، نسبة الناس اللي وافقت تعدي شخص في الطابور زادت من 60% لـ 93% لما استخدم كلمة واحدة بس: 'عشان'.",
+      "key_phrase": "ممكن أعدي قدامك عشان مستعجل ومحتاج أصور أوراق بسرعة؟"
+    }
+  },
+  {
+    "id": "2026-11-21_negotiation_ackerman-bargaining-model",
+    "number": 112,
+    "patch_number": 23,
+    "topic": "negotiation",
+    "level": "advanced",
+    "tags": [
+      "negotiation",
+      "pricing",
+      "anchoring"
+    ],
+    "created_at": "2026-11-21T14:17:59.225047+00:00",
+    "file": "cards/2026/2026-11-21_auto_01.json",
+    "en": {
+      "title": "Use the Ackerman model for price offers",
+      "hook": "Former FBI negotiator Chris Voss uses a precise mathematical sequence to offer prices without breaking off talks.",
+      "key_phrase": "I can't match that, but the absolute best limit I can do is $37,850."
+    },
+    "ar": {
+      "title": "أسلوب أكيرمان للمساومة بالفلوس",
+      "hook": "مفاوض الرهائن السابق في الـ FBI بيستخدم نسب مئوية معينة عشان يفاوض في السعر من غير ما يخسر الصفقة.",
+      "key_phrase": "ماقدرش أدفع الرقم ده، آخر أرقامي الممكنة بالظبط هو 37,850 جنيه."
+    }
+  },
+  {
+    "id": "2026-11-21_money_pay-yourself-first-automation",
+    "number": 111,
+    "patch_number": 23,
+    "topic": "money",
+    "level": "beginner",
+    "tags": [
+      "money",
+      "budgeting",
+      "personal-finance"
+    ],
+    "created_at": "2026-11-21T14:17:59.225047+00:00",
+    "file": "cards/2026/2026-11-21_auto_01.json",
+    "en": {
+      "title": "Automate paying yourself first on payday",
+      "hook": "Most people save what is left after spending. Wealthy savers flip this rule: they spend what is left after saving.",
+      "key_phrase": "Automatic transfer set: Payday + 0 days."
+    },
+    "ar": {
+      "title": "ادفع لنفسك الأول يوم قبضك",
+      "hook": "معظم الناس بتحوش اللي بيتبقى بعد المصاريف.. الأذكياء بيعملوا العكس: بيصرفوا اللي بيتبقى بعد التحويش.",
+      "key_phrase": "التحويل التلقائي يشتغل أول ما المرتب ينزل."
+    }
+  },
+  {
+    "id": "2026-11-21_meetings_silent-reading-start",
+    "number": 110,
+    "patch_number": 23,
+    "topic": "meetings",
+    "level": "intermediate",
+    "tags": [
+      "meetings",
+      "productivity",
+      "time-management"
+    ],
+    "created_at": "2026-11-21T14:17:59.225047+00:00",
+    "file": "cards/2026/2026-11-21_auto_01.json",
+    "en": {
+      "title": "Start meetings with 5 minutes of silent reading",
+      "hook": "Jeff Bezos banned slide presentations at Amazon. Instead, every critical meeting starts in complete silence.",
+      "key_phrase": "Let me give everyone 5 minutes to read this quietly, then we'll jump straight to questions."
+    },
+    "ar": {
+      "title": "ابدأ اجتماعك بـ 5 دقائق قراءة صامتة",
+      "hook": "جيف بيزوس منع استخدام الباوربوينت في أوبن/أمازون.. وخلا أول ربع ساعة في كل اجتماع قراءة صامتة!",
+      "key_phrase": "هناخد 5 دقايق نقرأ الورقة دي في سرنا الأول، وبعدها ندخل في الأسئلة على طول."
+    }
+  },
+  {
+    "id": "2026-11-21_learning_explain-to-a-child",
+    "number": 109,
+    "patch_number": 23,
+    "topic": "learning",
+    "level": "beginner",
+    "tags": [
+      "learning",
+      "feynman-technique",
+      "memory"
+    ],
+    "created_at": "2026-11-21T14:17:59.225047+00:00",
+    "file": "cards/2026/2026-11-21_auto_01.json",
+    "en": {
+      "title": "Use the 10-year-old explanation rule",
+      "hook": "Physicist Richard Feynman could explain quantum mechanics to a child. If you can't explain a concept simply, you don't understand it yet.",
+      "key_phrase": "If I had to explain this without jargon, it simply means..."
+    },
+    "ar": {
+      "title": "اختبار طفل الـ 10 سنين",
+      "hook": "عالم الفيزياء فاينمان كان بيشرح الفيزيا المعقدة لأطفال. لو مش عارف تشرح فكرتك ببساطة، يبقى أنت نفسك مش فاهمها صح.",
+      "key_phrase": "لو هشرح الكلام ده بلغة بسيطة من غير كلكعة، معناه..."
+    }
+  },
+  {
+    "id": "2026-11-21_leadership_decouple-person-problem",
+    "number": 108,
+    "patch_number": 23,
+    "topic": "leadership",
+    "level": "intermediate",
+    "tags": [
+      "feedback",
+      "management",
+      "leadership"
+    ],
+    "created_at": "2026-11-21T14:17:59.225047+00:00",
+    "file": "cards/2026/2026-11-21_auto_01.json",
+    "en": {
+      "title": "Criticize the system, not the person",
+      "hook": "A star manager stopped his team from getting defensive during reviews with one simple shift: he stopped using 'you'.",
+      "key_phrase": "The process broke down at step X, how do we fix it?"
+    },
+    "ar": {
+      "title": "انقد السيستم.. مش الشخص",
+      "hook": "مدير شاطر خلّى فريقه يبطل يدافع عن نفسه في التقييم بحيلة بسيطة: بطل بطل كلمة 'أنت'.",
+      "key_phrase": "الخطوة دي في السيستم وقعت.. إزاي نظبطها؟"
+    }
+  },
+  {
     "id": "2026-11-20_leadership_intent-based-delegation",
     "number": 107,
     "patch_number": 22,

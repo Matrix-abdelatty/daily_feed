@@ -1,11 +1,86 @@
 {
-  "generated_at": "2026-11-20T15:10:32.759760+00:00",
-  "total_files": 22,
-  "total_patches": 22,
-  "total_cards": 107,
+  "generated_at": "2026-11-21T14:36:54.665538+00:00",
+  "total_files": 25,
+  "total_patches": 25,
+  "total_cards": 122,
   "batches_per_day_target": 3,
   "batch_size_target": 5,
   "files": [
+    {
+      "batch_id": "2026-11-21_auto_03",
+      "path": "cards/2026/2026-11-21_auto_03.json",
+      "date": "2026-11-21",
+      "created_at": "2026-11-21T14:29:59.279432+00:00",
+      "source": "gemini-3.5-flash",
+      "card_count": 5,
+      "card_ids": [
+        "2026-11-21_business_preorder-validation",
+        "2026-11-21_career_brag-document-habit",
+        "2026-11-21_communication_bottom-line-first",
+        "2026-11-21_decision_making_the-10-10-10-rule",
+        "2026-11-21_leadership_intent-based-delegation"
+      ],
+      "patch_number": 25,
+      "card_numbers": [
+        118,
+        119,
+        120,
+        121,
+        122
+      ],
+      "min_number": 118,
+      "max_number": 122
+    },
+    {
+      "batch_id": "2026-11-21_auto_02",
+      "path": "cards/2026/2026-11-21_auto_02.json",
+      "date": "2026-11-21",
+      "created_at": "2026-11-21T14:24:26.245469+00:00",
+      "source": "gemini-3.5-flash",
+      "card_count": 5,
+      "card_ids": [
+        "2026-11-21_persuasion_because-reasoning-trigger",
+        "2026-11-21_pricing_high-anchor-range",
+        "2026-11-21_productivity_micro-start-rule",
+        "2026-11-21_psychology_ben-franklin-favor",
+        "2026-11-21_sales_labeling-fear-objections"
+      ],
+      "patch_number": 24,
+      "card_numbers": [
+        113,
+        114,
+        115,
+        116,
+        117
+      ],
+      "min_number": 113,
+      "max_number": 117
+    },
+    {
+      "batch_id": "2026-11-21_auto_01",
+      "path": "cards/2026/2026-11-21_auto_01.json",
+      "date": "2026-11-21",
+      "created_at": "2026-11-21T14:17:59.225047+00:00",
+      "source": "gemini-3.5-flash",
+      "card_count": 5,
+      "card_ids": [
+        "2026-11-21_leadership_decouple-person-problem",
+        "2026-11-21_learning_explain-to-a-child",
+        "2026-11-21_meetings_silent-reading-start",
+        "2026-11-21_money_pay-yourself-first-automation",
+        "2026-11-21_negotiation_ackerman-bargaining-model"
+      ],
+      "patch_number": 23,
+      "card_numbers": [
+        108,
+        109,
+        110,
+        111,
+        112
+      ],
+      "min_number": 108,
+      "max_number": 112
+    },
     {
       "batch_id": "2026-11-20_auto_03",
       "path": "cards/2026/2026-11-20_auto_03.json",

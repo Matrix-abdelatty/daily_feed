@@ -1,0 +1,288 @@
+{
+  "schema_version": 1,
+  "batch_id": "2026-11-21_auto_02",
+  "created_at": "2026-11-21T14:24:26.245469+00:00",
+  "source": "gemini-3.5-flash",
+  "cards": [
+    {
+      "id": "2026-11-21_persuasion_because-reasoning-trigger",
+      "created_at": "2026-11-21T14:24:26.245469+00:00",
+      "topic": "persuasion",
+      "tags": [
+        "persuasion",
+        "influence",
+        "communication"
+      ],
+      "level": "beginner",
+      "needs_completion": false,
+      "en": {
+        "title": "Add a 'Because' Clause to Unlock Faster Agreement",
+        "hook": "People skipped line jumpers until one word was added: 'because'. Even weak reasons boosted compliance from 60% to 93%.",
+        "action": "Whenever you make a request, immediately follow it with the word 'because' and a clear reason, even if the reason seems obvious.",
+        "key_phrase": "Could I cut in front of you, because I need to make quick copies?",
+        "when": "When asking for small favors, fast-tracking approvals, or getting priority responses.",
+        "why": "The human brain uses 'because' as an automatic mental shortcut; it signals that a valid reason exists before fully auditing it.",
+        "example": "Instead of saying 'Can I get this report by 3 PM?', say: 'Can I get this report by 3 PM, because the director needs it for the 4 PM review?'",
+        "mistake": "Making raw demands without giving any rationale, expecting people to guess why it matters."
+      },
+      "ar": {
+        "title": "استخدم كلمة 'عشان' عشان تاخد موافقة أسرع",
+        "hook": "في تجربة مشهورة، نسبة الناس اللي وافقت تعدي شخص في الطابور زادت من 60% لـ 93% لما استخدم كلمة واحدة بس: 'عشان'.",
+        "action": "لما تطلب أي طلب من حد، ضيف كلمة 'عشان' وراها سبب واضح حتى لو حاسس إنه بديعي.",
+        "key_phrase": "ممكن أعدي قدامك عشان مستعجل ومحتاج أصور أوراق بسرعة؟",
+        "when": "لما تطلب خدمة صغيرة، أو عايز تخلّص ورقة بسرعة، أو محتاج رد سريع من زمايلك.",
+        "why": "مخ البني آدم بيعتبر كلمة 'عشان' شفرة سريعة بتوحي إن في سبب منطقي للطلب قبل حتى ما يفكر في التفاصيل.",
+        "example": "بدل ما تقول 'محتاج التقرير ده الساعة 3'، قول: 'محتاج التقرير الساعة 3 عشان المدير عايزه قبل اجتماع الساعة 4'.",
+        "mistake": "إنك ترمي الطلب حاف من غير أي مبرر وتستنى الناس تفهم لوحدها ليه الموضوع مهم."
+      },
+      "quiz": {
+        "type": "mcq",
+        "correct_index": 1,
+        "en": {
+          "question": "You need a colleague to review your slide deck immediately. Which request is most effective?",
+          "options": [
+            "Please review this deck right now.",
+            "Can you check these 5 slides now because I have to present them at 2 PM?",
+            "I really need your help with this presentation today.",
+            "Are you free to do me a big favor?"
+          ],
+          "explanation": "Option B uses the 'because' trigger paired with a specific deadline, activating automatic compliance."
+        },
+        "ar": {
+          "question": "محتاج زميلك يراجع معاك عرض التقديمي (presentation) حالا. أنهي طلب أقوى وأضمن؟",
+          "options": [
+            "يا ريت تبص على العرض ده حالاً.",
+            "ممكن تراجع الـ 5 شرائح دول دلوقتي عشان هعرضهم الساعة 2؟",
+            "أنا محتاج مساعدتك ضروري جداً في البريزنتيشن النهاردة.",
+            "فاضي تعمل معايا خدمة كبيرة؟"
+          ],
+          "explanation": "الإجابة الثانية بتستخدم كلمة 'عشان' مع تحديد السبب والميعاد، وده بيدي إشارة للمخ بالاستجابة الفورية."
+        }
+      }
+    },
+    {
+      "id": "2026-11-21_pricing_high-anchor-range",
+      "created_at": "2026-11-21T14:24:26.245469+00:00",
+      "topic": "pricing",
+      "tags": [
+        "pricing",
+        "negotiation",
+        "sales"
+      ],
+      "level": "intermediate",
+      "needs_completion": false,
+      "en": {
+        "title": "Quote a High-Top Range to Make Target Price Feel Safe",
+        "hook": "Give one exact price and buyers negotiate down. Give a range anchored high, and your target price feels like a reasonable middle ground.",
+        "action": "State a price bracket where the bottom end is your actual target price, framing the higher number with premium add-ons.",
+        "key_phrase": "Projects like this usually run between $5,000 and $8,000 depending on features.",
+        "when": "When answering the initial 'How much will this cost?' question before final scoping.",
+        "why": "The top number acts as a psychological anchor; standardizing the middle or lower bound makes your target price seem bargain-safe.",
+        "example": "Client: 'How much for a new website?' You: 'Full builds range from $4,000 to $7,000. Based on your basic scope, you'll sit right around $4,200.'",
+        "mistake": "Quoting your bare minimum single number right away, giving yourself zero room to negotiate."
+      },
+      "ar": {
+        "title": "حدد مدى سعري أوّله الرقم اللي انت عايزه",
+        "hook": "لو اديت العميل سعر ثابت هيحاول ينزل فيه، لكن لو اديته مدى (Range) بدايته الرقم المطلوب وأخره أعلى، السعر هيشوفه منطقي جداً.",
+        "action": "اطرح السعر على شكل مدى (من كذا لكذا)، بحيث يمثل الحد الأدنى السعر اللي انت عايزه فعلياً والحد الأقصى للخدمات الكاملة.",
+        "key_phrase": "المشاريع اللي زي دي عادة بتتكلف من 50 ألف لـ 80 ألف جنيه حسب المميزات.",
+        "when": "أول ما العميل يسألك 'الموضوع ده هيكلف كم؟' قبل ما تتفقوا على التفاصيل الأخيرة.",
+        "why": "الرقم العالي بيعمل مرساة ذهنية (Anchor)، فبيخلي السعر المطلوب يبان إنه خيار اقتصادي ومظبوط.",
+        "example": "العميل: 'الويب سايت هيكلف كام؟' انت: 'المشاريع الشاملة بتكون بين 40 و70 ألف، وحسب طلباتك البسيطة انت هتكون في حدود 42 ألف.'",
+        "mistake": "إنك تدي أقل سعر عندك كبرق خاطف من أول دقيقة، فمايبقاش عندك أي مساحة للمناورة."
+      },
+      "quiz": {
+        "type": "mcq",
+        "correct_index": 2,
+        "en": {
+          "question": "Your target fee for a project is $3,000. How should you present your initial price?",
+          "options": [
+            "My price is $3,000 flat.",
+            "I usually charge $2,500 but for you $3,000.",
+            "Projects like this range between $3,000 and $5,000 depending on scope.",
+            "Whatever your budget is, we can make $3,000 work."
+          ],
+          "explanation": "Option C sets $3,000 as the reasonable entry point of a premium scale, anchoring expectations higher."
+        },
+        "ar": {
+          "question": "انت مستهدف تاخد 30 ألف جنيه في مشروع. إيه أحسن طريقة تعرض بيها السعر في الأول؟",
+          "options": [
+            "سعري 30 ألف جنيه مقفول.",
+            "أنا باخد 25 ألف بس عشانك هخليهم 30 ألف.",
+            "المشاريع دي بتترواح بين 30 ألف و50 ألف حسب التفاصيل.",
+            "أي ميزانية عندك تمشي، بس يفضل 30 ألف."
+          ],
+          "explanation": "الإجابة الثالثة بتثبت الـ 30 ألف كبداية منطقية لنطاق أعلى، فتنقل انطباع بالقيمة العالية."
+        }
+      }
+    },
+    {
+      "id": "2026-11-21_productivity_micro-start-rule",
+      "created_at": "2026-11-21T14:24:26.245469+00:00",
+      "topic": "productivity",
+      "tags": [
+        "productivity",
+        "focus",
+        "habits"
+      ],
+      "level": "beginner",
+      "needs_completion": false,
+      "en": {
+        "title": "Beat Procrastination with the 2-Minute Entry Rule",
+        "hook": "You don't hate writing the annual budget; you hate the overwhelming friction of starting it.",
+        "action": "Commit to working on a dreaded task for strictly 120 seconds, with total permission to stop when the timer rings.",
+        "key_phrase": "I'm only going to write the outline for two minutes, then I can stop.",
+        "when": "When stalling on massive, tedious, or complex tasks you keep postponing.",
+        "why": "Starting creates momentum and triggers the Zeigarnik Effect—the brain's natural urge to finish an open task once begun.",
+        "example": "Facing 200 emails? Tell yourself: 'I will delete spam and archive 3 emails in 2 minutes.' 80% of the time, you'll keep going past 2 minutes.",
+        "mistake": "Focusing on the 5-hour total workload instead of the 2-minute entry door."
+      },
+      "ar": {
+        "title": "اكسر التسويف بقاعدة الدقيقتين",
+        "hook": "انت مش كاره تكتب التقرير الشهري، انت بس خايف من ثقل البداية ومستصعب المشوار.",
+        "action": "الزم نفسك تشتغل على أي مهمة تقيلة لمدة 120 ثانية بس، وادِ لنفسك حرية كاملة إنك تقف أول ما الوقت يخلص.",
+        "key_phrase": "أنا هفتح الفايل وأكتب العناوين لمدة دقيقتين بس، وبعدها هقفل عادي.",
+        "when": "أول ما تلاقي نفسك بتأجل شغلانة كبيرة أو مملة ورابضة على قلبك.",
+        "why": "البداية بتكسر حاجز المقاومة النفسية وتفعّل زايجارنيك إفيكت (مخك بيكره السيبان وبيحب يكمل الحجم المتساب مفتوح).",
+        "example": "قدامك 100 إيميل محتاجين رد؟ قول لنفسك: 'هرد على إيميل واحد بس في دقيقتين'. غالباً هتلاقي نفسك كملت نص ساعة شغف.",
+        "mistake": "إنك تفكر في الـ 5 ساعات بتوع الشغلانة كلها مرة واحدة فتتخنق وما تبدأش أصلاً."
+      },
+      "quiz": {
+        "type": "mcq",
+        "correct_index": 0,
+        "en": {
+          "question": "You have been avoiding writing a complex strategy document all week. What is the best immediate step?",
+          "options": [
+            "Open the doc and write just three bullet points in two minutes.",
+            "Schedule a 4-hour block tomorrow morning to finish it entirely.",
+            "Wait until you feel motivated and fully energized.",
+            "Clean your workspace to build focus before opening the document."
+          ],
+          "explanation": "Option A lowers the activation energy to zero, removing psychological dread and prompting action."
+        },
+        "ar": {
+          "question": "بقالك أسبوع بتأجل كتابة خطة عمل معقدة. إيه أفضل تصرف تعمله حالاً؟",
+          "options": [
+            "افتح الملف واكتب 3 نقاط بس في دقيقتين.",
+            "احجز 4 ساعات بكرة الصبح عشان تخلصها كلها مرعة واحدة.",
+            "استنى لما تيجيلك المود والحماس الكامل.",
+            "روق مكتبك الأول عشان تجمع تركيزك قبل ما تفتح الفايل."
+          ],
+          "explanation": "الإجابة الأولى بتقلل طاقة البداية للصفر، وبتشيل الخوف النفسي فتبدأ تحرك المركب فوراً."
+        }
+      }
+    },
+    {
+      "id": "2026-11-21_psychology_ben-franklin-favor",
+      "created_at": "2026-11-21T14:24:26.245469+00:00",
+      "topic": "psychology",
+      "tags": [
+        "psychology",
+        "rapport",
+        "relationships"
+      ],
+      "level": "intermediate",
+      "needs_completion": false,
+      "en": {
+        "title": "Ask for Small Favors to Build Instant Trust",
+        "hook": "Counter-intuitive truth: People don't like you more when you do them favors; they like you more when THEY do YOU a favor.",
+        "action": "Ask a key person or quiet client for a tiny, zero-effort favor or advice to build warmth.",
+        "key_phrase": "Could you recommend a quick tool you use for organizing your daily schedule?",
+        "when": "When joining a new team, opening conversation with a cold stakeholder, or turning a skeptic into an ally.",
+        "why": "Cognitive dissonance makes their brain justify helping you: 'I'm helping them, so I must like and trust them.'",
+        "example": "Instead of trying to impress a senior executive with compliments, ask: 'Could I borrow your pen for a quick second?' or 'Which coffee brand do you recommend?'",
+        "mistake": "Constantly giving favors and gifts trying to buy appreciation, which often creates awkwardness."
+      },
+      "ar": {
+        "title": "اطلب خدمة صغيرة عشان تكسب قُرب ومحبة القدامك",
+        "hook": "حقيقة نفسية غير متوقعة: الناس مش بتحبك أكتر لما تعملهم خدمات، الناس بتحبك أكتر لما هُما يعملولك خدمة صغيرة!",
+        "action": "اطلب من الشخص اللي عايز تقرب منه خدمة سهلة جداً ومش محتاجة مجهود، أو خذ رأيه في حاجة بسيطة.",
+        "key_phrase": "ممكن ترشحلي الأبلكيشن اللي بتنظم بيه وقتك عشان عاجبني تنظيمك؟",
+        "when": "لما تدخل فريق شغل جديد، أو عايز تكسر الجليد مع عميل قفل، أو تحول شخص محايد لصديق.",
+        "why": "المخ بيحاول يوفق بين تصرفه ومشاعره (Cognitive Dissonance): 'طالما ساعدته، يبقى أكيد الشخص ده يعز عليا واستلطفه.'",
+        "example": "بدل ما تقعد تطبل لمديرك الجديد، قول له: 'ممكن استعير القلم ده لحظة؟' أو 'إيه أحسن مكان بيعمل قهوة مظبوطة هنا؟'",
+        "mistake": "إنك تفضل تعمل خدمات وهدايا طول الوقت عشان تحبب الناس فيك، وده ساعات بيعمل نتيجة عكسية ويحرجهم."
+      },
+      "quiz": {
+        "type": "mcq",
+        "correct_index": 3,
+        "en": {
+          "question": "You want to build better rapport with a reserved senior colleague. What is the most effective psychological move?",
+          "options": [
+            "Buy them an expensive coffee every morning.",
+            "Constantly compliment their work during open meetings.",
+            "Avoid talking to them until they approach you.",
+            "Ask for their recommendation on a simple work template."
+          ],
+          "explanation": "Option D uses the Ben Franklin Effect; doing you a tiny favor causes them to perceive you more favorably."
+        },
+        "ar": {
+          "question": "عايز تبني علاقة وود أسرع مع زميل تقيل وتقويم في الشغل. إيه أنجح تصرف نفسي؟",
+          "options": [
+            "تشتري له قهوة غالية كل يوم الصبح.",
+            "تقعد تمدح في شغله قدام الناس في الاجتماعات.",
+            "تتجنب الكلام معاه لحد ما هو يكلمك الأول.",
+            "تطلب منه يرشحلك نمط (Template) بسيط لشغلانة بتعملها."
+          ],
+          "explanation": "الإجابة الأخيرة بتطبق 'تأثير بنجامين فرانكلين'، لما بيقدم لك خدمة صغيرة مخه بيفسر إنك شخص يستاهل الود."
+        }
+      }
+    },
+    {
+      "id": "2026-11-21_sales_labeling-fear-objections",
+      "created_at": "2026-11-21T14:24:26.245469+00:00",
+      "topic": "sales",
+      "tags": [
+        "sales",
+        "objections",
+        "negotiation"
+      ],
+      "level": "advanced",
+      "needs_completion": false,
+      "en": {
+        "title": "Defuse Sales Hesitation by Labeling Unsaid Fears",
+        "hook": "When prospects go quiet, pushing benefits makes you sound needy. Naming their unspoken concern disarms tension instantly.",
+        "action": "Observe their hesitation and state their suspected fear using 'It seems like...' or 'It sounds like...'",
+        "key_phrase": "It seems like you're concerned about how your team will handle the learning curve.",
+        "when": "When the prospect pauses, hesitates on price, or hesitates before signing.",
+        "why": "Brain imaging shows that labeling a negative emotion instantly reduces amygdala activity, disarming defensiveness.",
+        "example": "Prospect gets silent after proposal presentation. You: 'It feels like you're worried this setup will take too much internal effort.' Prospect: 'Honestly, yes, we're short-staffed.' Now you can address the real barrier.",
+        "mistake": "Asking aggressive direct questions like 'Why aren't you deciding right now?' which triggers fight-or-flight."
+      },
+      "ar": {
+        "title": "سمّي الخوف المستخبي عشان تكسر تردد العميل",
+        "hook": "لما العميل يسكت ويتردد، زق المميزات بيخليك تبان محتاج للبيعة. لما تصرّح بخوفه المستخبي، التوتر بيروح في ثانية.",
+        "action": "لاحظ ريبة العميل ويوصف شعوره المتردد بجملة تبدأ بـ 'شكله كده...' أو 'واضح إنك قلقان من...'",
+        "key_phrase": "شكل حضرتك قلقان من فكرة إن الفريق عندك يطول عقبال ما يتعود على السيستم الجديد؟",
+        "when": "لما العميل يسكت فجأة، أو يتردد عند السعر، أو يطول قبل ما يمضي العقد.",
+        "why": "علم النفس بيمثبت إن تسمية المشاعر السلبية بتطفي نشاط مركز الخوف في المخ (Amygdala) وتهدي الدفاعات النفسية.",
+        "example": "العميل سكت بعد ما عرف السعر. انت: 'يعني شكل حضرتك حاسس إن الاستثمار ده كبير على الميزانية الحالية؟' العميل: 'بصراحة أه.. السيولة مضغوطة.' بكدة مسكت المشكلة الحقيقية.",
+        "mistake": "إنك تهاجمه بأسئلة هجومية زي 'انت متردد ليه ما تخلص؟' فيقفل منك خالص."
+      },
+      "quiz": {
+        "type": "mcq",
+        "correct_index": 1,
+        "en": {
+          "question": "During a sales call, the client suddenly becomes cold and hesitant after reviewing timelines. What should you say?",
+          "options": [
+            "If you sign today, I can give you a 5% discount.",
+            "It seems like you're worried this launch date might disrupt your current operations.",
+            "Why are you worried? Our team works very fast.",
+            "Let me walk you through our track record again."
+          ],
+          "explanation": "Option B labels the emotion gently, letting the client validate their fear without putting them on the defensive."
+        },
+        "ar": {
+          "question": "خلال مكالمة مبيعات، العميل فجأة سكت وقفل لما اتكلمتم في مواعيد التسليم. تقوله إيه؟",
+          "options": [
+            "لو مضيت النهاردة هعملك خصم 5%.",
+            "شكل حضرتك قلقان إن ميعاد الإطلاق يكبس شغل الفريق في الوقت الحالي؟",
+            "انت خايف ليه؟ إحنا فريقنا سريع جداً.",
+            "تعالى أشرحلك تاني سابقة أعمالنا وسرعتنا."
+          ],
+          "explanation": "الإجابة الثانية بتوصف خفه المستخبي بشياكة، فبتخليه يفتح قلبه ويبوح بالمشكلة الحقيقية من غير دفاعية."
+        }
+      }
+    }
+  ]
+}

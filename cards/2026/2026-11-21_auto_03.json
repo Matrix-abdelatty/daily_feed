@@ -1,0 +1,293 @@
+{
+  "schema_version": 1,
+  "batch_id": "2026-11-21_auto_03",
+  "created_at": "2026-11-21T14:29:59.279432+00:00",
+  "source": "gemini-3.5-flash",
+  "cards": [
+    {
+      "id": "2026-11-21_business_preorder-validation",
+      "created_at": "2026-11-21T14:29:59.279432+00:00",
+      "topic": "business",
+      "tags": [
+        "validation",
+        "startups",
+        "sales",
+        "mvp"
+      ],
+      "level": "intermediate",
+      "needs_completion": false,
+      "en": {
+        "title": "Validate B2B Ideas with Paid Pre-Orders Before Building",
+        "hook": "You spent 3 months coding a product, launched it proudly, and only your cousin signed up. Sound familiar?",
+        "action": "Build a one-page landing page explaining the solution and ask for a discounted pre-order. If 10 people don't pay, kill or pivot the idea.",
+        "key_phrase": "We are launching in 30 days. Pre-order now at 50% off to lock in your spot.",
+        "when": "Before spending time or money building a new service, app, or physical product.",
+        "why": "Verbal praise is free, but upfront payment is the only honest signal of real market demand.",
+        "example": "Founder: 'Would you pay $50/mo for an automated invoice tool?' Client: 'Absolutely!' Founder: 'Great, here is the pre-order link for month one at $25.' If the client hesitates, the demand isn't real.",
+        "mistake": "Building a complete product based on friends saying 'that sounds like a cool idea'."
+      },
+      "ar": {
+        "title": "اختبر فكرة مشروعاتك بالدفع المسبق قبل ما تبني",
+        "hook": "قضيت 3 شهور بتكتب كود لبرنامج جديد، ونزلته ومحدش اشتراه غير ابن عمك؟ الموقف ده بيتكرر كتير.",
+        "action": "اعمل صفحة هبوط بسيطة بتشرح حل المشكلة واطلب حجز مسبق بخصم. لو ما فيش 10 اشتروا، اقفل الفكرة أو غيرها.",
+        "key_phrase": "إحنا بنفتح الحجز المسبق لـ 30 يوم، احجز مكانك بخصم 50% دلوقتي.",
+        "when": "قبل ما تكتب كود واحد أو تصرف جنيه في منتج أو خدمة جديدة.",
+        "why": "الفلوس هي الإثبات الحقيقي الوحيد للإقبال؛ الكلام البلاش مابيكلفش حد حاجة.",
+        "example": "المؤسس: 'تدفع 1000 جنيه في برنامج يخلص لك الفواتير؟' العميل: 'جداً!' المؤسس: 'تمام، ده لينك الحجز بـ 500 جنيه.' لو العميل اتردد، يبقى الفكرة مش مطلوبة بجد.",
+        "mistake": "إنك تبني المنتج كاملاً عشان صحابك قالولك 'والله فكرة جامدة'."
+      },
+      "quiz": {
+        "type": "mcq",
+        "correct_index": 1,
+        "en": {
+          "question": "You have an idea for a software tool. 20 potential clients said they 'love the concept' on social media. What is your best next step?",
+          "options": [
+            "Hire developers immediately to build the full application.",
+            "Ask those 20 people to pre-order at a discount to confirm intent.",
+            "Send them a 15-question feedback survey to gather features.",
+            "Quit your job to work on the product full-time."
+          ],
+          "explanation": "Compliments are free. Asking for money via pre-orders tests real intent before investing resources."
+        },
+        "ar": {
+          "question": "عندك فكرة برنامج و20 عميل محتمل قالوا لك على السوشيال ميديا 'الفكرة عاجبانا جداً'. إيه أفضل خطوة تعملها دلوقتي؟",
+          "options": [
+            "تعين مبرمجين فوراً عشان يبنوا البرنامج كامل.",
+            "تطلب من الـ 20 دول يحجزوا مسبقاً بخصم عشان تتأكد من جدتيهم.",
+            "تبعث لهم استبيان من 15 سؤال عشان تعرف الميزات المطلوبة.",
+            "تسيب شغلك وتتفرغ للمشروع تماماً."
+          ],
+          "explanation": "الكلام والإعجاب بلاش. طلب فلوس الحجز المسبق هو الاختيار الحقيقي لجدية الطلب قبل ما تصرف وقتك وفلوسك."
+        }
+      }
+    },
+    {
+      "id": "2026-11-21_career_brag-document-habit",
+      "created_at": "2026-11-21T14:29:59.279432+00:00",
+      "topic": "career",
+      "tags": [
+        "career-growth",
+        "performance-review",
+        "productivity",
+        "visibility"
+      ],
+      "level": "beginner",
+      "needs_completion": false,
+      "en": {
+        "title": "Keep a Weekly Brag Document for Performance Reviews",
+        "hook": "Review season arrives and you suddenly blank on everything you achieved in March, leaving your raise to chance.",
+        "action": "Spend 3 minutes every Friday logging concrete wins, solved problems, and metrics in a private document.",
+        "key_phrase": "Here is a summary of key deliverables and impact metrics I completed this quarter.",
+        "when": "During your weekly wrap-up routine every Friday afternoon.",
+        "why": "Managers experience recency bias and forget 90% of your daily impact over a 6-month period.",
+        "example": "Instead of writing 'worked on server maintenance', record: 'In Q2, reduced API latency by 40%, saving $2,000/month in cloud infrastructure.'",
+        "mistake": "Relying on memory or assuming your manager notices every quiet victory."
+      },
+      "ar": {
+        "title": "اعمل ملف إنجازات أسبوعي لتقييم الشغل",
+        "hook": "ييجي وقت التقييم السنوي ومبتكونش فاكر عملت إيه في مارس، فمديرك يديك تقييم 'عادي جداً'.",
+        "action": "خصص 3 دقائق كل يوم جمعة وسجل في ملف خاص إنجازاتك والمشاكل اللي حليتها والأرقام اللي حققتها.",
+        "key_phrase": "دي قائمة بالإنجازات والأرقام اللي حققتها النصف ده من السنة.",
+        "when": "كل يوم جمعة قبل ما تقفل لاب توب الشغل.",
+        "why": "المديرين بينسوا 90% من مجهودك اليومي وبيفتكروا بس آخر كام أسبوع بسبب مشاغلهم.",
+        "example": "بدل ما تقول في التقييم 'اشتغلت على السيرفرات'، هتقول: 'في الكوارتر الثاني قللت وقت التحميل 40% ووفرت 20 ألف جنيه شهرياً'.",
+        "mistake": "الاعتماد على الذاكرة أو إنك تراهن إن مديرك واخد باله من كل حاجة بتعملها."
+      },
+      "quiz": {
+        "type": "mcq",
+        "correct_index": 2,
+        "en": {
+          "question": "Your annual appraisal is in two weeks. How should you prepare your accomplishment summary?",
+          "options": [
+            "Write a long narrative about how hard you worked throughout the year.",
+            "Ask colleagues to email your manager testifying to your good work ethic.",
+            "Present a metric-backed list of outcomes logged week-by-week over the year.",
+            "Wait for your manager to present their feedback first before saying anything."
+          ],
+          "explanation": "Logging tangible outcomes weekly gives you an undeniable, metric-backed list that counters memory bias."
+        },
+        "ar": {
+          "question": "تقييمك السنوي كمان أسبوعين. إيه أفضل طريقة تجهز بيها ملخص إنجازاتك؟",
+          "options": [
+            "تكتب موضوع تعبير طويل عن قد إيه تعبت وطحنت نفسك طول السنة.",
+            "تطلب من زمايلك يبعتوا إيميل لمديرك يشهدوا فيه بكفاءتك وحسن أخلاقك.",
+            "تقدم قائمة موثقة بالأرقام والنتائج اللي سجلتها أسبوع بأسبوع طول السنة.",
+            "تستنى مديرك هو اللي يقول رأيه الأول وبعدين تبتدى تتكلم."
+          ],
+          "explanation": "تسجيل النتائج بالأرقام أسبوعياً بيديك حجة قوية ومستندات واضحة تمنع نسيان مجهودك."
+        }
+      }
+    },
+    {
+      "id": "2026-11-21_communication_bottom-line-first",
+      "created_at": "2026-11-21T14:29:59.279432+00:00",
+      "topic": "communication",
+      "tags": [
+        "email",
+        "executive-communication",
+        "clarity",
+        "writing"
+      ],
+      "level": "beginner",
+      "needs_completion": false,
+      "en": {
+        "title": "Put Your Recommendation in the First Line of Work Emails",
+        "hook": "Busy executives skim past background context. If your request is buried in paragraph three, it won't get read.",
+        "action": "Start updates or proposals with the core recommendation or request in line one, followed by bulleted evidence.",
+        "key_phrase": "Recommendation: We should switch to Vendor B to cut software costs by 15%.",
+        "when": "Writing status reports, requests, or business proposals to leadership.",
+        "why": "Decision-makers look for actionable conclusions before deciding whether to spend attention reading context.",
+        "example": "Hi Sarah. Recommendation: Approve $1,500 budget for Tool X. Reason: Cuts monthly report assembly time from 8 hours to 30 minutes. Details below.",
+        "mistake": "Writing workplace emails like a mystery novel where the point is revealed at the end."
+      },
+      "ar": {
+        "title": "حط الخلاصة والقرار في أول سطر في إيميلاتك",
+        "hook": "مديرك بيجيله 100 إيميل في اليوم. لو إيميلك بدأ بحكاية طويلة، هيسيبه ويقراه 'بعدين' ومش هيقراه أبداً.",
+        "action": "ابدأ أي إيميل بالقرار أو الاقتراح بتاعك في أول سطر، وبعدها اكتب التفاصيل في نقط سريعة.",
+        "key_phrase": "الاقتراح: بنوصي بالتعاقد مع الشركة 'ب' عشان نوفر 15% من الميزانية.",
+        "when": "لما تبعت تحديث شغل أو اقتراح لمديرك أو الإدارة العليا.",
+        "why": "اللي بياخد قرار عايز يعرف الخلاصة الأولى قبل ما يستهلك طاقته في قراءة التفاصيل.",
+        "example": "صباح الخير يا فندم، الاقتراح: موافقة على ميزانية 5000 للبرنامج ده. السبب: هيوفر 10 ساعات شغل أسبوعياً. التفاصيل تحت.",
+        "mistake": "كتابة الإيميل زي الرواية الممتعة اللي بنعرف سرها في آخر صفحة."
+      },
+      "quiz": {
+        "type": "mcq",
+        "correct_index": 0,
+        "en": {
+          "question": "You need approval for a software upgrade from a busy director. How should you open your email?",
+          "options": [
+            "'Action Required: Approve $500 software upgrade to reduce downtime by 20%.'",
+            "'I hope this email finds you well. I wanted to give you a quick background on our server issues...'",
+            "'Here is a 5-page analysis of our software operational performance this past quarter.'",
+            "'Do you have 30 minutes to hop on a call so I can explain a potential software purchase?'"
+          ],
+          "explanation": "Putting the explicit action request and core outcome in the first line respects the reader's time and drives fast action."
+        },
+        "ar": {
+          "question": "محتاج موافقة على شراء برنامج جديد من مدير مشغول جداً. تفتح إيميلك بإيه؟",
+          "options": [
+            "'مطلوب اتخاذ قرار: موافقة على ميزانية 5000 للبرنامج ده لتقليل الأعطال بنسبة 20%.'",
+            "'أتمنى تكون بخير. حابب أدي حضرتك فكرة عن تاريخ مشاكل السيرفرات عندنا...'",
+            "'مرفق تقرير من 5 صفحات بيشرح أداء البرامج عندنا في الكوارتر اللي فات.'",
+            "'فاضي 30 دقيقة نعمل كول أشرح لك فيها فكرة شراء برنامج جديد؟'"
+          ],
+          "explanation": "عرض طلب القرار والنتيجة المتوقعة في أول سطر بيوفر وقت المدير وبايساعده ياخد قرار سريع."
+        }
+      }
+    },
+    {
+      "id": "2026-11-21_decision_making_the-10-10-10-rule",
+      "created_at": "2026-11-21T14:29:59.279432+00:00",
+      "topic": "decision_making",
+      "tags": [
+        "emotional-control",
+        "strategy",
+        "perspective",
+        "problem-solving"
+      ],
+      "level": "beginner",
+      "needs_completion": false,
+      "en": {
+        "title": "Evaluate Stressful Choices using the 10-10-10 Rule",
+        "hook": "You are agonizing over a uncomfortable conversation, paralyzed by short-term anxiety and fear.",
+        "action": "Evaluate how you will feel about the choice in 10 minutes, 10 months, and 10 years.",
+        "key_phrase": "How will I feel about this decision 10 months from now?",
+        "when": "Faced with an uncomfortable decision dominated by fear, awkwardness, or conflict.",
+        "why": "It breaks immediate emotional reactivity by shifting your brain into long-term strategic reflection.",
+        "example": "Firing an abusive high-paying client feels terrifying right now (10 minutes), brings relief and better revenue (10 months), and won't matter at all (10 years).",
+        "mistake": "Letting immediate emotional awkwardness hijack strategic long-term decisions."
+      },
+      "ar": {
+        "title": "خد قراراتك الصعبة بأسلوب 10-10-10",
+        "hook": "محتار ومش عارف تنهي التعامل مع عميل متعب ولا تستحمل وتكمل، ويومك كله بيضيع في التفكير؟",
+        "action": "اسأل نفسك قبل القرار: هحس بإيه بعد 10 دقائق؟ و10 شهور؟ و10 سنين؟",
+        "key_phrase": "يا ترى هشوف القرار ده إزاي بعد 10 شهور من دلوقتي؟",
+        "when": "لما تكون قدام قرار صعب ومشاعرك متلخبطة ومسبب لك استريس.",
+        "why": "التفكير ده بيبعدك عن الخوف اللحظي وبيديك نظرة مستقبلية أهدى وأوضح.",
+        "example": "فسخ العقد مع عميل بيقصر عليك يخوف دلوقتي (10 دقائق)، بس هيريحك ويفضي مكان لعميل أفضل (10 شهور)، ومش هتفتكره أصلاً (10 سنين).",
+        "mistake": "إنك تسيب الخوف والقلق بتاع اللحظة دي هو اللي يسيطر على قراراتك الاستراتيجية."
+      },
+      "quiz": {
+        "type": "mcq",
+        "correct_index": 3,
+        "en": {
+          "question": "You need to confront a team member about missing critical deadlines, but you hate confrontation. What thinking frame helps?",
+          "options": [
+            "Delay the talk until next month hoping their performance improves on its own.",
+            "Ask HR to send them an anonymous warning letter to avoid awkwardness.",
+            "Focus strictly on how uncomfortable you will feel during the meeting.",
+            "Consider that while awkward now (10 mins), holding the talk protects project output (10 months)."
+          ],
+          "explanation": "Looking 10 months out highlights the severe cost of staying silent, rendering 10 minutes of awkwardness trivial."
+        },
+        "ar": {
+          "question": "محتاج تواجه موظف معاك بيتأخر في مواعيد التسليم، بس أنت بتكره المواجهة. تفكر إزاي بأسلوب صح؟",
+          "options": [
+            "تأجل الكلام للشهر الجاي على أمل أداؤه يتحسن لوحده.",
+            "تطلب من الـ HR يبعتوله إنذار من غير اسمك عشان تتجنب الأحراج.",
+            "تركز تماماً على مدى الضيق والإحراج اللي بتحسه أثناء المكالمة.",
+            "تفتكر إن المقابلة لو مريضة دلوقتي (10 دقائق)، هي هتحمي المشروع والأداء (10 شهور)."
+          ],
+          "explanation": "التفكير في المدى البعيد (10 شهور) بيبين إن السكوت خسارته أكبر بكثير من إحراج 10 دقائق."
+        }
+      }
+    },
+    {
+      "id": "2026-11-21_leadership_intent-based-delegation",
+      "created_at": "2026-11-21T14:29:59.279432+00:00",
+      "topic": "leadership",
+      "tags": [
+        "delegation",
+        "autonomy",
+        "management",
+        "team-building"
+      ],
+      "level": "intermediate",
+      "needs_completion": false,
+      "en": {
+        "title": "Shift from Giving Orders to Requiring Statements of Intent",
+        "hook": "Your team keeps asking 'What should I do next?', turning you into a micro-managing bottleneck.",
+        "action": "Require team members to state what they intend to do instead of asking for instructions.",
+        "key_phrase": "I intend to [Action X] because [Reason Y]. Do you agree?",
+        "when": "A direct report approaches you with a problem seeking permission or step-by-step guidance.",
+        "why": "It forces employees to move from passive order-takers to active problem-solvers while maintaining oversight.",
+        "example": "Employee: 'I intend to deploy the update at 6 PM because traffic drops by 80% then.' Manager: 'Approved, go ahead.'",
+        "mistake": "Handing out ready-made instructions every time a report brings you a operational issue."
+      },
+      "ar": {
+        "title": "غير أسلوب الإدارة من أخذ الأوامر إلى تقديم النية",
+        "hook": "تيم الشغل بتاعك كل شوية يسألك 'نعمل إيه دلوقتي؟' وبقيت أنت العطلة الرئيسية لكل صغيرة وكبيرة؟",
+        "action": "اطلب من موظفينك يقدموا 'نيتهم للحل' بدل ما يسألوك تعملوا إيه.",
+        "key_phrase": "أنا ناوي أعمل [الخطوة كذا] عشان [السبب كذا].. هل عندك اعتراض؟",
+        "when": "لما يجيلك موظف بمشكلة ويستنى منك تديه تعليمات بالتفصيل.",
+        "why": "الأسلوب ده بينقل المسؤولية للموظف وبيخليه يفكر في الحل بدل ما يستنى أوامر.",
+        "example": "الموظف: 'أنا ناوي أنزل التحديث الساعة 6 المغرب لأن الضغط بيقل وقتها 80%'.. المدير: 'تمام اعتمد'.",
+        "mistake": "إنك تدي خطوات وتفاصيل لكل مشكلة تجيلك بدل ما تخليهم يفكروا في الحل."
+      },
+      "quiz": {
+        "type": "mcq",
+        "correct_index": 1,
+        "en": {
+          "question": "A team member comes to you saying, 'The client database is slow today. What should I do?' How do you respond?",
+          "options": [
+            "Give them a 4-step technical procedure to optimize the database immediately.",
+            "Ask: 'What do you intend to do to fix it, and why?'",
+            "Take over their computer and fix the issue yourself to save time.",
+            "Tell them to figure it out on their own and not bother you with small issues."
+          ],
+          "explanation": "Asking what they intend to do trains them to analyze problems and bring proposed solutions instead of relying on you."
+        },
+        "ar": {
+          "question": "حد من التيم جالك وقال لك: 'قاعدة البيانات بطيئة النهاردة، نعمل إيه؟'. ترد تقول إيه؟",
+          "options": [
+            "تديه 4 خطوات تقنية يعملها فك السيرفر عشان يحل المشكلة فوراً.",
+            "تسأله: 'إيه اللي أنت ناوي تعمله عشان تحل المشكلة، وليه؟'",
+            "تاخد منه الجهاز وتحل المشكلة بنفسك عشان توفر وقت.",
+            "تقوله اتصرف مع نفسك وماترجعليش في الحاجات الصغيرة دي تاني."
+          ],
+          "explanation": "سؤال الموظف عن نيتطه للحل بيدربه يحلل المشاكل ويقدم اقتراحات جاهزة بدل ما يستنى أوامر."
+        }
+      }
+    }
+  ]
+}
