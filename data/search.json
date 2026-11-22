@@ -1,5 +1,367 @@
 [
   {
+    "id": "2026-11-22_leadership_praise-in-public-critique-in-private",
+    "number": 137,
+    "patch_number": 28,
+    "topic": "leadership",
+    "level": "beginner",
+    "tags": [
+      "feedback",
+      "management",
+      "psychological-safety"
+    ],
+    "created_at": "2026-11-22T14:35:43.759708+00:00",
+    "file": "cards/2026/2026-11-22_auto_03.json",
+    "en": {
+      "title": "Praise Specifics Publicly, Correct Systems Privately",
+      "hook": "A lead criticized an employee's mistake in a group Slack channel. Within a month, the entire team stopped taking any initiative.",
+      "key_phrase": "Let's hop on a 5-minute call to review the steps in this task together."
+    },
+    "ar": {
+      "title": "امدح قدام الناس ووجه اللوم بينك وبين الفرد",
+      "hook": "مدير انتقد غلطة موظف في جروب الشركة قدام 50 واحد.. في خلال شهر التيم كله بطل ياخد أي مبادرة أو يفكر خارج الصندوق!",
+      "key_phrase": "تعال ناخد 5 دقائق في مكالمة جانبية نراجع خطوات الملف ده سوا."
+    }
+  },
+  {
+    "id": "2026-11-22_decision_making_10-10-10-rule",
+    "number": 136,
+    "patch_number": 28,
+    "topic": "decision_making",
+    "level": "beginner",
+    "tags": [
+      "mental-models",
+      "clarity",
+      "stress-management"
+    ],
+    "created_at": "2026-11-22T14:35:43.759708+00:00",
+    "file": "cards/2026/2026-11-22_auto_03.json",
+    "en": {
+      "title": "Test Hard Decisions with the 10/10/10 Rule",
+      "hook": "Terrified of sending a tough email or renegotiating terms? Your brain exaggerates immediate fear while ignoring long-term outcomes.",
+      "key_phrase": "Will this short-term discomfort matter to me 10 months from now?"
+    },
+    "ar": {
+      "title": "خد القرارات الصعبة بـ قاعدة 10/10/10",
+      "hook": "خايف تطلب زيادة أو تفتح موضوع حساس؟ مخك بيضخم الخوف بتاع اللحظة دي وبيحميك من خطوة هتفيدك على المدى البعيد!",
+      "key_phrase": "هل الإحراج بتاع دلوك ده هيفضل فارق معايا كمان 10 شهور؟"
+    }
+  },
+  {
+    "id": "2026-11-22_communication_tactical-labeling",
+    "number": 135,
+    "patch_number": 28,
+    "topic": "communication",
+    "level": "intermediate",
+    "tags": [
+      "conflict-resolution",
+      "psychology",
+      "de-escalation"
+    ],
+    "created_at": "2026-11-22T14:35:43.759708+00:00",
+    "file": "cards/2026/2026-11-22_auto_03.json",
+    "en": {
+      "title": "De-escalate Anger by Labeling Their Emotion",
+      "hook": "An angry client was yelling about a missed deadline. Defending the schedule made him furious. A four-word label made him completely reset.",
+      "key_phrase": "It sounds like you feel completely frustrated that this delay put your launch at risk."
+    },
+    "ar": {
+      "title": "امتص غضب اللي قدامك بأنك تسمي إحساسه",
+      "hook": "عميل بيصرخ عشان التأخير، كل ما تدافع عن نفسك بيولع أكتر! جملة واحدة تسمي فيها شعوره خلته يسكت ويهدى فوراً.",
+      "key_phrase": "يبدو إنك حاسس بقمة الإحباط عشان التأخير ده أثر على مواعيد شغلك."
+    }
+  },
+  {
+    "id": "2026-11-22_career_brag-document-habit",
+    "number": 134,
+    "patch_number": 28,
+    "topic": "career",
+    "level": "beginner",
+    "tags": [
+      "career-growth",
+      "productivity",
+      "promotions"
+    ],
+    "created_at": "2026-11-22T14:35:43.759708+00:00",
+    "file": "cards/2026/2026-11-22_auto_03.json",
+    "en": {
+      "title": "Keep a 2-Minute Weekly Brag Document",
+      "hook": "At annual review time, Omar forgot 90% of his wins. His quiet teammate got the promotion simply because she kept a running record.",
+      "key_phrase": "Here is the summary of key deliverables and business impacts I recorded this quarter."
+    },
+    "ar": {
+      "title": "اعمل ملف إنجازات أسبوعي في دقيقتين",
+      "hook": "وقت التقييم السنوي، عمر نسي 90% من اللي عمله طول السنة.. زميلته الهادية أخدت الترقية لمجرد إنها كانت بتكتب كل حاجة بأرقام!",
+      "key_phrase": "دي قائمة ملخصة بالإنجازات والأرقام اللي حققتها خلال الربع ده."
+    }
+  },
+  {
+    "id": "2026-11-22_business_value-based-anchor",
+    "number": 133,
+    "patch_number": 28,
+    "topic": "business",
+    "level": "intermediate",
+    "tags": [
+      "pricing",
+      "sales",
+      "business-strategy"
+    ],
+    "created_at": "2026-11-22T14:35:43.759708+00:00",
+    "file": "cards/2026/2026-11-22_auto_03.json",
+    "en": {
+      "title": "Lead with the Cost of the Problem, Not Your Price",
+      "hook": "A designer pitched a $10k revamp and was rejected immediately. When she reframed the client's $100k sales leak first, the price felt tiny.",
+      "key_phrase": "Before we talk investment, how much revenue are you losing every month this stays broken?"
+    },
+    "ar": {
+      "title": "إحسب تكلفة المشكلة الأول قبل ما تقول سعرك",
+      "hook": "مصممة عرضت شغل بـ 10 آلاف دولار والعميل رفض فوراً.. لما فرجته الأول إنه بيخسر 100 ألف بسبب المشكلة، سعرك بقى بالنسبة له فكة!",
+      "key_phrase": "قبل ما نتكلم في التكلفة، هو العطل ده بيخسرك كام تقريباً كل شهر؟"
+    }
+  },
+  {
+    "id": "2026-11-22_sales_3sec_pause",
+    "number": 132,
+    "patch_number": 27,
+    "topic": "sales",
+    "level": "intermediate",
+    "tags": [
+      "closing",
+      "pitch",
+      "bodylanguage"
+    ],
+    "created_at": "2026-11-22T14:16:04.042827+00:00",
+    "file": "cards/2026/2026-11-22_auto_02.json",
+    "en": {
+      "title": "Use a 3‑second pause after your key benefit",
+      "hook": "Most salespeople rush to fill the silence after a pitch – that’s the biggest missed cue.",
+      "key_phrase": ""
+    },
+    "ar": {
+      "title": "قَف ٣ ثواني بعد الفايدة الرئيسية",
+      "hook": "أغلب البياعين بيدخلوا كلام فوراً بعد العرض – دي أكبر غلطة ممكن تعملها.",
+      "key_phrase": ""
+    }
+  },
+  {
+    "id": "2026-11-22_psychology_defuse_tension",
+    "number": 131,
+    "patch_number": 27,
+    "topic": "psychology",
+    "level": "intermediate",
+    "tags": [
+      "empathy",
+      "conflict",
+      "communication"
+    ],
+    "created_at": "2026-11-22T14:16:04.042827+00:00",
+    "file": "cards/2026/2026-11-22_auto_02.json",
+    "en": {
+      "title": "Name the feeling to defuse tension",
+      "hook": "Ever felt a meeting freeze the instant someone snaps? One sentence can melt the ice.",
+      "key_phrase": "It sounds like you’re feeling frustrated."
+    },
+    "ar": {
+      "title": "قل الإحساس لتخفيف التوتر",
+      "hook": "حسيت إن الاجتماع بقى ساكت أول ما حد يزعل؟ كلمة واحدة ممكن تسيب الجو يذوب.",
+      "key_phrase": "أشكالك كأنك متضايق."
+    }
+  },
+  {
+    "id": "2026-11-22_productivity_two_minute_rule",
+    "number": 130,
+    "patch_number": 27,
+    "topic": "productivity",
+    "level": "beginner",
+    "tags": [
+      "time",
+      "habits"
+    ],
+    "created_at": "2026-11-22T14:16:04.042827+00:00",
+    "file": "cards/2026/2026-11-22_auto_02.json",
+    "en": {
+      "title": "Beat procrastination in 2 minutes",
+      "hook": "I used to scroll for hours. Now any task ≤2 min I smash instantly – and my list shrinks fast.",
+      "key_phrase": ""
+    },
+    "ar": {
+      "title": "اهزم التسويف في دقيقتين",
+      "hook": "كنت بقعد أعمل سكرول لساعات، دلوقتي أي مهمة ≤2 دقيقة بخلصها فوراً والقائمة بتقل بسرعة.",
+      "key_phrase": ""
+    }
+  },
+  {
+    "id": "2026-11-22_pricing_anchor_drop",
+    "number": 129,
+    "patch_number": 27,
+    "topic": "pricing",
+    "level": "intermediate",
+    "tags": [
+      "negotiation",
+      "anchor"
+    ],
+    "created_at": "2026-11-22T14:16:04.042827+00:00",
+    "file": "cards/2026/2026-11-22_auto_02.json",
+    "en": {
+      "title": "Start high, then drop",
+      "hook": "I quoted $5k, then $2k and the client said ‘Deal!’ – the power of an anchor.",
+      "key_phrase": "Our premium package is $5,000"
+    },
+    "ar": {
+      "title": "ابدأ بسعر عالي وبعدين انزل",
+      "hook": "قلت للعميل 5 آلاف، وبعدها 2 ألف، وقال ‘اتفاق!’ – ده سحر الـanchor.",
+      "key_phrase": "الباقة المميزة بتاعتنا بـ5,000 جنيه"
+    }
+  },
+  {
+    "id": "2026-11-22_learning_teach_back",
+    "number": 128,
+    "patch_number": 27,
+    "topic": "learning",
+    "level": "beginner",
+    "tags": [
+      "memory",
+      "study"
+    ],
+    "created_at": "2026-11-22T14:16:04.042827+00:00",
+    "file": "cards/2026/2026-11-22_auto_02.json",
+    "en": {
+      "title": "Teach to lock it in",
+      "hook": "Ever read a chapter and forget it by dinner? I fixed it with a 2‑minute teach‑back.",
+      "key_phrase": ""
+    },
+    "ar": {
+      "title": "علّّم عشان تثبت المعلومة",
+      "hook": "قريت فصل ونسيته قبل العشا؟ أنا حليتها بـ2 دقيقة بشرح للطفل الصغير.",
+      "key_phrase": ""
+    }
+  },
+  {
+    "id": "2026-11-22_persuasion_power-of-because",
+    "number": 127,
+    "patch_number": 26,
+    "topic": "persuasion",
+    "level": "intermediate",
+    "tags": [
+      "persuasion",
+      "psychology",
+      "communication",
+      "influence"
+    ],
+    "created_at": "2026-11-22T14:08:29.803073+00:00",
+    "file": "cards/2026/2026-11-22_auto_01.json",
+    "en": {
+      "title": "Double Your Request Compliance with 'Because'",
+      "hook": "You ask a coworker for a small favor, but they hesitate or give you a quick 'I'm busy.'",
+      "key_phrase": "...because I need to wrap this up before the 3 PM sync."
+    },
+    "ar": {
+      "title": "ضاعف موافقة الناس على طلباتك بكلمة عشان",
+      "hook": "بتطلب خدمة صغيرة من زميلك في الشغل، تلاقيه متردد أو يقولك 'أنا مشغول والله يا صاحبي'.",
+      "key_phrase": "...عشان محتاج أخلص الملف ده قبل اجتماع الساعة ٣."
+    }
+  },
+  {
+    "id": "2026-11-22_negotiation_accusation-audit",
+    "number": 126,
+    "patch_number": 26,
+    "topic": "negotiation",
+    "level": "advanced",
+    "tags": [
+      "negotiation",
+      "persuasion",
+      "communication",
+      "sales"
+    ],
+    "created_at": "2026-11-22T14:08:29.803073+00:00",
+    "file": "cards/2026/2026-11-22_auto_01.json",
+    "en": {
+      "title": "Defuse Pushback with an Accusation Audit",
+      "hook": "You need a project deadline extension, and you know your boss will think you are disorganized.",
+      "key_phrase": "You're probably going to think I'm completely disorganized for bringing this up..."
+    },
+    "ar": {
+      "title": "امتص الغضب المسبق بأسلوب مراجعة الاتهامات",
+      "hook": "رايح تطلب من مديرك تمديد ميعاد التسليم، وعارف كويّس إنه هيشوفك مهمل وما بتعرفش تنظم وقتك.",
+      "key_phrase": "غالباً حضرتك هتشوفني ما بعرفش أنظم وقتي إني بفتح الموضوع ده دلوقتي..."
+    }
+  },
+  {
+    "id": "2026-11-22_money_48-hour-pause",
+    "number": 125,
+    "patch_number": 26,
+    "topic": "money",
+    "level": "beginner",
+    "tags": [
+      "money",
+      "budgeting",
+      "personal-finance",
+      "impulse-buying"
+    ],
+    "created_at": "2026-11-22T14:08:29.803073+00:00",
+    "file": "cards/2026/2026-11-22_auto_01.json",
+    "en": {
+      "title": "Stop Impulse Purchases with the 48-Hour Rule",
+      "hook": "You see an item online, feel an rush of excitement, and hit buy—only to regret it when the package arrives.",
+      "key_phrase": "I will leave this in the cart and recheck on Friday."
+    },
+    "ar": {
+      "title": "وقف الشراء الاندفاعي بقاعدة الـ ٤٨ ساعة",
+      "hook": "شفت حتة لبس أونلاين، ضفتها للسلة، حسيت بالحماس واشتريت.. وبعد ما الدليفري وصل حسيت إن الموقف ملوش لازمة!",
+      "key_phrase": "هسيب الحاجة دي في السلة وهراجع نفسي يوم الجمعة."
+    }
+  },
+  {
+    "id": "2026-11-22_meetings_specify-decision-goal",
+    "number": 124,
+    "patch_number": 26,
+    "topic": "meetings",
+    "level": "intermediate",
+    "tags": [
+      "meetings",
+      "productivity",
+      "time-management",
+      "leadership"
+    ],
+    "created_at": "2026-11-22T14:08:29.803073+00:00",
+    "file": "cards/2026/2026-11-22_auto_01.json",
+    "en": {
+      "title": "State the Single Goal in Minute One",
+      "hook": "Halfway through a meeting, everyone is talking, but nobody knows if you are there to decide or just brainstorm.",
+      "key_phrase": "By the end of this 30 minutes, our goal is to pick option A or B."
+    },
+    "ar": {
+      "title": "حدد هدف الاجتماع في أول دقيقة",
+      "hook": "عدى ٢٠ دقيقة من الاجتماع والناس كلها بتتكلم، بس محدش عارف إحنا بنتاخد قرار ولا بنقرر ميزانية!",
+      "key_phrase": "عقبال ما الـ ٣٠ دقيقة دول يخلصوا، محتاجين نختار بين القرار أ ولا ب."
+    }
+  },
+  {
+    "id": "2026-11-22_learning_explain-to-a-child",
+    "number": 123,
+    "patch_number": 26,
+    "topic": "learning",
+    "level": "beginner",
+    "tags": [
+      "learning",
+      "study-hacks",
+      "memory",
+      "feynman-technique"
+    ],
+    "created_at": "2026-11-22T14:08:29.803073+00:00",
+    "file": "cards/2026/2026-11-22_auto_01.json",
+    "en": {
+      "title": "Test Your Understanding by Explaining It Simply",
+      "hook": "You spent 3 hours reading a report, but when someone asks for the summary, your mind goes blank.",
+      "key_phrase": "How would I explain this concept to a 10-year-old using simple words?"
+    },
+    "ar": {
+      "title": "اختبر فهمك للموضوع عن طريق الشرح البسيط",
+      "hook": "قعدت تقرأ في تقرير ٣ ساعات، وأول ما حد سألك الملخص إيه لقيت مخك قفل وما جمعتش حاجة.",
+      "key_phrase": "أنا لو بشرح الكلام ده لطفل في ٥ ابتدائي هقوله إزاي؟"
+    }
+  },
+  {
     "id": "2026-11-21_leadership_intent-based-delegation",
     "number": 122,
     "patch_number": 25,

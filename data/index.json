@@ -1,11 +1,86 @@
 {
-  "generated_at": "2026-11-21T14:36:54.665538+00:00",
-  "total_files": 25,
-  "total_patches": 25,
-  "total_cards": 122,
+  "generated_at": "2026-11-22T14:42:51.680038+00:00",
+  "total_files": 28,
+  "total_patches": 28,
+  "total_cards": 137,
   "batches_per_day_target": 3,
   "batch_size_target": 5,
   "files": [
+    {
+      "batch_id": "2026-11-22_auto_03",
+      "path": "cards/2026/2026-11-22_auto_03.json",
+      "date": "2026-11-22",
+      "created_at": "2026-11-22T14:35:43.759708+00:00",
+      "source": "gemini-3.5-flash",
+      "card_count": 5,
+      "card_ids": [
+        "2026-11-22_business_value-based-anchor",
+        "2026-11-22_career_brag-document-habit",
+        "2026-11-22_communication_tactical-labeling",
+        "2026-11-22_decision_making_10-10-10-rule",
+        "2026-11-22_leadership_praise-in-public-critique-in-private"
+      ],
+      "patch_number": 28,
+      "card_numbers": [
+        133,
+        134,
+        135,
+        136,
+        137
+      ],
+      "min_number": 133,
+      "max_number": 137
+    },
+    {
+      "batch_id": "2026-11-22_auto_02",
+      "path": "cards/2026/2026-11-22_auto_02.json",
+      "date": "2026-11-22",
+      "created_at": "2026-11-22T14:16:04.042827+00:00",
+      "source": "groq:openai/gpt-oss-120b",
+      "card_count": 5,
+      "card_ids": [
+        "2026-11-22_learning_teach_back",
+        "2026-11-22_pricing_anchor_drop",
+        "2026-11-22_productivity_two_minute_rule",
+        "2026-11-22_psychology_defuse_tension",
+        "2026-11-22_sales_3sec_pause"
+      ],
+      "patch_number": 27,
+      "card_numbers": [
+        128,
+        129,
+        130,
+        131,
+        132
+      ],
+      "min_number": 128,
+      "max_number": 132
+    },
+    {
+      "batch_id": "2026-11-22_auto_01",
+      "path": "cards/2026/2026-11-22_auto_01.json",
+      "date": "2026-11-22",
+      "created_at": "2026-11-22T14:08:29.803073+00:00",
+      "source": "gemini-3.5-flash",
+      "card_count": 5,
+      "card_ids": [
+        "2026-11-22_learning_explain-to-a-child",
+        "2026-11-22_meetings_specify-decision-goal",
+        "2026-11-22_money_48-hour-pause",
+        "2026-11-22_negotiation_accusation-audit",
+        "2026-11-22_persuasion_power-of-because"
+      ],
+      "patch_number": 26,
+      "card_numbers": [
+        123,
+        124,
+        125,
+        126,
+        127
+      ],
+      "min_number": 123,
+      "max_number": 127
+    },
     {
       "batch_id": "2026-11-21_auto_03",
       "path": "cards/2026/2026-11-21_auto_03.json",

@@ -1,0 +1,285 @@
+{
+  "schema_version": 1,
+  "batch_id": "2026-11-22_auto_02",
+  "created_at": "2026-11-22T14:16:04.042827+00:00",
+  "source": "groq:openai/gpt-oss-120b",
+  "cards": [
+    {
+      "id": "2026-11-22_learning_teach_back",
+      "created_at": "2026-11-22T14:16:04.042827+00:00",
+      "topic": "learning",
+      "tags": [
+        "memory",
+        "study"
+      ],
+      "level": "beginner",
+      "needs_completion": false,
+      "en": {
+        "title": "Teach to lock it in",
+        "hook": "Ever read a chapter and forget it by dinner? I fixed it with a 2‑minute teach‑back.",
+        "action": "After learning, explain the concept out loud as if teaching a 5‑year‑old, using simple language.",
+        "key_phrase": "",
+        "when": "right after a study session or video lesson",
+        "why": "Retrieval and simplification expose gaps, forcing you to truly understand.",
+        "example": "You finish a SEO tutorial. You then say, \"If I had to explain SEO to my kid, I'd say it's like a library where Google is the librarian who helps people find the right book.\"",
+        "mistake": "Just rereading notes and assuming you remember."
+      },
+      "ar": {
+        "title": "علّّم عشان تثبت المعلومة",
+        "hook": "قريت فصل ونسيته قبل العشا؟ أنا حليتها بـ2 دقيقة بشرح للطفل الصغير.",
+        "action": "بعد ما تتعلم، قول الشرح بصوت عالي كأنك بتشرح لطفل 5 سنين، بكلام بسيط.",
+        "key_phrase": "",
+        "when": "فورا بعد ما تخلص جلسة دراسة أو فيديو",
+        "why": "استدعاء المعلومة وتبسيطها بيكشف الفجوات، فبتتأكد إنك فهمت بجد.",
+        "example": "خلصت دورة سيو، وبعدين تقول: \"السيو زي مكتبة، وجوجل هو أمين المكتبة اللي بيدور على الكتاب الصح للناس.\"",
+        "mistake": "إعادة قراءة الملاحظات وتفكير إنك فاهمها."
+      },
+      "quiz": {
+        "type": "mcq",
+        "correct_index": 1,
+        "en": {
+          "question": "You just watched a 15‑minute video on time‑blocking. Which next step guarantees you’ll remember it?",
+          "options": [
+            "Write a summary later",
+            "Teach the concept out loud now",
+            "Bookmark the video",
+            "Share it on social media"
+          ],
+          "explanation": "Teaching it immediately forces active recall and reveals gaps, making the knowledge stick. Writing later or just bookmarking doesn’t create the same retrieval practice."
+        },
+        "ar": {
+          "question": "خلصت فيديو 15 دقيقة عن تنظيم الوقت. إيه الخطوة اللي هتخليك تفتكره فعلاً؟",
+          "options": [
+            "تكتب ملخص بعدين",
+            "تشرح الفكرة بصوت عالي دلوقتي",
+            "تحفظ الفيديو في المفضلة",
+            "تنشره على السوشيال ميديا"
+          ],
+          "explanation": "شرح الفكرة فوراً بيخلّيك تستدعي المعلومة وتكشف أي نقص، وبالتالي بتثبتها. الكتابة بعدين أو الحفظ بس ما بتعملش نفس التفاعل."
+        }
+      }
+    },
+    {
+      "id": "2026-11-22_pricing_anchor_drop",
+      "created_at": "2026-11-22T14:16:04.042827+00:00",
+      "topic": "pricing",
+      "tags": [
+        "negotiation",
+        "anchor"
+      ],
+      "level": "intermediate",
+      "needs_completion": false,
+      "en": {
+        "title": "Start high, then drop",
+        "hook": "I quoted $5k, then $2k and the client said ‘Deal!’ – the power of an anchor.",
+        "action": "Present the highest realistic price first, then introduce a lower “discounted” price as the option you’re offering.",
+        "key_phrase": "Our premium package is $5,000",
+        "when": "during the price discussion, before the client asks for a discount",
+        "why": "The first number sets a reference point, making the later lower price look like a bargain.",
+        "example": "Salesperson: “Our premium package is $5,000. As a special offer today, we can do it for $2,000.” Client: “That’s a great deal, I’m in.”",
+        "mistake": "Starting with a low price and losing perceived value."
+      },
+      "ar": {
+        "title": "ابدأ بسعر عالي وبعدين انزل",
+        "hook": "قلت للعميل 5 آلاف، وبعدها 2 ألف، وقال ‘اتفاق!’ – ده سحر الـanchor.",
+        "action": "أولاً قدم أعلى سعر واقعي، بعدين قدم سعر أقل كعرض خاص أو تخفيض.",
+        "key_phrase": "الباقة المميزة بتاعتنا بـ5,000 جنيه",
+        "when": "أثناء مناقشة السعر، قبل ما العميل يطلب خصم",
+        "why": "الرقم الأول بيحدد نقطة مرجعية، فالسعر التاني بيظهر كصفقة ممتازة.",
+        "example": "المندوب: \"الباقة المميزة بـ5,000 جنيه. وعرض خاص النهاردة بـ2,000 جنيه.\" العميل: \"صفقة حلوة، أنا موافق.\"",
+        "mistake": "إنك تبدأ بسعر منخفض وتقلل من قيمة العرض."
+      },
+      "quiz": {
+        "type": "mcq",
+        "correct_index": 2,
+        "en": {
+          "question": "During a pricing call, you want the client to see your final offer as a great deal. What should you do first?",
+          "options": [
+            "Give the discount immediately",
+            "State the highest realistic price",
+            "Ask the client’s budget",
+            "Offer a free trial"
+          ],
+          "explanation": "Stating the highest realistic price first creates an anchor; the later lower price appears as a discount, increasing perceived value."
+        },
+        "ar": {
+          "question": "في مكالمة تسعير، عايز العميل يشوف العرض النهائي كصفقة ممتازة. تعمل إيه أولاً؟",
+          "options": [
+            "تقدم الخصم فوراً",
+            "تذكر أعلى سعر واقعي",
+            "تسأل عن ميزانية العميل",
+            "تقدم تجربة مجانية"
+          ],
+          "explanation": "ذكر أعلى سعر واقعي أولاً بيعمل نقطة مرجعية، والسعر الأقل بعد كده بيظهر كخصم جذاب."
+        }
+      }
+    },
+    {
+      "id": "2026-11-22_productivity_two_minute_rule",
+      "created_at": "2026-11-22T14:16:04.042827+00:00",
+      "topic": "productivity",
+      "tags": [
+        "time",
+        "habits"
+      ],
+      "level": "beginner",
+      "needs_completion": false,
+      "en": {
+        "title": "Beat procrastination in 2 minutes",
+        "hook": "I used to scroll for hours. Now any task ≤2 min I smash instantly – and my list shrinks fast.",
+        "action": "If a task can be finished in two minutes or less, do it right away; otherwise, schedule it for later.",
+        "key_phrase": "",
+        "when": "Whenever a small task pops up (email, quick reply, file rename)",
+        "why": "Immediate action removes decision fatigue and prevents tiny tasks from accumulating into overwhelm.",
+        "example": "You see a short email asking for a meeting time. Since replying takes <2 min, you reply immediately: “How about Tuesday 10 am?”",
+        "mistake": "Letting tiny tasks sit and pile up, assuming you’ll get to them later."
+      },
+      "ar": {
+        "title": "اهزم التسويف في دقيقتين",
+        "hook": "كنت بقعد أعمل سكرول لساعات، دلوقتي أي مهمة ≤2 دقيقة بخلصها فوراً والقائمة بتقل بسرعة.",
+        "action": "لو المهمة ممكن تخلصها في دقيقتين أو أقل، اعملها حالاً؛ لو أكتر، حطها في جدولك.",
+        "key_phrase": "",
+        "when": "أول ما تظهر لك مهمة صغيرة (إيميل، رد سريع، تعديل ملف)",
+        "why": "الفعل الفوري بيقضي على إجهاد اتخاذ القرار وبيمنع تراكم المهام الصغيرة اللي بتتحول لإجهاد كبير.",
+        "example": "جالك إيميل بسيط يطلب تحديد ميعاد اجتماع. الرد أخد أقل من دقيقتين، فبترد فوراً: \"ممكن يوم الثلاثاء الساعة 10؟\"",
+        "mistake": "تترك المهام الصغيرة تتراكم وتفترض إنك هتلحقها بعدين."
+      },
+      "quiz": {
+        "type": "mcq",
+        "correct_index": 0,
+        "en": {
+          "question": "You receive a short Slack message asking for a file. What’s the best move?",
+          "options": [
+            "Mark it for later",
+            "Reply and send the file now",
+            "Ignore it until end of day",
+            "Ask if it’s urgent"
+          ],
+          "explanation": "The task takes under two minutes, so handling it immediately follows the 2‑minute rule and prevents backlog."
+        },
+        "ar": {
+          "question": "جالك رسالة سلاك قصيرة عايزة ملف. إيه أحسن خطوة؟",
+          "options": [
+            "تحطها للبعد",
+            "ترد وتبعت الملف حالاً",
+            "تتجاهلها لحد آخر اليوم",
+            "تسأل إذا كانت مستعجلة"
+          ],
+          "explanation": "المهمة أقل من دقيقتين، فالتعامل معها فوراً يطبق قاعدة الـ2 دقيقة ويمنع تراكم المهام."
+        }
+      }
+    },
+    {
+      "id": "2026-11-22_psychology_defuse_tension",
+      "created_at": "2026-11-22T14:16:04.042827+00:00",
+      "topic": "psychology",
+      "tags": [
+        "empathy",
+        "conflict",
+        "communication"
+      ],
+      "level": "intermediate",
+      "needs_completion": false,
+      "en": {
+        "title": "Name the feeling to defuse tension",
+        "hook": "Ever felt a meeting freeze the instant someone snaps? One sentence can melt the ice.",
+        "action": "When you sense rising anger, calmly say, “It sounds like you’re feeling frustrated.”",
+        "key_phrase": "It sounds like you’re feeling frustrated.",
+        "when": "During a heated discussion or when a colleague shows irritation",
+        "why": "Mirroring the emotion validates them and lowers defensiveness, making them more open to solutions.",
+        "example": "Colleague: “I’m sick of this endless back‑and‑forth!”\nYou: “It sounds like you’re feeling frustrated. Let’s pinpoint the blocker together.”",
+        "mistake": "Ignoring the emotion or jumping straight to advice, which fuels resistance."
+      },
+      "ar": {
+        "title": "قل الإحساس لتخفيف التوتر",
+        "hook": "حسيت إن الاجتماع بقى ساكت أول ما حد يزعل؟ كلمة واحدة ممكن تسيب الجو يذوب.",
+        "action": "لما تحس إن فيه غضب، قول بهدوء: “أشكالك كأنك متضايق.”",
+        "key_phrase": "أشكالك كأنك متضايق.",
+        "when": "في نقاش ساخن أو لما زميل يبقى متوتر",
+        "why": "إنت بتعكس مشاعره، بيحس إنك فاهمه و يقلل دفاعه، يبقى أفتح لحلول.",
+        "example": "زميل: “أنا تعبت من الروتين ده!”\nإنت: “أشكالك كأنك متضايق. يلا نحدد المشكلة سوا.”",
+        "mistake": "تتجاهل الإحساس أو تدي نصيحة على طول، ده بيزود التوتر."
+      },
+      "quiz": {
+        "type": "mcq",
+        "correct_index": 1,
+        "en": {
+          "question": "A teammate says, “I’m fed up with this process.” What’s the best reply?",
+          "options": [
+            "Calm down, it’ll be fine.",
+            "It sounds like you’re feeling frustrated.",
+            "We’ll fix it later.",
+            "Why are you complaining?"
+          ],
+          "explanation": "The second option mirrors the emotion, validates the teammate and opens space for collaboration. The others either dismiss feelings or shift blame."
+        },
+        "ar": {
+          "question": "زميل بيقول: “أنا زهقت من العملية دي.” إيه أحسن رد؟",
+          "options": [
+            "اهدى، هتكون تمام.",
+            "أشكالك كأنك متضايق.",
+            "هنحلها بعدين.",
+            "ليه بتشتكي؟"
+          ],
+          "explanation": "الخيار الثاني بيعكس الإحساس وبيخلي الزميل يحس إنك فاهمه، ويفتح باب للنقاش. باقي الخيارات بتتجاهل أو تقلل من مشاعره."
+        }
+      }
+    },
+    {
+      "id": "2026-11-22_sales_3sec_pause",
+      "created_at": "2026-11-22T14:16:04.042827+00:00",
+      "topic": "sales",
+      "tags": [
+        "closing",
+        "pitch",
+        "bodylanguage"
+      ],
+      "level": "intermediate",
+      "needs_completion": false,
+      "en": {
+        "title": "Use a 3‑second pause after your key benefit",
+        "hook": "Most salespeople rush to fill the silence after a pitch – that’s the biggest missed cue.",
+        "action": "State your main benefit, then pause for three seconds, keep eye contact, and let the prospect think before you speak again.",
+        "key_phrase": "",
+        "when": "Immediately after you deliver the headline benefit of your product/service",
+        "why": "The pause creates mental space, triggers the prospect’s commitment bias, and makes them feel heard, increasing agreement odds.",
+        "example": "You: “Our platform cuts reporting time by half.”\n[3‑second pause, steady gaze]\nProspect: “That sounds exactly like what we need.”",
+        "mistake": "Jumping in with another feature or filler talk, which dilutes the impact of the benefit."
+      },
+      "ar": {
+        "title": "قَف ٣ ثواني بعد الفايدة الرئيسية",
+        "hook": "أغلب البياعين بيدخلوا كلام فوراً بعد العرض – دي أكبر غلطة ممكن تعملها.",
+        "action": "قول الفايدة الأساسية، بعدين قِف ٣ ثواني، خليك ثابت بالنظرة وسيب العميل يفكر قبل ما تكمل.",
+        "key_phrase": "",
+        "when": "بعد ما تذكر أهم ميزة لمنتجك أو خدمتك",
+        "why": "الوقفة بتدي دماغ العميل مساحة لتقييم الفايدة، وبتخليه يحس إنك مهتم بآرائه، فبيزيد فرص الموافقة.",
+        "example": "إنت: “المنصة بتقلل وقت التقارير للنص.”\n[وقفة ٣ ثواني، نظرة ثابتة]\nالعميل: “ده بالظبط اللي كنا محتاجينه.”",
+        "mistake": "تدخل كلام إضافي أو حشو فوراً، وده بيقلل من تأثير الفايدة."
+      },
+      "quiz": {
+        "type": "mcq",
+        "correct_index": 2,
+        "en": {
+          "question": "After you say, “Our software cuts reporting time by half,” what should you do next?",
+          "options": [
+            "Ask “What do you think?”",
+            "Say “Any questions?”",
+            "Pause for three seconds, keep eye contact",
+            "Jump straight into a demo"
+          ],
+          "explanation": "Pausing creates mental space and signals confidence, leading the prospect to respond positively. The other options either pressure the prospect or waste the impact."
+        },
+        "ar": {
+          "question": "بعد ما تقول: “البرنامج بيقلل وقت التقارير للنص”، تعمل إيه بعد كده؟",
+          "options": [
+            "اسأل “إيه رأيك؟”",
+            "أقول “في أسئلة؟”",
+            "أقيف ٣ ثواني وأحافظ على النظرة",
+            "أدخل عرض توضيحي فوراً"
+          ],
+          "explanation": "الوقفة بتدي مساحة للعميل وتظهر ثقة، فبيخليه يرد بإيجابية. باقي الخيارات بتضغط عليه أو بتضيع تأثير الفايدة."
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,288 @@
+{
+  "schema_version": 1,
+  "batch_id": "2026-11-22_auto_03",
+  "created_at": "2026-11-22T14:35:43.759708+00:00",
+  "source": "gemini-3.5-flash",
+  "cards": [
+    {
+      "id": "2026-11-22_business_value-based-anchor",
+      "created_at": "2026-11-22T14:35:43.759708+00:00",
+      "topic": "business",
+      "tags": [
+        "pricing",
+        "sales",
+        "business-strategy"
+      ],
+      "level": "intermediate",
+      "needs_completion": false,
+      "en": {
+        "title": "Lead with the Cost of the Problem, Not Your Price",
+        "hook": "A designer pitched a $10k revamp and was rejected immediately. When she reframed the client's $100k sales leak first, the price felt tiny.",
+        "action": "Calculate what the client's issue is costing them per month before quoting your fee. Present your price as a small fraction of that loss.",
+        "key_phrase": "Before we talk investment, how much revenue are you losing every month this stays broken?",
+        "when": "Pitching services or giving quotes to prospective business clients.",
+        "why": "The anchoring effect forces the human brain to evaluate your price against the larger cost of inaction rather than zero.",
+        "example": "Client: 'How much is the process audit?' You: 'Before we discuss price, how much does the team downtime cost you monthly?' Client: 'Around $40k.' You: 'Got it. Our fix is $4k to permanently save that $40k monthly.'",
+        "mistake": "Dropping your price upfront without establishing the expensive cost of the problem first."
+      },
+      "ar": {
+        "title": "إحسب تكلفة المشكلة الأول قبل ما تقول سعرك",
+        "hook": "مصممة عرضت شغل بـ 10 آلاف دولار والعميل رفض فوراً.. لما فرجته الأول إنه بيخسر 100 ألف بسبب المشكلة، سعرك بقى بالنسبة له فكة!",
+        "action": "احسب العميل بيخسر كام كل شهر بسبب المشكلة دي قبل ما تقول رقمك. واعرض سعرك كنسبة بسيطة جداً من الخسارة دي.",
+        "key_phrase": "قبل ما نتكلم في التكلفة، هو العطل ده بيخسرك كام تقريباً كل شهر؟",
+        "when": "وأنت بتقدم عرض سعر أو بتبيع خدمة لعميل شركتك.",
+        "why": "مخ البني آدم بيمسك في أول رقم بيسمعه (Anchoring Effect)، فلما يترسخ الرقم الكبير، سعرك يبان حماية وتوفير مش مصاريف.",
+        "example": "العميل: 'تكلفة المراجعة دي كام؟' انت: 'قبل السعر، هو تعطيل التيم ده بيخسركم كام في الشهر؟' العميل: 'حوالي 40 ألف.' انت: 'تمام، خدمتنا بـ 4 آلاف عشان نوقف خسارة الـ 40 ألف دي كل شهر.'",
+        "mistake": "إنك ترمي سعرك في وش العميل من غير ما تفكره بتكلفة الخسارة المستمرة."
+      },
+      "quiz": {
+        "type": "mcq",
+        "correct_index": 2,
+        "en": {
+          "question": "A potential client asks: 'How much will your consulting project cost?' What is the best practical response?",
+          "options": [
+            "Give your exact price immediately so you look transparent.",
+            "Offer a 20% discount upfront to secure the deal.",
+            "Ask how much the existing problem is costing their business daily or monthly first.",
+            "Tell them prices depend on market conditions and delay answering."
+          ],
+          "explanation": "Anchoring the price against their ongoing operational loss makes your fee look like a high-ROI investment rather than an expense."
+        },
+        "ar": {
+          "question": "عميل محتمل بيسألك: 'المشروع ده هيتكلف كام؟' إيه أفضل رد تاخده؟",
+          "options": [
+            "تقول السعر المباشر على طول عشان تبان واضح.",
+            "تعمل خصم 20% من الأول عشان تضمن الصفقة.",
+            "تسأله الأول المشكلة دي بتخسره كام في شغلهم كل شهر.",
+            "تقوله الأسعار بتتغير حسب السوق وتهرب من الرد."
+          ],
+          "explanation": "ربط السعر بحجم الخسارة اللي العميل بيخسرها بيخلي رقمك يبان توفير واستثمار مش مجرد مصاريف."
+        }
+      }
+    },
+    {
+      "id": "2026-11-22_career_brag-document-habit",
+      "created_at": "2026-11-22T14:35:43.759708+00:00",
+      "topic": "career",
+      "tags": [
+        "career-growth",
+        "productivity",
+        "promotions"
+      ],
+      "level": "beginner",
+      "needs_completion": false,
+      "en": {
+        "title": "Keep a 2-Minute Weekly Brag Document",
+        "hook": "At annual review time, Omar forgot 90% of his wins. His quiet teammate got the promotion simply because she kept a running record.",
+        "action": "Set a recurring calendar reminder every Friday at 4 PM. Spend 2 minutes listing wins, positive emails, or stats in a private file.",
+        "key_phrase": "Here is the summary of key deliverables and business impacts I recorded this quarter.",
+        "when": "Preparing for your performance review, salary review, or updating your resume.",
+        "why": "Recency bias makes managers remember only the past two weeks. Documented metrics give you undeniable leverage.",
+        "example": "Manager: 'What did you accomplish this quarter?' You: 'I tracked my output: I completed 18 tickets, onboarded 2 junior reps, and reduced reporting lag by 3 hours weekly.'",
+        "mistake": "Relying on your memory or expecting your manager to track your everyday achievements."
+      },
+      "ar": {
+        "title": "اعمل ملف إنجازات أسبوعي في دقيقتين",
+        "hook": "وقت التقييم السنوي، عمر نسي 90% من اللي عمله طول السنة.. زميلته الهادية أخدت الترقية لمجرد إنها كانت بتكتب كل حاجة بأرقام!",
+        "action": "حط تذكير على تليفونك كل جمعة أو ختام أسبوع، وخد دقيقتين اكتب في ملف خاص 3 حاجات نجحت فيها أو رسائل شكر وصلت لك.",
+        "key_phrase": "دي قائمة ملخصة بالإنجازات والأرقام اللي حققتها خلال الربع ده.",
+        "when": "وأنت بتجهز لاجتماع التقييم السنوي، أو طلب زيادة المرتب، أو بتحدث الـ CV.",
+        "why": "المديرين بيفتكروا آخر أسبوعين بس بسبب (Recency Bias). الأرقام الموثقة بتديك قوة تفاوض مفيهاش نقاش.",
+        "example": "مديرك: 'عملت إيه الفترة اللي فاتت؟' انت: 'أنا مجمع داتا لشغلي: قفلت 18 مشروع صغير، دربت 2 جداد، ووفرت 3 ساعات أسبوعياً في التظبيط.'",
+        "mistake": "إنك تعتمد على ذاكرتك أو تفترض إن مديرك مركز مع كل إنجاز بتعمله."
+      },
+      "quiz": {
+        "type": "mcq",
+        "correct_index": 1,
+        "en": {
+          "question": "Why is keeping a weekly 'Brag Document' far more effective than preparing for reviews right before the meeting?",
+          "options": [
+            "It gives you excuses to refuse extra tasks from teammates.",
+            "It overrides managerial recency bias with concrete long-term proof.",
+            "It automatically guarantees an immediate 50% raise.",
+            "It allows you to bypass speaking to your manager entirely."
+          ],
+          "explanation": "Managers primarily remember recent events; a running weekly doc provides proof of consistent value over months."
+        },
+        "ar": {
+          "question": "ليه كتابة 'ملف الإنجازات' أسبوعياً أكتير فاعلية بكتير من التجهيز قبل التقييم بيومين؟",
+          "options": [
+            "عشان بيديك حجج ترفض بيها الشغل الإضافي.",
+            "عشان بيتغلب على نسيان المدير وبيوفر إثباتات واضحة على مدار السنة.",
+            "عشان بيضمن لك زيادة 50% في المرتب تلقائياً.",
+            "عشان بيخليك تتهرب من الكلام مع مديرك خالص."
+          ],
+          "explanation": "المديرين غالباً بيفتكروا شغل آخر كم أسبوع بس، فالملف الأسبوعي بيدي دليل قوي ومستمر على مدار السنة."
+        }
+      }
+    },
+    {
+      "id": "2026-11-22_communication_tactical-labeling",
+      "created_at": "2026-11-22T14:35:43.759708+00:00",
+      "topic": "communication",
+      "tags": [
+        "conflict-resolution",
+        "psychology",
+        "de-escalation"
+      ],
+      "level": "intermediate",
+      "needs_completion": false,
+      "en": {
+        "title": "De-escalate Anger by Labeling Their Emotion",
+        "hook": "An angry client was yelling about a missed deadline. Defending the schedule made him furious. A four-word label made him completely reset.",
+        "action": "Never say 'calm down'. Mirror their feeling neutrally using phrases starting with 'It seems like...' or 'It sounds like...'",
+        "key_phrase": "It sounds like you feel completely frustrated that this delay put your launch at risk.",
+        "when": "Dealing with an agitated client, upset co-worker, or heated argument.",
+        "why": "Brain scans prove that naming an intense emotion shifts activity from the emotional amygdala to the rational prefrontal cortex.",
+        "example": "Client: 'This delay is totally unacceptable!' You: 'It sounds like you feel let down because this directly threatens your deadline.' Client: 'Exactly! Glad you get it. So how do we fix it?'",
+        "mistake": "Telling an upset person to calm down or making defensive logistical excuses."
+      },
+      "ar": {
+        "title": "امتص غضب اللي قدامك بأنك تسمي إحساسه",
+        "hook": "عميل بيصرخ عشان التأخير، كل ما تدافع عن نفسك بيولع أكتر! جملة واحدة تسمي فيها شعوره خلته يسكت ويهدى فوراً.",
+        "action": "إياك تقول لحد 'اهدى'. بدالها أوصف المشاعر اللي حاسس بيها بـ 'يبدو إنك...' أو 'حاسس إنك...' من غير دفاع عن نفسك.",
+        "key_phrase": "يبدو إنك حاسس بقمة الإحباط عشان التأخير ده أثر على مواعيد شغلك.",
+        "when": "لما تتعامل مع عميل منفعل، أو زميل متضايق، أو نقاش مشحون.",
+        "why": "الدراسات بتثبت إن مجرد تسمية الشعور بتقلل نشاط مركز الخوف والغضب في المخ وتخليه يفكر بعقله.",
+        "example": "العميل: 'التأخير ده تهريج ومش مقبول!' انت: 'يبدو إنك مضايق جداً حاسس إن ده عطل خطتك.' العميل: 'بالظبط! كويس إنك فاهم.. هنعمل إيه بقى؟'",
+        "mistake": "إنك تقول لواحد غضبان 'اهدى' أو تبدأ تدافع عن نفسك بحجج وأعذار."
+      },
+      "quiz": {
+        "type": "mcq",
+        "correct_index": 0,
+        "en": {
+          "question": "A team member furiously screams: 'Nobody listens to my input on this project!' What is the best tactical response?",
+          "options": [
+            "Say: 'It sounds like you feel completely ignored during our design reviews.'",
+            "Say: 'Calm down, we listen to you all the time.'",
+            "Explain in detail the timeline of the last three meetings to prove them wrong.",
+            "Ignore their statement and continue presenting your slides."
+          ],
+          "explanation": "Labeling their emotion ('It sounds like you feel...') validates their experience, calming the emotional reaction so problem-solving can begin."
+        },
+        "ar": {
+          "question": "زميلك في التيم بيصرخ بغضب: 'محدش هنا بيسمع رأيي خالص!' إيه الرد الأفضل والأذكى؟",
+          "options": [
+            "تقول: 'يبدو إنك حاسس إن رأيك مش بياخد حقه في الاجتماعات.'",
+            "تقول: 'اهدى بس، إحنا بنسمعك على طول اهو!'",
+            "تشرحله بالتفاصيل والتواريخ إزاي سمحتوله يتكلم في الاجتماعات اللي فاتت.",
+            "تطنش كلامه وتكمل العرض بتاعك عادي."
+          ],
+          "explanation": "تسمية المشاعر ('يبدو إنك حاسس...') بتمتص شحنة الغضب وتخلي الطرف التاني يحس إنه اتفهم فيبدأ يهدى."
+        }
+      }
+    },
+    {
+      "id": "2026-11-22_decision_making_10-10-10-rule",
+      "created_at": "2026-11-22T14:35:43.759708+00:00",
+      "topic": "decision_making",
+      "tags": [
+        "mental-models",
+        "clarity",
+        "stress-management"
+      ],
+      "level": "beginner",
+      "needs_completion": false,
+      "en": {
+        "title": "Test Hard Decisions with the 10/10/10 Rule",
+        "hook": "Terrified of sending a tough email or renegotiating terms? Your brain exaggerates immediate fear while ignoring long-term outcomes.",
+        "action": "Before making an emotional decision, ask yourself: How will I feel about this choice in 10 minutes? 10 months? 10 years?",
+        "key_phrase": "Will this short-term discomfort matter to me 10 months from now?",
+        "when": "Stuck on uncomfortable career choices, hard conversations, or fear of taking calculated risks.",
+        "why": "Expanding your time horizon shifts perspective, overriding temporary emotional discomfort with long-term strategic clarity.",
+        "example": "You are afraid to ask for a raise. 10 minutes: extremely awkward. 10 months: enjoying better compensation or working elsewhere. 10 years: a forgotten detail. Action: Send the request.",
+        "mistake": "Letting 10 minutes of temporary embarrassment block years of personal and financial growth."
+      },
+      "ar": {
+        "title": "خد القرارات الصعبة بـ قاعدة 10/10/10",
+        "hook": "خايف تطلب زيادة أو تفتح موضوع حساس؟ مخك بيضخم الخوف بتاع اللحظة دي وبيحميك من خطوة هتفيدك على المدى البعيد!",
+        "action": "قبل ما تقرر أو تتهرب من موقف، اسأل نفسك: هحس بإيه ناحية القرار ده كمان 10 دقائق؟ و10 شهور؟ و10 سنين؟",
+        "key_phrase": "هل الإحراج بتاع دلوك ده هيفضل فارق معايا كمان 10 شهور؟",
+        "when": "لما تكون متردد في مواجهة صعبة، أو خايف من خطوة جريئة في شغلك.",
+        "why": "تكبير النظرة الزمنية بيبعدك عن التوتر اللحظي وبيخلي عقلك يركز في الفايدة الحقيقية طويلة المدى.",
+        "example": "مكسوف تطلب زيادة مرتب. كمان 10 دقائق: احراج ومواجهة. كمان 10 شهور: مرتاح بمرتب أعلى. كمان 10 سنين: موقف مش فاكره اصلاً. القرار: اطلب الزيادة فوراً.",
+        "mistake": "إنك تسيب 10 دقائق من الإحراج المؤقت تضيع عليك سنين من النمو والاستقرار."
+      },
+      "quiz": {
+        "type": "mcq",
+        "correct_index": 3,
+        "en": {
+          "question": "You are delaying a difficult feedback talk with a slacking vendor because it feels awkward. How does the 10/10/10 rule resolve this?",
+          "options": [
+            "It advises waiting 10 days before sending any communication.",
+            "It forces you to cut vendor payments by 10% immediately.",
+            "It prompts you to draft 10 different versions of the message.",
+            "It reveals that 10 minutes of awkwardness protects 10 months of team productivity."
+          ],
+          "explanation": "The 10/10/10 framework highlights that immediate awkward discomfort is negligible compared to months of ongoing issues."
+        },
+        "ar": {
+          "question": "مأجل كلام شديد مع مورد بسبب الإحراج. إزاي قاعدة 10/10/10 تحل لك التردد ده؟",
+          "options": [
+            "تنصحك تستنى 10 أيام قبل ما تبعت أي إيميل.",
+            "بتجبرك تخفض فلوس المورد 10% فوراً.",
+            "بتخليك تكتب 10 صياغات مختلفة للإيميل.",
+            "بتوضح لك إن 10 دقائق إحراج هتحمي شغل التيم وتوفر مشاكل 10 شهور جاية."
+          ],
+          "explanation": "القاعدة بتخليك تشوف إن إحراج 10 دقائق لا يذكر قصاد المشاكل والخسارة اللي هتحصل على مدار 10 شهور."
+        }
+      }
+    },
+    {
+      "id": "2026-11-22_leadership_praise-in-public-critique-in-private",
+      "created_at": "2026-11-22T14:35:43.759708+00:00",
+      "topic": "leadership",
+      "tags": [
+        "feedback",
+        "management",
+        "psychological-safety"
+      ],
+      "level": "beginner",
+      "needs_completion": false,
+      "en": {
+        "title": "Praise Specifics Publicly, Correct Systems Privately",
+        "hook": "A lead criticized an employee's mistake in a group Slack channel. Within a month, the entire team stopped taking any initiative.",
+        "action": "Give clear recognition in public settings. Deliver corrective feedback only in private 1-on-1s, focusing on process improvements.",
+        "key_phrase": "Let's hop on a 5-minute call to review the steps in this task together.",
+        "when": "Managing team performance, addressing bugs, or recognizing achievements.",
+        "why": "Public humiliation triggers fight-or-flight self-preservation, destroying initiative, while private correction builds psychological safety.",
+        "example": "Public Slack: 'Shoutout to Sarah for spotting that checkout bug early!' Private 1-on-1: 'Let's adjust our QA checklist so this type of bug gets flagged automatedly next time.'",
+        "mistake": "Calling out an individual's mistake in group meetings or public chat threads."
+      },
+      "ar": {
+        "title": "امدح قدام الناس ووجه اللوم بينك وبين الفرد",
+        "hook": "مدير انتقد غلطة موظف في جروب الشركة قدام 50 واحد.. في خلال شهر التيم كله بطل ياخد أي مبادرة أو يفكر خارج الصندوق!",
+        "action": "انشر الإشادة والتأسيس قدام الكافية، بس لما يكون فيه غلطة، اتكلم مع الشخص لوحده وركز على تظبيط السيستم مش مهاجمة شخصيته.",
+        "key_phrase": "تعال ناخد 5 دقائق في مكالمة جانبية نراجع خطوات الملف ده سوا.",
+        "when": "وانت بتدير تيم، أو بتبعث ملاحظات على أخطاء شغل، أو بتكافئ المجتهد.",
+        "why": "الإحراج قدام الناس بيفعل دفاعات الخوف والمخ بيثبت على وضع الدفاع، لكن التوجيه الخاص بيخلق بيئة آمنة تخليهم يتطوروا.",
+        "example": "قدام الناس: 'عاش لسارة إنها كشفت غلطة الكود قبل ما ينزل!' بينك وبينه: 'تعال نعدل خطوات المراجعة عشان الأخطاء دي تتمسك أوتوماتيك بعد كده.'",
+        "mistake": "إنك تعاتب موظف أو توضح أخطاء شغله في اجتماع التيم أو جروب الشغل."
+      },
+      "quiz": {
+        "type": "mcq",
+        "correct_index": 1,
+        "en": {
+          "question": "An employee makes a glaring formatting error in a client proposal. As the team leader, what is the best course of action?",
+          "options": [
+            "Correct the error in the group chat so everyone learns from the mistake.",
+            "Send a private message to discuss fixing the proposal process.",
+            "Ignore the mistake entirely to keep team morale high.",
+            "Reassign all future proposal work away from that employee without explanation."
+          ],
+          "explanation": "Addressing errors privately protects trust and dignity while providing clarity to improve future performance without public shame."
+        },
+        "ar": {
+          "question": "موظف في تيمك عمل غلطة واضحة في ملف العرض المالي. بصفتك قائد التيم، إيه التصرّف الصح؟",
+          "options": [
+            "تصلح الغلطة في الجروب العام عشان الكل يتعلم منها.",
+            "تبعث له على الخاص تتناقشوا في تعديل الخطوات عشان الغلطة متتكررش.",
+            "تطنش الغلطة خالص عشان متبوظش نفسيته.",
+            "تسحب منه كل عروض الشغل اللي جاية من غير ما تشرح له السبب."
+          ],
+          "explanation": "التوجيه بينك وبين الموظف بيحمي ثقته في نفسه ويخليه يتقبل التعليمات، بعيداً عن أحراج قدام زمايله."
+        }
+      }
+    }
+  ]
+}

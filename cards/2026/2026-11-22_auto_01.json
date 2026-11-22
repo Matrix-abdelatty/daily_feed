@@ -1,0 +1,293 @@
+{
+  "schema_version": 1,
+  "batch_id": "2026-11-22_auto_01",
+  "created_at": "2026-11-22T14:08:29.803073+00:00",
+  "source": "gemini-3.5-flash",
+  "cards": [
+    {
+      "id": "2026-11-22_learning_explain-to-a-child",
+      "created_at": "2026-11-22T14:08:29.803073+00:00",
+      "topic": "learning",
+      "tags": [
+        "learning",
+        "study-hacks",
+        "memory",
+        "feynman-technique"
+      ],
+      "level": "beginner",
+      "needs_completion": false,
+      "en": {
+        "title": "Test Your Understanding by Explaining It Simply",
+        "hook": "You spent 3 hours reading a report, but when someone asks for the summary, your mind goes blank.",
+        "action": "Write down the core concept using zero jargon, as if explaining it to a 10-year-old. When you get stuck or use a buzzword, stop and re-learn that part.",
+        "key_phrase": "How would I explain this concept to a 10-year-old using simple words?",
+        "when": "Immediately after studying a complex topic or technical report.",
+        "why": "Using simple language forces your brain to process the core logic rather than just memorizing vocabulary.",
+        "example": "Instead of saying 'We utilize algorithmic optimization for data processing,' say 'We use a smart formula that sorts customer information faster.'",
+        "mistake": "Re-reading notes repeatedly and assuming comprehension because the words feel familiar."
+      },
+      "ar": {
+        "title": "اختبر فهمك للموضوع عن طريق الشرح البسيط",
+        "hook": "قعدت تقرأ في تقرير ٣ ساعات، وأول ما حد سألك الملخص إيه لقيت مخك قفل وما جمعتش حاجة.",
+        "action": "اكتب الفكرة الأساسية من غير أي مصطلحات معقدة، كأنك بتشرحها لعيّل عنده ١٠ سنين. أول ما تلاقي نفسك استخدمت كلمة صعبة أو عطلت، ارجع ذاكر الحتة دي تاني.",
+        "key_phrase": "أنا لو بشرح الكلام ده لطفل في ٥ ابتدائي هقوله إزاي؟",
+        "when": "بعد ما تخلص قراءة موضوع معقد أو تقرير فني جديد على طول.",
+        "why": "تبسيط الكلام بيجبر مخك إنه يفهم الفكرة من جوة بدل ما يبصم المسميات الصعبة بس.",
+        "example": "بدل ما تقول 'إحنا بنستخدم خوارزميات لتحسين تحليل البيانات'، قول 'إحنا بنستخدم معادلة ذكية تفرز معلومات العملاء بسرعة'.",
+        "mistake": "تقعد تعيد وتقرأ في الورق وتحس إنك فاهم لمجرد إن الكلام بقى مألوف لعنيك."
+      },
+      "quiz": {
+        "type": "mcq",
+        "correct_index": 1,
+        "en": {
+          "question": "You want to check if you truly understand a new software feature your team built. What should you do?",
+          "options": [
+            "Re-read the technical documentation three times.",
+            "Explain how the feature works to a non-technical friend without using jargon.",
+            "Highlight all technical terms in the manual.",
+            "Memorize the key bullet points from the presentation slide."
+          ],
+          "explanation": "Explaining a concept simply without jargon forces you to internalize the actual logic, exposing gaps in your understanding."
+        },
+        "ar": {
+          "question": "عاوز تتأكد إنك فهمت ميزة جديدة في البرنامج اللي فريقك عمله بصحيح، تعمل إيه؟",
+          "options": [
+            "تعيد قراءة الملف التقني ٣ مرات.",
+            "تشرح الميزة لشخص مش تقني من غير ما تستخدم مصطلحات معقدة.",
+            "تعلم بالهايلايتر على كل المصطلحات الصعبة في الكتالوج.",
+            "تحفظ النقط الأساسية من العرض التقديمي."
+          ],
+          "explanation": "الشرح ببساطة من غير مصطلحات بيخليك تفهم المنطق الحقيقي وتكتشف النقط اللي لسه مش فاهمها كويس."
+        }
+      }
+    },
+    {
+      "id": "2026-11-22_meetings_specify-decision-goal",
+      "created_at": "2026-11-22T14:08:29.803073+00:00",
+      "topic": "meetings",
+      "tags": [
+        "meetings",
+        "productivity",
+        "time-management",
+        "leadership"
+      ],
+      "level": "intermediate",
+      "needs_completion": false,
+      "en": {
+        "title": "State the Single Goal in Minute One",
+        "hook": "Halfway through a meeting, everyone is talking, but nobody knows if you are there to decide or just brainstorm.",
+        "action": "In the first minute of every meeting, state the exact deliverable expected by the end.",
+        "key_phrase": "By the end of this 30 minutes, our goal is to pick option A or B.",
+        "when": "During the first 60 seconds of any meeting you lead or attend.",
+        "why": "Defining the end result anchors the conversation and stops people from straying into irrelevant topics.",
+        "example": "'Welcome everyone. By the end of this 20 minutes, we need to approve the final launch budget—not debate marketing copy.'",
+        "mistake": "Starting with 'Let's catch up on project X' without defining what success looks like today."
+      },
+      "ar": {
+        "title": "حدد هدف الاجتماع في أول دقيقة",
+        "hook": "عدى ٢٠ دقيقة من الاجتماع والناس كلها بتتكلم، بس محدش عارف إحنا بنتاخد قرار ولا بنقرر ميزانية!",
+        "action": "في أول دقيقة من أي اجتماع، حدد بالظبط إيه المخرج المتوقع لما وقت القعدة يخلص.",
+        "key_phrase": "عقبال ما الـ ٣٠ دقيقة دول يخلصوا، محتاجين نختار بين القرار أ ولا ب.",
+        "when": "في أول ٦٠ ثانية من أي اجتماع تنظمه أو تحضره.",
+        "why": "تحديد النتيجة من الأول بيمسك المناقشة ويمنع الناس إنها تسرح في مواضيع فرعية مالهاش لازمة.",
+        "example": "'يا جماعة أهلاً بيكم، الهدف من الـ ٢٠ دقيقة دول إننا نعتمد الميزانية النهائية.. مش هنناقش أفكار الإعلانات النهاردة.'",
+        "mistake": "تفتح الاجتماع بـ 'يلا بينا نشوف موضوع المشروعات إيه الأخبار' من غير ما تحدد إيه القرار المطلوب."
+      },
+      "quiz": {
+        "type": "mcq",
+        "correct_index": 2,
+        "en": {
+          "question": "You are starting a meeting about project deadlines. Which opening statement sets the most productive tone?",
+          "options": [
+            "Thanks for coming, let me know what everyone thinks about the project timeline.",
+            "Let me run you through all 15 slides about project history first.",
+            "By the end of this 20 minutes, we must agree on a new deadline for Phase 1.",
+            "Let's spend the first half hour brainstorming general ideas."
+          ],
+          "explanation": "Explicitly stating the required decision at the start anchors the conversation and keeps participants focused on that specific outcome."
+        },
+        "ar": {
+          "question": "بتبدأ اجتماع عن المواعيد النهائية للمشروع. إيه أحسن جملة تفتح بيها القعدة عشان تكون منتجة؟",
+          "options": [
+            "شكراً إنكم جيتوا، قولولي رأيكم إيه في الجدول الزمني بتاع المشروع.",
+            "خلوني أعرض عليكم ١٥ سلايد عن تاريخ المشروع الأول.",
+            "عقبال ما الـ ٢٠ دقيقة دول يخلصوا، لازم نكون اتفقنا على المعاد النهائي للمرحلة الأولى.",
+            "تعالوا نضيع أول نص ساعة في عصف ذهني لأفكار عامة."
+          ],
+          "explanation": "تحديد القرار المطلوب بالظبط في البداية بيمسك دفة الحوار ويخلي الناس كلها مركزة على الهدف النهائي."
+        }
+      }
+    },
+    {
+      "id": "2026-11-22_money_48-hour-pause",
+      "created_at": "2026-11-22T14:08:29.803073+00:00",
+      "topic": "money",
+      "tags": [
+        "money",
+        "budgeting",
+        "personal-finance",
+        "impulse-buying"
+      ],
+      "level": "beginner",
+      "needs_completion": false,
+      "en": {
+        "title": "Stop Impulse Purchases with the 48-Hour Rule",
+        "hook": "You see an item online, feel an rush of excitement, and hit buy—only to regret it when the package arrives.",
+        "action": "Put any non-essential item costing over a set limit into your cart, then close the app for 48 hours. If you still want it after two days, buy it.",
+        "key_phrase": "I will leave this in the cart and recheck on Friday.",
+        "when": "Whenever you feel a sudden urge to buy something online or in-store that isn't planned.",
+        "why": "The urge to buy is driven by a temporary dopamine spike; waiting allows your emotional brain to cool down.",
+        "example": "You see a luxury jacket on sale. Instead of clicking buy, save it to a wishlist, set a reminder for 48 hours later, and walk away.",
+        "mistake": "Buying immediately because of artificial urgency like 'Only 2 items left!'"
+      },
+      "ar": {
+        "title": "وقف الشراء الاندفاعي بقاعدة الـ ٤٨ ساعة",
+        "hook": "شفت حتة لبس أونلاين، ضفتها للسلة، حسيت بالحماس واشتريت.. وبعد ما الدليفري وصل حسيت إن الموقف ملوش لازمة!",
+        "action": "أي حاجة غير أساسية سعرها يعدي مبلغ معين، حطها في السلة واقفل التطبيق ٤٨ ساعة. لو لسه عاوزها بعد يومين، اشتريه.",
+        "key_phrase": "هسيب الحاجة دي في السلة وهراجع نفسي يوم الجمعة.",
+        "when": "أول ما تحس برغبة مفاجئة إنك تشتري حاجة أونلاين أو في المحل ومش مكتوبة في خطتك.",
+        "why": "الشغف بالشراء بيبقى مجرد دفعة دوبامين مؤقتة؛ لما بتستنى، الاندفاع العاطفي بيهدى وبيرجع العقل يحسبها صح.",
+        "example": "عجبك جاكيت ماركة عليه خصم. بدل ما تدوس 'شراء'، احفظه في الـ Wishlist وحط تذكير على الموبايل بعد يومين واقفل الأبلكيشن.",
+        "mistake": "إنك تشتري في ساعتها لمجرد إن الموقع كاتبلك 'فاضل قطعتين بس!'."
+      },
+      "quiz": {
+        "type": "mcq",
+        "correct_index": 0,
+        "en": {
+          "question": "You see a discounted smartwatch online and feel a strong urge to buy it immediately. What is the smartest financial action?",
+          "options": [
+            "Add it to your wishlist and set a reminder to review it in 48 hours.",
+            "Buy it immediately before the discount ends.",
+            "Check your bank balance to see if you have enough cash right now.",
+            "Ask a friend if they think the watch looks good on you."
+          ],
+          "explanation": "Waiting 48 hours lets the dopamine impulse fade, allowing you to decide objectively if you actually need the item."
+        },
+        "ar": {
+          "question": "شفت ساعة ذكية عليها خصم أونلاين وحسيت برغبة قوية جداً إنك تشتريها حالاً. إيه أذكى تصرف مالي؟",
+          "options": [
+            "تحطها في الـ wishlist وتحط تذكير بعد ٤٨ ساعة ترجع تبص عليها.",
+            "تشتريها في ساعتها قبل ما الخصم يخلص.",
+            "تبص في كشف الحساب وتشوف معاك فلوس تكفي ولا لأ.",
+            "تسأل صاحبك رأيه إيه في شكل الساعة عليك."
+          ],
+          "explanation": "الانتظار ٤٨ ساعة بيموت الاندفاع العاطفي اللحظي، وبيخليك تقرر بعقلانية وهدوء هل أنت محتاجها فعلاً ولا لأ."
+        }
+      }
+    },
+    {
+      "id": "2026-11-22_negotiation_accusation-audit",
+      "created_at": "2026-11-22T14:08:29.803073+00:00",
+      "topic": "negotiation",
+      "tags": [
+        "negotiation",
+        "persuasion",
+        "communication",
+        "sales"
+      ],
+      "level": "advanced",
+      "needs_completion": false,
+      "en": {
+        "title": "Defuse Pushback with an Accusation Audit",
+        "hook": "You need a project deadline extension, and you know your boss will think you are disorganized.",
+        "action": "List every negative thought the other person might have about you, and state them out loud before they can.",
+        "key_phrase": "You're probably going to think I'm completely disorganized for bringing this up...",
+        "when": "Before delivering bad news or making a request that will likely annoy the other party.",
+        "why": "Naming their negative emotions disarms them and forces them to reframe you as honest and self-aware.",
+        "example": "'You're probably going to think I'm terrible at planning, but looking at test results, we need three more days to fix these security bugs.'",
+        "mistake": "Waiting for them to get angry and then trying to defend yourself with excuses."
+      },
+      "ar": {
+        "title": "امتص الغضب المسبق بأسلوب مراجعة الاتهامات",
+        "hook": "رايح تطلب من مديرك تمديد ميعاد التسليم، وعارف كويّس إنه هيشوفك مهمل وما بتعرفش تنظم وقتك.",
+        "action": "اجمع كل الأفكار السلبية اللي الشخص التاني ممكن يفكر فيها عنك، وقولها بصوت عالي قبل ما هو يقولها.",
+        "key_phrase": "غالباً حضرتك هتشوفني ما بعرفش أنظم وقتي إني بفتح الموضوع ده دلوقتي...",
+        "when": "قبل ما تبلغ خبر مش حلو أو تطلب طلب متوقع إنه يضايق الطرف التاني.",
+        "why": "لما بتقول الاتهام بنفسك، بتسحب السلاح من إيده وتخليه يشوفك شخص صريح ومعترف بالمشكلة بدل ما يهاجمك.",
+        "example": "'أنا عارف إن حضرتك ممكن تشوف إن تخطيطنا كان سيء، بس بناءً على نتائج الاختبارات الأخيرة، إحنا محتاجين ٣ أيام كمان عشان نصلح ثغرات الأمان دي.'",
+        "mistake": "تستنى لحد ما هو يتعصب وبعدين تبدأ تدافع عن نفسك بأعذار."
+      },
+      "quiz": {
+        "type": "mcq",
+        "correct_index": 3,
+        "en": {
+          "question": "You need to tell a client that their delivery will be delayed by a week. How should you open the conversation?",
+          "options": [
+            "Blame the courier company for the unexpected logistics issues.",
+            "Send an email right at 5 PM on Friday so they process it over the weekend.",
+            "Act like everything is normal and hope they don't notice the date change.",
+            "Start by saying: 'You're going to think we are unreliable, but we hit an unexpected blocker.'"
+          ],
+          "explanation": "By bringing up their potential negative reaction first, you neutralize their anger and frame yourself as transparent."
+        },
+        "ar": {
+          "question": "محتاج تبلغ العميل إن الشحنة هتتأخر أسبوع. تفتح الكلام إزاي؟",
+          "options": [
+            "ترم التهمة على شركة الشحن وتشتكي من مشاكل النقل.",
+            "تبعت إيميل يوم الجمعة الساعة ٥ عشان يقرأوه براحتهم في الويك إند.",
+            "تتعامل عادي جداً وتتمنى ما يلاحظوش تغيير المعاد.",
+            "تبدأ بـ: 'حضرتك غالباً هتشوف إننا مش ملتزمين بمواعيدنا، بس واجهنا مشكلة غير متوقعة.'"
+          ],
+          "explanation": "لما بتعترف بالتصور السلبي من الأول، بتسحب الغضب منه وتظهر بمظهر الشخص الشفاف المحترف."
+        }
+      }
+    },
+    {
+      "id": "2026-11-22_persuasion_power-of-because",
+      "created_at": "2026-11-22T14:08:29.803073+00:00",
+      "topic": "persuasion",
+      "tags": [
+        "persuasion",
+        "psychology",
+        "communication",
+        "influence"
+      ],
+      "level": "intermediate",
+      "needs_completion": false,
+      "en": {
+        "title": "Double Your Request Compliance with 'Because'",
+        "hook": "You ask a coworker for a small favor, but they hesitate or give you a quick 'I'm busy.'",
+        "action": "Always add the word 'because' followed by a specific reason whenever you make a request, even if the reason feels obvious.",
+        "key_phrase": "...because I need to wrap this up before the 3 PM sync.",
+        "when": "Making any request, asking to skip a line, or assigning a task to a colleague.",
+        "why": "The human brain is hardwired to look for cause-and-effect; hearing 'because' triggers automatic cooperation.",
+        "example": "Instead of saying 'Can you send me the Excel file?', say 'Can you send me the Excel file right now because I need to insert the final figures before our team call?'",
+        "mistake": "Making a direct demand without giving any justification or context."
+      },
+      "ar": {
+        "title": "ضاعف موافقة الناس على طلباتك بكلمة عشان",
+        "hook": "بتطلب خدمة صغيرة من زميلك في الشغل، تلاقيه متردد أو يقولك 'أنا مشغول والله يا صاحبي'.",
+        "action": "دايماً ضيف كلمة 'عشان' وبعدها سبب واضح أول ما تطلب أي طلب، حتى لو السبب شايفه بديهي.",
+        "key_phrase": "...عشان محتاج أخلص الملف ده قبل اجتماع الساعة ٣.",
+        "when": "لما تكون بتطلب طلب من حد، أو بتكلف زميل بمهمة، أو عاوز تخلص حاجة بسرعة.",
+        "why": "عقل الإنسان مبرمج إنه يدور على الأسباب؛ كلمة 'عشان' بتشغل آلية التعاون التلقائي عند التانيين.",
+        "example": "بدل ما تقول 'ممكن تبعتلي ملف الإكسيل؟'، قول 'ممكن تبعتلي ملف الإكسيل دلوقتي عشان محتاج أحط الأرقام الأخيرة قبل ما ندخل الاجتماع؟'",
+        "mistake": "تطلب الطلب حاف كده من غير ما تدي أي تبرير أو سياق."
+      },
+      "quiz": {
+        "type": "mcq",
+        "correct_index": 1,
+        "en": {
+          "question": "You need a teammate to prioritize reviewing your document today over their regular tasks. What is the most persuasive phrasing?",
+          "options": [
+            "Review this document today, it's very important.",
+            "Could you review this today because the client needs our approval by tomorrow morning?",
+            "If you don't review this today, the project will fail.",
+            "Please review this when you have some spare time."
+          ],
+          "explanation": "Using 'because' along with a concrete reason dramatically increases compliance by satisfying the brain's need for justification."
+        },
+        "ar": {
+          "question": "محتاج زميلك في الفريق يراجع ملفك النهاردة ويقدمه على بقية الشغل اللي في إيده. أنهي أسلوب هيقنعه أكتر؟",
+          "options": [
+            "راجع الملف ده النهاردة ضروري جداً.",
+            "ممكن تراجع الملف ده النهاردة عشان العميل محتاج موافقتنا قبل بكرة الصبح؟",
+            "لو مراجعتش الملف النهاردة المشروع هيقع.",
+            "ابقى راجع الملف ده لما تلاقي وقت فاضي."
+          ],
+          "explanation": "استخدام كلمة 'عشان' مع تقديم سبب واضح ومحدد بيجبر العقل إنه يستجيب للطلب بشكل أسرع بكثير."
+        }
+      }
+    }
+  ]
+}
