@@ -1,5 +1,370 @@
 [
   {
+    "id": "2026-11-23_sales_the-labeling-technique",
+    "number": 152,
+    "patch_number": 31,
+    "topic": "sales",
+    "level": "intermediate",
+    "tags": [
+      "sales",
+      "negotiation",
+      "empathy",
+      "discovery"
+    ],
+    "created_at": "2026-11-23T17:36:01.625602+00:00",
+    "file": "cards/2026/2026-11-23_auto_03.json",
+    "en": {
+      "title": "Label objections instead of arguing with them",
+      "hook": "When a client says 'It's too expensive,' arguing about value instantly triggers their defense system.",
+      "key_phrase": "It sounds like you're worried this won't deliver enough return on your budget."
+    },
+    "ar": {
+      "title": "سمّي الخوف بدل ما تجادل في السعر",
+      "hook": "لما العميل يقولك 'السعر غالي أوي'، لو دخلت في مجادلة وشرح للمميزات، هو هيقفل منك أكتر ويدافع عن رأيه.",
+      "key_phrase": "شكل حضرتك قلقان إن الاستثمار ده ميرجعلكش مردود سريع."
+    }
+  },
+  {
+    "id": "2026-11-23_psychology_spotlight-effect-reset",
+    "number": 151,
+    "patch_number": 31,
+    "topic": "psychology",
+    "level": "beginner",
+    "tags": [
+      "mindset",
+      "confidence",
+      "psychology",
+      "anxiety"
+    ],
+    "created_at": "2026-11-23T17:36:01.625602+00:00",
+    "file": "cards/2026/2026-11-23_auto_03.json",
+    "en": {
+      "title": "Break the spotlight effect by noticing others",
+      "hook": "You spilled coffee on your shirt and felt like the whole room was staring. In reality, almost nobody noticed or cares.",
+      "key_phrase": "Nobody is watching my movie; they are busy editing their own."
+    },
+    "ar": {
+      "title": "اخرج من وهم إن كل العين عليك",
+      "hook": "دلقت قهوة على قميصك وحسيت إن القاعة كلها باصة عليك؟ الحقيقة إن محدش خد باله ولا فارق معاه أساساً!",
+      "key_phrase": "محدش بيتفرج على فيلمك، كل واحد مشغول بيمثل فيلمه هو."
+    }
+  },
+  {
+    "id": "2026-11-23_decision_making_10-10-10-rule",
+    "number": 150,
+    "patch_number": 31,
+    "topic": "decision_making",
+    "level": "beginner",
+    "tags": [
+      "decision-making",
+      "perspective",
+      "stress",
+      "clarity"
+    ],
+    "created_at": "2026-11-23T17:36:01.625602+00:00",
+    "file": "cards/2026/2026-11-23_auto_03.json",
+    "en": {
+      "title": "Frame hard choices using the 10/10/10 rule",
+      "hook": "When making emotional decisions, short-term fear tricks you into picking whatever avoids immediate discomfort.",
+      "key_phrase": "How will I view this decision in 10 months versus 10 minutes?"
+    },
+    "ar": {
+      "title": "قيم قراراتك الصعبة بقاعدة ١٠ / ١٠ / ١٠",
+      "hook": "لما بتاخد قرار تحت ضغط، الخوف المباشر بيكبر الشكوك ويخليك تختار الحل السهل اللي يريحك دلوقتي وخلاص.",
+      "key_phrase": "هكون شايف القرار ده إزاي كمان ١٠ شهور مقارنة بـ ١٠ دقايق دلوقتي؟"
+    }
+  },
+  {
+    "id": "2026-11-23_communication_pause-before-answering",
+    "number": 149,
+    "patch_number": 31,
+    "topic": "communication",
+    "level": "beginner",
+    "tags": [
+      "communication",
+      "status",
+      "listening",
+      "executive-presence"
+    ],
+    "created_at": "2026-11-23T17:36:01.625602+00:00",
+    "file": "cards/2026/2026-11-23_auto_03.json",
+    "en": {
+      "title": "Use the 2-second pause to instantly project authority",
+      "hook": "Answering the microsecond someone finishes speaking makes you look anxious, defensive, and eager to please.",
+      "key_phrase": ""
+    },
+    "ar": {
+      "title": "خد ثانيتين صمت قبل ما ترد عشان تفرض هيبتك",
+      "hook": "الرد السريع في نفس الثانية اللي الشخص يخلص فيها كلامه بيخليك تبان متوتر ومستعجل ترضي القدامك.",
+      "key_phrase": ""
+    }
+  },
+  {
+    "id": "2026-11-23_career_brag-sheet-ritual",
+    "number": 148,
+    "patch_number": 31,
+    "topic": "career",
+    "level": "beginner",
+    "tags": [
+      "career",
+      "promotion",
+      "visibility",
+      "performance"
+    ],
+    "created_at": "2026-11-23T17:36:01.625602+00:00",
+    "file": "cards/2026/2026-11-23_auto_03.json",
+    "en": {
+      "title": "Keep a weekly brag sheet to claim your promotions",
+      "hook": "When review season hits, you sit there blank-faced trying to remember what you accomplished six months ago. So does your boss.",
+      "key_phrase": "Here are the key metrics and projects I've delivered over the last quarter."
+    },
+    "ar": {
+      "title": "اعمل دفتر إنجازات أسبوعي لعلاوتك الجاية",
+      "hook": "لما بيجي وقت تقييم السنة، بتقعد قدام مديرك مش فاكر عملت إيه من ٦ شهور، ومديرك كمان مش فاكرلك غير أخر غلطة!",
+      "key_phrase": "دي الأرقام والمشاريع اللي حققتها بالظبط خلال الربع اللي فات."
+    }
+  },
+  {
+    "id": "2026-11-23_productivity_the-two-minute-start-rule",
+    "number": 147,
+    "patch_number": 30,
+    "topic": "productivity",
+    "level": "beginner",
+    "tags": [
+      "procrastination",
+      "focus",
+      "habits"
+    ],
+    "created_at": "2026-11-23T17:32:38.824081+00:00",
+    "file": "cards/2026/2026-11-23_auto_02.json",
+    "en": {
+      "title": "Shrink the Task to a 2-Minute Micro-Commitment",
+      "hook": "Staring at a massive 10-page report makes you suddenly want to clean your desk and scroll Instagram.",
+      "key_phrase": "I'm just going to write the first sentence, then I can quit if I want."
+    },
+    "ar": {
+      "title": "صغّر المهمة لـ دقيقتين بس عشان تكسر التسويف",
+      "hook": "بتبص لتقرير من ١٥ صفحة فتلاقي نفسك فجأة بتقوم تنضف المكتب وتتفرج على فيديوهات ريلز.",
+      "key_phrase": "أنا هكتب أول جملة بس، وبعد كده ممكن أقوم لو مش قادر."
+    }
+  },
+  {
+    "id": "2026-11-23_pricing_three-tier-anchoring",
+    "number": 146,
+    "patch_number": 30,
+    "topic": "pricing",
+    "level": "intermediate",
+    "tags": [
+      "proposals",
+      "sales-strategy",
+      "framing"
+    ],
+    "created_at": "2026-11-23T17:32:38.824081+00:00",
+    "file": "cards/2026/2026-11-23_auto_02.json",
+    "en": {
+      "title": "Present Three Options to Eliminate Price Resistance",
+      "hook": "Show a client one price and they ask 'Is it expensive?' Show them three and they ask 'Which one fits us?'",
+      "key_phrase": "Option B is what most clients pick, but Option C is built for total done-for-you execution."
+    },
+    "ar": {
+      "title": "اعرض ٣ باقات عشان تلغي سؤال 'هو ده غالي؟'",
+      "hook": "لو عرضت سعر واحد العميل هيسأل: 'هو غالي ولا رخيص؟' لكن لو عرضت ٣ باقات هيسأل: 'أنهي واحدة تناسبني؟'",
+      "key_phrase": "الباقة (ب) هي اللي أغلب العملاء بيختاروها، بس الباقة (ج) معموله للي عايزنا نمسك كل حاجة بالكامل."
+    }
+  },
+  {
+    "id": "2026-11-23_persuasion_the-because-justification",
+    "number": 145,
+    "patch_number": 30,
+    "topic": "persuasion",
+    "level": "beginner",
+    "tags": [
+      "influence",
+      "psychology",
+      "communication"
+    ],
+    "created_at": "2026-11-23T17:32:38.824081+00:00",
+    "file": "cards/2026/2026-11-23_auto_02.json",
+    "en": {
+      "title": "Use 'Because' to Instantly Raise Compliance",
+      "hook": "Asking someone to move aside or grant a quick favor usually gets an eye roll—unless you use one magic word.",
+      "key_phrase": "May I cut in real quick because I need to print just two pages?"
+    },
+    "ar": {
+      "title": "استخدم كلمة 'عشان' عشان ترفع نسبة الموافقة على طلبك",
+      "hook": "لما تطلب خدمة سريعة من حد، الأغلب بيتضايق.. إلا لو استخدمت كلمة سحرية واحدة في نص الكلام.",
+      "key_phrase": "ممكن بعد إذنك أعدي الأول عشان محتاج أطبع الورقتين دول بسرعة؟"
+    }
+  },
+  {
+    "id": "2026-11-23_negotiation_label-extreme-anchors",
+    "number": 144,
+    "patch_number": 30,
+    "topic": "negotiation",
+    "level": "intermediate",
+    "tags": [
+      "anchoring",
+      "tactical-empathy",
+      "deals"
+    ],
+    "created_at": "2026-11-23T17:32:38.824081+00:00",
+    "file": "cards/2026/2026-11-23_auto_02.json",
+    "en": {
+      "title": "Label the Extreme Anchor Before Countering",
+      "hook": "They drop an insulting offer, your pulse spikes, and you instinctively shout a counter-offer. You just lost control.",
+      "key_phrase": "It sounds like you're under extreme budget pressure on this project."
+    },
+    "ar": {
+      "title": "سمّي الموقف الصعب بصوت عالي قبل ما تفرش سعرك",
+      "hook": "العميل يرمي عرض مستفز ورخيص جدًا، ضربات قلبك تزيد، وترد بسرعة برقم تاني.. كده أنت خسرت السيطرة.",
+      "key_phrase": "شكله كده في ضغط كبير على الميزانية عندكم في المشروع ده؟"
+    }
+  },
+  {
+    "id": "2026-11-23_meetings_ask-the-quietest-person-first",
+    "number": 143,
+    "patch_number": 30,
+    "topic": "meetings",
+    "level": "intermediate",
+    "tags": [
+      "facilitation",
+      "teamwork",
+      "decision-making"
+    ],
+    "created_at": "2026-11-23T17:32:38.824081+00:00",
+    "file": "cards/2026/2026-11-23_auto_02.json",
+    "en": {
+      "title": "End Meetings by Asking the Quietest Person First",
+      "hook": "Everyone nods, the loudest voice dominates, and the meeting ends—only for the best idea to die in someone's head.",
+      "key_phrase": "Before we lock this in, [Name], what is one risk we are missing here?"
+    },
+    "ar": {
+      "title": "أنهي الاجتماع بسؤال أكتر حد ساكت",
+      "hook": "الكل بيهز راسه، وأعلى صوت بيسيطر، والاجتماع يخلص.. وأحسن فكرة تموت في دماغ صاحبها.",
+      "key_phrase": "قبل ما ننفذ يا [اسم]، إيه المخاطرة الوحيدة اللي إحنا مش واخدين بالنا منها هنا؟"
+    }
+  },
+  {
+    "id": "2026-11-23_sales_cost-of-inaction",
+    "number": 142,
+    "patch_number": 29,
+    "topic": "sales",
+    "level": "advanced",
+    "tags": [
+      "sales",
+      "persuasion",
+      "business"
+    ],
+    "created_at": "2026-11-23T17:29:49.643789+00:00",
+    "file": "cards/2026/2026-11-23_auto_01.json",
+    "en": {
+      "title": "Ask buyers to calculate the cost of doing nothing",
+      "hook": "The prospect agrees your solution is amazing, but keeps delaying: 'Everything looks great, let's talk next quarter.'",
+      "key_phrase": "If you decide to hold off on fixing this for another six months, what will that delay cost you?"
+    },
+    "ar": {
+      "title": "اسأل عن تكلفة 'إني ما أعملش حاجة'",
+      "hook": "العميل معجب جداً بمنتجك، بس كل ما تقرب تقفل المعاملة يقولك: 'كل حاجة تمام، نتكلم الربع الجاي إن شاء الله.'",
+      "key_phrase": "لو قررتوا تأجلوا حل المشكلة دي 6 شهور كمان، ده هيكلف الشركة قد إيه؟"
+    }
+  },
+  {
+    "id": "2026-11-23_pricing_three-tier-anchor",
+    "number": 141,
+    "patch_number": 29,
+    "topic": "pricing",
+    "level": "intermediate",
+    "tags": [
+      "pricing",
+      "sales",
+      "psychology"
+    ],
+    "created_at": "2026-11-23T17:29:49.643789+00:00",
+    "file": "cards/2026/2026-11-23_auto_01.json",
+    "en": {
+      "title": "Present three tier options to eliminate price pushback",
+      "hook": "Send a client a single price quote, and they ask: 'Can you do it cheaper?' Send them three options, and they ask: 'Which option fits us best?'",
+      "key_phrase": "Option B is our most popular choice because it balances full implementation with ongoing support."
+    },
+    "ar": {
+      "title": "اعرض 3 باقات عشان تنهي فزاعة 'سعرك غالي'",
+      "hook": "لو بعت للعميل سعر واحد، هيقولك: 'مفيش خصم؟'.. بس لو بعتله 3 باقات، هيسألك: 'أنهي باقة مناسبة لينا أكتر؟'",
+      "key_phrase": "الباقة الثانية هي الأكثر طلباً عشان بتغطي كل الاحتياجات الأساسية مع الدعم."
+    }
+  },
+  {
+    "id": "2026-11-23_negotiation_ack-and-pivot",
+    "number": 140,
+    "patch_number": 29,
+    "topic": "negotiation",
+    "level": "intermediate",
+    "tags": [
+      "negotiation",
+      "persuasion",
+      "communication"
+    ],
+    "created_at": "2026-11-23T17:29:49.643789+00:00",
+    "file": "cards/2026/2026-11-23_auto_01.json",
+    "en": {
+      "title": "Label their hidden fear before making a counter-offer",
+      "hook": "They blurt out an absurdly low offer. Your immediate reaction is to argue, but arguing triggers instant defense.",
+      "key_phrase": "It seems like keeping cash flow flexible this quarter is your biggest priority."
+    },
+    "ar": {
+      "title": "سمِّي خوفهم المستخبى قبل ما ترفض عرضهم",
+      "hook": "العميل يرميلك سعر واطي جداً.. أول رد فعل عندك إنك تدافع عن سعرك، بس ده بيخليه يعاند أكتر.",
+      "key_phrase": "شكل كده السيولة النقدية الفترة دي هي أهم حاجة عند حضرتك."
+    }
+  },
+  {
+    "id": "2026-11-23_money_work-hours-metric",
+    "number": 139,
+    "patch_number": 29,
+    "topic": "money",
+    "level": "beginner",
+    "tags": [
+      "money",
+      "psychology",
+      "decision_making"
+    ],
+    "created_at": "2026-11-23T17:29:49.643789+00:00",
+    "file": "cards/2026/2026-11-23_auto_01.json",
+    "en": {
+      "title": "Evaluate impulse buys in life hours, not cash",
+      "hook": "You see a $200 jacket. You have $200 in checking, so you buy it. Two weeks later, it sits unworn in your closet.",
+      "key_phrase": "Is this purchase worth spending 12 hours sitting at my desk?"
+    },
+    "ar": {
+      "title": "احسب المشتريات بساعات شغلك مش بفلوسك",
+      "hook": "شفت جاكيت بـ 3000 جنيه، لقيت معاك الرقم في الفيزا فاشتريته.. بعد أسبوعين مرمي في الدولاب!",
+      "key_phrase": "هل الساعة دي تستاهل إني اشتغل عشانها يومين كاملين؟"
+    }
+  },
+  {
+    "id": "2026-11-23_meetings_agenda-end-goal",
+    "number": 138,
+    "patch_number": 29,
+    "topic": "meetings",
+    "level": "beginner",
+    "tags": [
+      "meetings",
+      "productivity",
+      "leadership"
+    ],
+    "created_at": "2026-11-23T17:29:49.643789+00:00",
+    "file": "cards/2026/2026-11-23_auto_01.json",
+    "en": {
+      "title": "Define target decisions instead of broad meeting topics",
+      "hook": "You sit through a 45-minute meeting, everybody talks, and at the end someone asks: 'So... what did we actually decide?'",
+      "key_phrase": "By the end of this 30 minutes, we need to choose between Plan A and Plan B."
+    },
+    "ar": {
+      "title": "حدد القرار اللي عايز تخرج بيه من الاجتماع مش الموضوع",
+      "hook": "بتفضل قاعد 45 دقيقة في ميتنج والكل بيتكلم، وفي الآخر حد يسأل: 'هو احنا كده اتفقنا على إيه بالظبط؟'",
+      "key_phrase": "قبل ما نخلص الـ30 دقيقة دول، محتاجين نكون اخترنا بين خطة (أ) وخطة (ب)."
+    }
+  },
+  {
     "id": "2026-11-22_leadership_praise-in-public-critique-in-private",
     "number": 137,
     "patch_number": 28,

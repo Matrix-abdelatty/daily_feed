@@ -1,11 +1,86 @@
 {
-  "generated_at": "2026-11-22T14:42:51.680038+00:00",
-  "total_files": 28,
-  "total_patches": 28,
-  "total_cards": 137,
+  "generated_at": "2026-11-23T17:39:12.412990+00:00",
+  "total_files": 31,
+  "total_patches": 31,
+  "total_cards": 152,
   "batches_per_day_target": 3,
   "batch_size_target": 5,
   "files": [
+    {
+      "batch_id": "2026-11-23_auto_03",
+      "path": "cards/2026/2026-11-23_auto_03.json",
+      "date": "2026-11-23",
+      "created_at": "2026-11-23T17:36:01.625602+00:00",
+      "source": "gemini-3.5-flash",
+      "card_count": 5,
+      "card_ids": [
+        "2026-11-23_psychology_spotlight-effect-reset",
+        "2026-11-23_sales_the-labeling-technique",
+        "2026-11-23_career_brag-sheet-ritual",
+        "2026-11-23_communication_pause-before-answering",
+        "2026-11-23_decision_making_10-10-10-rule"
+      ],
+      "patch_number": 31,
+      "card_numbers": [
+        148,
+        149,
+        150,
+        151,
+        152
+      ],
+      "min_number": 148,
+      "max_number": 152
+    },
+    {
+      "batch_id": "2026-11-23_auto_02",
+      "path": "cards/2026/2026-11-23_auto_02.json",
+      "date": "2026-11-23",
+      "created_at": "2026-11-23T17:32:38.824081+00:00",
+      "source": "gemini-3.5-flash",
+      "card_count": 5,
+      "card_ids": [
+        "2026-11-23_meetings_ask-the-quietest-person-first",
+        "2026-11-23_negotiation_label-extreme-anchors",
+        "2026-11-23_persuasion_the-because-justification",
+        "2026-11-23_pricing_three-tier-anchoring",
+        "2026-11-23_productivity_the-two-minute-start-rule"
+      ],
+      "patch_number": 30,
+      "card_numbers": [
+        143,
+        144,
+        145,
+        146,
+        147
+      ],
+      "min_number": 143,
+      "max_number": 147
+    },
+    {
+      "batch_id": "2026-11-23_auto_01",
+      "path": "cards/2026/2026-11-23_auto_01.json",
+      "date": "2026-11-23",
+      "created_at": "2026-11-23T17:29:49.643789+00:00",
+      "source": "gemini-3.5-flash",
+      "card_count": 5,
+      "card_ids": [
+        "2026-11-23_meetings_agenda-end-goal",
+        "2026-11-23_negotiation_ack-and-pivot",
+        "2026-11-23_pricing_three-tier-anchor",
+        "2026-11-23_sales_cost-of-inaction",
+        "2026-11-23_money_work-hours-metric"
+      ],
+      "patch_number": 29,
+      "card_numbers": [
+        138,
+        139,
+        140,
+        141,
+        142
+      ],
+      "min_number": 138,
+      "max_number": 142
+    },
     {
       "batch_id": "2026-11-22_auto_03",
       "path": "cards/2026/2026-11-22_auto_03.json",

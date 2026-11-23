@@ -1,0 +1,288 @@
+{
+  "schema_version": 1,
+  "batch_id": "2026-11-23_auto_01",
+  "created_at": "2026-11-23T17:29:49.643789+00:00",
+  "source": "gemini-3.5-flash",
+  "cards": [
+    {
+      "id": "2026-11-23_meetings_agenda-end-goal",
+      "created_at": "2026-11-23T17:29:49.643789+00:00",
+      "topic": "meetings",
+      "tags": [
+        "meetings",
+        "productivity",
+        "leadership"
+      ],
+      "level": "beginner",
+      "needs_completion": false,
+      "en": {
+        "title": "Define target decisions instead of broad meeting topics",
+        "hook": "You sit through a 45-minute meeting, everybody talks, and at the end someone asks: 'So... what did we actually decide?'",
+        "action": "Open every meeting by stating the exact decision needed by the end of the time slot, rather than listing topics.",
+        "key_phrase": "By the end of this 30 minutes, we need to choose between Plan A and Plan B.",
+        "when": "At the very first minute of any team or project alignment meeting.",
+        "why": "People switch from passive listening to active problem-solving when the target output is clear and explicit.",
+        "example": "Instead of starting with 'Let's discuss marketing,' say: 'Before we start, by 2:30 we need to pick one campaign strategy for Q3.'",
+        "mistake": "Setting vague agenda topics like 'Discuss Q3 Marketing' which leads to endless unstructured chatting."
+      },
+      "ar": {
+        "title": "حدد القرار اللي عايز تخرج بيه من الاجتماع مش الموضوع",
+        "hook": "بتفضل قاعد 45 دقيقة في ميتنج والكل بيتكلم، وفي الآخر حد يسأل: 'هو احنا كده اتفقنا على إيه بالظبط؟'",
+        "action": "ابدأ أي اجتماع بأنك تقول القرار المحدد المطلوب الخروج بيه أول ما الوقت يخلص، بدل ما تقرأ لستة مواضيع.",
+        "key_phrase": "قبل ما نخلص الـ30 دقيقة دول، محتاجين نكون اخترنا بين خطة (أ) وخطة (ب).",
+        "when": "أول دقيقة في أي ميتنج عشان تظبط إيقاع القاعدة.",
+        "why": "الناس بتبطل ترغي وتتحول لتركيز عملي لما يعرفوا إن فيه قرار محدد مستنيهم في الآخر.",
+        "example": "بدل ما تبدأ بـ 'يلا نناقش الماركتينج'، قول: 'يا جماعة قبل ما نبدأ، على الساعة 2:30 محتاجين نكون استقرينا على حملة واحدة للنصف الثاني.'",
+        "mistake": "تكتفي بـ 'مناقشة خطة التسويق' فتتحول الـ45 دقيقة لدردشة عائمة من غير مخرج."
+      },
+      "quiz": {
+        "type": "mcq",
+        "correct_index": 1,
+        "en": {
+          "question": "You are starting a 30-minute sync about product features. How should you kick off the meeting?",
+          "options": [
+            "Ask everyone to go around the room and share their thoughts on product quality.",
+            "State: 'By the end of this meeting, we must decide which 2 features ship this month.'",
+            "Read the entire list of 15 requested features out loud.",
+            "Wait for someone else to open the floor so you don't seem bossy."
+          ],
+          "explanation": "Stating the exact required decision creates immediate focus and prevents side discussions from consuming time."
+        },
+        "ar": {
+          "question": "داخل ميتنج 30 دقيقة تناقشوا مزايا المنتج الجديد. إيه أفضل طريقة تبدأ بيها القاعدة؟",
+          "options": [
+            "تطلب من كل واحد يلف الفتيلة ويقول رأيه في جودة المنتج عموماً.",
+            "تقول: 'قبل ما الوقت يخلص، لازم نكون حددنا الميزتين الإثنين اللي هينزلوا الشهر ده.'",
+            "تقرأ لستة الـ 15 ميزة المطلوبة بصوت عالي.",
+            "تستنى حد تاني يفتح الكلام عشان ما تبانش إنك مسيطر ومستبد."
+          ],
+          "explanation": "تحديد القرار المطلوب بيجبر الكل يركز في الهدف بدل ما يضيع الوقت في كلام فرعي مالوش لازمة."
+        }
+      }
+    },
+    {
+      "id": "2026-11-23_negotiation_ack-and-pivot",
+      "created_at": "2026-11-23T17:29:49.643789+00:00",
+      "topic": "negotiation",
+      "tags": [
+        "negotiation",
+        "persuasion",
+        "communication"
+      ],
+      "level": "intermediate",
+      "needs_completion": false,
+      "en": {
+        "title": "Label their hidden fear before making a counter-offer",
+        "hook": "They blurt out an absurdly low offer. Your immediate reaction is to argue, but arguing triggers instant defense.",
+        "action": "Name their underlying emotional driver using 'It seems like...' before offering alternative terms.",
+        "key_phrase": "It seems like keeping cash flow flexible this quarter is your biggest priority.",
+        "when": "When the counterpart gives a harsh or unreasonable counter-proposal.",
+        "why": "Labeling negative emotions neutralizes brain tension and shifts the counterpart from fight mode to problem-solving.",
+        "example": "Client: 'That price is insane!' You: 'It seems like you're worried about getting locked into a deal that strains your budget. If we split this into 3 phases, would that help?'",
+        "mistake": "Immediately defending your price or caving into discounts without addressing their underlying fear."
+      },
+      "ar": {
+        "title": "سمِّي خوفهم المستخبى قبل ما ترفض عرضهم",
+        "hook": "العميل يرميلك سعر واطي جداً.. أول رد فعل عندك إنك تدافع عن سعرك، بس ده بيخليه يعاند أكتر.",
+        "action": "اوصف مشاعره أو مخاوفه بصوت عالي باستخدام 'شكل كده...' قبل ما تعدل في الشروط.",
+        "key_phrase": "شكل كده السيولة النقدية الفترة دي هي أهم حاجة عند حضرتك.",
+        "when": "أول ما الطرف التاني يرمي عرض صدمة أو غير منطقي.",
+        "why": "لما بتسمي المشاعر السلبية بصوت عالي، المخ بيهدى وبيتحول من وضع الدفاع لوضع حل المشكلة معاك.",
+        "example": "العميل: 'ده رقم مبالغ فيه جداً!' أنت: 'واضح إن السيولة النقدية الفترة دي هي أهم حاجة عند حضرتك.. طب لو قسمنا الدفعات على 3 مراحل، ده يريحك؟'",
+        "mistake": "تنزل في السعر على طول أو تدخل في خناقة وتدافع عن سعرك برغاي وتبريرات مريضة."
+      },
+      "quiz": {
+        "type": "mcq",
+        "correct_index": 2,
+        "en": {
+          "question": "A buyer says: 'Your service is way too expensive compared to Competitor X.' What is the best move?",
+          "options": [
+            "Immediately offer a 20% discount so you don't lose the sale.",
+            "Tell them Competitor X provides terrible quality and bad service.",
+            "Say: 'It sounds like you want to make sure you're getting full ROI without overspending. Let's look at what X leaves out.'",
+            "Say: 'Take it or leave it, our prices are final.'"
+          ],
+          "explanation": "Labeling their intention (getting full value safely) calms their suspicion and lets you compare actual scopes objectively."
+        },
+        "ar": {
+          "question": "مشتري قالك: 'خدمتكم اغلى بكثير من المنافس سين.' تصرفك الصح إيه؟",
+          "options": [
+            "تديله خصم 20% فوراً عشان البيعة ما تطيرش.",
+            "تقوله المنافس سين ده شغاله زفت وخدمتهم وحشة.",
+            "تقوله: 'شكل كده حضرتك عايز تتأكد إنك بتستثمر صح ومن غير مصاريف زيادة.. تعال نشوف سين بيشيل إيه من العرض.'",
+            "تقوله: 'هو ده السعر اللي عندنا.. عاجبك ولا مش عاجبك.'"
+          ],
+          "explanation": "تسمية خوفه (إنه يصرف فلوس في مكان غلط) بيمتص التوتر وبيخليك تشرح الفرق في الخدمة بهدوء."
+        }
+      }
+    },
+    {
+      "id": "2026-11-23_pricing_three-tier-anchor",
+      "created_at": "2026-11-23T17:29:49.643789+00:00",
+      "topic": "pricing",
+      "tags": [
+        "pricing",
+        "sales",
+        "psychology"
+      ],
+      "level": "intermediate",
+      "needs_completion": false,
+      "en": {
+        "title": "Present three tier options to eliminate price pushback",
+        "hook": "Send a client a single price quote, and they ask: 'Can you do it cheaper?' Send them three options, and they ask: 'Which option fits us best?'",
+        "action": "Structure proposals with 3 packages (Basic, Standard, Premium), making your main target offer the middle package.",
+        "key_phrase": "Option B is our most popular choice because it balances full implementation with ongoing support.",
+        "when": "When submitting proposals to clients who are sensitive about price or budget.",
+        "why": "Human judgment relies on contrast; high-priced anchors make middle options feel reasonable and safe.",
+        "example": "Instead of quoting $5,000 flat, offer: $3,000 (Basic), $5,000 (Standard - Recommended), and $12,000 (Full-service VIP).",
+        "mistake": "Giving a single flat-fee quote that forces a binary 'yes or no' decision."
+      },
+      "ar": {
+        "title": "اعرض 3 باقات عشان تنهي فزاعة 'سعرك غالي'",
+        "hook": "لو بعت للعميل سعر واحد، هيقولك: 'مفيش خصم؟'.. بس لو بعتله 3 باقات، هيسألك: 'أنهي باقة مناسبة لينا أكتر؟'",
+        "action": "اعمل دايماً 3 خيارات (أساسي، مميز، شامل) وخلي عرضك المستهدف في النص.",
+        "key_phrase": "الباقة الثانية هي الأكثر طلباً عشان بتغطي كل الاحتياجات الأساسية مع الدعم.",
+        "when": "لما بتيجي تبعت عرض سعر (Proposal) لعميل بيهتم بالتفاصيل أو الفلوس.",
+        "why": "العقل بيفهم القيمة بالمقارنة؛ لما بيشوف باقة غالية أوي، الباقة اللي في النص بتبان لقطة وآمنة.",
+        "example": "بدل ما تقول العقد بـ 50 ألف، اعرض: 30 ألف (أساسي)، 50 ألف (الموصى به)، و100 ألف (خدمة كاملة مع متابعة يومية).",
+        "mistake": "تبعت سعر واحد بس، فتعرّض نفسك لإما 'أه' أو 'لأ'."
+      },
+      "quiz": {
+        "type": "mcq",
+        "correct_index": 0,
+        "en": {
+          "question": "Why does presenting three price tiers work better than offering just one fixed price?",
+          "options": [
+            "It shifts the customer's mindset from 'Should I buy?' to 'Which option should I buy?'",
+            "It forces the client to pick the most expensive option every time.",
+            "It hides the true costs until after the contract is signed.",
+            "It reduces the actual amount of work you need to deliver."
+          ],
+          "explanation": "Multiple options change the psychological question from a binary purchase decision to a choice of preferences."
+        },
+        "ar": {
+          "question": "ليه عرض 3 باقات أسعار بيجيب نتيجة أفضل من عرض سعر واحد ثابت؟",
+          "options": [
+            "بيحول تفكير العميل من 'هل اشتري ولا لأ؟' إلى 'أنهي باقة أنسب ليا؟'",
+            "بيجبر العميل يختار أغلى باقة دايماً.",
+            "بيخبي التكلفة الحقيقية لحد ما يوقع العقد.",
+            "بيقلل كمية شغل الخدمة المطلوب منك تنفيذها."
+          ],
+          "explanation": "وجود اختيارات بيغير السؤال في عقله من الاستغناء عن الخدمة للاختيار بين المستويات."
+        }
+      }
+    },
+    {
+      "id": "2026-11-23_sales_cost-of-inaction",
+      "created_at": "2026-11-23T17:29:49.643789+00:00",
+      "topic": "sales",
+      "tags": [
+        "sales",
+        "persuasion",
+        "business"
+      ],
+      "level": "advanced",
+      "needs_completion": false,
+      "en": {
+        "title": "Ask buyers to calculate the cost of doing nothing",
+        "hook": "The prospect agrees your solution is amazing, but keeps delaying: 'Everything looks great, let's talk next quarter.'",
+        "action": "Ask them to calculate the exact operational or financial drain caused by staying with their current setup.",
+        "key_phrase": "If you decide to hold off on fixing this for another six months, what will that delay cost you?",
+        "when": "When a qualified buyer stalls or hesitates to close without raising clear objections.",
+        "why": "Loss aversion motivates decisions twice as strongly as potential gains; highlighting active leakage triggers action.",
+        "example": "You: 'If you keep using the manual system for 6 more months, how many working hours does your team lose?' Prospect: 'Around 200 hours.' You: 'And what is that costing you?'",
+        "mistake": "Offering more product benefits or extra features to move a buyer who is stuck in status quo bias."
+      },
+      "ar": {
+        "title": "اسأل عن تكلفة 'إني ما أعملش حاجة'",
+        "hook": "العميل معجب جداً بمنتجك، بس كل ما تقرب تقفل المعاملة يقولك: 'كل حاجة تمام، نتكلم الربع الجاي إن شاء الله.'",
+        "action": "خليه يحسب بنفسه الخسارة اللي بتتحسب عليه كل يوم بيأجل فيه القرار ده.",
+        "key_phrase": "لو قررتوا تأجلوا حل المشكلة دي 6 شهور كمان، ده هيكلف الشركة قد إيه؟",
+        "when": "لما العميل يكون مقتنع بس بيمطل وبيأجل الشراء بدون سبب واضح.",
+        "why": "الخوف من الخسارة بيحرك البني آدم مرتين أسرع من الرغبة في المكسب؛ توريه النزيف الحالي هيخليه يتحرك.",
+        "example": "أنت: 'لو كملنا بنفس النظام القديم 6 شهور، فريقك هيضيع كام ساعة؟' العميل: 'حوالي 200 ساعة!' أنت: 'وده مكلف الشركة كام فلوس؟'",
+        "mistake": "تقعد تقوله مزايا إضافية أو تعمل خصم، بدل ما توريه الخسارة الشغالة حالياً."
+      },
+      "quiz": {
+        "type": "mcq",
+        "correct_index": 3,
+        "en": {
+          "question": "A buyer says: 'We love your software, but we'll re-evaluate next year.' How should you respond?",
+          "options": [
+            "Offer a 50% discount right away if they sign today.",
+            "Accept their timeline and set a calendar reminder for 12 months later.",
+            "Argue that their current workflow is completely outdated and inefficient.",
+            "Ask: 'What will staying with your current process cost your team over the next 12 months?'"
+          ],
+          "explanation": "Asking about inaction costs makes them realize that waiting isn't free—it actively drains money and time."
+        },
+        "ar": {
+          "question": "عميل قالك: 'البرنامج بتاعكم ممتاز، بس هنأجل الموضوع للسنة الجاية.' ترد تقول إيه؟",
+          "options": [
+            "تعمل خصم 50% فوراً لو وقعوا النهارده.",
+            "تسلم بالأمر الواقع وتحط فكر في النتيجة بعد سنة.",
+            "تغلط في طريقة شغلهم الحالية وتقولهم شغلكم قديم وبايظ.",
+            "تسأل: 'طب الاستمرار بالنظام الحالي هيكلف الشركة إيه خلال الـ 12 شهر الجايين؟'"
+          ],
+          "explanation": "السؤال عن تكلفة التأجيل بيخليه يستوعب إن الانتظار مش بلاش، ده بيكلفه خسارة شغالة يومياً."
+        }
+      }
+    },
+    {
+      "id": "2026-11-23_money_work-hours-metric",
+      "created_at": "2026-11-23T17:29:49.643789+00:00",
+      "topic": "money",
+      "tags": [
+        "money",
+        "psychology",
+        "decision_making"
+      ],
+      "level": "beginner",
+      "needs_completion": false,
+      "en": {
+        "title": "Evaluate impulse buys in life hours, not cash",
+        "hook": "You see a $200 jacket. You have $200 in checking, so you buy it. Two weeks later, it sits unworn in your closet.",
+        "action": "Divide the item price by your hourly net pay to see how many work hours you must trade for it.",
+        "key_phrase": "Is this purchase worth spending 12 hours sitting at my desk?",
+        "when": "Before buying non-essential products or making impulse luxury purchases.",
+        "why": "Money is abstract, but time is finite; converting prices to labor hours activates reality-based value assessment.",
+        "example": "If you net $20/hour, a $200 coat isn't $200—it costs 10 hours of work. Ask: 'Am I willing to work all Tuesday just for this coat?'",
+        "mistake": "Checking your bank balance to judge affordability instead of measuring trade-offs against your time."
+      },
+      "ar": {
+        "title": "احسب المشتريات بساعات شغلك مش بفلوسك",
+        "hook": "شفت جاكيت بـ 3000 جنيه، لقيت معاك الرقم في الفيزا فاشتريته.. بعد أسبوعين مرمي في الدولاب!",
+        "action": "اقسم سعر الحاجة على صافي دخلك في الساعة، عشان تعرف الحاجة دي هتكلفك كام ساعة من عمرك قبل ما تشتري.",
+        "key_phrase": "هل الساعة دي تستاهل إني اشتغل عشانها يومين كاملين؟",
+        "when": "لما تجيلك رغبة مفاجئة تشتري حاجة مش أساسية (Impulse buy).",
+        "why": "الفلوس مفهوم مجرد للمخ، لكن الوقت محدود؛ تحويل السعر لساعات عمل بيخليك تحس بالتكلفة الحقيقية.",
+        "example": "لو ساعتك بتصفصف على 100 جنيه، الجاكيت أبو 3000 ده مش بـ 3000.. ده بـ 30 ساعة شغل! هل مستعد تشتغل 4 أيام كاملين عشان الجاكيت ده؟",
+        "mistake": "تبص على رصيد الفيزا بس وتفتكر إن طالما المبلغ موجود يبقى تقدر تشتري."
+      },
+      "quiz": {
+        "type": "mcq",
+        "correct_index": 1,
+        "en": {
+          "question": "You earn $25 net/hour and want to buy a $300 gadget you don't strictly need. How should you evaluate it?",
+          "options": [
+            "Check if you can pay for it using credit card reward points.",
+            "Calculate that it costs 12 full hours of your labor and decide if it's worth that work time.",
+            "Buy it immediately if your checking account balance is over $300.",
+            "Wait for a 5% holiday sale before making the purchase."
+          ],
+          "explanation": "Converting price to hours worked ($300 / $25 = 12 hours) forces a direct evaluation of effort versus enjoyment."
+        },
+        "ar": {
+          "question": "بتكسب صافي 50 جنيه في الساعة، وعايز تشتري سماعة بـ 1500 جنيه رفاهية. تحسبها إزاي صح؟",
+          "options": [
+            "تشوف لو ينفع تقسطها على 6 شهور بدون فوائد.",
+            "تحسب إنها هتكلفك 30 ساعة شغل كاملين، وتفكر هل هي تستاهل مجهود الشغل ده ولا لأ.",
+            "تشتريها فوراً طالما معاك 1500 جنيه فاضلين في الحساب.",
+            "تستنى لما ينزل عليها خصم 5% وتشتريها."
+          ],
+          "explanation": "تحويل السعر لساعات عمل (1500 / 50 = 30 ساعة) بيخليك تقيم المقابضة الحقيقية بين مجهودك والمتعة اللي هتجيلك."
+        }
+      }
+    }
+  ]
+}

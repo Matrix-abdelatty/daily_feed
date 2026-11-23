@@ -1,0 +1,293 @@
+{
+  "schema_version": 1,
+  "batch_id": "2026-11-23_auto_03",
+  "created_at": "2026-11-23T17:36:01.625602+00:00",
+  "source": "gemini-3.5-flash",
+  "cards": [
+    {
+      "id": "2026-11-23_psychology_spotlight-effect-reset",
+      "created_at": "2026-11-23T17:36:01.625602+00:00",
+      "topic": "psychology",
+      "tags": [
+        "mindset",
+        "confidence",
+        "psychology",
+        "anxiety"
+      ],
+      "level": "beginner",
+      "needs_completion": false,
+      "en": {
+        "title": "Break the spotlight effect by noticing others",
+        "hook": "You spilled coffee on your shirt and felt like the whole room was staring. In reality, almost nobody noticed or cares.",
+        "action": "Next time you feel embarrassed, mentally name three specific things people around you are currently focusing on instead of you.",
+        "key_phrase": "Nobody is watching my movie; they are busy editing their own.",
+        "when": "When you make a minor mistake in public or feel socially self-conscious.",
+        "why": "The spotlight effect makes us overestimate how much people notice us; shifting your attention outward resets social anxiety instantly.",
+        "example": "You mispronounce a word in a meeting. Instead of freezing, look around: John is checking his phone, Sara is writing notes, and your boss is drinking water.",
+        "mistake": "Replaying the awkward moment in your head for hours while assuming everyone remembers it."
+      },
+      "ar": {
+        "title": "اخرج من وهم إن كل العين عليك",
+        "hook": "دلقت قهوة على قميصك وحسيت إن القاعة كلها باصة عليك؟ الحقيقة إن محدش خد باله ولا فارق معاه أساساً!",
+        "action": "أول ما تحس بإحراج، ركز على ٣ حاجات الناس اللي حواليك مشغولين فيها حالياً بعيد عنك تماماً.",
+        "key_phrase": "محدش بيتفرج على فيلمك، كل واحد مشغول بيمثل فيلمه هو.",
+        "when": "لما تلطش في كلمة أو تعمل غلطة بسيطة قدام الناس وتحس بالإحراج.",
+        "why": "عقلك بيكبر حجم اهتمام الناس بيك (Spotlight Effect)، ولما تتأكد إنهم سارحانين في حياتهم بتسحب الفزع منك فوراً.",
+        "example": "غلطت في نطق كلمة في اجتماع. بدل ما تتسمر مكانك، بص حواليك: أحمد بيبص في تليفونه، وسارة بتكتب، ومديرك بيشرب مية. محدش مركز معاك!",
+        "mistake": "إنك تفضل تعيد وتزيد الموقف البايخ في دماغك طول اليوم وفاكر إن الكل فاكره."
+      },
+      "quiz": {
+        "type": "mcq",
+        "correct_index": 2,
+        "en": {
+          "question": "You drop your pen noisily during a quiet presentation. What is the psychological trick to recover quickly?",
+          "options": [
+            "Apologize profusely to the entire room.",
+            "Freeze and hope no one saw you.",
+            "Shift your focus outward and observe that others are busy with their own tasks.",
+            "Make a joke about your clumsiness to keep attention on you."
+          ],
+          "explanation": "Observing others breaks the spotlight effect by proving to your brain that people are self-absorbed, not monitoring your every move."
+        },
+        "ar": {
+          "question": "قلمك وقع بصوت عالي وسط بريزنتيشن هادية. إيه أسرع تريك نفسية تطلعك من الإحراج؟",
+          "options": [
+            "تعتذر بشدة وطول الاجتماع لكل الموجودين.",
+            "تتجمد في مكانك وتدعي محدش يكون شافك.",
+            "تبص حواليك وتلاحظ إن الناس مشغولة في حاجتها ومش مركزة معاك.",
+            "تعمل نكتة عن غباؤك عشان تفضل مركز العين عليك."
+          ],
+          "explanation": "لما تبص حواليك وتكتشف إن الناس سرحانة في تليفوناتها أو شغلها، بتكسر وهم الـ Spotlight Effect في ثواني."
+        }
+      }
+    },
+    {
+      "id": "2026-11-23_sales_the-labeling-technique",
+      "created_at": "2026-11-23T17:36:01.625602+00:00",
+      "topic": "sales",
+      "tags": [
+        "sales",
+        "negotiation",
+        "empathy",
+        "discovery"
+      ],
+      "level": "intermediate",
+      "needs_completion": false,
+      "en": {
+        "title": "Label objections instead of arguing with them",
+        "hook": "When a client says 'It's too expensive,' arguing about value instantly triggers their defense system.",
+        "action": "Name the emotion behind their hesitation using the format: 'It seems like...' or 'It sounds like...'.",
+        "key_phrase": "It sounds like you're worried this won't deliver enough return on your budget.",
+        "when": "When a prospect pushes back on price or shows sudden reluctance.",
+        "why": "Labeling neutralizes negative emotions in the amygdala, making the prospect feel heard without you making an unearned compromise.",
+        "example": "Client: 'Your software fees are higher than Competitor X.' You: 'It sounds like you feel safer sticking to a cheaper baseline until you see proven results.' Client: 'Exactly! If you could show ROI...'",
+        "mistake": "Immediately listing features or offering a discount to defend your pricing."
+      },
+      "ar": {
+        "title": "سمّي الخوف بدل ما تجادل في السعر",
+        "hook": "لما العميل يقولك 'السعر غالي أوي'، لو دخلت في مجادلة وشرح للمميزات، هو هيقفل منك أكتر ويدافع عن رأيه.",
+        "action": "بدل ما تدافع، يوصف احساس الخوف اللي عنده بجملة تبدأ بـ 'شكلك تقلقان من...' أو 'واضح إنك حاسس بـ...'.",
+        "key_phrase": "شكل حضرتك قلقان إن الاستثمار ده ميرجعلكش مردود سريع.",
+        "when": "أول ما العميل يعترض على السعر أو يبين إنه متردد فجأة.",
+        "why": "لما بتسمّي مشاعره، الجزء المسئول عن الخوف في مخه بيهدأ ويسكن، فبيحس إنك فاهوه بدل ما يحسك بتبيعله بالعافية.",
+        "example": "العميل: 'أسعاركم أعلى من الشركة الثانية.' أنت: 'واضح إنك حاسس إن المخاطرة كبيرة طالما مفيش ضمانات نتايج من أول شهر.' العميل: 'بالظبط! أنا لو شفت نتايج...'",
+        "mistake": "إنك تدي خصم على طول أو تفرش لستة مميزات دفاعية عشان تبرر السعر."
+      },
+      "quiz": {
+        "type": "mcq",
+        "correct_index": 1,
+        "en": {
+          "question": "A prospect says, 'We don't have the bandwidth to onboard a new tool right now.' What is the best sales response?",
+          "options": [
+            "Our onboarding takes only 10 minutes, let me show you!",
+            "It sounds like your team is already overwhelmed with current priorities.",
+            "If we sign today, I'll do the onboarding for you.",
+            "Most of our clients thought that before they saved 5 hours a week."
+          ],
+          "explanation": "Labeling their fear ('It sounds like your team is overwhelmed...') validates their feeling, turning the conversation into a collaborative problem-solving session."
+        },
+        "ar": {
+          "question": "عميل قالك: 'مظنش عندنا وقت نتدرب على برنامج جديد دلوقتي.' إيه أفضل رد مبيعات؟",
+          "options": [
+            "التدريب بتاعنا بياخد ١٠ دقايق بس، تعالى أوريك!",
+            "واضح إن فريقك حالياً مطحون في أولويات ثانية ومش ناقص زحمة.",
+            "لو مضينا النهاردة، أنا هعملكم التدريب بنفسي.",
+            "كل عملائنا كانوا فاكرين كده برضه لحد ما وفروا ٥ ساعات أسبوعياً."
+          ],
+          "explanation": "الجملة الثانية بتعمل Labeling للضغط اللي عندهم، فبيحس إنك فاهمه ومستوعب ظروفه بدل ما تضغط عليه بتبريرات."
+        }
+      }
+    },
+    {
+      "id": "2026-11-23_career_brag-sheet-ritual",
+      "created_at": "2026-11-23T17:36:01.625602+00:00",
+      "topic": "career",
+      "tags": [
+        "career",
+        "promotion",
+        "visibility",
+        "performance"
+      ],
+      "level": "beginner",
+      "needs_completion": false,
+      "en": {
+        "title": "Keep a weekly brag sheet to claim your promotions",
+        "hook": "When review season hits, you sit there blank-faced trying to remember what you accomplished six months ago. So does your boss.",
+        "action": "Spend 3 minutes every Friday writing down 2 wins, numbers, or positive feedback emails in a personal document.",
+        "key_phrase": "Here are the key metrics and projects I've delivered over the last quarter.",
+        "when": "During weekly self-reviews and preparing for your 1-on-1s or annual reviews.",
+        "why": "Managers evaluate based on recent memory; documentation gives you objective leverage and facts during raise discussions.",
+        "example": "During your 1-on-1, instead of saying 'I worked really hard on the client portal,' you say: 'In March, I fixed the checkout bottleneck which increased completion by 14%.'",
+        "mistake": "Relying on memory or assuming your manager naturally keeps track of all your contributions."
+      },
+      "ar": {
+        "title": "اعمل دفتر إنجازات أسبوعي لعلاوتك الجاية",
+        "hook": "لما بيجي وقت تقييم السنة، بتقعد قدام مديرك مش فاكر عملت إيه من ٦ شهور، ومديرك كمان مش فاكرلك غير أخر غلطة!",
+        "action": "خصص ٣ دقايق كل جمعة واكتب في ملف خاص بيك إنجازين أو رقمين أو ميل شكر جالك الأسبوع ده.",
+        "key_phrase": "دي الأرقام والمشاريع اللي حققتها بالظبط خلال الربع اللي فات.",
+        "when": "وأنت بتجهز لاجتماع الـ 1-on-1 أو وقت تقييم المرتبات والأداء.",
+        "why": "المديرين بيفتكروا أخر أسبوعين بس، فلما تقدم أرقام وتواريخ مكتوبة بيبقى معاك حجة قوية تفرض بيها زيادتك.",
+        "example": "في تقييمك بدل ما تقول: 'أنا تعبت أوي في مشروع العميل'، بتقول: 'في مارس أنا حلّيت مشكلة الدفع وده زود نسبة إتمام الشراء ١٤٪.'",
+        "mistake": "إنك تعتمد على الذاكرة وتفتكر إن المدير متابع كل حركة شاطرة بتعملها طول السنة."
+      },
+      "quiz": {
+        "type": "mcq",
+        "correct_index": 3,
+        "en": {
+          "question": "You are walking into your annual performance review. How should you present your work to negotiate a raise?",
+          "options": [
+            "Explain how much your living expenses have increased this year.",
+            "Tell your manager that you worked 60 hours every week.",
+            "Promise that you will double your output next year if promoted.",
+            "Present a documented list of concrete outcomes and metrics achieved across the year."
+          ],
+          "explanation": "Salary raises are backed by verified past value created (metrics and outcomes), not personal financial needs or vague promises."
+        },
+        "ar": {
+          "question": "داخل اجتماع التقييم السنوي وعايز تطلب زيادة مرتب. أصلح طريقة تعرض بيها شغلك إيه؟",
+          "options": [
+            "تشرحله قد إيه مصاريف معيشتك زادت السنة دي.",
+            "تقول لمديرك إنك كنت بتشتغل ٦٠ ساعة كل أسبوع.",
+            "توعده إنك هتضاعف إنتاجيتك السنة الجاية لو أترقيت.",
+            "تعرض قايمة بالنتائج والأرقام الملموسة اللي حققتها على مدار السنة."
+          ],
+          "explanation": "الزيادات والترقيات بتحصل بالأرقام والنتائج اللي اتثبتت واضحة في ملف إنجازاتك، مش بالاحتياج الشخصي أو الوعود."
+        }
+      }
+    },
+    {
+      "id": "2026-11-23_communication_pause-before-answering",
+      "created_at": "2026-11-23T17:36:01.625602+00:00",
+      "topic": "communication",
+      "tags": [
+        "communication",
+        "status",
+        "listening",
+        "executive-presence"
+      ],
+      "level": "beginner",
+      "needs_completion": false,
+      "en": {
+        "title": "Use the 2-second pause to instantly project authority",
+        "hook": "Answering the microsecond someone finishes speaking makes you look anxious, defensive, and eager to please.",
+        "action": "Take a full 2-second silent breath after someone asks a tough question before starting your response.",
+        "key_phrase": "",
+        "when": "In high-stakes meetings, job interviews, or contentious debates.",
+        "why": "Pausing signals high status and internal control, while giving your brain time to structure a clear, concise answer.",
+        "example": "Interviewer: 'Why did your last project miss its launch deadline?' You pause, take a calm breath, look them in the eye: 'We prioritized fixing a critical security flaw over rushing out an unstable build.'",
+        "mistake": "Blurt out filler words like 'Umm' or 'Well, basically' instantly to fill the silence."
+      },
+      "ar": {
+        "title": "خد ثانيتين صمت قبل ما ترد عشان تفرض هيبتك",
+        "hook": "الرد السريع في نفس الثانية اللي الشخص يخلص فيها كلامه بيخليك تبان متوتر ومستعجل ترضي القدامك.",
+        "action": "أول ما يجيلك سؤال صعب، خد نفس هادي وسيب ثانتين صمت كاملين قبل ما تنطق بكلمة.",
+        "key_phrase": "",
+        "when": "في المقابلات الشخصية (Interviews)، والاجتماعات المهمة، أو الخلافات الفكرية.",
+        "why": "الصمت لثواني قليلة بيبعت إشارة إنك واثق في نفسك ومش خايف، وبيديك وقت ترتب أفكارك بدل ما تطش.",
+        "example": "المذيع أو المحاور: 'ليه مشروعكم الأخير تأخر عن الميعاد؟' أنت: تسكت ثانتين بتهدئة وتوصل في عينه: 'فضلنا نصلح ثغرة أمنية خطيرة بدل ما ننزل منتج بايظ في الميعاد.'",
+        "mistake": "إنك تملى الفراغ فوراً بكلمات زحمة زي 'يعني...' أو 'آآآه...' أول ما يخلص كلامه."
+      },
+      "quiz": {
+        "type": "mcq",
+        "correct_index": 0,
+        "en": {
+          "question": "During an interview, you are asked a surprisingly difficult question. What is the highest-status response?",
+          "options": [
+            "Pause quietly for 2 seconds, process the question, then give a deliberate answer.",
+            "Immediately say 'That is a great question!' to buy time.",
+            "Start speaking right away while thinking of the solution on the fly.",
+            "Quickly apologize for not knowing the answer right away."
+          ],
+          "explanation": "A silent 2-second pause demonstrates composure and confidence, whereas standard stalling phrases sound rehearsed and nervous."
+        },
+        "ar": {
+          "question": "في انترفيو اتسألت سؤال مفاجئ وصعب. إيه التصرف اللي يبينك أعلى ثقة وهيبة؟",
+          "options": [
+            "تسكت بمهابة لمدة ثانتين، تفكر، وبعدين تجاوب بوضوح.",
+            "تقول على طول 'ده سؤال ممتاز جداً!' عشان تسرق وقت تفكر فيه.",
+            "تبدأ تتكلم فوراً وتحاول تطلع إجابة وأنت بتتكلم.",
+            "تعتذر بسرعة إنك مش عارف الإجابة في اللحظة دي."
+          ],
+          "explanation": "الصمت القصير الثابت بيعكس رزانة وتحكم، عكس جمل سرقة الوقت المكررة اللي بتبيّن التوتر."
+        }
+      }
+    },
+    {
+      "id": "2026-11-23_decision_making_10-10-10-rule",
+      "created_at": "2026-11-23T17:36:01.625602+00:00",
+      "topic": "decision_making",
+      "tags": [
+        "decision-making",
+        "perspective",
+        "stress",
+        "clarity"
+      ],
+      "level": "beginner",
+      "needs_completion": false,
+      "en": {
+        "title": "Frame hard choices using the 10/10/10 rule",
+        "hook": "When making emotional decisions, short-term fear tricks you into picking whatever avoids immediate discomfort.",
+        "action": "Before deciding, ask yourself how you will feel about this choice in 10 minutes, 10 months, and 10 years.",
+        "key_phrase": "How will I view this decision in 10 months versus 10 minutes?",
+        "when": "Facing tough career shifts, difficult conversations, or risky opportunities.",
+        "why": "It forces your brain to zoom out from short-term amygdala-driven anxiety and evaluate long-term strategic value.",
+        "example": "You want to quit a comfortable job for a startup. 10 minutes: terrified. 10 months: learning fast and adapted. 10 years: proud you took the leap instead of wondering 'what if'.",
+        "mistake": "Making choices based purely on avoiding uncomfortable feelings right now."
+      },
+      "ar": {
+        "title": "قيم قراراتك الصعبة بقاعدة ١٠ / ١٠ / ١٠",
+        "hook": "لما بتاخد قرار تحت ضغط، الخوف المباشر بيكبر الشكوك ويخليك تختار الحل السهل اللي يريحك دلوقتي وخلاص.",
+        "action": "قبل ما تاخد القرار، اسأل نفسك: هحس بإيه تجاه القرار ده بعد ١٠ دقايق؟ وبعد ١٠ شهور؟ وبعد ١٠ سنين؟",
+        "key_phrase": "هكون شايف القرار ده إزاي كمان ١٠ شهور مقارنة بـ ١٠ دقايق دلوقتي؟",
+        "when": "لما تكون متردد في مواجهة شخص، تسيب شغلك، أو تبدأ تجربة جديدة فيها مخاطرة.",
+        "why": "القاعدة دي بتجبر عقلك يخرج من فزع اللحظة الحالية ويبص على الصورة الكاملة والمكسب البعيد.",
+        "example": "خايف تستقيل وتبدأ مشروعك. بعد ١٠ دقايق: مرعوب ومتوتر. بعد ١٠ شهور: اتعودت وبدأت تكسب وتتعلم. بعد ١٠ سنين: فخور إنك جربت وما ندمتش.",
+        "mistake": "إنك تاخد قرارات مصيرية بناءً على الرغبة في التخلص من القلق الفوري بس."
+      },
+      "quiz": {
+        "type": "mcq",
+        "correct_index": 2,
+        "en": {
+          "question": "You need to have a difficult confrontation with a lazy teammate, but you are dreading the awkwardness. How do you apply the 10/10/10 rule?",
+          "options": [
+            "Wait 10 days to see if their behavior changes on its own.",
+            "Focus on the 10 minutes of intense awkwardness and avoid the topic.",
+            "Recognize that while 10 minutes will feel uncomfortable, in 10 months your team will run much better.",
+            "Give them 10 chances before saying anything."
+          ],
+          "explanation": "The 10/10/10 rule balances short-term discomfort (10 minutes) against long-term benefits (10 months/years) so short-term fear doesn't dictate your choices."
+        },
+        "ar": {
+          "question": "محتاج تتكلم بصرامة مع زميل مهمل في الشغل، بس خايف من الإحراج. تطبق قاعدة ١٠ / ١٠ / ١٠ إزاي؟",
+          "options": [
+            "تستنى ١٠ أيام يمكن أداؤه يتحسن لوحده.",
+            "تركز في الـ ١٠ دقايق الإحراج وتكبر دماغك وتلغي الموضوع.",
+            "تدرك إن رغم إن الـ ١٠ دقايق هيكونوا ماليين إحراج، بس بعد ١٠ شهور الشغل هيكون منظم وأريح بكثير.",
+            "تديله ١٠ فرص ثانية قبل ما تفتح بؤك."
+          ],
+          "explanation": "قاعدة ١٠ / ١٠ / ١٠ بتخليك تضحي بإحراج الـ ١٠ دقايق المؤقت في سبيل راحة وتحسن الشغل على مدى ١٠ شهور و١٠ سنين."
+        }
+      }
+    }
+  ]
+}
