@@ -1,0 +1,228 @@
+{
+  "schema_version": 1,
+  "batch_id": "2026-11-24_auto_03",
+  "created_at": "2026-11-24T17:21:52.348278+00:00",
+  "source": "groq:openai/gpt-oss-120b",
+  "cards": [
+    {
+      "id": "2026-11-24_business_price-anchoring",
+      "created_at": "2026-11-24T17:21:52.348278+00:00",
+      "topic": "business",
+      "tags": [
+        "pricing",
+        "proposal"
+      ],
+      "level": "intermediate",
+      "needs_completion": false,
+      "en": {
+        "title": "Anchor Your Quote with a High‑Value Reference",
+        "hook": "You sent a proposal, then the client says the price is too high—until you drop the ‘market‑leader’ figure first.",
+        "action": "Start your quote with a premium benchmark (e.g., “Top‑tier solutions cost $15k”). Then present your actual price lower than that reference. The contrast makes your price feel like a deal.",
+        "key_phrase": "Top‑tier solutions cost $15k",
+        "when": "When you send a written proposal or discuss pricing for the first time",
+        "why": "People judge numbers relative to the first figure they hear; a high anchor shifts perception of value.",
+        "example": "Sales: “Industry leaders pay $15,000 for a system like this. Our package is $12,000, so you’re saving $3,000 right away.” Client nods, feeling they got a discount.",
+        "mistake": "Jumping straight to your price without any reference, letting the client set the anchor."
+      },
+      "ar": {
+        "title": "اعرض سعر مرجعي عالي قبل السعر الحقيقي",
+        "hook": "بعت عرض والعميل قال السعر غالي، لحد ما قلت له سعر السوق العالي الأول، حس إن العرض بقى رخيص.",
+        "action": "ابدأ عرضك بمرجع عالي (مثلاً “أعلى حلول السوق بـ 15 ألف جنيه”). بعدين قول السعر الفعلي أقل من المرجع. الفرق يخلي السعر يبقى فرصة.",
+        "key_phrase": "أعلى حلول السوق بـ 15 ألف جنيه",
+        "when": "لما تبعت عرض سعر أو تتكلم عن السعر لأول مرة",
+        "why": "العقل بيقارن أول رقم بيشوفه، والرقم العالي بيخلي السعر اللي بعده يبان أقل.",
+        "example": "المندوب: “أعلى الشركات بتدفع 15 ألف للنظام ده. إحنا بنقدمه بـ 12 ألف، يعني هتوفر 3 ألف.” العميل يوافق على الفكرة.",
+        "mistake": "إنك تقول السعر مباشرة من غير ما تحط رقم مرجعي يخلّي العميل يحدد السعر نفسه."
+      },
+      "quiz": {
+        "type": "mcq",
+        "correct_index": 0,
+        "en": {
+          "question": "You’re sending a proposal and want the client to see your price as a discount. Which opening line works best?",
+          "options": [
+            "“Top‑tier solutions cost $15k.”",
+            "“Our price is $12k, a great deal.”",
+            "“We can negotiate the price later.”",
+            "“What’s your budget?”"
+          ],
+          "explanation": "The high‑anchor line sets a reference point, making $12k look like a discount. The other options either state the price without context or shift focus away."
+        },
+        "ar": {
+          "question": "إنت بتبعت عرض وعايز العميل يحس إن السعر بتاعك خصم. أي جملة تبدأ بيها؟",
+          "options": [
+            "\"أعلى حلول السوق بـ 15 ألف جنيه.\"",
+            "\"سعرنا 12 ألف جنيه، صفقة ممتازة.\"",
+            "\"ممكن نتفاوض على السعر لاحقاً.\"",
+            "\"ميزانيتكم إيه؟\""
+          ],
+          "explanation": "الرقم العالي بيعمل مرجعية، فـ12 ألف تبان خصم. باقي الخيارات ما بتديش مرجعية أو بتحوّل التركيز بعيد عن السعر."
+        }
+      }
+    },
+    {
+      "id": "2026-11-24_career_stretch-request",
+      "created_at": "2026-11-24T17:21:52.348278+00:00",
+      "topic": "career",
+      "tags": [
+        "growth",
+        "review"
+      ],
+      "level": "intermediate",
+      "needs_completion": false,
+      "en": {
+        "title": "Ask for a Stretch Assignment in Your Review",
+        "hook": "During your annual review you hear, “We’ll keep you on current projects.” You flip it: “I’d love a stretch role to grow.”",
+        "action": "State the specific project or responsibility you want, explain one skill you’ll develop, and propose a 3‑month pilot. Offer to share progress weekly.",
+        "key_phrase": "I’d love to lead the upcoming client‑onboarding pilot for three months.",
+        "when": "In a performance‑review or one‑on‑one where future work is discussed",
+        "why": "Linking the ask to a concrete benefit for the team shows initiative and reduces perceived risk.",
+        "example": "You: “I’m interested in heading the new onboarding pilot for Q1. It will let me sharpen project‑lead skills and we’ll have a clear rollout plan. Can we try it for three months?” Manager nods, sees win‑win.",
+        "mistake": "Just saying “I want more responsibility” without a clear plan, which sounds vague."
+      },
+      "ar": {
+        "title": "اطلب مهمة توسعية في تقييمك السنوي",
+        "hook": "في تقييمك السّنوي مديرك بيقول “هتستمر في نفس الشغل”. تقول “عايز مهمة توسعية عشان أطور نفسي.”",
+        "action": "حدد المشروع أو المسؤولية اللي عايزها، قول إيه مهارة هتطوّرها، واقترح تجربة 3 شهور. وعد إنك هتشارك التقدّم كل أسبوع.",
+        "key_phrase": "عايز أقود تجربة إدخال عميل جديدة لمدة 3 شهور.",
+        "when": "في تقييم الأداء أو اجتماع واحد‑على‑واحد بيتكلموا فيه عن شغلك الجاي",
+        "why": "ربط الطلب بفائدة واضحة للفريق بيظهر المبادرة وبيقلل المخاطرة على المدير.",
+        "example": "أنت: \"حابب أقود تجربة إدخال عميل جديدة للربع الأول. هتخليني أطور مهارات إدارة المشروع، وهنعمل خطة واضحة. ممكن نجربها 3 شهور؟\" المدير يوافق لأنه شايف الفايدة.",
+        "mistake": "إنك تقول بس “عايز مسؤولية أكتر” من غير خطة محددة، يبقى الكلام عام ومش مقنع."
+      },
+      "quiz": {
+        "type": "mcq",
+        "correct_index": 1,
+        "en": {
+          "question": "In a review, which phrasing best shows initiative while reducing risk for the manager?",
+          "options": [
+            "“Give me any new task.”",
+            "“I’d love to lead the upcoming client‑onboarding pilot for three months.”",
+            "“I think I deserve a promotion.”",
+            "“Can you find something for me to do?”"
+          ],
+          "explanation": "The specific pilot with a time frame shows a clear, low‑risk win‑win. The other options are vague, demanding, or passive."
+        },
+        "ar": {
+          "question": "في تقييم، أي جملة بتظهر المبادرة وتقلل المخاطرة على المدير؟",
+          "options": [
+            "\"اديني أي مهمة جديدة.\"",
+            "\"حابب أقود تجربة إدخال عميل جديدة لمدة 3 شهور.\"",
+            "\"أعتقد إني أستحق ترقية.\"",
+            "\"تقدر تدورلي على شغل أعمله؟\""
+          ],
+          "explanation": "العبارة المحددة مع مدة تجربة واضحة بتظهر فائدة للمدير وتقلل المخاطرة. باقي الخيارات عامة أو طلبية أو سلبية."
+        }
+      }
+    },
+    {
+      "id": "2026-11-24_communication_3sec-pause",
+      "created_at": "2026-11-24T17:21:52.348278+00:00",
+      "topic": "communication",
+      "tags": [
+        "listening",
+        "pause"
+      ],
+      "level": "beginner",
+      "needs_completion": false,
+      "en": {
+        "title": "Insert a 3‑Second Pause Before Replying",
+        "hook": "You’re in a heated meeting, ready to fire back, but you count silently to three and the tension drops.",
+        "action": "When someone says something that triggers you, take a breath and count to three before answering. Use the pause to reframe your reply into a question or a fact.",
+        "key_phrase": "",
+        "when": "During any conversation where emotions run high or you feel defensive",
+        "why": "The pause interrupts the fight‑or‑flight reflex, giving your brain time to choose a constructive response instead of a knee‑jerk reaction.",
+        "example": "Colleague: “Your report missed the deadline again.” You pause, then say, “What part of the timeline caused the delay? How can we fix it?” The tone shifts to problem‑solving.",
+        "mistake": "Blurting out an immediate rebuttal, which escalates conflict."
+      },
+      "ar": {
+        "title": "عدّ لثلاث ثواني قبل ما ترد",
+        "hook": "في اجتماع متوتر، انت جاهز ترد، لكن عدّيت لثلاثة صمتًا وهدّى الجو فجأة.",
+        "action": "لما حد يقولك حاجة بتقزّك، خد نفس وعدّي لثلاث ثواني قبل ما ترد. استغل الوقفة عشان تحول ردك لسؤال أو معلومة مفيدة.",
+        "key_phrase": "",
+        "when": "في أي نقاش أو اجتماع فيه توتر أو حسيت إنك عايز تدافع عن نفسك",
+        "why": "الوقفة بتكسر رد الفعل السريع للغضب، وبتدي دماغك وقت تختار رد بنّاء بدل رد عاطفي.",
+        "example": "زميل: \"التقرير بتاعك اتأخر تاني.\" انت بتعدّي لثلاث ثواني وتقول: \"إيه الجزء اللي خلى الجدول يتأخر؟ نقدر نعدله إزاي؟\" الجو بيتحول لحل المشكلة.",
+        "mistake": "إنك ترد فورًا بكلمة دفاعية، وده بيزود التوتر."
+      },
+      "quiz": {
+        "type": "mcq",
+        "correct_index": 2,
+        "en": {
+          "question": "A teammate snaps at you during a meeting. What’s the best immediate response?",
+          "options": [
+            "“That’s not true!”",
+            "Raise your voice to be heard",
+            "Take a breath, count to three, then ask a clarifying question",
+            "Walk out of the room"
+          ],
+          "explanation": "Counting to three creates the pause needed to respond constructively. The other options either escalate or avoid the issue."
+        },
+        "ar": {
+          "question": "زميل اتنرفز عليك في اجتماع. إيه أحسن رد فوري؟",
+          "options": [
+            "\"ده مش صحيح!\"",
+            "ترفع صوتك عشان تسمع",
+            "تاخد نفس، تعدّي لثلاث ثواني، بعدين تسأل سؤال توضيحي",
+            "تخرج من القاعة"
+          ],
+          "explanation": "العد لثلاث ثواني بيخلق وقفة تساعدك ترد بشكل بنّاء. باقي الخيارات بتصعيد الموقف أو بتتجنبه."
+        }
+      }
+    },
+    {
+      "id": "2026-11-24_decision_making_2min_rule",
+      "created_at": "2026-11-24T17:21:52.348278+00:00",
+      "topic": "decision_making",
+      "tags": [
+        "speed",
+        "focus"
+      ],
+      "level": "beginner",
+      "needs_completion": false,
+      "en": {
+        "title": "Decide in 2 Minutes, Not Hours",
+        "hook": "You’ve stared at that email for ten minutes, still can’t pick a supplier—let’s break the loop.",
+        "action": "When a decision feels small, ask: ‘Can I make a good enough choice in two minutes?’ If yes, choose now; if no, book a 15‑minute deep dive.",
+        "key_phrase": "Decide in 2 minutes",
+        "when": "Any low‑stakes choice where you’re overthinking, like picking a tool, a meeting time, or a quick reply.",
+        "why": "Your brain prefers a quick commitment over endless analysis, preventing decision fatigue.",
+        "example": "You need a coffee machine for the office. You compare two models for two minutes, then order the cheaper one that meets the basics, avoiding a day‑long debate.",
+        "mistake": "Spending hours researching trivial choices and ending up paralyzed."
+      },
+      "ar": {
+        "title": "قرّر في دقيقتين مش ساعات",
+        "hook": "قاعد تتفرج على إيميل المورد وتضيع وقتك، تعال نكسر الحلقة.",
+        "action": "لما تكون قدام قرار بسيط اسأل نفسك: ‘أقدر أقرر في دقيقتين؟’ لو أيوة قرر فورًا، لو لأ احجز 15 دقيقة لتفصيل أكتر.",
+        "key_phrase": "قرر في دقيقتين",
+        "when": "لأي اختيار سهل بتتردد فيه، زي اختيار أداة أو ميعاد أو رد سريع.",
+        "why": "العقل بيفضل القرار السريع على التحليل الطويل، وده بيقلل تعب اتخاذ القرار.",
+        "example": "عايز ماكينة قهوة للمكتب. بتقارن موديلين دقيقتين وتشتري الأرخص اللي يفي بالغرض، بدل ما تضيع اليوم كله في مقارنة.",
+        "mistake": "تضييع ساعات في بحث عن حاجات بسيطة وتبقى مش قادر تقرر."
+      },
+      "quiz": {
+        "type": "mcq",
+        "correct_index": 1,
+        "en": {
+          "question": "You need to pick a vendor for office supplies and have only 5 minutes before the meeting. What’s the best move?",
+          "options": [
+            "Schedule a deeper dive later",
+            "Apply the 2‑Minute Rule and decide now",
+            "Ask the whole team for input",
+            "Flip a coin"
+          ],
+          "explanation": "The 2‑Minute Rule lets you act fast on low‑impact choices, avoiding wasted time. Scheduling a deep dive defeats the purpose, and a coin toss skips purposeful evaluation."
+        },
+        "ar": {
+          "question": "محتاج تختار مورد لوازم مكتبية وعندك 5 دقايق قبل الاجتماع. أنهي خطوة تعملها؟",
+          "options": [
+            "تحدد ميعاد تفصيل بعدين",
+            "تطبق قاعدة الدقيقتين وتقرر حالًا",
+            "تستشير الفريق كله",
+            "تقلب عملة"
+          ],
+          "explanation": "قاعدة الدقيقتين بتخليك تتصرف بسرعة في قرارات قليلة الأثر، بدل ما تضيع وقتك. تحديد ميعاد تفصيل بيخلي القرار يتأخر، وتقليب العملة ما بيديش تقييم هدف."
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,290 @@
+{
+  "schema_version": 1,
+  "batch_id": "2026-11-24_auto_01",
+  "created_at": "2026-11-24T17:01:58.774191+00:00",
+  "source": "groq:openai/gpt-oss-120b",
+  "cards": [
+    {
+      "id": "2026-11-24_business_decision‑quick",
+      "created_at": "2026-11-24T17:01:58.774191+00:00",
+      "topic": "business",
+      "tags": [
+        "meeting",
+        "decision",
+        "speed"
+      ],
+      "level": "intermediate",
+      "needs_completion": false,
+      "en": {
+        "title": "Turn a meeting into a decision in 3 minutes",
+        "hook": "You’re stuck in a 45‑minute meeting that’s going nowhere – until you drop a simple 3‑minute rule.",
+        "action": "When the discussion circles, say: “Let’s spend the next 3 minutes each state one clear decision we can make and lock it in.” Then write the agreed action on a visible board.",
+        "key_phrase": "Let’s spend the next 3 minutes each state one clear decision we can make and lock it in.",
+        "when": "During any meeting that’s stalling on a single agenda item.",
+        "why": "It forces focus, creates urgency and prevents endless analysis paralysis.",
+        "example": "Facilitator: “We’ve debated the launch date for 20 minutes. Everyone, give me one concrete decision in the next 3 minutes.”\nTeam: “We’ll launch on Oct 15, and marketing will start the teaser on Oct 1.”",
+        "mistake": "Letting the conversation drift without a time‑boxed decision point."
+      },
+      "ar": {
+        "title": "حول أي اجتماع لقرار خلال 3 دقائق",
+        "hook": "قاعد في اجتماع بقاله نص ساعة ومش ماشي غير لما تقول قاعدة الـ3 دقايق السحرية.",
+        "action": "لما الكلام يدوّر، قول: “هناخد 3 دقايق كل واحد يقول قرار واضح ونقفل عليه.” بعدين اكتبوا القرار على السبورة.",
+        "key_phrase": "هناخد 3 دقايق كل واحد يقول قرار واضح ونقفل عليه",
+        "when": "في أي اجتماع بقى عالق على نقطة واحدة",
+        "why": "بيخلّي التركيز يشتغل والناس تحس بضغط الوقت وتاخد قرار سريع",
+        "example": "المسؤول: “إحنا بننقاش ميعاد الإطلاق بقاله 20 دقيقة. كل واحد يدي قرار واضح خلال 3 دقايق.”\nالفريق: “الإطلاق هيكون 15 أكتوبر، والتسويق يبدأ الترويج 1 أكتوبر.”",
+        "mistake": "السماح للنقاش يطول من غير حد يحدد وقت للقرار"
+      },
+      "quiz": {
+        "type": "mcq",
+        "correct_index": 1,
+        "en": {
+          "question": "During a stalled meeting, which reply best applies the 3‑minute decision rule?",
+          "options": [
+            "“Let’s keep discussing until we’re sure.”",
+            "“Let’s spend the next 3 minutes each state one clear decision we can make and lock it in.”",
+            "“Can we table this and revisit next week?”",
+            "“I’ll email everyone my thoughts later.”"
+          ],
+          "explanation": "The second option forces a brief, focused decision window. The first prolongs analysis, the third delays action, and the fourth shifts responsibility away."
+        },
+        "ar": {
+          "question": "في اجتماع متوقف، أي رد يطبق قاعدة الـ3 دقايق للقرار؟",
+          "options": [
+            "\"نستمر في النقاش لحد ما نتأكد.\"",
+            "\"هناخد 3 دقايق كل واحد يقول قرار واضح ونقفل عليه.\"",
+            "\"نؤجل الموضوع ونرجعه الأسبوع الجاي.\"",
+            "\"هبعت إيميل بآرائي بعدين.\""
+          ],
+          "explanation": "الخيار الثاني بيخلق نافذة زمنية قصيرة للقرار. الأول بيطوّل التحليل، الثالث بيسحب القرار، والرابع بينقل المسؤولية."
+        }
+      }
+    },
+    {
+      "id": "2026-11-24_career_stretch‑project",
+      "created_at": "2026-11-24T17:01:58.774191+00:00",
+      "topic": "career",
+      "tags": [
+        "promotion",
+        "growth",
+        "visibility"
+      ],
+      "level": "beginner",
+      "needs_completion": false,
+      "en": {
+        "title": "Get a promotion by asking for a stretch project",
+        "hook": "You’ve been doing the same tasks for months – until you volunteer for the “impossible” client rollout.",
+        "action": "Email your manager: “I’d like to lead the upcoming XYZ client rollout. It stretches my skills in X and Y and will help the team meet the deadline.” Follow up with a brief plan outline.",
+        "key_phrase": "I’d like to lead the upcoming XYZ client rollout",
+        "when": "When a high‑visibility, time‑critical project is announced internally.",
+        "why": "Shows initiative, expands your skill set, and creates measurable impact that’s hard to ignore during reviews.",
+        "example": "You: “I noticed the XYZ rollout is due in six weeks. I can own the project plan, coordinate the dev team, and deliver the first demo by week 3.”\nManager: “Great, draft a timeline and we’ll discuss resources.”",
+        "mistake": "Waiting for a manager to assign you something new instead of proposing it yourself."
+      },
+      "ar": {
+        "title": "احصل على ترقية بطلب مشروع تحدي",
+        "hook": "شغلك بقى روتين لحد ما قررت تتطوع في مشروع الـXYZ الصعب اللي الكل خايف منه.",
+        "action": "ابعت إيميل للمدير: “حابب أقود تنفيذ مشروع XYZ. هيتحدى مهاراتي في X وY وهيفيد الفريق في الميعاد.” بعد كده ابعت خطة سريعة.",
+        "key_phrase": "حابب أقود تنفيذ مشروع XYZ",
+        "when": "لما يعلن عن مشروع عالي الظهور وموعده قريب",
+        "why": "بيظهر مبادرة، بيطوّر مهاراتك، وبيخلق تأثير واضح يصعب تجاهله في التقييمات",
+        "example": "أنت: \"شفت إن مشروع XYZ لازم يخلص خلال 6 أسابيع. أقدر أعمل خطة، أنسق مع فريق التطوير، وأقدم أول نموذج في الأسبوع 3.\"\nالمدير: \"تمام، اكتب جدول زمني ونناقش الموارد.\"",
+        "mistake": "تستنى المدير يديك مهمة جديدة بدل ما تقترحها بنفسك"
+      },
+      "quiz": {
+        "type": "mcq",
+        "correct_index": 2,
+        "en": {
+          "question": "What’s the most effective way to ask for a stretch project?",
+          "options": [
+            "“Can you give me something new next quarter?”",
+            "“I’m bored with my current tasks, any ideas?”",
+            "“I’d like to lead the upcoming XYZ client rollout; here’s a quick plan outline.”",
+            "“I’ll take any extra work you have, just tell me.”"
+          ],
+          "explanation": "The third option is specific, shows you’ve thought ahead, and aligns your ask with a real business need. The others are vague or sound desperate."
+        },
+        "ar": {
+          "question": "إيه الطريقة الأكثر فاعلية لطلب مشروع تحدي؟",
+          "options": [
+            "\"ممكن تديني حاجة جديدة في الربع الجاي؟\"",
+            "\"زهقان من شغلي الحالي، عندك أي فكرة؟\"",
+            "\"حابب أقود تنفيذ مشروع XYZ القادم؛ دي خطة سريعة.\"",
+            "\"هستلم أي شغل إضافي، قول لي بس.\""
+          ],
+          "explanation": "الخيار الثالث محدد، بيظهر إنك فكرت مسبقاً، وبيربط طلبك بحاجة فعلية في الشغل. البقية عامة أو بتظهر يأس."
+        }
+      }
+    },
+    {
+      "id": "2026-11-24_leadership_feedback‑sandwich",
+      "created_at": "2026-11-24T17:01:58.774191+00:00",
+      "topic": "leadership",
+      "tags": [
+        "feedback",
+        "coaching",
+        "growth"
+      ],
+      "level": "intermediate",
+      "needs_completion": false,
+      "en": {
+        "title": "Give feedback that sticks with the 2‑sentence sandwich",
+        "hook": "Your team nods but forgets your critique minutes later – until you try the 2‑sentence sandwich.",
+        "action": "Say: 1) “You nailed the client demo – the visuals were spot‑on.” 2) “Next time, tighten the intro to 30 seconds so we keep attention.” 3) “Overall, great job; the client loved it.”",
+        "key_phrase": "",
+        "when": "After a completed presentation or deliverable when you need quick, memorable feedback.",
+        "why": "Positive‑negative‑positive format frames criticism as a minor tweak, making it easier to absorb and act on.",
+        "example": "Leader: “Your report’s data analysis was crystal clear. The executive summary could be shorter, just the top three findings. Overall, the client will be impressed.”",
+        "mistake": "Long, vague debriefs that leave the team guessing what to improve."
+      },
+      "ar": {
+        "title": "اعطي ملاحظات لا تنسى بسندويتش جملتين",
+        "hook": "الفريق بيهزر بعد ملاحظاتك ومش بيفهمها غير بعد ساعة – لحد ما جربت السندويتش بجملتين.",
+        "action": "قول: 1) “عملت عرض العميل ممتاز – الصور كانت تمام.” 2) “المرة الجاية خفّض المقدمة لـ30 ثانية علشان نحافظ على الانتباه.” 3) “بشكل عام شغل رائع؛ العميل هيحبّه.”",
+        "key_phrase": "",
+        "when": "بعد ما يخلصوا عرض أو تسليم وتحتاج ملاحظات سريعة وسهلة الفهم.",
+        "why": "التنسيق إيجابي‑سلبي‑إيجابي بيخلي النقد يبقى تعديل بسيط، فبيستوعبه الفريق بسهولة ويطبقوه.",
+        "example": "القائد: “تحليل البيانات في التقرير واضح جداً. ملخص التنفيذي ممكن يكون أقصر، يركز على أهم ثلاث نقاط. بشكل عام العميل هيعجب بالنتيجة.”",
+        "mistake": "مراجعات طويلة ومبهمة تخلي الفريق مش عارف يركز على النقطة اللي لازم يتحسن فيها"
+      },
+      "quiz": {
+        "type": "mcq",
+        "correct_index": 0,
+        "en": {
+          "question": "Which phrasing follows the 2‑sentence sandwich correctly?",
+          "options": [
+            "“Your draft was good, but it needs work. Fix it.”",
+            "“Great data visualisation. Shorten the intro to 30 seconds. Overall, excellent job.”",
+            "“You missed the deadline, but the content is fine.”",
+            "“I like the tone, but the numbers are wrong.”"
+          ],
+          "explanation": "The second option follows Positive‑Negative‑Positive structure, making the critique clear and motivating. Others miss the final positive reinforcement."
+        },
+        "ar": {
+          "question": "أي جملة بتطبق ساندويتش الجملتين بشكل صحيح؟",
+          "options": [
+            "\"مسودة شغلك كويسة، بس محتاجة تعديل. عدلها.\"",
+            "\"الرسوم البيانية ممتازة. اختصر المقدمة لـ30 ثانية. بشكل عام شغل رائع.\"",
+            "\"فاتت الموعد، لكن المحتوى تمام.\"",
+            "\"بحب الأسلوب، لكن الأرقام غلط.\""
+          ],
+          "explanation": "الخيار الثاني بيستخدم تنسيق إيجابي‑سلبي‑إيجابي، بيخلي النقد واضح ومحفّز. باقي الخيارات مفيهاش التشجيع النهائي."
+        }
+      }
+    },
+    {
+      "id": "2026-11-24_learning_feynman-technique-toddler",
+      "created_at": "2026-11-24T17:01:58.774191+00:00",
+      "topic": "learning",
+      "tags": [
+        "learning",
+        "study-hacks",
+        "memory",
+        "clarity"
+      ],
+      "level": "beginner",
+      "needs_completion": false,
+      "en": {
+        "title": "Teach It to a 5-Year-Old to Spot Hidden Gaps",
+        "hook": "You read a chapter three times, feel like a genius, and then freeze during the meeting or exam. Why?",
+        "action": "Take a blank page. Explain the concept out loud using simple words as if teaching a five-year-old child. Whenever you get stuck or use jargon, stop and review that exact part.",
+        "key_phrase": "If I can't explain this simply, I don't truly understand it yet.",
+        "when": "Right after studying a complex topic, reading a report, or preparing a presentation.",
+        "why": "Jargon tricks your brain into feeling like you understand something when you only recognize the words. Simplifying forces real processing.",
+        "example": "Instead of saying 'Mitochondria produce cellular ATP through oxidative phosphorylation,' say 'Mitochondria are tiny power plants inside your body that turn food into daily energy.'",
+        "mistake": "Rereading text and highlighting sentences repeatedly without active recall."
+      },
+      "ar": {
+        "title": "اشرحها لطفل عنده 5 سنين عشان تكتشف اللي مش فاهمه",
+        "hook": "تقرأ الفصل ثلاث مرات وتحس إنك خلاص بقيت عبقري، وتيجي في الاجتماع أو الامتحان تكتشف إنك مش فاكر حاجة!",
+        "action": "هات ورقة بيضا واشرح الفكرة بصوت عالي بلغة بسيطة جداً كأنك بتشرح لطفل عنده 5 سنين. أول ما تعطل في نقطة أو تستخدم كلمة صعبة، ارجع اقرأ الجزء ده بالذات تاني.",
+        "key_phrase": "لو مش عارف اشرحها بلغة بسيطة، يبقى أنا لسه مش فاهمها صح.",
+        "when": "بعد ما تدرس موضوع معقد، أو تقرأ تقرير جديد، أو وأنت بتجهز لبريزنتيشن.",
+        "why": "المصطلحات الصعبة بتخدع مخك وتحسسك إنك فاهم وأنت في الحقيقة بس حافظ شكل الكلام، التبسيط بيبين المستخبى.",
+        "example": "بدل ما تقول 'الميتوكندريا هي مركز توليد الطاقة بالخلية'، قول 'الميتوكندريا دي زي محطات كهرباء صغيرة جواك بتاخد الأكل وتحوله لطاقة لمخك وجسمك'.",
+        "mistake": "التظليل بالهايلايتر وإعادة قراءة الكلام أكتر من مرة من غير ما تختبر نفسك."
+      },
+      "quiz": {
+        "type": "mcq",
+        "correct_index": 1,
+        "en": {
+          "question": "You just read a dense article about 'Inflation' and want to confirm you genuinely understand it. What is the best step?",
+          "options": [
+            "Re-read the article line-by-line two more times.",
+            "Explain inflation out loud to a non-expert without using financial jargon.",
+            "Highlight all key terms with a bright yellow marker.",
+            "Memorize the official dictionary definition word-for-word."
+          ],
+          "explanation": "Explaining concepts simply exposes hidden gaps in your mental model, whereas highlighting or memorizing creates a false illusion of competence."
+        },
+        "ar": {
+          "question": "إيه أحسن طريقة تتأكد بيها إنك فاهم مفهوم 'التضخم' بجد مش مجرد حافظه؟",
+          "options": [
+            "تقرأ المقال تاني كلمة كلمة مرتين.",
+            "تشرح التضخم بصوت عالي حد مش متخصص من غير ما تستخدم مصطلحات صعبة.",
+            "تعلّم على المصطلحات المهمة بالهايلايتر الأصفر.",
+            "تحفظ التعريف الرسمي المكتوب في القاموس بالحرف."
+          ],
+          "explanation": "الشرح بلغة بسيطة بيكشف فوراً الحتت اللي أنت مش فاهمها كويس، لكن التظليل والحفظ بيعملوا وهم بالمعرفة."
+        }
+      }
+    },
+    {
+      "id": "2026-11-24_money_the-48-hour-rule",
+      "created_at": "2026-11-24T17:01:58.774191+00:00",
+      "topic": "money",
+      "tags": [
+        "money",
+        "budgeting",
+        "impulse-buying",
+        "habits"
+      ],
+      "level": "beginner",
+      "needs_completion": false,
+      "en": {
+        "title": "Use the 48-Hour Pause to Kill Impulse Spending",
+        "hook": "Ever bought something online late at night, only to wonder why you spent that money when the delivery arrived?",
+        "action": "When you feel the urge to buy a non-essential item, place it on a list and wait 48 hours. If you still want and need it after two full days, proceed with buying.",
+        "key_phrase": "I'm putting this purchase on a 48-hour hold.",
+        "when": "Right before clicking 'Buy Now' on unplanned shopping items.",
+        "why": "Impulse buying is driven by a temporary spike in dopamine. Waiting 48 hours lets emotional high fade so your rational mind can make the decision.",
+        "example": "You see a $150 jacket on sale. Instead of purchasing immediately, take a screenshot and set an alarm for 48 hours. 80% of the time, you won't even care to buy it when the alarm goes off.",
+        "mistake": "Buying instantly to catch a temporary high or soothe stress."
+      },
+      "ar": {
+        "title": "استنى 48 ساعة قبل ما تشتري عشان توقف الشراء المندفع",
+        "hook": "عمرك اشتريت حاجة أونلاين بالليل، ولما جالك الدليفري حسيت إنك رميت فلوسك في الأرض وتساءلت ليه اشتريتها؟",
+        "action": "أول ما تلاقي نفسك عايز تشتري حاجة مش أساسية، اكتبها في قائمة انتظار واقفل الأبلكيشن لمدة 48 ساعة. لو بعد يومين لسه شايف إنها مهمة وبتفكر فيها بجد، اشترِيها.",
+        "key_phrase": "هأجل الشروة دي 48 ساعة وأشوف.",
+        "when": "أول ما تعجبك حاجة مش في خطتك وأنت بتتسوق أونلاين أو في المول.",
+        "why": "عشان تهدي اندفاع الدوبامين اللحظي وتدي فرصة لمخك العقلاني يفكر هل دي حاجة مستاهلة ولا مجرد رغبة وقتية.",
+        "example": "شفت جاكيت بـ 2000 جنيه عليه خصم. بدل ما تدوس شراء، خذ سكرين شوت واعمل منبه بعد 48 ساعة. في 80% من الحالات، لما المنبه يرن هتلاقي نفسك مش مهتم تشتري أساساً.",
+        "mistake": "الشراء الفوري عشان تفرّح نفسك وأنت زهقان أو متوتر."
+      },
+      "quiz": {
+        "type": "mcq",
+        "correct_index": 2,
+        "en": {
+          "question": "You see a smart watch on a 50% flash discount, but it wasn't in your monthly plan. What is the smartest choice?",
+          "options": [
+            "Buy it right away before the discount timer runs out.",
+            "Buy it on credit and decide whether to return it later.",
+            "Save the link and set a 48-hour timer to evaluate if you still want it.",
+            "Ask three friends if they like it and buy it if two say yes."
+          ],
+          "explanation": "Delaying the buy breaks the dopamine excitement cycle, giving you space to evaluate whether you actually need the product."
+        },
+        "ar": {
+          "question": "شفت ساعة ذكية عليها خصم 50% لمدة محدودة بس هي مش في ميزانيتك، أذكى تصرف تصرفه إيه؟",
+          "options": [
+            "تشتريه فوراً قبل ما وقت الخصم يخلص.",
+            "تشتريه بالكريديت كارد وتشوف هترجعه ولا لأ بعدين.",
+            "تحفظ اللينك وتستنى 48 ساعة تشوف لسه محتاجه ولا نسيت.",
+            "تسأل تلاتة من صحابك ولو اتنين قالوا حلو تشتريه."
+          ],
+          "explanation": "تأجيل الشراء 48 ساعة بيكسر هرمون الاندفاع (الدوبامين) وبيخليك تقيّم بجد هل أنت محتاج الحاجة دي ولا ده مجرد حماس وقتي."
+        }
+      }
+    }
+  ]
+}

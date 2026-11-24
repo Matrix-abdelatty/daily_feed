@@ -1,11 +1,84 @@
 {
-  "generated_at": "2026-11-23T17:39:12.412990+00:00",
-  "total_files": 31,
-  "total_patches": 31,
-  "total_cards": 152,
+  "generated_at": "2026-11-24T17:33:55.678008+00:00",
+  "total_files": 34,
+  "total_patches": 34,
+  "total_cards": 166,
   "batches_per_day_target": 3,
   "batch_size_target": 5,
   "files": [
+    {
+      "batch_id": "2026-11-24_auto_03",
+      "path": "cards/2026/2026-11-24_auto_03.json",
+      "date": "2026-11-24",
+      "created_at": "2026-11-24T17:21:52.348278+00:00",
+      "source": "groq:openai/gpt-oss-120b",
+      "card_count": 4,
+      "card_ids": [
+        "2026-11-24_business_price-anchoring",
+        "2026-11-24_career_stretch-request",
+        "2026-11-24_communication_3sec-pause",
+        "2026-11-24_decision_making_2min_rule"
+      ],
+      "patch_number": 34,
+      "card_numbers": [
+        163,
+        164,
+        165,
+        166
+      ],
+      "min_number": 163,
+      "max_number": 166
+    },
+    {
+      "batch_id": "2026-11-24_auto_02",
+      "path": "cards/2026/2026-11-24_auto_02.json",
+      "date": "2026-11-24",
+      "created_at": "2026-11-24T17:10:46.861938+00:00",
+      "source": "groq:openai/gpt-oss-120b",
+      "card_count": 5,
+      "card_ids": [
+        "2026-11-24_business_microgoal",
+        "2026-11-24_persuasion_label-their-fear",
+        "2026-11-24_pricing_bracket-anchoring",
+        "2026-11-24_productivity_five-minute-rule",
+        "2026-11-24_sales_permission-to-close"
+      ],
+      "patch_number": 33,
+      "card_numbers": [
+        158,
+        159,
+        160,
+        161,
+        162
+      ],
+      "min_number": 158,
+      "max_number": 162
+    },
+    {
+      "batch_id": "2026-11-24_auto_01",
+      "path": "cards/2026/2026-11-24_auto_01.json",
+      "date": "2026-11-24",
+      "created_at": "2026-11-24T17:01:58.774191+00:00",
+      "source": "groq:openai/gpt-oss-120b",
+      "card_count": 5,
+      "card_ids": [
+        "2026-11-24_business_decision‑quick",
+        "2026-11-24_career_stretch‑project",
+        "2026-11-24_leadership_feedback‑sandwich",
+        "2026-11-24_learning_feynman-technique-toddler",
+        "2026-11-24_money_the-48-hour-rule"
+      ],
+      "patch_number": 32,
+      "card_numbers": [
+        153,
+        154,
+        155,
+        156,
+        157
+      ],
+      "min_number": 153,
+      "max_number": 157
+    },
     {
       "batch_id": "2026-11-23_auto_03",
       "path": "cards/2026/2026-11-23_auto_03.json",

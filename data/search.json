@@ -1,5 +1,338 @@
 [
   {
+    "id": "2026-11-24_decision_making_2min_rule",
+    "number": 166,
+    "patch_number": 34,
+    "topic": "decision_making",
+    "level": "beginner",
+    "tags": [
+      "speed",
+      "focus"
+    ],
+    "created_at": "2026-11-24T17:21:52.348278+00:00",
+    "file": "cards/2026/2026-11-24_auto_03.json",
+    "en": {
+      "title": "Decide in 2 Minutes, Not Hours",
+      "hook": "You’ve stared at that email for ten minutes, still can’t pick a supplier—let’s break the loop.",
+      "key_phrase": "Decide in 2 minutes"
+    },
+    "ar": {
+      "title": "قرّر في دقيقتين مش ساعات",
+      "hook": "قاعد تتفرج على إيميل المورد وتضيع وقتك، تعال نكسر الحلقة.",
+      "key_phrase": "قرر في دقيقتين"
+    }
+  },
+  {
+    "id": "2026-11-24_communication_3sec-pause",
+    "number": 165,
+    "patch_number": 34,
+    "topic": "communication",
+    "level": "beginner",
+    "tags": [
+      "listening",
+      "pause"
+    ],
+    "created_at": "2026-11-24T17:21:52.348278+00:00",
+    "file": "cards/2026/2026-11-24_auto_03.json",
+    "en": {
+      "title": "Insert a 3‑Second Pause Before Replying",
+      "hook": "You’re in a heated meeting, ready to fire back, but you count silently to three and the tension drops.",
+      "key_phrase": ""
+    },
+    "ar": {
+      "title": "عدّ لثلاث ثواني قبل ما ترد",
+      "hook": "في اجتماع متوتر، انت جاهز ترد، لكن عدّيت لثلاثة صمتًا وهدّى الجو فجأة.",
+      "key_phrase": ""
+    }
+  },
+  {
+    "id": "2026-11-24_career_stretch-request",
+    "number": 164,
+    "patch_number": 34,
+    "topic": "career",
+    "level": "intermediate",
+    "tags": [
+      "growth",
+      "review"
+    ],
+    "created_at": "2026-11-24T17:21:52.348278+00:00",
+    "file": "cards/2026/2026-11-24_auto_03.json",
+    "en": {
+      "title": "Ask for a Stretch Assignment in Your Review",
+      "hook": "During your annual review you hear, “We’ll keep you on current projects.” You flip it: “I’d love a stretch role to grow.”",
+      "key_phrase": "I’d love to lead the upcoming client‑onboarding pilot for three months."
+    },
+    "ar": {
+      "title": "اطلب مهمة توسعية في تقييمك السنوي",
+      "hook": "في تقييمك السّنوي مديرك بيقول “هتستمر في نفس الشغل”. تقول “عايز مهمة توسعية عشان أطور نفسي.”",
+      "key_phrase": "عايز أقود تجربة إدخال عميل جديدة لمدة 3 شهور."
+    }
+  },
+  {
+    "id": "2026-11-24_business_price-anchoring",
+    "number": 163,
+    "patch_number": 34,
+    "topic": "business",
+    "level": "intermediate",
+    "tags": [
+      "pricing",
+      "proposal"
+    ],
+    "created_at": "2026-11-24T17:21:52.348278+00:00",
+    "file": "cards/2026/2026-11-24_auto_03.json",
+    "en": {
+      "title": "Anchor Your Quote with a High‑Value Reference",
+      "hook": "You sent a proposal, then the client says the price is too high—until you drop the ‘market‑leader’ figure first.",
+      "key_phrase": "Top‑tier solutions cost $15k"
+    },
+    "ar": {
+      "title": "اعرض سعر مرجعي عالي قبل السعر الحقيقي",
+      "hook": "بعت عرض والعميل قال السعر غالي، لحد ما قلت له سعر السوق العالي الأول، حس إن العرض بقى رخيص.",
+      "key_phrase": "أعلى حلول السوق بـ 15 ألف جنيه"
+    }
+  },
+  {
+    "id": "2026-11-24_sales_permission-to-close",
+    "number": 162,
+    "patch_number": 33,
+    "topic": "sales",
+    "level": "advanced",
+    "tags": [
+      "sales",
+      "closing",
+      "communication"
+    ],
+    "created_at": "2026-11-24T17:10:46.861938+00:00",
+    "file": "cards/2026/2026-11-24_auto_02.json",
+    "en": {
+      "title": "Ask for explicit permission before closing",
+      "hook": "Pushy closers trigger defensiveness. Permissive closers make buying feel like the client's decision.",
+      "key_phrase": "Would it make sense to talk about how we start onboarding?"
+    },
+    "ar": {
+      "title": "استأذن العميل قبل ما تقفل الصفقة",
+      "hook": "الضغط على العميل بيخليه يدافع عن نفسه. الاستئذان بيخليه يحس إن القرار قراره هو.",
+      "key_phrase": "تحب نتكلم في التفاصيل والخطوات الجاية عشان نبدأ؟"
+    }
+  },
+  {
+    "id": "2026-11-24_productivity_five-minute-rule",
+    "number": 161,
+    "patch_number": 33,
+    "topic": "productivity",
+    "level": "beginner",
+    "tags": [
+      "productivity",
+      "time-management",
+      "habits"
+    ],
+    "created_at": "2026-11-24T17:10:46.861938+00:00",
+    "file": "cards/2026/2026-11-24_auto_02.json",
+    "en": {
+      "title": "Use the 5-minute activation rule for dreaded tasks",
+      "hook": "Starting is 90% of the battle. Your brain overestimates effort before you begin.",
+      "key_phrase": "I'm only doing five minutes of this report, then I can quit."
+    },
+    "ar": {
+      "title": "طبق قانون الـ ٥ دقائق عشان تكسر التسويف",
+      "hook": "البداية هي أصعب ٩٠٪ من المهمة. عقلك بيهول الحجم والجهد قبل ما تبدأ بس.",
+      "key_phrase": "أنا هشتغل ٥ دقايق بس في التقرير ده وهقفل."
+    }
+  },
+  {
+    "id": "2026-11-24_pricing_bracket-anchoring",
+    "number": 160,
+    "patch_number": 33,
+    "topic": "pricing",
+    "level": "beginner",
+    "tags": [
+      "pricing",
+      "sales",
+      "negotiation"
+    ],
+    "created_at": "2026-11-24T17:10:46.861938+00:00",
+    "file": "cards/2026/2026-11-24_auto_02.json",
+    "en": {
+      "title": "Anchor your prices with three clear brackets",
+      "hook": "When people see a single price, they ask 'Is this cheap or expensive?' Give them options and they ask 'Which fits me?'",
+      "key_phrase": "Most clients choose our Standard tier, but here are the three packages."
+    },
+    "ar": {
+      "title": "اقترح ثلاث باقات عشان تسهل الاختيار",
+      "hook": "لما تدي العميل سعر واحد بس، بيفكر: 'هل ده غالي ولا رخيص؟'. لكن لو أديته اختيارات، هيفكر: 'إيه اللي يناسبني؟'",
+      "key_phrase": "معظم عملائنا بيختاروا الباقة الأساسية، ودي الاختيارات الثلاثة."
+    }
+  },
+  {
+    "id": "2026-11-24_persuasion_label-their-fear",
+    "number": 159,
+    "patch_number": 33,
+    "topic": "persuasion",
+    "level": "intermediate",
+    "tags": [
+      "persuasion",
+      "psychology",
+      "communication"
+    ],
+    "created_at": "2026-11-24T17:10:46.861938+00:00",
+    "file": "cards/2026/2026-11-24_auto_02.json",
+    "en": {
+      "title": "Label your opponent's unspoken fear early",
+      "hook": "Negotiations stall when hidden worries sit in the room. Naming them first takes away their power.",
+      "key_phrase": "It sounds like you're worried this might take too long to implement."
+    },
+    "ar": {
+      "title": "سمّي المخاوف المستخبية قبل ما هما يقولوها",
+      "hook": "أول ما تحس إن اللي قدامك قلقان ومتردد، لو تجاهلت قلقه الصفقات بتبوظ.",
+      "key_phrase": "شكلك قلقان إن التغيير ده ياخد وقت كبير من فريقك."
+    }
+  },
+  {
+    "id": "2026-11-24_business_microgoal",
+    "number": 158,
+    "patch_number": 33,
+    "topic": "business",
+    "level": "beginner",
+    "tags": [
+      "goal",
+      "focus"
+    ],
+    "created_at": "2026-11-24T17:10:46.861938+00:00",
+    "file": "cards/2026/2026-11-24_auto_02.json",
+    "en": {
+      "title": "Turn a big project into micro‑goals",
+      "hook": "Ever felt stuck staring at a mountain of tasks? I sliced it into 15‑minute bites and got moving instantly.",
+      "key_phrase": ""
+    },
+    "ar": {
+      "title": "قسم المشروع الكبير لمهام صغيرة",
+      "hook": "حاسس إن الشغل كبير ومش عارف تبدأ؟ قسمت كل حاجة على 15 دقيقة وبديت أشتغل فورًا.",
+      "key_phrase": ""
+    }
+  },
+  {
+    "id": "2026-11-24_money_the-48-hour-rule",
+    "number": 157,
+    "patch_number": 32,
+    "topic": "money",
+    "level": "beginner",
+    "tags": [
+      "money",
+      "budgeting",
+      "impulse-buying",
+      "habits"
+    ],
+    "created_at": "2026-11-24T17:01:58.774191+00:00",
+    "file": "cards/2026/2026-11-24_auto_01.json",
+    "en": {
+      "title": "Use the 48-Hour Pause to Kill Impulse Spending",
+      "hook": "Ever bought something online late at night, only to wonder why you spent that money when the delivery arrived?",
+      "key_phrase": "I'm putting this purchase on a 48-hour hold."
+    },
+    "ar": {
+      "title": "استنى 48 ساعة قبل ما تشتري عشان توقف الشراء المندفع",
+      "hook": "عمرك اشتريت حاجة أونلاين بالليل، ولما جالك الدليفري حسيت إنك رميت فلوسك في الأرض وتساءلت ليه اشتريتها؟",
+      "key_phrase": "هأجل الشروة دي 48 ساعة وأشوف."
+    }
+  },
+  {
+    "id": "2026-11-24_learning_feynman-technique-toddler",
+    "number": 156,
+    "patch_number": 32,
+    "topic": "learning",
+    "level": "beginner",
+    "tags": [
+      "learning",
+      "study-hacks",
+      "memory",
+      "clarity"
+    ],
+    "created_at": "2026-11-24T17:01:58.774191+00:00",
+    "file": "cards/2026/2026-11-24_auto_01.json",
+    "en": {
+      "title": "Teach It to a 5-Year-Old to Spot Hidden Gaps",
+      "hook": "You read a chapter three times, feel like a genius, and then freeze during the meeting or exam. Why?",
+      "key_phrase": "If I can't explain this simply, I don't truly understand it yet."
+    },
+    "ar": {
+      "title": "اشرحها لطفل عنده 5 سنين عشان تكتشف اللي مش فاهمه",
+      "hook": "تقرأ الفصل ثلاث مرات وتحس إنك خلاص بقيت عبقري، وتيجي في الاجتماع أو الامتحان تكتشف إنك مش فاكر حاجة!",
+      "key_phrase": "لو مش عارف اشرحها بلغة بسيطة، يبقى أنا لسه مش فاهمها صح."
+    }
+  },
+  {
+    "id": "2026-11-24_leadership_feedback‑sandwich",
+    "number": 155,
+    "patch_number": 32,
+    "topic": "leadership",
+    "level": "intermediate",
+    "tags": [
+      "feedback",
+      "coaching",
+      "growth"
+    ],
+    "created_at": "2026-11-24T17:01:58.774191+00:00",
+    "file": "cards/2026/2026-11-24_auto_01.json",
+    "en": {
+      "title": "Give feedback that sticks with the 2‑sentence sandwich",
+      "hook": "Your team nods but forgets your critique minutes later – until you try the 2‑sentence sandwich.",
+      "key_phrase": ""
+    },
+    "ar": {
+      "title": "اعطي ملاحظات لا تنسى بسندويتش جملتين",
+      "hook": "الفريق بيهزر بعد ملاحظاتك ومش بيفهمها غير بعد ساعة – لحد ما جربت السندويتش بجملتين.",
+      "key_phrase": ""
+    }
+  },
+  {
+    "id": "2026-11-24_career_stretch‑project",
+    "number": 154,
+    "patch_number": 32,
+    "topic": "career",
+    "level": "beginner",
+    "tags": [
+      "promotion",
+      "growth",
+      "visibility"
+    ],
+    "created_at": "2026-11-24T17:01:58.774191+00:00",
+    "file": "cards/2026/2026-11-24_auto_01.json",
+    "en": {
+      "title": "Get a promotion by asking for a stretch project",
+      "hook": "You’ve been doing the same tasks for months – until you volunteer for the “impossible” client rollout.",
+      "key_phrase": "I’d like to lead the upcoming XYZ client rollout"
+    },
+    "ar": {
+      "title": "احصل على ترقية بطلب مشروع تحدي",
+      "hook": "شغلك بقى روتين لحد ما قررت تتطوع في مشروع الـXYZ الصعب اللي الكل خايف منه.",
+      "key_phrase": "حابب أقود تنفيذ مشروع XYZ"
+    }
+  },
+  {
+    "id": "2026-11-24_business_decision‑quick",
+    "number": 153,
+    "patch_number": 32,
+    "topic": "business",
+    "level": "intermediate",
+    "tags": [
+      "meeting",
+      "decision",
+      "speed"
+    ],
+    "created_at": "2026-11-24T17:01:58.774191+00:00",
+    "file": "cards/2026/2026-11-24_auto_01.json",
+    "en": {
+      "title": "Turn a meeting into a decision in 3 minutes",
+      "hook": "You’re stuck in a 45‑minute meeting that’s going nowhere – until you drop a simple 3‑minute rule.",
+      "key_phrase": "Let’s spend the next 3 minutes each state one clear decision we can make and lock it in."
+    },
+    "ar": {
+      "title": "حول أي اجتماع لقرار خلال 3 دقائق",
+      "hook": "قاعد في اجتماع بقاله نص ساعة ومش ماشي غير لما تقول قاعدة الـ3 دقايق السحرية.",
+      "key_phrase": "هناخد 3 دقايق كل واحد يقول قرار واضح ونقفل عليه"
+    }
+  },
+  {
     "id": "2026-11-23_sales_the-labeling-technique",
     "number": 152,
     "patch_number": 31,

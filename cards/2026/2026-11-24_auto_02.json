@@ -1,0 +1,287 @@
+{
+  "schema_version": 1,
+  "batch_id": "2026-11-24_auto_02",
+  "created_at": "2026-11-24T17:10:46.861938+00:00",
+  "source": "groq:openai/gpt-oss-120b",
+  "cards": [
+    {
+      "id": "2026-11-24_business_microgoal",
+      "created_at": "2026-11-24T17:10:46.861938+00:00",
+      "topic": "business",
+      "tags": [
+        "goal",
+        "focus"
+      ],
+      "level": "beginner",
+      "needs_completion": false,
+      "en": {
+        "title": "Turn a big project into micro‑goals",
+        "hook": "Ever felt stuck staring at a mountain of tasks? I sliced it into 15‑minute bites and got moving instantly.",
+        "action": "Break the next big task into 3 actions that each take ≤15 minutes, write them down, and start the first one right now.",
+        "key_phrase": "",
+        "when": "When a project feels overwhelming or you keep procrastinating.",
+        "why": "Small, time‑boxed steps lower activation energy and create a quick win, triggering dopamine that fuels momentum.",
+        "example": "You need to launch a newsletter. Instead of “write content”, list: 1) outline 3 topics (5 min), 2) draft intro (10 min), 3) set up template (15 min). Start with the outline now.",
+        "mistake": "Trying to plan the whole project before doing anything, which leads to analysis paralysis."
+      },
+      "ar": {
+        "title": "قسم المشروع الكبير لمهام صغيرة",
+        "hook": "حاسس إن الشغل كبير ومش عارف تبدأ؟ قسمت كل حاجة على 15 دقيقة وبديت أشتغل فورًا.",
+        "action": "قسم المهمة الكبيرة لثلاث خطوات كل واحدة ≤15 دقيقة واكتبهم، وابدأ أول خطوة دلوقتي.",
+        "key_phrase": "",
+        "when": "لما المشروع يبقى مرهق أو بتتسحب من المماطلة.",
+        "why": "الخطوات الصغيرة بتقلل مقاومة البدء وتدي إحساس بالإنجاز السريع اللي بيحفز الدماغ يكمل.",
+        "example": "عايز تطلق نشرة إخبارية. بدل ما تقول \"اكتب المحتوى\" اكتب: 1) حدد 3 مواضيع (5 دق)، 2) اكتب المقدمة (10 دق)، 3) جهز القالب (15 دق). ابدأ بحددتهم دلوقتي.",
+        "mistake": "تحاول تخطط للمشروع كله قبل ما تبدأ، وده بيعمل شلل تحليلي."
+      },
+      "quiz": {
+        "type": "mcq",
+        "correct_index": 0,
+        "en": {
+          "question": "Your teammate says the new product roadmap feels overwhelming. What’s the best immediate response?",
+          "options": [
+            "Let’s break the first milestone into three 15‑minute tasks.",
+            "We should delay the launch.",
+            "Hire more staff right away.",
+            "Ignore it for now."
+          ],
+          "explanation": "Suggesting micro‑goals gives a concrete, low‑effort way to start, reducing overwhelm. The other options either postpone action or add complexity."
+        },
+        "ar": {
+          "question": "زميلك قال إن خريطة المنتج الجديدة مرهقة. إيه أنسب رد؟",
+          "options": [
+            "نقسم أول مرحلة لتلات خطوات 15 دقيقة.",
+            "نأجل الإطلاق.",
+            "نستHire موظفين أكتر فورًا.",
+            "نتجاهل الموضوع."
+          ],
+          "explanation": "اقتراح تقسيم المهمة لمهام صغيرة بيوفر خطوة واضحة وسهلة، بيقلل الإحساس بالإرهاق. باقي الخيارات بتأخر التنفيذ أو بتضيف تعقيد."
+        }
+      }
+    },
+    {
+      "id": "2026-11-24_persuasion_label-their-fear",
+      "created_at": "2026-11-24T17:10:46.861938+00:00",
+      "topic": "persuasion",
+      "tags": [
+        "persuasion",
+        "psychology",
+        "communication"
+      ],
+      "level": "intermediate",
+      "needs_completion": false,
+      "en": {
+        "title": "Label your opponent's unspoken fear early",
+        "hook": "Negotiations stall when hidden worries sit in the room. Naming them first takes away their power.",
+        "action": "State the potential downside or hesitation your prospect is secretly worried about before they bring it up.",
+        "key_phrase": "It sounds like you're worried this might take too long to implement.",
+        "when": "When you sense hesitation or resistance during a proposal presentation.",
+        "why": "Accusation auditing defuses negative emotions by showing high empathy and neutralizing fear.",
+        "example": "You: 'It might seem like switching software will disrupt your team for weeks.' Client: 'Exactly!' You: 'Here is how we automate migration in 48 hours.'",
+        "mistake": "Ignoring the prospect's obvious anxiety and pushing benefits harder."
+      },
+      "ar": {
+        "title": "سمّي المخاوف المستخبية قبل ما هما يقولوها",
+        "hook": "أول ما تحس إن اللي قدامك قلقان ومتردد، لو تجاهلت قلقه الصفقات بتبوظ.",
+        "action": "قول الخوف اللي في بال العميل بصوت عالي قبل ما هو يطلعه بنفسه.",
+        "key_phrase": "شكلك قلقان إن التغيير ده ياخد وقت كبير من فريقك.",
+        "when": "لما تحس إن العميل متردد أو خايف ياخد قرار بعد العرض بتاعك.",
+        "why": "تسمية المخاوف بتسحب منها الطاقة السلبية وبتبين إنك فاهمه كويس جداً.",
+        "example": "أنت: 'يمكن حاسس إن نقل البيانات للبرنامج الجديد هياخد أسابيع ويعطل العمل؟' العميل: 'بالظبط ده قلقي!' أنت: 'عشان كده إحنا بنعمل النقل التلقائي في 48 ساعة بس.'",
+        "mistake": "إنك تطنش القلق وتفضل تضغط ومصمم تبيع وخلاص."
+      },
+      "quiz": {
+        "type": "mcq",
+        "correct_index": 1,
+        "en": {
+          "question": "A prospect looks hesitant after hearing your software pitch. What is the best move?",
+          "options": [
+            "Offer a 20% discount immediately.",
+            "Acknowledge their hidden concern: 'It seems like you're worried about training time.'",
+            "Keep highlighting features to prove the ROI.",
+            "Ask them to sign the contract before the end of the week."
+          ],
+          "explanation": "Labeling their unspoken concern creates immediate trust and opens the door to address real objections."
+        },
+        "ar": {
+          "question": "العميل شكله متردد بعد ما سمع عرضك. إيه أفضل تصرف تعملوا؟",
+          "options": [
+            "تطلب منه خصم 20% فورا.",
+            "تعترف بقلقه المستخبي: 'باين عليك قلقان من الوقت اللي هياخده التدريب.'",
+            "تفضل تعيد وتزيد في مميزات المنتج.",
+            "تضغط عليه يوقع العقد قبل آخر الأسبوع."
+          ],
+          "explanation": "لما تسمي القلق بصوت عالي، بتكسب ثقته وبتقدر تتعامل مع المشكلة الحقيقية بدل اللف والدوران."
+        }
+      }
+    },
+    {
+      "id": "2026-11-24_pricing_bracket-anchoring",
+      "created_at": "2026-11-24T17:10:46.861938+00:00",
+      "topic": "pricing",
+      "tags": [
+        "pricing",
+        "sales",
+        "negotiation"
+      ],
+      "level": "beginner",
+      "needs_completion": false,
+      "en": {
+        "title": "Anchor your prices with three clear brackets",
+        "hook": "When people see a single price, they ask 'Is this cheap or expensive?' Give them options and they ask 'Which fits me?'",
+        "action": "Offer three pricing tiers: Budget, Standard, and Premium. Place your target price in the middle.",
+        "key_phrase": "Most clients choose our Standard tier, but here are the three packages.",
+        "when": "When presenting a proposal or service fee quote to a client.",
+        "why": "The compromise effect makes the middle option feel safe, safeguarding higher profit margins.",
+        "example": "Basic: $500 (DIY), Standard: $1,500 (Done with you), Premium: $4,000 (VIP full-service). Most choose Standard.",
+        "mistake": "Sending a single quote with zero context or choice."
+      },
+      "ar": {
+        "title": "اقترح ثلاث باقات عشان تسهل الاختيار",
+        "hook": "لما تدي العميل سعر واحد بس، بيفكر: 'هل ده غالي ولا رخيص؟'. لكن لو أديته اختيارات، هيفكر: 'إيه اللي يناسبني؟'",
+        "action": "قدم ٣ مستويات أسعار: اقتصادي، أساسي، وممتاز. وخلي السعر اللي عاوز تبيعه في النص.",
+        "key_phrase": "معظم عملائنا بيختاروا الباقة الأساسية، ودي الاختيارات الثلاثة.",
+        "when": "وأنت بتقدم تسعير الخدمة أو المشروع للعميل.",
+        "why": "العقل بيميل بالفطرة للخيار الأوسط لأنه بيحسه متوازن وآمن.",
+        "example": "الباقة الأولى: 5,000 ج (أساسي)، الثانية: 15,000 ج (شاملة)، الثالثة: 40,000 ج (في آي بي). معظم الناس هتختار الثانية.",
+        "mistake": "إنك تبعت رقم واحد حاف من غير ما تدي للعميل بدائل يتقارن بيها."
+      },
+      "quiz": {
+        "type": "mcq",
+        "correct_index": 2,
+        "en": {
+          "question": "Why is offering three pricing options more effective than giving one price?",
+          "options": [
+            "It confuses the customer so they buy the highest tier.",
+            "It guarantees everyone buys the budget option.",
+            "It shifts the buyer's mindset from 'if' to buy to 'which' option to buy.",
+            "It allows you to hide hidden fees inside the middle tier."
+          ],
+          "explanation": "Three options shift the mental question from 'Should I buy?' to 'Which option fits my budget best?'"
+        },
+        "ar": {
+          "question": "ليه تقديم ثلاث باقات أسعار أفضل من إعطاء سعر واحد بس؟",
+          "options": [
+            "عشان يلخبط العميل فيشتري أغلى حاجة.",
+            "عشان يضمن إن كل الناس تشتري الباقة الرخيصة.",
+            "عشان بيغير تفكير العميل من 'أشتري ولا لأ' لـ 'أني باقة أنسب لي'.",
+            "عشان تعرف تخبي مصاريف إضافية في النص."
+          ],
+          "explanation": "وجود ٣ باقات بيخلي العميل يفكر أنهي باقة يناسبه بدل ما يفكر هل السعر غالي أو رخيص."
+        }
+      }
+    },
+    {
+      "id": "2026-11-24_productivity_five-minute-rule",
+      "created_at": "2026-11-24T17:10:46.861938+00:00",
+      "topic": "productivity",
+      "tags": [
+        "productivity",
+        "time-management",
+        "habits"
+      ],
+      "level": "beginner",
+      "needs_completion": false,
+      "en": {
+        "title": "Use the 5-minute activation rule for dreaded tasks",
+        "hook": "Starting is 90% of the battle. Your brain overestimates effort before you begin.",
+        "action": "Commit to working on a terrifying task for exactly five minutes. If you still want to stop, stop.",
+        "key_phrase": "I'm only doing five minutes of this report, then I can quit.",
+        "when": "When you are endlessly procrastinating on a complex or boring project.",
+        "why": "The Zeigarnik effect creates psychological momentum once an activity is officially initiated.",
+        "example": "Staring at an empty spreadsheet for hours. Set timer for 5 min, start typing title and rough outlines. Timer rings—you keep going.",
+        "mistake": "Waiting for inspiration or focus before starting work."
+      },
+      "ar": {
+        "title": "طبق قانون الـ ٥ دقائق عشان تكسر التسويف",
+        "hook": "البداية هي أصعب ٩٠٪ من المهمة. عقلك بيهول الحجم والجهد قبل ما تبدأ بس.",
+        "action": "اتفق مع نفسك تشتغل على المهمة الثقيلة لمدة ٥ دقايق بس بمؤقت. لو عاوز تقف بعدها، اقف.",
+        "key_phrase": "أنا هشتغل ٥ دقايق بس في التقرير ده وهقفل.",
+        "when": "لما تلاقي نفسك بتأجل شغلانة مهمة وثقيلة بقالك أيام.",
+        "why": "أول ما تبدأ، مخك بيبني طاقة حركة وبيبقى عاوز يكمل عشان يقفل المهمة اللي اتفتحت.",
+        "example": "مكسل تبدأ في ملف اكسيل معقد. شغل المؤقت ٥ دقايق واكتب العناوين. لما يرن الجرس هتلاقي نفسك اندمجت وعاوز تكمل.",
+        "mistake": "إنك تستنى المزاج والشغف ييجوا الأول قبل ما تبدأ."
+      },
+      "quiz": {
+        "type": "mcq",
+        "correct_index": 0,
+        "en": {
+          "question": "You have been procrastinating on writing a proposal for three days. What is the most effective action?",
+          "options": [
+            "Set a timer for 5 minutes and write just the first rough paragraph.",
+            "Wait until you feel energized and motivated later tonight.",
+            "Switch to organizing your inbox to feel productive.",
+            "Schedule a two-hour deep work block for tomorrow morning."
+          ],
+          "explanation": "Lowering the friction to just 5 minutes breaks cognitive inertia and triggers natural momentum."
+        },
+        "ar": {
+          "question": "بقالك ٣ أيام بتأجل كتابة العرض. إيه أفضل حاجة تعملها دلوقتي؟",
+          "options": [
+            "اظبط مؤقت ٥ دقايق واكتب أول فقرة عشوائية.",
+            "استنى لما مزاجك يروق وينزل عليك الشغف بالليل.",
+            "روح رتب الإيميلات عشان تحس إنك بتعمل حاجة مفيدة.",
+            "حدد ساعتين كاملين بكرة الصبح للموضوع ده."
+          ],
+          "explanation": "تقليل الخطوة الأولى لـ ٥ دقايق بيكسر الكسل ويبني زَخَم يخليك تكمل."
+        }
+      }
+    },
+    {
+      "id": "2026-11-24_sales_permission-to-close",
+      "created_at": "2026-11-24T17:10:46.861938+00:00",
+      "topic": "sales",
+      "tags": [
+        "sales",
+        "closing",
+        "communication"
+      ],
+      "level": "advanced",
+      "needs_completion": false,
+      "en": {
+        "title": "Ask for explicit permission before closing",
+        "hook": "Pushy closers trigger defensiveness. Permissive closers make buying feel like the client's decision.",
+        "action": "Ask if they feel ready to discuss logistics before blurting out contract terms.",
+        "key_phrase": "Would it make sense to talk about how we start onboarding?",
+        "when": "At the end of a sales conversation when value has been clearly established.",
+        "why": "Preserves client autonomy, reducing buyer's remorse and high-pressure pushback.",
+        "example": "You: 'We've covered your key requirements. Would it make sense to talk about timeline and setup?' Client: 'Yes, let's do that.'",
+        "mistake": "Jumping directly into 'Sign here' without testing their readiness."
+      },
+      "ar": {
+        "title": "استأذن العميل قبل ما تقفل الصفقة",
+        "hook": "الضغط على العميل بيخليه يدافع عن نفسه. الاستئذان بيخليه يحس إن القرار قراره هو.",
+        "action": "اسأل العميل الأول هل جاهز نتكلم في الخطوات الجاية قبل ما ترمي العقد في وشه.",
+        "key_phrase": "تحب نتكلم في التفاصيل والخطوات الجاية عشان نبدأ؟",
+        "when": "في آخر المكالمة البيعية بعد ما تكون وضحت القيمة بالكامل.",
+        "why": "بيحافظ على إحساس العميل بالحرية والسيطرة على القرار، فما يقاومكش.",
+        "example": "أنت: 'كده غطينا كل النقاط. تحب نتكلم في التفاصيل التنفيذية ونشوف هنبدأ إزاي؟' العميل: 'تمام يلا بينا.'",
+        "mistake": "إنك تنط على طول وتقول 'وقع هنا' من غير ما تتأكد إنه جاهز."
+      },
+      "quiz": {
+        "type": "mcq",
+        "correct_index": 3,
+        "en": {
+          "question": "You finished presenting a solution and the client is nodding. How should you transition to closing?",
+          "options": [
+            "Say: 'Great, I'll send the invoice right away.'",
+            "Say: 'If you buy today, I can get you a discount.'",
+            "Ask: 'Do you have any reason not to sign right now?'",
+            "Ask: 'Would it make sense to discuss the next steps for onboarding?'"
+          ],
+          "explanation": "Asking 'Would it make sense to...' invites collaboration without pressure, giving them control while advancing the deal."
+        },
+        "ar": {
+          "question": "خلصت العرض والعميل بيهز راسه وموافق. إيه أفضل طريقة تتنقل بيها لتقفيل الصفقة؟",
+          "options": [
+            "تقول: 'تمام، هبعتلك الفاتورة حالاً.'",
+            "تقول: 'لو اشتريت النهاردة هديك خصم.'",
+            "تسأل: 'عندك أي سبب يخلينا مانوقعش دلوقتي؟'",
+            "تسأل: 'تحب نتكلم في الخطوات الجاية وتفاصيل البداية؟'"
+          ],
+          "explanation": "سؤال العميل لو يناسبه نتكلم في الخطوات الجاية بيدي له إحساس بالسيطرة ويبعد عن أسلوب البيع الرخيص."
+        }
+      }
+    }
+  ]
+}
