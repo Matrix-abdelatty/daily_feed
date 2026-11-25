@@ -1,0 +1,288 @@
+{
+  "schema_version": 1,
+  "batch_id": "2026-11-25_auto_02",
+  "created_at": "2026-11-25T16:54:53.786039+00:00",
+  "source": "gemini-3.5-flash",
+  "cards": [
+    {
+      "id": "2026-11-25_money_24hr-rule-impulse",
+      "created_at": "2026-11-25T16:54:53.786039+00:00",
+      "topic": "money",
+      "tags": [
+        "budgeting",
+        "spending",
+        "impulse-control"
+      ],
+      "level": "beginner",
+      "needs_completion": false,
+      "en": {
+        "title": "Pause 24 hours before non-essential impulse buys",
+        "hook": "You see a gadget at midnight, hit buy, and three days later wonder where your salary went.",
+        "action": "Add the item to your cart, but set a timer for 24 hours. Only buy if you still want it tomorrow.",
+        "key_phrase": "I'll leave it in the cart until tomorrow night.",
+        "when": "Browsing online stores or feeling an sudden urge to buy non-essential items.",
+        "why": "Impulse buying is driven by short dopamine spikes. Waiting breaks the neurochemical thrill.",
+        "example": "You: 'That smart mug looks cool! Let me put it in the cart and check back tomorrow.' Next day: 'Honestly, my normal mug works fine.'",
+        "mistake": "Checking out immediately to chase the quick emotional rush of ordering."
+      },
+      "ar": {
+        "title": "استنى 24 ساعة قبل ما تشتري حاجة مش أساسية",
+        "hook": "بتشوف حاجة بالليل على النت، تشتريها فوراً، وبعد ٣ أيام تقعد تسأل فلوسك راحت فين؟",
+        "action": "حط المنتج في السلة واظبط تايمر 24 ساعة. لو لسة عايز تشتريها بكرة، اشترِ.",
+        "key_phrase": "هسيبها في السلة لحد بكرة بالليل.",
+        "when": "وأنت بتتصفح محلات أونلاين ومزنوق في حماس شراء فجائي.",
+        "why": "نشوة الشراء اللحظي بتروح بعد كم ساعة، والوقت ده بيرجعلك التفكير المنطقي.",
+        "example": "أنت: 'الله، الكوباية الذكية دي شكلها جامد! حطها في السلة ولما أصحى بكرة هشوف.' تاني يوم: 'ما الكوباية العادية شغالة وزي الفل!'",
+        "mistake": "الشراء الفوري عشان تحس بمتعة الـ checkout اللحظية."
+      },
+      "quiz": {
+        "type": "mcq",
+        "correct_index": 1,
+        "en": {
+          "question": "You see a $40 desk accessory online and feel an intense urge to click 'Buy Now'. What is the best move?",
+          "options": [
+            "Buy it immediately so you don't forget.",
+            "Add it to your shopping cart and force yourself to wait 24 hours.",
+            "Ask a coworker if they like the item before buying.",
+            "Delete your online shopping app permanently."
+          ],
+          "explanation": "Waiting 24 hours lets the dopamine excitement fade, allowing rational decision-making."
+        },
+        "ar": {
+          "question": "شفت اكسسوار للمكتب بـ 500 جنيه أونلاين وجالك حماس شديد تشتريه حالا. إيه أفضل تصرف؟",
+          "options": [
+            "تشتري في ساعتها عشان متنساش.",
+            "تحط المنتج في السلة وتجبر نفسك تستنى 24 ساعة.",
+            "تسأل زميلك في الشغل رأيه إيه قبل ما تشتري.",
+            "تمسح أبليكيشن الشوبينج خالص من موبايلك."
+          ],
+          "explanation": "الانتظار 24 ساعة بيهدي حماس الدوبامين اللحظي وبيرجعلك التفكير المنطقي عشان تقرر صح."
+        }
+      }
+    },
+    {
+      "id": "2026-11-25_negotiation_ackerman-bargaining",
+      "created_at": "2026-11-25T16:54:53.786039+00:00",
+      "topic": "negotiation",
+      "tags": [
+        "negotiation",
+        "pricing",
+        "counter-offer"
+      ],
+      "level": "intermediate",
+      "needs_completion": false,
+      "en": {
+        "title": "Anchor low with precise, non-round numbers",
+        "hook": "Offering '$500' sounds like a random guess. Offering '$485' makes you look like you ran exact math.",
+        "action": "State a precise non-round counter-offer based on calculated constraints, making it look non-negotiable.",
+        "key_phrase": "The exact maximum budget allocated for this is $4,850.",
+        "when": "Negotiating prices for freelancer contracts, vendor deals, or large purchases.",
+        "why": "Precise numbers imply meticulous calculation and rigid limits, making counter-parties bargain less.",
+        "example": "Vendor: 'Our rate is $6,000.' You: 'Based on our strict audit, the absolute cap we can cover is $4,850.'",
+        "mistake": "Using generic round numbers ($5,000) which signals flexibility and invites counter-bargaining."
+      },
+      "ar": {
+        "title": "استخدم أرقام محددة ومش مدورة وأنت بتفاوض",
+        "hook": "لما تقول '500 جنيه' بتبان كأنك بتهبد رقم، بس لما تقول '485' بتبان إنك حسبتها بالقرش.",
+        "action": "قول عرضك برقم غير مدور ومحدد جداً بناءً على قيودك، عشان يبان إنه رقم نهائي ومحسوب.",
+        "key_phrase": "أقصى ميزانية اتوافق عليها بالظبط هي 4,850 جنيه.",
+        "when": "وأنت بتتفاوض على سعر خدمة، مشروع، أو عقد جديد.",
+        "why": "الأرقام الدقيقة بتدي انطباع إنك حسبت كل حاجة بدقة شديدة ومفيش مساحة كبيرة للفصال.",
+        "example": "المورد: 'التكلفة هتبقى 6000.' أنت: 'بعد مراجعة الميزانية بالظبط، أقصى رقم نقدر ندفعه هو 4,850.'",
+        "mistake": "استخدام أرقام مدورة زي 5000، وده بيشجع اللي قدامك يطلب فصال أكتر."
+      },
+      "quiz": {
+        "type": "mcq",
+        "correct_index": 2,
+        "en": {
+          "question": "A contractor quotes $5,000 for a job. Your target budget is around $4,000. Which offer carries more weight?",
+          "options": [
+            "Offer $3,500 so you can meet in the middle.",
+            "Offer $4,000 directly.",
+            "Offer $3,920 explaining it matches your line-item budget.",
+            "Tell them your budget is confidential."
+          ],
+          "explanation": "Precise numbers ($3,920) feel like hard mathematical limits rather than an arbitrary starting guess."
+        },
+        "ar": {
+          "question": "مقاول طلب 5000 جنيه في شغلانة، وميزانيتك حوالي 4000. إيه العرض اللي يخليه يأخد كلامك بجدية أكتر؟",
+          "options": [
+            "تعرض 3500 عشان تتقابلوا في النص.",
+            "تعرض 4000 كاش على طول.",
+            "تعرض 3920 وتوضح إن ده الرقم اللي طلع معاك بعد حساب التكاليف.",
+            "تقوله الميزانية سرية ومش هقدر أقول رقم."
+          ],
+          "explanation": "الرقم غير المدور (3920) بيدي إيحاء إن ده سقفك النهائي المحسوب بدقة، ومش رقم عشوائي للفصال."
+        }
+      }
+    },
+    {
+      "id": "2026-11-25_persuasion_because-justification",
+      "created_at": "2026-11-25T16:54:53.786039+00:00",
+      "topic": "persuasion",
+      "tags": [
+        "persuasion",
+        "communication",
+        "influence"
+      ],
+      "level": "beginner",
+      "needs_completion": false,
+      "en": {
+        "title": "Use the word 'because' to unlock fast agreement",
+        "hook": "Want people to say yes to small favors? Just giving ANY clear reason nearly doubles compliance.",
+        "action": "State your request, then immediately attach the word 'because' followed by a reason.",
+        "key_phrase": "Can I jump ahead because...",
+        "when": "Asking for small favors, fast-tracking approvals, or interrupting line queues.",
+        "why": "Human brain triggers compliance when hearing a reason word, processing the request as justified.",
+        "example": "You: 'Can I print these 2 pages ahead of you because I have an urgent meeting in 3 minutes?'",
+        "mistake": "Making raw requests without providing a reason, assuming people will figure out your urgency."
+      },
+      "ar": {
+        "title": "استخدم كلمة 'عشان' عشان تاخد موافقة سريعة",
+        "hook": "عايز الناس توافق على طلباتك السريعة؟ مجرد إنك تقول سبب بيضاعف نسبة موافقتهم!",
+        "action": "اطلب اللي أنت عايزه، ووراها على طول حط كلمة 'عشان' واذكر السبب.",
+        "key_phrase": "ممكن أعدي قبلك عشان...",
+        "when": "لما تكون عايز تطلب خدمة صغيرة، موافقة سريعة، أو تعدي دور.",
+        "why": "العقل البشري بيستجيب للطلبات المبررة أسرع، كلمة 'عشان' بتدي إيحاء بالمنطقية تلقائياً.",
+        "example": "أنت: 'ممكن أطبع الورقتين دول قبلك عشان عندي اجتماع كمان ٣ دقائق؟'",
+        "mistake": "إنك تطلب الحاجة حاف من غير ما تقول 'عشان' وتفترض إن الناس هتقدر موقفك."
+      },
+      "quiz": {
+        "type": "mcq",
+        "correct_index": 0,
+        "en": {
+          "question": "You need to cut in line at the copier for one quick document. What request phrase works best?",
+          "options": [
+            "May I print first because I need this for the 2:00 PM presentation?",
+            "Can I please go first?",
+            "Excuse me, I am in a hurry.",
+            "Move aside, I only have one page."
+          ],
+          "explanation": "Using 'because' with a specific reason triggers an automatic psychological agreement response."
+        },
+        "ar": {
+          "question": "محتاج تطبع ورقة سريعة واقف قدام الماكينة طابور. أنهي صيغة تضمنلك موافقة أسرع؟",
+          "options": [
+            "ممكن أطبع قبلك عشان محتاج الورقة دي في اجتماع الساعة ٢؟",
+            "ممكن أعدي بعد إذنك؟",
+            "لو سمحت أنا مستعجل جداً.",
+            "أنا معايا ورقة واحدة بس على الفكرة."
+          ],
+          "explanation": "استخدام كلمة 'عشان' متبوعة برسبب محدد بيخلي المخ يتعامل مع الطلب كأنه منطقي ومقبول تلقائياً."
+        }
+      }
+    },
+    {
+      "id": "2026-11-25_productivity_two-minute-rule",
+      "created_at": "2026-11-25T16:54:53.786039+00:00",
+      "topic": "productivity",
+      "tags": [
+        "time-management",
+        "tasks",
+        "focus"
+      ],
+      "level": "beginner",
+      "needs_completion": false,
+      "en": {
+        "title": "Do any task taking under 2 minutes immediately",
+        "hook": "Your brain burns more energy tracking small tasks than actually finishing them.",
+        "action": "If an incoming task takes less than 120 seconds, complete it on the spot instead of listing it.",
+        "key_phrase": "If it takes under 2 minutes, do it now.",
+        "when": "Processing emails, messages, or small quick requests throughout the day.",
+        "why": "Tracking micro-tasks creates mental open loops that clutter working memory and cause exhaustion.",
+        "example": "Got an email asking for a 'Yes' approval? Don't flag it for later—reply and archive immediately.",
+        "mistake": "Writing 30-second micro-tasks on your to-do list, wasting time managing the list."
+      },
+      "ar": {
+        "title": "أي مهمة تاخد أقل من دقيقتين اعملها فوراً",
+        "hook": "مخك بيستهلك طاقة في افتكار المهام الصغيرة أكتر بكتير من الوقت اللي بتاخده عشان تخلصها!",
+        "action": "أول ما تجيلك مهمة هتاخد أقل من دقيقتين، خلصها في ساعتها بدل ما تكتبها في النوتة.",
+        "key_phrase": "أقل من دقيقتين؟ أخلصها دلوقتي.",
+        "when": "وأنت بتقرأ الإيميلات، بتشوف الرسائل، أو بترتب مكتبك خلال اليوم.",
+        "why": "المهام الصغيرة المتراكمة بتعمل زحمة في مخك وتشتتك، وإنجازها فوراً بيفضي دماغك.",
+        "example": "جالك إيميل محتاج موافقة بكلمة واحدة؟ رد في ساعتها واعمل أرشفة بدل ما تسيبه للليل.",
+        "mistake": "إنك تكتب الحاجات الهبلة اللي بتاخد ثواني في الـ To-Do list وتضيع وقتك في ترتيبها."
+      },
+      "quiz": {
+        "type": "mcq",
+        "correct_index": 3,
+        "en": {
+          "question": "You get a brief slack message asking you to send a file link you already have saved. It takes 40 seconds. What should you do?",
+          "options": [
+            "Add it to your evening task list.",
+            "Snooze the message for 2 hours.",
+            "Wait until your deep work block ends.",
+            "Send the link right now and close the request."
+          ],
+          "explanation": "If a task takes less than 2 minutes, doing it immediately costs less energy than tracking it."
+        },
+        "ar": {
+          "question": "جالك مسج على سلاك بيطلب منك لينك ملف جاهز عندك. موضوع بياخد 40 ثانية. تعمل إيه؟",
+          "options": [
+            "تكتبها في قائمة المهام بتاعت بالليل.",
+            "تعمل سدوز للمسج وتفتكرها كمان ساعتين.",
+            "تستنى لما تخلص شغل التركيز بتاعك خالص.",
+            "تبعت اللينك حالا وتفضي دماغك منها."
+          ],
+          "explanation": "أي مهمة بتاخد أقل من دقيقتين، إنجازها فوراً بيوفر طاقة ذهنية أكتر من تسجيلها وتأجيلها."
+        }
+      }
+    },
+    {
+      "id": "2026-11-25_psychology_ben-franklin-effect",
+      "created_at": "2026-11-25T16:54:53.786039+00:00",
+      "topic": "psychology",
+      "tags": [
+        "rapport",
+        "relationships",
+        "psychology"
+      ],
+      "level": "intermediate",
+      "needs_completion": false,
+      "en": {
+        "title": "Ask for a tiny favor to make someone like you",
+        "hook": "Counter-intuitive truth: We don't do favors for people we like; we like people we do favors for.",
+        "action": "Ask a distant colleague for a minor, effortless favor like borrowing a charger or a brief tool recommendation.",
+        "key_phrase": "Could you help me with a quick recommendation?",
+        "when": "Trying to warm up a relationship with a cold colleague or new acquaintance.",
+        "why": "Cognitive dissonance forces their brain to rationalize: 'I helped them, so I must like them.'",
+        "example": "You: 'Hey Tarek, do you know a good PDF merger tool?' Tarek recommends one and sub-consciously feels warmer to you.",
+        "mistake": "Over-gifting or doing constant unrequested favors to buy someone's affection."
+      },
+      "ar": {
+        "title": "اطلب خدمة صغيرة جداً عشان تخلي حد يحبك",
+        "hook": "سر غريب: إحنا مش بنخدم الناس اللي بنحبهم، إحنا بنحب الناس اللي بنخدمهم!",
+        "action": "اطلب من زميلك حاجة بسيطة مش محتاجة مجهود، زي استعارة شاحن أو ترشيح برنامج.",
+        "key_phrase": "ممكن ترشحلي حاجة سريعة؟",
+        "when": "لما تكون عايز تكسر الجليد مع زميل جديد أو تقرب من حد رسميا معاك في الشغل.",
+        "why": "مخ البني آدم بيبرر المساعدة اللي قدمها ويقنع نفسه: 'أنا ساعدته يبقى أكيد أنا برتاحله'.",
+        "example": "أنت: 'يا طارق، تعرف برنامج كويس للـ PDF؟' لما طارق يجاوبك، هيحس بقرب ولا شعورياً بارتياح ناحيتك.",
+        "mistake": "إنك تعزم الناس وتعملهم خدمات كتير عشان تحاول تشتري حبهم."
+      },
+      "quiz": {
+        "type": "mcq",
+        "correct_index": 1,
+        "en": {
+          "question": "You want to build a warm connection with a distant key stakeholder at work. What is the most psychologically effective icebreaker?",
+          "options": [
+            "Buy them an expensive coffee every morning.",
+            "Ask them for a tiny advice on a software or process they know well.",
+            "Compliment their outfit profusely in public.",
+            "Offer to do their administrative work for them."
+          ],
+          "explanation": "Asking for a small favor activates the Ben Franklin effect, rationalizing goodwill in their brain."
+        },
+        "ar": {
+          "question": "عايز تبني علاقة طيبة وارتياح مع شخص مهم في الشغل بس علاقتكو رسمية. إيه أذكى حركة؟",
+          "options": [
+            "تشتريله قهوة غالية كل يوم الصبح.",
+            "تطلب منه نصيحة صغيرة في حاجة هو شاطر فيها زي أبليكيشن أو برنامج.",
+            "تقعد تمدح في لبسه وطريقته قدام الناس.",
+            "تعرض عليه تعمل شغل إداري بداله عشان تجامله."
+          ],
+          "explanation": "طلب خدمة صغيرة يفعل تأثير 'بن فرانكلين'، فيخلي مخه يبرر المساعدة بأنه بيرتاحلك وبيحبك."
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,288 @@
+{
+  "schema_version": 1,
+  "batch_id": "2026-11-25_auto_01",
+  "created_at": "2026-11-25T16:52:04.484581+00:00",
+  "source": "gemini-3.5-flash",
+  "cards": [
+    {
+      "id": "2026-11-25_psychology_affect-labeling",
+      "created_at": "2026-11-25T16:52:04.484581+00:00",
+      "topic": "psychology",
+      "tags": [
+        "conflict-resolution",
+        "emotional-intelligence",
+        "deescalation"
+      ],
+      "level": "intermediate",
+      "needs_completion": false,
+      "en": {
+        "title": "Label emotions to instantly disarm tension",
+        "hook": "Someone is yelling at you and your impulse is to defend yourself. Don't. Name their emotion out loud instead.",
+        "action": "State what the other person seems to be feeling using neutral language like 'It seems like you're feeling...'.",
+        "key_phrase": "It seems like you're really frustrated with...",
+        "when": "When facing an angry, emotional, or overwhelmed colleague or client.",
+        "why": "Naming an emotion activates the prefrontal cortex and dampens amygdala reactivity, reducing stress.",
+        "example": "Client: 'This report is late again!' You: 'It seems like you're really worried about missing the board deadline.' Client: 'Exactly! Look, we just need to send them a draft today.'",
+        "mistake": "Arguing with logic while their brain is in fight-or-flight mode."
+      },
+      "ar": {
+        "title": "سمّي الشعور عشان تهدّي الليلة في ثواني",
+        "hook": "حد زعلان وبيزعق قدامك؟ أول رد فعل إنك تدافع عن نفسك، بس ده بيولّع الدنيا زيادة.",
+        "action": "بدل ما تجادل، أوصف إحساسه بكلمات محايدة زي: 'شكلك حاسس إن...' أو 'واضح إن الموضوع ده موترك جداً'.",
+        "key_phrase": "شكلك متضايق جداً من...",
+        "when": "لما تتعامل مع عميل أو زميل منفعل ومش عارفين يتكلموا بهدوء.",
+        "why": "تسمية المشاعر بتشغل الجزء العقلاني في المخ وتهدي المنطقة المسؤولة عن الخوف والغضب.",
+        "example": "العميل: 'التقرير اتأخر تاني ليه؟!' انت: 'شكلك خايف جداً نتأخر على معاد الاجتماع الجاي.' العميل: 'بالظبط! بص، إحنا محتاجين نلحق بس بعت مسودة دلوقتي.'",
+        "mistake": "إنك ترد بمنطق وحجج والشخص اللي قدامك في حالة غضب كاملة."
+      },
+      "quiz": {
+        "type": "mcq",
+        "correct_index": 1,
+        "en": {
+          "question": "A client is furiously complaining about a tight deadline. What is the best first step?",
+          "options": [
+            "Argue with data showing the deadline was reasonable",
+            "Label their emotion with 'It seems like you're feeling really stressed about the timeline'",
+            "Apologize repeatedly without letting them speak",
+            "Ignore their tone and change the subject to next week's agenda"
+          ],
+          "explanation": "Naming the emotion calms their brain's fight-or-flight center, making them ready to listen. Defensive logic only escalates anger."
+        },
+        "ar": {
+          "question": "عميل زعلان جداً وبيشتكي إن الوقت ضيق. إيه أفضل تصرف تبدأ بيه؟",
+          "options": [
+            "تجادل معاه وتوريه أرقام بتثبت إن الوقت كان كفاية",
+            "تسمي شعوره وتقول 'شكلك حاسس بضغط كبير بسبب معاد التسليم'",
+            "تعتذر ميت مرة ورا بعض من غير ما تديه فرصة يتكلم",
+            "تطنش عصبيته وتغير الموضوع لأجندة الأسبوع الجاي"
+          ],
+          "explanation": "تسمية المشاعر بتهدي مركز الخوف والغضب في المخ فبيبدأ يسمعك. الدفاع والمنطق في الوقت ده بيولعوا المشكلة."
+        }
+      }
+    },
+    {
+      "id": "2026-11-25_communication_no-oriented-questions",
+      "created_at": "2026-11-25T16:52:04.484581+00:00",
+      "topic": "communication",
+      "tags": [
+        "email",
+        "follow-up",
+        "persuasion"
+      ],
+      "level": "beginner",
+      "needs_completion": false,
+      "en": {
+        "title": "Ask questions that invite a 'No' to get faster replies",
+        "hook": "Want a busy prospect to respond immediately after ghosting you? Stop asking for a 'Yes'.",
+        "action": "Reframe your follow-up question so answering 'No' gives you the update or action you need.",
+        "key_phrase": "Have you given up on this project?",
+        "when": "Following up on a cold prospect or a ghosting colleague.",
+        "why": "People feel safer saying 'No' because it feels protective and in control, whereas 'Yes' feels like a commitment.",
+        "example": "You emailed a client 3 times with no reply. You send: 'Have you given up on this proposal?' Client replies 5 minutes later: 'No! Sorry, super busy. Let's call tomorrow.'",
+        "mistake": "Sending passive-aggressive 'Just checking in!' emails that get ignored."
+      },
+      "ar": {
+        "title": "اسأل أسئلة إجابتها 'لأ' عشان يترد عليك فورا",
+        "hook": "لما تبعت إيميل ولحد يفضّل مطنشك، بلاش تسأل أسئلة تحشره في زاوية الـ 'أيوه'.",
+        "action": "غير صيغة السؤال بحيث إن كلمة 'لأ' تديك النتيجة اللي عايزها وإجابة سريعة.",
+        "key_phrase": "هو حضرتك صرفت نظر عن المشروع ده؟",
+        "when": "لما تكون بتتابع مع عميل أو زميل أختفى وما بيردش على رسائلك.",
+        "why": "الناس بتحس بأمان وسيطرة أكتر لما تقول 'لأ'، لكن 'أيوه' بتحسسهم بالتزام قلقين منه.",
+        "example": "بعت 3 إيميلات ومفيش رد. تبعت: 'هو حضرتك صرفت نظر عن العرض ده؟' العميل يرد بعدها بـ 5 دقائق: 'لأ خالص! آسف زحمة شغل، نتكلم بكرة؟'",
+        "mistake": "إنك تبعت رسائل ملهاش لازمة زي 'بأكد على رسالتي القديمة!' وتطنش عادي."
+      },
+      "quiz": {
+        "type": "mcq",
+        "correct_index": 1,
+        "en": {
+          "question": "You sent a proposal a week ago and the client went silent. How should you follow up?",
+          "options": [
+            "Send: 'Is it a good time to discuss the proposal now?'",
+            "Send: 'Have you given up on this project?'",
+            "Send: 'Just following up to see if you read my last email!'",
+            "Call them five times in a row until they pick up"
+          ],
+          "explanation": "Saying 'No' gives people a sense of safety and control, making them reply immediately to defend their position."
+        },
+        "ar": {
+          "question": "بعت عرض من أسبوع والعميل اختفى وما بيردش. تتابع معاه إزاي؟",
+          "options": [
+            "تبعت: 'هل ده وقت مناسب نتكلم فيه عن العرض؟'",
+            "تبعت: 'هو حضرتك صرفت نظر عن المشروع ده؟'",
+            "تبعت: 'بتابع مع حضرتك عشان اعرف قريت الإيميل ولا لأ!'",
+            "تتصل بيه 5 مرات ورا بعض لحد ما يرد"
+          ],
+          "explanation": "كلمة 'لأ' بتدي الشخص إحساس بالأمان والسيطرة، فبيرد عليك فوراً عشان يوضح موقفه."
+        }
+      }
+    },
+    {
+      "id": "2026-11-25_decision_making_ten-ten-ten-rule",
+      "created_at": "2026-11-25T16:52:04.484581+00:00",
+      "topic": "decision_making",
+      "tags": [
+        "overthinking",
+        "clarity",
+        "prioritization"
+      ],
+      "level": "beginner",
+      "needs_completion": false,
+      "en": {
+        "title": "Use the 10/10/10 Rule to stop overthinking hard choices",
+        "hook": "Paralyzed by a tough decision? You're likely evaluating it through short-term anxiety instead of long-term clarity.",
+        "action": "Evaluate your choice by asking: How will I feel about this in 10 minutes, 10 months, and 10 years?",
+        "key_phrase": "How will I feel about this choice in 10 months?",
+        "when": "Feeling stuck between two options or afraid of short-term discomfort.",
+        "why": "It forces your brain to shift from immediate emotional panic to long-term rational evaluation.",
+        "example": "Scared to ask for a raise. 10 minutes: Anxious. 10 months: Proud I stood up for myself. 10 years: Zero regret, minor event in a long career.",
+        "mistake": "Letting the fear of the next 10 minutes dictate your life for the next 10 years."
+      },
+      "ar": {
+        "title": "قاعدة 10/10/10 عشان تخلص من التفكير الزائد وتأخد قرار",
+        "hook": "محتار ومش عارف تختار؟ غالباً إنت مزنوق في خيالات قلق المدى القريب ومش شايف الصورة الكاملة.",
+        "action": "قبل ما تقرر، اسأل نفسك: هحس بإيه بعد 10 دقائق، 10 شهور، و10 سنين من القرار ده؟",
+        "key_phrase": "هحس بإيه ناحية الاختيار ده كمان 10 شهور؟",
+        "when": "لما تكون خايف تاخد قرار بسبب التوتر أو الأحراج السريع.",
+        "why": "القاعدة دي بتجبر مخك يبعد عن المشاعر الوقتية ويشوف النتيجة الحقيقية على المدى الطويل.",
+        "example": "خايف تطلب زيادة في المرتب. كمان 10 دقايق: متوتر. كمان 10 شهور: مبسوط إنك حاولت وشوفت حقك. كمان 10 سنين: مش فاكر الخوف، ومأثرة إيجابياً على مسارك.",
+        "mistake": "إنك تسيّب قلق الـ 10 دقايق الجايين يحدد شكل حياتك في الـ 10 سنين الجايين."
+      },
+      "quiz": {
+        "type": "mcq",
+        "correct_index": 0,
+        "en": {
+          "question": "You are afraid to turn down an extra task that will cause burnout. How does the 10/10/10 rule help?",
+          "options": [
+            "It helps you weigh 10 minutes of awkwardness against 10 months of burnout relief",
+            "It forces you to take 10 full days before giving any response",
+            "It instructs you to flip a coin 10 times to decide objectively",
+            "It forces you to consult 10 different colleagues before saying no"
+          ],
+          "explanation": "The 10/10/10 rule frames short-term awkwardness against long-term peace of mind, breaking decision paralysis."
+        },
+        "ar": {
+          "question": "خايف ترفض شغل إضافي هيسببلك إرهاق شديد. قاعدة 10/10/10 تساعدك إزاي؟",
+          "options": [
+            "بتخليك تقارن بين 10 دقائق إحراج و10 شهور من الراحة وتفادي الحرق النفسي",
+            "بتجبرك تاخد 10 أيام كاملين قبل ما تدي أي رد",
+            "بتقولك ارمي عملة معدنية 10 مرات عشان تقرر بدون تحيز",
+            "بتجبرك تستشير 10 زمايل مختلفين قبل ما تقول لأ"
+          ],
+          "explanation": "قاعدة 10/10/10 بتقارن أحراج اللحظة براحة المدى الطويل، وده بيكسر شلل التفكير والتردد."
+        }
+      }
+    },
+    {
+      "id": "2026-11-25_learning_blank-sheet-retrieval",
+      "created_at": "2026-11-25T16:52:04.484581+00:00",
+      "topic": "learning",
+      "tags": [
+        "memory",
+        "active-recall",
+        "productivity"
+      ],
+      "level": "intermediate",
+      "needs_completion": false,
+      "en": {
+        "title": "The Blank Sheet Trick to retain 80% of what you read",
+        "hook": "Re-reading highlighted notes makes you feel smart, but it's an illusion. You forget almost all of it in 48 hours.",
+        "action": "Close the book or video, open a blank sheet, and write everything you remember from memory for 3 minutes.",
+        "key_phrase": "",
+        "when": "Immediately after finishing an article, book chapter, or educational video.",
+        "why": "Forcing your brain to retrieve information builds stronger neural connections than passive re-reading.",
+        "example": "Finished reading a chapter on negotiation. Close the book. Spend 3 minutes listing the 3 core tactics you remembered. Reopen the book to check what you missed.",
+        "mistake": "Coloring entire book pages with yellow highlighters and assuming you learned the material."
+      },
+      "ar": {
+        "title": "طريقة 'الورقة الفاضية' عشان تثبّت المعلومة في مخك",
+        "hook": "إعادة قراءة الملاحظات بالماركر الأصفر بيدي إحساس وهمي بالفهم، وبعد يومين بتنسى كل حاجة.",
+        "action": "اقفل الكتاب أو الفيديو، وافتح ورقة فاضية واكتب كل اللي فاكره من دماغك لمدة 3 دقايق من غير ما تبص.",
+        "key_phrase": "",
+        "when": "فوراً بعد ما تخلص فصل من كتاب، أو مقال، أو محاضرة.",
+        "why": "سحب المعلومات من ذاكرتك بالعافية بيبني روابط عصبية أقوى بكثير من مجرد القراءة السلبية.",
+        "example": "خلصت مقال عن التفاوض. بدل ما تعلّم بالماركر، اقفل الصفحة واكتب 3 نقاط فاكرهم بالظبط. وبعدها راجع اللي طار منك.",
+        "mistake": "إنك تلون الصفحات بالماركر وافتكار إن كدة المعلومة ثبتت."
+      },
+      "quiz": {
+        "type": "mcq",
+        "correct_index": 2,
+        "en": {
+          "question": "You just finished a video on public speaking. What is the most effective way to remember its key insights?",
+          "options": [
+            "Re-watch the video immediately at 2x speed",
+            "Highlight the auto-generated transcript on your screen",
+            "Close the video and write down key points on a blank paper from memory",
+            "Save the video to your 'Watch Later' playlist for next month"
+          ],
+          "explanation": "Retrieval practice forces the brain to rebuild neural pathways, making memories stick far better than passive reading."
+        },
+        "ar": {
+          "question": "لسا مخلص فيديو عن مهارات العرض والإلقاء. إيه أفضل طريقة تثبت بيها النقاط المهمة؟",
+          "options": [
+            "تعيد مشاهدة الفيديو فوراً على سرعة 2x",
+            "تظلل الكلام المكتوب على الشاشة بالماركر",
+            "تقفل الفيديو وتكتب النقاط الأساسية في ورقة فاضية من ذاكرتك",
+            "تحفظ الفيديو في قائمة 'المشاهدة لاحقاً' للشهر الجاي"
+          ],
+          "explanation": "استرجاع المعلومة من الذاكرة بيجبر المخ يبني روابط عصبية قوية، وده بيثبت المعلومة أضعاف القراءة السلبية."
+        }
+      }
+    },
+    {
+      "id": "2026-11-25_meetings_five-second-pause",
+      "created_at": "2026-11-25T16:52:04.484581+00:00",
+      "topic": "meetings",
+      "tags": [
+        "executive-presence",
+        "pacing",
+        "status"
+      ],
+      "level": "intermediate",
+      "needs_completion": false,
+      "en": {
+        "title": "Use the 5-Second Pause to control the room",
+        "hook": "Jumping in instantly with an answer makes you look rushed and costs you crucial information.",
+        "action": "When someone finishes speaking in a meeting, silently count to 5 before giving your answer.",
+        "key_phrase": "",
+        "when": "During high-stakes meetings, Q&A sessions, or tense discussions.",
+        "why": "Silence signals authority, allows you time to structure your response, and prompts others to reveal more context.",
+        "example": "Boss: 'We need to cut department budgets by 20%.' Everyone panics. You wait 5 seconds. Boss adds: '...mostly in travel, not headcounts.' You respond calmly with targeted ideas.",
+        "mistake": "Blurting out an immediate reaction just to avoid awkward silence."
+      },
+      "ar": {
+        "title": "استغل سكتة الـ 5 ثواني عشان تسيطر على الاجتماع",
+        "hook": "المتسرع في الرد بيفقد هيبته في الاجتماع وبيضيع على نفسه معلومات مهمة كان الشخص الثاني هيقولها.",
+        "action": "أول ما حد يخلص كلامه، عد 5 ثواني في سرك قبل ما تفتح بؤك أو ترد.",
+        "key_phrase": "",
+        "when": "في الاجتماعات المهمة، لما تترد عليك أسئلة صعبة، أو في النقاشات المشدودة.",
+        "why": "السكوت القصير ده بيجبر اللي قدامك يفضفض بزيادة، وبيديك هيبة وتفكير أعمق قبل ما تنطق.",
+        "example": "المدير: 'محتاجين نضغط الميزانية 20%.' الكل اندفع ورد، انت سكت 5 ثواني. المدير كمل: '...قصدي مصاريف السفر مش العمالة.' بعدها رديت برزانة.",
+        "mistake": "إنك تندفع وترد في نفس اللحظة عشان تهرب من السكوت السخيف."
+      },
+      "quiz": {
+        "type": "mcq",
+        "correct_index": 2,
+        "en": {
+          "question": "A stakeholder asks a challenging question in a meeting. What should you do right after they finish?",
+          "options": [
+            "Offer a fast answer immediately so you don't look unprepared",
+            "Ask them to repeat the question to buy time to think",
+            "Pause silently for 5 seconds before speaking calmly",
+            "Pass the question immediately to a junior team member"
+          ],
+          "explanation": "The 5-second pause displays composure and often prompts the other person to share extra critical context."
+        },
+        "ar": {
+          "question": "مدير مشروع سألك سؤال صعب في اجتماع. تصرفك الصح إيه فور ما يخلص كلامه؟",
+          "options": [
+            "ترد بسرعة جداً عشان متبانش مش جاهز",
+            "تطلبه يعيد السؤال تاني عشان تكسب وقت يفكر فيه",
+            "تسكت وتستنى 5 ثواني في سرك قبل ما تبدأ ترد بهدوء",
+            "ترمى السؤال فوراً على حد أصغر منك في الفريق"
+          ],
+          "explanation": "سكوت الـ 5 ثواني بيبينك واثق في نفسك وبيشجع الطرف التاني إنه يفضفض ويديك معلومات زيادة."
+        }
+      }
+    }
+  ]
+}

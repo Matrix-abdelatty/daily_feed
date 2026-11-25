@@ -1,0 +1,293 @@
+{
+  "schema_version": 1,
+  "batch_id": "2026-11-25_auto_03",
+  "created_at": "2026-11-25T16:57:47.343415+00:00",
+  "source": "gemini-3.5-flash",
+  "cards": [
+    {
+      "id": "2026-11-25_business_test-demand-with-fake-doors",
+      "created_at": "2026-11-25T16:57:47.343415+00:00",
+      "topic": "business",
+      "tags": [
+        "validation",
+        "lean-startup",
+        "product-management",
+        "growth"
+      ],
+      "level": "intermediate",
+      "needs_completion": false,
+      "en": {
+        "title": "Test Product Demand Before Building Anything",
+        "hook": "Before building a complex platform, Airbnb founders listed apartment photos online just to see if anyone clicked.",
+        "action": "Add a button or landing page for your new offer before creating it. If users click, collect their email and tell them it's coming soon.",
+        "key_phrase": "We're expanding this service soon. Leave your email for priority access.",
+        "when": "Before investing weeks of work or money into developing a new product, service, or major feature.",
+        "why": "It measures real behavior (clicks) rather than polite advice ('Sure, I would buy that').",
+        "example": "Client asks: 'Can you offer 24/7 video support?' Instead of hiring staff, you add a '24/7 Video' button to your site. When clicked, it shows: 'Launching next month! Join waitlist.' 50 clicks on day one proves real demand.",
+        "mistake": "Building the entire service first and looking for customers afterward."
+      },
+      "ar": {
+        "title": "اختبر طلب العميل على فكرتك قبل ما تصرف عليها مليم",
+        "hook": "مؤسسين إير بي إن بي نزلو صور شقق على النت عشان يشوفوا في حد هيضغط ولا لأ، قبل ما يبنوا الموقع أصلاً.",
+        "action": "اعمل صفحة هبوط بسيطة أو زرار خدمة جديدة على موقعك. لو الناس دست عليه، اجمع إيميلاتهم وقولهم الخدمة جاية قريب.",
+        "key_phrase": "احنا بنطور الخدمة دي حالياً، سيب إيميلك عشان تكون أول حد يجربها.",
+        "when": "قبل ما تستثمر وقت أو فلوس في تطوير منتج أو ميزة جديدة.",
+        "why": "بتقيس رغبة العميل الحقيقية بالفعل (الضغط على الزرار) مش مجرد كلام مجاملة ('اه فكرة حلوة هبقى اشتري').",
+        "example": "عميل يسألك: 'ممكن تقدموا دعم فني فيديو 24 ساعة؟' بدال ما تعين فريق، حط زرار 'دعم فيديو'. لما يضغطوا يظهر: 'الخدمة جاية الشهر الجاي! سجل اسمك.' 50 واحد داسوا في أول يوم، فـ تأكدت إن الطلب عالي.",
+        "mistake": "إنك تبني الخدمة أو المنتج كاملاً الأول، وبعدين تدور على عملاء يشتروه."
+      },
+      "quiz": {
+        "type": "mcq",
+        "correct_index": 1,
+        "en": {
+          "question": "You want to offer premium 1-on-1 coaching on your website. What is the leanest way to test market interest?",
+          "options": [
+            "Write a full 12-week curriculum and record all videos in advance.",
+            "Add a 'Book Coaching' button to your site and see how many people click it to join a waitlist.",
+            "Ask 10 friends on LinkedIn if they think coaching is a good idea.",
+            "Lower your prices by 50% immediately to attract early adopters."
+          ],
+          "explanation": "Adding a waitlist button tests real user action/intent before spending resources. Opinions from friends don't predict paying customers."
+        },
+        "ar": {
+          "question": "عايز تقدم خدمة استشارات خاصة على موقعك. إيه أسرع وأرخص طريقة تتأكد بيها إن فيه طلب عليها؟",
+          "options": [
+            "تكتب منهج الاستشارات كاملاً وتصوّر فيديوهات الدورة كلها الأول.",
+            "تحط زرار 'احجز جلسة' على موقعك وتشوف كم واحد هيضغط ويضم اسمه لقائمة الانتظار.",
+            "تسأل 10 من صحابك على لينكد إن لو شايفين الفكرة حلوة ولا لأ.",
+            "تخفض أسعارك 50% فوراً عشان تشجع أول عملاء."
+          ],
+          "explanation": "زرار قائمة الانتظار بيقيس السلوك والتفاعل الحقيقي للعميل قبل ما تصرف وقتك وفلوسك، عكس آراء الأصدقاء غير الإلزامية."
+        }
+      }
+    },
+    {
+      "id": "2026-11-25_career_build-a-weekly-wins-log",
+      "created_at": "2026-11-25T16:57:47.343415+00:00",
+      "topic": "career",
+      "tags": [
+        "performance-review",
+        "career-growth",
+        "self-advocacy",
+        "productivity"
+      ],
+      "level": "beginner",
+      "needs_completion": false,
+      "en": {
+        "title": "Keep a Weekly Wins Log for Performance Reviews",
+        "hook": "Annual review arrives, and suddenly you can't remember a single major accomplishment from three months ago.",
+        "action": "Spend 5 minutes every Friday logging 2-3 specific wins, metrics improved, or issues solved in a private document.",
+        "key_phrase": "Here is a breakdown of key deliverables and ROI metrics I achieved this quarter.",
+        "when": "Every Friday afternoon before logging off work.",
+        "why": "Managers suffer from recency bias; hard historical data ensures your promotion and raise discussions are undeniable.",
+        "example": "Manager asks: 'What have you done lately?' Instead of freezing, you show a log of 14 resolved bugs, $10k saved on vendor fees, and 3 client praise notes.",
+        "mistake": "Relying on your own memory or your boss's memory at review time."
+      },
+      "ar": {
+        "title": "اعمل لنفسك ملف 'إنجازات أسبوعي' للترقيات",
+        "hook": "بييجي وقت التقييم السنوي، وفجأة بتكتشف إنك مش فاكر ولا حاجة عدلة عملتها من 3 شهور!",
+        "action": "خصص 5 دقائق كل يوم جمعة واكتب في ملف خاص 2-3 إنجازات صغيرة، مشاكل حليتها، أو كلام إيجابي سمعته.",
+        "key_phrase": "دي قائمة بالإنجازات والأرقام اللي حققتها خلال الربع ده من السنة.",
+        "when": "كل يوم جمعة بعد الظهر قبل ما تقفل كمبيوترك وتخلص شغلك.",
+        "why": "مديرك مش فاكر غير آخر أسبوعين (انحياز الذاكرة القريبة)، لكن الأرقام المكتوبة هي اللي بتجيب الترقية والزيادة.",
+        "example": "لما مديرك يسألك: 'عملت إيه الفترة اللي فاتت؟'، بدل ما تتأتأ، تبعتله ملف فيه 14 مشكلة تقنية حليتها، و3 عملاء أنقذت علاقتهم بالشركة.",
+        "mistake": "الاعتماد على ذاكرتك أو ذاكرة مديرك وقت التقييم السنوي."
+      },
+      "quiz": {
+        "type": "mcq",
+        "correct_index": 2,
+        "en": {
+          "question": "Your manager asks for justification for your requested annual raise. How do you respond best?",
+          "options": [
+            "Explain that inflation is high and you've been working very long hours.",
+            "Remind them of the great task you completed yesterday afternoon.",
+            "Present a documented list of concrete metrics and resolved issues from your weekly wins log.",
+            "Ask colleagues to send positive testimonials directly to your boss."
+          ],
+          "explanation": "Specific documented outcomes over time justify salary raises far better than recent memories or personal cost-of-living needs."
+        },
+        "ar": {
+          "question": "مديرك بيطلب منك مبررات عشان يوافق على طلب الزيادة السنوية. إيه أفضل رد؟",
+          "options": [
+            "تشرح له إن الأسعار غليت وإنك بتقعد ساعات متاخرة في الشغل.",
+            "تفكروا بالمهمة الممتازة اللي خلصتها إمبارح بالليل.",
+            "تعرض عليه قائمة موثقة بأرقام وإنجازات محددة جمعتها على مدار السنة من ملف إنجازاتك.",
+            "تطلب من زمايلك يبعتوا شهادات في حقك لمديرك بشكل مباشر."
+          ],
+          "explanation": "الأرقام والنتائج الموثقة على مدار السنة هي أقوى دليل يستند عليه مديرك لمنحك الزيادة، مقارنة بالمبررات الشخصية."
+        }
+      }
+    },
+    {
+      "id": "2026-11-25_communication_label-negative-emotions",
+      "created_at": "2026-11-25T16:57:47.343415+00:00",
+      "topic": "communication",
+      "tags": [
+        "de-escalation",
+        "active-listening",
+        "conflict-resolution",
+        "emotional-intelligence"
+      ],
+      "level": "intermediate",
+      "needs_completion": false,
+      "en": {
+        "title": "Label Negative Emotions to Instantly De-escalate Conflict",
+        "hook": "An angry client enters the call ready to explode. If you jump into self-defense, the argument doubles in intensity.",
+        "action": "Name their negative emotion out loud using 'It sounds like...' before offering any explanation or solution.",
+        "key_phrase": "It sounds like you feel completely let down by our team's delay.",
+        "when": "When dealing with angry clients, upset colleagues, or high-tension negotiations.",
+        "why": "Naming negative emotions disarms the brain's threat center (amygdala), bringing the person back to rational thinking.",
+        "example": "Client: 'This delivery is late and our schedule is ruined!' You: 'It sounds like you're frustrated because our delay put you in a tough spot with upper management.' Client: 'Exactly! So how do we fix it?'",
+        "mistake": "Defending yourself or listing logic while the other person is emotionally overwhelmed."
+      },
+      "ar": {
+        "title": "سمّ المشاعر السلبية باسمها عشان تهدّي اللعب",
+        "hook": "عميل داخل الشات أو الاجتماع طايح وزعلان.. لو بدأت تدافع عن نفسك، المشكلة هتكبر وتتحول لخناقة.",
+        "action": "قول المشاعر اللي هو حاسس بيها بصوت عالي ومن غير ما تحكم عليه قبل ما تشرح أي حاجة.",
+        "key_phrase": "شكل حضرتك حاسس بإحباط شديد بسبب التأخير اللي حصل من ناحيتنا.",
+        "when": "لما تتعامل مع عميل غضبان، أو زميل منفعل، أو في أي نقاش فيه توتر عالي.",
+        "why": "نفسياً، لما تسمي شعور الشخص الغضبان، جزء المخ المسؤول عن الخوف والتهديد بيهدأ فجأة ويبدأ يسمعك.",
+        "example": "العميل: 'التقرير متأخر والجدول بتاعي كله اتلخبط!' انت: 'شكل حضرتك متضايق جداً لأن التأخير ده حطك في موقف صعب قدام الإدارة.' العميل يتنهد: 'بالظبط! طب هنعمل إيه دلوقتي؟'",
+        "mistake": "تقديم مبررات وأعذار أو الدخول في جدال بالأرقام والشخص اللي قدامك منفعل."
+      },
+      "quiz": {
+        "type": "mcq",
+        "correct_index": 0,
+        "en": {
+          "question": "A furious stakeholder screams that your project delay destroyed their product launch. What should you say first?",
+          "options": [
+            "\"It sounds like you're under intense pressure because our timeline hurt your launch plan.\"",
+            "\"Technically, contract clause 4 permits a 3-day buffer for unexpected delays.\"",
+            "\"Please calm down so we can speak like professionals.\"",
+            "\"It wasn't our fault; the design team took an extra week to finalize assets.\""
+          ],
+          "explanation": "Labeling their emotion ('It sounds like...') validates their feelings, calming the brain's defense mechanism so effective problem-solving can begin."
+        },
+        "ar": {
+          "question": "عميل منفعل جداً بيصرخ ويقول إن تأخير المشروع بوّز خطة إطلاق المنتج بتاعه. تقول إيه أول حاجة؟",
+          "options": [
+            "\"شكل حضرتك تحت ضغط كبير جداً لأن جدولنا التأخير فيه أثر على خطة إطلاقك.\"",
+            "\"من الناحية الفنية، البند الرابع في العقد بيدينا مهلة 3 أيام للتأخيرات الطارئة.\"",
+            "\"أرجوك اهدا عشان نعرف نتكلم بشكل احترافي.\"",
+            "\"دي مش غلطتنا، فريق الديزاين هو اللي أخد أسبوع زيادة.\""
+          ],
+          "explanation": "تسمية مشاعر الشخص المنفعل ('شكل حضرتك...') بتمتص غضبه فوراً وبتنزل دفاعاته النفسية عشان تقدروا تلاقوا حل."
+        }
+      }
+    },
+    {
+      "id": "2026-11-25_decision_making_apply-the-10-10-10-rule",
+      "created_at": "2026-11-25T16:57:47.343415+00:00",
+      "topic": "decision_making",
+      "tags": [
+        "prioritization",
+        "clarity",
+        "perspective",
+        "stress-management"
+      ],
+      "level": "beginner",
+      "needs_completion": false,
+      "en": {
+        "title": "Use the 10-10-10 Rule to Escape Short-Term Anxiety",
+        "hook": "Sweating over whether to say 'no' to a pushy request or send uncomfortable feedback? You're trapped in immediate fear.",
+        "action": "Ask yourself how you will feel about this choice in 10 minutes, 10 months, and 10 years.",
+        "key_phrase": "Will this uncomfortable choice matter to my long-term goals in 10 months?",
+        "when": "When facing awkward conversations, turning down non-essential requests, or taking calculated risks.",
+        "why": "It forces your brain to zoom out from instant emotional discomfort to long-term impact.",
+        "example": "A client asks for unpaid weekend work. 10 minutes: awkward to say no. 10 months: zero impact on relationship. 10 years: completely forgotten. You decline politely and keep your weekend.",
+        "mistake": "Making long-term choices based solely on avoiding 10 minutes of social discomfort."
+      },
+      "ar": {
+        "title": "طبق قاعدة 10-10-10 في القرارات المصيرية",
+        "hook": "محتار وخايف تبعت إيميل فيه كلام شديد لعميل رخم أو ترفض طلب زيادة مش منطقية؟",
+        "action": "اسأل نفسك: إيه شعورك ورأيك في القرار ده بعد 10 دقائق، وبعد 10 شهور، وبعد 10 سنين؟",
+        "key_phrase": "هل القرار ده هيأثر فعلاً على أهدافي البعيدة بعد 10 شهور من دلوقتي؟",
+        "when": "لما تحس بالتشتت والضغط النفسي بسبب خوفك من المواجهة أو الإحراج في اللحظة الحالية.",
+        "why": "القاعدة دي بتخرجك من القلق الفوري وتخليك تشوف الصورة الكبيرة والنتائج الحقيقية على المدى الطويل.",
+        "example": "خايف ترفض شغل زيادات بدون مقابل من عميل متطلب. بعد 10 دقائق: إحراج بسيط. بعد 10 شهور: صفر تأثير سلبي. بعد 10 سنين: اتنسى تماماً. فترفض باحترام وتحمي وقتك.",
+        "mistake": "اتخاذ قراراتك بناءً على الخوف من الإحراج المؤقت أو التوتر اللحظي."
+      },
+      "quiz": {
+        "type": "mcq",
+        "correct_index": 3,
+        "en": {
+          "question": "You hesitate to turn down an out-of-scope task from a strategic client. How does the 10-10-10 rule clarify your choice?",
+          "options": [
+            "It reminds you to wait 10 days before replying to lower expectations.",
+            "It forces you to get 10 opinions from teammates before making a final decision.",
+            "It requires setting a timer for 10 minutes to brainstorm alternative proposals.",
+            "It highlights that while saying 'no' is uncomfortable for 10 minutes, accepting it damages your focus for 10 months."
+          ],
+          "explanation": "The 10-10-10 rule contrasts immediate short-term discomfort (10 minutes) against long-term operational impact (10 months/years)."
+        },
+        "ar": {
+          "question": "ترددت في رفض طلب خارج نطاق العقد من عميل مهم. إيه اللي بتوضحه لك قاعدة 10-10-10 هنا؟",
+          "options": [
+            "بتفكرك تستنى 10 أيام قبل ما ترد عشان تقلل توقعات العميل.",
+            "بتجبرك تاخد رأي 10 أفراد من فريقك قبل ما تاخد القرار النهائي.",
+            "بتطلب منك تظبط تايمر 10 دقائق وتفكر في حلول بديلة.",
+            "بتوضح لك إن الرفض محرج لمدة 10 دقائق، لكن القبول هيضر تركيز وقتك لمدة 10 شهور."
+          ],
+          "explanation": "قاعدة 10-10-10 بتقارن الإحراج المؤقت اللحظي (10 دقائق) بالأثر السلبي على وقتك وأهدافك على المدى الطويل (10 شهور/سنوات)."
+        }
+      }
+    },
+    {
+      "id": "2026-11-25_leadership_use-i-noticed-for-feedback",
+      "created_at": "2026-11-25T16:57:47.343415+00:00",
+      "topic": "leadership",
+      "tags": [
+        "feedback",
+        "management",
+        "team-building",
+        "coaching"
+      ],
+      "level": "intermediate",
+      "needs_completion": false,
+      "en": {
+        "title": "Use 'I Noticed' to Correct Mistakes Without Triggering Defense",
+        "hook": "Tell an employee 'You messed up this report' and you create resentment. Frame it as an observation and they solve it themselves.",
+        "action": "In a 1-on-1 setting, state objective facts starting with 'I noticed...' followed by a curious question.",
+        "key_phrase": "I noticed the numbers on slide 4 don't align with our monthly total. What happened there?",
+        "when": "Delivering critical feedback or addressing performance gaps with direct reports.",
+        "why": "Objective statements isolate the error from the person's identity, preventing ego-defensiveness.",
+        "example": "Instead of saying 'You are irresponsible with deadlines,' say: 'I noticed the last two submissions arrived after 5 PM. Is something blocking your workflow?' The employee explains a system bug and fixes it.",
+        "mistake": "Attacking personal traits ('you are careless') instead of addressing observed behaviors."
+      },
+      "ar": {
+        "title": "استخدم أسلوب 'أنا لاحظت' لما تعدل غلطة حد",
+        "hook": "لو قولت لموظف 'انت عكيت الدنيا في التقرير ده' قدام زمايله، انت كده صنعت عدو ليك مدى الحياة.",
+        "action": "في اجتماع فردي، اوصف السلوك أو الملاحظة بكلمة 'أنا لاحظت...' من غير ما تهاجم شخصيته أو ذكاءه.",
+        "key_phrase": "أنا لاحظت إن الأرقام في السلايد الرابعة مش متطابقة مع التقرير الشهري.. إيه اللي حصل؟",
+        "when": "لما تحب تدي ملاحظات تصحيحية أو نقد بناء لحد في فريقك.",
+        "why": "الوصف الموضوعي للحدث بيمنع الشخص إنه يدخل في حالة دفاع عن النفس، وبيخليه يركز على حل المشكلة.",
+        "example": "بدل ما تقول 'انت مهمل في المواعيد'، قول: 'أنا لاحظت إن آخر تسليمين جم بعد الساعة 5.. هل فيه مشكلة معطلة شغلك؟' الموظف يشرح المشكلة وتصلحوها سوا.",
+        "mistake": "الهجوم على صفات الشخص نفسه ('انت مش مسؤول') بدل ما تتكلم عن مواقف وحقائق محددة."
+      },
+      "quiz": {
+        "type": "mcq",
+        "correct_index": 1,
+        "en": {
+          "question": "A team member made a major mistake in a client presentation. How should a manager address it in private?",
+          "options": [
+            "\"Why do you keep making careless mistakes in front of key accounts?\"",
+            "\"I noticed slide 3 had outdated pricing data. What led to that discrepancy?\"",
+            "\"Don't worry about it at all, mistakes happen to everyone in our company.\"",
+            "\"I will handle all future presentations myself so this doesn't happen again.\""
+          ],
+          "explanation": "Starting with objective observation ('I noticed...') targets the factual issue without attacking their competence, leading to constructive discussion."
+        },
+        "ar": {
+          "question": "حد من فريقك عمل غلطة كبيرة في بريزينتيشن لعميل مهم. الإداري الناجح يتكلم معاه إزاي بينه وبينه؟",
+          "options": [
+            "\"انت ليه دايماً بتعمل أخطاء غير مسئولة قدام عملاء كبار كده؟\"",
+            "\"أنا لاحظت إن السلايد التالتة كان فيها أرقام أسعار قديمة. إيه اللي أدى للاختلاف ده؟\"",
+            "\"ولا يهمك خالص، كلنا بنغلط ومفيش مشكلة.\"",
+            "\"أنا هعمل كل البريزينتيشنز الجاية بنفسي عشان الموضوع ده متكررش تاني.\""
+          ],
+          "explanation": "البدء بملاحظة واقعية محددة ('أنا لاحظت...') بيركز على المشكلة نفسها بدون الهجوم على شخصيته أو كفاءته، فبيقدر يحلها."
+        }
+      }
+    }
+  ]
+}

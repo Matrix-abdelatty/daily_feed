@@ -1,5 +1,345 @@
 [
   {
+    "id": "2026-11-25_leadership_use-i-noticed-for-feedback",
+    "number": 180,
+    "patch_number": 37,
+    "topic": "leadership",
+    "level": "intermediate",
+    "tags": [
+      "feedback",
+      "management",
+      "team-building",
+      "coaching"
+    ],
+    "created_at": "2026-11-25T16:57:47.343415+00:00",
+    "file": "cards/2026/2026-11-25_auto_03.json",
+    "en": {
+      "title": "Use 'I Noticed' to Correct Mistakes Without Triggering Defense",
+      "hook": "Tell an employee 'You messed up this report' and you create resentment. Frame it as an observation and they solve it themselves.",
+      "key_phrase": "I noticed the numbers on slide 4 don't align with our monthly total. What happened there?"
+    },
+    "ar": {
+      "title": "استخدم أسلوب 'أنا لاحظت' لما تعدل غلطة حد",
+      "hook": "لو قولت لموظف 'انت عكيت الدنيا في التقرير ده' قدام زمايله، انت كده صنعت عدو ليك مدى الحياة.",
+      "key_phrase": "أنا لاحظت إن الأرقام في السلايد الرابعة مش متطابقة مع التقرير الشهري.. إيه اللي حصل؟"
+    }
+  },
+  {
+    "id": "2026-11-25_communication_label-negative-emotions",
+    "number": 179,
+    "patch_number": 37,
+    "topic": "communication",
+    "level": "intermediate",
+    "tags": [
+      "de-escalation",
+      "active-listening",
+      "conflict-resolution",
+      "emotional-intelligence"
+    ],
+    "created_at": "2026-11-25T16:57:47.343415+00:00",
+    "file": "cards/2026/2026-11-25_auto_03.json",
+    "en": {
+      "title": "Label Negative Emotions to Instantly De-escalate Conflict",
+      "hook": "An angry client enters the call ready to explode. If you jump into self-defense, the argument doubles in intensity.",
+      "key_phrase": "It sounds like you feel completely let down by our team's delay."
+    },
+    "ar": {
+      "title": "سمّ المشاعر السلبية باسمها عشان تهدّي اللعب",
+      "hook": "عميل داخل الشات أو الاجتماع طايح وزعلان.. لو بدأت تدافع عن نفسك، المشكلة هتكبر وتتحول لخناقة.",
+      "key_phrase": "شكل حضرتك حاسس بإحباط شديد بسبب التأخير اللي حصل من ناحيتنا."
+    }
+  },
+  {
+    "id": "2026-11-25_career_build-a-weekly-wins-log",
+    "number": 178,
+    "patch_number": 37,
+    "topic": "career",
+    "level": "beginner",
+    "tags": [
+      "performance-review",
+      "career-growth",
+      "self-advocacy",
+      "productivity"
+    ],
+    "created_at": "2026-11-25T16:57:47.343415+00:00",
+    "file": "cards/2026/2026-11-25_auto_03.json",
+    "en": {
+      "title": "Keep a Weekly Wins Log for Performance Reviews",
+      "hook": "Annual review arrives, and suddenly you can't remember a single major accomplishment from three months ago.",
+      "key_phrase": "Here is a breakdown of key deliverables and ROI metrics I achieved this quarter."
+    },
+    "ar": {
+      "title": "اعمل لنفسك ملف 'إنجازات أسبوعي' للترقيات",
+      "hook": "بييجي وقت التقييم السنوي، وفجأة بتكتشف إنك مش فاكر ولا حاجة عدلة عملتها من 3 شهور!",
+      "key_phrase": "دي قائمة بالإنجازات والأرقام اللي حققتها خلال الربع ده من السنة."
+    }
+  },
+  {
+    "id": "2026-11-25_business_test-demand-with-fake-doors",
+    "number": 177,
+    "patch_number": 37,
+    "topic": "business",
+    "level": "intermediate",
+    "tags": [
+      "validation",
+      "lean-startup",
+      "product-management",
+      "growth"
+    ],
+    "created_at": "2026-11-25T16:57:47.343415+00:00",
+    "file": "cards/2026/2026-11-25_auto_03.json",
+    "en": {
+      "title": "Test Product Demand Before Building Anything",
+      "hook": "Before building a complex platform, Airbnb founders listed apartment photos online just to see if anyone clicked.",
+      "key_phrase": "We're expanding this service soon. Leave your email for priority access."
+    },
+    "ar": {
+      "title": "اختبر طلب العميل على فكرتك قبل ما تصرف عليها مليم",
+      "hook": "مؤسسين إير بي إن بي نزلو صور شقق على النت عشان يشوفوا في حد هيضغط ولا لأ، قبل ما يبنوا الموقع أصلاً.",
+      "key_phrase": "احنا بنطور الخدمة دي حالياً، سيب إيميلك عشان تكون أول حد يجربها."
+    }
+  },
+  {
+    "id": "2026-11-25_psychology_ben-franklin-effect",
+    "number": 176,
+    "patch_number": 36,
+    "topic": "psychology",
+    "level": "intermediate",
+    "tags": [
+      "rapport",
+      "relationships",
+      "psychology"
+    ],
+    "created_at": "2026-11-25T16:54:53.786039+00:00",
+    "file": "cards/2026/2026-11-25_auto_02.json",
+    "en": {
+      "title": "Ask for a tiny favor to make someone like you",
+      "hook": "Counter-intuitive truth: We don't do favors for people we like; we like people we do favors for.",
+      "key_phrase": "Could you help me with a quick recommendation?"
+    },
+    "ar": {
+      "title": "اطلب خدمة صغيرة جداً عشان تخلي حد يحبك",
+      "hook": "سر غريب: إحنا مش بنخدم الناس اللي بنحبهم، إحنا بنحب الناس اللي بنخدمهم!",
+      "key_phrase": "ممكن ترشحلي حاجة سريعة؟"
+    }
+  },
+  {
+    "id": "2026-11-25_productivity_two-minute-rule",
+    "number": 175,
+    "patch_number": 36,
+    "topic": "productivity",
+    "level": "beginner",
+    "tags": [
+      "time-management",
+      "tasks",
+      "focus"
+    ],
+    "created_at": "2026-11-25T16:54:53.786039+00:00",
+    "file": "cards/2026/2026-11-25_auto_02.json",
+    "en": {
+      "title": "Do any task taking under 2 minutes immediately",
+      "hook": "Your brain burns more energy tracking small tasks than actually finishing them.",
+      "key_phrase": "If it takes under 2 minutes, do it now."
+    },
+    "ar": {
+      "title": "أي مهمة تاخد أقل من دقيقتين اعملها فوراً",
+      "hook": "مخك بيستهلك طاقة في افتكار المهام الصغيرة أكتر بكتير من الوقت اللي بتاخده عشان تخلصها!",
+      "key_phrase": "أقل من دقيقتين؟ أخلصها دلوقتي."
+    }
+  },
+  {
+    "id": "2026-11-25_persuasion_because-justification",
+    "number": 174,
+    "patch_number": 36,
+    "topic": "persuasion",
+    "level": "beginner",
+    "tags": [
+      "persuasion",
+      "communication",
+      "influence"
+    ],
+    "created_at": "2026-11-25T16:54:53.786039+00:00",
+    "file": "cards/2026/2026-11-25_auto_02.json",
+    "en": {
+      "title": "Use the word 'because' to unlock fast agreement",
+      "hook": "Want people to say yes to small favors? Just giving ANY clear reason nearly doubles compliance.",
+      "key_phrase": "Can I jump ahead because..."
+    },
+    "ar": {
+      "title": "استخدم كلمة 'عشان' عشان تاخد موافقة سريعة",
+      "hook": "عايز الناس توافق على طلباتك السريعة؟ مجرد إنك تقول سبب بيضاعف نسبة موافقتهم!",
+      "key_phrase": "ممكن أعدي قبلك عشان..."
+    }
+  },
+  {
+    "id": "2026-11-25_negotiation_ackerman-bargaining",
+    "number": 173,
+    "patch_number": 36,
+    "topic": "negotiation",
+    "level": "intermediate",
+    "tags": [
+      "negotiation",
+      "pricing",
+      "counter-offer"
+    ],
+    "created_at": "2026-11-25T16:54:53.786039+00:00",
+    "file": "cards/2026/2026-11-25_auto_02.json",
+    "en": {
+      "title": "Anchor low with precise, non-round numbers",
+      "hook": "Offering '$500' sounds like a random guess. Offering '$485' makes you look like you ran exact math.",
+      "key_phrase": "The exact maximum budget allocated for this is $4,850."
+    },
+    "ar": {
+      "title": "استخدم أرقام محددة ومش مدورة وأنت بتفاوض",
+      "hook": "لما تقول '500 جنيه' بتبان كأنك بتهبد رقم، بس لما تقول '485' بتبان إنك حسبتها بالقرش.",
+      "key_phrase": "أقصى ميزانية اتوافق عليها بالظبط هي 4,850 جنيه."
+    }
+  },
+  {
+    "id": "2026-11-25_money_24hr-rule-impulse",
+    "number": 172,
+    "patch_number": 36,
+    "topic": "money",
+    "level": "beginner",
+    "tags": [
+      "budgeting",
+      "spending",
+      "impulse-control"
+    ],
+    "created_at": "2026-11-25T16:54:53.786039+00:00",
+    "file": "cards/2026/2026-11-25_auto_02.json",
+    "en": {
+      "title": "Pause 24 hours before non-essential impulse buys",
+      "hook": "You see a gadget at midnight, hit buy, and three days later wonder where your salary went.",
+      "key_phrase": "I'll leave it in the cart until tomorrow night."
+    },
+    "ar": {
+      "title": "استنى 24 ساعة قبل ما تشتري حاجة مش أساسية",
+      "hook": "بتشوف حاجة بالليل على النت، تشتريها فوراً، وبعد ٣ أيام تقعد تسأل فلوسك راحت فين؟",
+      "key_phrase": "هسيبها في السلة لحد بكرة بالليل."
+    }
+  },
+  {
+    "id": "2026-11-25_psychology_affect-labeling",
+    "number": 171,
+    "patch_number": 35,
+    "topic": "psychology",
+    "level": "intermediate",
+    "tags": [
+      "conflict-resolution",
+      "emotional-intelligence",
+      "deescalation"
+    ],
+    "created_at": "2026-11-25T16:52:04.484581+00:00",
+    "file": "cards/2026/2026-11-25_auto_01.json",
+    "en": {
+      "title": "Label emotions to instantly disarm tension",
+      "hook": "Someone is yelling at you and your impulse is to defend yourself. Don't. Name their emotion out loud instead.",
+      "key_phrase": "It seems like you're really frustrated with..."
+    },
+    "ar": {
+      "title": "سمّي الشعور عشان تهدّي الليلة في ثواني",
+      "hook": "حد زعلان وبيزعق قدامك؟ أول رد فعل إنك تدافع عن نفسك، بس ده بيولّع الدنيا زيادة.",
+      "key_phrase": "شكلك متضايق جداً من..."
+    }
+  },
+  {
+    "id": "2026-11-25_meetings_five-second-pause",
+    "number": 170,
+    "patch_number": 35,
+    "topic": "meetings",
+    "level": "intermediate",
+    "tags": [
+      "executive-presence",
+      "pacing",
+      "status"
+    ],
+    "created_at": "2026-11-25T16:52:04.484581+00:00",
+    "file": "cards/2026/2026-11-25_auto_01.json",
+    "en": {
+      "title": "Use the 5-Second Pause to control the room",
+      "hook": "Jumping in instantly with an answer makes you look rushed and costs you crucial information.",
+      "key_phrase": ""
+    },
+    "ar": {
+      "title": "استغل سكتة الـ 5 ثواني عشان تسيطر على الاجتماع",
+      "hook": "المتسرع في الرد بيفقد هيبته في الاجتماع وبيضيع على نفسه معلومات مهمة كان الشخص الثاني هيقولها.",
+      "key_phrase": ""
+    }
+  },
+  {
+    "id": "2026-11-25_learning_blank-sheet-retrieval",
+    "number": 169,
+    "patch_number": 35,
+    "topic": "learning",
+    "level": "intermediate",
+    "tags": [
+      "memory",
+      "active-recall",
+      "productivity"
+    ],
+    "created_at": "2026-11-25T16:52:04.484581+00:00",
+    "file": "cards/2026/2026-11-25_auto_01.json",
+    "en": {
+      "title": "The Blank Sheet Trick to retain 80% of what you read",
+      "hook": "Re-reading highlighted notes makes you feel smart, but it's an illusion. You forget almost all of it in 48 hours.",
+      "key_phrase": ""
+    },
+    "ar": {
+      "title": "طريقة 'الورقة الفاضية' عشان تثبّت المعلومة في مخك",
+      "hook": "إعادة قراءة الملاحظات بالماركر الأصفر بيدي إحساس وهمي بالفهم، وبعد يومين بتنسى كل حاجة.",
+      "key_phrase": ""
+    }
+  },
+  {
+    "id": "2026-11-25_decision_making_ten-ten-ten-rule",
+    "number": 168,
+    "patch_number": 35,
+    "topic": "decision_making",
+    "level": "beginner",
+    "tags": [
+      "overthinking",
+      "clarity",
+      "prioritization"
+    ],
+    "created_at": "2026-11-25T16:52:04.484581+00:00",
+    "file": "cards/2026/2026-11-25_auto_01.json",
+    "en": {
+      "title": "Use the 10/10/10 Rule to stop overthinking hard choices",
+      "hook": "Paralyzed by a tough decision? You're likely evaluating it through short-term anxiety instead of long-term clarity.",
+      "key_phrase": "How will I feel about this choice in 10 months?"
+    },
+    "ar": {
+      "title": "قاعدة 10/10/10 عشان تخلص من التفكير الزائد وتأخد قرار",
+      "hook": "محتار ومش عارف تختار؟ غالباً إنت مزنوق في خيالات قلق المدى القريب ومش شايف الصورة الكاملة.",
+      "key_phrase": "هحس بإيه ناحية الاختيار ده كمان 10 شهور؟"
+    }
+  },
+  {
+    "id": "2026-11-25_communication_no-oriented-questions",
+    "number": 167,
+    "patch_number": 35,
+    "topic": "communication",
+    "level": "beginner",
+    "tags": [
+      "email",
+      "follow-up",
+      "persuasion"
+    ],
+    "created_at": "2026-11-25T16:52:04.484581+00:00",
+    "file": "cards/2026/2026-11-25_auto_01.json",
+    "en": {
+      "title": "Ask questions that invite a 'No' to get faster replies",
+      "hook": "Want a busy prospect to respond immediately after ghosting you? Stop asking for a 'Yes'.",
+      "key_phrase": "Have you given up on this project?"
+    },
+    "ar": {
+      "title": "اسأل أسئلة إجابتها 'لأ' عشان يترد عليك فورا",
+      "hook": "لما تبعت إيميل ولحد يفضّل مطنشك، بلاش تسأل أسئلة تحشره في زاوية الـ 'أيوه'.",
+      "key_phrase": "هو حضرتك صرفت نظر عن المشروع ده؟"
+    }
+  },
+  {
     "id": "2026-11-24_decision_making_2min_rule",
     "number": 166,
     "patch_number": 34,
