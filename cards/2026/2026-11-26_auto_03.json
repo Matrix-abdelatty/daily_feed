@@ -1,0 +1,286 @@
+{
+  "schema_version": 1,
+  "batch_id": "2026-11-26_auto_03",
+  "created_at": "2026-11-26T16:44:59.547966+00:00",
+  "source": "groq:openai/gpt-oss-120b",
+  "cards": [
+    {
+      "id": "2026-11-26_business_turn-meeting-into-pipeline",
+      "created_at": "2026-11-26T16:44:59.547966+00:00",
+      "topic": "business",
+      "tags": [
+        "pipeline",
+        "followup"
+      ],
+      "level": "intermediate",
+      "needs_completion": false,
+      "en": {
+        "title": "Turn a meeting into a sales pipeline",
+        "hook": "You chatted over coffee, walked away, and the client never called back—until you sent a tight follow‑up.",
+        "action": "Right after the meeting, email a 3‑point recap: what you discussed, the benefit for them, and ask to schedule a quick 15‑min demo.",
+        "key_phrase": "Can we schedule a quick 15‑min demo?",
+        "when": "When a prospect shows any sign of interest but hasn’t committed yet.",
+        "why": "A clear next step removes ambiguity and makes it easy for them to say yes.",
+        "example": "You: \"Great talking about X. To see it in action, can we schedule a quick 15‑min demo?\" Prospect: \"Sure, tomorrow at 10?\"",
+        "mistake": "Sending a vague \"Let’s talk later\" that leaves them unsure what to do next."
+      },
+      "ar": {
+        "title": "حوّل الاجتماع لخط مبيعات",
+        "hook": "كلمت حد على القهوة ومشي، وما رجعش تاني إلا بعد ما بعتلّه إيميل واضح.",
+        "action": "بعد الاجتماع ابعت إيميل فيه 3 نقاط: إيه اتكلمتوا، الفايدة له، واسأله إذا يقدر يحجز 15 دقيقة تجربة سريعة.",
+        "key_phrase": "ممكن نحجز تجربة سريعة 15 دقيقة؟",
+        "when": "لما العميل يبقى مهتم شوية لكن ما قررش يلتزم.",
+        "why": "الخطوة الواضحة بتقلل الالتباس وبتخليه يقدر يقول نعم بسهولة.",
+        "example": "أنت: \"مبسوط إننا اتكلمنا عن X. عشان تشوفه عملي، ممكن نحجز تجربة سريعة 15 دقيقة؟\" العميل: \"تمام، بكرة 10 الصبح؟\"",
+        "mistake": "إنك تبعت \"هنتكلم لاحقًا\" بس من غير ما تحدد خطوة فعلية."
+      },
+      "quiz": {
+        "type": "mcq",
+        "correct_index": 0,
+        "en": {
+          "question": "The prospect says, \"I'm not sure we need that feature.\" What’s the best reply?",
+          "options": [
+            "Can we schedule a quick 15‑min demo?",
+            "No worries, let me know later.",
+            "Our product is the best on the market.",
+            "I'll send you a brochure."
+          ],
+          "explanation": "Offering a short demo gives a concrete next step and lets the prospect see value. The other replies either delay or lack relevance."
+        },
+        "ar": {
+          "question": "العميل قال: \"مش متأكد إذا كنا محتاجين الميزة دي.\" إيه الرد الأنسب؟",
+          "options": [
+            "ممكن نحجز تجربة سريعة 15 دقيقة؟",
+            "مافيش مشكلة، قوللي بعدين.",
+            "منتجنا هو الأفضل في السوق.",
+            "هبعت لك كتيب."
+          ],
+          "explanation": "طلب تجربة سريعة بيوفر خطوة واضحة ويخلي العميل يشوف الفايدة. الخيارات التانية بتأخر أو ما لهاش علاقة."
+        }
+      }
+    },
+    {
+      "id": "2026-11-26_career_2minute-visibility",
+      "created_at": "2026-11-26T16:44:59.547966+00:00",
+      "topic": "career",
+      "tags": [
+        "visibility",
+        "career"
+      ],
+      "level": "intermediate",
+      "needs_completion": false,
+      "en": {
+        "title": "Leverage the 2‑minute rule for visibility",
+        "hook": "You missed the promotion because nobody ever heard about the project you nailed.",
+        "action": "After finishing any deliverable, spend 2 minutes posting a concise update to your manager or team channel: what you did, the result, and next step.",
+        "key_phrase": "FYI, we just completed X, results Y",
+        "when": "Immediately after you close a task or milestone.",
+        "why": "Brief, frequent updates keep you top‑of‑mind without overwhelming anyone.",
+        "example": "You: \"FYI, we just completed the Q2 dashboard, it cut reporting time by 30%. Next we’ll add drill‑down filters.\" Manager replies, \"Nice work, share the link with the sales team.\"",
+        "mistake": "Assuming great work will speak for itself and never mentioning it."
+      },
+      "ar": {
+        "title": "استغل قاعدة الـ 2 دقيقة للظهور",
+        "hook": "ضاعت ترقية لأن حد ما سمعش عن المشروع اللي نجحته.",
+        "action": "بعد ما تخلص أي شغل، خد 2 دقيقة تبعت فيها تحديث مختصر للمدير أو القناة: إيه عملت، النتيجة، والخطوة الجاية.",
+        "key_phrase": "FYI، خلصنا X، والنتيجة Y",
+        "when": "أول ما تخلص مهمة أو مرحلة.",
+        "why": "التحديثات القصيرة المتكررة بتخليك دايمًا في دماغ الناس من غير ما تزودهم معلومات.",
+        "example": "أنت: \"FYI، خلصنا لوحة تحكم الربع التاني، قللنا وقت التقرير 30٪. الخطوة الجاية هنعمل فلاتر تفصيلية.\" المدير: \"شغل ممتاز، ابعت اللينك لفريق المبيعات.\"",
+        "mistake": "إنك تفترض إن شغلك يتكلم عن نفسه وماتقولش حاجة."
+      },
+      "quiz": {
+        "type": "mcq",
+        "correct_index": 1,
+        "en": {
+          "question": "Your manager asks for a status update. Which short message follows the 2‑minute rule best?",
+          "options": [
+            "I'll get back to you later.",
+            "FYI, we just completed X, results Y",
+            "No updates at the moment.",
+            "Everything is fine."
+          ],
+          "explanation": "The concise FYI format gives clear info and next steps, fitting the 2‑minute rule. The other options are vague or non‑informative."
+        },
+        "ar": {
+          "question": "مديرك طلب تحديث عن المشروع. أي رسالة قصيرة بتطبق قاعدة الـ 2 دقيقة؟",
+          "options": [
+            "هرد عليك لاحقًا.",
+            "FYI، خلصنا X، والنتيجة Y",
+            "مافيش تحديث دلوقتي.",
+            "كل شيء تمام."
+          ],
+          "explanation": "الصيغة المختصرة بتدي معلومات واضحة وخطوة جايّة، وتناسب قاعدة الـ 2 دقيقة. الخيارات التانية عامة أو مش واضحة."
+        }
+      }
+    },
+    {
+      "id": "2026-11-26_communication_loop-closing-ack",
+      "created_at": "2026-11-26T16:44:59.547966+00:00",
+      "topic": "communication",
+      "tags": [
+        "clarity",
+        "alignment",
+        "teamwork"
+      ],
+      "level": "beginner",
+      "needs_completion": false,
+      "en": {
+        "title": "Use 'What I Heard' to Stop Miscommunication Instantly",
+        "hook": "You give clear instructions, but the result is completely wrong. It happens all the time in fast-moving teams.",
+        "action": "Before ending a conversation on important tasks, summarize what the other person said in your own words using a mirror statement.",
+        "key_phrase": "Just to make sure we're aligned, what I'm taking away is...",
+        "when": "When receiving complex instructions or delegating critical tasks.",
+        "why": "It forces immediate alignment and exposes hidden assumptions before effort is wasted.",
+        "example": "Manager: 'We need the deck done by tomorrow.' You: 'Just to align, I'll send you a rough 5-slide outline by 3 PM today, right?' Manager: 'Ah, no, just the financial summary slide!'",
+        "mistake": "Nodding and saying 'Got it' without verifying specific deliverables."
+      },
+      "ar": {
+        "title": "استخدم جملة 'اللي فهمته إن...' عشان تمنع سوء الفهم في ثواني",
+        "hook": "بتقول للقدامك فكرة واضحة جدًا، وتتفاجئ إنه عمل حاجة تانية خالص؟ بتحصل كل يوم في الشغل.",
+        "action": "قبل ما تنهي الكلام في مهمة مهمة، تلخص اللي سمعته بأسلوبك وتأكد منه مع اللي بيكلمك.",
+        "key_phrase": "عشان نتأكد إننا على نفس الخط، اللي فهمته منك إن...",
+        "when": "لما تاخد تعليمات معقدة أو بتوزع شغل مهم على فريقك.",
+        "why": "بتكشف أي فجوة أو فهم غلط فورًا قبل ما تضيع وقت ومجهود على الفاضي.",
+        "example": "مديرك: 'عايز البريزنتيشن جاهزة بكره.' أنت: 'عشان نتأكد إننا متفقين، أنزل لك ملخص 5 سلايدز الساعة 3 النهاردة؟' مديرك: 'لا لا، أنا قصدت بس السلايد بتاعة الأرقام الماليّة!'",
+        "mistake": "إنك تهز راسك وتقول 'تمام فاهم' من غير ما تراجع التفاصيل المحددة."
+      },
+      "quiz": {
+        "type": "mcq",
+        "correct_index": 1,
+        "en": {
+          "question": "A colleague gives you a messy task with multiple steps. What is the best way to ensure zero mistakes?",
+          "options": [
+            "Say 'Got it, I'm on it!' and start immediately.",
+            "Reframe their request in your own words and ask if your understanding is accurate.",
+            "Ask them to write a 3-page document explaining everything.",
+            "Wait until the deadline to show them your final result."
+          ],
+          "explanation": "Reframing confirms alignment instantly without wasting time or forcing them to write long documents."
+        },
+        "ar": {
+          "question": "زميلك إداك مهمة فيها خطوات كتير ولخبطة. إيه أحسن طريقة تتأكد إنك مش هتعمل أي غلطة؟",
+          "options": [
+            "تقوله 'تمام ياباشا اعتمد' وتبدأ شغل فورًا.",
+            "تعيد صياغة اللي طلبه بطريقتك وتسأله هل فهمك مظبوط ولا لأ.",
+            "تطلب منه يكتب لك وثيقة 3 صفحات يشرح فيها كل حاجة.",
+            "تستنى لحد يوم التسليم وتوريه النتيجة الأخيرة."
+          ],
+          "explanation": "إعادة الصياغة بتخليكم متفقين في نفس اللحظة من غير تضييع وقت أو ما تطلب منه يكتب ورقيات ملهاش لازمة."
+        }
+      }
+    },
+    {
+      "id": "2026-11-26_decision_making_10-10-10-rule",
+      "created_at": "2026-11-26T16:44:59.547966+00:00",
+      "topic": "decision_making",
+      "tags": [
+        "clarity",
+        "focus",
+        "strategy"
+      ],
+      "level": "intermediate",
+      "needs_completion": false,
+      "en": {
+        "title": "Test Choices with the 10-10-10 Time Frame",
+        "hook": "You're agonizing over a tough call—like quitting a project or having a hard conversation. Short-term anxiety is blinding you.",
+        "action": "Evaluate your decision across three distinct time horizons: 10 minutes, 10 months, and 10 years from now.",
+        "key_phrase": "How will I feel about this choice in 10 months?",
+        "when": "When emotional stress or fear of discomfort is paralyzing a tough decision.",
+        "why": "It shifts your perspective from immediate emotional panic to long-term outcome assessment.",
+        "example": "You're nervous about calling out a client's budget breach. 10 minutes from now: awkward and uncomfortable. 10 months: grateful you protected the project margin. 10 years: won't even matter.",
+        "mistake": "Making choices strictly to avoid awkwardness in the next 10 minutes."
+      },
+      "ar": {
+        "title": "قيم قراراتك بقاعدة الـ 10-10-10 عشان تخلص من التردد",
+        "hook": "مزنوق في قرار صعب ومش عارف تاخده؟ الخوف والتوتر بتاع اللحظة بيعميك عن الصورة الكاملة.",
+        "action": "قَيّم القرار اللي هتاخده في 3 أوقات مختلفة: بعد 10 دقائق، بعد 10 شهور، وبعد 10 سنين.",
+        "key_phrase": "أنا هحس بإيه ناحية القرار ده بعد 10 شهور؟",
+        "when": "لما تكون خايف تاخد قرار بسبب التوتر أو الإحراج اللحظي.",
+        "why": "بتأخدك بعيد عن قلق اللحظة وتخليك تبص للنتيجة الحقيقية على المدى الطويل.",
+        "example": "خايف تتكلم مع العميل إنه عدى الميزانية. بعد 10 دقائق: إحراج وتوتر. بعد 10 شهور: مبسوط إنك حميت أرباح المشروع. بعد 10 سنين: مش هتفتكر الموقف أصلاً.",
+        "mistake": "إنك تاخد قرار لمجرد إنك تهرب من الإحراج في الـ 10 دقائق الجايين."
+      },
+      "quiz": {
+        "type": "mcq",
+        "correct_index": 2,
+        "en": {
+          "question": "You need to deliver bad news to a team member but are delaying it out of discomfort. How does 10-10-10 help?",
+          "options": [
+            "It guarantees the other person won't get upset with you.",
+            "It shows you that delaying the news for 10 months is the best choice.",
+            "It highlights that short-term awkwardness is worth long-term clarity and team performance.",
+            "It helps you automate the decision without talking to them."
+          ],
+          "explanation": "The framework neutralizes acute short-term anxiety by framing it against medium- and long-term consequences."
+        },
+        "ar": {
+          "question": "محتاج تبلغ حد في فريقك بخبر مش لطيف بس مأجل الموضوع عشان متوتر. القاعدة دي هتساعدك إزاي؟",
+          "options": [
+            "بتضمن لك إن الشخص التاني مش هيزعل خالص.",
+            "بتثبت لك إن تأجيل الخبر 10 شهور هو أفضل خيار.",
+            "بتوضح لك إن الإحراج اللحظي يرخص فداء الوضوح ومصلحة الفريق على المدى الطويل.",
+            "بتساعدك تاخد القرار أوتماتيك من غير ما تتكلم معاه."
+          ],
+          "explanation": "القاعدة بتقلل التوتر اللحظي لما تقارنه بالنتائج والمصلحة بعد شهور وسنين."
+        }
+      }
+    },
+    {
+      "id": "2026-11-26_leadership_intent-based-delegation",
+      "created_at": "2026-11-26T16:44:59.547966+00:00",
+      "topic": "leadership",
+      "tags": [
+        "delegation",
+        "management",
+        "autonomy"
+      ],
+      "level": "advanced",
+      "needs_completion": false,
+      "en": {
+        "title": "Delegate with 'I Intent To' to Build Autonomous Teams",
+        "hook": "Your team asks you for approval on every minor detail. You've become their operational bottleneck.",
+        "action": "Require your team members to state their proposed action first using 'I intend to...' instead of asking 'What should I do?'",
+        "key_phrase": "Instead of asking me, tell me: 'I intend to... because...'",
+        "when": "When direct reports keep coming to you for answers to routine problems.",
+        "why": "It shifts ownership of solution generation from you to them, building critical thinking.",
+        "example": "Employee: 'The supplier delayed delivery. What do I do?' Leader: 'Reframe that. What do you intend to do?' Employee: 'I intend to call Supplier B to cover the gap because their rate is close.'",
+        "mistake": "Immediately supplying the solution whenever a team member brings up a problem."
+      },
+      "ar": {
+        "title": "خليهم يقولوا 'أنا ناوي أعمل كذا' عشان تبني فريق بيعتمد على نفسه",
+        "hook": "فريقك بيجوا يسألوك في كل صغيرة وكبيرة؟ أنت كده بقيت العطلة والزحمة اللي في الشغل.",
+        "action": "الزم فريقك إنه لما ييجي بفكرة أو مشكلة، يبدأ كلامه بـ 'أنا ناوي أعمل كذا...' بدل ما يسأل 'أعمل إيه يا ريس؟'",
+        "key_phrase": "بدل ما تسألني أعمل إيه، قولي: 'أنا ناوي أعمل كذا عشان كذا...'",
+        "when": "لما تلاقي أعضاء فريقك بيرجعولك في أي مشكلة روتينية من غير ما يفكروا.",
+        "why": "بتنقل مسؤولية إيجاد الحلول من عندك لعندهم، وبتعودهم على التفكير المستقل.",
+        "example": "الموظف: 'المورد تأخر في التسليم، أعمل إيه؟' المدير: 'قولي أنت ناوي تعمل إيه؟' الموظف: 'أنا ناوي أكلم المورد التاني يغطي النقص عشان سعره قريب.'",
+        "mistake": "إنك تدي الحل بنفسك فورًا أول ما أي حد يجيبلك مشكلة."
+      },
+      "quiz": {
+        "type": "mcq",
+        "correct_index": 0,
+        "en": {
+          "question": "A senior analyst asks you, 'How should we handle this client delay?' What is the most effective leadership response?",
+          "options": [
+            "'What do you intend to do, and why?'",
+            "'Let me take over and handle it myself.'",
+            "'Go figure it out and don't come back until it's fixed.'",
+            "'Here are the exact 3 steps you must execute right now.'"
+          ],
+          "explanation": "Asking for their intent prompts them to think critically and propose a solution while retaining safety through your final green light."
+        },
+        "ar": {
+          "question": "موظف كبير عندك بيسألك: 'هنتعامل إزاي مع تأخير العميل ده؟' إيه أفضل رد منك كقائد؟",
+          "options": [
+            "'أنت ناوي تعمل إيه، وليه؟'",
+            "'سيب الموضوع ده عليّ وأنا هحله بنفسي.'",
+            "'روح اتصرف وما ترجعليش إلا لما تتحل.'",
+            "'اعمل 1، 2، 3 بالظبط دلوقتي.'"
+          ],
+          "explanation": "السؤال عن النية بيخليه يفكر ويقترح حل بنفسه مع وجود مساحة لتوجيهك قبل التنفيذ."
+        }
+      }
+    }
+  ]
+}

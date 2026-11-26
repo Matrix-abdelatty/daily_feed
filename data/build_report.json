@@ -1,17 +1,22 @@
 {
-  "timestamp": "2026-11-25T17:01:08.882406+00:00",
-  "total_files_scanned": 37,
-  "total_patches": 37,
-  "total_valid_cards": 180,
-  "total_active_search_cards": 180,
+  "timestamp": "2026-11-26T16:56:38.503352+00:00",
+  "total_files_scanned": 40,
+  "total_patches": 40,
+  "total_valid_cards": 194,
+  "total_active_search_cards": 194,
   "deleted_cards_count": 0,
-  "highest_card_number": 180,
-  "skipped_cards_count": 1,
+  "highest_card_number": 194,
+  "skipped_cards_count": 2,
   "skipped_details": [
     {
       "file": "cards/2026/2026-11-25_auto_03.json",
       "card_id": "2026-11-25_decision_making_apply-the-10-10-10-rule",
       "reason": "Too similar (0.90 >= 0.85) to '2026-11-20_decision_making_10-10-10-rule'"
+    },
+    {
+      "file": "cards/2026/2026-11-26_auto_02.json",
+      "card_id": "2026-11-26_productivity_five-minute-rule",
+      "reason": "Too similar (0.86 >= 0.85) to '2026-11-21_productivity_micro-start-rule'"
     }
   ]
 }

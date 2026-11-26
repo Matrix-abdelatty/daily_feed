@@ -1,5 +1,348 @@
 [
   {
+    "id": "2026-11-26_leadership_intent-based-delegation",
+    "number": 194,
+    "patch_number": 40,
+    "topic": "leadership",
+    "level": "advanced",
+    "tags": [
+      "delegation",
+      "management",
+      "autonomy"
+    ],
+    "created_at": "2026-11-26T16:44:59.547966+00:00",
+    "file": "cards/2026/2026-11-26_auto_03.json",
+    "en": {
+      "title": "Delegate with 'I Intent To' to Build Autonomous Teams",
+      "hook": "Your team asks you for approval on every minor detail. You've become their operational bottleneck.",
+      "key_phrase": "Instead of asking me, tell me: 'I intend to... because...'"
+    },
+    "ar": {
+      "title": "خليهم يقولوا 'أنا ناوي أعمل كذا' عشان تبني فريق بيعتمد على نفسه",
+      "hook": "فريقك بيجوا يسألوك في كل صغيرة وكبيرة؟ أنت كده بقيت العطلة والزحمة اللي في الشغل.",
+      "key_phrase": "بدل ما تسألني أعمل إيه، قولي: 'أنا ناوي أعمل كذا عشان كذا...'"
+    }
+  },
+  {
+    "id": "2026-11-26_decision_making_10-10-10-rule",
+    "number": 193,
+    "patch_number": 40,
+    "topic": "decision_making",
+    "level": "intermediate",
+    "tags": [
+      "clarity",
+      "focus",
+      "strategy"
+    ],
+    "created_at": "2026-11-26T16:44:59.547966+00:00",
+    "file": "cards/2026/2026-11-26_auto_03.json",
+    "en": {
+      "title": "Test Choices with the 10-10-10 Time Frame",
+      "hook": "You're agonizing over a tough call—like quitting a project or having a hard conversation. Short-term anxiety is blinding you.",
+      "key_phrase": "How will I feel about this choice in 10 months?"
+    },
+    "ar": {
+      "title": "قيم قراراتك بقاعدة الـ 10-10-10 عشان تخلص من التردد",
+      "hook": "مزنوق في قرار صعب ومش عارف تاخده؟ الخوف والتوتر بتاع اللحظة بيعميك عن الصورة الكاملة.",
+      "key_phrase": "أنا هحس بإيه ناحية القرار ده بعد 10 شهور؟"
+    }
+  },
+  {
+    "id": "2026-11-26_communication_loop-closing-ack",
+    "number": 192,
+    "patch_number": 40,
+    "topic": "communication",
+    "level": "beginner",
+    "tags": [
+      "clarity",
+      "alignment",
+      "teamwork"
+    ],
+    "created_at": "2026-11-26T16:44:59.547966+00:00",
+    "file": "cards/2026/2026-11-26_auto_03.json",
+    "en": {
+      "title": "Use 'What I Heard' to Stop Miscommunication Instantly",
+      "hook": "You give clear instructions, but the result is completely wrong. It happens all the time in fast-moving teams.",
+      "key_phrase": "Just to make sure we're aligned, what I'm taking away is..."
+    },
+    "ar": {
+      "title": "استخدم جملة 'اللي فهمته إن...' عشان تمنع سوء الفهم في ثواني",
+      "hook": "بتقول للقدامك فكرة واضحة جدًا، وتتفاجئ إنه عمل حاجة تانية خالص؟ بتحصل كل يوم في الشغل.",
+      "key_phrase": "عشان نتأكد إننا على نفس الخط، اللي فهمته منك إن..."
+    }
+  },
+  {
+    "id": "2026-11-26_career_2minute-visibility",
+    "number": 191,
+    "patch_number": 40,
+    "topic": "career",
+    "level": "intermediate",
+    "tags": [
+      "visibility",
+      "career"
+    ],
+    "created_at": "2026-11-26T16:44:59.547966+00:00",
+    "file": "cards/2026/2026-11-26_auto_03.json",
+    "en": {
+      "title": "Leverage the 2‑minute rule for visibility",
+      "hook": "You missed the promotion because nobody ever heard about the project you nailed.",
+      "key_phrase": "FYI, we just completed X, results Y"
+    },
+    "ar": {
+      "title": "استغل قاعدة الـ 2 دقيقة للظهور",
+      "hook": "ضاعت ترقية لأن حد ما سمعش عن المشروع اللي نجحته.",
+      "key_phrase": "FYI، خلصنا X، والنتيجة Y"
+    }
+  },
+  {
+    "id": "2026-11-26_business_turn-meeting-into-pipeline",
+    "number": 190,
+    "patch_number": 40,
+    "topic": "business",
+    "level": "intermediate",
+    "tags": [
+      "pipeline",
+      "followup"
+    ],
+    "created_at": "2026-11-26T16:44:59.547966+00:00",
+    "file": "cards/2026/2026-11-26_auto_03.json",
+    "en": {
+      "title": "Turn a meeting into a sales pipeline",
+      "hook": "You chatted over coffee, walked away, and the client never called back—until you sent a tight follow‑up.",
+      "key_phrase": "Can we schedule a quick 15‑min demo?"
+    },
+    "ar": {
+      "title": "حوّل الاجتماع لخط مبيعات",
+      "hook": "كلمت حد على القهوة ومشي، وما رجعش تاني إلا بعد ما بعتلّه إيميل واضح.",
+      "key_phrase": "ممكن نحجز تجربة سريعة 15 دقيقة؟"
+    }
+  },
+  {
+    "id": "2026-11-26_sales_label-negative-emotions",
+    "number": 189,
+    "patch_number": 39,
+    "topic": "sales",
+    "level": "intermediate",
+    "tags": [
+      "sales",
+      "objections",
+      "labeling",
+      "empathy"
+    ],
+    "created_at": "2026-11-26T16:37:11.168510+00:00",
+    "file": "cards/2026/2026-11-26_auto_02.json",
+    "en": {
+      "title": "Label Negative Emotions to Neutralize Resistance",
+      "hook": "A prospect sits down with crossed arms and guarded eyes. Ignore their skepticism, and you fail. Label it out loud, and it vanishes.",
+      "key_phrase": "It seems like you're hesitant because this transition might disrupt your team's workflow."
+    },
+    "ar": {
+      "title": "سمّي المشاعر السلبية عشان تفرّغ شحنة الاعتراض",
+      "hook": "العميل قاعد قدامك مربع إيده ومتردد؟ لو طنشت قلقه وكملت العرض بتاعك، هتخسره. سمّي خوفه بصوت عالي، وهتلاقيه هدي.",
+      "key_phrase": "شكلك خايف إن النقل للسيستم الجديد يعطل شغلكوا اليومي."
+    }
+  },
+  {
+    "id": "2026-11-26_psychology_tactical-silence",
+    "number": 188,
+    "patch_number": 39,
+    "topic": "psychology",
+    "level": "advanced",
+    "tags": [
+      "psychology",
+      "communication",
+      "negotiation",
+      "silence"
+    ],
+    "created_at": "2026-11-26T16:37:11.168510+00:00",
+    "file": "cards/2026/2026-11-26_auto_02.json",
+    "en": {
+      "title": "Use Tactical Silence After Stating Your Terms",
+      "hook": "You state your price or deliver a firm condition, and the room falls silent. Panicking and filling the silence loses you money.",
+      "key_phrase": ""
+    },
+    "ar": {
+      "title": "استخدم الصمت التكتيكي بعد ما تقول سعرك أو شروطك",
+      "hook": "بتقول سعرك أو شرطك والسكوت يعم المكان؟ لو توترت واتكلمت لتملى الفراغ، هتخسر موقفك أو فلوسك.",
+      "key_phrase": ""
+    }
+  },
+  {
+    "id": "2026-11-26_pricing_anchor-high-first",
+    "number": 187,
+    "patch_number": 39,
+    "topic": "pricing",
+    "level": "intermediate",
+    "tags": [
+      "pricing",
+      "negotiation",
+      "anchoring",
+      "sales"
+    ],
+    "created_at": "2026-11-26T16:37:11.168510+00:00",
+    "file": "cards/2026/2026-11-26_auto_02.json",
+    "en": {
+      "title": "Anchor High to Make Your Target Price Feel Reasonable",
+      "hook": "Present your main price directly, and clients negotiate down. Present a premium option first, and your main price feels like a bargain.",
+      "key_phrase": "Our full VIP transformation is $10k, but most clients go with our core $3k package."
+    },
+    "ar": {
+      "title": "حط رقم كبير في الأول عشان سعرك الأصلي يبان لُقطة",
+      "hook": "لما تعرض سعرك الأساسي على طول، العميل بيحاول يفاوضك. بس لو عرضت باقة غالية في الأول، سعرك الأساسي هيبان فرصة.",
+      "key_phrase": "خدمة التطوير الشاملة بـ 10 آلاف، بس معظم عملائنا بيختاروا باقة الاستشارة الأساسية بـ 3 آلاف."
+    }
+  },
+  {
+    "id": "2026-11-26_persuasion_add-because-for-buy-in",
+    "number": 186,
+    "patch_number": 39,
+    "topic": "persuasion",
+    "level": "beginner",
+    "tags": [
+      "persuasion",
+      "communication",
+      "influence",
+      "requests"
+    ],
+    "created_at": "2026-11-26T16:37:11.168510+00:00",
+    "file": "cards/2026/2026-11-26_auto_02.json",
+    "en": {
+      "title": "Add \"Because\" to Get Immediate Buy-In",
+      "hook": "You ask someone for a favor and they hesitate. Add one simple word, and their brain agrees before even processing your reason.",
+      "key_phrase": "Can I grab this chair because we need one more for our client meeting?"
+    },
+    "ar": {
+      "title": "زود كلمة \"عشان\" عشان تاخد موافقة سريعة",
+      "hook": "بتطلب حاجة من حد وتلاقيه متردد؟ زوّد كلمة واحدة بس وهتلاقي مخه وافق من غير ما يركز في السبب أصلاً.",
+      "key_phrase": "ممكن أستأذنك آخد الكرسي ده عشان ناقصنا كرسي في اجتماع العميل؟"
+    }
+  },
+  {
+    "id": "2026-11-26_negotiation_labeling-negatives",
+    "number": 185,
+    "patch_number": 38,
+    "topic": "negotiation",
+    "level": "advanced",
+    "tags": [
+      "negotiation",
+      "persuasion",
+      "sales",
+      "communication"
+    ],
+    "created_at": "2026-11-26T16:29:30.757201+00:00",
+    "file": "cards/2026/2026-11-26_auto_01.json",
+    "en": {
+      "title": "Defuse tension by labeling their hidden fears upfront",
+      "hook": "Trying to hide your deal's obvious flaws makes you sound defensive and suspicious.",
+      "key_phrase": "It probably seems like we're..."
+    },
+    "ar": {
+      "title": "اسحب فتيل الاعتراضات بتسمية المخاوف من الأول",
+      "hook": "محاولتك لتجاهل نقاط ضعفك في التفاوض بتخليك تبان مدافع أو مخبي حاجة.",
+      "key_phrase": "ممكن تحسوا إننا..."
+    }
+  },
+  {
+    "id": "2026-11-26_money_72-hour-impulse-rule",
+    "number": 184,
+    "patch_number": 38,
+    "topic": "money",
+    "level": "beginner",
+    "tags": [
+      "money",
+      "budgeting",
+      "psychology",
+      "personal-finance"
+    ],
+    "created_at": "2026-11-26T16:29:30.757201+00:00",
+    "file": "cards/2026/2026-11-26_auto_01.json",
+    "en": {
+      "title": "Cool down impulse spending with the 72-hour rule",
+      "hook": "E-commerce apps trigger rapid dopamine hits so you buy before your logical brain turns on.",
+      "key_phrase": "If I still want it in 3 days, I will get it."
+    },
+    "ar": {
+      "title": "طبق قاعدة الـ 72 ساعة قبل ما تشتري أي حاجة مش محتاجها",
+      "hook": "إعلانات أونلاين معمول حسابها تديك جرعة الدوبامين اللي تخليك تشتري قبل ما تفكر دقيقة.",
+      "key_phrase": "لو لسة عايزها بعد 3 أيام هجيبها."
+    }
+  },
+  {
+    "id": "2026-11-26_meetings_silent-brainstorming",
+    "number": 183,
+    "patch_number": 38,
+    "topic": "meetings",
+    "level": "intermediate",
+    "tags": [
+      "meetings",
+      "productivity",
+      "collaboration",
+      "brainstorming"
+    ],
+    "created_at": "2026-11-26T16:29:30.757201+00:00",
+    "file": "cards/2026/2026-11-26_auto_01.json",
+    "en": {
+      "title": "Start meetings with 5 minutes of silent writing",
+      "hook": "Loud voices win most meetings, while introverts with better ideas get drowned out.",
+      "key_phrase": "Let's take 5 silent minutes to write our ideas down first."
+    },
+    "ar": {
+      "title": "ابدأ الاجتماع بـ 5 دقايق كتابة في سرك",
+      "hook": "في معظم الاجتماعات، أعلى صوت هو اللي بيمشي كلامه، والشاطر الساكت أفكاره بتروح عليه.",
+      "key_phrase": "هنأخد 5 دقايق صمت نكتب أفكارنا الأول."
+    }
+  },
+  {
+    "id": "2026-11-26_learning_feynman-technique-simplified",
+    "number": 182,
+    "patch_number": 38,
+    "topic": "learning",
+    "level": "beginner",
+    "tags": [
+      "learning",
+      "memory",
+      "study",
+      "productivity"
+    ],
+    "created_at": "2026-11-26T16:29:30.757201+00:00",
+    "file": "cards/2026/2026-11-26_auto_01.json",
+    "en": {
+      "title": "Explain complex topics like you are teaching a 10-year-old",
+      "hook": "You think you understand a concept until you try to explain it without using fancy jargon.",
+      "key_phrase": "How would I explain this simply?"
+    },
+    "ar": {
+      "title": "اشرح الفكرة الصعبة لشخص عنده 10 سنين",
+      "hook": "بتفتكر إنك فاهم الموضوع كويس لحد ما تيجي تشرحه من غير ما تستخدم مصطلحات معقدة وتتلعثم.",
+      "key_phrase": "إزاي هشرح ده ببساطة؟"
+    }
+  },
+  {
+    "id": "2026-11-26_leadership_intent-focused-delegation",
+    "number": 181,
+    "patch_number": 38,
+    "topic": "leadership",
+    "level": "intermediate",
+    "tags": [
+      "leadership",
+      "delegation",
+      "management",
+      "coaching"
+    ],
+    "created_at": "2026-11-26T16:29:30.757201+00:00",
+    "file": "cards/2026/2026-11-26_auto_01.json",
+    "en": {
+      "title": "Use 'I intend to...' to build independent teams",
+      "hook": "Stop answering 'What should I do?' all day. It turns your team into passive permission-seekers.",
+      "key_phrase": "What do you intend to do?"
+    },
+    "ar": {
+      "title": "غير جملة 'أعمل إيه؟' لـ 'أنا ناوي أعمل إيه'",
+      "hook": "بطل ترد على سؤال 'أعمل إيه يا ريس؟' كل 5 دقايق، لأن ده بيخلي فريقك مستني الإذن في كل صغيرة وكبيرة.",
+      "key_phrase": "أنت ناوي تعمل إيه؟"
+    }
+  },
+  {
     "id": "2026-11-25_leadership_use-i-noticed-for-feedback",
     "number": 180,
     "patch_number": 37,

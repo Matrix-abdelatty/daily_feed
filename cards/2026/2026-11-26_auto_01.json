@@ -1,0 +1,293 @@
+{
+  "schema_version": 1,
+  "batch_id": "2026-11-26_auto_01",
+  "created_at": "2026-11-26T16:29:30.757201+00:00",
+  "source": "gemini-3.5-flash",
+  "cards": [
+    {
+      "id": "2026-11-26_leadership_intent-focused-delegation",
+      "created_at": "2026-11-26T16:29:30.757201+00:00",
+      "topic": "leadership",
+      "tags": [
+        "leadership",
+        "delegation",
+        "management",
+        "coaching"
+      ],
+      "level": "intermediate",
+      "needs_completion": false,
+      "en": {
+        "title": "Use 'I intend to...' to build independent teams",
+        "hook": "Stop answering 'What should I do?' all day. It turns your team into passive permission-seekers.",
+        "action": "When a team member asks how to handle a problem, ask them to reframe their request: 'Tell me what you intend to do.' Force them to bring solutions, not just problems.",
+        "key_phrase": "What do you intend to do?",
+        "when": "When a direct report asks you to solve an operational decision for them.",
+        "why": "It shifts their mindset from seeking permission to taking ownership, building executive problem-solving skills.",
+        "example": "Employee: 'The supplier delayed the shipment!' Manager: 'What do you intend to do?' Employee: 'I intend to call supplier B and ship half the order today.' Manager: 'Approved.'",
+        "mistake": "Giving immediate answers, which creates reliance on you for every minor issue."
+      },
+      "ar": {
+        "title": "غير جملة 'أعمل إيه؟' لـ 'أنا ناوي أعمل إيه'",
+        "hook": "بطل ترد على سؤال 'أعمل إيه يا ريس؟' كل 5 دقايق، لأن ده بيخلي فريقك مستني الإذن في كل صغيرة وكبيرة.",
+        "action": "لما حد من فريقك يجيلك بمشكلة، قوله: 'قولي أنت ناوي تعمل إيه بالظبط؟'. خليه يجي ببدائل وحلول مش بأسئلة بس.",
+        "key_phrase": "أنت ناوي تعمل إيه؟",
+        "when": "لما موظف يجيلك بمشكلة ويستناك تحلها له بداله.",
+        "why": "بتنقل تفكيره من شخص بيستأذن لشخص بيتحمل المسؤولية وبيفكر كقائد.",
+        "example": "الموظف: 'المورد تأخر في تسليم الأوردر!' المدير: 'ناوي تعمل إيه؟' الموظف: 'ناوي أكلم المورد البديل ونشحن نص الكمية النهاردة.' المدير: 'تمام، اعتمد.'",
+        "mistake": "إنك تدي حل سريع بنفسك وتخليهم يتكلوا عليك في كل القرار."
+      },
+      "quiz": {
+        "type": "mcq",
+        "correct_index": 1,
+        "en": {
+          "question": "An employee asks you: 'The server is down, what should I do?' How do you respond using intent-focused delegation?",
+          "options": [
+            "Tell them the exact steps to fix the server issue.",
+            "Ask: 'What do you intend to do to resolve it?'",
+            "Fix the issue yourself so it gets done faster.",
+            "Tell them to read the official IT manual again."
+          ],
+          "explanation": "Asking 'What do you intend to do?' forces the employee to evaluate solutions and bring a plan, building their problem-solving capability."
+        },
+        "ar": {
+          "question": "موظف بيسألك: 'السيرفر وقع، أعمل إيه يا فندم؟' ترد عليه إزاي بأسلوب قيادي المباشر؟",
+          "options": [
+            "تقوله الخطوات بالظبط اللي يعملها عشان يصلح السيرفر.",
+            "تسأله: 'أنت ناوي تعمل إيه عشان تحل المشكلة دي؟'",
+            "تصلح المشكلة بنفسك عشان تنجز الوقت.",
+            "تقوله روح اقرأ دليل الدعم الفني تاني."
+          ],
+          "explanation": "سؤال 'ناوي تعمل إيه؟' بيجبر الموظف يفكر في الحلول ويقدم خطة بنفسه بدل ما يستنى أوامر."
+        }
+      }
+    },
+    {
+      "id": "2026-11-26_learning_feynman-technique-simplified",
+      "created_at": "2026-11-26T16:29:30.757201+00:00",
+      "topic": "learning",
+      "tags": [
+        "learning",
+        "memory",
+        "study",
+        "productivity"
+      ],
+      "level": "beginner",
+      "needs_completion": false,
+      "en": {
+        "title": "Explain complex topics like you are teaching a 10-year-old",
+        "hook": "You think you understand a concept until you try to explain it without using fancy jargon.",
+        "action": "Write the concept name on a blank sheet. Explain it aloud in plain, simple words as if teaching a child. Identify where you hesitate—that is your true knowledge gap.",
+        "key_phrase": "How would I explain this simply?",
+        "when": "Studying complex material, technical concepts, or preparing to present strategy.",
+        "why": "Jargon hides confusion; simplifying forces your brain to build clear mental models and true mastery.",
+        "example": "Learning 'API integrations'? Don't say 'It's an interface protocol.' Say 'It's like a waiter taking your order from the table to the kitchen and bringing food back.'",
+        "mistake": "Re-reading notes repeatedly, which creates the illusion of learning without real comprehension."
+      },
+      "ar": {
+        "title": "اشرح الفكرة الصعبة لشخص عنده 10 سنين",
+        "hook": "بتفتكر إنك فاهم الموضوع كويس لحد ما تيجي تشرحه من غير ما تستخدم مصطلحات معقدة وتتلعثم.",
+        "action": "اكتب اسم الموضوع في ورقة فاضية، واشرحه بصوت عالي بأبسط كلمات ممكنة كأنك بتفهمه لطفل. الحتة اللي تتلخبط فيها هي دي الفجوة اللي محتاج تراجعها.",
+        "key_phrase": "إزاي هشرح ده ببساطة؟",
+        "when": "وأنت بتذاكر مجال جديد، مصطلحات تقنية، أو بتجهز تشرح فكرة معقدة.",
+        "why": "المصطلحات الكبيرة بتستخبى وراها الفجوات، البساطة بتجبر مخك يبني فهم حقيقي.",
+        "example": "بتتعلم يعني إيه 'API'؟ بدل ما تقول 'بروتوكول واجهة تطبيقات'، قول 'ده زي الويتر اللي بياخد طلبك من الترابيزة للمطبخ ويرجعلك بالأكل.'",
+        "mistake": "إعادة قراءة النوتس كتير، وده بيديك إحساس كاذب بالاستيعاب من غير فهم حقيقي."
+      },
+      "quiz": {
+        "type": "mcq",
+        "correct_index": 2,
+        "en": {
+          "question": "You are trying to master a complex financial term. What is the best test of true understanding according to the Feynman technique?",
+          "options": [
+            "Re-reading the textbook chapter three times in a row.",
+            "Memorizing the exact dictionary definition word-for-word.",
+            "Explaining it aloud in basic everyday words without technical terms.",
+            "Highlighting all the key definitions in bright markers."
+          ],
+          "explanation": "Explaining without jargon forces you to process the core logic. If you can explain it simply, you truly understand it."
+        },
+        "ar": {
+          "question": "عايز تتأكد إنك فهمت مصطلح مالي معقد جداً. إيه أفضل طريقة تختبر بيها فهمك؟",
+          "options": [
+            "تقرأ الفصل من الكتاب 3 مرات ورا بعض.",
+            "تحفظ التعريف النظري زي ما هو بالظبط.",
+            "تشرحه بصوت عالي بكلمات عامية بسيطة من غير مصطلحات صعبة.",
+            "تعلّم على المصطلحات المهمة بقلم هايلايتر."
+          ],
+          "explanation": "الشرح بدون مصطلحات معقدة بيجبرك تفهم الجوهر، لو قدرت تبسطه يبقى فهمته بجد."
+        }
+      }
+    },
+    {
+      "id": "2026-11-26_meetings_silent-brainstorming",
+      "created_at": "2026-11-26T16:29:30.757201+00:00",
+      "topic": "meetings",
+      "tags": [
+        "meetings",
+        "productivity",
+        "collaboration",
+        "brainstorming"
+      ],
+      "level": "intermediate",
+      "needs_completion": false,
+      "en": {
+        "title": "Start meetings with 5 minutes of silent writing",
+        "hook": "Loud voices win most meetings, while introverts with better ideas get drowned out.",
+        "action": "Begin the meeting by giving everyone 5 minutes to write their thoughts on a shared document in complete silence. Only then open the floor for open debate.",
+        "key_phrase": "Let's take 5 silent minutes to write our ideas down first.",
+        "when": "Kickstarting a brainstorming session or solving a contentious team bottleneck.",
+        "why": "Prevents groupthink and loud-person bias, giving thoughtful team members equal share of voice.",
+        "example": "Instead of asking 'Who has ideas for the launch?', say: 'We have 5 minutes of silence. Everyone write 2 ideas in the shared doc. Starting now.'",
+        "mistake": "Asking 'Does anyone have ideas?' out loud, letting the loudest person dominate the conversation."
+      },
+      "ar": {
+        "title": "ابدأ الاجتماع بـ 5 دقايق كتابة في سرك",
+        "hook": "في معظم الاجتماعات، أعلى صوت هو اللي بيمشي كلامه، والشاطر الساكت أفكاره بتروح عليه.",
+        "action": "ابدأ الميتنج بأنك تدي كل الناس 5 دقايق يكتبوا أفكارهم على ملف مشترك في صمت تام. بعد كدة ابدأوا تناقشوا.",
+        "key_phrase": "هنأخد 5 دقايق صمت نكتب أفكارنا الأول.",
+        "when": "في أول جلسات العصف الذهني أو لما تبقوا بتدوروا على حل لمشكلة صعبة.",
+        "why": "بيمنع التوجيه المسبق وسيطرة الشخص العالي، وبيخلي كل الأصوات توصل بالتساوي من غير توتر.",
+        "example": "بدل ما تسأل 'حد عنده أفكار للإنطلاق؟'، قول: 'قدامنا 5 دقايق صمت، كل واحد يكتب فكرتين في الملف التشاركي.. ابدأوا.'",
+        "mistake": "إنك تسأل 'حد عنده أفكار؟' بصوت عالي، فترمي المايك لأكتر حد بيتكلم وتخسر باقي الفريق."
+      },
+      "quiz": {
+        "type": "mcq",
+        "correct_index": 0,
+        "en": {
+          "question": "You notice that the same two vocal people dominate every team meeting. How should you format your next brainstorming session?",
+          "options": [
+            "Start with 5 minutes of quiet solo writing on a doc before speaking.",
+            "Ask the vocal people to stay silent for the whole meeting.",
+            "Call on quiet people randomly without warning.",
+            "Cancel meetings and communicate only through long email threads."
+          ],
+          "explanation": "Silent writing allows everyone to synthesize ideas without being influenced or intimidated by dominant speakers."
+        },
+        "ar": {
+          "question": "لاحظت إن نفس الشخصين اللي صوتهم عالي هما اللي بيسيطروا على كل ميتنج. تنظم الميتنج الجاي إزاي؟",
+          "options": [
+            "تبدأ بـ 5 دقايق كتابة فردية في صمت على ملف قبل الكلام.",
+            "تطلب من الموظفين اللي صوتهم عالي يسكتوا طول الميتنج.",
+            "تسأل الناس الهادية بشكل فجائي من غير تحضير.",
+            "تلغي الاجتماعات وتتواصلوا بالإيميلات الطويلة بس."
+          ],
+          "explanation": "الكتابة الصامتة بتدي فرصة لكل الناس تفكر وتكتب أفكارها من غير ما يقعوا تحت تأثير الشخصيات المسيطرة."
+        }
+      }
+    },
+    {
+      "id": "2026-11-26_money_72-hour-impulse-rule",
+      "created_at": "2026-11-26T16:29:30.757201+00:00",
+      "topic": "money",
+      "tags": [
+        "money",
+        "budgeting",
+        "psychology",
+        "personal-finance"
+      ],
+      "level": "beginner",
+      "needs_completion": false,
+      "en": {
+        "title": "Cool down impulse spending with the 72-hour rule",
+        "hook": "E-commerce apps trigger rapid dopamine hits so you buy before your logical brain turns on.",
+        "action": "When you feel an urgent urge to buy a non-essential item, place it in your cart and set a 72-hour timer. Buy it only if you still want it when the timer expires.",
+        "key_phrase": "If I still want it in 3 days, I will get it.",
+        "when": "Browsing sales, seeing targeted ads, or shopping while stressed or tired.",
+        "why": "It allows the emotional brain rush to fade, handing the decision back to clear, rational thinking.",
+        "example": "You see a smartwatch on sale for $200. Instead of hitting 'Buy Now', put it on a 3-day hold. On day 3, the impulse is gone and you save $200.",
+        "mistake": "Buying immediately out of FOMO because 'the discount ends in 1 hour'."
+      },
+      "ar": {
+        "title": "طبق قاعدة الـ 72 ساعة قبل ما تشتري أي حاجة مش محتاجها",
+        "hook": "إعلانات أونلاين معمول حسابها تديك جرعة الدوبامين اللي تخليك تشتري قبل ما تفكر دقيقة.",
+        "action": "لما تحس برغبة مفاجئة تشتري حاجة غير أساسية، حطها في السلة وشغل تايمر 72 ساعة. لو لسة عايزها بعد 3 أيام اشتريها.",
+        "key_phrase": "لو لسة عايزها بعد 3 أيام هجيبها.",
+        "when": "وأنت بتتصفح محلات أونلاين، أو بتشوف إعلانات، أو وأنت مفصول وعايز تفرح نفسك.",
+        "why": "الفاصل الزمني بيهدي اندفاع المشاعر ويرجع القرار لعقلك المنطقي بدل الدوبامين اللحظي.",
+        "example": "شفت ساعة سمارت عليها خصم. بدل ما تضغط 'شراء الآن'، استنى 3 أيام. بعد 72 ساعة هتكتشف إنك مش محتاجها أصلاً وتوفر فلوسك.",
+        "mistake": "الشراء الفوري لمجرد إن 'الخصم هيخلص كمان ساعة'، فتخلط بين الاستعجال والاحتياج الحقيقي."
+      },
+      "quiz": {
+        "type": "mcq",
+        "correct_index": 3,
+        "en": {
+          "question": "You see a targeted ad for a high-end jacket discounted by 40% for today only. What is the smartest move?",
+          "options": [
+            "Buy it instantly before the discount expires.",
+            "Borrow money from a friend to lock in the savings.",
+            "Buy two and sell one online to make a profit.",
+            "Wait 72 hours; if you still want it and budget allows, buy it then."
+          ],
+          "explanation": "Waiting 72 hours removes the artificial urgency (FOMO) created by marketers, letting you evaluate actual utility over emotion."
+        },
+        "ar": {
+          "question": "شفت إعلان لجاكيت فخم عليه خصم 40% النهاردة بس. إيه التصرّف الأذكى؟",
+          "options": [
+            "تشتريه فوراً قبل ما الخصم يروح عليك.",
+            "تستلف فلوس من صاحبك عشان تلحق التوفير.",
+            "تشتري اثنين وتبيع واحد أونلاين وتعمل مصلحة.",
+            "تستنى 72 ساعة؛ لو لسة محتاجه والميزانية تسمح اشتريه ساعتها."
+          ],
+          "explanation": "انتظار 72 ساعة بيلغي إحساس الاستعجال المصنوع من المبيعات، ويخليك تقيم احتياجك الحقيقي بعيد عن الاندفاع."
+        }
+      }
+    },
+    {
+      "id": "2026-11-26_negotiation_labeling-negatives",
+      "created_at": "2026-11-26T16:29:30.757201+00:00",
+      "topic": "negotiation",
+      "tags": [
+        "negotiation",
+        "persuasion",
+        "sales",
+        "communication"
+      ],
+      "level": "advanced",
+      "needs_completion": false,
+      "en": {
+        "title": "Defuse tension by labeling their hidden fears upfront",
+        "hook": "Trying to hide your deal's obvious flaws makes you sound defensive and suspicious.",
+        "action": "State the counterpart's worst thoughts about your proposal before they do. Start your sentence with: 'It probably feels like we are...'",
+        "key_phrase": "It probably seems like we're...",
+        "when": "Entering a tough renegotiation, raising prices, or delivering bad news.",
+        "why": "Calling out negative feelings disarms emotional landmines and creates instant psychological safety.",
+        "example": "Before stating a fee increase, say: 'It probably feels like we're taking advantage of the tight deadline.' Client: 'Well, yes! But let's hear your breakdown.'",
+        "mistake": "Waiting for the client to attack your weak point, then arguing defensively."
+      },
+      "ar": {
+        "title": "اسحب فتيل الاعتراضات بتسمية المخاوف من الأول",
+        "hook": "محاولتك لتجاهل نقاط ضعفك في التفاوض بتخليك تبان مدافع أو مخبي حاجة.",
+        "action": "قول أسرع اعتراض أو فكرة سلبية ممكن يفكروها فيك قبل ما هما يقولوها. ابدأ بجملة: 'شكلنا قدامكم كأننا...'",
+        "key_phrase": "ممكن تحسوا إننا...",
+        "when": "في جلسات التفاوض الصعبة، أو لما تقترح سعر عالي، أو لما تسلم خبر مش لطيف.",
+        "why": "لما بتفضح المخاوف بنفسك بتفريغ الشحنة السلبية وبيحسوا إنك فاهمهم ومفيش خديعة.",
+        "example": "'قبل ما نتكلم في السعر، شكلنا قدامكوا كأننا بنزود السعر بدون مبرر.' الزبون: 'بالظبط ده اللي كنت هقوله! طب فرجنا الحسبة.'",
+        "mistake": "إنك تستنى لما العميل يقول اعتراضه وتقعد تجادل وتدافع عن نفسك."
+      },
+      "quiz": {
+        "type": "mcq",
+        "correct_index": 1,
+        "en": {
+          "question": "You have to tell a client that project delivery will be delayed by two weeks. How do you start the call using negative labeling?",
+          "options": [
+            "Act like nothing happened and hope they don't notice the date change.",
+            "Say: 'You're probably going to think we are completely unreliable and bad at planning.'",
+            "Blame your sub-contractors immediately so you don't take the hit.",
+            "Offer a 50% discount right away before explaining what happened."
+          ],
+          "explanation": "Labeling their potential anger upfront reduces its emotional power, making them more receptive to your actual update."
+        },
+        "ar": {
+          "question": "لازم تقول لعميل إن تسليم المشروع هيتأخر أسبوعين. تبدأ المكالمة إزاي باستخدام أسلوب تفريغ المخاوف؟",
+          "options": [
+            "تتعامل عادي وتتمنى إنه ما يلاحظش تغيير الميعاد.",
+            "تقول: 'ممكن تحس إننا ناس مش ملتزمة وما بنعرفش نخطط صح.'",
+            "ترمى التهمة فوراً على الموردين عشان تطلع نفسك من المشكلة.",
+            "تعرض خصم 50% فوراً من غير ما تشرح إيه اللي حصل."
+          ],
+          "explanation": "تسمية الغضب المحتمل من الأول بيمتص الصدمة السلبية ويخلي العميل يسمع منك الحل بهدوء أكتر."
+        }
+      }
+    }
+  ]
+}
