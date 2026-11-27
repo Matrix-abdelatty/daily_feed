@@ -1,5 +1,375 @@
 [
   {
+    "id": "2026-11-27_sales_labeling-hesitation",
+    "number": 209,
+    "patch_number": 43,
+    "topic": "sales",
+    "level": "intermediate",
+    "tags": [
+      "sales",
+      "objections",
+      "negotiation",
+      "deals"
+    ],
+    "created_at": "2026-11-27T16:35:46.839301+00:00",
+    "file": "cards/2026/2026-11-27_auto_03.json",
+    "en": {
+      "title": "Label hesitation to uncover hidden sales objections",
+      "hook": "They said 'We'll think about it' and vanished forever. Here is how you resurrect the deal right there.",
+      "key_phrase": "It seems like you have a reservation about the timeline."
+    },
+    "ar": {
+      "title": "سمّي التردد اللي قدامك عشان تطلع العيب المستخبي",
+      "hook": "قالولك 'هندرس الموضوع ونرجعلك' واختفوا للأبد؟ تعالى أقولك إزاي تطلع السبب الحقيقي في نفس اللحظة.",
+      "key_phrase": "شكل حضرتك عندك قلق من نقطة وقت التنفيذ."
+    }
+  },
+  {
+    "id": "2026-11-27_leadership_intent-based-delegation",
+    "number": 208,
+    "patch_number": 43,
+    "topic": "leadership",
+    "level": "advanced",
+    "tags": [
+      "leadership",
+      "management",
+      "delegation",
+      "autonomy"
+    ],
+    "created_at": "2026-11-27T16:35:46.839301+00:00",
+    "file": "cards/2026/2026-11-27_auto_03.json",
+    "en": {
+      "title": "Delegate using intent phrases instead of taking over problems",
+      "hook": "Tired of your team coming to you with 'What should I do now?' for every minor roadblock?",
+      "key_phrase": "Tell me what you intend to do first, then I'll approve it."
+    },
+    "ar": {
+      "title": "فوّض المهام بلغة 'أنا ناوي أعمل' بدل ما تدي أوامر",
+      "hook": "زهقت من إن الفريق كل شوية يجيلك يسألك 'نعمل إيه دلوقتي يا فندم' في كل تفصيلة صغيرة؟",
+      "key_phrase": "قولي أنت ناوي تعمل إيه الأول وأنا معاك."
+    }
+  },
+  {
+    "id": "2026-11-27_decision_making_10-10-10-rule",
+    "number": 207,
+    "patch_number": 43,
+    "topic": "decision_making",
+    "level": "beginner",
+    "tags": [
+      "decisions",
+      "clarity",
+      "productivity",
+      "mindset"
+    ],
+    "created_at": "2026-11-27T16:35:46.839301+00:00",
+    "file": "cards/2026/2026-11-27_auto_03.json",
+    "en": {
+      "title": "Use the 10-10-10 rule to break emotional decision paralysis",
+      "hook": "Stressed about a risky message, career pivot, or difficult conversation? Short-term anxiety is distorting your view.",
+      "key_phrase": "How will I feel about this decision in 10 months?"
+    },
+    "ar": {
+      "title": "استخدم قاعدة 10-10-10 عشان تكسر شلل القرارات",
+      "hook": "متوتر من إيميل صعب، أو خايف تاخد قرار في شغلك؟ المشاعر اللحظية هي اللي عاطية على تفكيرك.",
+      "key_phrase": "إحساسي إيه ناحية القرار ده بعد 10 شهور؟"
+    }
+  },
+  {
+    "id": "2026-11-27_career_brag-document",
+    "number": 206,
+    "patch_number": 43,
+    "topic": "career",
+    "level": "beginner",
+    "tags": [
+      "career",
+      "promotion",
+      "workplace",
+      "visibility"
+    ],
+    "created_at": "2026-11-27T16:35:46.839301+00:00",
+    "file": "cards/2026/2026-11-27_auto_03.json",
+    "en": {
+      "title": "Keep a weekly Brag Document for performance reviews",
+      "hook": "You did incredible work 5 months ago, but when review season arrives, neither you nor your manager remember details.",
+      "key_phrase": "This week I resolved issue X, which saved the team Y hours."
+    },
+    "ar": {
+      "title": "اعمل 'ملف الإنجازات' الأسبوعي عشان وقت الترقية",
+      "hook": "عملت شغل جبار من 5 شهور، بس وقت التقييم السنوي لا أنت فاكر التفاصيل ولا مديرك فاكرها.",
+      "key_phrase": "الأسبوع ده حليت المشكلة X ووفرت للفرقة وقت قدره Y."
+    }
+  },
+  {
+    "id": "2026-11-27_business_pre-mortem-check",
+    "number": 205,
+    "patch_number": 43,
+    "topic": "business",
+    "level": "intermediate",
+    "tags": [
+      "risk",
+      "business",
+      "planning",
+      "strategy"
+    ],
+    "created_at": "2026-11-27T16:35:46.839301+00:00",
+    "file": "cards/2026/2026-11-27_auto_03.json",
+    "en": {
+      "title": "Run a Pre-Mortem before launching any major project",
+      "hook": "Most projects fail for reasons the team saw coming but were too polite to mention during kick-off.",
+      "key_phrase": "Imagine it's next year and this launch failed. What killed it?"
+    },
+    "ar": {
+      "title": "اعمل 'تحليل ما قبل الوفاة' للمشروع قبل ما تطلقه",
+      "hook": "معظم المشاريع بتفشل لأسباب الفريق كان عارفها كويس، بس كانوا مكسوفين يقولوها في أول الاجتماع.",
+      "key_phrase": "تخيلوا إننا في السنة الجاية والمشروع ده فشل ذريعاً. إيه اللي موته؟"
+    }
+  },
+  {
+    "id": "2026-11-27_psychology_ben-franklin-effect",
+    "number": 204,
+    "patch_number": 42,
+    "topic": "psychology",
+    "level": "intermediate",
+    "tags": [
+      "psychology",
+      "rapport",
+      "networking",
+      "influence"
+    ],
+    "created_at": "2026-11-27T16:28:05.533708+00:00",
+    "file": "cards/2026/2026-11-27_auto_02.json",
+    "en": {
+      "title": "Make People Like You by Asking for a Small Favor",
+      "hook": "Counterintuitively, people don't like you more when you do favors for them—they like you more when THEY do favors for YOU.",
+      "key_phrase": "Could you recommend your favorite note-taking app?"
+    },
+    "ar": {
+      "title": "خلي الناس تحبك عن طريق إنك تطلب منهم خدمة صغيرة",
+      "hook": "على عكس المتوقع، الناس مش بتحبك لما تعملهم خدمات... الناس بتحبك أكتر لما هُما اللي يعملولك خدمة!",
+      "key_phrase": "ممكن ترشحلي أحسن برنامج بتستخدمه لتنظيم اليوم؟"
+    }
+  },
+  {
+    "id": "2026-11-27_productivity_two-minute-rule",
+    "number": 203,
+    "patch_number": 42,
+    "topic": "productivity",
+    "level": "beginner",
+    "tags": [
+      "productivity",
+      "time-management",
+      "execution",
+      "focus"
+    ],
+    "created_at": "2026-11-27T16:28:05.533708+00:00",
+    "file": "cards/2026/2026-11-27_auto_02.json",
+    "en": {
+      "title": "Kill Micro-Tasks Instantly with the 2-Minute Rule",
+      "hook": "Your to-do list is full of tiny nagging items that take 90 seconds, yet drain hours of mental energy.",
+      "key_phrase": "If it takes under two minutes, do it right now."
+    },
+    "ar": {
+      "title": "خلص المهام الصغيرة في ساعتها بقاعدة الدقيقتين",
+      "hook": "قائمة مهامك مليانة حاجات بسيطة بتاخد 90 ثانية، بس واخدة مساحة كبيرة جداً من تفكيرك ومقللة تركيزك.",
+      "key_phrase": "لو بتاخد أقل من دقيقتين، اعملها حالاً."
+    }
+  },
+  {
+    "id": "2026-11-27_pricing_anchor-high-first",
+    "number": 202,
+    "patch_number": 42,
+    "topic": "pricing",
+    "level": "intermediate",
+    "tags": [
+      "pricing",
+      "anchoring",
+      "sales",
+      "negotiation"
+    ],
+    "created_at": "2026-11-27T16:28:05.533708+00:00",
+    "file": "cards/2026/2026-11-27_auto_02.json",
+    "en": {
+      "title": "Present Your Premium Tier First to Set High Anchors",
+      "hook": "Show a client a $50,000 package first, and $15,000 feels reasonable. Show them $5,000 first, and $15,000 feels extortionate.",
+      "key_phrase": "Most enterprise clients pick our VIP package at $50k, but for your current scope, the $15k core plan fits best."
+    },
+    "ar": {
+      "title": "ابدأ بأعلى سعر الأول عشان يرخص اللي بعده",
+      "hook": "لو عرضت على العميل خيار بـ 50 ألف الأول، خيار الـ 15 ألف هيشوفه لقطة. لو بدأت بالـ 5 آلاف، الـ 15 ألف هيبان غالي جداً.",
+      "key_phrase": "معظم الشركات الكبيرة بتاخد الباقة الكاملة بـ 50 ألف، بس بالنسبة لاحتياجكم الباقة الأساسية بـ 15 ألف هتبقى ممتازة."
+    }
+  },
+  {
+    "id": "2026-11-27_persuasion_because-justification-trick",
+    "number": 201,
+    "patch_number": 42,
+    "topic": "persuasion",
+    "level": "beginner",
+    "tags": [
+      "persuasion",
+      "influence",
+      "communication",
+      "psychology"
+    ],
+    "created_at": "2026-11-27T16:28:05.533708+00:00",
+    "file": "cards/2026/2026-11-27_auto_02.json",
+    "en": {
+      "title": "Add the Word 'Because' to Double Agreement Rates",
+      "hook": "A famous study showed that adding ANY reason after the word 'because' boosted line-cutting compliance from 60% to 94%.",
+      "key_phrase": "Can I jump in because I need to make two quick copies?"
+    },
+    "ar": {
+      "title": "زود كلمة 'عشان' وهتاخد موافقة أسرع مرتين",
+      "hook": "تجربة مشهورة أثبتت إنك لما تطلب طلب وتزود عليه كلمة 'عشان' وتذكر سبب، نسبة موافقة الناس بتطير من 60% لـ 94%.",
+      "key_phrase": "ممكن أعدي أطبع الورقتين دول قبلك عشان محتاجهم بسرعة؟"
+    }
+  },
+  {
+    "id": "2026-11-27_learning_feynman-technique-toddler",
+    "number": 200,
+    "patch_number": 42,
+    "topic": "learning",
+    "level": "beginner",
+    "tags": [
+      "learning",
+      "feynman",
+      "mental-models",
+      "clarity"
+    ],
+    "created_at": "2026-11-27T16:28:05.533708+00:00",
+    "file": "cards/2026/2026-11-27_auto_02.json",
+    "en": {
+      "title": "Explain It to a 5-Year-Old to Spot Learning Gaps",
+      "hook": "You think you understand a concept until you try explaining it without using jargon. That's when your brain freezes.",
+      "key_phrase": "If I can't explain this simply, I don't truly get it yet."
+    },
+    "ar": {
+      "title": "اشرح الفكرة لعيَّل صغير عشان تكتشف الثغرات",
+      "hook": "فاكر نفسك فاهم الموضوع كويس؟ جرب تشرحه لحد من غير ما تستخدم مصطلحات معقدة وستكشف إنك عطلت.",
+      "key_phrase": "لو مش عارف أشرحها ببساطة، يبقى أنا لسه مش فاهمها صح."
+    }
+  },
+  {
+    "id": "2026-11-27_productivity_ten-minute-starter",
+    "number": 199,
+    "patch_number": 41,
+    "topic": "productivity",
+    "level": "intermediate",
+    "tags": [
+      "productivity",
+      "focus",
+      "procrastination"
+    ],
+    "created_at": "2026-11-27T16:14:40.561562+00:00",
+    "file": "cards/2026/2026-11-27_auto_01.json",
+    "en": {
+      "title": "Use the 10-Minute Starter rule to crush procrastination",
+      "hook": "That giant task on your to-do list is paralyzing you. You aren't lazy; your brain is just terrified of the effort ahead.",
+      "key_phrase": "I'm only doing this for 10 minutes, then I can stop."
+    },
+    "ar": {
+      "title": "استخدم قاعدة الـ 10 دقائق عشان تكسر الستريس والتسويف",
+      "hook": "عندك مهمة ثقيلة ومأجلها بقالك أسبوع؟ أنت مش كسلان، مخك بس مرعوب من المجهود الكلي اللي مستنيه.",
+      "key_phrase": "أنا هشتغل فيها 10 دقائق بس ودلوقتي هقوم."
+    }
+  },
+  {
+    "id": "2026-11-27_negotiation_labeling-objections",
+    "number": 198,
+    "patch_number": 41,
+    "topic": "negotiation",
+    "level": "advanced",
+    "tags": [
+      "negotiation",
+      "empathy",
+      "communication"
+    ],
+    "created_at": "2026-11-27T16:14:40.561562+00:00",
+    "file": "cards/2026/2026-11-27_auto_01.json",
+    "en": {
+      "title": "Label the counterpart's fears before making your request",
+      "hook": "Pushing your terms while the other side is terrified of risk just makes them shut down.",
+      "key_phrase": "It seems like you're concerned about..."
+    },
+    "ar": {
+      "title": "سمّ مخاوف الطرف التاني قبل ما تطلب طلبك",
+      "hook": "لما تقعد تضغط بطلباتك والطرف التاني خايف من المخاطرة، النتيجة الوحيدة إنه هينقفل منك ويقفل الباب.",
+      "key_phrase": "يمكّن حاسس إن الموضوع فيه مخاطرة من ناحية..."
+    }
+  },
+  {
+    "id": "2026-11-27_money_hours-worked-pricing",
+    "number": 197,
+    "patch_number": 41,
+    "topic": "money",
+    "level": "beginner",
+    "tags": [
+      "money",
+      "spending",
+      "mindset"
+    ],
+    "created_at": "2026-11-27T16:14:40.561562+00:00",
+    "file": "cards/2026/2026-11-27_auto_01.json",
+    "en": {
+      "title": "Translate expensive purchases into working hours",
+      "hook": "That $200 jacket looks like a steal until you realize it costs you 15 hours of sitting at your desk dealing with spreadsheets.",
+      "key_phrase": "Is this worth X hours of my work life?"
+    },
+    "ar": {
+      "title": "احسب الشراء بساعات الشغل مش بالفلوس",
+      "hook": "الجاكيت ده بـ 3000 جنيه شكله مغري، بس تفتكر هيعجبك نفس العجب لو عرفت إنه بيكلفك 20 ساعة قعدة على المكتب واسترس؟",
+      "key_phrase": "هل الحاجة دي تستاهل أشتغل عشانها كذا ساعة؟"
+    }
+  },
+  {
+    "id": "2026-11-27_meetings_silent-brainstorming",
+    "number": 196,
+    "patch_number": 41,
+    "topic": "meetings",
+    "level": "intermediate",
+    "tags": [
+      "meetings",
+      "brainstorming",
+      "leadership"
+    ],
+    "created_at": "2026-11-27T16:14:40.561562+00:00",
+    "file": "cards/2026/2026-11-27_auto_01.json",
+    "en": {
+      "title": "Start meetings with 5 minutes of silent writing",
+      "hook": "Ever notice how the loudest person in the room always dominates decisions, while introverts keep the best ideas to themselves?",
+      "key_phrase": "Before we talk, let's take 5 quiet minutes to write down our initial thoughts."
+    },
+    "ar": {
+      "title": "ابدأ اجتماعاتك بـ 5 دقائق كتابة في سرك",
+      "hook": "لاحظت قبل كده إن أعلى صوت في الاجتماع هو دايماً اللي بيفرض رأيه، في حين إن الناس الساكتة ممكن تكون عندها أفكار أعلى بكتير؟",
+      "key_phrase": "قبل ما نتكلم، هناخد 5 دقائق هدوء تام كل واحد يكتب أفكاره على ورقة."
+    }
+  },
+  {
+    "id": "2026-11-27_learning_feynman-teaching-test",
+    "number": 195,
+    "patch_number": 41,
+    "topic": "learning",
+    "level": "beginner",
+    "tags": [
+      "learning",
+      "memory",
+      "comprehension"
+    ],
+    "created_at": "2026-11-27T16:14:40.561562+00:00",
+    "file": "cards/2026/2026-11-27_auto_01.json",
+    "en": {
+      "title": "Explain complex ideas like you are talking to a 10-year-old",
+      "hook": "You re-read a page three times and feel like a genius, but can you explain it without buzzwords?",
+      "key_phrase": "Let me explain this without any jargon..."
+    },
+    "ar": {
+      "title": "اشرح أي فكرة صعبة كأنك بتكلم طفل عنده 10 سنين",
+      "hook": "بتعك في قراءة التقرير 3 مرات وتحس إنك فهمت، بس بتعطل لما حد يطلب منك تشرحه بكلماتك؟",
+      "key_phrase": "خليني اشرحلك الموضوع ده ببساطة خالص من غير مصطلحات..."
+    }
+  },
+  {
     "id": "2026-11-26_leadership_intent-based-delegation",
     "number": 194,
     "patch_number": 40,

@@ -1,11 +1,86 @@
 {
-  "generated_at": "2026-11-26T16:56:38.498798+00:00",
-  "total_files": 40,
-  "total_patches": 40,
-  "total_cards": 194,
+  "generated_at": "2026-11-27T16:41:02.597148+00:00",
+  "total_files": 43,
+  "total_patches": 43,
+  "total_cards": 209,
   "batches_per_day_target": 3,
   "batch_size_target": 5,
   "files": [
+    {
+      "batch_id": "2026-11-27_auto_03",
+      "path": "cards/2026/2026-11-27_auto_03.json",
+      "date": "2026-11-27",
+      "created_at": "2026-11-27T16:35:46.839301+00:00",
+      "source": "gemini-3.5-flash",
+      "card_count": 5,
+      "card_ids": [
+        "2026-11-27_sales_labeling-hesitation",
+        "2026-11-27_business_pre-mortem-check",
+        "2026-11-27_career_brag-document",
+        "2026-11-27_decision_making_10-10-10-rule",
+        "2026-11-27_leadership_intent-based-delegation"
+      ],
+      "patch_number": 43,
+      "card_numbers": [
+        205,
+        206,
+        207,
+        208,
+        209
+      ],
+      "min_number": 205,
+      "max_number": 209
+    },
+    {
+      "batch_id": "2026-11-27_auto_02",
+      "path": "cards/2026/2026-11-27_auto_02.json",
+      "date": "2026-11-27",
+      "created_at": "2026-11-27T16:28:05.533708+00:00",
+      "source": "gemini-3.5-flash",
+      "card_count": 5,
+      "card_ids": [
+        "2026-11-27_learning_feynman-technique-toddler",
+        "2026-11-27_persuasion_because-justification-trick",
+        "2026-11-27_pricing_anchor-high-first",
+        "2026-11-27_productivity_two-minute-rule",
+        "2026-11-27_psychology_ben-franklin-effect"
+      ],
+      "patch_number": 42,
+      "card_numbers": [
+        200,
+        201,
+        202,
+        203,
+        204
+      ],
+      "min_number": 200,
+      "max_number": 204
+    },
+    {
+      "batch_id": "2026-11-27_auto_01",
+      "path": "cards/2026/2026-11-27_auto_01.json",
+      "date": "2026-11-27",
+      "created_at": "2026-11-27T16:14:40.561562+00:00",
+      "source": "groq:openai/gpt-oss-120b",
+      "card_count": 5,
+      "card_ids": [
+        "2026-11-27_learning_feynman-teaching-test",
+        "2026-11-27_productivity_ten-minute-starter",
+        "2026-11-27_meetings_silent-brainstorming",
+        "2026-11-27_money_hours-worked-pricing",
+        "2026-11-27_negotiation_labeling-objections"
+      ],
+      "patch_number": 41,
+      "card_numbers": [
+        195,
+        196,
+        197,
+        198,
+        199
+      ],
+      "min_number": 195,
+      "max_number": 199
+    },
     {
       "batch_id": "2026-11-26_auto_03",
       "path": "cards/2026/2026-11-26_auto_03.json",

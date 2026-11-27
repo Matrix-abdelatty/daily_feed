@@ -1,0 +1,293 @@
+{
+  "schema_version": 1,
+  "batch_id": "2026-11-27_auto_02",
+  "created_at": "2026-11-27T16:28:05.533708+00:00",
+  "source": "gemini-3.5-flash",
+  "cards": [
+    {
+      "id": "2026-11-27_learning_feynman-technique-toddler",
+      "created_at": "2026-11-27T16:28:05.533708+00:00",
+      "topic": "learning",
+      "tags": [
+        "learning",
+        "feynman",
+        "mental-models",
+        "clarity"
+      ],
+      "level": "beginner",
+      "needs_completion": false,
+      "en": {
+        "title": "Explain It to a 5-Year-Old to Spot Learning Gaps",
+        "hook": "You think you understand a concept until you try explaining it without using jargon. That's when your brain freezes.",
+        "action": "Write down the concept as if explaining it to a child. Whenever you use a big word or hit a block, stop and re-learn that specific part.",
+        "key_phrase": "If I can't explain this simply, I don't truly get it yet.",
+        "when": "Studying a complex topic or preparing to present a technical idea.",
+        "why": "Jargon hides gaps in understanding. Simple words force your brain to map fundamental concepts clearly.",
+        "example": "Instead of saying 'We use an asynchronous non-blocking event loop', say 'Our system takes orders like a waiter who doesn't wait by the kitchen for food to finish.'",
+        "mistake": "Re-reading highlighted notes over and over thinking passive reading equals mastery."
+      },
+      "ar": {
+        "title": "اشرح الفكرة لعيَّل صغير عشان تكتشف الثغرات",
+        "hook": "فاكر نفسك فاهم الموضوع كويس؟ جرب تشرحه لحد من غير ما تستخدم مصطلحات معقدة وستكشف إنك عطلت.",
+        "action": "اكتب الفكرة كأنك بتشرحها لطفل صغير. أول ما تلاقي نفسك استخدمت كلمة معقدة أو وقفت، ارجع ذاكر الحتة دي تاني.",
+        "key_phrase": "لو مش عارف أشرحها ببساطة، يبقى أنا لسه مش فاهمها صح.",
+        "when": "لما بتذاكر موضوع صعب أو بتجهز لعرض فكرة تقنية.",
+        "why": "المصطلحات الكبيرة بتستخبى وراها الفجوات. الكلام البسيط بيجبر عقلك يفهم الأصول بجد.",
+        "example": "بدل ما تقول 'إحنا بنستخدم سيستم نون بلوكينج'، قول 'السيستم بتاعنا زي الويتر اللي بياخد الطلب ويديه للمطبخ ويروح لترابيزة تانية من غير ما يقف يستنى الأكل يجهز'.",
+        "mistake": "تعيد قراءة الهايلايتر 10 مرات وتفتكر إنك كده فهمت."
+      },
+      "quiz": {
+        "type": "mcq",
+        "correct_index": 2,
+        "en": {
+          "question": "You are learning a complex system architecture. What is the best way to verify you actually mastered it?",
+          "options": [
+            "Re-read the documentation three times.",
+            "Memorize the industry jargon terms.",
+            "Explain how it works in plain words to a non-technical friend.",
+            "Highlight the key paragraphs in a bright color."
+          ],
+          "explanation": "Explaining simply tests true comprehension because jargon can mask knowledge gaps."
+        },
+        "ar": {
+          "question": "بتتعلم نظام برمجي معقد، إيه أفضل طريقة تتأكد بيها إنك هضمته تماماً؟",
+          "options": [
+            "تعيد قراءة الملفات الرسمية تلات مرات.",
+            "تحفظ المصطلحات التقنية المعقدة زي ما هي.",
+            "تشرح طريقة شغله بكلام بسيط جداً لحد مالوش في التك.",
+            "تعلم بالهايلايتر على السطور المهمة."
+          ],
+          "explanation": "الشرح البسيط بيختبر الفهم الحقيقي لأن المصطلحات المعقدة بتداري الفجوات اللي عندك."
+        }
+      }
+    },
+    {
+      "id": "2026-11-27_persuasion_because-justification-trick",
+      "created_at": "2026-11-27T16:28:05.533708+00:00",
+      "topic": "persuasion",
+      "tags": [
+        "persuasion",
+        "influence",
+        "communication",
+        "psychology"
+      ],
+      "level": "beginner",
+      "needs_completion": false,
+      "en": {
+        "title": "Add the Word 'Because' to Double Agreement Rates",
+        "hook": "A famous study showed that adding ANY reason after the word 'because' boosted line-cutting compliance from 60% to 94%.",
+        "action": "Whenever you make a request, append 'because' followed by a logical reason, even if the reason feels obvious.",
+        "key_phrase": "Can I jump in because I need to make two quick copies?",
+        "when": "Asking for small favors, priority processing, or quick task handoffs.",
+        "why": "The brain uses 'because' as a mental shortcut to signal that a valid reason exists, triggering automatic compliance.",
+        "example": "Hey Sarah, can you review this draft by 2 PM because we need to send the client deck before their end of day?",
+        "mistake": "Making a direct command without providing a rationale trigger."
+      },
+      "ar": {
+        "title": "زود كلمة 'عشان' وهتاخد موافقة أسرع مرتين",
+        "hook": "تجربة مشهورة أثبتت إنك لما تطلب طلب وتزود عليه كلمة 'عشان' وتذكر سبب، نسبة موافقة الناس بتطير من 60% لـ 94%.",
+        "action": "لما تطلب حاجة من حد، حط كلمة 'عشان' وبعدها سبب، حتى لو السبب واضح جداً ومباشر.",
+        "key_phrase": "ممكن أعدي أطبع الورقتين دول قبلك عشان محتاجهم بسرعة؟",
+        "when": "لما تعوز تطلب خدمة صغيرة، أو استثناء سريع، أو تسليم مهمة.",
+        "why": "المخ بياخد كلمة 'عشان' كإشارة إيجابية واختصار عقلي وبيوافق أسرع من غير ما يحلل الطلب بزيادة.",
+        "example": "يا سارة، ممكن تراجعي معايا الملف ده قبل الساعة 2 عشان محتاجين نبعته للعميل قبل ما يقفلوا اليوم؟",
+        "mistake": "تطلب الطلب حاف من غير ما تدي عقله مبرر يتعاطف معاه."
+      },
+      "quiz": {
+        "type": "mcq",
+        "correct_index": 1,
+        "en": {
+          "question": "You need a coworker to prioritize your design ticket over theirs. Which phrasing works best?",
+          "options": [
+            "Please process ticket #402 first.",
+            "Can you process ticket #402 first because the campaign launches tomorrow morning?",
+            "It is urgent that ticket #402 gets done now.",
+            "I really need ticket #402 done right away."
+          ],
+          "explanation": "Including 'because' with a explicit reason triggers automatic cognitive acceptance."
+        },
+        "ar": {
+          "question": "محتاج زميلك يخلصلك تاسك التظبيط الأول قبل حاجات ثانية. أنهي صياغة هي الأقوى؟",
+          "options": [
+            "لو سمحت خلصلي التاسك رقم 402 الأول.",
+            "ممكن تبدأ بالتاسك رقم 402 الأول عشان الحملة نازلة بكرة الصبح؟",
+            "ضروري جداً التاسك 402 يخلص حالاً.",
+            "أنا محتاج التاسك 402 ينتهي فوراً."
+          ],
+          "explanation": "استخدام 'عشان' متبوعة بسبب بيخلي العقل يوافق بمرونة وسرعة أعلى بكثير."
+        }
+      }
+    },
+    {
+      "id": "2026-11-27_pricing_anchor-high-first",
+      "created_at": "2026-11-27T16:28:05.533708+00:00",
+      "topic": "pricing",
+      "tags": [
+        "pricing",
+        "anchoring",
+        "sales",
+        "negotiation"
+      ],
+      "level": "intermediate",
+      "needs_completion": false,
+      "en": {
+        "title": "Present Your Premium Tier First to Set High Anchors",
+        "hook": "Show a client a $50,000 package first, and $15,000 feels reasonable. Show them $5,000 first, and $15,000 feels extortionate.",
+        "action": "Always introduce your top-tier premium solution before presenting standard middle options.",
+        "key_phrase": "Most enterprise clients pick our VIP package at $50k, but for your current scope, the $15k core plan fits best.",
+        "when": "Pitching proposals, sending rate cards, or walking through service packages.",
+        "why": "The first number mentioned creates a cognitive anchor against which all lower subsequent prices feel like bargains.",
+        "example": "Our full implementation with complete custom design is $30,000. If that's beyond scope, our streamlined setup covers core needs for $8,000.",
+        "mistake": "Starting with your absolute cheapest offer and attempting to upsell upward."
+      },
+      "ar": {
+        "title": "ابدأ بأعلى سعر الأول عشان يرخص اللي بعده",
+        "hook": "لو عرضت على العميل خيار بـ 50 ألف الأول، خيار الـ 15 ألف هيشوفه لقطة. لو بدأت بالـ 5 آلاف، الـ 15 ألف هيبان غالي جداً.",
+        "action": "دايماً اعرض الباقة الأغلى والأعلى قيمة الأول، وبعدين انزل للباقة المتوسطة اللي انت عايز تبيعها فعلياً.",
+        "key_phrase": "معظم الشركات الكبيرة بتاخد الباقة الكاملة بـ 50 ألف، بس بالنسبة لاحتياجكم الباقة الأساسية بـ 15 ألف هتبقى ممتازة.",
+        "when": "وأنت بتقدم عروض الأسعار أو بتعرض باقات خدماتك للعميل.",
+        "why": "أول رقم العميل بيسمعه بيبني عنده مقياس المقارنة، فـ أي رقم أصغر بعده بيبان أوفر وأعقل.",
+        "example": "التنفيذ الكامل بـ 30 ألف. لو الميزانية مش هتكفي، الباقة القياسية بتديك الأساسيات كلها بـ 8 آلاف بس.",
+        "mistake": "تبدأ بأرخص سعر وتفضل تحاول تقنع العميل يدفع زيادة."
+      },
+      "quiz": {
+        "type": "mcq",
+        "correct_index": 0,
+        "en": {
+          "question": "When presenting your pricing packages during a sales call, which sequence yields the best perception of value?",
+          "options": [
+            "Premium Tier ($20k) -> Standard Tier ($7k) -> Basic Tier ($3k)",
+            "Basic Tier ($3k) -> Standard Tier ($7k) -> Premium Tier ($20k)",
+            "Only show the Standard Tier ($7k) to avoid confusing them",
+            "Ask them what they want to pay before mentioning any prices"
+          ],
+          "explanation": "Starting high anchors the client's price expectation, making middle tiers feel more affordable."
+        },
+        "ar": {
+          "question": "وأنت بتعرض أسعارك على عميل في مكالمة مبيعات، أنهي ترتيب يدي إحساس أفضل بقيمة السعر؟",
+          "options": [
+            "الباقة العالية (20 ألف) -> الباقة المتوسطة (7 آلاف) -> الباقة الأساسية (3 آلاف)",
+            "الباقة الأساسية (3 آلاف) -> الباقة المتوسطة (7 آلاف) -> الباقة العالية (20 ألف)",
+            "تعرض الباقة المتوسطة بس (7 آلاف) عشان متلخبطهوش",
+            "تسأله عايز يدفع كام الأول قبل ما تقول أي أسعار"
+          ],
+          "explanation": "البداية بالسعر الأعلى بتبني مرساة (Anchor) في عقله فتخلي الرقم المتوسط يبان منطقي واقتصادي."
+        }
+      }
+    },
+    {
+      "id": "2026-11-27_productivity_two-minute-rule",
+      "created_at": "2026-11-27T16:28:05.533708+00:00",
+      "topic": "productivity",
+      "tags": [
+        "productivity",
+        "time-management",
+        "execution",
+        "focus"
+      ],
+      "level": "beginner",
+      "needs_completion": false,
+      "en": {
+        "title": "Kill Micro-Tasks Instantly with the 2-Minute Rule",
+        "hook": "Your to-do list is full of tiny nagging items that take 90 seconds, yet drain hours of mental energy.",
+        "action": "If an incoming task takes less than 2 minutes to complete, execute it immediately instead of logging or postponing it.",
+        "key_phrase": "If it takes under two minutes, do it right now.",
+        "when": "Processing incoming emails, Slack messages, or quick approvals.",
+        "why": "The cognitive cost of tracking, reviewing, and context-switching back to micro-tasks far exceeds the effort of finishing them instantly.",
+        "example": "An email arrives asking to confirm a meeting slot. Reply 'Confirmed' right now rather than leaving it unread for later.",
+        "mistake": "Adding tiny 1-minute tasks to your to-do app and re-reading them five times a day."
+      },
+      "ar": {
+        "title": "خلص المهام الصغيرة في ساعتها بقاعدة الدقيقتين",
+        "hook": "قائمة مهامك مليانة حاجات بسيطة بتاخد 90 ثانية، بس واخدة مساحة كبيرة جداً من تفكيرك ومقللة تركيزك.",
+        "action": "أي مهمة تجيلك مش هتاخد أكتر من دقيقتين، اعملها فوراً وما تسجلهاش في قائمة المهام ولا تؤجلها.",
+        "key_phrase": "لو بتاخد أقل من دقيقتين، اعملها حالاً.",
+        "when": "وأنت بتراجع الإيميلات، رسائل الشغل، أو بتعمل موافقات سريعة.",
+        "why": "تكلفة التفكير وتأجيل المهمة واستدعائها تاني أتقل بكثير على مخك من إنك تخلصها وتخلص منها.",
+        "example": "إيميل جاي بيسألك على ميعاد اجتماع؟ رد بـ 'تمام موافق' دلوقتي بدل ما تسيبه للمساء.",
+        "mistake": "تسجل كل تفصيلة هبلة في التو-دو ليست وتفضل تبص عليها كل شوية من غير ما تعملها."
+      },
+      "quiz": {
+        "type": "mcq",
+        "correct_index": 3,
+        "en": {
+          "question": "You receive a Slack message asking for a link to a shared drive folder (takes 45 seconds to fetch). What should you do?",
+          "options": [
+            "Add it to your task manager under 'Low Priority'.",
+            "Set a reminder alarm for the end of the day.",
+            "Ignore it until your scheduled deep-work block finishes in 4 hours.",
+            "Send the link immediately right now."
+          ],
+          "explanation": "Tasks taking under 2 minutes should be handled immediately to save cognitive overhead."
+        },
+        "ar": {
+          "question": "جالك مسج على الشغل بطلب لينك فولدر (بياخد حوالي 45 ثانية عشان تجيبه). التصرف الأمثل إيه؟",
+          "options": [
+            "تضيفه في أبلكيشن التو-دو تحت قسم 'مهام مش عاجلة'.",
+            "تعمل ريميندر بليل يفكرك تتبعه.",
+            "تطنشه خالص لحد ما تخلص شغل اليوم كمان 4 ساعات.",
+            "تبعت اللينك فوراً وفي ساعتها."
+          ],
+          "explanation": "أي حاجة بتاخد أقل من دقيقتين إنجازها فوراً بيوفر المجهود الذهني بتاع تسجيلها وافتكارها تاني."
+        }
+      }
+    },
+    {
+      "id": "2026-11-27_psychology_ben-franklin-effect",
+      "created_at": "2026-11-27T16:28:05.533708+00:00",
+      "topic": "psychology",
+      "tags": [
+        "psychology",
+        "rapport",
+        "networking",
+        "influence"
+      ],
+      "level": "intermediate",
+      "needs_completion": false,
+      "en": {
+        "title": "Make People Like You by Asking for a Small Favor",
+        "hook": "Counterintuitively, people don't like you more when you do favors for them—they like you more when THEY do favors for YOU.",
+        "action": "Ask a new colleague or tough contact for a tiny, low-friction favor like recommendations or quick feedback.",
+        "key_phrase": "Could you recommend your favorite note-taking app?",
+        "when": "Building rapport with a new team member, prospective client, or guarded stakeholder.",
+        "why": "Cognitive dissonance forces their brain to justify helping you: 'I helped them, so I must like them.'",
+        "example": "Hey Mark, quick question—which PDF editor do you use? Your document layouts always look crisp.",
+        "mistake": "Constantly over-servicing people trying to buy their goodwill through unsolicited favors."
+      },
+      "ar": {
+        "title": "خلي الناس تحبك عن طريق إنك تطلب منهم خدمة صغيرة",
+        "hook": "على عكس المتوقع، الناس مش بتحبك لما تعملهم خدمات... الناس بتحبك أكتر لما هُما اللي يعملولك خدمة!",
+        "action": "اطلب من زميل جديد أو شخص صعب خدمة بسيطة جداً مش محتاجة مجهود، زي ترشيح أداة أو رأي سريع.",
+        "key_phrase": "ممكن ترشحلي أحسن برنامج بتستخدمه لتنظيم اليوم؟",
+        "when": "لما تبدأ تبني علاقة مع حد جديد في الشغل أو عايز تكسر الجليد مع شخص تحفظه عالي.",
+        "why": "عقله بيحاول يبرر ليه ساعدك، فيقنع نفسه تلقائياً: 'أنا ساعدته، يبقى أنا أكيد بلطفه وبحبه'.",
+        "example": "يا أحمد، سؤال سريع كده.. إيه برنامج الـ PDF اللي بتستخدمه؟ الشغل بتاعك طالع نضيف أوي.",
+        "mistake": "تفضل تقدم خدمات ومجاملات ع الفاضي والمليان عشان تحاول تعجب اللي قدامك."
+      },
+      "quiz": {
+        "type": "mcq",
+        "correct_index": 2,
+        "en": {
+          "question": "You want to build a warm relationship with a distant senior colleague. What is the most effective psychological tactic?",
+          "options": [
+            "Send them unsolicited daily industry articles.",
+            "Offer to grab their coffee every morning.",
+            "Ask for a brief recommendation on a tool they excel at.",
+            "Agree aggressively with everything they say in meetings."
+          ],
+          "explanation": "The Ben Franklin effect shows that doing a small favor causes someone to view you more favorably."
+        },
+        "ar": {
+          "question": "عايز تبني علاقة قوية ولطيفة مع مدير جديد ومتحفظ في الشغل. إيه أكتر أسلوب نفسي فعال؟",
+          "options": [
+            "تبعتله كل يوم مقالات أخبار من غير ما يطلب.",
+            "تعرض عليه تجيبله قهوة كل يوم الصبح.",
+            "تطلب منه ترشيح سريع لأداة هو شاطر فيها.",
+            "توافق على كل كلمة يقولها في الاجتماعات بزيادة."
+          ],
+          "explanation": "تأثير بنجامين فرانكلين بيوضح إن لما حد يعملك خدمة صغيرة، عقله بيبرر إنه بيحبك ولطيف معاك."
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,293 @@
+{
+  "schema_version": 1,
+  "batch_id": "2026-11-27_auto_03",
+  "created_at": "2026-11-27T16:35:46.839301+00:00",
+  "source": "gemini-3.5-flash",
+  "cards": [
+    {
+      "id": "2026-11-27_sales_labeling-hesitation",
+      "created_at": "2026-11-27T16:35:46.839301+00:00",
+      "topic": "sales",
+      "tags": [
+        "sales",
+        "objections",
+        "negotiation",
+        "deals"
+      ],
+      "level": "intermediate",
+      "needs_completion": false,
+      "en": {
+        "title": "Label hesitation to uncover hidden sales objections",
+        "hook": "They said 'We'll think about it' and vanished forever. Here is how you resurrect the deal right there.",
+        "action": "Instead of pushing for a close, label their implicit fear using neutral language starting with 'It seems like...'",
+        "key_phrase": "It seems like you have a reservation about the timeline.",
+        "when": "When a prospect gives a vague pushback like 'Let me get back to you.'",
+        "why": "It removes pressure and triggers the brain's natural urge to correct you, revealing the real hidden objection.",
+        "example": "Client: 'Sounds good, let us discuss internally.' You: 'It seems like you're worried about implementation taking too long.' Client: 'Actually, no, it's just the Q3 budget limit.'",
+        "mistake": "Pitching harder or offering discounts immediately."
+      },
+      "ar": {
+        "title": "سمّي التردد اللي قدامك عشان تطلع العيب المستخبي",
+        "hook": "قالولك 'هندرس الموضوع ونرجعلك' واختفوا للأبد؟ تعالى أقولك إزاي تطلع السبب الحقيقي في نفس اللحظة.",
+        "action": "بدل ما تضغط عليهم يشتروا، سمّي القلق اللي عندهم بجملة محايدة تبدأ بـ 'شكله مفيهوش راحة لـ...'",
+        "key_phrase": "شكل حضرتك عندك قلق من نقطة وقت التنفيذ.",
+        "when": "لما العميل يديك رد عايم زي 'هرد عليك الأسبوع الجاي'.",
+        "why": "الأسلوب ده بيشيل الضغط من عليه ويخليه عايز يصلح معلومتك، فيعترف بالمشكلة الحقيقية.",
+        "example": "العميل: 'تمام، حنتكلم ونرد عليك.' أنت: 'شكل حضرتك قلقان إن التطبيق ياخد وقت كبير.' العميل: 'لا هو الوقت تمام، بس الميزانية بصراحة مضغوطة.'",
+        "mistake": "إنك تزن عليهم يشتروا دلوقتي أو تنزل في السعر على طول."
+      },
+      "quiz": {
+        "type": "mcq",
+        "correct_index": 2,
+        "en": {
+          "question": "A enterprise lead says: 'We need to check with stakeholders first.' What is the best move?",
+          "options": [
+            "Offer a 10% discount if they sign today.",
+            "Ask: 'Who are the stakeholders? Let me talk to them directly.'",
+            "Say: 'It seems like you're unsure if this matches their current priorities.'",
+            "Say: 'No problem, I'll follow up on Monday.'"
+          ],
+          "explanation": "Labeling their hesitation neutrally encourages them to clarify the exact internal dynamic without feeling cornered."
+        },
+        "ar": {
+          "question": "عميل شركة قالك: 'محتاجين نرجع لمديرين الأقسام الأول.' إيه أفضل رد؟",
+          "options": [
+            "تعرض عليه خصم 10% لو مضى النهاردة.",
+            "تقوله: 'مين المديرين دول؟ أدينا أرقامهم نكلمهم إحنا.'",
+            "تقوله: 'شكل حضرتك حاسس إن الحل ده ممكن ما يوافقش أولوياتهم حالياً.'",
+            "تقوله: 'تمام مافيش مشكلة، هكلمك يوم الإثنين الجاي.'"
+          ],
+          "explanation": "تسمية التردد بشكل محايد بتخليه يوضح المشكلة الحقيقية في اتخاذ القرار من غير ما يحس إنك بتضغط عليه."
+        }
+      }
+    },
+    {
+      "id": "2026-11-27_business_pre-mortem-check",
+      "created_at": "2026-11-27T16:35:46.839301+00:00",
+      "topic": "business",
+      "tags": [
+        "risk",
+        "business",
+        "planning",
+        "strategy"
+      ],
+      "level": "intermediate",
+      "needs_completion": false,
+      "en": {
+        "title": "Run a Pre-Mortem before launching any major project",
+        "hook": "Most projects fail for reasons the team saw coming but were too polite to mention during kick-off.",
+        "action": "Gather your team, assume the project failed catastrophically 1 year from today, and ask everyone to write down why.",
+        "key_phrase": "Imagine it's next year and this launch failed. What killed it?",
+        "when": "Right before signing off on a major initiative or product launch.",
+        "why": "It breaks optimism bias by granting psychological safety to critique the plan without looking like a pessimist.",
+        "example": "Lead: 'It's 2027, our new product failed completely. Write down why.' Dev: 'We relied on a third-party API that rate-limited us.'",
+        "mistake": "Doing post-mortems only after the budget is wasted and the damage is done."
+      },
+      "ar": {
+        "title": "اعمل 'تحليل ما قبل الوفاة' للمشروع قبل ما تطلقه",
+        "hook": "معظم المشاريع بتفشل لأسباب الفريق كان عارفها كويس، بس كانوا مكسوفين يقولوها في أول الاجتماع.",
+        "action": "اجمع فريقك، وافترضوا إن المشروع فشل تماماً بعد سنة من دلوقتي، واطلب من كل واحد يكتب سبب الفشل.",
+        "key_phrase": "تخيلوا إننا في السنة الجاية والمشروع ده فشل ذريعاً. إيه اللي موته؟",
+        "when": "قبل ما تمضي أو تبدأ تنفيذ أي مشروع أو منتج جديد.",
+        "why": "بتكسر التفاؤل الأعمى وتدي الناس أمان نفسي يقولوا عيوب الخطة من غير ما يبانوا إنهم بيكرهوا النجاح.",
+        "example": "مدير المشروع: 'تخيلوا إننا في 2027 والمشروع فشل، اكتبوا السبب.' المطور: 'اعتمدنا على شركة خارجية والسيرفر بتاعهم وقع.'",
+        "mistake": "إنك تعمل تحليل أسباب الفشل بعد ما الميزانية تضيع والمشروع يبوظ بالفعل."
+      },
+      "quiz": {
+        "type": "mcq",
+        "correct_index": 1,
+        "en": {
+          "question": "Why is a Pre-Mortem more effective than a traditional risk analysis?",
+          "options": [
+            "It guarantees that no technical bugs will occur during deployment.",
+            "It framing prospective failure as certainty, making team members comfortable voicing flaws.",
+            "It helps allocate responsibility to specific team members in advance.",
+            "It eliminates the need for emergency contingency budgets."
+          ],
+          "explanation": "Assuming failure has already happened removes social pressure to appear optimistic, bringing hidden risks to light."
+        },
+        "ar": {
+          "question": "ليه 'تحليل ما قبل الوفاة' أجدع من تقييم المخاطر التقليدي؟",
+          "options": [
+            "عشان بيضمن إن مافيش أي مشاكل تقنية هتحصل خالص.",
+            "عشان بيخلي الفشل فرضية واقعة، فالناس بتتجرأ تقول الأخطاء من غير إحراج.",
+            "عشان بيساعدك ترمي اللوم على موظف معين من بدري.",
+            "عشان بيلغي الحاجة لوجود ميزانية طوارئ."
+          ],
+          "explanation": "افتراض إن الفشل حصل خلاص بيشيل الضغط الاجتماعي بتاع 'لازم نكون متفائلين'، وبيطلع العيوب المستخبية."
+        }
+      }
+    },
+    {
+      "id": "2026-11-27_career_brag-document",
+      "created_at": "2026-11-27T16:35:46.839301+00:00",
+      "topic": "career",
+      "tags": [
+        "career",
+        "promotion",
+        "workplace",
+        "visibility"
+      ],
+      "level": "beginner",
+      "needs_completion": false,
+      "en": {
+        "title": "Keep a weekly Brag Document for performance reviews",
+        "hook": "You did incredible work 5 months ago, but when review season arrives, neither you nor your manager remember details.",
+        "action": "Spend 5 minutes every Friday logging metrics, solved issues, and positive feedback into a dedicated file.",
+        "key_phrase": "This week I resolved issue X, which saved the team Y hours.",
+        "when": "Every Friday at the end of your workday.",
+        "why": "Managers suffer from recency bias; having quantified proof transforms reviews into objective negotiation.",
+        "example": "Instead of: 'I worked hard this year,' say: 'In March, I refactored the pipeline, reducing downtime by 40%, as logged here.'",
+        "mistake": "Relying on memory or expecting your manager to track your accomplishments for you."
+      },
+      "ar": {
+        "title": "اعمل 'ملف الإنجازات' الأسبوعي عشان وقت الترقية",
+        "hook": "عملت شغل جبار من 5 شهور، بس وقت التقييم السنوي لا أنت فاكر التفاصيل ولا مديرك فاكرها.",
+        "action": "خصص 5 دقائق كل جمعة واكتب الأرقام، المشاكل اللي حلتها، والشكراً اللي جاتلك في ملف واحد.",
+        "key_phrase": "الأسبوع ده حليت المشكلة X ووفرت للفرقة وقت قدره Y.",
+        "when": "كل نهاية أسبوع قبل ما تقفل جهازك وتجاز.",
+        "why": "المديرين بيتأثروا باللي حصل آخر كم أسبوع بس، فوجود أرقام وإثباتات بيخلي التقييم مادي ومباشر.",
+        "example": "بدل ما تقول: 'أنا تعبت جداً السنة دي'، تقول: 'في مارس قللت وقت التحميل 40% وده مثبت بالأرقام عندي.'",
+        "mistake": "إنك تعتمد على الذاكرة وتتوقع إن مديرك فاكر كل حاجة حلوة عملتها."
+      },
+      "quiz": {
+        "type": "mcq",
+        "correct_index": 3,
+        "en": {
+          "question": "What is the primary psychological advantage of presenting a Brag Document during a raise review?",
+          "options": [
+            "It proves to your manager that you work longer hours than peers.",
+            "It makes your manager feel guilty for not noticing your work.",
+            "It forces human resources to automatically approve standard wage steps.",
+            "It combats recency bias with hard, objective data over several months."
+          ],
+          "explanation": "Managers primarily remember recent events. Objective historical records provide factual leverage during evaluations."
+        },
+        "ar": {
+          "question": "إيه الفايدة النفسية الأساسية لما تقدم 'ملف الإنجازات' في اجتماع زيادة المرتب؟",
+          "options": [
+            "بيثبت للمدير إنك بتقعد في الشغل ساعات أطول من زمايلك.",
+            "بيخلي المدير يحس بالذنب إنه ما كانش واخد باله منك.",
+            "بيجبر الاتش آر إنه يزودك تلقائياً.",
+            "بيحارب انحياز المدير للحدث الأخير عن طريق تقديم أرقام ومعلومات واضحة من شهور."
+          ],
+          "explanation": "المديرين بيبقوا فاكرين بس اللي حصل قريب، فالأرقام القديمة المثبتة بتديك موقف قوي ومبني على حقايق."
+        }
+      }
+    },
+    {
+      "id": "2026-11-27_decision_making_10-10-10-rule",
+      "created_at": "2026-11-27T16:35:46.839301+00:00",
+      "topic": "decision_making",
+      "tags": [
+        "decisions",
+        "clarity",
+        "productivity",
+        "mindset"
+      ],
+      "level": "beginner",
+      "needs_completion": false,
+      "en": {
+        "title": "Use the 10-10-10 rule to break emotional decision paralysis",
+        "hook": "Stressed about a risky message, career pivot, or difficult conversation? Short-term anxiety is distorting your view.",
+        "action": "Evaluate how you will feel about the choice in 10 minutes, 10 months, and 10 years before acting.",
+        "key_phrase": "How will I feel about this decision in 10 months?",
+        "when": "When facing high-anxiety or emotionally charged choices.",
+        "why": "It forces temporal distance, neutralizing acute emotional fear while refocusing on long-term priorities.",
+        "example": "Scared to pitch higher rates? 10 mins: Extremely nervous. 10 months: Client paid or replaced. 10 years: Completely forgotten.",
+        "mistake": "Making long-term choices based entirely on immediate emotional discomfort."
+      },
+      "ar": {
+        "title": "استخدم قاعدة 10-10-10 عشان تكسر شلل القرارات",
+        "hook": "متوتر من إيميل صعب، أو خايف تاخد قرار في شغلك؟ المشاعر اللحظية هي اللي عاطية على تفكيرك.",
+        "action": "قيم إحساسك نتيجة القرار ده هيبقى إيه بعد 10 دقائق، 10 شهور، و10 سنين قبل ما تأخد أي خطوة.",
+        "key_phrase": "إحساسي إيه ناحية القرار ده بعد 10 شهور؟",
+        "when": "لما تكون خايف ومتردد في قرار مجننك ومش عارف تاخده.",
+        "why": "بتديك بعد زمني وبيشيل الخوف اللحظي، وبيخليك تركز على النتيجة الحقيقية على المدى الطويل.",
+        "example": "خايف تبعت رسالة تزود فيها أسعارك؟ 10 دقايق: قلقان. 10 شهور: العميل وافق أو غيرته بأحسن. 10 سنين: مش حتفتكر اصلاً.",
+        "mistake": "إنك تاخد القرار بناءً على الإحساس بالخوف أو القلق بتاع اللحظة دي بس."
+      },
+      "quiz": {
+        "type": "mcq",
+        "correct_index": 0,
+        "en": {
+          "question": "You are terrified to decline a non-essential project from a pushy stakeholder. How does 10-10-10 help?",
+          "options": [
+            "10 mins: Awkward. 10 months: Focused on priority work. 10 years: No impact.",
+            "It automates your schedule so you can accept both tasks effortlessly.",
+            "It guarantees the stakeholder will not be angry with your refusal.",
+            "It tells you precisely which tasks to outsource to junior peers."
+          ],
+          "explanation": "Viewing the choice through time highlights that short-term discomfort is trivial compared to months of saved focus."
+        },
+        "ar": {
+          "question": "خايف ترفض مشروع مش مهم طالبوه منك في الشغل. إزاي قاعدة 10-10-10 تساعدك؟",
+          "options": [
+            "10 دقايق: إحراج مؤقت. 10 شهور: ركزت في الشغل المهم. 10 سنين: مافيش أي تأثير.",
+            "بتخليك تعرف تعمل الشغلانتين مع بعض من غير ما تتعب.",
+            "بتضمن إن الشغليين مش هيزعلوا خالص لما ترفض.",
+            "بتعرفك بالظبط مين من زمايلك تقدر ترمي عليه الشغلانة."
+          ],
+          "explanation": "رؤية القرار عبر فترات زمنية بيوضح إن الكسوف اللحظي ما يسواش حاجة قصاد شهور من التركيز في المهم."
+        }
+      }
+    },
+    {
+      "id": "2026-11-27_leadership_intent-based-delegation",
+      "created_at": "2026-11-27T16:35:46.839301+00:00",
+      "topic": "leadership",
+      "tags": [
+        "leadership",
+        "management",
+        "delegation",
+        "autonomy"
+      ],
+      "level": "advanced",
+      "needs_completion": false,
+      "en": {
+        "title": "Delegate using intent phrases instead of taking over problems",
+        "hook": "Tired of your team coming to you with 'What should I do now?' for every minor roadblock?",
+        "action": "Require team members to frame their questions as solution proposals starting with 'I intend to...'",
+        "key_phrase": "Tell me what you intend to do first, then I'll approve it.",
+        "when": "When an employee asks for step-by-step instructions or permission.",
+        "why": "Shifts their cognitive state from passive order-taker to proactive owner, building autonomy.",
+        "example": "Employee: 'Client wants a refund, what do I do?' You: 'What do you intend to do?' Employee: 'I intend to offer store credit first.' You: 'Approved.'",
+        "mistake": "Giving instant solutions and creating passive dependency on your brain."
+      },
+      "ar": {
+        "title": "فوّض المهام بلغة 'أنا ناوي أعمل' بدل ما تدي أوامر",
+        "hook": "زهقت من إن الفريق كل شوية يجيلك يسألك 'نعمل إيه دلوقتي يا فندم' في كل تفصيلة صغيرة؟",
+        "action": "اطلب من الموظف يجيلك بالحل بتاعه ويبدأ كلامه بـ 'أنا ناوي أعمل كذا...' قبل ما تتدخل.",
+        "key_phrase": "قولي أنت ناوي تعمل إيه الأول وأنا معاك.",
+        "when": "لما حد يجيلك يسألك على طريقة حل مشكلة مفروض هو يعملها.",
+        "why": "بتحول تفكيرهم من مجرد منفذ للطلبات لشخص بيدور على حلول ومسؤول عن قراراته.",
+        "example": "الموظف: 'العميل زعلان، نعمل إيه؟' أنت: 'أنت ناوي تعمل إيه؟' الموظف: 'ناوي أديه خصم على الأوردر الجاي.' أنت: 'تمام، اعتمد.'",
+        "mistake": "إنك تديهم الحل على طول وتعودهم يرجعولك في كل صغيرة وكبيرة."
+      },
+      "quiz": {
+        "type": "mcq",
+        "correct_index": 2,
+        "en": {
+          "question": "A team member messages: 'The vendor missed the deadline. What should I tell them?' What is the best leader response?",
+          "options": [
+            "Step in and email the vendor directly yourself to fix it fast.",
+            "Tell them: 'Draft an email issuing a warning penalty immediately.'",
+            "Reply: 'What do you intend to do about it?'",
+            "Schedule a 1-hour alignment meeting with the whole team."
+          ],
+          "explanation": "Asking 'What do you intend to do?' prompts them to take ownership and analyze solutions before escalating."
+        },
+        "ar": {
+          "question": "موظف بعتلك: 'المورد اتأخر في التسليم، أقوله إيه؟' إيه أفضل رد منك كمدير؟",
+          "options": [
+            "تتدخل بنفسك وتبعث للمورد إيميل شديد اللهجة عشان تخلص.",
+            "تقوله: 'اكتبله إيميل واديله غرامة تأخير فورية.'",
+            "ترد عليه: 'أنت ناوي تتصرف معاه إزاي؟'",
+            "تعمل اجتماع لمدة ساعة مع الفريق كله تتناقشوا."
+          ],
+          "explanation": "سؤال 'أنت ناوي تعمل إيه؟' بيجبر الموظف يفكر في الحل الأول وياخد مسؤولية بدل ما يسلمك المشكلة."
+        }
+      }
+    }
+  ]
+}

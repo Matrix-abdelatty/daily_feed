@@ -1,0 +1,288 @@
+{
+  "schema_version": 1,
+  "batch_id": "2026-11-27_auto_01",
+  "created_at": "2026-11-27T16:14:40.561562+00:00",
+  "source": "groq:openai/gpt-oss-120b",
+  "cards": [
+    {
+      "id": "2026-11-27_learning_feynman-teaching-test",
+      "created_at": "2026-11-27T16:14:40.561562+00:00",
+      "topic": "learning",
+      "tags": [
+        "learning",
+        "memory",
+        "comprehension"
+      ],
+      "level": "beginner",
+      "needs_completion": false,
+      "en": {
+        "title": "Explain complex ideas like you are talking to a 10-year-old",
+        "hook": "You re-read a page three times and feel like a genius, but can you explain it without buzzwords?",
+        "action": "Take any new concept you just learned and explain it out loud using simple, everyday language. If you hit a technical word you can't break down easily, stop and re-study that specific part.",
+        "key_phrase": "Let me explain this without any jargon...",
+        "when": "Right after reading a difficult report, article, or technical chapter.",
+        "why": "Jargon hides weak understanding. Simplifying forces your brain to build real conceptual mental models instead of memorizing phrases.",
+        "example": "Instead of saying 'We need to leverage cross-functional synergies,' say 'We need the marketing team to talk directly to the engineers twice a week so we don't build stuff nobody sells.'",
+        "mistake": "Nodding along while reading buzzword-heavy texts and assuming you've mastered the concept."
+      },
+      "ar": {
+        "title": "اشرح أي فكرة صعبة كأنك بتكلم طفل عنده 10 سنين",
+        "hook": "بتعك في قراءة التقرير 3 مرات وتحس إنك فهمت، بس بتعطل لما حد يطلب منك تشرحه بكلماتك؟",
+        "action": "أول ما تتعلم حاجة جديدة، حاول تشرحها بصوت عالي باستخدام كلمات بسيطة جداً من غير مصطلحات مجعلصة. لو لقيت نفسك بتستخدم مصطلح معقد ومش عارف تبسطه، اعرف إن دي النقطة اللي أنت مش فاهمها صح وارجع اقراها تاني.",
+        "key_phrase": "خليني اشرحلك الموضوع ده ببساطة خالص من غير مصطلحات...",
+        "when": "بعد ما تخلص قراءة تقرير مالي، كورس جديد، أو موضوع تقني صعب.",
+        "why": "المصطلحات الكبيرة بتستخبى وراها الفجوات اللي في فهمك. لما تبسط الكلام، مخك بيجبر إنه يفهم الجوهر مش يحفظ شكل الكلام.",
+        "example": "بدل ما تقول 'لازم نعمل تناغم بين الإدارات المختلفة'، قول 'لازم بتوع التسويق يقعدوا مع بتوع التطوير مرتين في الأسبوع عشان ننزل منتج الناس فعلاً عايزاه'.",
+        "mistake": "إنك تقرأ الكلام المعقد وتهز راسك وتفتكر إنك كده فهمته خلاص."
+      },
+      "quiz": {
+        "type": "mcq",
+        "correct_index": 1,
+        "en": {
+          "question": "You just read a complex article on API integrations. How do you test if you actually understood it?",
+          "options": [
+            "Re-read the article three times until you memorize the definitions.",
+            "Explain how an API works to a non-technical friend using a restaurant server analogy.",
+            "Highlight all the key terms with a yellow marker.",
+            "Write down the exact glossary definitions on flashcards."
+          ],
+          "explanation": "Explaining a concept to a non-expert using a clear analogy forces you to translate raw concepts, exposing your actual understanding."
+        },
+        "ar": {
+          "question": "إنت لسه قاري المقال الصعب ده عن الـ APIs. إزاي تتأكد إنك فهمته بجد مش مجرد حفظت الكلام؟",
+          "options": [
+            "تعيد قراءة المقال 3 مرات لحد ما تحفظ التعاريف.",
+            "تشرح الفكرة لصاحبك اللي ملوش في التكنولوجيا وت شبهها بـ 'الويتر' في المطعم.",
+            "تعلم بالهايلايتر الأصفر على المصطلحات المهمة.",
+            "تكتب التعاريف بالنص في كشكول وتسمعها لنفسك."
+          ],
+          "explanation": "شرح الفكرة لغير المتخصص باستخدام تشبيه بسيط بينسف أي ادعاء بالفهم وبيكشف لك الفجوات الحقيقية في معلوماتك."
+        }
+      }
+    },
+    {
+      "id": "2026-11-27_productivity_ten-minute-starter",
+      "created_at": "2026-11-27T16:14:40.561562+00:00",
+      "topic": "productivity",
+      "tags": [
+        "productivity",
+        "focus",
+        "procrastination"
+      ],
+      "level": "intermediate",
+      "needs_completion": false,
+      "en": {
+        "title": "Use the 10-Minute Starter rule to crush procrastination",
+        "hook": "That giant task on your to-do list is paralyzing you. You aren't lazy; your brain is just terrified of the effort ahead.",
+        "action": "Set a timer for exactly 10 minutes. Tell yourself you only have to work on the task until the timer rings. When it stops, you are completely free to quit with zero guilt.",
+        "key_phrase": "I'm only doing this for 10 minutes, then I can stop.",
+        "when": "When you are delaying a massive or intimidating project like writing a proposal or cleaning out an inbox.",
+        "why": "Friction is highest at the beginning. Starting lowers psychological resistance, and momentum takes over once you are in motion.",
+        "example": "You dread writing a quarterly report. You set a timer for 10 minutes and start writing bad sentences. By minute 8, you're in flow and keep writing for an hour.",
+        "mistake": "Waiting to feel 'motivated' or inspired before touching a heavy task."
+      },
+      "ar": {
+        "title": "استخدم قاعدة الـ 10 دقائق عشان تكسر الستريس والتسويف",
+        "hook": "عندك مهمة ثقيلة ومأجلها بقالك أسبوع؟ أنت مش كسلان، مخك بس مرعوب من المجهود الكلي اللي مستنيه.",
+        "action": "اظبط تايمر الموبايل على 10 دقائق بالظبط. قول لنفسك هشتغل في المهمة دي لحد ما التايمر يرن بس، وأول ما يرن من حقك تقفل وتقوم ومن غير أي تأنيب ضمير.",
+        "key_phrase": "أنا هشتغل فيها 10 دقائق بس ودلوقتي هقوم.",
+        "when": "لما تلاقي نفسك بتأجل شغلانة ثقيلة زي كتابة التقرير، أو تنظيم فايلات شغل معقدة.",
+        "why": "أصعب حتة في أي شغلانة هي البداية. لما تقنع مخك إن المدة قصيرة جداً، المقاومة النفسية بتقل، وغالباً الحماس بييجي بعد ما تبدأ مش قبلها.",
+        "example": "وراك كتابة عرض سعر رخيم ومش طايق تبدأ. ظبطت التايمر 10 دقائق وبدأت تكتب أي كلام. عند الدقيقة 8 لقيت نفسك اندمجت وكملت ساعة كاملة من غير ما تحس.",
+        "mistake": "إنك تفضل مستني 'المود' أو الشغف ييجي عشان تبدأ تشتغل."
+      },
+      "quiz": {
+        "type": "mcq",
+        "correct_index": 2,
+        "en": {
+          "question": "You keep avoiding a 20-page market research deck you need to draft. What is the most effective immediate action?",
+          "options": [
+            "Wait until tomorrow morning when your mental energy is higher.",
+            "Promise yourself a massive reward once all 20 pages are finished.",
+            "Set a 10-minute timer to draft just the outline, allowing yourself to stop when it rings.",
+            "Drink an extra espresso and force yourself to sit until it's completely done."
+          ],
+          "explanation": "Lowering the barrier to entry with a timed micro-commitment bypasses task paralysis and builds immediate momentum."
+        },
+        "ar": {
+          "question": "بقالك 3 أيام بتأجل كتابة بريزنتيشن طويلة ومحتاجة تركيز. إيه أحسن حاجة تعملها حالاً؟",
+          "options": [
+            "تستنى لبكرة الصبح لما تروق وتكون في كامل طاقتك.",
+            "توعد نفسك بمكافأة كبيرة لما تخلص الـ 20 شريحة كلهم.",
+            "تظبط تايمر 10 دقائق وتكتب النقاط الرئيسية بس وتسمح لنفسك تقفل بعدها.",
+            "تشرب قهوة زياده وتقعد تغصب على نفسك تخلصها كاملة في قعدة واحدة."
+          ],
+          "explanation": "تقليل سقف التوقعات والالتزام بـ 10 دقائق بس بيشيل الخوف من الضخامة وبيخليك تبدأ، والبداية هي أصعب خطوة."
+        }
+      }
+    },
+    {
+      "id": "2026-11-27_meetings_silent-brainstorming",
+      "created_at": "2026-11-27T16:14:40.561562+00:00",
+      "topic": "meetings",
+      "tags": [
+        "meetings",
+        "brainstorming",
+        "leadership"
+      ],
+      "level": "intermediate",
+      "needs_completion": false,
+      "en": {
+        "title": "Start meetings with 5 minutes of silent writing",
+        "hook": "Ever notice how the loudest person in the room always dominates decisions, while introverts keep the best ideas to themselves?",
+        "action": "At the start of a problem-solving meeting, give everyone 5 minutes to write down their solutions on paper silently before anyone speaks out loud.",
+        "key_phrase": "Before we talk, let's take 5 quiet minutes to write down our initial thoughts.",
+        "when": "At the start of brainstorms, decision-making calls, or retrospective meetings.",
+        "why": "It eliminates groupthink, anchoring bias, and extrovert dominance. Everyone gets equal mindshare regardless of seniority or volume.",
+        "example": "Before launching a new campaign, the lead asks everyone to write 3 ideas silently. The quietest intern writes down the idea that ends up saving the budget.",
+        "mistake": "Asking 'Does anyone have ideas?' right away and letting the loudest executive set the direction."
+      },
+      "ar": {
+        "title": "ابدأ اجتماعاتك بـ 5 دقائق كتابة في سرك",
+        "hook": "لاحظت قبل كده إن أعلى صوت في الاجتماع هو دايماً اللي بيفرض رأيه، في حين إن الناس الساكتة ممكن تكون عندها أفكار أعلى بكتير؟",
+        "action": "أول ما تبدأ اجتماع عصف ذهني أو حل مشكلة، اطلب من الكل يسكت لمدة 5 دقائق ويكتب أفكاره أو حلوله في ورقة قبل ما حد ينطق بكلمة.",
+        "key_phrase": "قبل ما نتكلم، هناخد 5 دقائق هدوء تام كل واحد يكتب أفكاره على ورقة.",
+        "when": "في بداية اجتماعات حل المشاكل، التخطيط، أو العصف الذهني مع الفريق.",
+        "why": "الأسلوب ده بيلغي التبعية وبيمحوا تأثير الصوت العالي أو المدير، وبيدي فرصة متساوية لكل العقول إنها تطلع أحسن ما عندها.",
+        "example": "مدير تسويق طلب من الناس تقعد 5 دقائق ساكتة تكتب أفكار حملة جديدة. الموظف الجديد الساكت كتب فكرة عبقرية وفرت على الشركة آلاف.",
+        "mistake": "إنك تفتح الاجتماع بـ 'مين عنده أفكار؟' وتخلي أول واحد يتكلم هو اللي يوجه دماغ الفريق كله."
+      },
+      "quiz": {
+        "type": "mcq",
+        "correct_index": 0,
+        "en": {
+          "question": "You are leading a product team meeting and want the most creative, unbiased ideas from everyone. What should you do first?",
+          "options": [
+            "Give everyone 5 minutes of silence to write their ideas down before discussion.",
+            "Ask the senior developer for their opinion to set a solid benchmark.",
+            "Start a free-for-all debate where anyone can pitch as ideas pop into their head.",
+            "Present your own favorite idea first and ask for feedback."
+          ],
+          "explanation": "Silent writing prevents groupthink and ensures quieter team members contribute without being overshadowed."
+        },
+        "ar": {
+          "question": "إنت بتدير اجتماع لتطوير منتج جديد وعايز تضمن إنك تأخد أفكار مبتكرة ومن غير تحيز من الكل. تعمل إيه أول ما تبدأ؟",
+          "options": [
+            "تدي للناس 5 دقائق صمت وكل واحد يكتب أفكاره في ورقة قبل أي مناقشة.",
+            "تسأل أكبر مهندس في القعدة عن رأيه الأول عشان يحدد الإطار للباعدين.",
+            "تفتح باب النقاش الحر وكل واحد يقول اللي يجي في باله فوراً.",
+            "تعرض فكرتك المفضلة الأول وتطلب رأي الناس فيها."
+          ],
+          "explanation": "الكتابة الصامتة بتمنع الانحياز لرأي أول واحد يتكلم وتضمن إن الانطوائيين يشاركوا بأفكارهم القوية."
+        }
+      }
+    },
+    {
+      "id": "2026-11-27_money_hours-worked-pricing",
+      "created_at": "2026-11-27T16:14:40.561562+00:00",
+      "topic": "money",
+      "tags": [
+        "money",
+        "spending",
+        "mindset"
+      ],
+      "level": "beginner",
+      "needs_completion": false,
+      "en": {
+        "title": "Translate expensive purchases into working hours",
+        "hook": "That $200 jacket looks like a steal until you realize it costs you 15 hours of sitting at your desk dealing with spreadsheets.",
+        "action": "Calculate your hourly net wage. Before buying a non-essential item, divide its price by your hourly wage to see how many hours of your life it costs.",
+        "key_phrase": "Is this worth X hours of my work life?",
+        "when": "When considering impulse purchases or expensive non-essential items.",
+        "why": "Money is abstract, but time spent working feels immediate and visceral. Frame spending as trading your life force.",
+        "example": "You make $20/hr net. You want a $300 gadget. Ask yourself: 'Am I willing to work 15 full hours strictly to own this device?' If no, walk away.",
+        "mistake": "Evaluating prices solely by how much cash is left in your bank account right now."
+      },
+      "ar": {
+        "title": "احسب الشراء بساعات الشغل مش بالفلوس",
+        "hook": "الجاكيت ده بـ 3000 جنيه شكله مغري، بس تفتكر هيعجبك نفس العجب لو عرفت إنه بيكلفك 20 ساعة قعدة على المكتب واسترس؟",
+        "action": "احسب صافي ساعتك في الشغل بكام. قبل ما تشتري أي حاجة مش أساسية، اقسم سعر الحاجة دي على سعر ساعتك عشان تعرف هتدفع كم ساعة من حياتك قصادها.",
+        "key_phrase": "هل الحاجة دي تستاهل أشتغل عشانها كذا ساعة؟",
+        "when": "وأنت واقف قدام محل أو بتتفرج على أبلكيشن ومزنوق في قرار شراء اندفاعي.",
+        "why": "الفلوس مجرد أرقام مجردة، لكن الوقت والمجهود اللي بتدفعهم حاجة ملموسة جداً بالنسبة لمخك فتخليك تفكر بعقلانية.",
+        "example": "ساعتك بتقف عليك بـ 100 جنيه. شفت كوتشي بـ 2000 جنيه. اسأل نفسك: 'هل مستعد أشتغل 20 ساعة كامة في الفترات الضغطة عشان الكوتشي ده؟' لو لأ، سيبه وامشي.",
+        "mistake": "إنك تقيم الشراء بناءً على 'معايا كم في البنك دلوقتي' بدل ما تقيمه بـ 'صرفت كم من وقتي'."
+      },
+      "quiz": {
+        "type": "mcq",
+        "correct_index": 3,
+        "en": {
+          "question": "You want to buy a luxury watch priced at $1,000. Your net hourly wage is $25. What is the smartest psychological check to perform?",
+          "options": [
+            "Check if you have $1,000 credit limit left on your card.",
+            "Wait for a end-of-season 10% discount before purchasing.",
+            "Buy it, but cut back on daily coffee for the next month.",
+            "Ask yourself if you are willing to exchange 40 hours of actual work time for this watch."
+          ],
+          "explanation": "Translating $1,000 into 40 work hours shifts your brain from viewing money abstractly to assessing trade-offs against your life energy."
+        },
+        "ar": {
+          "question": "عايز تشتري ساعة ماركة بـ 10,000 جنيه، وصافي دخلك بيطلع حوالي 100 جنيه في الساعة. إيه الحركة الذكية اللي تعملها قبل ما تطلع الكارت؟",
+          "options": [
+            "تشوف هل الفيزا فيها ليميت يكفي الـ 10,000 ولا لأ.",
+            "تستنى لما ينزل عليها خصم 10% في البلاك فرايداي.",
+            "تشتريها وتوفر مصاريف الخروج والشاي بقية الشهر.",
+            "تسأل نفسك هل الساعة دي تسوى إنك تشتغل 100 ساعة كاملة من حياتك عشانها؟"
+          ],
+          "explanation": "تحويل الفلوس لساعات شغل بيجبرك تقيم المشتريات بمجهودك ووقتك الحقيقي، وده بيكسر رغبة الشراء الاندفاعي."
+        }
+      }
+    },
+    {
+      "id": "2026-11-27_negotiation_labeling-objections",
+      "created_at": "2026-11-27T16:14:40.561562+00:00",
+      "topic": "negotiation",
+      "tags": [
+        "negotiation",
+        "empathy",
+        "communication"
+      ],
+      "level": "advanced",
+      "needs_completion": false,
+      "en": {
+        "title": "Label the counterpart's fears before making your request",
+        "hook": "Pushing your terms while the other side is terrified of risk just makes them shut down.",
+        "action": "Before asking for what you want, address their biggest fear explicitly using the phrase 'It sounds like you're worried that...'. Let them agree before proposing solutions.",
+        "key_phrase": "It seems like you're concerned about...",
+        "when": "When negotiating contract terms, budget raises, or scope changes with a hesitant party.",
+        "why": "Naming negative emotions diffuses them. When people feel heard and protected from risk, their defensive walls drop.",
+        "example": "Instead of arguing price: 'It seems like you're worried that signing this retainer will lock you into fixed costs if your revenue dips next quarter.'",
+        "mistake": "Ignoring the counterpart's unspoken anxieties and jumping straight to pitching features and discounts."
+      },
+      "ar": {
+        "title": "سمّ مخاوف الطرف التاني قبل ما تطلب طلبك",
+        "hook": "لما تقعد تضغط بطلباتك والطرف التاني خايف من المخاطرة، النتيجة الوحيدة إنه هينقفل منك ويقفل الباب.",
+        "action": "قبل ما تطلب السعر أو الشرط بتاعك، قول المخاوف اللي عندهم بصوت عالي وابدأ بـ 'شكلك قلقان من...'. سيبهم يوافقوا الأول إنك فاهمهم وبعدين كمل كلامك.",
+        "key_phrase": "يمكّن حاسس إن الموضوع فيه مخاطرة من ناحية...",
+        "when": "في المذاكرات الصعبة على العقود، زيادات الميزانية، أو تغيير نطاق الشغل.",
+        "why": "لما تسمى الخوف والمشاعر السلبية بصوت عالي، تأثيرها بيموت. العميل لما يحس إنك فاهم قلقه بيفتحلك الباب وتعرف تتفاوض بجد.",
+        "example": "بدل ما تدافع عن سعرك قول: 'شكلك قلقان إنك لو دخلت معانا في العقد ده، هتبقى ملتزم بمصاريف ثابته حتى لو السوق ريح الفترة الجاية؟'",
+        "mistake": "إنك تطنش المخاوف الخفية بتاعة العميل وتدخل على طول تعيد وتزيد في مميزات عرضك."
+      },
+      "quiz": {
+        "type": "mcq",
+        "correct_index": 1,
+        "en": {
+          "question": "A client is hesitating to sign a 1-year service agreement because of market uncertainty. What is the best response using labeling?",
+          "options": [
+            "Offer an immediate 15% discount if they sign today.",
+            "Say: 'It seems like you're worried that committing to a full year might tie your hands if the market shifts.'",
+            "Explain that your company has been in business for 10 years and is completely reliable.",
+            "Tell them that this is standard policy and everyone signs this contract."
+          ],
+          "explanation": "Labeling their specific unspoken fear ('It seems like you're worried...') makes the client feel understood, reducing emotional resistance."
+        },
+        "ar": {
+          "question": "عميل خايف يوقع معاك عقد لمدة سنة كاملة عشان حاسس إن السوق مش مستقر. إيه أفضل رد باستخدام أسلوب التسمية (Labeling)؟",
+          "options": [
+            "تعرض عليه خصم 15% فوراً لو وقع النهاردة.",
+            "تقوله: 'شكل حضرتك قلقان إن الالتزام بسنة كاملة يربط يدك لو حصلت تغيرات في السوق الفترة الجاية.'",
+            "تشرح له إن شركتكم بقالها 10 سنين في السوق ومفيش منها أي مخاطرة.",
+            "تقوله إن دي سياستنا الثابتة مع كل العملاء ومحدش بيشتكي."
+          ],
+          "explanation": "تسمية الخوف غير المنطوق ('شكل حضرتك قلقان...') بتخلي العميل يحس بالاطمئنان وإنك فاهمه، وده بيكسر جمود التفاوض."
+        }
+      }
+    }
+  ]
+}
